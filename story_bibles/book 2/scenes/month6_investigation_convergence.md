@@ -28,7 +28,7 @@ character_knowledge_states:
       - Tess ran mission April 3rd for her father
       - Chief Whitford is involved
       - Tess's father connection to case
-    emotional_state: "Methodical investigator, piecing together pattern, frustrated by missing link"
+    character_state_reference: "character_arcs/Ben_Arc_Tracker.md#book2-month6"
     voice: "Direct, military precision, asks specific questions"
 
   Tess:
@@ -44,7 +44,7 @@ character_knowledge_states:
       - Father specifically set up the whistleblower
       - Ben is investigating same timeline
       - Full scope of father's complicity
-    emotional_state: "Defensive but curious, carrying guilt about father's missions, trying to appear casual"
+    character_state_reference: "character_arcs/Tess_Arc_Tracker.md#book2-month6"
     voice: "Gen Z slang, deflects with sarcasm, hedges when uncertain"
 
 # Scene constraints (what CANNOT happen)

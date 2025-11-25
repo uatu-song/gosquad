@@ -39,7 +39,7 @@ character_knowledge_states:
       - Tess_past_missions
       - whistleblower_name
       - fathers_full_complicity
-    emotional_state: "Focused investigator, suspicious of patterns"
+    character_state_reference: "character_arcs/Ben_Arc_Tracker.md#book2-month6"
 
   Tess:
     knows:
@@ -50,7 +50,7 @@ character_knowledge_states:
       - whistleblower_name
       - fathers_full_complicity
       - Ben_investigating_same_thing
-    emotional_state: "Defensive, hiding guilt, curious"
+    character_state_reference: "character_arcs/Tess_Arc_Tracker.md#book2-month6"
 
 # Scene constraints (what CANNOT happen)
 constraints:
