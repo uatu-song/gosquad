@@ -1,356 +1,289 @@
 # BOOK 4 - CHAPTER 15 BEATS: The Signal
 
 *Story structure only - no prose*
-*Earth Timeline: Signal detection at artificial sun facility*
+*Earth Timeline: Signal detection and strategic debate*
 
 ---
 
-## SCENE 1: Arrival
+## SCENE 1: Regrouping
 
-**Type:** Establishing/Travel
-**Location:** International artificial sun facility (neutral nation)
+**Type:** Recovery/Establishing
+**Location:** Resistance headquarters (Caledonia outskirts)
 **Characters:** Ruth, Diana, Ben, Victor, Tess, Korede, resistance leaders
 
 **STORY BEATS:**
-1. Team arrives at facility after journey from Caledonia
-2. Massive structure - fusion reactor visible in distance
-3. Diplomatic escort leading them through security
-4. "Your message said you needed the sun for dimensional research"
-5. Facility director skeptical but allowing limited access
+1. Days after clone army defeat (Chapter 14 victory)
+2. Team exhausted but regrouping
+3. Ruth: "We won the war. Now we bring Ahdia home."
+4. Korede: "We didn't win. We survived. TRIOMF, Kain, Bellatrix still active."
+5. First sign of strategic split
 
 **EMOTIONAL BEATS:**
-- Team: Exhausted from travel
-- Ruth: Focused on mission
-- Diana: Assessing facility capabilities
-- Others: Uncomfortable with formality after guerrilla warfare
-- All: This is last hope for Ahdia
+- Ruth: Determined to shift focus to rescue
+- Korede: Still in combat mode, defensive
+- Ben/Victor/Tess: Exhausted, uncertain
+- Diana: Quiet, calculating
+- Resistance leaders: Weighing priorities
 
 **CONSEQUENCES:**
-- Team at artificial sun facility
-- Limited access granted
-- Diplomatic complications present
-- Clock is ticking
-- Must convince them to activate sun
+- Clone threat eliminated but war not over
+- Team split on next priority
+- Ahdia's absence felt acutely
+- Resources limited
+- Strategic debate beginning
 
-**TENSION:** Diplomatic obstacles
-
-**WHAT COULD HAPPEN NEXT:**
-1. Tour facility capabilities
-2. Explain their need
-3. Meet facility scientists
+**TENSION:** War fatigue vs rescue urgency
 
 ---
 
-## SCENE 2: The Briefing
+## SCENE 2: Mother FAERIS Detection
 
-**Type:** Information/Planning
-**Location:** Facility control room
-**Characters:** Ruth, Diana, facility director, scientists
-
-**STORY BEATS:**
-1. Diana explaining dimensional rift theory
-2. Scientists skeptical: "This is theoretical physics"
-3. Diana: "Not theoretical. We've witnessed it."
-4. "A member of our team was forced through dimensional rift"
-5. "We believe we can open controlled rift to retrieve her"
-
-**EMOTIONAL BEATS:**
-- Diana: Clinical presentation masking desperation
-- Ruth: Impatient with scientific debate
-- Scientists: Intrigued but cautious
-- Director: Weighing political risks
-- All: Tension between hope and bureaucracy
-
-**CONSEQUENCES:**
-- Theory presented to facility staff
-- Skepticism remains high
-- Political complications acknowledged
-- Permission not yet granted
-- Need proof or evidence
-
-**TENSION:** Bureaucratic resistance
-
-**WHAT COULD HAPPEN NEXT:**
-1. Scientists demand more data
-2. Mother FAERIS provides calculations
-3. Waiting for decision
-
----
-
-## SCENE 3: Mother FAERIS
-
-**Type:** Revelation/Technical
-**Location:** Facility control room
-**Characters:** Ruth, Diana, Mother FAERIS (holographic), Ryu, scientists
+**Type:** Discovery/Technical
+**Location:** Resistance HQ
+**Characters:** Ruth, Diana, Ryu, Mother FAERIS (holographic), team
 
 **STORY BEATS:**
-1. Ryu: "Mother FAERIS has been analyzing dimensional frequencies"
-2. Mother FAERIS manifesting: "I can facilitate rift opening"
-3. Scientists shocked: "What IS that?"
-4. Diana: "Quantum-entangled AI. Dimensional bridge capability."
-5. Mother FAERIS providing technical specifications to facility systems
+1. Ryu: "Mother FAERIS has been scanning dimensional frequencies"
+2. Mother FAERIS manifests: "Anomalous transmission detected"
+3. Team: "From where?"
+4. Mother FAERIS: "Origin: Dimensional substrate. Pattern: Artificial."
+5. Diana: [whisper] "The Between."
 
 **EMOTIONAL BEATS:**
-- Scientists: Awe and confusion
-- Ryu: Pride in Mother's capabilities
-- Mother FAERIS: Calm, purposeful
-- Ruth: Grateful for ally
-- Diana: Strategic satisfaction
-
-**CONSEQUENCES:**
-- Mother FAERIS shares dimensional data
-- Scientists have proof of concept
-- Technology becomes credible
-- Facility systems can interface
-- Permission more likely
-
-**TENSION:** Hope building
-
-**WHAT COULD HAPPEN NEXT:**
-1. Director considers approval
-2. Mother FAERIS begins scanning
-3. Unexpected detection
-
----
-
-## SCENE 4: The Detection
-
-**Type:** Discovery/Shock
-**Location:** Facility control room
-**Characters:** Ruth, Diana, Mother FAERIS, Ryu, Ben, Victor, Tess, scientists
-
-**STORY BEATS:**
-1. Mother FAERIS: "Detecting anomalous transmission"
-2. Scientists: "From where?"
-3. Mother FAERIS: "Origin: Dimensional substrate adjacent to our reality"
-4. "Pattern: Artificial. Non-random. Signal strength: 0.003%"
-5. Ruth: [whisper] "Ahdia?"
-
-**EMOTIONAL BEATS:**
-- Ruth: Hope surging painfully
+- Ryu: Presenting data clinically
+- Mother FAERIS: Matter-of-fact
+- Ruth: Hope surging
+- Team: Shock - could she be alive?
 - Diana: Intense focus
-- Ben/Victor/Tess: Shock - could she be alive?
-- Scientists: Fascination with data
-- Ryu: Analyzing signal properties
-- All: This changes everything
 
 **CONSEQUENCES:**
-- Transmission detected from The Between
-- Artificial pattern (not natural phenomena)
-- Someone is transmitting deliberately
+- Signal detected from The Between
+- Artificial pattern (someone is transmitting)
 - Could be Ahdia - or could be anything
-- No way to verify source
+- Location matches Diana's theoretical coordinates
+- Changes strategic picture completely
 
 **TENSION:** Shocking possibility
 
-**WHAT COULD HAPPEN NEXT:**
-1. Analyze signal properties
-2. Attempt to decode
-3. Debate: Is it her?
-
 ---
 
-## SCENE 5: The Debate
+## SCENE 3: Faith vs Strategy
 
-**Type:** Decision/Conflict
-**Location:** Facility control room
-**Characters:** Ruth, Diana, Ben, Victor, Tess, Korede, scientists
+**Type:** Debate/Character conflict
+**Location:** Resistance HQ command room
+**Characters:** Ruth, Diana, Ben, Victor, Tess, Korede, resistance leaders
 
 **STORY BEATS:**
-1. Ben: "It could be her. It HAS to be her."
-2. Victor: "We don't know that. Could be trap. Could be anything."
-3. Scientists: "Signal too weak for message content. Just carrier wave."
-4. Tess: "But it's ARTIFICIAL. Someone is sending it."
-5. Korede: "From the exact coordinates Diana calculated for The Between"
+1. Ruth: "It's her. It has to be her."
+2. Ben: "Signal matches the coordinates. Artificial pattern."
+3. Korede: "Or it's Bellatrix. A trap."
+4. Victor: "We don't know who's sending it."
+5. Tess: "But SOMEONE is. From The Between."
+6. Resistance leader: "We can't spare resources on a maybe."
 
 **EMOTIONAL BEATS:**
-- Ben: Desperate to believe
+- Ruth: Fierce certainty (faith, not proof)
+- Ben: Wanting to believe
 - Victor: Pragmatic caution
-- Tess: Wanting hope but scared
-- Korede: Analytical assessment
-- Ruth: Torn between hope and responsibility
-- Diana: Calculating probabilities
+- Korede: Strategic skepticism
+- Tess: Torn between hope and fear
+- Diana: Supporting Ruth silently
+- Resistance leaders: War-weary, prioritizing active threats
 
 **CONSEQUENCES:**
-- Signal is real but unverified
-- Location matches theoretical coordinates
-- No proof it's Ahdia
-- Could be Bellatrix trap
-- Could be random dimensional noise
-- Or it could be their family
+- Team dividing on interpretation
+- Ruth vs Korede emerging as main split
+- No proof signal is Ahdia
+- No proof it isn't
+- Strategic vs personal loyalty conflict
+- Debate about resource allocation
 
-**TENSION:** Faith vs caution
-
-**WHAT COULD HAPPEN NEXT:**
-1. Take vote on opening rift
-2. Ruth makes executive decision
-3. Scientists weigh in on risks
+**TENSION:** Hope vs pragmatism
 
 ---
 
-## SCENE 6: The Risk
+## SCENE 4: "What Would It Take?"
 
-**Type:** Technical/Stakes
-**Location:** Facility control room
-**Characters:** Ruth, Diana, facility director, scientists
+**Type:** Planning/Technical
+**Location:** Resistance HQ
+**Characters:** Ruth, Diana, Ryu, Mother FAERIS
 
 **STORY BEATS:**
-1. Director: "Opening rift requires collapsing fusion reaction"
-2. "Temporary stellar death. Spacetime warp. Gateway forms."
-3. Diana: "Time window approximately 4 minutes before supernova event"
-4. Scientist: "If rift stays open too long, catastrophic energy release"
-5. "This facility, city, possibly region - obliterated"
+1. Ruth: "What would we need to open a rift?"
+2. Diana: "Massive energy source. Stellar-scale."
+3. Ryu: "The international artificial sun facility."
+4. Mother FAERIS: "I can facilitate dimensional bridge. But requires fusion collapse."
+5. Diana: "Four minute window. Supernova risk if miscalculated."
 
 **EMOTIONAL BEATS:**
-- Director: Weighing millions of lives
-- Scientists: Fear of consequences
-- Ruth: Understanding the stakes
-- Diana: Grim calculation
-- Team: Realizing cost of gamble
+- Ruth: Determined to find solution
+- Diana: Clinical but supportive
+- Ryu: Calculating possibilities
+- Mother FAERIS: Matter-of-fact about capabilities
+- All: Understanding enormous risk
 
 **CONSEQUENCES:**
-- Supernova risk established
-- 4-minute window maximum
-- Regional catastrophe possible
-- Million+ lives at risk
-- Not just rescue mission - existential gamble
-- Director must authorize
+- Rescue technically possible
+- Requires international facility cooperation
+- Massive energy, massive risk
+- Regional catastrophe if failed
+- Million+ lives at stake
+- Not just rescue - existential gamble
 
-**TENSION:** Impossible stakes
-
-**WHAT COULD HAPPEN NEXT:**
-1. Director refuses (too risky)
-2. Ruth argues for authorization
-3. Moral dilemma
+**TENSION:** Enormous stakes revealed
 
 ---
 
-## SCENE 7: Ruth's Choice
+## SCENE 5: The Strategic Argument
+
+**Type:** Debate/Conflict (MAIN SCENE - Method Actor Test)
+**Location:** Resistance HQ command room
+**Characters:** Ruth, Diana, Korede, Ben, Victor, Tess, resistance leaders
+
+**STORY BEATS:**
+1. Ruth presents rescue plan to full group
+2. Korede: "We lost how many defending this city? Now abandon them for one person?"
+3. Ruth: "She's family. We don't leave family behind."
+4. Resistance leader: "TRIOMF is still active. Kain controls CADENS. Bellatrix is somewhere."
+5. Korede: "I'm defending civilians every day. You want me to stop for this?"
+6. Ben: "If it's her, we have to try."
+7. Korede: "And if it's not? If it's Bellatrix baiting us into regional catastrophe?"
+8. Diana: "The mathematics support dimensional origin."
+9. Korede: "Mathematics don't fight clone avatars while I protect evacuation routes."
+10. Ruth: "Then stay. We'll go."
+
+**EMOTIONAL BEATS:**
+- Ruth: Won't abandon Ahdia, personal loyalty absolute
+- Korede: Defending civilians, can't spare anyone
+- Ben: Torn but siding with Ruth
+- Victor: Sees both sides, uncertain
+- Tess: Wanting to help but understanding Korede
+- Diana: Supporting Ruth but acknowledging risks
+- Resistance leaders: War-weary, skeptical
+
+**CONSEQUENCES:**
+- Coalition forms: Ruth, Diana, Ben, Victor, Tess (pro-rescue)
+- Opposition: Korede, resistance leaders (wrong priority)
+- Strategic split formalized
+- Korede won't help (defending civilians)
+- Ruth proceeding without full team support
+- Resources limited
+- Mission opposed by key allies
+
+**TENSION:** Family loyalty vs strategic necessity
+
+---
+
+## SCENE 6: The Line
 
 **Type:** Character moment/Decision
-**Location:** Facility control room
-**Characters:** Ruth, Diana, facility director
+**Location:** Resistance HQ
+**Characters:** Ruth, Korede (private)
 
 **STORY BEATS:**
-1. Director: "I cannot authorize. Risk too great."
-2. Ruth: "That signal is a person. Alive. Waiting."
-3. "Member of my team. My family."
-4. "If there's any chance it's her, we take it."
-5. Director: "And if you're wrong? If it's nothing?"
+1. Ruth to Korede: "I understand your position."
+2. Korede: "Do you? I'm watching people die. Every day."
+3. Ruth: "I know. But she's out there. Waiting."
+4. Korede: "Maybe. Or it's nothing. And you risk millions on faith."
+5. Ruth: "Yes. I do."
+6. Korede: "Then go. But I'm not leaving my post."
 
 **EMOTIONAL BEATS:**
-- Ruth: Fierce determination
-- Director: Moral weight of decision
-- Diana: Supporting Ruth silently
-- Ruth: Won't abandon Ahdia
-- Director: Impossible choice
+- Ruth: Respects his choice, won't argue
+- Korede: Conflict - wants to help but can't justify it
+- Both: Respect despite disagreement
+- Neither wrong, both right
+- Painful separation
 
 **CONSEQUENCES:**
-- Ruth advocates for faith over certainty
-- Personal loyalty vs public safety
-- Director forced to choose
-- No good options
-- Someone's life vs many lives
+- Korede staying to defend civilians
+- Ruth proceeding without him
+- No animosity but clear split
+- Both/and: Both choices valid
+- Strategic debate resolved by action
 
-**TENSION:** Moral crisis
-
-**WHAT COULD HAPPEN NEXT:**
-1. Director refuses - team must accept
-2. Director agrees - rift operation authorized
-3. Compromise solution
+**TENSION:** Respectful conflict
 
 ---
 
-## SCENE 8: Authorization Denied (REVISED ENDING)
+## SCENE 7: Ruth's Coalition
 
-**Type:** Cliffhanger/Denial
-**Location:** Facility control room
-**Characters:** Ruth, Diana, facility director, team
+**Type:** Planning/Determination
+**Location:** Resistance HQ
+**Characters:** Ruth, Diana, Ben, Victor, Tess, Ryu
 
 **STORY BEATS:**
-1. Director: [long pause] "I need time to consider this."
-2. Ruth: "We don't have time. That signal is active NOW."
-3. Director: "And if it's a trap? If it's Bellatrix?"
-4. Diana: "The coordinates match theoretical position for dimensional substrate."
-5. Director: "I need 24 hours. We'll evacuate sectors as precaution. But I'm not authorizing until I'm certain."
+1. Ruth: "We're going to the facility. With or without support."
+2. Diana: "I can calculate the approach vector."
+3. Ben: "I'm with you."
+4. Victor: "Of course."
+5. Tess: "Always."
+6. Ryu: "Mother FAERIS will need my interface."
+7. Ruth: "Then we leave in the morning. Find Ahdia. Bring her home."
 
 **EMOTIONAL BEATS:**
-- Director: Refusing to decide under pressure
-- Ruth: Frustrated, desperate
-- Team: Torn between hope and accepting it might not happen
-- Diana: Calculating - signal could fade
-- All: Unbearable waiting
+- Ruth: Determined, grateful
+- Coalition: United despite opposition
+- All: Understanding enormous risk
+- Choosing faith over certainty
+- Family over strategy
+- Love over pragmatism
 
 **CONSEQUENCES:**
-- Authorization DENIED (for now)
-- 24-hour deliberation period
-- Evacuation begins anyway (precaution)
-- Ruth must wait
-- Signal still transmitting
-- No guarantee director will agree
-- Team fracturing under uncertainty
+- Coalition formed (6 people)
+- Korede not joining
+- Resistance not supporting
+- Limited resources
+- Must convince international facility alone
+- Journey to facility begins
+- Pattern: "CADENS waits. Go Squad go."
 
-**TENSION:** Unbearable waiting, hope deferred
-
-**CHAPTER ENDS**
-
-**WHAT COULD HAPPEN NEXT:**
-1. [CHAPTER 16: FLASHBACK - "The Between, Two Weeks Earlier" - Ahdia's POV]
-2. [CHAPTER 17: Earth - Ruth's crisis, building pressure]
-3. [Braided timeline structure through Chapter 30]
-4. [CHAPTER 31: Present moment - Rift opens, escape sequence]
+**CHAPTER ENDS:** Ruth's coalition departing for facility despite opposition
 
 ---
 
 ## Chapter 15 Summary (REVISED)
 
 **Major Events:**
-- Team arrives at international artificial sun facility
-- Diana briefs scientists on dimensional rift theory
-- Mother FAERIS provides technical data and credibility
-- SHOCKING: Weak transmission signal detected from The Between
-- Signal is artificial but too weak to decode
-- Location matches theoretical coordinates for The Between
-- Debate: Could be Ahdia, could be trap, could be anything
-- Director explains risks: 4-minute window, supernova danger, regional catastrophe
-- Ruth advocates for faith: "That signal is a person. My family."
-- **Director DENIES authorization** - needs 24 hours to decide
-- Chapter ends: Team waiting, uncertain, signal still transmitting
+- Days after clone defeat, team regrouping
+- Mother FAERIS detects artificial signal from The Between
+- Signal matches coordinates, someone is transmitting
+- Ruth: "It's Ahdia. We rescue her."
+- Korede: "Wrong priority. TRIOMF/Kain/Bellatrix still active. I'm defending civilians."
+- Strategic debate: Personal loyalty vs strategic necessity
+- Diana explains requirements: Artificial sun facility, fusion collapse, 4-minute window, supernova risk
+- Coalition forms: Ruth, Diana, Ben, Victor, Tess, Ryu (pro-rescue)
+- Opposition: Korede, resistance leaders (wrong priority, can't spare resources)
+- Korede refuses to help, stays to defend civilians
+- Ruth's coalition departs for facility without full team support
+- Pattern established: Ruth acts despite opposition (Go Squad go)
 
 **Character Status:**
-- **Ruth**: Advocated for impossible choice - faith over certainty (denied)
-- **Diana**: Technical advisor, supporting Ruth's position
-- **Team**: United in desperate hope, now frustrated by delay
-- **Director**: Refusing to authorize without certainty
+- **Ruth**: Leading coalition, choosing faith over certainty
+- **Korede**: Defending civilians, can't justify rescue mission
+- **Coalition**: Ben, Victor, Tess, Ryu, Diana (supporting Ruth)
+- **Opposition**: Korede, resistance leaders (skeptical, focused on active threats)
 
 **Key Relationships:**
-- Ruth ↔ Ahdia: Won't abandon her, chooses faith
-- Team ↔ Ruth: Trust her leadership despite denial
-- Ruth ↔ Director: Trying to convince him, failing
+- Ruth ↔ Korede: Respectful conflict, both valid positions
+- Ruth ↔ Coalition: United in faith-based mission
+- Team ↔ Resistance: Losing support, proceeding anyway
 
 **Thematic Focus:**
 - Faith vs certainty
-- Personal loyalty vs public safety
-- Hope as radical choice (deferred)
-- Love worth impossible risk (risk not yet taken)
-- Trust without proof (challenged)
+- Personal loyalty vs strategic necessity
+- Family vs war
+- Both/and: Both choices valid
+- "CADENS waits. Go Squad go."
 
 **Setup for Next:**
-- **BRAIDED TIMELINE STRUCTURE begins**
-- **Chapter 16**: FLASHBACK - "The Between, Two Weeks Earlier" (Ahdia POV)
-- **Chapter 17**: Earth timeline - Ruth's crisis continues (Earth POV)
-- Alternating chapters build parallel tension
-- Chapters 16-30: Dual timelines converge
-- Chapter 31: Present moment - Rift opens, escape sequence
-
-**Dramatic Stakes:**
-- Signal is TRANSMITTING right now
-- But rift is NOT open yet
-- Authorization uncertain
-- Reader knows: Someone is sending that signal
-- But WHO? And will Earth team open rift in time?
-- Two timelines racing toward convergence
+- **Chapter 16**: FLASHBACK - Ahdia in The Between (weeks earlier)
+- **Chapter 17**: Journey to facility, complications
+- **Braided timeline**: Earth (odd chapters) vs Between (even chapters)
+- Korede's absence from Chapters 17-26
+- **Chapter 27**: Korede arrives (turning point)
+- **Chapter 31**: Convergence
 
 ---
 
-*End Chapter 15 Beats - Begin Flashback Sequence Next*
+*End Chapter 15 Beats - Strategic split established, Ruth's coalition formed*
