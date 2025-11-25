@@ -1,9 +1,17 @@
 # Book 4 - Chapter 16: Arrival in The Between
 
 **POV:** Ahdia
-**Timeline:** The Between (Chapter 16-30), Earth subjective: moments after Book 3 Chapter 19
+**Timeline:** FLASHBACK - Moments after Book 3 Chapter 19 ending (Bellatrix throws her through rift)
 **Location:** The Between - Interdimensional prison space
 **Emotional Arc:** Terror → Survival mode → First discovery
+
+**NARRATIVE STRUCTURE NOTE:**
+- Chapter 15 ended with Earth team detecting mysterious signal
+- Chapter 16 cuts to FLASHBACK: What happened to Ahdia after Bellatrix threw her
+- Audience NOW sees what the team DOESN'T know yet
+- Between chapters (16, 18, 20, etc.) = Ahdia's subjective months in The Between
+- Earth chapters (15, 17, 19, etc.) = Days passing on Earth searching for her
+- Reader knows both timelines racing toward Chapter 31 convergence
 
 ---
 
