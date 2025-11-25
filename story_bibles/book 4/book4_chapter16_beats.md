@@ -52,29 +52,63 @@
 13. "Distribute impact. Don't lock up. Roll through it."
 14. Hits ground HARD - alien dirt, wrong gravity (lighter than Earth)
 15. Rolls across rough terrain, momentum carrying her
-16. Comes to rest against rock formation, winded but alive
+16. **Impact knocks her unconscious**
 
 **PHYSICAL STATE:**
-- Bruised, scraped, but nothing broken
+- Unconscious from impact
+- Bruised, scraped, but nothing broken (Victor's training saved her)
 - Battlesuit absorbed most of impact
 - Victor's PLF training saved her from broken spine
-- Disoriented from dimensional transit
 
 **EMOTIONAL BEATS:**
 - Primal terror during fall
 - Muscle memory overriding panic
-- Brief gratitude: "Victor's drills. Hundred times. He saved me."
-- Then: horror at situation
+- Then: darkness (knocked out)
 
 **CONSEQUENCES:**
-- Ahdia alive but stranded in alien dimension
+- Ahdia alive but unconscious
 - Rift closed - no visible way back
 - Victor's training proved essential
-- Alone in unknown space
+- Time passing while she's out
 
 ---
 
-## SCENE 2: The Wrong Sky
+## SCENE 2: Waking to Ryu's Voice
+
+**Type:** Disorientation/Character
+**Location:** The Between - Where she landed
+
+**STORY BEATS:**
+1. Darkness
+2. Voice: "Ahdia. Wake up."
+3. Ryu's voice - familiar, concerned
+4. Confusion: Why is Ryu here?
+5. "Ahdia. You need to wake up now."
+6. Eyes opening - visor HUD fuzzy, coming into focus
+7. "Ryu?" (disoriented, hopeful)
+8. Voice: "Clarification: I am AR-Ryu, holographic AI assistant integrated into your visor system."
+9. Confusion clearing - not Ryu. AR-Ryu.
+10. Sits up slowly, head pounding
+11. AR-Ryu hologram flickers into view - miniature Ryu projection from visor
+12. "You were unconscious for 47 minutes. Air supply: 5 hours, 13 minutes remaining."
+13. Reality crashes back: Not Ryu. Alone. Stranded.
+
+**EMOTIONAL BEATS:**
+- Hope during waking (Ryu's voice = rescue?)
+- Crushing disappointment (just AI)
+- Disorientation giving way to horror
+- "Not him. Just... his voice."
+- Loneliness intensifying
+
+**CONSEQUENCES:**
+- 47 minutes lost while unconscious
+- AR-Ryu establishes presence (will be only companion)
+- Air supply continuing to drain
+- Ahdia must process being truly alone
+
+---
+
+## SCENE 3: The Wrong Sky
 
 **Type:** Survival Horror/Atmosphere
 **Location:** The Between - Landing site
@@ -117,7 +151,7 @@
 
 ---
 
-## SCENE 3: Alone
+## SCENE 4: Alone
 
 **Type:** Character moment / Isolation
 **Location:** The Between - between landing site and ruins
@@ -156,7 +190,7 @@
 
 ---
 
-## SCENE 4: The Ruins
+## SCENE 5: The Ruins
 
 **Type:** Exploration / Discovery
 **Location:** Ancient ruins - approach and entry
@@ -198,7 +232,7 @@
 
 ---
 
-## SCENE 5: Remembering AR-Ryu
+## SCENE 6: Remembering AR-Ryu
 
 **Type:** Survival Engineering
 **Location:** Panic room - work area
@@ -257,7 +291,7 @@
 
 ---
 
-## SCENE 5: First Night
+## SCENE 7: First Night
 
 **Type:** Reflection/Character
 **Location:** Panic room - settling in
