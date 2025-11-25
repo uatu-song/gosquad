@@ -242,7 +242,7 @@ class KnowledgeBase:
             ('story_bibles/book 4/EMOTIONAL_ARC_AHDIA_ARRYU.md', None, 80),
 
             # Key character profiles
-            ('character_profiles/Ahdia Bacchus (Auerbach)', None, 100),
+            ('character_profiles/Ahdia Auerbach', None, 100),
             ('character_profiles/Bellatrix_Naima.md', None, 80),
 
             # Critical worldbuilding
