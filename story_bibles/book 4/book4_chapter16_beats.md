@@ -2,21 +2,22 @@
 
 **POV:** Ahdia
 **Timeline:** FLASHBACK - Moments after Book 3 Chapter 19 ending (Bellatrix throws her through rift)
-**Location:** The Between - Interdimensional prison space
-**Emotional Arc:** Terror → Survival mode → First discovery
+**Location:** The Between - Bellatrix's dimensional prison
+**Emotional Arc:** Terror → Survival mode → First relief
 
 **NARRATIVE STRUCTURE NOTE:**
 - Chapter 15 ended with Earth team detecting mysterious signal
-- Chapter 16 cuts to FLASHBACK: What happened to Ahdia after Bellatrix threw her
+- Chapter 16 cuts to FLASHBACK: What happened to Ahdia after Bellatrix threw her through rift
 - Audience NOW sees what the team DOESN'T know yet
+- **Expands Book 3 arrival beats** (book3_ahdia_stranded_beats.md) with additional detail
 
 **TIME DILATION (Critical):**
 - **Earth time (Ch 15-31):** ~2-3 weeks
 - **Between time (Ch 16-30):** Several MONTHS for Ahdia
 - Dimensional physics = time flows differently
-- **Dramatic irony:** Ruth fights for 2 weeks → Ahdia waits for MONTHS
-- Earth: "We need to hurry, every minute counts!"
-- Between: "Have they forgotten me? Are they even looking?"
+- **Dramatic irony:** Ruth organizing for 2 weeks → Ahdia waiting for MONTHS
+- Earth: "Every minute counts!"
+- Between: "Have they forgotten me?"
 - Both racing toward same convergence point from opposite time experiences
 
 **Chapter Pattern:**
@@ -26,129 +27,178 @@
 
 ---
 
-## SCENE 1: The Fall
+## SCENE 1: Through the Rift
 
-**Type:** Action/Survival
-**Location:** Dimensional rift / The Between atmosphere
+**Type:** Action/Horror
+**Location:** Dimensional rift transitioning to The Between
 
 **STORY BEATS:**
 1. Ahdia tumbling through dimensional gateway
-2. Rift sealing behind her - no way back
-3. Freefall through wrong-physics space
-4. **Victor's training kicks in:** Parkour landing technique (PLF - parachute landing fall)
-5. Recalls Victor teaching her: "Tuck, roll, distribute impact"
-6. Body moving on muscle memory
-7. **Nanotech emergency protocol activates:**
-   - Visor detects vacuum/hostile atmosphere
-   - Auto-deploys EVA mode
-   - Nanotech head cover materializes from collar
-   - Seals around neck, pressurizes
-   - Emergency oxygen generation kicks in
-8. Hits ground hard but controlled - survives impact
-9. Rolls, distributes force across body instead of spine
-10. Comes to rest, winded but alive
+2. Space warping around her - wrong physics, wrong geometry
+3. Rift sealing behind her - glimpse of Earth disappearing
+4. No way back - portal closing
+5. Freefall through alien space
+6. Different colors, different light - nothing makes sense
+7. **Battlesuit sensors alert mid-fall:** "WARNING: Atmosphere unbreathable"
+8. **Emergency protocol auto-deploys during freefall:**
+   - Diamond-weave pressure-sealed head covering deploys
+   - Transparent material wraps over head from collar
+   - Seals at neck, pressurizes
+   - HUD flickers to life across visor
+9. **HUD display:** "Air supply: 6 hours"
+10. Ground rushing up - alien terrain below
+11. **Victor's training kicks in:** Muscle memory from parkour drills
+12. Body positioning mid-fall: Tuck, prepare to roll, protect spine
+13. "Distribute impact. Don't lock up. Roll through it."
+14. Hits ground HARD - alien dirt, wrong gravity (lighter than Earth)
+15. Rolls across rough terrain, momentum carrying her
+16. Comes to rest against rock formation, winded but alive
 
 **PHYSICAL STATE:**
-- Bruised, not broken (Victor's training saved her)
-- EVA mode active - can breathe
-- Visor HUD showing: "Hostile environment detected"
-- AR-Ryu initializing
+- Bruised, scraped, but nothing broken
+- Battlesuit absorbed most of impact
+- Victor's PLF training saved her from broken spine
+- Disoriented from dimensional transit
 
 **EMOTIONAL BEATS:**
 - Primal terror during fall
 - Muscle memory overriding panic
-- Grateful for Victor's obsessive training drills
-- "He made me practice this a hundred times. Asshole saved my life."
+- Brief gratitude: "Victor's drills. Hundred times. He saved me."
+- Then: horror at situation
 
 **CONSEQUENCES:**
-- Ahdia alive but stranded
-- EVA mode draining visor battery (1% per hour active)
-- Must find breathable atmosphere or battery dies in ~100 hours
-- Victor's training proved essential - callback established
+- Ahdia alive but stranded in alien dimension
+- Rift closed - no visible way back
+- Victor's training proved essential
+- Alone in unknown space
 
 ---
 
-## SCENE 2: First Observations
+## SCENE 2: The Wrong Sky
 
-**Type:** Survival/Worldbuilding
-**Location:** The Between - Landing site (ruins visible in distance)
+**Type:** Survival Horror/Atmosphere
+**Location:** The Between - Landing site
 
 **STORY BEATS:**
-1. Ahdia standing, assessing situation
-2. AR-Ryu finishes initialization: "Emergency protocols active. Dimensional displacement detected."
-3. Scans environment:
-   - Atmosphere: Thin but breathable (barely) - needs supplement
-   - Gravity: 0.8 Earth normal
-   - Temperature: Habitable range
-   - Time: Flowing strangely (visor can't get stable reading)
-4. **Realizes: Temporal powers don't work here**
-   - Tries temporal perception - nothing
-   - No connection to Hyper Seed
-   - "I'm just... human here."
-5. Sees ruins on horizon - massive ancient structures
-6. AR-Ryu: "Structures appear artificial. Recommend investigation for resources."
-7. Decision: Move toward ruins or stay put?
-8. Chooses ruins - needs shelter, possible supplies
+1. Ahdia pushes herself up, looks around
+2. Breathing through helmet - recycled air, metallic taste
+3. Wrong sky - colors she's never seen through visor, no sun, ambient light from nowhere
+4. Wrong stars - constellations that don't exist
+5. Two moons? Three? Something in orbit that makes her head hurt to look at
+6. "This isn't Earth. Not even close."
+7. Landscape: Barren, rocky, crystalline formations jutting from ground
+8. Sound: Dead silence - no wind, no life, nothing
+9. Sees massive structures on horizon - ancient ruins
+10. HUD reminder: "Air supply: 5 hours, 47 minutes"
 
 **ENVIRONMENTAL DETAILS:**
-- Sky: Wrong color, no sun, ambient light from no clear source
-- Landscape: Barren, rocky, occasional crystalline formations
-- Sound: Dead - no wind, no life, just silence
-- The ruins: Kilometers away, massive scale, clearly non-human architecture
-
-**AR-RYU INTERACTION:**
-- Clinical, helpful, but purely functional
-- Ahdia treating him as GPS/HUD interface
-- Battery: 99% (1% used during fall/scans)
-
----
-
-## SCENE 3: The Ruins - Panic Room Discovery
-
-**Type:** Exploration/Discovery
-**Location:** Ancient ruins - outer structures
-
-**STORY BEATS:**
-1. Reaches ruins after 2-hour walk
-2. Architecture is *wrong* - non-Euclidean angles, too-large doorways
-3. AR-Ryu: "Structures predate known civilizations. Technology level: Post-singularity."
-4. Explores cautiously - finds evidence of battle/destruction
-5. Discovers sealed chamber - **The Panic Room**
-6. Emergency bunker built into ruins
-7. **Ahdia realizes: Someone was *imprisoned* here**
-   - Panic room = prisoner's refuge
-   - This is a *dimensional prison*
-   - The Between isn't natural - it's a JAIL
-8. Remembers Book 1 transcendence: "The hallway" she glimpsed
-9. "Bellatrix. This is where the Conclave trapped her."
-10. Finds panic room access - still functional (ancient tech)
-
-**THE PANIC ROOM:**
-- Self-contained survival space
-- Emergency supplies (ancient but preserved)
-- Breathable atmosphere maintained by unknown tech
-- **Components scattered around:**
-  - Atmospheric recyclers
-  - Water reclamation system (parts)
-  - Power cells (depleted)
-  - Storage containers (mostly empty)
-  - Medical supplies (degraded)
+- Sky: Wrong color through visor - violet-tinged, sickly
+- No sun visible, but light everywhere (sourceless illumination)
+- Gravity: Slightly lighter than Earth (noticed when standing)
+- Temperature: Habitable range (battlesuit sensors confirm)
+- The ruins: Kilometers away, massive non-human architecture
+- Complete silence - unnaturally quiet
 
 **EMOTIONAL BEATS:**
-- Awe at scale/age of ruins
-- Growing dread: "This is a prison. I'm in a prison."
-- Recognition: Bellatrix was here, maybe for eons
-- Fear: "If the Conclave imprisoned HER here, what chance do I have?"
+- Ahdia: Growing horror at wrongness
+- Battlesuit protecting her (grateful for tech)
+- But 6 hour air limit = ticking clock
+- Not just another location - another DIMENSION
+- Cosmically displaced
+- Existential terror + survival urgency
+- "Where the fuck am I?"
 
 **CONSEQUENCES:**
-- Found shelter (panic room = safe base)
-- Breathable atmosphere = can deactivate EVA mode (save battery)
-- Discovered components for water system
-- Understands The Between's true nature
+- Realizes dimensional displacement (not just planet)
+- 6 hour air supply = must find breathable environment
+- Ruins = only visible destination
+- Completely alone in alien dimension
+- Time pressure begins
 
 ---
 
-## SCENE 4: The Water Problem
+## SCENE 3: Alone
+
+**Type:** Character moment / Isolation
+**Location:** The Between - between landing site and ruins
+
+**STORY BEATS:**
+1. Ahdia standing alone in alien landscape
+2. Tries comms: "Tess... can you hear me?"
+3. Silence - no radio, no FAERIS connection, nothing
+4. Tries again: "Ruth? Anyone?"
+5. Nothing
+6. **Realizes: No team. No support. No rescue coming.**
+7. **Tries temporal powers:**
+   - Reaches for Hyper Seed connection
+   - Nothing - powers don't work here
+   - "I'm just... human here. Completely human."
+8. First time truly alone since Book 1
+9. HUD update: "Air supply: 5 hours, 42 minutes"
+10. Looks at ruins - only option
+11. Starts walking
+
+**EMOTIONAL BEATS:**
+- Ahdia: Crushing loneliness
+- Team was everything - now nothing
+- No powers = no advantage
+- Fear and grief
+- "I survived Book 1. Book 2. I'll survive this."
+- Determination forming despite terror
+- Must move or die
+
+**CONSEQUENCES:**
+- Ahdia's isolation complete
+- No temporal powers in The Between
+- No support system
+- Must rely on human skills only
+- Time pressure continuing (air running out)
+
+---
+
+## SCENE 4: The Ruins
+
+**Type:** Exploration / Discovery
+**Location:** Ancient ruins - approach and entry
+
+**STORY BEATS:**
+1. Ahdia reaches ruins after walking (time unclear in alien space)
+2. HUD: "Air supply: 4 hours remaining"
+3. Ruins up close: MASSIVE scale, clearly abandoned
+4. Architecture alien - non-Euclidean angles, doorways too large
+5. Non-human builders (what species? how long ago?)
+6. Evidence of abandonment, not destruction
+7. "Someone lived here. Someone... left."
+8. Approaching carefully - must find breathable zone or die
+9. Parents' archaeology training surfacing: Read the structure
+10. Environmental controls might still function
+11. Enters cautiously
+
+**ENVIRONMENTAL DETAILS:**
+- Ruins: Ancient beyond measure, weathered but intact
+- Scale: Built for beings larger than humans
+- Style: Organic curves mixed with geometric precision
+- Purpose: Unknown (habitation? research? prison?)
+- Condition: Abandoned but not destroyed
+
+**EMOTIONAL BEATS:**
+- Ahdia: Hope mixed with caution
+- Time pressure mounting (4 hours left)
+- Archaeologist instincts activating (parents' legacy)
+- Ruins mean civilization existed
+- But abandoned = something happened
+- Survival curiosity + desperation
+
+**CONSEQUENCES:**
+- Evidence of past civilization
+- Possible shelter with atmosphere (hope)
+- Also possible danger (caution)
+- Air running out faster
+- 4 hours to find breathable space or die
+
+---
+
+## SCENE 5: Remembering AR-Ryu
 
 **Type:** Survival Engineering
 **Location:** Panic room - work area
