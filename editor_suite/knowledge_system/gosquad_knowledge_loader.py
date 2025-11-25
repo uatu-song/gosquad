@@ -240,6 +240,8 @@ class KnowledgeBase:
             # Book 4 current state
             ('story_bibles/book 4/SESSION_DECISIONS_2025-11-24.md', None, 150),
             ('story_bibles/book 4/EMOTIONAL_ARC_AHDIA_ARRYU.md', None, 80),
+            ('story_bibles/book 4/book4_chapter15_beats.md', None, 100),
+            ('story_bibles/book 4/BOOK4_CHAPTERS_1-15_RECAP.md', None, 150),
 
             # Key character profiles
             ('character_profiles/Ahdia Auerbach', None, 100),
@@ -247,6 +249,9 @@ class KnowledgeBase:
 
             # Critical worldbuilding
             ('story_bibles/artifacts/Hyper_Seed.md', None, 50),
+
+            # Scene generation system
+            ('editor_suite/scene_generation/SCENE_GENERATION_SCHEMA.md', None, 100),
         ]
 
         for file_info in essential_files:
