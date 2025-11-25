@@ -9,9 +9,20 @@
 - Chapter 15 ended with Earth team detecting mysterious signal
 - Chapter 16 cuts to FLASHBACK: What happened to Ahdia after Bellatrix threw her
 - Audience NOW sees what the team DOESN'T know yet
-- Between chapters (16, 18, 20, etc.) = Ahdia's subjective months in The Between
-- Earth chapters (15, 17, 19, etc.) = Days passing on Earth searching for her
-- Reader knows both timelines racing toward Chapter 31 convergence
+
+**TIME DILATION (Critical):**
+- **Earth time (Ch 15-31):** ~2-3 weeks
+- **Between time (Ch 16-30):** Several MONTHS for Ahdia
+- Dimensional physics = time flows differently
+- **Dramatic irony:** Ruth fights for 2 weeks → Ahdia waits for MONTHS
+- Earth: "We need to hurry, every minute counts!"
+- Between: "Have they forgotten me? Are they even looking?"
+- Both racing toward same convergence point from opposite time experiences
+
+**Chapter Pattern:**
+- Between chapters (16, 18, 20, etc.) = Ahdia's months-long survival
+- Earth chapters (15, 17, 19, etc.) = Days passing while searching
+- Reader knows both timelines, characters don't
 
 ---
 
