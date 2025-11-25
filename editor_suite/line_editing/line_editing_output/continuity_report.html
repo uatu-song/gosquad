@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Continuity Check Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+        .header h1 { font-size: 2em; margin-bottom: 10px; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .stat-box {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #3498db;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .content { padding: 30px; }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .contradiction-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #e74c3c;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .severity-high {
+            border-left-color: #e74c3c;
+        }
+        .severity-medium {
+            border-left-color: #f39c12;
+        }
+        .severity-low {
+            border-left-color: #f1c40f;
+        }
+        .severity-badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .severity-badge.high { background: #e74c3c; }
+        .severity-badge.medium { background: #f39c12; }
+        .severity-badge.low { background: #f1c40f; }
+        .context-box {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+        .chapter-tag {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        .character-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .character-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .attribute-list {
+            list-style: none;
+            padding: 0;
+        }
+        .attribute-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .attribute-list li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Continuity Check Report</h1>
+            <p>book1_manuscript.txt</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-value">31</div>
+                <div class="stat-label">Chapters</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">85</div>
+                <div class="stat-label">Characters Tracked</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">15</div>
+                <div class="stat-label">Potential Issues</div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="section">
+                <h2>⚠️ Potential Contradictions</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    These are potential inconsistencies detected. Review each to determine
+                    if it's an actual error or an intentional variation.
+                </p>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#1: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Firas</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 1</span>
+                                "“Don’ t thank me,” Firas responded with his back turned to her so she could not see his eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 1</span>
+                                "Firas rolled his eyes, saying, “No first names over comms"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "Vaughn / Go Squad / 33 "Hey , Nightingale," Firas smiled, mostly just with his eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "" Firas furrowed his eyebrows and squinted towards his sister , lifting his head to see she was sporting a bandage near the pit of her elbow"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 5</span>
+                                "Firas stared blankly to search his memory and narrowed his eyebrows"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 5</span>
+                                "" Firas closed his eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 12</span>
+                                "" Firas closed his eyes"
+                            </div>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "When Firas's eyes finally opened—blurry at first, slowly coming to focus, then sharply seen—Firas almost wished he had died instead of facing his olde"
+                            </div>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                ""Firas…" she said as tears gathered in her eyes"
+                            </div>
+<p style='margin-left: 20px;'><strong>'breaking'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "" Not breaking eye contact with Firas, Ruth replied, "It's a good sign he's awake"
+                            </div>
+<p style='margin-left: 20px;'><strong>'whose'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 12</span>
+                                "She stopped in front of Firas, whose eyes were locked on the floor , a tear caught mid-fall"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#2: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> His</p>
+                    <p><strong>Attribute:</strong> age desc</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'old'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 18</span>
+                                "His older sister had been saved from a carjacking two weeks ago"
+                            </div>
+<p style='margin-left: 20px;'><strong>'teenage'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 24</span>
+                                "His hand—still wrapped around those teenagers—stopped"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#3: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Faraz</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 2</span>
+                                "Faraz watched from the corner of his eyes as his children unpacked their things and set up their tent"
+                            </div>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 2</span>
+                                "Naima caught Faraz's eye and nodded toward Ahdia, who had already retreated to fussing with her sleeping bag, face carefully neutral"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#4: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Ahdia</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 2</span>
+                                "Naima caught Faraz's eye and nodded toward Ahdia, who had already retreated to fussing with her sleeping bag, face carefully neutral"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ruth's eyes widened on Ahdia's approach, taking her hands out of her pockets and bending her knees to prepare for however Ahdia was going to land; sho"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 19</span>
+                                "" Ahdia's eyes rolled, tried to find Ruth's face"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 19</span>
+                                "Ahdia's eyes closed"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 20</span>
+                                "" Ahdia's eyes burned"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 24</span>
+                                "Ahdia's eyes were closed"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 24</span>
+                                "Ahdia's eyes were closed"
+                            </div>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 2</span>
+                                "Ahdia gently laughed before she closed her eyes and he watched her doze off"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ahdia's anticipation was getting the better of her as she felt her heart beating in her eyes more and more with every step they took"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 7</span>
+                                "When Ruth saw that Ahdia was paying attention, she motioned with her eyes to the box"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 19</span>
+                                "Ahdia closed her eyes, took a breath"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 19</span>
+                                "Ahdia opened her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 20</span>
+                                "" Ahdia closed her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 24</span>
+                                "" Ahdia opened her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 24</span>
+                                "His words finally appeared on the tablet: RATIO = 1:2000 Another line: TOO FAST = CELLS BURN A third: TRY 1:1500 Ahdia opened her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 24</span>
+                                "" Ahdia opened her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 24</span>
+                                "Ahdia closed her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 24</span>
+                                "Ahdia opened her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 25</span>
+                                "" "We're not dead," Ruth confirmed and didn't take her eyes off Ahdia"
+                            </div>
+<p style='margin-left: 20px;'><strong>'goo'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "Ahdia was feeling touched at the display so she allowed the lovebirds to goo-goo eye each other for an additional few seconds before interjecting, "So"
+                            </div>
+<p style='margin-left: 20px;'><strong>'an'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ruth knelt down, keeping an eye on Ahdia, amused at her fumbling attempts at each level"
+                            </div>
+<p style='margin-left: 20px;'><strong>'defeated'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 7</span>
+                                "Already in shock, Ahdia looked up from staring at the blood on her hands to Ruth, whose concerned and defeated eyes met her own"
+                            </div>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 12</span>
+                                "His eyes found the space where Ahdia had been standing"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 29</span>
+                                "He kept his eyes on Ahdia the whole time"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#5: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Ahdia</p>
+                    <p><strong>Attribute:</strong> hair color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 29</span>
+                                "Just enough to make Ahdia's hair lift, the oversized tactical suit ripple against her body"
+                            </div>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 29</span>
+                                "Ahdia felt it now—not just on her hair and clothes"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#6: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Naima</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 2</span>
+                                "Naima chuckled and raised her eyebrows knowingly"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 2</span>
+                                ""A challenge," Naima said, her eyes twinkling"
+                            </div>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 2</span>
+                                "Naima caught Faraz's eye and nodded toward Ahdia, who had already retreated to fussing with her sleeping bag, face carefully neutral"
+                            </div>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 2</span>
+                                "He darted his eyes to Naima who was equally stunned"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#7: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Ruth</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 3</span>
+                                "Feeling that she was wasting valuable time, she pursed her lips and closed her eyes before dialing Ruth"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 3</span>
+                                "" Ruth met her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "" She saw Ruth open her eyes and mouth slightly wider before turning away"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ruth raised her eyebrows, pouted her lips and tilted her head down, her eyes looking to her right before she began walking away"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ruth raised her eyebrows, pouted her lips and tilted her head down, her eyes looking to her right before she began walking away"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "She cupped the tops of her eyes to shield from the rain to see Ruth, standing with her hands in the pockets of her windbreaker and, if she knew any be"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 7</span>
+                                "When Ruth saw that Ahdia was paying attention, she motioned with her eyes to the box"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 7</span>
+                                "Ruth didn't betray any emotions on her face but her eyes were windows into her fright and terror"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 9</span>
+                                ""Lea," Ruth exhaled as she dropped her head back and closing her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 9</span>
+                                "" Battlea narrowed her eyebrows and came to stand next to Ruth"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 19</span>
+                                "Chapter 19 Ruth closed her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 20</span>
+                                "" Ruth met her eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 25</span>
+                                "" "We're not dead," Ruth confirmed and didn't take her eyes off Ahdia"
+                            </div>
+<p style='margin-left: 20px;'><strong>'breaking'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "" Not breaking eye contact with Firas, Ruth replied, "It's a good sign he's awake"
+                            </div>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 5</span>
+                                "" Ruth's eyebrows raised"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ruth's eyes widened on Ahdia's approach, taking her hands out of her pockets and bending her knees to prepare for however Ahdia was going to land; sho"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 19</span>
+                                "" Ahdia's eyes rolled, tried to find Ruth's face"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 23</span>
+                                "" Bourn met Ruth's eyes"
+                            </div>
+<p style='margin-left: 20px;'><strong>'an'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ruth knelt down, keeping an eye on Ahdia, amused at her fumbling attempts at each level"
+                            </div>
+<p style='margin-left: 20px;'><strong>'defeated'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 7</span>
+                                "Already in shock, Ahdia looked up from staring at the blood on her hands to Ruth, whose concerned and defeated eyes met her own"
+                            </div>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 7</span>
+                                "Ruth saw fire in his eyes, blinded by a lust for violence"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 23</span>
+                                "" Ruth met his eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 23</span>
+                                "" 
+
+Vaughn / Go Squad / 242 Ruth met his eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 26</span>
+                                "But his eyes tracked over her—assessing injuries with the same clinical precision Ruth used"
+                            </div>
+<p style='margin-left: 20px;'><strong>'put'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 9</span>
+                                ""Put eyes on, Gloomy ," Ruth ordered"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#8: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Vaughn</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "Vaughn / Go Squad / 33 "Hey , Nightingale," Firas smiled, mostly just with his eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 23</span>
+                                "" 
+
+Vaughn / Go Squad / 242 Ruth met his eyes"
+                            </div>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#9: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Go Squad</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "Vaughn / Go Squad / 33 "Hey , Nightingale," Firas smiled, mostly just with his eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 23</span>
+                                "" 
+
+Vaughn / Go Squad / 242 Ruth met his eyes"
+                            </div>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#10: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Squad</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 4</span>
+                                "Vaughn / Go Squad / 33 "Hey , Nightingale," Firas smiled, mostly just with his eyes"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 23</span>
+                                "" 
+
+Vaughn / Go Squad / 242 Ruth met his eyes"
+                            </div>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 6</span>
+                                "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#11: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Battlea</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 9</span>
+                                "" Battlea rolled her eyes and repeated, "I said, I don't think we're going to catch any fish here"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 9</span>
+                                "" Battlea narrowed her eyebrows and came to stand next to Ruth"
+                            </div>
+<p style='margin-left: 20px;'><strong>'all'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 9</span>
+                                "" Battlea and Gloom Girl avoided any and all eye contact"
+                            </div>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 25</span>
+                                "She could see it clicking into place—Night Knight's eyes widening, Battlea straightening despite her injuries, Crimson Sable's grip shifting on his bo"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#12: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Gloom Girl</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'all'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 9</span>
+                                "" Battlea and Gloom Girl avoided any and all eye contact"
+                            </div>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 25</span>
+                                "" Gloom Girl narrowed her eyes with the comprehension"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#13: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Knight</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 12</span>
+                                "Night Knight's eyes completed their blink"
+                            </div>
+
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 25</span>
+                                "She could see it clicking into place—Night Knight's eyes widening, Battlea straightening despite her injuries, Crimson Sable's grip shifting on his bo"
+                            </div>
+<p style='margin-left: 20px;'><strong>'his'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 21</span>
+                                "" Knight rolled his eyes, braced his shoulder against the frame, and threw his weight into it"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#14: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Bourn</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'had'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 14</span>
+                                ""We had eyes on all three ambush sites," Bourn said"
+                            </div>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 23</span>
+                                "" Bourn met Ruth's eyes"
+                            </div>
+
+                </div>
+
+                <div class="contradiction-item severity-medium">
+                    <span class="severity-badge medium">MEDIUM</span>
+                    <h3>#15: Character Attribute</h3>
+
+                    <p><strong>Character:</strong> Tess</p>
+                    <p><strong>Attribute:</strong> eye color</p>
+                    <p style="margin-top: 10px;"><strong>Different values found:</strong></p>
+<p style='margin-left: 20px;'><strong>'s'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 16</span>
+                                "Ryu tracked Tess's eyes on a secondary monitor , iris position, focal depth, reading where she was looking, where she wanted to go"
+                            </div>
+<p style='margin-left: 20px;'><strong>'her'</strong>:</p>
+                            <div class="context-box">
+                                <span class="chapter-tag">Chapter 16</span>
+                                "Another feed showed Tess reading the comments, tears in her eyes, typing a response: "People need to see this"
+                            </div>
+
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>👥 Character Attributes Tracked</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    Physical descriptions and attributes mentioned for each character.
+                </p>
+
+                <div class="character-card">
+                    <div class="character-name">Ahdia</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> goo, s, her, his, defeated, an
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 2, 4, 6, 7, 12, 19, 20, 24, 25, 29)
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 13, 14, 16, 25, 30)
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Hair Color:</strong> s, her
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 29)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Another</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> her
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 16, 24)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Battlea</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> s, her, all
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 9, 25)
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 22, 24, 29)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Because</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Height:</strong> tall
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 14)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Behind</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> see
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 18)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Bourn</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 13, 20, 23)
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Eye Color:</strong> had, s
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 14, 23)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Caledonia</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 9, 16)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Can</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 9, 19)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Cold</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapters 13, 14, 15, 18, 24, 26, 29, 30)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Could</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> her
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 8)
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Height:</strong> tall
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 14)
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 19)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Couldn</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> her
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 8)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Crimson</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> s
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 25)
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 29)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Crimson Sable</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> s
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 25)
+                            </span>
+                        </li>
+
+                        <li>
+                            <strong>Age Desc:</strong> old
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 29)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Don</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Eye Color:</strong> his
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 1)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-name">Each</div>
+                    <ul class="attribute-list">
+
+                        <li>
+                            <strong>Height:</strong> tall
+                            <span style="color: #999; font-size: 0.9em;">
+                                (mentioned in chapter 26)
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

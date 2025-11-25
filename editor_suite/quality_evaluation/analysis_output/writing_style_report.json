@@ -1,0 +1,785 @@
+{
+  "file": "/workspaces/gosquad/book1_manuscript.txt",
+  "voice_analysis": {
+    "active_count": 5830,
+    "passive_count": 231,
+    "passive_ratio": 0.038112522686025406,
+    "passive_examples": [
+      "They were supposed to be shadows, rumors, figments of overactive imaginations.",
+      "Our fine boys in blue are being pushed to the very ends of their abilities to enforce law and order ...",
+      "Anytime they saw themselves in any uploads or mentioned as part of the criminal element in the mains...",
+      "The woman that was being accosted, stunned, slowly regained composure. \u201cTh\u2026 thank you,\u201d she said, gr...",
+      "To be saved by a masked vigilante was implausible."
+    ]
+  },
+  "word_types": {
+    "adverb_density": 0.011766748584250454,
+    "adjective_density": 0.002551020408163265,
+    "top_adverbs": [
+      [
+        "really",
+        49
+      ],
+      [
+        "actually",
+        38
+      ],
+      [
+        "slowly",
+        38
+      ],
+      [
+        "probably",
+        36
+      ],
+      [
+        "quietly",
+        32
+      ],
+      [
+        "barely",
+        32
+      ],
+      [
+        "finally",
+        26
+      ],
+      [
+        "slightly",
+        26
+      ],
+      [
+        "exactly",
+        22
+      ],
+      [
+        "eventually",
+        19
+      ]
+    ],
+    "overused_adverbs": [
+      "especially",
+      "mostly",
+      "eventually",
+      "quickly",
+      "nearly",
+      "slowly",
+      "apparently",
+      "exactly",
+      "fully",
+      "quietly"
+    ]
+  },
+  "dialogue_narrative": {
+    "dialogue_chars": 289625,
+    "narrative_chars": 146668,
+    "dialogue_ratio": 0.6638314160438055,
+    "dialogue_sections": 2275,
+    "avg_dialogue_length": 127.3076923076923,
+    "dialogue_heavy_chapters": [
+      [
+        5,
+        0.7234177886144387
+      ],
+      [
+        7,
+        0.4422446328033162
+      ],
+      [
+        9,
+        0.6268115942028986
+      ],
+      [
+        11,
+        0.6627861244395501
+      ],
+      [
+        13,
+        0.5960761684939412
+      ]
+    ],
+    "narrative_heavy_chapters": [
+      [
+        1,
+        0.0
+      ],
+      [
+        2,
+        0.0
+      ],
+      [
+        3,
+        0.0810692694296744
+      ],
+      [
+        4,
+        0.0
+      ],
+      [
+        6,
+        0.0
+      ]
+    ]
+  },
+  "cliches": {
+    "count": 1,
+    "found": {
+      "burning the midnight oil": 1
+    },
+    "overused_phrases": [
+      [
+        "we need to",
+        15
+      ],
+      [
+        "she could see",
+        14
+      ],
+      [
+        "all of them",
+        14
+      ],
+      [
+        "s voice was",
+        13
+      ],
+      [
+        "she tried to",
+        13
+      ],
+      [
+        "t know how",
+        12
+      ],
+      [
+        "ruth looked at",
+        12
+      ],
+      [
+        "in her chest",
+        12
+      ]
+    ]
+  },
+  "sentence_variety": {
+    "sentence_types": {
+      "simple": 4112,
+      "compound": 1259,
+      "complex": 352,
+      "compound_complex": 338,
+      "question": 150,
+      "exclamation": 49
+    },
+    "avg_sentence_length": 12.16614420062696,
+    "sentence_length_variance": 11.843781128740186,
+    "shortest_sentence": 1,
+    "longest_sentence": 145,
+    "common_starters": [
+      [
+        "the",
+        591
+      ],
+      [
+        "she",
+        340
+      ],
+      [
+        "vaughn",
+        184
+      ],
+      [
+        "he",
+        137
+      ],
+      [
+        "ahdia",
+        116
+      ],
+      [
+        "and",
+        113
+      ],
+      [
+        "but",
+        109
+      ],
+      [
+        "they",
+        105
+      ],
+      [
+        "ruth",
+        100
+      ],
+      [
+        "i",
+        99
+      ]
+    ],
+    "variety_score": 0.9735032672167275
+  },
+  "pacing": [
+    {
+      "chapter": 1,
+      "avg_sentence_length": 3.2857142857142856,
+      "sentence_variance": 2.864276807966203,
+      "short_sentences": 7,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 2,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 3,
+      "avg_sentence_length": 12.03960396039604,
+      "sentence_variance": 9.97761930381519,
+      "short_sentences": 106,
+      "long_sentences": 20,
+      "action_words": 6,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 4,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 5,
+      "avg_sentence_length": 13.813765182186234,
+      "sentence_variance": 12.364477196781063,
+      "short_sentences": 122,
+      "long_sentences": 38,
+      "action_words": 6,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 6,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 7,
+      "avg_sentence_length": 10.86259541984733,
+      "sentence_variance": 11.062117019741397,
+      "short_sentences": 164,
+      "long_sentences": 26,
+      "action_words": 9,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 8,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 9,
+      "avg_sentence_length": 12.971590909090908,
+      "sentence_variance": 11.295327361182633,
+      "short_sentences": 86,
+      "long_sentences": 23,
+      "action_words": 5,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 10,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 11,
+      "avg_sentence_length": 9.65843621399177,
+      "sentence_variance": 8.269794859583513,
+      "short_sentences": 152,
+      "long_sentences": 12,
+      "action_words": 5,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 12,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 13,
+      "avg_sentence_length": 17.17117117117117,
+      "sentence_variance": 11.704987674756259,
+      "short_sentences": 35,
+      "long_sentences": 24,
+      "action_words": 5,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 14,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 15,
+      "avg_sentence_length": 15.24,
+      "sentence_variance": 10.39184295493345,
+      "short_sentences": 37,
+      "long_sentences": 15,
+      "action_words": 8,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 16,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 17,
+      "avg_sentence_length": 6.666666666666667,
+      "sentence_variance": 4.95419633267415,
+      "short_sentences": 69,
+      "long_sentences": 1,
+      "action_words": 1,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 18,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 19,
+      "avg_sentence_length": 13.298076923076923,
+      "sentence_variance": 13.13713161504466,
+      "short_sentences": 104,
+      "long_sentences": 29,
+      "action_words": 4,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 20,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 21,
+      "avg_sentence_length": 13.2012987012987,
+      "sentence_variance": 11.440063952987321,
+      "short_sentences": 77,
+      "long_sentences": 22,
+      "action_words": 8,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 22,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 23,
+      "avg_sentence_length": 15.48091603053435,
+      "sentence_variance": 11.091122331880365,
+      "short_sentences": 47,
+      "long_sentences": 21,
+      "action_words": 11,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 24,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 25,
+      "avg_sentence_length": 8.119718309859154,
+      "sentence_variance": 6.050238494154064,
+      "short_sentences": 201,
+      "long_sentences": 8,
+      "action_words": 6,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 26,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 27,
+      "avg_sentence_length": 6.371495327102804,
+      "sentence_variance": 4.704325967737124,
+      "short_sentences": 346,
+      "long_sentences": 2,
+      "action_words": 4,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 28,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 29,
+      "avg_sentence_length": 7.682072829131653,
+      "sentence_variance": 5.990051337936135,
+      "short_sentences": 523,
+      "long_sentences": 15,
+      "action_words": 19,
+      "pace": "fast"
+    },
+    {
+      "chapter": 30,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 31,
+      "avg_sentence_length": 7.366548042704626,
+      "sentence_variance": 5.920362819386353,
+      "short_sentences": 421,
+      "long_sentences": 7,
+      "action_words": 15,
+      "pace": "fast"
+    },
+    {
+      "chapter": 32,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 33,
+      "avg_sentence_length": 9.263157894736842,
+      "sentence_variance": 7.665201192789818,
+      "short_sentences": 178,
+      "long_sentences": 15,
+      "action_words": 14,
+      "pace": "fast"
+    },
+    {
+      "chapter": 34,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 35,
+      "avg_sentence_length": 6.37347294938918,
+      "sentence_variance": 4.58049525752861,
+      "short_sentences": 466,
+      "long_sentences": 4,
+      "action_words": 6,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 36,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 37,
+      "avg_sentence_length": 5.0,
+      "sentence_variance": 3.5169492516718166,
+      "short_sentences": 366,
+      "long_sentences": 0,
+      "action_words": 19,
+      "pace": "fast"
+    },
+    {
+      "chapter": 38,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 39,
+      "avg_sentence_length": 5.4375,
+      "sentence_variance": 3.980836003713484,
+      "short_sentences": 363,
+      "long_sentences": 1,
+      "action_words": 7,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 40,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 41,
+      "avg_sentence_length": 5.964705882352941,
+      "sentence_variance": 4.78710783083931,
+      "short_sentences": 434,
+      "long_sentences": 5,
+      "action_words": 9,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 42,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 43,
+      "avg_sentence_length": 6.472972972972973,
+      "sentence_variance": 4.627666010618446,
+      "short_sentences": 410,
+      "long_sentences": 1,
+      "action_words": 10,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 44,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 45,
+      "avg_sentence_length": 5.722044728434505,
+      "sentence_variance": 4.329414178499186,
+      "short_sentences": 264,
+      "long_sentences": 1,
+      "action_words": 31,
+      "pace": "fast"
+    },
+    {
+      "chapter": 46,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 47,
+      "avg_sentence_length": 5.044776119402985,
+      "sentence_variance": 3.313106267162395,
+      "short_sentences": 420,
+      "long_sentences": 1,
+      "action_words": 13,
+      "pace": "fast"
+    },
+    {
+      "chapter": 48,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 49,
+      "avg_sentence_length": 5.039893617021277,
+      "sentence_variance": 3.770829243040849,
+      "short_sentences": 339,
+      "long_sentences": 0,
+      "action_words": 16,
+      "pace": "fast"
+    },
+    {
+      "chapter": 50,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 51,
+      "avg_sentence_length": 7.067114093959732,
+      "sentence_variance": 5.130072450696839,
+      "short_sentences": 113,
+      "long_sentences": 1,
+      "action_words": 1,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 52,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 53,
+      "avg_sentence_length": 6.376278118609407,
+      "sentence_variance": 5.5004675068411855,
+      "short_sentences": 396,
+      "long_sentences": 4,
+      "action_words": 9,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 54,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 55,
+      "avg_sentence_length": 5.5595854922279795,
+      "sentence_variance": 4.813390630507985,
+      "short_sentences": 161,
+      "long_sentences": 1,
+      "action_words": 6,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 56,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 57,
+      "avg_sentence_length": 5.316725978647687,
+      "sentence_variance": 4.221117638806319,
+      "short_sentences": 248,
+      "long_sentences": 1,
+      "action_words": 10,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 58,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 59,
+      "avg_sentence_length": 5.23448275862069,
+      "sentence_variance": 4.0366376011807095,
+      "short_sentences": 381,
+      "long_sentences": 1,
+      "action_words": 12,
+      "pace": "fast"
+    },
+    {
+      "chapter": 60,
+      "avg_sentence_length": 2.0,
+      "sentence_variance": 0.0,
+      "short_sentences": 1,
+      "long_sentences": 0,
+      "action_words": 0,
+      "pace": "moderate"
+    },
+    {
+      "chapter": 61,
+      "avg_sentence_length": 7.023897058823529,
+      "sentence_variance": 5.614563739900288,
+      "short_sentences": 411,
+      "long_sentences": 6,
+      "action_words": 12,
+      "pace": "fast"
+    }
+  ],
+  "repetition": {
+    "repetitive_words": [
+      [
+        "faraz",
+        {
+          "count": 28,
+          "avg_distance": 90.70370370370371,
+          "frequency": 0.00037397157816005983
+        }
+      ]
+    ],
+    "alliteration_frequency": 0.061
+  }
+}

@@ -1,0 +1,744 @@
+{
+  "file": "/workspaces/gosquad/book1_manuscript.txt",
+  "basic_metrics": {
+    "total_words": 74872,
+    "unique_words": 6885,
+    "total_sentences": 7450,
+    "total_paragraphs": 319,
+    "total_chapters": 61,
+    "avg_word_length": 4.506838337429213,
+    "lexical_diversity": 0.09195693984400043,
+    "avg_sentence_length": 9.907382550335571,
+    "min_sentence_length": 1,
+    "max_sentence_length": 88,
+    "sentence_length_std": 8.319800058578876,
+    "avg_paragraph_length": 234.70846394984326,
+    "avg_sentences_per_paragraph": 30.952978056426332
+  },
+  "readability_scores": {
+    "flesch_reading_ease": 73.25630497837562,
+    "flesch_kincaid_grade": 5.538227431657862,
+    "gunning_fog": 8.099468826977011,
+    "automated_readability_index": 6.362587583032088,
+    "coleman_liau": 9.677978950742599,
+    "smog": 8.912720112005974
+  },
+  "word_frequency": {
+    "top_20_all": [
+      [
+        "the",
+        3726
+      ],
+      [
+        "to",
+        1409
+      ],
+      [
+        "she",
+        1270
+      ],
+      [
+        "a",
+        1232
+      ],
+      [
+        "and",
+        1200
+      ],
+      [
+        "her",
+        1191
+      ],
+      [
+        "it",
+        1014
+      ],
+      [
+        "was",
+        977
+      ],
+      [
+        "in",
+        877
+      ],
+      [
+        "of",
+        853
+      ],
+      [
+        "s",
+        838
+      ],
+      [
+        "you",
+        812
+      ],
+      [
+        "that",
+        757
+      ],
+      [
+        "t",
+        684
+      ],
+      [
+        "i",
+        682
+      ],
+      [
+        "he",
+        670
+      ],
+      [
+        "on",
+        554
+      ],
+      [
+        "ahdia",
+        548
+      ],
+      [
+        "at",
+        513
+      ],
+      [
+        "ruth",
+        503
+      ]
+    ],
+    "top_20_content": [
+      [
+        "was",
+        977
+      ],
+      [
+        "ahdia",
+        548
+      ],
+      [
+        "ruth",
+        503
+      ],
+      [
+        "said",
+        447
+      ],
+      [
+        "squad",
+        399
+      ],
+      [
+        "like",
+        384
+      ],
+      [
+        "vaughn",
+        319
+      ],
+      [
+        "had",
+        318
+      ],
+      [
+        "them",
+        263
+      ],
+      [
+        "just",
+        261
+      ],
+      [
+        "firas",
+        259
+      ],
+      [
+        "were",
+        253
+      ],
+      [
+        "time",
+        242
+      ],
+      [
+        "him",
+        241
+      ],
+      [
+        "kain",
+        224
+      ],
+      [
+        "back",
+        215
+      ],
+      [
+        "looked",
+        196
+      ],
+      [
+        "through",
+        192
+      ],
+      [
+        "could",
+        189
+      ],
+      [
+        "into",
+        187
+      ]
+    ],
+    "unique_single_use": 100
+  },
+  "chapter_statistics": [
+    {
+      "chapter": 1,
+      "word_count": 20,
+      "sentence_count": 7,
+      "paragraph_count": 2,
+      "avg_sentence_length": 2.857142857142857,
+      "unique_words": 15,
+      "lexical_diversity": 0.75
+    },
+    {
+      "chapter": 2,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 3,
+      "word_count": 2391,
+      "sentence_count": 202,
+      "paragraph_count": 10,
+      "avg_sentence_length": 11.836633663366337,
+      "unique_words": 877,
+      "lexical_diversity": 0.36679213718109577
+    },
+    {
+      "chapter": 4,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 5,
+      "word_count": 3330,
+      "sentence_count": 247,
+      "paragraph_count": 13,
+      "avg_sentence_length": 13.481781376518219,
+      "unique_words": 1039,
+      "lexical_diversity": 0.312012012012012
+    },
+    {
+      "chapter": 6,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 7,
+      "word_count": 2817,
+      "sentence_count": 262,
+      "paragraph_count": 11,
+      "avg_sentence_length": 10.751908396946565,
+      "unique_words": 977,
+      "lexical_diversity": 0.346822861199858
+    },
+    {
+      "chapter": 8,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 9,
+      "word_count": 2278,
+      "sentence_count": 176,
+      "paragraph_count": 9,
+      "avg_sentence_length": 12.943181818181818,
+      "unique_words": 768,
+      "lexical_diversity": 0.33713784021071114
+    },
+    {
+      "chapter": 10,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 11,
+      "word_count": 2329,
+      "sentence_count": 243,
+      "paragraph_count": 9,
+      "avg_sentence_length": 9.584362139917696,
+      "unique_words": 788,
+      "lexical_diversity": 0.3383426363246028
+    },
+    {
+      "chapter": 12,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 13,
+      "word_count": 1904,
+      "sentence_count": 111,
+      "paragraph_count": 7,
+      "avg_sentence_length": 17.153153153153152,
+      "unique_words": 670,
+      "lexical_diversity": 0.35189075630252103
+    },
+    {
+      "chapter": 14,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 15,
+      "word_count": 1871,
+      "sentence_count": 125,
+      "paragraph_count": 8,
+      "avg_sentence_length": 14.968,
+      "unique_words": 714,
+      "lexical_diversity": 0.38161411010155
+    },
+    {
+      "chapter": 16,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 17,
+      "word_count": 576,
+      "sentence_count": 87,
+      "paragraph_count": 4,
+      "avg_sentence_length": 6.620689655172414,
+      "unique_words": 285,
+      "lexical_diversity": 0.4947916666666667
+    },
+    {
+      "chapter": 18,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 19,
+      "word_count": 2740,
+      "sentence_count": 208,
+      "paragraph_count": 10,
+      "avg_sentence_length": 13.173076923076923,
+      "unique_words": 964,
+      "lexical_diversity": 0.3518248175182482
+    },
+    {
+      "chapter": 20,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 21,
+      "word_count": 1989,
+      "sentence_count": 154,
+      "paragraph_count": 8,
+      "avg_sentence_length": 12.915584415584416,
+      "unique_words": 641,
+      "lexical_diversity": 0.322272498743087
+    },
+    {
+      "chapter": 22,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 23,
+      "word_count": 2014,
+      "sentence_count": 131,
+      "paragraph_count": 8,
+      "avg_sentence_length": 15.374045801526718,
+      "unique_words": 720,
+      "lexical_diversity": 0.35749751737835156
+    },
+    {
+      "chapter": 24,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 25,
+      "word_count": 2305,
+      "sentence_count": 284,
+      "paragraph_count": 11,
+      "avg_sentence_length": 8.116197183098592,
+      "unique_words": 719,
+      "lexical_diversity": 0.3119305856832972
+    },
+    {
+      "chapter": 26,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 27,
+      "word_count": 2714,
+      "sentence_count": 428,
+      "paragraph_count": 13,
+      "avg_sentence_length": 6.341121495327103,
+      "unique_words": 924,
+      "lexical_diversity": 0.3404568901989683
+    },
+    {
+      "chapter": 28,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 29,
+      "word_count": 5520,
+      "sentence_count": 714,
+      "paragraph_count": 24,
+      "avg_sentence_length": 7.73109243697479,
+      "unique_words": 1396,
+      "lexical_diversity": 0.2528985507246377
+    },
+    {
+      "chapter": 30,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 31,
+      "word_count": 4119,
+      "sentence_count": 562,
+      "paragraph_count": 18,
+      "avg_sentence_length": 7.329181494661921,
+      "unique_words": 1192,
+      "lexical_diversity": 0.28939062879339644
+    },
+    {
+      "chapter": 32,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 33,
+      "word_count": 2652,
+      "sentence_count": 285,
+      "paragraph_count": 12,
+      "avg_sentence_length": 9.305263157894737,
+      "unique_words": 930,
+      "lexical_diversity": 0.3506787330316742
+    },
+    {
+      "chapter": 34,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 35,
+      "word_count": 3633,
+      "sentence_count": 573,
+      "paragraph_count": 18,
+      "avg_sentence_length": 6.340314136125654,
+      "unique_words": 1203,
+      "lexical_diversity": 0.3311312964492155
+    },
+    {
+      "chapter": 36,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 37,
+      "word_count": 2044,
+      "sentence_count": 412,
+      "paragraph_count": 11,
+      "avg_sentence_length": 4.961165048543689,
+      "unique_words": 782,
+      "lexical_diversity": 0.38258317025440314
+    },
+    {
+      "chapter": 38,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 39,
+      "word_count": 2268,
+      "sentence_count": 416,
+      "paragraph_count": 12,
+      "avg_sentence_length": 5.451923076923077,
+      "unique_words": 810,
+      "lexical_diversity": 0.35714285714285715
+    },
+    {
+      "chapter": 40,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 41,
+      "word_count": 3022,
+      "sentence_count": 510,
+      "paragraph_count": 15,
+      "avg_sentence_length": 5.925490196078432,
+      "unique_words": 863,
+      "lexical_diversity": 0.285572468563865
+    },
+    {
+      "chapter": 42,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 43,
+      "word_count": 3320,
+      "sentence_count": 518,
+      "paragraph_count": 16,
+      "avg_sentence_length": 6.409266409266409,
+      "unique_words": 1014,
+      "lexical_diversity": 0.30542168674698794
+    },
+    {
+      "chapter": 44,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 45,
+      "word_count": 1798,
+      "sentence_count": 313,
+      "paragraph_count": 10,
+      "avg_sentence_length": 5.744408945686901,
+      "unique_words": 624,
+      "lexical_diversity": 0.3470522803114572
+    },
+    {
+      "chapter": 46,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 47,
+      "word_count": 2328,
+      "sentence_count": 469,
+      "paragraph_count": 13,
+      "avg_sentence_length": 4.963752665245202,
+      "unique_words": 792,
+      "lexical_diversity": 0.3402061855670103
+    },
+    {
+      "chapter": 48,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 49,
+      "word_count": 1919,
+      "sentence_count": 376,
+      "paragraph_count": 11,
+      "avg_sentence_length": 5.1037234042553195,
+      "unique_words": 651,
+      "lexical_diversity": 0.3392391870766024
+    },
+    {
+      "chapter": 50,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 51,
+      "word_count": 1059,
+      "sentence_count": 149,
+      "paragraph_count": 6,
+      "avg_sentence_length": 7.10738255033557,
+      "unique_words": 402,
+      "lexical_diversity": 0.37960339943342775
+    },
+    {
+      "chapter": 52,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 53,
+      "word_count": 3185,
+      "sentence_count": 489,
+      "paragraph_count": 15,
+      "avg_sentence_length": 6.513292433537832,
+      "unique_words": 1011,
+      "lexical_diversity": 0.317425431711146
+    },
+    {
+      "chapter": 54,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 55,
+      "word_count": 1103,
+      "sentence_count": 193,
+      "paragraph_count": 7,
+      "avg_sentence_length": 5.715025906735751,
+      "unique_words": 472,
+      "lexical_diversity": 0.42792384406165007
+    },
+    {
+      "chapter": 56,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 57,
+      "word_count": 1510,
+      "sentence_count": 281,
+      "paragraph_count": 9,
+      "avg_sentence_length": 5.3736654804270465,
+      "unique_words": 599,
+      "lexical_diversity": 0.3966887417218543
+    },
+    {
+      "chapter": 58,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 59,
+      "word_count": 2332,
+      "sentence_count": 435,
+      "paragraph_count": 12,
+      "avg_sentence_length": 5.360919540229885,
+      "unique_words": 709,
+      "lexical_diversity": 0.30403087478559176
+    },
+    {
+      "chapter": 60,
+      "word_count": 1,
+      "sentence_count": 1,
+      "paragraph_count": 1,
+      "avg_sentence_length": 1.0,
+      "unique_words": 1,
+      "lexical_diversity": 1.0
+    },
+    {
+      "chapter": 61,
+      "word_count": 3782,
+      "sentence_count": 544,
+      "paragraph_count": 17,
+      "avg_sentence_length": 6.952205882352941,
+      "unique_words": 1145,
+      "lexical_diversity": 0.30274986779481755
+    }
+  ]
+}

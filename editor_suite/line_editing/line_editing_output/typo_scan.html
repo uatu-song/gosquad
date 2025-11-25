@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Typo Scan Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+        .header h1 { font-size: 2em; margin-bottom: 10px; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .stat-box {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .content { padding: 30px; }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .issue-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #e74c3c;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .line-tag {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-right: 10px;
+        }
+        .correction {
+            background: #d4edda;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 10px 0;
+            color: #155724;
+        }
+        .context-box {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔍 Typo Scan Report</h1>
+            <p>book1_manuscript.txt</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-value">3</div>
+                <div class="stat-label">Double Words</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">17</div>
+                <div class="stat-label">Common Typos</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">418</div>
+                <div class="stat-label">Spacing Issues</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">12</div>
+                <div class="stat-label">Punctuation</div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="section">
+                <h2>📝 Double Words</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    The same word appears twice in a row.
+                </p>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 1</span>
+                    <strong>"Vaughn Vaughn"</strong>
+                    <div class="context-box">@gmail.com Address Phone Number Go Squad by J. S. Vaughn 
+
+Vaughn / Go Squad / 1 Chapter 1 Caledonia at night. “Goo</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 233</span>
+                    <strong>"Please Please"</strong>
+                    <div class="context-box">Firas wasn't breathing. "Please," she whispered. "Please please please I can't—I can't do this again, I can't los</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 435</span>
+                    <strong>"that that"</strong>
+                    <div class="context-box">s a difference." Battlea considered this. "I hate that that makes me feel better ." "We work with what we hav</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>✏️ Common Typos</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    Common misspellings detected.
+                </p>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 13</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">o Squad / 6 "Come on," a devious voice urged. "We won't bite unless we have to. Just give us what you got</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 29</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">his own. If you always smooth the way for him, he won't grow into the person he's meant to become. Do you</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 37</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">asked as he tucked her into her sleeping bag. "I won't," she said as sleep won her over. “Oh? Well, you</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 61</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">didn't do something. 
+
+Vaughn / Go Squad / 30 "He won't make it without this," Ruth said quietly . "Blood</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 89</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">ras asked. "For full recovery? Weeks minimum. You won't be cleared for patrol for at least a month. Maybe</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 169</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">were coming up from the fire escape. "These guys won't quit!" Crimson shouted, standing up between her a</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 333</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">esearch. Patent it under TRIOMF subsidiaries. She won't be in a position to object." Reed hesitated. "Sir</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 379</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">nfreeze him, he's going to keep punching. But you won't be there anymore. I'll move you. Just... don't fr</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 401</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">dosage would need careful calibration. Too little won't help. Too much could accelerate the transformatio</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 403</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">do something instead of watching someone die. "It won't be a cure," she said. "Best case, it buys time. E</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 409</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">derstood immediately . "When Ahdia dies, the team won't lose their powers." "Eventually . If FAERIS evolu</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 411</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">ps trying to save everyone every night." "And she won't." "Would you?" Ruth thought about the ER. The pat</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 429</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">ight now bleeding through his bandages because he won't admit his chest wound isn't healed. He suggested</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 467</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">e pulled her phone out. "Can I get a picture? She won't believe me otherwise." Tess blinked. "Ma'am, we r</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 483</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">Permanently enhanced. A twenty-foot monster that won't stop." Ruth's stomach dropped. "What are the odds</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 611</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">r lips, throwing away the key. "It's not like you won't have FAERIS tracking me anyway ." "We have no rea</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 615</span>
+                    <strong>"won't"</strong>
+                    <div class="correction">→ "won't"</div>
+                    <div class="context-box">p doing this. I can't lose any of you, too." "You won't," Ahdia said. 
+
+Vaughn / Go Squad / 308 They all</div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>↔️ Spacing Issues</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    Extra/missing spaces detected.
+                </p>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 23</span>
+                    <strong>Missing Space After Punctuation</strong>
+                    <div class="context-box">rather large truck that the U.S. Army conveniently provided,</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 3</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">s, transgressions, delinquency , and general… malfeasance? Fel</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 5</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">they helped build this country , it's Caledonia. So we should</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 5</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">at happens here. Unfortunately , what's happening now in Caled</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 5</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">. Radio check-check, cop-copy ,” Firas said into a handheld h</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 5</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">you five-by-five, Rogue leader ,” the voice crackled back. “Wh</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 7</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">with anticipation. “Loud copy ,” he said, then secured the ra</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 9</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">the industrial air conditioner , then fell down half a story t</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 9</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">he next building over an alley , executed a lache from a scaff</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 9</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">e knew this terrain intimately , had come to familiarize himse</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 9</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">fines of the training facility , someone always watching unobs</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 9</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">and for fun. Breathing heavily , he unclipped his radio and cr</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 9</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">to life. “This is Rogue leader ,” he announced, “I’m in positi</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 9</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">n.” “Record time, Rogue leader ,” the radio responded. “You in</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 11</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">ondescript tactical body armor , pants, utility belt, Lycra sk</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 11</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">. No, no name. I’m not ‘Shadow ,’ that’s not my name either .</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 11</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">lace. Running past an alleyway , he stopped and hid behind the</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 11</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">eported, “This is Rogue leader , assault in progress. Alley of</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 11</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">r.” “Copy . Be careful, leader ,” the radio acknowledged. Fira</div>
+                </div>
+
+                <div class="issue-item">
+                    <span class="line-tag">Line 13</span>
+                    <strong>Space Before Punctuation</strong>
+                    <div class="context-box">ace was awash with fear. “Okay ,” the voice continued. “Have i</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

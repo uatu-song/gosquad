@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Line Editing Session - November 23, 2025 at 04:14 PM</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+        }
+        .header h1 { font-size: 2em; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 1.1em; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .stat-box {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .content { padding: 40px; }
+        .chapter-card {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+        .chapter-card.clean { border-left-color: #28a745; }
+        .chapter-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .chapter-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        .status-badge.clean { background: #d4edda; color: #155724; }
+        .status-badge.corrected { background: #fff3cd; color: #856404; }
+        .chapter-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .chapter-stat {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .chapter-stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .chapter-stat-label {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 3px;
+        }
+        .examples {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .example-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .example-item:last-child { border-bottom: none; }
+        .before-after {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 8px;
+        }
+        .before, .after {
+            padding: 8px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        .before { background: #f8d7da; }
+        .after { background: #d4edda; }
+        .insights {
+            background: #e7f3ff;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .insights h2 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📝 Line Editing Session</h1>
+            <p>November 23, 2025 at 04:14 PM</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <span class="stat-value">2</span>
+                <div class="stat-label">Chapters</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value">0</span>
+                <div class="stat-label">Issues Found</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value">0</span>
+                <div class="stat-label">Fixes Applied</div>
+            </div>
+            <div class="stat-box">
+                <span class="stat-value">0</span>
+                <div class="stat-label">Flagged</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 style="margin-bottom: 20px; color: #2c3e50;">Chapters Edited</h2>
+
+            <div class="chapter-card clean">
+                <div class="chapter-header">
+                    <span class="chapter-title">✨ Chapter 1</span>
+                    <span class="status-badge clean">Clean</span>
+                </div>
+</div>
+            <div class="chapter-card clean">
+                <div class="chapter-header">
+                    <span class="chapter-title">✨ Chapter 2</span>
+                    <span class="status-badge clean">Clean</span>
+                </div>
+</div><div class="insights"><h2>📊 Process Insights</h2><p>All chapters reviewed were technically clean! The drafting process was thorough.</p></div></div>
+        <div class="footer">
+            Generated on November 23, 2025 at 04:14 PM
+        </div>
+    </div>
+</body>
+</html>

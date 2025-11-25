@@ -1,0 +1,223 @@
+================================================================================
+PROXIMITY REPETITION REPORT
+================================================================================
+
+File: book1_manuscript.txt
+Proximity threshold: 500 characters
+
+================================================================================
+REPEATED PHRASES
+================================================================================
+
+Found 1451 phrase repetitions
+
+
+[1] "good evening and welcome" - Distance: 0 chars
+    Line 3:
+    "ghn / Go Squad / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metro"
+
+    Line 3:
+    "ghn / Go Squad / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metro"
+
+[2] "evening and welcome to" - Distance: 0 chars
+    Line 3:
+    "Go Squad / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropol"
+
+    Line 3:
+    "Go Squad / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropol"
+
+[3] "and welcome to carl" - Distance: 0 chars
+    Line 3:
+    "d / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises"
+
+    Line 3:
+    "d / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises"
+
+[4] "welcome to carl tucker" - Distance: 0 chars
+    Line 3:
+    "1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"
+
+    Line 3:
+    "1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"
+
+[5] "welcome to carl tucker" - Distance: 0 chars
+    Line 3:
+    "1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"
+
+    Line 3:
+    "1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"
+
+[6] "welcome to carl tucker" - Distance: 0 chars
+    Line 3:
+    "1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"
+
+    Line 3:
+    "1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"
+
+[7] "to carl tucker tonight" - Distance: 0 chars
+    Line 3:
+    "r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"
+
+    Line 3:
+    "r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"
+
+[8] "to carl tucker tonight" - Distance: 0 chars
+    Line 3:
+    "r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"
+
+    Line 3:
+    "r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"
+
+[9] "to carl tucker tonight" - Distance: 0 chars
+    Line 3:
+    "r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"
+
+    Line 3:
+    "r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"
+
+[10] "no matter how much" - Distance: 0 chars
+    Line 3:
+    "and villainy to the Caledonia Police. Possession, no matter how much, felony . Loitering, no matter that curfews being"
+
+    Line 3:
+    "and villainy to the Caledonia Police. Possession, no matter how much, felony . Loitering, no matter that curfews being"
+
+[11] "a power he wasn" - Distance: 0 chars
+    Line 3:
+    "d it. Hated giving what they did a name, a brand, a power he wasn't willing to acknowledge. They were supposed to b"
+
+    Line 3:
+    "d it. Hated giving what they did a name, a brand, a power he wasn't willing to acknowledge. They were supposed to b"
+
+[12] "t willing to acknowledge" - Distance: 0 chars
+    Line 3:
+    "ng what they did a name, a brand, a power he wasn't willing to acknowledge. They were supposed to be shadows, rumors, figmen"
+
+    Line 3:
+    "ng what they did a name, a brand, a power he wasn't willing to acknowledge. They were supposed to be shadows, rumors, figmen"
+
+[13] "figments of overactive imaginations" - Distance: 0 chars
+    Line 3:
+    "wledge. They were supposed to be shadows, rumors, figments of overactive imaginations. To his chagrin, the rest of the team loved the m"
+
+    Line 3:
+    "wledge. They were supposed to be shadows, rumors, figments of overactive imaginations. To his chagrin, the rest of the team loved the m"
+
+[14] "the rest of the" - Distance: 0 chars
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+[15] "the rest of the" - Distance: 0 chars
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+[16] "the rest of the" - Distance: 0 chars
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+[17] "the rest of the" - Distance: 0 chars
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+[18] "the rest of the" - Distance: 0 chars
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+[19] "the rest of the" - Distance: 0 chars
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+[20] "the rest of the" - Distance: 0 chars
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+    Line 3:
+    "ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"
+
+================================================================================
+REPEATED SENTENCE OPENINGS
+================================================================================
+
+Found 9 repeated openings
+
+
+[1] "the ones who d" - Distance: 26 chars
+    Line 515:
+    "The ones who'd come back."
+
+    Line 515:
+    "The ones who'd fought."
+
+[2] "the ones who d" - Distance: 26 chars
+    Line 515:
+    "The ones who'd come back."
+
+    Line 515:
+    "The ones who'd fought."
+
+[3] "i don t know" - Distance: 30 chars
+    Line 191:
+    ""I don't know how to do this."
+
+    Line 191:
+    "I don't know how to—" Ruth's expression softened slightly ."
+
+[4] "what if she could" - Distance: 43 chars
+    Line 229:
+    "What if she could make the bubble smaller?"
+
+    Line 229:
+    "What if she could make it just... herself?"
+
+[5] "we need you to" - Distance: 47 chars
+    Line 259:
+    "We need you to work with us, not hide from us."
+
+    Line 259:
+    "We need you to trust us." "Trust the shadow government that's been spying on me?" "Trust the organiz"
+
+[6] "what if she could" - Distance: 86 chars
+    Line 229:
+    "What if she could... slow it down?"
+
+    Line 229:
+    "What if she could make the bubble smaller?"
+
+[7] "no better time than" - Distance: 178 chars
+    Line 117:
+    ""No better time than here!" a voice, one she recognized, cried from the shadows."
+
+    Line 117:
+    ""No better time than now!" a chorus of shouting voices responded."
+
+[8] "garden approaching fast" - Distance: 198 chars
+    Line 465:
+    "Garden approaching fast."
+
+    Line 465:
+    "Garden approaching fast."
+
+[9] "no better place than" - Distance: 216 chars
+    Line 437:
+    ""No better place than here," he said."
+
+    Line 437:
+    ""No better place than here."

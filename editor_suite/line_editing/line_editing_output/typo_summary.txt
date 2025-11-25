@@ -1,0 +1,180 @@
+================================================================================
+TYPO SCAN REPORT
+================================================================================
+
+File: book1_manuscript.txt
+
+================================================================================
+DOUBLE WORDS
+================================================================================
+
+Found 3 instances
+
+[1] Line 1: "Vaughn Vaughn"
+    Context: @gmail.com Address Phone Number Go Squad by J. S. Vaughn 
+
+Vaughn / Go Squad / 1 Chapter 1 Caledonia at night. “Goo
+
+[2] Line 233: "Please Please"
+    Context: Firas wasn't breathing. "Please," she whispered. "Please please please I can't—I can't do this again, I can't los
+
+[3] Line 435: "that that"
+    Context: s a difference." Battlea considered this. "I hate that that makes me feel better ." "We work with what we hav
+
+
+================================================================================
+COMMON TYPOS
+================================================================================
+
+Found 17 instances
+
+[1] Line 13: "won't" → "won't"
+    Context: o Squad / 6 "Come on," a devious voice urged. "We won't bite unless we have to. Just give us what you got
+
+[2] Line 29: "won't" → "won't"
+    Context: his own. If you always smooth the way for him, he won't grow into the person he's meant to become. Do you
+
+[3] Line 37: "won't" → "won't"
+    Context: asked as he tucked her into her sleeping bag. "I won't," she said as sleep won her over. “Oh? Well, you
+
+[4] Line 61: "won't" → "won't"
+    Context: didn't do something. 
+
+Vaughn / Go Squad / 30 "He won't make it without this," Ruth said quietly . "Blood
+
+[5] Line 89: "won't" → "won't"
+    Context: ras asked. "For full recovery? Weeks minimum. You won't be cleared for patrol for at least a month. Maybe
+
+[6] Line 169: "won't" → "won't"
+    Context: were coming up from the fire escape. "These guys won't quit!" Crimson shouted, standing up between her a
+
+[7] Line 333: "won't" → "won't"
+    Context: esearch. Patent it under TRIOMF subsidiaries. She won't be in a position to object." Reed hesitated. "Sir
+
+[8] Line 379: "won't" → "won't"
+    Context: nfreeze him, he's going to keep punching. But you won't be there anymore. I'll move you. Just... don't fr
+
+[9] Line 401: "won't" → "won't"
+    Context: dosage would need careful calibration. Too little won't help. Too much could accelerate the transformatio
+
+[10] Line 403: "won't" → "won't"
+    Context: do something instead of watching someone die. "It won't be a cure," she said. "Best case, it buys time. E
+
+[11] Line 409: "won't" → "won't"
+    Context: derstood immediately . "When Ahdia dies, the team won't lose their powers." "Eventually . If FAERIS evolu
+
+[12] Line 411: "won't" → "won't"
+    Context: ps trying to save everyone every night." "And she won't." "Would you?" Ruth thought about the ER. The pat
+
+[13] Line 429: "won't" → "won't"
+    Context: ight now bleeding through his bandages because he won't admit his chest wound isn't healed. He suggested
+
+[14] Line 467: "won't" → "won't"
+    Context: e pulled her phone out. "Can I get a picture? She won't believe me otherwise." Tess blinked. "Ma'am, we r
+
+[15] Line 483: "won't" → "won't"
+    Context: Permanently enhanced. A twenty-foot monster that won't stop." Ruth's stomach dropped. "What are the odds
+
+[16] Line 611: "won't" → "won't"
+    Context: r lips, throwing away the key. "It's not like you won't have FAERIS tracking me anyway ." "We have no rea
+
+[17] Line 615: "won't" → "won't"
+    Context: p doing this. I can't lose any of you, too." "You won't," Ahdia said. 
+
+Vaughn / Go Squad / 308 They all
+
+
+================================================================================
+SPACING ISSUES
+================================================================================
+
+Found 418 instances
+
+[1] Line 23: missing space after punctuation
+    Context: rather large truck that the U.S. Army conveniently provided,
+
+[2] Line 3: space before punctuation
+    Context: s, transgressions, delinquency , and general… malfeasance? Fel
+
+[3] Line 5: space before punctuation
+    Context: they helped build this country , it's Caledonia. So we should
+
+[4] Line 5: space before punctuation
+    Context: at happens here. Unfortunately , what's happening now in Caled
+
+[5] Line 5: space before punctuation
+    Context: . Radio check-check, cop-copy ,” Firas said into a handheld h
+
+[6] Line 5: space before punctuation
+    Context: you five-by-five, Rogue leader ,” the voice crackled back. “Wh
+
+[7] Line 7: space before punctuation
+    Context: with anticipation. “Loud copy ,” he said, then secured the ra
+
+[8] Line 9: space before punctuation
+    Context: the industrial air conditioner , then fell down half a story t
+
+[9] Line 9: space before punctuation
+    Context: he next building over an alley , executed a lache from a scaff
+
+[10] Line 9: space before punctuation
+    Context: e knew this terrain intimately , had come to familiarize himse
+
+[11] Line 9: space before punctuation
+    Context: fines of the training facility , someone always watching unobs
+
+[12] Line 9: space before punctuation
+    Context: and for fun. Breathing heavily , he unclipped his radio and cr
+
+[13] Line 9: space before punctuation
+    Context: to life. “This is Rogue leader ,” he announced, “I’m in positi
+
+[14] Line 9: space before punctuation
+    Context: n.” “Record time, Rogue leader ,” the radio responded. “You in
+
+[15] Line 11: space before punctuation
+    Context: ondescript tactical body armor , pants, utility belt, Lycra sk
+
+
+================================================================================
+PUNCTUATION ISSUES
+================================================================================
+
+Found 12 instances
+
+[1] Line 89: unbalanced quotes
+    Context: Vaughn / Go Squad / 44 Ruth was checking Firas again. He'd been talking for maybe ten minutes and she'd checked his pulse three times, adjusted his pi
+
+[2] Line 91: unbalanced quotes
+    Context: Vaughn / Go Squad / 45 prototype-level at best. To take it further , I'd need access to a research facility that wouldn't laugh me out the door. Or ar
+
+[3] Line 203: unbalanced quotes
+    Context: Vaughn / Go Squad / 101 "Then this happened," Bourn said. On the display , everything stopped. The rocket hung mid-air , exhaust frozen mid-flare. The
+
+[4] Line 205: unbalanced quotes
+    Context: Vaughn / Go Squad / 102 doesn't exist. A moon forming. Earth, but wrong, like from space billions of years ago. And..." She paused, struggling. "This 
+
+[5] Line 257: unbalanced quotes
+    Context: Vaughn / Go Squad / 128 Bourn and Mack exchanged a look. "Your parents," Bourn said carefully , "were working with CADENS when they disappeared in Mon
+
+[6] Line 259: unbalanced quotes
+    Context: Vaughn / Go Squad / 129 have maybe eighteen months. Less if you keep pushing yourself the way you did during the police ambush." The words hung in the
+
+[7] Line 277: unbalanced quotes
+    Context: Vaughn / Go Squad / 138 "I don't know . Maybe? CADENS has been studying Temporalists for decades, but most of them died before we could collect meanin
+
+[8] Line 279: unbalanced quotes
+    Context: Vaughn / Go Squad / 139 like the difference between flailing in water and actually swimming. Both keep you afloat, but one uses way less energy." He p
+
+[9] Line 285: unbalanced quotes
+    Context: Vaughn / Go Squad / 142 "If you can see this, wave your hand," AR-R yu said. She waved, completely confused. "Excellent! Okay , this is going to sound
+
+[10] Line 287: unbalanced quotes
+    Context: Vaughn / Go Squad / 143 You could hold a freeze for hours and we could have full conversations." He looked up at her. "How does it feel?" Ahdia looked
+
+[11] Line 385: unbalanced quotes
+    Context: Vaughn / Go Squad / 192 "Then you're coming with us. Hold on." The stretcher extended. Ruth helped load Ahdia onto it—gentle, supporting her neck. The
+
+[12] Line 387: unbalanced quotes
+    Context: Vaughn / Go Squad / 193 conferences." Bourn gestured to the monitors. "We need to talk. But first, let's stabilize your friend." Ruth approached the m
+

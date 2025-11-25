@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Line Editing Dashboard - book1_manuscript.txt</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px 10px 0 0;
+        }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .header p { opacity: 0.9; margin-top: 5px; }
+        .content { padding: 40px; }
+        .intro {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #2196f3;
+        }
+        .intro h2 { color: #1976d2; margin-bottom: 10px; }
+        .intro p { color: #555; line-height: 1.6; }
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .tool-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        .tool-card.success {
+            border-color: #4caf50;
+        }
+        .tool-card.error {
+            border-color: #f44336;
+        }
+        .tool-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .tool-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .tool-description {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .tool-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .tool-link:hover {
+            background: #5568d3;
+        }
+        .tool-link.disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .status-badge.success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-badge.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-radius: 0 0 10px 10px;
+            border-top: 1px solid #dee2e6;
+        }
+        .errors-section {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #ffc107;
+        }
+        .errors-section h3 {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+        .error-item {
+            background: white;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📋 Line Editing Dashboard</h1>
+            <p>book1_manuscript.txt</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">
+                Session: November 23, 2025 at 03:51 PM
+            </p>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <h2>What is Line Editing?</h2>
+                <p>
+                    Line editing focuses on technical correctness - catching duplicates, typos,
+                    continuity errors, and mechanical issues. <strong>This is NOT about changing
+                    your voice or style.</strong> These tools preserve your unique voice while
+                    helping you find technical errors that slipped through drafting.
+                </p>
+            </div>
+
+            <div class="tools-grid">
+
+                <div class="tool-card success">
+                    <div class="tool-icon">📝</div>
+                    <div class="status-badge success">✅ Completed</div>
+                    <div class="tool-title">Duplicate Sentences</div>
+                    <div class="tool-description">Exact and near-duplicate sentences found in your manuscript. These are likely drafting artifacts where you tried different versions and forgot to remove one.</div>
+
+                    <a href="duplicate_sentences.html" class="tool-link">View Report</a>
+
+                </div>
+
+                <div class="tool-card success">
+                    <div class="tool-icon">🔍</div>
+                    <div class="status-badge success">✅ Completed</div>
+                    <div class="tool-title">Continuity Check</div>
+                    <div class="tool-description">Character attributes, ages, and facts tracked across chapters. Flags potential contradictions like changing eye colors or inconsistent ages.</div>
+
+                    <a href="continuity_report.html" class="tool-link">View Report</a>
+
+                </div>
+
+                <div class="tool-card success">
+                    <div class="tool-icon">🔄</div>
+                    <div class="status-badge success">✅ Completed</div>
+                    <div class="tool-title">Proximity Repetition</div>
+                    <div class="tool-description">Phrases and words repeated too close together. Catches when you use the same distinctive phrase multiple times in a few paragraphs.</div>
+
+                    <a href="proximity_repetitions.html" class="tool-link">View Report</a>
+
+                </div>
+
+                <div class="tool-card success">
+                    <div class="tool-icon">✏️</div>
+                    <div class="status-badge success">✅ Completed</div>
+                    <div class="tool-title">Typo Scanner</div>
+                    <div class="tool-description">Common typos, double words, spacing issues, and mechanical errors. Pure technical cleanup - no judgment of style.</div>
+
+                    <a href="typo_scan.html" class="tool-link">View Report</a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Line Editing Suite v1.0</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                Reports saved to: line_editing_output
+            </p>
+        </div>
+    </div>
+</body>
+</html>

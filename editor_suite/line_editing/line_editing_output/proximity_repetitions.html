@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Proximity Repetition Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #f39c12 0%, #e74c3c 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px 8px 0 0;
+        }
+        .header h1 { font-size: 2em; margin-bottom: 10px; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .stat-box {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #f39c12;
+        }
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .content { padding: 30px; }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .repetition-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-left: 4px solid #f39c12;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .phrase-highlight {
+            background: #fff3cd;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #856404;
+        }
+        .distance-badge {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .context-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .location-tag {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-bottom: 5px;
+        }
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔄 Proximity Repetition Report</h1>
+            <p>book1_manuscript.txt</p>
+            <p style="opacity: 0.9; margin-top: 5px;">Threshold: 500 characters</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-value">1451</div>
+                <div class="stat-label">Phrase Repetitions</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">9</div>
+                <div class="stat-label">Repeated Openings</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-value">2459</div>
+                <div class="stat-label">Word Repetitions</div>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="section">
+                <h2>📝 Repeated Phrases</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    The same multi-word phrases appearing within close proximity.
+                    Review to determine if this is intentional or accidental.
+                </p>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"good evening and welcome"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ghn / Go Squad / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metro"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ghn / Go Squad / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metro"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"evening and welcome to"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"Go Squad / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropol"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"Go Squad / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropol"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"and welcome to carl"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"d / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"d / 1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"welcome to carl tucker"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"welcome to carl tucker"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"welcome to carl tucker"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"1 Chapter 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"to carl tucker tonight"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"to carl tucker tonight"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"to carl tucker tonight"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"r 1 Caledonia at night. “Good evening and welcome to Carl Tucker Tonight.” One of the largest metropolises in the country"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"no matter how much"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"and villainy to the Caledonia Police. Possession, no matter how much, felony . Loitering, no matter that curfews being"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"and villainy to the Caledonia Police. Possession, no matter how much, felony . Loitering, no matter that curfews being"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"a power he wasn"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"d it. Hated giving what they did a name, a brand, a power he wasn't willing to acknowledge. They were supposed to b"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"d it. Hated giving what they did a name, a brand, a power he wasn't willing to acknowledge. They were supposed to b"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"t willing to acknowledge"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ng what they did a name, a brand, a power he wasn't willing to acknowledge. They were supposed to be shadows, rumors, figmen"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ng what they did a name, a brand, a power he wasn't willing to acknowledge. They were supposed to be shadows, rumors, figmen"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"figments of overactive imaginations"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"wledge. They were supposed to be shadows, rumors, figments of overactive imaginations. To his chagrin, the rest of the team loved the m"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"wledge. They were supposed to be shadows, rumors, figments of overactive imaginations. To his chagrin, the rest of the team loved the m"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the rest of the"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"ments of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their u"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"rest of the team"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their unoffi"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their unoffi"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"rest of the team"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their unoffi"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their unoffi"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"rest of the team"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their unoffi"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s of overactive imaginations. To his chagrin, the rest of the team loved the moniker and adopted it for their unoffi"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"loved the moniker and"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"maginations. To his chagrin, the rest of the team loved the moniker and adopted it for their unofficial outfit. Someone w"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"maginations. To his chagrin, the rest of the team loved the moniker and adopted it for their unofficial outfit. Someone w"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"the moniker and adopted"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"tions. To his chagrin, the rest of the team loved the moniker and adopted it for their unofficial outfit. Someone was posti"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"tions. To his chagrin, the rest of the team loved the moniker and adopted it for their unofficial outfit. Someone was posti"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"moniker and adopted it"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s. To his chagrin, the rest of the team loved the moniker and adopted it for their unofficial outfit. Someone was posting"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s. To his chagrin, the rest of the team loved the moniker and adopted it for their unofficial outfit. Someone was posting"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">0 characters apart</div>
+                    <div class="phrase-highlight">"and adopted it for"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s chagrin, the rest of the team loved the moniker and adopted it for their unofficial outfit. Someone was posting thei"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 3</span>
+                            <div style="margin-top: 10px;">"s chagrin, the rest of the team loved the moniker and adopted it for their unofficial outfit. Someone was posting thei"</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <h2>🎯 Repeated Sentence Openings</h2>
+                <p style="color: #666; margin-bottom: 20px;">
+                    Consecutive sentences starting with similar patterns.
+                    Can create unintentional rhythm or feel repetitive.
+                </p>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">26 characters apart</div>
+                    <div class="phrase-highlight">"the ones who d"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 515</span>
+                            <div style="margin-top: 10px;">"The ones who'd come back."</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 515</span>
+                            <div style="margin-top: 10px;">"The ones who'd fought."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">26 characters apart</div>
+                    <div class="phrase-highlight">"the ones who d"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 515</span>
+                            <div style="margin-top: 10px;">"The ones who'd come back."</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 515</span>
+                            <div style="margin-top: 10px;">"The ones who'd fought."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">30 characters apart</div>
+                    <div class="phrase-highlight">"i don t know"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 191</span>
+                            <div style="margin-top: 10px;">""I don't know how to do this."</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 191</span>
+                            <div style="margin-top: 10px;">"I don't know how to—" Ruth's expression softened slightly ."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">43 characters apart</div>
+                    <div class="phrase-highlight">"what if she could"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 229</span>
+                            <div style="margin-top: 10px;">"What if she could make the bubble smaller?"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 229</span>
+                            <div style="margin-top: 10px;">"What if she could make it just... herself?"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">47 characters apart</div>
+                    <div class="phrase-highlight">"we need you to"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 259</span>
+                            <div style="margin-top: 10px;">"We need you to work with us, not hide from us."</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 259</span>
+                            <div style="margin-top: 10px;">"We need you to trust us." "Trust the shadow government that's been spying on me?" "Trust the organiz"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">86 characters apart</div>
+                    <div class="phrase-highlight">"what if she could"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 229</span>
+                            <div style="margin-top: 10px;">"What if she could... slow it down?"</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 229</span>
+                            <div style="margin-top: 10px;">"What if she could make the bubble smaller?"</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">178 characters apart</div>
+                    <div class="phrase-highlight">"no better time than"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 117</span>
+                            <div style="margin-top: 10px;">""No better time than here!" a voice, one she recognized, cried from the shadows."</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 117</span>
+                            <div style="margin-top: 10px;">""No better time than now!" a chorus of shouting voices responded."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">198 characters apart</div>
+                    <div class="phrase-highlight">"garden approaching fast"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 465</span>
+                            <div style="margin-top: 10px;">"Garden approaching fast."</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 465</span>
+                            <div style="margin-top: 10px;">"Garden approaching fast."</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="repetition-item">
+                    <div class="distance-badge">216 characters apart</div>
+                    <div class="phrase-highlight">"no better place than"</div>
+                    <div class="comparison">
+                        <div class="context-box">
+                            <span class="location-tag">Line 437</span>
+                            <div style="margin-top: 10px;">""No better place than here," he said."</div>
+                        </div>
+                        <div class="context-box">
+                            <span class="location-tag">Line 437</span>
+                            <div style="margin-top: 10px;">""No better place than here."</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

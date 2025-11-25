@@ -1,0 +1,12 @@
+{
+  "file": "/workspaces/gosquad/book1_manuscript.txt",
+  "total_sentences": 1,
+  "exact_duplicates": {
+    "count": 0,
+    "instances": []
+  },
+  "near_duplicates": {
+    "count": 0,
+    "instances": []
+  }
+}

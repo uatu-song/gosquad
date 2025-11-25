@@ -1,0 +1,516 @@
+================================================================================
+CONTINUITY CHECK REPORT
+================================================================================
+
+File: book1_manuscript.txt
+Chapters analyzed: 31
+
+================================================================================
+⚠️  POTENTIAL CONTRADICTIONS
+================================================================================
+
+
+[1] Character Attribute
+    Severity: MEDIUM
+
+    Character: Firas
+    Attribute: eye color
+    Different values found:
+
+      'his' in:
+        - Chapter 1
+          "“Don’ t thank me,” Firas responded with his back turned to her so she could not see his eyes"
+
+        - Chapter 1
+          "Firas rolled his eyes, saying, “No first names over comms"
+
+        - Chapter 4
+          "Vaughn / Go Squad / 33 "Hey , Nightingale," Firas smiled, mostly just with his eyes"
+
+        - Chapter 4
+          "" Firas furrowed his eyebrows and squinted towards his sister , lifting his head to see she was sporting a bandage near the pit of her elbow"
+
+        - Chapter 5
+          "Firas stared blankly to search his memory and narrowed his eyebrows"
+
+        - Chapter 5
+          "" Firas closed his eyes"
+
+        - Chapter 12
+          "" Firas closed his eyes"
+
+      's' in:
+        - Chapter 4
+          "When Firas's eyes finally opened—blurry at first, slowly coming to focus, then sharply seen—Firas almost wished he had died instead of facing his olde"
+
+      'her' in:
+        - Chapter 4
+          ""Firas…" she said as tears gathered in her eyes"
+
+      'breaking' in:
+        - Chapter 4
+          "" Not breaking eye contact with Firas, Ruth replied, "It's a good sign he's awake"
+
+      'whose' in:
+        - Chapter 12
+          "She stopped in front of Firas, whose eyes were locked on the floor , a tear caught mid-fall"
+
+
+[2] Character Attribute
+    Severity: MEDIUM
+
+    Character: His
+    Attribute: age desc
+    Different values found:
+
+      'old' in:
+        - Chapter 18
+          "His older sister had been saved from a carjacking two weeks ago"
+
+      'teenage' in:
+        - Chapter 24
+          "His hand—still wrapped around those teenagers—stopped"
+
+
+[3] Character Attribute
+    Severity: MEDIUM
+
+    Character: Faraz
+    Attribute: eye color
+    Different values found:
+
+      'his' in:
+        - Chapter 2
+          "Faraz watched from the corner of his eyes as his children unpacked their things and set up their tent"
+
+      's' in:
+        - Chapter 2
+          "Naima caught Faraz's eye and nodded toward Ahdia, who had already retreated to fussing with her sleeping bag, face carefully neutral"
+
+
+[4] Character Attribute
+    Severity: MEDIUM
+
+    Character: Ahdia
+    Attribute: eye color
+    Different values found:
+
+      's' in:
+        - Chapter 2
+          "Naima caught Faraz's eye and nodded toward Ahdia, who had already retreated to fussing with her sleeping bag, face carefully neutral"
+
+        - Chapter 6
+          "Ruth's eyes widened on Ahdia's approach, taking her hands out of her pockets and bending her knees to prepare for however Ahdia was going to land; sho"
+
+        - Chapter 19
+          "" Ahdia's eyes rolled, tried to find Ruth's face"
+
+        - Chapter 19
+          "Ahdia's eyes closed"
+
+        - Chapter 20
+          "" Ahdia's eyes burned"
+
+        - Chapter 24
+          "Ahdia's eyes were closed"
+
+        - Chapter 24
+          "Ahdia's eyes were closed"
+
+      'her' in:
+        - Chapter 2
+          "Ahdia gently laughed before she closed her eyes and he watched her doze off"
+
+        - Chapter 6
+          "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+
+        - Chapter 6
+          "Ahdia's anticipation was getting the better of her as she felt her heart beating in her eyes more and more with every step they took"
+
+        - Chapter 7
+          "When Ruth saw that Ahdia was paying attention, she motioned with her eyes to the box"
+
+        - Chapter 19
+          "Ahdia closed her eyes, took a breath"
+
+        - Chapter 19
+          "Ahdia opened her eyes"
+
+        - Chapter 20
+          "" Ahdia closed her eyes"
+
+        - Chapter 24
+          "" Ahdia opened her eyes"
+
+        - Chapter 24
+          "His words finally appeared on the tablet: RATIO = 1:2000 Another line: TOO FAST = CELLS BURN A third: TRY 1:1500 Ahdia opened her eyes"
+
+        - Chapter 24
+          "" Ahdia opened her eyes"
+
+        - Chapter 24
+          "Ahdia closed her eyes"
+
+        - Chapter 24
+          "Ahdia opened her eyes"
+
+        - Chapter 25
+          "" "We're not dead," Ruth confirmed and didn't take her eyes off Ahdia"
+
+      'goo' in:
+        - Chapter 4
+          "Ahdia was feeling touched at the display so she allowed the lovebirds to goo-goo eye each other for an additional few seconds before interjecting, "So"
+
+      'an' in:
+        - Chapter 6
+          "Ruth knelt down, keeping an eye on Ahdia, amused at her fumbling attempts at each level"
+
+      'defeated' in:
+        - Chapter 7
+          "Already in shock, Ahdia looked up from staring at the blood on her hands to Ruth, whose concerned and defeated eyes met her own"
+
+      'his' in:
+        - Chapter 12
+          "His eyes found the space where Ahdia had been standing"
+
+        - Chapter 29
+          "He kept his eyes on Ahdia the whole time"
+
+
+[5] Character Attribute
+    Severity: MEDIUM
+
+    Character: Ahdia
+    Attribute: hair color
+    Different values found:
+
+      's' in:
+        - Chapter 29
+          "Just enough to make Ahdia's hair lift, the oversized tactical suit ripple against her body"
+
+      'her' in:
+        - Chapter 29
+          "Ahdia felt it now—not just on her hair and clothes"
+
+
+[6] Character Attribute
+    Severity: MEDIUM
+
+    Character: Naima
+    Attribute: eye color
+    Different values found:
+
+      'her' in:
+        - Chapter 2
+          "Naima chuckled and raised her eyebrows knowingly"
+
+        - Chapter 2
+          ""A challenge," Naima said, her eyes twinkling"
+
+      's' in:
+        - Chapter 2
+          "Naima caught Faraz's eye and nodded toward Ahdia, who had already retreated to fussing with her sleeping bag, face carefully neutral"
+
+      'his' in:
+        - Chapter 2
+          "He darted his eyes to Naima who was equally stunned"
+
+
+[7] Character Attribute
+    Severity: MEDIUM
+
+    Character: Ruth
+    Attribute: eye color
+    Different values found:
+
+      'her' in:
+        - Chapter 3
+          "Feeling that she was wasting valuable time, she pursed her lips and closed her eyes before dialing Ruth"
+
+        - Chapter 3
+          "" Ruth met her eyes"
+
+        - Chapter 4
+          "" She saw Ruth open her eyes and mouth slightly wider before turning away"
+
+        - Chapter 6
+          "Ruth raised her eyebrows, pouted her lips and tilted her head down, her eyes looking to her right before she began walking away"
+
+        - Chapter 6
+          "Ruth raised her eyebrows, pouted her lips and tilted her head down, her eyes looking to her right before she began walking away"
+
+        - Chapter 6
+          "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+
+        - Chapter 6
+          "She cupped the tops of her eyes to shield from the rain to see Ruth, standing with her hands in the pockets of her windbreaker and, if she knew any be"
+
+        - Chapter 7
+          "When Ruth saw that Ahdia was paying attention, she motioned with her eyes to the box"
+
+        - Chapter 7
+          "Ruth didn't betray any emotions on her face but her eyes were windows into her fright and terror"
+
+        - Chapter 9
+          ""Lea," Ruth exhaled as she dropped her head back and closing her eyes"
+
+        - Chapter 9
+          "" Battlea narrowed her eyebrows and came to stand next to Ruth"
+
+        - Chapter 19
+          "Chapter 19 Ruth closed her eyes"
+
+        - Chapter 20
+          "" Ruth met her eyes"
+
+        - Chapter 25
+          "" "We're not dead," Ruth confirmed and didn't take her eyes off Ahdia"
+
+      'breaking' in:
+        - Chapter 4
+          "" Not breaking eye contact with Firas, Ruth replied, "It's a good sign he's awake"
+
+      's' in:
+        - Chapter 5
+          "" Ruth's eyebrows raised"
+
+        - Chapter 6
+          "Ruth's eyes widened on Ahdia's approach, taking her hands out of her pockets and bending her knees to prepare for however Ahdia was going to land; sho"
+
+        - Chapter 19
+          "" Ahdia's eyes rolled, tried to find Ruth's face"
+
+        - Chapter 23
+          "" Bourn met Ruth's eyes"
+
+      'an' in:
+        - Chapter 6
+          "Ruth knelt down, keeping an eye on Ahdia, amused at her fumbling attempts at each level"
+
+      'defeated' in:
+        - Chapter 7
+          "Already in shock, Ahdia looked up from staring at the blood on her hands to Ruth, whose concerned and defeated eyes met her own"
+
+      'his' in:
+        - Chapter 7
+          "Ruth saw fire in his eyes, blinded by a lust for violence"
+
+        - Chapter 23
+          "" Ruth met his eyes"
+
+        - Chapter 23
+          "" 
+
+Vaughn / Go Squad / 242 Ruth met his eyes"
+
+        - Chapter 26
+          "But his eyes tracked over her—assessing injuries with the same clinical precision Ruth used"
+
+      'put' in:
+        - Chapter 9
+          ""Put eyes on, Gloomy ," Ruth ordered"
+
+
+[8] Character Attribute
+    Severity: MEDIUM
+
+    Character: Vaughn
+    Attribute: eye color
+    Different values found:
+
+      'his' in:
+        - Chapter 4
+          "Vaughn / Go Squad / 33 "Hey , Nightingale," Firas smiled, mostly just with his eyes"
+
+        - Chapter 23
+          "" 
+
+Vaughn / Go Squad / 242 Ruth met his eyes"
+
+      'her' in:
+        - Chapter 6
+          "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+
+
+[9] Character Attribute
+    Severity: MEDIUM
+
+    Character: Go Squad
+    Attribute: eye color
+    Different values found:
+
+      'his' in:
+        - Chapter 4
+          "Vaughn / Go Squad / 33 "Hey , Nightingale," Firas smiled, mostly just with his eyes"
+
+        - Chapter 23
+          "" 
+
+Vaughn / Go Squad / 242 Ruth met his eyes"
+
+      'her' in:
+        - Chapter 6
+          "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+
+
+[10] Character Attribute
+    Severity: MEDIUM
+
+    Character: Squad
+    Attribute: eye color
+    Different values found:
+
+      'his' in:
+        - Chapter 4
+          "Vaughn / Go Squad / 33 "Hey , Nightingale," Firas smiled, mostly just with his eyes"
+
+        - Chapter 23
+          "" 
+
+Vaughn / Go Squad / 242 Ruth met his eyes"
+
+      'her' in:
+        - Chapter 6
+          "Ahdia blinked the rain pouring down her head out of 
+
+Vaughn / Go Squad / 50 her eyes as she watched Ruth walk away"
+
+
+[11] Character Attribute
+    Severity: MEDIUM
+
+    Character: Battlea
+    Attribute: eye color
+    Different values found:
+
+      'her' in:
+        - Chapter 9
+          "" Battlea rolled her eyes and repeated, "I said, I don't think we're going to catch any fish here"
+
+        - Chapter 9
+          "" Battlea narrowed her eyebrows and came to stand next to Ruth"
+
+      'all' in:
+        - Chapter 9
+          "" Battlea and Gloom Girl avoided any and all eye contact"
+
+      's' in:
+        - Chapter 25
+          "She could see it clicking into place—Night Knight's eyes widening, Battlea straightening despite her injuries, Crimson Sable's grip shifting on his bo"
+
+
+[12] Character Attribute
+    Severity: MEDIUM
+
+    Character: Gloom Girl
+    Attribute: eye color
+    Different values found:
+
+      'all' in:
+        - Chapter 9
+          "" Battlea and Gloom Girl avoided any and all eye contact"
+
+      'her' in:
+        - Chapter 25
+          "" Gloom Girl narrowed her eyes with the comprehension"
+
+
+[13] Character Attribute
+    Severity: MEDIUM
+
+    Character: Knight
+    Attribute: eye color
+    Different values found:
+
+      's' in:
+        - Chapter 12
+          "Night Knight's eyes completed their blink"
+
+        - Chapter 25
+          "She could see it clicking into place—Night Knight's eyes widening, Battlea straightening despite her injuries, Crimson Sable's grip shifting on his bo"
+
+      'his' in:
+        - Chapter 21
+          "" Knight rolled his eyes, braced his shoulder against the frame, and threw his weight into it"
+
+
+[14] Character Attribute
+    Severity: MEDIUM
+
+    Character: Bourn
+    Attribute: eye color
+    Different values found:
+
+      'had' in:
+        - Chapter 14
+          ""We had eyes on all three ambush sites," Bourn said"
+
+      's' in:
+        - Chapter 23
+          "" Bourn met Ruth's eyes"
+
+
+[15] Character Attribute
+    Severity: MEDIUM
+
+    Character: Tess
+    Attribute: eye color
+    Different values found:
+
+      's' in:
+        - Chapter 16
+          "Ryu tracked Tess's eyes on a secondary monitor , iris position, focal depth, reading where she was looking, where she wanted to go"
+
+      'her' in:
+        - Chapter 16
+          "Another feed showed Tess reading the comments, tears in her eyes, typing a response: "People need to see this"
+
+
+================================================================================
+CHARACTER ATTRIBUTES TRACKED
+================================================================================
+
+
+Ahdia:
+  • eye color: goo, s, her, his, defeated, an
+  • age desc: old
+  • hair color: s, her
+
+Another:
+  • eye color: her
+
+Battlea:
+  • eye color: s, her, all
+  • age desc: old
+
+Because:
+  • height: tall
+
+Behind:
+  • eye color: see
+
+Bourn:
+  • age desc: old
+  • eye color: had, s
+
+Caledonia:
+  • age desc: old
+
+Can:
+  • age desc: old
+
+Cold:
+  • age desc: old
+
+Could:
+  • eye color: her
+  • height: tall
+  • age desc: old

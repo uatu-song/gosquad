@@ -1,0 +1,4100 @@
+{
+  "file": "/workspaces/gosquad/book1_manuscript.txt",
+  "structure": {
+    "total_chapters": 30,
+    "chapter_details": [
+      {
+        "number": 1,
+        "title": "Chapter 1",
+        "word_count": 2403,
+        "type": "numbered"
+      },
+      {
+        "number": 2,
+        "title": "Chapter 2",
+        "word_count": 3345,
+        "type": "numbered"
+      },
+      {
+        "number": 3,
+        "title": "Chapter 3",
+        "word_count": 2832,
+        "type": "numbered"
+      },
+      {
+        "number": 4,
+        "title": "Chapter 4",
+        "word_count": 2289,
+        "type": "numbered"
+      },
+      {
+        "number": 5,
+        "title": "Chapter 5",
+        "word_count": 2341,
+        "type": "numbered"
+      },
+      {
+        "number": 6,
+        "title": "Chapter 6",
+        "word_count": 1913,
+        "type": "numbered"
+      },
+      {
+        "number": 7,
+        "title": "Chapter 7",
+        "word_count": 1879,
+        "type": "numbered"
+      },
+      {
+        "number": 8,
+        "title": "Chapter 8",
+        "word_count": 580,
+        "type": "numbered"
+      },
+      {
+        "number": 9,
+        "title": "Chapter 9",
+        "word_count": 2752,
+        "type": "numbered"
+      },
+      {
+        "number": 10,
+        "title": "Chapter 10",
+        "word_count": 1997,
+        "type": "numbered"
+      },
+      {
+        "number": 11,
+        "title": "Chapter 11",
+        "word_count": 2024,
+        "type": "numbered"
+      },
+      {
+        "number": 12,
+        "title": "Chapter 12",
+        "word_count": 2316,
+        "type": "numbered"
+      },
+      {
+        "number": 13,
+        "title": "Chapter 13",
+        "word_count": 2745,
+        "type": "numbered"
+      },
+      {
+        "number": 14,
+        "title": "Chapter 14",
+        "word_count": 5557,
+        "type": "numbered"
+      },
+      {
+        "number": 15,
+        "title": "Chapter 15",
+        "word_count": 4156,
+        "type": "numbered"
+      },
+      {
+        "number": 16,
+        "title": "Chapter 16",
+        "word_count": 2666,
+        "type": "numbered"
+      },
+      {
+        "number": 17,
+        "title": "Chapter 17",
+        "word_count": 3653,
+        "type": "numbered"
+      },
+      {
+        "number": 18,
+        "title": "Chapter 18",
+        "word_count": 2057,
+        "type": "numbered"
+      },
+      {
+        "number": 19,
+        "title": "Chapter 19",
+        "word_count": 2285,
+        "type": "numbered"
+      },
+      {
+        "number": 20,
+        "title": "Chapter 20",
+        "word_count": 3042,
+        "type": "numbered"
+      },
+      {
+        "number": 21,
+        "title": "Chapter 21",
+        "word_count": 3344,
+        "type": "numbered"
+      },
+      {
+        "number": 22,
+        "title": "Chapter 22",
+        "word_count": 1808,
+        "type": "numbered"
+      },
+      {
+        "number": 23,
+        "title": "Chapter 23",
+        "word_count": 2341,
+        "type": "numbered"
+      },
+      {
+        "number": 24,
+        "title": "Chapter 24",
+        "word_count": 1934,
+        "type": "numbered"
+      },
+      {
+        "number": 25,
+        "title": "Chapter 25",
+        "word_count": 1065,
+        "type": "numbered"
+      },
+      {
+        "number": 26,
+        "title": "Chapter 26",
+        "word_count": 3201,
+        "type": "numbered"
+      },
+      {
+        "number": 27,
+        "title": "Chapter 27",
+        "word_count": 1110,
+        "type": "numbered"
+      },
+      {
+        "number": 28,
+        "title": "Chapter 28",
+        "word_count": 1519,
+        "type": "numbered"
+      },
+      {
+        "number": 29,
+        "title": "Chapter 29",
+        "word_count": 2344,
+        "type": "numbered"
+      },
+      {
+        "number": 30,
+        "title": "Chapter 30",
+        "word_count": 3801,
+        "type": "numbered"
+      }
+    ],
+    "patterns": {
+      "avg_chapter_length": 2509.9666666666667,
+      "chapter_length_std": 976.9631341844766,
+      "consistency_score": 0.6107664905837489,
+      "structure_type": "moderately_varied",
+      "short_chapters": [
+        8,
+        25,
+        27,
+        28
+      ],
+      "long_chapters": [
+        14,
+        15,
+        17,
+        30
+      ],
+      "avg_scenes_per_chapter": 1.0,
+      "total_scenes": 30
+    }
+  },
+  "scenes": {
+    "total": 30,
+    "by_chapter": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "15": 1,
+      "16": 1,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "20": 1,
+      "21": 1,
+      "22": 1,
+      "23": 1,
+      "24": 1,
+      "25": 1,
+      "26": 1,
+      "27": 1,
+      "28": 1,
+      "29": 1,
+      "30": 1
+    }
+  },
+  "pov": {
+    "chapter_pov": [
+      {
+        "chapter": 1,
+        "dominant_pov": "first_person",
+        "confidence": 0.5714285714285714,
+        "indicators": {
+          "first_person": 20,
+          "second_person": 13,
+          "third_limited": 2,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 2,
+        "dominant_pov": "second_person",
+        "confidence": 0.5753424657534246,
+        "indicators": {
+          "first_person": 29,
+          "second_person": 42,
+          "third_limited": 2,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 3,
+        "dominant_pov": "second_person",
+        "confidence": 0.47368421052631576,
+        "indicators": {
+          "first_person": 8,
+          "second_person": 9,
+          "third_limited": 2,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 4,
+        "dominant_pov": "first_person",
+        "confidence": 0.7647058823529411,
+        "indicators": {
+          "first_person": 52,
+          "second_person": 14,
+          "third_limited": 2,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 5,
+        "dominant_pov": "second_person",
+        "confidence": 0.5394736842105263,
+        "indicators": {
+          "first_person": 32,
+          "second_person": 41,
+          "third_limited": 3,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 6,
+        "dominant_pov": "second_person",
+        "confidence": 0.5789473684210527,
+        "indicators": {
+          "first_person": 4,
+          "second_person": 11,
+          "third_limited": 4,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 7,
+        "dominant_pov": "second_person",
+        "confidence": 0.5833333333333334,
+        "indicators": {
+          "first_person": 5,
+          "second_person": 7,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 8,
+        "dominant_pov": "first_person",
+        "confidence": 0.8571428571428571,
+        "indicators": {
+          "first_person": 6,
+          "second_person": 1,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 9,
+        "dominant_pov": "first_person",
+        "confidence": 0.4888888888888889,
+        "indicators": {
+          "first_person": 22,
+          "second_person": 22,
+          "third_limited": 1,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 10,
+        "dominant_pov": "second_person",
+        "confidence": 0.5714285714285714,
+        "indicators": {
+          "first_person": 6,
+          "second_person": 12,
+          "third_limited": 2,
+          "third_omniscient": 1
+        }
+      },
+      {
+        "chapter": 11,
+        "dominant_pov": "second_person",
+        "confidence": 0.5,
+        "indicators": {
+          "first_person": 3,
+          "second_person": 5,
+          "third_limited": 2,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 12,
+        "dominant_pov": "first_person",
+        "confidence": 0.5079365079365079,
+        "indicators": {
+          "first_person": 32,
+          "second_person": 30,
+          "third_limited": 1,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 13,
+        "dominant_pov": "second_person",
+        "confidence": 0.59375,
+        "indicators": {
+          "first_person": 38,
+          "second_person": 57,
+          "third_limited": 1,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 14,
+        "dominant_pov": "second_person",
+        "confidence": 0.5971223021582733,
+        "indicators": {
+          "first_person": 52,
+          "second_person": 83,
+          "third_limited": 4,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 15,
+        "dominant_pov": "second_person",
+        "confidence": 0.6462585034013606,
+        "indicators": {
+          "first_person": 49,
+          "second_person": 95,
+          "third_limited": 3,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 16,
+        "dominant_pov": "second_person",
+        "confidence": 0.7142857142857143,
+        "indicators": {
+          "first_person": 3,
+          "second_person": 10,
+          "third_limited": 1,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 17,
+        "dominant_pov": "second_person",
+        "confidence": 0.5333333333333333,
+        "indicators": {
+          "first_person": 28,
+          "second_person": 32,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 18,
+        "dominant_pov": "second_person",
+        "confidence": 0.6666666666666666,
+        "indicators": {
+          "first_person": 5,
+          "second_person": 10,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 19,
+        "dominant_pov": "second_person",
+        "confidence": 0.5208333333333334,
+        "indicators": {
+          "first_person": 23,
+          "second_person": 25,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 20,
+        "dominant_pov": "second_person",
+        "confidence": 0.5058823529411764,
+        "indicators": {
+          "first_person": 42,
+          "second_person": 43,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 21,
+        "dominant_pov": "first_person",
+        "confidence": 0.5979381443298969,
+        "indicators": {
+          "first_person": 58,
+          "second_person": 39,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 22,
+        "dominant_pov": "first_person",
+        "confidence": 0.7142857142857143,
+        "indicators": {
+          "first_person": 10,
+          "second_person": 4,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 23,
+        "dominant_pov": "first_person",
+        "confidence": 0.5740740740740741,
+        "indicators": {
+          "first_person": 31,
+          "second_person": 23,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 24,
+        "dominant_pov": "second_person",
+        "confidence": 0.7894736842105263,
+        "indicators": {
+          "first_person": 4,
+          "second_person": 15,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 25,
+        "dominant_pov": "first_person",
+        "confidence": 0.5666666666666667,
+        "indicators": {
+          "first_person": 17,
+          "second_person": 13,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 26,
+        "dominant_pov": "second_person",
+        "confidence": 0.6086956521739131,
+        "indicators": {
+          "first_person": 7,
+          "second_person": 14,
+          "third_limited": 2,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 27,
+        "dominant_pov": "first_person",
+        "confidence": 0.5,
+        "indicators": {
+          "first_person": 1,
+          "second_person": 0,
+          "third_limited": 1,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 28,
+        "dominant_pov": "first_person",
+        "confidence": 0.7272727272727273,
+        "indicators": {
+          "first_person": 8,
+          "second_person": 2,
+          "third_limited": 1,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 29,
+        "dominant_pov": "second_person",
+        "confidence": 0.5,
+        "indicators": {
+          "first_person": 5,
+          "second_person": 6,
+          "third_limited": 1,
+          "third_omniscient": 0
+        }
+      },
+      {
+        "chapter": 30,
+        "dominant_pov": "first_person",
+        "confidence": 0.6571428571428571,
+        "indicators": {
+          "first_person": 92,
+          "second_person": 48,
+          "third_limited": 0,
+          "third_omniscient": 0
+        }
+      }
+    ],
+    "pov_shifts": []
+  },
+  "plot_arc": {
+    "potential_climax": 22,
+    "progression": [
+      {
+        "chapter": 1,
+        "tension_density": 0.16645859342488556,
+        "resolution_density": 0.0,
+        "action_density": 0.37453183520599254,
+        "dialogue_ratio": 0.0005827081360623498,
+        "intensity_score": 0.8947149396587599,
+        "word_count": 2403
+      },
+      {
+        "chapter": 2,
+        "tension_density": 0.29895366218236175,
+        "resolution_density": 0.26905829596412556,
+        "action_density": 0.35874439461883406,
+        "dialogue_ratio": 0.0013781405703381744,
+        "intensity_score": 1.1360239162929746,
+        "word_count": 3345
+      },
+      {
+        "chapter": 3,
+        "tension_density": 0.1059322033898305,
+        "resolution_density": 0.1059322033898305,
+        "action_density": 0.5649717514124294,
+        "dialogue_ratio": 0.002474788096269257,
+        "intensity_score": 1.059322033898305,
+        "word_count": 2832
+      },
+      {
+        "chapter": 4,
+        "tension_density": 0.1310615989515072,
+        "resolution_density": 0.043687199650502405,
+        "action_density": 0.39318479685452157,
+        "dialogue_ratio": 0.004281949934123847,
+        "intensity_score": 0.8519003931847969,
+        "word_count": 2289
+      },
+      {
+        "chapter": 5,
+        "tension_density": 0.21358393848782573,
+        "resolution_density": 0.08543357539513029,
+        "action_density": 0.42716787697565145,
+        "dialogue_ratio": 0.006607409738063399,
+        "intensity_score": 1.0679196924391285,
+        "word_count": 2341
+      },
+      {
+        "chapter": 6,
+        "tension_density": 0.26136957658128596,
+        "resolution_density": 0.15682174594877157,
+        "action_density": 0.4181913225300575,
+        "dialogue_ratio": 0.00259665320253895,
+        "intensity_score": 1.150026136957658,
+        "word_count": 1913
+      },
+      {
+        "chapter": 7,
+        "tension_density": 0.2660989888238425,
+        "resolution_density": 0.21287919105907396,
+        "action_density": 0.4257583821181479,
+        "dialogue_ratio": 0.0030813673567645643,
+        "intensity_score": 1.1708355508249069,
+        "word_count": 1879
+      },
+      {
+        "chapter": 8,
+        "tension_density": 0.5172413793103449,
+        "resolution_density": 0.0,
+        "action_density": 0.1724137931034483,
+        "dialogue_ratio": 0.004753416518122401,
+        "intensity_score": 1.293103448275862,
+        "word_count": 580
+      },
+      {
+        "chapter": 9,
+        "tension_density": 0.9084302325581396,
+        "resolution_density": 0.07267441860465117,
+        "action_density": 0.32703488372093026,
+        "dialogue_ratio": 0.004448742746615087,
+        "intensity_score": 2.3074127906976742,
+        "word_count": 2752
+      },
+      {
+        "chapter": 10,
+        "tension_density": 0.8512769153730596,
+        "resolution_density": 0.10015022533800699,
+        "action_density": 0.5007511266900351,
+        "dialogue_ratio": 0.0005521303027514493,
+        "intensity_score": 2.453680520781172,
+        "word_count": 1997
+      },
+      {
+        "chapter": 11,
+        "tension_density": 0.9387351778656126,
+        "resolution_density": 0.14822134387351776,
+        "action_density": 0.8893280632411068,
+        "dialogue_ratio": 0.0018112660749864155,
+        "intensity_score": 3.2114624505928857,
+        "word_count": 2024
+      },
+      {
+        "chapter": 12,
+        "tension_density": 0.5181347150259068,
+        "resolution_density": 0.0,
+        "action_density": 0.4317789291882556,
+        "dialogue_ratio": 0.00777363184079602,
+        "intensity_score": 1.6839378238341969,
+        "word_count": 2316
+      },
+      {
+        "chapter": 13,
+        "tension_density": 0.29143897996357016,
+        "resolution_density": 0.2185792349726776,
+        "action_density": 0.546448087431694,
+        "dialogue_ratio": 0.008177639825702859,
+        "intensity_score": 1.4025500910746813,
+        "word_count": 2745
+      },
+      {
+        "chapter": 14,
+        "tension_density": 0.17995321216483715,
+        "resolution_density": 0.08997660608241857,
+        "action_density": 0.4858736728450603,
+        "dialogue_ratio": 0.004285714285714286,
+        "intensity_score": 1.0887169335972648,
+        "word_count": 5557
+      },
+      {
+        "chapter": 15,
+        "tension_density": 0.1203079884504331,
+        "resolution_density": 0.024061597690086624,
+        "action_density": 0.6256015399422521,
+        "dialogue_ratio": 0.007230301536439076,
+        "intensity_score": 1.1790182868142445,
+        "word_count": 4156
+      },
+      {
+        "chapter": 16,
+        "tension_density": 0.2625656414103526,
+        "resolution_density": 0.07501875468867217,
+        "action_density": 0.6376594148537135,
+        "dialogue_ratio": 0.002873914638620521,
+        "intensity_score": 1.4816204051012754,
+        "word_count": 2666
+      },
+      {
+        "chapter": 17,
+        "tension_density": 0.3832466465918423,
+        "resolution_density": 0.19162332329592116,
+        "action_density": 0.3011223651793047,
+        "dialogue_ratio": 0.005423135797069757,
+        "intensity_score": 1.2181768409526417,
+        "word_count": 3653
+      },
+      {
+        "chapter": 18,
+        "tension_density": 0.2916869227029655,
+        "resolution_density": 0.09722897423432182,
+        "action_density": 1.0209042294603792,
+        "dialogue_ratio": 0.005762265393480408,
+        "intensity_score": 2.1147301895964996,
+        "word_count": 2057
+      },
+      {
+        "chapter": 19,
+        "tension_density": 0.087527352297593,
+        "resolution_density": 0.13129102844638948,
+        "action_density": 0.6564551422319475,
+        "dialogue_ratio": 0.006508226691042047,
+        "intensity_score": 1.1597374179431073,
+        "word_count": 2285
+      },
+      {
+        "chapter": 20,
+        "tension_density": 0.23011176857330704,
+        "resolution_density": 0.13149243918474687,
+        "action_density": 0.5259697567389875,
+        "dialogue_ratio": 0.008583212573849069,
+        "intensity_score": 1.2491781722550954,
+        "word_count": 3042
+      },
+      {
+        "chapter": 21,
+        "tension_density": 1.2858851674641147,
+        "resolution_density": 0.0,
+        "action_density": 0.4784688995215311,
+        "dialogue_ratio": 0.008589464969471178,
+        "intensity_score": 3.289473684210526,
+        "word_count": 3344
+      },
+      {
+        "chapter": 22,
+        "tension_density": 1.4380530973451326,
+        "resolution_density": 0.05530973451327434,
+        "action_density": 1.9358407079646016,
+        "dialogue_ratio": 0.00421387770390486,
+        "intensity_score": 5.779867256637168,
+        "word_count": 1808
+      },
+      {
+        "chapter": 23,
+        "tension_density": 1.0679196924391285,
+        "resolution_density": 0.0,
+        "action_density": 1.3669372063220846,
+        "dialogue_ratio": 0.010732323232323232,
+        "intensity_score": 4.186245194361384,
+        "word_count": 2341
+      },
+      {
+        "chapter": 24,
+        "tension_density": 0.2068252326783868,
+        "resolution_density": 0.0,
+        "action_density": 1.0341261633919339,
+        "dialogue_ratio": 0.004822720371528088,
+        "intensity_score": 1.9648397104446742,
+        "word_count": 1934
+      },
+      {
+        "chapter": 25,
+        "tension_density": 0.3755868544600939,
+        "resolution_density": 0.0,
+        "action_density": 0.09389671361502347,
+        "dialogue_ratio": 0.00748553929908132,
+        "intensity_score": 0.892018779342723,
+        "word_count": 1065
+      },
+      {
+        "chapter": 26,
+        "tension_density": 0.12496094970321774,
+        "resolution_density": 0.0,
+        "action_density": 0.4061230865354577,
+        "dialogue_ratio": 0.005326086956521739,
+        "intensity_score": 0.859106529209622,
+        "word_count": 3201
+      },
+      {
+        "chapter": 27,
+        "tension_density": 1.0810810810810811,
+        "resolution_density": 0.09009009009009009,
+        "action_density": 0.8108108108108109,
+        "dialogue_ratio": 0.002640845070422535,
+        "intensity_score": 3.3783783783783785,
+        "word_count": 1110
+      },
+      {
+        "chapter": 28,
+        "tension_density": 0.5924950625411455,
+        "resolution_density": 0.0,
+        "action_density": 0.9874917709019092,
+        "dialogue_ratio": 0.0053639846743295016,
+        "intensity_score": 2.6662277814351545,
+        "word_count": 1519
+      },
+      {
+        "chapter": 29,
+        "tension_density": 0.25597269624573377,
+        "resolution_density": 0.17064846416382254,
+        "action_density": 0.6399317406143344,
+        "dialogue_ratio": 0.0028500178126113287,
+        "intensity_score": 1.4718430034129693,
+        "word_count": 2344
+      },
+      {
+        "chapter": 30,
+        "tension_density": 0.2893975269665877,
+        "resolution_density": 0.052617732175743226,
+        "action_density": 0.4209418574059458,
+        "dialogue_ratio": 0.007459987340627543,
+        "intensity_score": 1.2102078400420941,
+        "word_count": 3801
+      }
+    ]
+  },
+  "timeline": {
+    "timeline": [
+      {
+        "chapter": 1,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "Chapter 1 Caledonia at night. \u201cGood evening and welcome to Carl Tucker Tonight",
+              "position": 23
+            },
+            {
+              "text": "evening",
+              "context": "Chapter 1 Caledonia at night. \u201cGood evening and welcome to Carl Tucker Tonight.\u201d One of the l",
+              "position": 36
+            },
+            {
+              "text": "night",
+              "context": "gilantes, the only team to patrol a major city at night, protecting its citizens from misdeeds, transgres",
+              "position": 303
+            },
+            {
+              "text": "night",
+              "context": "pulled the ski mask over his face and smelled the night air. He always wished he had some enhanced sense ",
+              "position": 2242
+            },
+            {
+              "text": "night",
+              "context": "GoSquad. Firas hated defining what they did every night, giving it a name gave it a power he wasn\u2019 t will",
+              "position": 4742
+            },
+            {
+              "text": "night",
+              "context": "chool that he owned, where he started patrol this night. He would even take this route across the rooftop",
+              "position": 6403
+            },
+            {
+              "text": "night",
+              "context": " preserved, no credit taken. He\u2019d sleep well this night. \n\nVaughn / Go Squad / 8 He always wondered how t",
+              "position": 12071
+            },
+            {
+              "text": "night",
+              "context": "eally high telephone pole. I\u2019m going to call it a night,\u201d the radio informed. \u201cYou\u2019ve earned it, Nighting",
+              "position": 13162
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "before",
+              "context": "er with them heroes but were gone without a trace before she could start recording. Anytime they saw thems",
+              "position": 4142
+            },
+            {
+              "text": "next building",
+              "context": "a story to the landing below . He strode onto the next building over an alley , executed a lache from a scaffoldi",
+              "position": 5242
+            },
+            {
+              "text": "before",
+              "context": "e roof and full sprinted to the building\u2019 s ledge before doing a safety landing onto the building across t",
+              "position": 5429
+            },
+            {
+              "text": "before",
+              "context": "id, Burger King because\u2026 nevermind,\u201d he entreated before following up with a devastating elbow shiver acro",
+              "position": 10189
+            },
+            {
+              "text": "before",
+              "context": "k that \n\nVaughn / Go Squad / 7 Firas ducked under before rising up with an uppercut to his chin, knocking ",
+              "position": 10466
+            },
+            {
+              "text": "before",
+              "context": "ng the goon off his feet half a foot into the air before crashing down to the pavement. Standing with his ",
+              "position": 10569
+            },
+            {
+              "text": "before",
+              "context": "e behind the obscurity in her line of sight right before she turned back from his distraction. He dusted o",
+              "position": 11869
+            },
+            {
+              "text": "after",
+              "context": "s and Batman did it in the movies, just disappear after the hero act was done. He considered magician smo",
+              "position": 12184
+            },
+            {
+              "text": "later",
+              "context": "esponded, letting go of the call button. A moment later, he squeezed it and added, \"Thanks, Ruth.\" \n\nVaug",
+              "position": 13655
+            }
+          ]
+        },
+        "total_time_references": 17
+      },
+      {
+        "chapter": 2,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "o, and not every millennium, if you look into the night sky, and you know what it is that you should be l",
+              "position": 8178
+            },
+            {
+              "text": "night",
+              "context": "giant phenomenon that is blacker than the darkest night and bigger than we can possibly dream\u2026 stirs.\u201d Ah",
+              "position": 8825
+            },
+            {
+              "text": "night",
+              "context": "res and such, coincides with the stirrings of the night sky from a place beyond the stars. Some of the in",
+              "position": 11704
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "after",
+              "context": "at a time, usually in remote corners of the Earth after receiving a tip from researchers or their connect",
+              "position": 695
+            },
+            {
+              "text": "tomorrow",
+              "context": "ir sleeping area in the tent first gets to choose tomorrow's breakfast. And you know what that means.\" \"Panc",
+              "position": 4480
+            },
+            {
+              "text": "after",
+              "context": "materials.\" Firas beamed. With their bellies full after their meals and the darkness of the wood around t",
+              "position": 7967
+            },
+            {
+              "text": "today",
+              "context": " And particularly , one of its inhabitants. Using today\u2019 s modern sciences, it has been discovered nearly",
+              "position": 8468
+            },
+            {
+              "text": "ago",
+              "context": "iences, it has been discovered nearly fifty years ago that it\u2019s not just an alignment of the stars that",
+              "position": 8536
+            },
+            {
+              "text": "before",
+              "context": ",\u201d he said giving her a hug. Ahdia gently laughed before she closed her eyes and he watched her doze off. ",
+              "position": 14659
+            },
+            {
+              "text": "next day",
+              "context": " closed her eyes and he watched her doze off. The next day, while their parents were setting up their equipm",
+              "position": 14719
+            },
+            {
+              "text": "Earlier",
+              "context": " her. He was standing still, suppressing a smile. Earlier , they played hide-and-go-seek. Finding her broth",
+              "position": 15153
+            },
+            {
+              "text": "After",
+              "context": " off like a shot and leave her in his dust trail. After about fifteen minutes of exploring, she realized ",
+              "position": 15589
+            },
+            {
+              "text": "After",
+              "context": " Firas was unmoved, exactly in the same position. After one more time and Firas again having been complet",
+              "position": 16298
+            },
+            {
+              "text": "Before",
+              "context": "een the two of them, Firas howled with laughter . Before Ahdia realized Firas was playing to her paranoia ",
+              "position": 16802
+            },
+            {
+              "text": "after",
+              "context": "flush of rage filled her and she took off running after him, even though she knew there was no way she wo",
+              "position": 17107
+            }
+          ]
+        },
+        "total_time_references": 15
+      },
+      {
+        "chapter": 3,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "morning",
+              "context": " go to but sleeping in past a certain time of the morning, usually the hours in the double digits or the on",
+              "position": 728
+            },
+            {
+              "text": "night",
+              "context": "ately - got the two of them to finally agree to a night out together , one that \n\nVaughn / Go Squad / 23 ",
+              "position": 1602
+            },
+            {
+              "text": "morning",
+              "context": " we know?\" \"Few hours. If his vitals stabilize by morning, it worked. If they don't...\" Ruth didn't finish.",
+              "position": 14773
+            }
+          ],
+          "days_of_week": [
+            {
+              "text": "Thursday",
+              "context": "illegal medical experiments in her guest bedroom. Thursday nights used to be so much simpler . # \n\nVaughn / ",
+              "position": 15040
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "after",
+              "context": " hours in the double digits or the ones with \u201cPM\u201d after them, felt more decadent and overindulgent than t",
+              "position": 798
+            },
+            {
+              "text": "later",
+              "context": "bout doing stuff with. One of those occasions was later tonight, drawn out of her hermit hole, albeit an ",
+              "position": 1336
+            },
+            {
+              "text": "after",
+              "context": "hdia's world ever since their parents disappeared after a trip they took to Montana, over ten years ago. ",
+              "position": 2003
+            },
+            {
+              "text": "ago",
+              "context": "after a trip they took to Montana, over ten years ago. If they were around, it was possible that Ahdia ",
+              "position": 2053
+            },
+            {
+              "text": "before",
+              "context": "nd encouraged her the way they had her whole life before they were proclaimed dead by the insurance compan",
+              "position": 2284
+            },
+            {
+              "text": "after",
+              "context": "tter at the whole \u201cmoving on\u201d thing. Eventually , after a period of mourning and self-loathing not unlike",
+              "position": 2636
+            },
+            {
+              "text": "after",
+              "context": "s always left feeling a little bit weird about it after. It was the customary thing to do between family ",
+              "position": 3818
+            },
+            {
+              "text": "After",
+              "context": ", apologizing with some totally plausible excuse. After an hour passed, Ruth\u2019 s smile disappeared along w",
+              "position": 5114
+            },
+            {
+              "text": "last time",
+              "context": " . She didn\u2019 t want to worry about it because the last time she worried about missing family members, she was",
+              "position": 5816
+            },
+            {
+              "text": "ago",
+              "context": "ven recall a first aid course she had taken years ago to be a camp counselor as a teen. What froze her ",
+              "position": 7911
+            },
+            {
+              "text": "later",
+              "context": "he breathed heavily , wincing. \u201c\u2026 talk about that later? Can you please get Ruth?\u201d \u201cRuth? No, baby bro, w",
+              "position": 8307
+            },
+            {
+              "text": "last saw",
+              "context": "t about something. It had been a while since they last saw each other . She couldn\u2019 t remember the last time",
+              "position": 10097
+            },
+            {
+              "text": "last time",
+              "context": " last saw each other . She couldn\u2019 t remember the last time. It would have been sooner if she hadn\u2019 t dodged ",
+              "position": 10146
+            },
+            {
+              "text": "before",
+              "context": "ble time, she pursed her lips and closed her eyes before dialing Ruth. After a few rings, Ruth answered, \"",
+              "position": 10867
+            },
+            {
+              "text": "After",
+              "context": "her lips and closed her eyes before dialing Ruth. After a few rings, Ruth answered, \"Hey , Ahdia, I just ",
+              "position": 10888
+            },
+            {
+              "text": "after",
+              "context": "bonding experience. \"How's he doing?\" Ahdia asked after Ruth had taken what felt like all her blood but w",
+              "position": 15533
+            }
+          ]
+        },
+        "total_time_references": 20
+      },
+      {
+        "chapter": 4,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "r sibling behavior . Ruth had been in and out all night, checking his vitals every twenty minutes with th",
+              "position": 240
+            },
+            {
+              "text": "morning",
+              "context": "heets. \"Hey , Ahdia,\" he groggily croaked. \"Good\u2026 morning? What time is it?\" \"Try afternoon,\" she corrected",
+              "position": 842
+            },
+            {
+              "text": "afternoon",
+              "context": "y croaked. \"Good\u2026 morning? What time is it?\" \"Try afternoon,\" she corrected. \"How you feeling, Firas?\" He swa",
+              "position": 874
+            },
+            {
+              "text": "Night",
+              "context": "thing.\" \"But the team\u2014\" \"Will manage without you. Night Knight's been leading the tactical side for years",
+              "position": 3594
+            },
+            {
+              "text": "night",
+              "context": "lt like he would collapse into himself. Then, one night, he saw someone getting beat up in the park and h",
+              "position": 5804
+            },
+            {
+              "text": "night",
+              "context": " time and they were saying the park was theirs at night, that we had to pay a tax. I was really frightene",
+              "position": 7220
+            },
+            {
+              "text": "night",
+              "context": "unning classes. Eventually , I joined him on some night patrols. And I wasn't the only one. Apparently , ",
+              "position": 8683
+            },
+            {
+              "text": "night",
+              "context": " us to take shifts so none of us have to go every night. And, as you can guess, some personalities are mo",
+              "position": 9107
+            },
+            {
+              "text": "Night",
+              "context": "h other's backs. \n\nVaughn / Go Squad / 38 There's Night Knight, Gloom Girl, Crimson Sable and Battlea. My",
+              "position": 9601
+            },
+            {
+              "text": "Night",
+              "context": "is and we all seem to have our different reasons. Night Knight is ex-military , he's revealed that much t",
+              "position": 10206
+            },
+            {
+              "text": "Night",
+              "context": " to begin with. Oh, that's another rule. No guns. Night Knight still argues for it but he never crosses t",
+              "position": 10899
+            },
+            {
+              "text": "night",
+              "context": "es and ears open for anyone in trouble. Just last night, I helped an old lady find her cat, but before I ",
+              "position": 11737
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "before",
+              "context": "-goo eye each other for an additional few seconds before interjecting, \"So, what's the prognosis, doc? Is ",
+              "position": 1564
+            },
+            {
+              "text": "after",
+              "context": "g she had lost her temper . \"Yeah, well,\" he said after he was sure she had let it all out. \"I knew I los",
+              "position": 2493
+            },
+            {
+              "text": "before",
+              "context": " from massive trauma. You try to go out on patrol before you're ready , you'll undo everything.\" \"But the ",
+              "position": 3505
+            },
+            {
+              "text": "before",
+              "context": "red her brow and pressed her lips together firmly before slowly asking, \"Why would you have to plan for th",
+              "position": 4737
+            },
+            {
+              "text": "before",
+              "context": "e saw Ruth open her eyes and mouth slightly wider before turning away . \"Because\u2026\" Firas began. \"\u2026 I do th",
+              "position": 4864
+            },
+            {
+              "text": "ago",
+              "context": "h agreed and pondered where to start. A few years ago, about a year and a half after your parents disap",
+              "position": 5436
+            },
+            {
+              "text": "after",
+              "context": "o start. A few years ago, about a year and a half after your parents disappeared and after Firas opened h",
+              "position": 5465
+            },
+            {
+              "text": "after",
+              "context": "ear and a half after your parents disappeared and after Firas opened his freerunning school, he was still",
+              "position": 5500
+            },
+            {
+              "text": "later",
+              "context": "d I didn't think twice about it. But about a week later, he was back, his head gashed open, saying he fel",
+              "position": 6262
+            },
+            {
+              "text": "next time",
+              "context": " on his way and didn't connect with him until the next time he came back, but not because of an injury . He c",
+              "position": 6660
+            },
+            {
+              "text": "before",
+              "context": "r of them, the one that was doing the talking and before I knew it, they were scrambling all around me, go",
+              "position": 7436
+            },
+            {
+              "text": "after",
+              "context": "new it, they were scrambling all around me, going after him. I thought he was dead or at least badly inju",
+              "position": 7496
+            },
+            {
+              "text": "After",
+              "context": " him wear body armor when he went out on patrols. After a while, I took lessons at the Parkour Academy , ",
+              "position": 8380
+            },
+            {
+              "text": "after",
+              "context": "g, but also Krav Maga and jiujitsu that he taught after hours to the recruits, others he trained individu",
+              "position": 8512
+            },
+            {
+              "text": "last night",
+              "context": "ur eyes and ears open for anyone in trouble. Just last night, I helped an old lady find her cat, but before I ",
+              "position": 11732
+            },
+            {
+              "text": "before",
+              "context": "ast night, I helped an old lady find her cat, but before I did, I stashed my body armor , belt and mask, j",
+              "position": 11783
+            }
+          ]
+        },
+        "total_time_references": 28
+      },
+      {
+        "chapter": 5,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "d. \"I wasn't planning on going out on patrol last night. I had the night before and I had plans with the ",
+              "position": 1238
+            },
+            {
+              "text": "night",
+              "context": "ning on going out on patrol last night. I had the night before and I had plans with the two of you for di",
+              "position": 1255
+            },
+            {
+              "text": "morning",
+              "context": "ou properly examined. I'll get what I need in the morning and bring it here. You can't move. You have to st",
+              "position": 6323
+            },
+            {
+              "text": "Night",
+              "context": "Firas closed his eyes. \"The team\u2014\" \"Will be fine. Night Knight can handle tactical. I'll coordinate medic",
+              "position": 7352
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "after",
+              "context": "ow tell me what happened tonight,\" Ahdia insisted after processing everything Ruth shared. \"Is this norma",
+              "position": 72
+            },
+            {
+              "text": "After",
+              "context": "disbelief. \"Look, Ahdia,\" Firas spoke gingerly . \"After mama and papa\u2026\" Firas exhaled, unable to speak th",
+              "position": 726
+            },
+            {
+              "text": "before",
+              "context": " lips and turned away from looking at her brother before she couldn't contain her emotions any longer . \n\n",
+              "position": 1095
+            },
+            {
+              "text": "last night",
+              "context": "tinued. \"I wasn't planning on going out on patrol last night. I had the night before and I had plans with the ",
+              "position": 1233
+            },
+            {
+              "text": "before",
+              "context": "n going out on patrol last night. I had the night before and I had plans with the two of you for dinner . ",
+              "position": 1261
+            },
+            {
+              "text": "next thing",
+              "context": "h. I'm sure they were just movers, right? But the next thing I see, the front door busts open and more guys ar",
+              "position": 1784
+            },
+            {
+              "text": "before",
+              "context": "to win? Must have been really important. Anyway , before I know it, Kain is snapping his fingers and some ",
+              "position": 3997
+            },
+            {
+              "text": "before",
+              "context": "low but obviously I was blown and I ran like hell before they started opening fire on me! Blam! Blam! Blam",
+              "position": 5264
+            },
+            {
+              "text": "Before",
+              "context": " appeared out of a trapdoor right in front of me. Before I even could think, I pop vaulted over him and I ",
+              "position": 5913
+            },
+            {
+              "text": "last time",
+              "context": " good?!\" Firas volleyed in defense. \"When was the last time before tonight that you saw the sidewalk except t",
+              "position": 9671
+            },
+            {
+              "text": "before",
+              "context": "iras volleyed in defense. \"When was the last time before tonight that you saw the sidewalk except to hit u",
+              "position": 9681
+            },
+            {
+              "text": "before",
+              "context": "he said. \"Stop it! Both of you!\" Ruth interrupted before Firas responded. \"Just\u2026 ugh\u2026 stop. Please.\" Ahdia",
+              "position": 10523
+            },
+            {
+              "text": "before",
+              "context": " wouldn't come no matter how long she waited. And before long, before she realized where she was walking, ",
+              "position": 11828
+            },
+            {
+              "text": "before",
+              "context": "e no matter how long she waited. And before long, before she realized where she was walking, she found her",
+              "position": 11841
+            }
+          ]
+        },
+        "total_time_references": 18
+      },
+      {
+        "chapter": 6,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "get in the building, she would at least call it a night and be able to legitimately call shenanigans on F",
+              "position": 571
+            },
+            {
+              "text": "night",
+              "context": "orting, out on a closed dock in the middle of the night, breaking and entering into a suspicious warehous",
+              "position": 2452
+            },
+            {
+              "text": "night",
+              "context": " before she struck the door. \"You do that and the night's over before it begins. That loud noise is going",
+              "position": 2877
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "before",
+              "context": "er startled. Ahdia's heart jumped into her throat before she turned to see Ruth standing there, wearing a ",
+              "position": 2034
+            },
+            {
+              "text": "Before",
+              "context": " the way I'm dressed,\" Ahdia sneered. \"Typical.\" \"Before you do that\u2026\" Ruth quickly cut in before she stru",
+              "position": 2787
+            },
+            {
+              "text": "before",
+              "context": "pical.\" \"Before you do that\u2026\" Ruth quickly cut in before she struck the door. \"You do that and the night's",
+              "position": 2828
+            },
+            {
+              "text": "before",
+              "context": "truck the door. \"You do that and the night's over before it begins. That loud noise is going to draw all t",
+              "position": 2890
+            },
+            {
+              "text": "before",
+              "context": "lted her head down, her eyes looking to her right before she began walking away . Ahdia blinked the rain p",
+              "position": 3170
+            },
+            {
+              "text": "later",
+              "context": " drew her attention to the direction and a moment later, saw Ruth leaping from the top of a stack of ship",
+              "position": 3630
+            },
+            {
+              "text": "next to",
+              "context": " saw once on Animal Planet. She dropped the plank next to her and ran to where she could get a better angle",
+              "position": 3902
+            },
+            {
+              "text": "next to",
+              "context": "st landing, a single unstacked shipping container next to a stack of two, next to a stack of three, next to",
+              "position": 4471
+            },
+            {
+              "text": "next to",
+              "context": "tacked shipping container next to a stack of two, next to a stack of three, next to a stack of four from wh",
+              "position": 4495
+            },
+            {
+              "text": "next to",
+              "context": "next to a stack of two, next to a stack of three, next to a stack of four from where Ruth made her leap. Be",
+              "position": 4521
+            },
+            {
+              "text": "after",
+              "context": ", as Ruth suspected would happen, Ahdia hesitated after looking at how high up she was. The top of the ro",
+              "position": 5320
+            },
+            {
+              "text": "before",
+              "context": "rself by taking quick breaths, she darted forward before her nerves stopped her. Ruth's eyes widened on Ah",
+              "position": 6300
+            },
+            {
+              "text": "After",
+              "context": "hink Ahdia had the courage to go through with it. After four momentum building strides, she timed her lea",
+              "position": 6565
+            },
+            {
+              "text": "before",
+              "context": "cleared the gap by a good foot and landed safely\u2026 before tumbling forward to the ground anyway because her",
+              "position": 6935
+            },
+            {
+              "text": "before",
+              "context": "ike Spider -Man does on Disney+, to detect danger before it occurred so she could avoid it. The only tingl",
+              "position": 9286
+            },
+            {
+              "text": "before",
+              "context": "reached the crate, Ruth looked nervously at Ahdia before she put her hands on the lid. \"Hold it!\" they hea",
+              "position": 10091
+            }
+          ]
+        },
+        "total_time_references": 19
+      },
+      {
+        "chapter": 7,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "Evening",
+              "context": "il henchman catalog that villains subscribed to. \"Evening, sir,\" Ruth responded. \"We were just out for a st",
+              "position": 817
+            },
+            {
+              "text": "Night",
+              "context": " her by both shoulders. \n\nVaughn / Go Squad / 59 \"Night Knight!\" Ruth realized, nearly crying in relief. ",
+              "position": 7875
+            },
+            {
+              "text": "Night",
+              "context": "all made it in time. I was about to get brained!\" Night Knight turned her around and used a combat knife ",
+              "position": 7995
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "after",
+              "context": " feeling that her brother wasn't making things up after all but for some reason, she kept it in the back ",
+              "position": 116
+            },
+            {
+              "text": "next moment",
+              "context": "st and tightly shut her eyes. Target. In the very next moment, the man with the gun squeezed the trigger . Ruth",
+              "position": 1973
+            },
+            {
+              "text": "before",
+              "context": "w bent in an unnatural manner . He roared in pain before Ruth climbed up the man's slightly bent knee by s",
+              "position": 2209
+            },
+            {
+              "text": "before",
+              "context": "r backup, they had precious few seconds remaining before they were outnumbered. She called out for Ahdia a",
+              "position": 2772
+            },
+            {
+              "text": "before",
+              "context": ". \"We gotta get out of here,\" Ruth said hurriedly before looking at Ahdia, who was fading fast. Ahdia look",
+              "position": 3421
+            },
+            {
+              "text": "last thing",
+              "context": "h echoed in Ahdia's ears as she slumped over. The last thing Ahdia saw before she passed out was Ruth being hi",
+              "position": 3688
+            },
+            {
+              "text": "before",
+              "context": "ars as she slumped over. The last thing Ahdia saw before she passed out was Ruth being hit in the back of ",
+              "position": 3709
+            },
+            {
+              "text": "earlier",
+              "context": "dy to be dipped into by the bagita that she baked earlier in the day. It had been so long since those aroma",
+              "position": 4269
+            },
+            {
+              "text": "last thing",
+              "context": ". She closed her eyes, not wanting that to be the last thing she saw. \"What the\u2026!\" she heard and opened her ey",
+              "position": 7214
+            }
+          ]
+        },
+        "total_time_references": 12
+      },
+      {
+        "chapter": 8,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "Night",
+              "context": " face like he was checking if it was still there. Night Knight stood frozen, staring at the flames. Gloom",
+              "position": 984
+            },
+            {
+              "text": "Night",
+              "context": "d shaking his head. \"Keep your mask on, Crimson,\" Night Knight ordered. \"We're still on duty!\" Crimson wa",
+              "position": 2001
+            },
+            {
+              "text": "Night",
+              "context": "k in!\" Ruth started toward the burning warehouse. Night Knight grabbed her arm. \"Ruth, no one could have ",
+              "position": 2607
+            },
+            {
+              "text": "Night",
+              "context": "led her. And now she was gone. \"We need to move,\" Night Knight said quietly . \"Before cops show up.\" Ruth",
+              "position": 3055
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "next county",
+              "context": "was distant. Wrong. Like hearing thunder from the next county over. Ruth's ears should be ringing. Her body sho",
+              "position": 314
+            },
+            {
+              "text": "next to",
+              "context": " Nothing. \n\nVaughn / Go Squad / 63 \"She was right next to the crate,\" Battlea said, voice shaking. \"When th",
+              "position": 2471
+            },
+            {
+              "text": "Before",
+              "context": ". \"We need to move,\" Night Knight said quietly . \"Before cops show up.\" Ruth didn't respond. Couldn't tear",
+              "position": 3084
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": "wly , every movement careful, like her body might fall apart if she moved too fast. The warehouse was fi",
+              "position": 585
+            }
+          ]
+        },
+        "total_time_references": 8
+      },
+      {
+        "chapter": 9,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "evening",
+              "context": "onia after tasting Canada and Mexico. \"Well, good evening and welcome to Carl Tucker Tonight. Presumptive P",
+              "position": 247
+            },
+            {
+              "text": "night",
+              "context": " said in his press conference earlier today .\" At night, a near police state emer ges as local law enforc",
+              "position": 1094
+            },
+            {
+              "text": "midnight",
+              "context": "ing is being a hard working American, burning the midnight oil at one of his businesses that he keeps a pers",
+              "position": 1571
+            },
+            {
+              "text": "night",
+              "context": " was different. Ruth's mind was elsewhere, to the night of the warehouse, of when they mysteriously survi",
+              "position": 4775
+            },
+            {
+              "text": "Night",
+              "context": "I don't think we're going to catch any fish here. Night Knight just radioed in and said he's heard there'",
+              "position": 7193
+            },
+            {
+              "text": "night",
+              "context": "ng who happened to be looking out their window at night saw their movement, they would swear they weren't",
+              "position": 8044
+            },
+            {
+              "text": "night",
+              "context": "w?\" Ruth defended. \"You've been in la-la land all night and were sloppy in a lot of the passes on the way",
+              "position": 9752
+            },
+            {
+              "text": "night",
+              "context": "ink to call us for backup before you went in that night and then tried to explain everything that happene",
+              "position": 12299
+            },
+            {
+              "text": "night",
+              "context": "routine stops were twice as likely to go wrong at night in Caledonia than if it were during the middle of",
+              "position": 13914
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "after",
+              "context": "Chapter 9 Two nights after the warehouse. Caledonia. A city nestled in betwe",
+              "position": 21
+            },
+            {
+              "text": "after",
+              "context": "e seasons. Goldilocks would have chosen Caledonia after tasting Canada and Mexico. \"Well, good evening an",
+              "position": 202
+            },
+            {
+              "text": "today",
+              "context": "e, as you may have heard, fired back at the media today in Caledonia.\" Like most cities, it is stricken w",
+              "position": 387
+            },
+            {
+              "text": "earlier",
+              "context": "e liberal press,' he said in his press conference earlier today .\" At night, a near police state emer ges a",
+              "position": 1074
+            },
+            {
+              "text": "today",
+              "context": "l press,' he said in his press conference earlier today .\" At night, a near police state emer ges as loca",
+              "position": 1082
+            },
+            {
+              "text": "before",
+              "context": "ians of the peace and public. Firas saw that even before he ever decided to patrol the city from the rooft",
+              "position": 2037
+            },
+            {
+              "text": "after",
+              "context": "ras walked the streets, careful to avoid the cops after the curfew that was in place, more unofficially t",
+              "position": 2351
+            },
+            {
+              "text": "before",
+              "context": " neighborhood with drugs, who were shooting folks before any warning and then claiming they felt their liv",
+              "position": 2594
+            },
+            {
+              "text": "ago",
+              "context": "t me be frank, up until a hundred and fifty years ago, slavery was the norm, it had been for thousands ",
+              "position": 3191
+            },
+            {
+              "text": "before",
+              "context": " was the norm, it had been for thousands of years before that. Sadly .\" This was the implicit understandin",
+              "position": 3253
+            },
+            {
+              "text": "last two",
+              "context": "on the right but on the left. These events of the last two days, where even a potential sitting President of",
+              "position": 3972
+            },
+            {
+              "text": "ago",
+              "context": "ith since the impossible occurred a couple nights ago against Harding Kain. Two snaps of a finger close",
+              "position": 6740
+            },
+            {
+              "text": "after",
+              "context": " \"Gale?\" Battlea asked, waving a hand in her face after Ruth turned to her. Her black Lycra ski mask was ",
+              "position": 6877
+            },
+            {
+              "text": "After",
+              "context": "r buildings and get mistaken for birds or planes. After all, they were just normal people dressed in ligh",
+              "position": 7836
+            },
+            {
+              "text": "before",
+              "context": " alone. If you didn't think to call us for backup before you went in that night and then tried to explain ",
+              "position": 12275
+            },
+            {
+              "text": "next to",
+              "context": "\" Battlea narrowed her eyebrows and came to stand next to Ruth. \"Firas' sister?\" \"Yeah. I saw her get shot.",
+              "position": 12748
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": "of what they needed to do to not roll an ankle or fall to their deaths. Battlea won the unspoken race th",
+              "position": 8777
+            }
+          ]
+        },
+        "total_time_references": 26
+      },
+      {
+        "chapter": 10,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "Chapter 10 That same night. \"Get out of the car! Now!\" the officer demanded ",
+              "position": 21
+            },
+            {
+              "text": "night",
+              "context": "ter she was home, usually while showering off the night\u2019 s patrol. It was also whenever a teammate needed",
+              "position": 5863
+            },
+            {
+              "text": "Night",
+              "context": " and continue to find Gloom Girl. \"Nightingale to Night Knight, come in Night Knight,\" she barked into he",
+              "position": 6749
+            },
+            {
+              "text": "Night",
+              "context": "Gloom Girl. \"Nightingale to Night Knight, come in Night Knight,\" she barked into her handheld. \"Go for Ni",
+              "position": 6771
+            },
+            {
+              "text": "Night",
+              "context": "ht Knight,\" she barked into her handheld. \"Go for Night Knight!\" he cried through the radio. \u201cAre you oka",
+              "position": 6824
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "before",
+              "context": " set of handcuf fs. \u201cThat\u2019 s it,\u201d Gloom Girl said before the audio cut. \u201cGloom Girl!\u201d Ruth barked into the",
+              "position": 1567
+            },
+            {
+              "text": "before",
+              "context": "r binoculars that the two takedowns were fast and before backup was requested. Battlea helped the mother u",
+              "position": 3668
+            },
+            {
+              "text": "after",
+              "context": "!\u201d Gloom Girl smiled and waved at the little girl after she helped her back into her car seat. The miniva",
+              "position": 4524
+            },
+            {
+              "text": "before",
+              "context": "Hang tight, Gloomy!\u201d Her performance was affected before, they were right and she knew it immediately when",
+              "position": 5467
+            },
+            {
+              "text": "after",
+              "context": "d instincts. At times, she even surprised herself after a particularly daring maneuver but only well afte",
+              "position": 5760
+            },
+            {
+              "text": "after",
+              "context": "fter a particularly daring maneuver but only well after she was home, usually while showering off the nig",
+              "position": 5811
+            },
+            {
+              "text": "after",
+              "context": "t would just lead her to Gloom Girl but too late, after they reached her. She needed to anticipate where ",
+              "position": 6257
+            },
+            {
+              "text": "before",
+              "context": " I repeat, Elvis has left the building!\u201d she said before clipping her radio and continuing to where she th",
+              "position": 7420
+            },
+            {
+              "text": "before",
+              "context": " all clear transmission. They never had to use it before because this level of police attention was brand ",
+              "position": 7643
+            },
+            {
+              "text": "after",
+              "context": "considered as she slowed her heart rate. She was, after all, the one that disobeyed the order from Nighti",
+              "position": 8946
+            },
+            {
+              "text": "After",
+              "context": " to apply adult sized cuffs onto a six-year -old? After a few more breaths trying to psych herself up, sh",
+              "position": 9369
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": " water below , wondering if she could survive the fall. Even if she did, swimming was almost harder than",
+              "position": 10314
+            }
+          ]
+        },
+        "total_time_references": 17
+      },
+      {
+        "chapter": 11,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "Chapter 11 That same night. The helicopter decided to go after Gloom Girl in",
+              "position": 21
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "after",
+              "context": " 11 That same night. The helicopter decided to go after Gloom Girl in the shell game. A selfish part of h",
+              "position": 57
+            },
+            {
+              "text": "before",
+              "context": "ught. She turned 180 degrees and took a few steps before an identical impediment blocked the next block. I",
+              "position": 995
+            },
+            {
+              "text": "next block",
+              "context": " steps before an identical impediment blocked the next block. In moments like these, as far as her training in",
+              "position": 1038
+            },
+            {
+              "text": "after",
+              "context": "n, she didn't panic and performed one safety roll after the other until she reached the bottom. Recoverin",
+              "position": 1641
+            },
+            {
+              "text": "last roll",
+              "context": " reached the bottom. Recovering smoothly from the last roll onto her feet, she continued sprinting into the d",
+              "position": 1716
+            },
+            {
+              "text": "last very",
+              "context": "was to fight her way out and that wasn't going to last very long. Seeing a group bustling their way into the ",
+              "position": 2483
+            },
+            {
+              "text": "next to",
+              "context": "pole, finishing with a double kick to the officer next to him, sending that one flying back, while dragging",
+              "position": 3616
+            },
+            {
+              "text": "next to",
+              "context": "r she was using as a sling to the ground. Landing next to him, she delivered an elbow to his face, connecti",
+              "position": 3747
+            },
+            {
+              "text": "next for",
+              "context": "er time to stand up to face whoever else might be next for her to attack. The next nearest officer shouted, ",
+              "position": 3974
+            },
+            {
+              "text": "next nearest",
+              "context": "whoever else might be next for her to attack. The next nearest officer shouted, \"Found her! She's here! Open fir",
+              "position": 4002
+            },
+            {
+              "text": "before",
+              "context": "y yelled. \"Fire in the hole!\" someone else yelled before popping a canister in his hand and rolling it tow",
+              "position": 4532
+            },
+            {
+              "text": "before",
+              "context": "p to six seconds and she hoped it wasn't too late before she quickly rolled over onto her stomach, did a m",
+              "position": 4758
+            },
+            {
+              "text": "after",
+              "context": "ficer who sent it dove out of the way. It flashed after a loud pop. A flashbang, she noted, judging by th",
+              "position": 4978
+            },
+            {
+              "text": "after",
+              "context": "le bone. She fell down onto her back, sucking air after she felt it all knocked out of her. The pain was ",
+              "position": 5548
+            },
+            {
+              "text": "tomorrow",
+              "context": " in the armor . \"That's going to be a nice bruise tomorrow ,\" he commented. \"Maybe if you're nice to me, I'l",
+              "position": 7799
+            },
+            {
+              "text": "later",
+              "context": " \"Maybe if you're nice to me, I'll show it to you later,\" she managed to crack. \"That a promise? Because ",
+              "position": 7874
+            },
+            {
+              "text": "next building",
+              "context": " kicked like a rag doll clear off the roof to the next building, apparently kicked so hard, he left behind his we",
+              "position": 9464
+            },
+            {
+              "text": "after",
+              "context": "e looked \n\nVaughn / Go Squad / 86 over at Crimson after he uppercut another SWAT cop ten feet straight up",
+              "position": 10375
+            }
+          ]
+        },
+        "total_time_references": 19
+      },
+      {
+        "chapter": 12,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "Night",
+              "context": "Chapter 12 Night Knight jumped. They watched him expectantly . He ",
+              "position": 11
+            },
+            {
+              "text": "night",
+              "context": "n her face when something like this happened that night in the warehouse. \"I thought I was going to get a",
+              "position": 832
+            },
+            {
+              "text": "Night",
+              "context": "rehouse. \"I thought I was going to get arrested,\" Night Knight continued. \"I was on the rooftops when on ",
+              "position": 897
+            },
+            {
+              "text": "night",
+              "context": "8 one of them with a crazy story to tell from the night before. He came out of his office where they were",
+              "position": 1421
+            },
+            {
+              "text": "night",
+              "context": "bably has something to do with what happened that night at the warehouse. We all teleported out of there,",
+              "position": 2381
+            },
+            {
+              "text": "night",
+              "context": "mber doing it, but I don't remember doing it last night, either . Maybe my powers are panic-based?\" \"None",
+              "position": 2604
+            },
+            {
+              "text": "night",
+              "context": "t for now. What was with the police presence last night?\" \"Yeah, that was extra as hell,\" Gloom Girl adde",
+              "position": 2879
+            },
+            {
+              "text": "Night",
+              "context": "disbanding.\" The air left the room. \"Disbanding?\" Night Knight repeated. \"It's for everyone's safety ,\" F",
+              "position": 3181
+            },
+            {
+              "text": "night",
+              "context": " personal safety , we wouldn't be going out every night dressed like urban ninjas looking for trouble.\" \"",
+              "position": 3375
+            },
+            {
+              "text": "night",
+              "context": "? That makes me responsible for you all. And last night, it could have ended in the worst ways,\" he said,",
+              "position": 3606
+            },
+            {
+              "text": "Night",
+              "context": "nowing that to be indisputable. \"My question is,\" Night Knight said. \"How did the cops know where we were",
+              "position": 3943
+            },
+            {
+              "text": "Night",
+              "context": "e time. What are the odds?\" \"What are you saying, Night Knight?\" Firas asked. \"I'm saying\u2026 who among us\u2026 ",
+              "position": 4187
+            },
+            {
+              "text": "Night",
+              "context": "her. Gloom Girl put her head on Leah's shoulder . Night Knight decided he would join in on the confession",
+              "position": 5724
+            },
+            {
+              "text": "Night",
+              "context": ",\" she said. \"We trust you, Tess. That's not what Night Knight\u2026 Ben was saying.\" \"It's about time you all",
+              "position": 6007
+            },
+            {
+              "text": "Night",
+              "context": "e did need to see. You weren't wrong about that.\" Night Knight shifted uncomfortably . \"Though it does me",
+              "position": 6963
+            },
+            {
+              "text": "Night",
+              "context": "lence. Gloom Girl looked down. \"I'm sorry , man,\" Night Knight said. Firas shook his head, blinking rapid",
+              "position": 7820
+            },
+            {
+              "text": "night",
+              "context": "e watching TV eight hours a day and eight hours a night, living on raspberry freezes and gummy bears. She",
+              "position": 8094
+            },
+            {
+              "text": "Night",
+              "context": "e. Battlea's hand reached Gloom Girl's shoulder . Night Knight's eyes completed their blink. Everyone pro",
+              "position": 10859
+            },
+            {
+              "text": "Night",
+              "context": "aking him see\u2014 \"Grieving doesn't make you cruel,\" Night Knight said quietly . \"That was cruel, man.\" The ",
+              "position": 12067
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "next thing",
+              "context": "w her jump. Then she blinked out of sight and the next thing she knew , Gloom Girl seemingly fell out of the s",
+              "position": 605
+            },
+            {
+              "text": "before",
+              "context": "of them with a crazy story to tell from the night before. He came out of his office where they were standi",
+              "position": 1427
+            },
+            {
+              "text": "last night",
+              "context": " remember doing it, but I don't remember doing it last night, either . Maybe my powers are panic-based?\" \"None",
+              "position": 2599
+            },
+            {
+              "text": "last night",
+              "context": "e that for now. What was with the police presence last night?\" \"Yeah, that was extra as hell,\" Gloom Girl adde",
+              "position": 2874
+            },
+            {
+              "text": "last night",
+              "context": " what? That makes me responsible for you all. And last night, it could have ended in the worst ways,\" he said,",
+              "position": 3601
+            },
+            {
+              "text": "before",
+              "context": "ing at Gloom Girl. \"We have to consider ending it before it comes to that.\" \"Even if we disband,\" Gloom Gi",
+              "position": 3716
+            },
+            {
+              "text": "next to",
+              "context": "mer on the Caledonia Roller Derby team.\" Standing next to Gloom Girl, she put her arm around her. Gloom Gir",
+              "position": 5631
+            },
+            {
+              "text": "before",
+              "context": "shtags\u2014that's me. I started it.\" She rushed ahead before anyone could interrupt. \"I know you said stay sec",
+              "position": 6433
+            },
+            {
+              "text": "earlier",
+              "context": "ed his eyes. \"Tess\u2014\" \"I'm sorry I didn't tell you earlier . But it's working. People believe in us. They ac",
+              "position": 6643
+            },
+            {
+              "text": "ago",
+              "context": "reezes and gummy bears. She gave up on life years ago.\" He wiped at his eyes quickly , forcing the word",
+              "position": 8172
+            },
+            {
+              "text": "before",
+              "context": "deciding whether to be real or not. She'd seen it before. In the warehouse. During her training. Outside h",
+              "position": 9360
+            },
+            {
+              "text": "before",
+              "context": "t. Dangerously quiet. The kind of quiet that came before hurricanes. \"I didn't\u2014\" Firas started. \n\nVaughn /",
+              "position": 11349
+            },
+            {
+              "text": "next to",
+              "context": "uth's expression softened slightly . She sat down next to him. Didn't touch him, but close enough. \"You pro",
+              "position": 12492
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": "eyes were locked on the floor , a tear caught mid-fall. \n\nVaughn / Go Squad / 93 She shook her head. The",
+              "position": 8863
+            }
+          ]
+        },
+        "total_time_references": 33
+      },
+      {
+        "chapter": 13,
+        "temporal_references": {
+          "specific_dates": [
+            {
+              "text": "August 14th",
+              "context": "AERIS,\" Bourn said. \"Warehouse incident. Night of August 14th. Begin playback.\" The display resolved into an im",
+              "position": 4348
+            }
+          ],
+          "time_of_day": [
+            {
+              "text": "Night",
+              "context": "ld her cost three grand to replace after someone (Night Knight) tried to do a wall run on it. She was on ",
+              "position": 229
+            },
+            {
+              "text": "Night",
+              "context": "kered. \"FAERIS,\" Bourn said. \"Warehouse incident. Night of August 14th. Begin playback.\" The display reso",
+              "position": 4339
+            },
+            {
+              "text": "Night",
+              "context": "aid. --- New footage. Ahdia's apartment building. Night. Two days after the warehouse. The display showed",
+              "position": 10411
+            },
+            {
+              "text": "afternoon",
+              "context": "Bourn said. The display fast-forwarded. Same day, afternoon. Past-Ahdia in her living room, staring at a coff",
+              "position": 10898
+            },
+            {
+              "text": "Night",
+              "context": "d. Different location. Ruth's apartment building. Night. \"Oh no,\" Ahdia muttered. The footage showed her ",
+              "position": 12004
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "after",
+              "context": "it Firas had told her cost three grand to replace after someone (Night Knight) tried to do a wall run on ",
+              "position": 214
+            },
+            {
+              "text": "next to",
+              "context": "essional, very expensive conference room. The man next to her was younger , maybe forties, military bearing",
+              "position": 879
+            },
+            {
+              "text": "Before",
+              "context": " \"The whole time.\" \"Yes.\" \"Since the warehouse.\" \"Before that, actually . We were monitoring Kain. You bec",
+              "position": 1456
+            },
+            {
+              "text": "after",
+              "context": "\"Downstairs. With his team. Time resumed normally after we extracted you.\" Bourn's expression didn't chan",
+              "position": 1855
+            },
+            {
+              "text": "last week",
+              "context": "wrong. It tasted like it had been brewed sometime last week and reheated in a microwave that had seen better ",
+              "position": 2528
+            },
+            {
+              "text": "next to",
+              "context": "what happens next.\" The FAERIS drone materialized next to Bourn. Same one that had painted her. It hovered ",
+              "position": 3440
+            },
+            {
+              "text": "ago",
+              "context": "resolved into an image. The warehouse. Two nights ago. Ahdia watched herself\u2014past-self, surveillance-se",
+              "position": 4440
+            },
+            {
+              "text": "ago",
+              "context": "rth, but wrong, like from space billions of years ago. And...\" She paused, struggling. \"This sounds ins",
+              "position": 7196
+            },
+            {
+              "text": "last four",
+              "context": " seven over the past three millennia. None in the last four hundred years. We thought the lineage was extinct",
+              "position": 8037
+            },
+            {
+              "text": "last unconscious",
+              "context": "smile. The footage showed Past-Ahdia dragging the last unconscious thug outside. The fireball was thirty feet wide n",
+              "position": 8678
+            },
+            {
+              "text": "after",
+              "context": "tage. Ahdia's apartment building. Night. Two days after the warehouse. The display showed Past-Ahdia clim",
+              "position": 10427
+            }
+          ],
+          "duration": [
+            {
+              "text": "3 seconds",
+              "context": "e couldn't capture it. You were unconscious for 2.3 seconds. What did you experience?\" Ahdia's hand went to h",
+              "position": 6768
+            },
+            {
+              "text": "47 minutes",
+              "context": "\" Bourn looked at the drone. \"FAERIS?\" \"Duration: 47 minutes, 18 seconds subjective time. Real-time passage: 0",
+              "position": 9282
+            },
+            {
+              "text": "18 seconds",
+              "context": "ed at the drone. \"FAERIS?\" \"Duration: 47 minutes, 18 seconds subjective time. Real-time passage: 0.00 seconds.",
+              "position": 9294
+            },
+            {
+              "text": "00 seconds",
+              "context": " 18 seconds subjective time. Real-time passage: 0.00 seconds.\" Ahdia stared at the drone. \"You can measure tha",
+              "position": 9343
+            },
+            {
+              "text": "4 seconds",
+              "context": "ct endurance increasing. Duration extended from 6.4 seconds to six hours continuous freeze within 48-hour per",
+              "position": 11385
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": " and respond to cosmic-level threats. Events that fall outside normal understanding. Dimensional incursi",
+              "position": 3085
+            }
+          ]
+        },
+        "total_time_references": 23
+      },
+      {
+        "chapter": 14,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "Night",
+              "context": "expired Jell-O. The timestamp in the corner read: Night of the warehouse explosion. Hours after bonding. ",
+              "position": 4051
+            },
+            {
+              "text": "morning",
+              "context": " and stared at the coffee mug she'd left out that morning. She needed to learn how to control this. Because",
+              "position": 11456
+            },
+            {
+              "text": "afternoon",
+              "context": "rtled her by showing up unannounced. --- The next afternoon. Ahdia stared at the coffee mug on her kitchen co",
+              "position": 11657
+            },
+            {
+              "text": "afternoon",
+              "context": "rigerator cut out. Even the dust particles in the afternoon light hung suspended. \"Oh,\" she breathed. \"Oh shi",
+              "position": 12867
+            },
+            {
+              "text": "midnight",
+              "context": " lost concentration. \n\nVaughn / Go Squad / 119 By midnight, she was exhausted. Her chest ached where the Hyp",
+              "position": 13831
+            },
+            {
+              "text": "night",
+              "context": ". Which, okay , what the hell? You fight crime at night and you don't lock your door? Inside, Ruth was as",
+              "position": 16494
+            },
+            {
+              "text": "night",
+              "context": "because they kept showing up anyway . That second night, the Go Squad went on patrol. And Ahdia followed,",
+              "position": 20013
+            },
+            {
+              "text": "Night",
+              "context": "onstruction site in Little Poland. Gloom Girl and Night Knight near the waterfront.\" The display split in",
+              "position": 22387
+            },
+            {
+              "text": "Night",
+              "context": "atching Gloom Girl mid-jump. Waterfront\u2014adjusting Night Knight's trajectory . \"Three simultaneous interve",
+              "position": 22974
+            },
+            {
+              "text": "night",
+              "context": "a's face went pale. \"Twenty-three percent? In one night?\" By the end of the compilation, the Go Squad tho",
+              "position": 23423
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "before",
+              "context": " limitations. And we should get you off this roof before your brother's team finishes their discussion dow",
+              "position": 234
+            },
+            {
+              "text": "last point",
+              "context": " Better coffee.\" Mack's expression suggested this last point was debatable. Ahdia looked at the holographic di",
+              "position": 423
+            },
+            {
+              "text": "after",
+              "context": "ner read: Night of the warehouse explosion. Hours after bonding. She ran all the way back to her penthous",
+              "position": 4091
+            },
+            {
+              "text": "after",
+              "context": "her peripheral vision\u2014people jerking back to life after she passed, looking around confused, checking the",
+              "position": 5445
+            },
+            {
+              "text": "last however",
+              "context": "rt attack at twenty-three because she'd spent the last however -many-years eating gas station food and watching ",
+              "position": 7157
+            },
+            {
+              "text": "next to",
+              "context": "rantic pounding. On the Hyper Seed that sat right next to it, cold and heavy and there. Slow down. Please. ",
+              "position": 8022
+            },
+            {
+              "text": "next to",
+              "context": "\nVaughn / Go Squad / 116 She dropped to her knees next to the couch, grabbed his shoulder , shook him. Noth",
+              "position": 9915
+            },
+            {
+              "text": "next time",
+              "context": "g to accidentally freeze her brother to death the next time he startled her by showing up unannounced. --- Th",
+              "position": 11591
+            },
+            {
+              "text": "next afternoon",
+              "context": "e startled her by showing up unannounced. --- The next afternoon. Ahdia stared at the coffee mug on her kitchen co",
+              "position": 11652
+            },
+            {
+              "text": "next several",
+              "context": "e time. Simple enough. Except it wasn't. Over the next several hours, she practiced. Got frustrated, froze time.",
+              "position": 13605
+            },
+            {
+              "text": "before",
+              "context": "eld it for maybe five, ten seconds of frozen time before she lost concentration. \n\nVaughn / Go Squad / 119",
+              "position": 13771
+            },
+            {
+              "text": "next hour",
+              "context": "qualed a massive push in real time. She spent the next hour\u2014frozen-time hour, which was maybe three minutes o",
+              "position": 15393
+            },
+            {
+              "text": "next two",
+              "context": "world practice. And she had an idea. --- Over the next two days, Ahdia became a ghost. Ruth's apartment firs",
+              "position": 16018
+            },
+            {
+              "text": "after",
+              "context": "id more than Ahdia ever had at any job she'd quit after two weeks. She froze time in the lobby , walked p",
+              "position": 16189
+            },
+            {
+              "text": "Next to",
+              "context": "cine with sticky \n\nVaughn / Go Squad / 121 notes. Next to it, Trauma Surgery: A Practical Guide. The kind o",
+              "position": 16740
+            },
+            {
+              "text": "after",
+              "context": "The desk had flyers for food drives, ESL classes, after-school programs. A donation jar with maybe six do",
+              "position": 18060
+            },
+            {
+              "text": "before",
+              "context": "losing, followed Leah home, slipped in behind her before the door shut. Waited while Leah got ready for be",
+              "position": 18910
+            },
+            {
+              "text": "next room",
+              "context": "artment. Or, not empty . Leah was sleeping in the next room. But close enough. By the end of two days, Ahdia ",
+              "position": 19570
+            },
+            {
+              "text": "after",
+              "context": "rything she'd learned to the test. --- Two nights after the warehouse. The police ambush. Gloom Girl jump",
+              "position": 20135
+            },
+            {
+              "text": "before",
+              "context": "ad slammed back the second she let go, worse than before. What else could she slow? She looked down at her",
+              "position": 20847
+            },
+            {
+              "text": "before",
+              "context": "that part. \n\nVaughn / Go Squad / 126 \"Ten minutes before you could stand,\" Mack said quietly . \"You limped",
+              "position": 23949
+            },
+            {
+              "text": "next day",
+              "context": "rofen. Passed out on the couch.\" \"And woke up the next day to do it again,\" Bourn finished. The display shif",
+              "position": 24077
+            },
+            {
+              "text": "after",
+              "context": ". The display shifted again. New footage. The day after the police ambush. The parkour academy , time fro",
+              "position": 24167
+            },
+            {
+              "text": "after",
+              "context": ". When I freeze time, it's cold. Really cold. But after\u2014when I let go\u2014it feels like it's taking something",
+              "position": 24804
+            },
+            {
+              "text": "before",
+              "context": " a long moment. Then unfroze time and walked away before he could turn around. --- The holographic display",
+              "position": 25749
+            },
+            {
+              "text": "ago",
+              "context": "at where the footage had been. \"That was two days ago,\" Bourn said quietly . \"You figured out your powe",
+              "position": 25960
+            },
+            {
+              "text": "After",
+              "context": "ere regressing,\" Bourn corrected. Not unkindly . \"After everything you'd accomplished\u2014saving your brother",
+              "position": 26270
+            },
+            {
+              "text": "before",
+              "context": "cquired it. But we'd been tracking him for months before the warehouse. When you bonded with it\u2014when you b",
+              "position": 27675
+            },
+            {
+              "text": "before",
+              "context": "ere at critical energy expenditure and intervened before you killed yourself helping people who don't even",
+              "position": 29036
+            },
+            {
+              "text": "next cataclysm",
+              "context": "ndle. We don't care. We care about preventing the next cataclysm.\" Mack leaned forward. \"But we do need an answer ",
+              "position": 31274
+            }
+          ],
+          "duration": [
+            {
+              "text": "23 minutes",
+              "context": "ous freeze during subject's return trajectory .\" \"23 minutes continuous,\" the drone reported. \"Radius: approxi",
+              "position": 5806
+            },
+            {
+              "text": "47 years",
+              "context": "l manipulation.\" \"Average development time: 12 to 47 years post-bonding,\" the drone reported. \"You did it in",
+              "position": 21845
+            }
+          ],
+          "seasons": [
+            {
+              "text": "winter",
+              "context": "stop trying to save people. In the closet, behind winter coats Ruth would never need in Caledonia's mild c",
+              "position": 16903
+            }
+          ]
+        },
+        "total_time_references": 43
+      },
+      {
+        "chapter": 15,
+        "temporal_references": {
+          "relative_time": [
+            {
+              "text": "after",
+              "context": "Working theory: dimensional barriers strengthened after atmospheric nuclear testing stopped. Or testing w",
+              "position": 2724
+            },
+            {
+              "text": "before",
+              "context": "cal assessments first. I want baseline biometrics before she uses powers again.\" Ryu looked briefly crushe",
+              "position": 5767
+            },
+            {
+              "text": "before",
+              "context": "hat the Hyper Seed bonding did to your physiology before we can figure out how to slow the degradation. Or",
+              "position": 6340
+            },
+            {
+              "text": "before",
+              "context": "ss is slow\u2014eighteen months at current usage rates before you're more Seed than human. But...\" He zoomed in",
+              "position": 8486
+            },
+            {
+              "text": "before",
+              "context": "g Temporalists for decades, but most of them died before we could collect meaningful data. You're the firs",
+              "position": 8895
+            },
+            {
+              "text": "after",
+              "context": "he eighteen months count.\" --- The scans finished after about twenty minutes. Ryu printed out what looked",
+              "position": 9335
+            },
+            {
+              "text": "before",
+              "context": " than she expected. \"Changing room?\" \"Same one as before.\" --- The suit fit perfectly . Again. Still creep",
+              "position": 12113
+            },
+            {
+              "text": "earlier",
+              "context": "g only I would know .\" \"What show did I reference earlier?\" \"Dragon Ball Z. Over 9,000 joke. See? I have al",
+              "position": 15679
+            },
+            {
+              "text": "before",
+              "context": "e during operations, but in case someone sees you before you freeze time, or after you unfreeze\u2014\" \"A mask.",
+              "position": 17731
+            },
+            {
+              "text": "after",
+              "context": " case someone sees you before you freeze time, or after you unfreeze\u2014\" \"A mask.\" \"A mask,\" he confirmed, ",
+              "position": 17758
+            },
+            {
+              "text": "Tomorrow",
+              "context": ".\" He saved his data, stood up. \"You should rest. Tomorrow we'll start coordinating with FAERIS, practicing ",
+              "position": 21023
+            },
+            {
+              "text": "last name",
+              "context": "ncertain. \"Director Bourn thought\u2014well, it's your last name. Your parents worked with CADENS. It felt... appr",
+              "position": 22075
+            },
+            {
+              "text": "before",
+              "context": "he said gently . \"I know how you were handling it before. This is better .\" He left before she could respo",
+              "position": 23501
+            },
+            {
+              "text": "before",
+              "context": "ere handling it before. This is better .\" He left before she could respond. Ahdia went into the quarters. ",
+              "position": 23535
+            }
+          ]
+        },
+        "total_time_references": 14
+      },
+      {
+        "chapter": 16,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "veillance feeds\u2014hours blending together , day and night losing meaning. The CADENS facility\u2014hidden somewh",
+              "position": 458
+            },
+            {
+              "text": "night",
+              "context": "ment.\" The monitors showed FAERIS feeds in grainy night-vision green. No soundtrack. Just her and Ryu sit",
+              "position": 783
+            },
+            {
+              "text": "Night",
+              "context": "e desperate with each failure. Still nothing. --- Night Knight was in the obstacle course section. Ben. H",
+              "position": 3457
+            },
+            {
+              "text": "Night",
+              "context": " \"Much sweatier .\" At the community center , Ben, Night Knight, was outside. Crouch, jump, through a seco",
+              "position": 4484
+            },
+            {
+              "text": "night",
+              "context": "regrouped on a rooftop four blocks away . Even in night-vision green, she could see they were celebrating",
+              "position": 13387
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "next to",
+              "context": "t was always there, always reminding her. Ryu sat next to her, perfectly still except for his fingers, whic",
+              "position": 1180
+            },
+            {
+              "text": "later",
+              "context": "way brains were supposed to either . A few nights later, the CCPD was raiding a community center in the O",
+              "position": 1782
+            },
+            {
+              "text": "before",
+              "context": "nizers\u2014scattering. Then the Go Squad arrived. But before they did, many days ago, on the monitors, the Go ",
+              "position": 2243
+            },
+            {
+              "text": "ago",
+              "context": " Go Squad arrived. But before they did, many days ago, on the monitors, the Go Squad was scattered acro",
+              "position": 2270
+            },
+            {
+              "text": "before",
+              "context": "mbering the ambush, trying to recreate the moment before the super -jump. Low, coiled, ready to explode up",
+              "position": 3600
+            },
+            {
+              "text": "before",
+              "context": "middle of the cops, scattering them, jumped again before they could react, up to the rafters. Ahdia felt t",
+              "position": 4621
+            },
+            {
+              "text": "before",
+              "context": " through the doorway , shoulder -checking the cop before he could fire. He flew backward, hit the wall, sl",
+              "position": 5976
+            },
+            {
+              "text": "before",
+              "context": "ared behind him, tapped his shoulder . Gone again before he could turn. The cops were whirling, trying to ",
+              "position": 8927
+            },
+            {
+              "text": "before",
+              "context": "ife degrades faster than lifespan. You'll feel it before you die from it.\" She wiped blood from her lip. \"",
+              "position": 10324
+            },
+            {
+              "text": "after",
+              "context": " Hyper Seed burning as she created temporal field after temporal field, layering them across the team. Wi",
+              "position": 12651
+            }
+          ]
+        },
+        "total_time_references": 15
+      },
+      {
+        "chapter": 17,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "sunset",
+              "context": "corner suite, the view was Caledonia's skyline at sunset. TRIOMF . The private security contracts. The sub",
+              "position": 1045
+            },
+            {
+              "text": "night",
+              "context": "ble people told themselves so they could sleep at night. Except apparently it wasn't. \"And how,\" Kain sai",
+              "position": 4473
+            },
+            {
+              "text": "sunset",
+              "context": "5 Kain stood, walked to the window . Caledonia at sunset looked almost beautiful from up here. Almost enou",
+              "position": 7071
+            },
+            {
+              "text": "morning",
+              "context": "didn't match her current position. # Earlier that morning, Kain had called Reed into his office. The file w",
+              "position": 8171
+            },
+            {
+              "text": "sunset",
+              "context": "ward his office. Back to the view of Caledonia at sunset. Three generations of Kains had built this city. ",
+              "position": 18025
+            }
+          ],
+          "days_of_week": [
+            {
+              "text": "Thursday",
+              "context": "f regularly . Montclair Country Club, every third Thursday when he's in town.\" Whitford sat down uninvited, ",
+              "position": 4783
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "last week",
+              "context": "\u2014the one who'd put three officers in the hospital last week\u2014crossed the rooftop in what looked like a blur. T",
+              "position": 368
+            },
+            {
+              "text": "before",
+              "context": "tected. His grandfather \n\nVaughn / Go Squad / 161 before that had run union-busting goons in the thirties.",
+              "position": 1312
+            },
+            {
+              "text": "ago",
+              "context": " it.\" Kain didn't touch it yet. He'd learned long ago that people who couldn't wait to deliver bad news",
+              "position": 2522
+            },
+            {
+              "text": "After",
+              "context": "s.\" \"He told you this.\" \"He implied it. Heavily . After his third whiskey .\" Whitford leaned forward. \"Ap",
+              "position": 5067
+            },
+            {
+              "text": "yesterday",
+              "context": "\" Reed had finally cracked the facial recognition yesterday . Took three weeks running the warehouse footage ",
+              "position": 7531
+            },
+            {
+              "text": "last person",
+              "context": "aledonia General. No priors. Spotless record. The last person you'd expect running vigilante operations. But Re",
+              "position": 7876
+            },
+            {
+              "text": "Earlier",
+              "context": "history that didn't match her current position. # Earlier that morning, Kain had called Reed into his offic",
+              "position": 8158
+            },
+            {
+              "text": "ago",
+              "context": "arch on cellular regeneration therapy three years ago. Presented at international conferences. Should b",
+              "position": 8543
+            },
+            {
+              "text": "ago",
+              "context": "had emptied the museum's sub-basement three weeks ago. Every artifact from the private collection was h",
+              "position": 13041
+            },
+            {
+              "text": "before",
+              "context": "o's voice was hoarse. He'd answered this question before. Multiple times. But Kain wanted to hear it again",
+              "position": 14359
+            },
+            {
+              "text": "after",
+              "context": "d was waiting. \"He'll do it?\" \"He'll do it.\" \"And after?\" \"After , we test the Heart. See if the transfor",
+              "position": 17155
+            },
+            {
+              "text": "After",
+              "context": "ting. \"He'll do it?\" \"He'll do it.\" \"And after?\" \"After , we test the Heart. See if the transformation ca",
+              "position": 17164
+            },
+            {
+              "text": "ago",
+              "context": "ts from civilizations that died billions of years ago.\" \"With tools that work. The source doesn't matte",
+              "position": 17557
+            },
+            {
+              "text": "Later",
+              "context": "t when he was this close to winning everything. # Later , in his office, Kain reviewed the surveillance f",
+              "position": 18370
+            },
+            {
+              "text": "before",
+              "context": "t shouldn't work. He stared at it for three rings before answering. No caller ID. No origin trace. Just th",
+              "position": 18679
+            },
+            {
+              "text": "before",
+              "context": "seum security schedules. Jericho's research notes before the kidnapping. He still didn't know who she was.",
+              "position": 19156
+            },
+            {
+              "text": "before",
+              "context": "suicide by installment plan. But she'd been right before. Three times. The artifact locations were exactly",
+              "position": 20782
+            },
+            {
+              "text": "After",
+              "context": "ry analysis. Forty-eight hours, as you specified. After that, you will have what you need.\" \"And you'll h",
+              "position": 21205
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": "ter?\" Kain smiled. \"Carter gets to watch her team fall apart. Gets to choose between saving them and sav",
+              "position": 17814
+            }
+          ]
+        },
+        "total_time_references": 25
+      },
+      {
+        "chapter": 18,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "NIGHT",
+              "context": " They'd assigned codenames. BATTLEA - The Brawler NIGHT KNIGHT (or is it Knight Night?) - The Tactician C",
+              "position": 1993
+            },
+            {
+              "text": "Night",
+              "context": "TTLEA - The Brawler NIGHT KNIGHT (or is it Knight Night?) - The Tactician CRIMSON SABLE - The Shadow GLOO",
+              "position": 2023
+            },
+            {
+              "text": "Night",
+              "context": "ke... hundreds of posts using them. Battlea this, Night Knight that.\" Leah looked at Tess. \"Did you\u2014\" \"Wh",
+              "position": 2295
+            },
+            {
+              "text": "night",
+              "context": "e, tried the thermal. Still dead. She switched to night vision\u2014old school, no batteries needed. The ampli",
+              "position": 7254
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "Before",
+              "context": "aid, checking his gloves. \"Hit them during setup. Before they're organized.\" Leah cracked her knuckles. \"I",
+              "position": 749
+            },
+            {
+              "text": "After",
+              "context": "n's operations were getting sloppier . Desperate. After the warehouse, CCPD couldn't openly protect him a",
+              "position": 1179
+            },
+            {
+              "text": "ago",
+              "context": "sister had been saved from a carjacking two weeks ago. \"That's the third one today ,\" Ben said. \"Fifth,",
+              "position": 1594
+            },
+            {
+              "text": "today",
+              "context": "a carjacking two weeks ago. \"That's the third one today ,\" Ben said. \"Fifth,\" Tess corrected. She scrolle",
+              "position": 1621
+            },
+            {
+              "text": "ago",
+              "context": "ust... may have used them. In a few posts. Months ago. Hypothetically .\" \"Firas is going to love this,\"",
+              "position": 2529
+            },
+            {
+              "text": "before",
+              "context": "0 Their rally cry. The thing they said every time before insertion. Started as Firas's line when he founde",
+              "position": 3662
+            },
+            {
+              "text": "before",
+              "context": "ficers tried to cut him off. He vaulted the fence before they got close, disappeared into the neighboring ",
+              "position": 5426
+            },
+            {
+              "text": "next building",
+              "context": "sed the chaos to scale a fire escape, reached the next building's roof, vanished. They were out. Clean. No casual",
+              "position": 5848
+            },
+            {
+              "text": "last second",
+              "context": "oward. Straight at the Tank, then past him at the last second. He turned, followed. Good. She was faster . She ",
+              "position": 9331
+            },
+            {
+              "text": "last maybe",
+              "context": "Cold. Forty-degree water this time of year. She'd last maybe ten minutes before hypothermia. The Tank emer ged",
+              "position": 9990
+            },
+            {
+              "text": "before",
+              "context": "r this time of year. She'd last maybe ten minutes before hypothermia. The Tank emer ged from between conta",
+              "position": 10013
+            }
+          ],
+          "duration": [
+            {
+              "text": "2100 hours",
+              "context": " the docks. Kain's people moving product tonight, 2100 hours. Minimal security . Window's tight.\" Ruth studied",
+              "position": 200
+            }
+          ],
+          "seasons": [
+            {
+              "text": "Fall",
+              "context": " just people. Against an entire police precinct. \"Fall back to secondary positions,\" Ruth ordered. \"Stay",
+              "position": 6970
+            },
+            {
+              "text": "fall",
+              "context": "ured. Or worse. Ruth made the decision. \"Everyone fall back. Get clear . I'll draw him off.\" \"Ruth, no\u2014\"",
+              "position": 9172
+            }
+          ]
+        },
+        "total_time_references": 18
+      },
+      {
+        "chapter": 19,
+        "temporal_references": {
+          "relative_time": [
+            {
+              "text": "before",
+              "context": "moved without thinking. Doctor mode. Caught Ahdia before she hit the dock. Lowered her down gently . Check",
+              "position": 3624
+            },
+            {
+              "text": "ago",
+              "context": "ner . Looked at where she'd been standing moments ago. Looked at Ahdia bleeding on the dock. All of it ",
+              "position": 4207
+            },
+            {
+              "text": "before",
+              "context": "ng up.\" Ruth checked her pulse again. Faster than before. Erratic. \"How long have you been doing this?\" \n\n",
+              "position": 4897
+            },
+            {
+              "text": "later",
+              "context": "re understanding of reality came apart. # An hour later, Ruth stood in the observation room watching Ahdi",
+              "position": 10053
+            },
+            {
+              "text": "before",
+              "context": "ellular regeneration. They'd recognized her value before any of this happened. \"You saw what she can do,\" ",
+              "position": 10793
+            }
+          ],
+          "duration": [
+            {
+              "text": "18 months",
+              "context": "rity: 18% (CRITICAL)\" \"Projected Viable Function: 18 months \u00b1 6 months\" Ruth stared. Telomere analysis took w",
+              "position": 8105
+            },
+            {
+              "text": "6 months",
+              "context": "RITICAL)\" \"Projected Viable Function: 18 months \u00b1 6 months\" Ruth stared. Telomere analysis took weeks in a s",
+              "position": 8117
+            }
+          ]
+        },
+        "total_time_references": 7
+      },
+      {
+        "chapter": 20,
+        "temporal_references": {
+          "years": [
+            {
+              "text": "2023",
+              "context": " cellular regeneration protocols you published in 2023 were genuinely groundbreaking,\" Ryu was saying, t",
+              "position": 429
+            }
+          ],
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "is only works if she stops using her powers every night.\" \"Good luck with that.\" \"Yeah.\" Ryu studied the ",
+              "position": 6900
+            },
+            {
+              "text": "night",
+              "context": "t only if she stops trying to save everyone every night.\" \"And she won't.\" \"Would you?\" Ruth thought abou",
+              "position": 10914
+            },
+            {
+              "text": "night",
+              "context": "you've been burning through your life force every night because you can't stand watching people get hurt.",
+              "position": 13172
+            },
+            {
+              "text": "night",
+              "context": "p someone alive who shouldn't make it through the night.\" Ruth picked up the syringe again. \"You think yo",
+              "position": 15104
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "before",
+              "context": " understand exactly how the Seed is affecting her before I can counter it.\" \"Already compiled.\" Ryu pulled",
+              "position": 5365
+            },
+            {
+              "text": "later",
+              "context": ". We're going to need to move fast.\" # Four hours later, Ruth held up a vial of pale blue liquid. \"This i",
+              "position": 6333
+            },
+            {
+              "text": "Before",
+              "context": " Ryu nodded slowly . \"That's why we needed you.\" \"Before we do this,\" Ruth said. \"Tell me the truth. Why d",
+              "position": 7643
+            },
+            {
+              "text": "before",
+              "context": "ering above it\u2014a FAERIS drone. Ruth had seen them before. Small, spherical, silent. They'd been overhead d",
+              "position": 8545
+            },
+            {
+              "text": "yesterday",
+              "context": "onmental awareness. The drones weren't doing that yesterday .\" They watched as the FAERIS unit slowly rotated",
+              "position": 11520
+            },
+            {
+              "text": "before",
+              "context": "the docks. In the translocation. Twice in medical before we stabilized you.\" Ahdia stared at the ceiling. ",
+              "position": 12764
+            },
+            {
+              "text": "before",
+              "context": "s.\" \"Should?\" \"I've never treated temporal stress before. But I've kept fifteen trauma patients alive who ",
+              "position": 15653
+            },
+            {
+              "text": "before",
+              "context": "ughn / Go Squad / 211 If she could just learn how before time ran out. \n\nVaughn / Go Squad / 212 ",
+              "position": 17895
+            }
+          ]
+        },
+        "total_time_references": 13
+      },
+      {
+        "chapter": 21,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": "in's hosting a gala event at his mansion tomorrow night. Wealthy donors, politicians, the usual corrupt a",
+              "position": 4148
+            },
+            {
+              "text": "night",
+              "context": "e than here. No better time than now.\" # The next night, Tess sat in the surveillance van two blocks from",
+              "position": 8239
+            },
+            {
+              "text": "evening",
+              "context": "ng out of the hired car. The red dress caught the evening light. \"You're on,\" Tess said into comms. \"Lookin",
+              "position": 9617
+            },
+            {
+              "text": "sunset",
+              "context": "sually . \"What a view you must have.\" \"To see the sunset,\" Kain said, opening the doors. \"Very nice choice",
+              "position": 15741
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "before",
+              "context": "y energy drink cans. She should probably clean up before filming but honestly if she was about to die toni",
+              "position": 503
+            },
+            {
+              "text": "after",
+              "context": "ne. No word, no message, nothing. She disappeared after the warehouse and we don't know if she's dead or ",
+              "position": 2027
+            },
+            {
+              "text": "after",
+              "context": "just us. Four people. Three without powers. Going after a billionaire with private security and whatever ",
+              "position": 2797
+            },
+            {
+              "text": "tomorrow",
+              "context": "reen. \"Kain's hosting a gala event at his mansion tomorrow night. Wealthy donors, politicians, the usual cor",
+              "position": 4139
+            },
+            {
+              "text": "later",
+              "context": "g his hand.\" \"Deal,\" Firas said. # Twenty minutes later Tess was filming Battlea trying on a red dress in",
+              "position": 5508
+            },
+            {
+              "text": "after",
+              "context": "ng.\" \n\nVaughn / Go Squad / 217 \"We can punch cops after we rescue Jericho.\" Battlea almost smiled. Almost",
+              "position": 6502
+            },
+            {
+              "text": "before",
+              "context": "ing. Rally cry. Confirmation. The thing they said before going into the field. Battlea nodded. Turned to f",
+              "position": 8108
+            },
+            {
+              "text": "next night",
+              "context": " place than here. No better time than now.\" # The next night, Tess sat in the surveillance van two blocks from",
+              "position": 8234
+            },
+            {
+              "text": "before",
+              "context": "locks from Kain's mansion. She had twenty minutes before showtime. She pulled out her phone. Scrolled thro",
+              "position": 8334
+            },
+            {
+              "text": "ago",
+              "context": "posted a video. Ring camera footage. Three nights ago. The Go Squad stopping a mugging outside a bodega",
+              "position": 8476
+            },
+            {
+              "text": "last week",
+              "context": "l police.\" Second comment: \"Squad saved my cousin last week. We owe them.\" Third: \"Why aren't we funding thes",
+              "position": 8719
+            },
+            {
+              "text": "later",
+              "context": "s\" Tess smiled. Screenshotted it. She'd show Leah later. Her phone buzzed. New post from @WestSideW atch:",
+              "position": 9251
+            },
+            {
+              "text": "earlier",
+              "context": "ea muttered. \"Hot bait.\" \"Not helping.\" But hours earlier , back at the Academy , Knight had spread the man",
+              "position": 9771
+            },
+            {
+              "text": "Last seen",
+              "context": " \"We're looking for Dr. Jericho. Artifact expert. Last seen at the museum before Kain's people grabbed him.\" ",
+              "position": 10185
+            },
+            {
+              "text": "before",
+              "context": "Jericho. Artifact expert. Last seen at the museum before Kain's people grabbed him.\" He'd brought up anoth",
+              "position": 10209
+            },
+            {
+              "text": "before",
+              "context": "rver shirts. \"We've done the catering staff thing before. Guards never look twice at waiters.\" --- The kit",
+              "position": 11396
+            }
+          ]
+        },
+        "total_time_references": 20
+      },
+      {
+        "chapter": 22,
+        "temporal_references": {
+          "relative_time": [
+            {
+              "text": "next to",
+              "context": ", swung around him for leverage, kicked the guard next to him. Then wrapped her arm around his neck from be",
+              "position": 3556
+            },
+            {
+              "text": "before",
+              "context": "rd she was holding was struggling. Thirty seconds before he broke free. They were losing. Then the lights ",
+              "position": 4273
+            },
+            {
+              "text": "before",
+              "context": "ll out. One at a time. But the guards would shoot before she finished. Unless\u2014 \"Trust me,\" she said to Kni",
+              "position": 6176
+            },
+            {
+              "text": "last month",
+              "context": " need to\u2014\" \"Please? Just one? You saved my nephew last month. The thing with the guys and the\u2014\" She gestured v",
+              "position": 8717
+            },
+            {
+              "text": "before",
+              "context": "rected. Firas nodded. \"Then let's get out of here before\u2014\" The mansion exploded. Not literally . But light",
+              "position": 9220
+            },
+            {
+              "text": "Before",
+              "context": " number\u2014wait, he was right here, driving the van. Before she could figure out who else to call, her phone ",
+              "position": 10118
+            },
+            {
+              "text": "later",
+              "context": "I'm sending help.\" The call ended. Thirty seconds later, a VTOL aircraft appeared overhead. Silent. Cloak",
+              "position": 10476
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": "air. Garden approaching fast. Tess teleported mid-fall. They appeared back in the office for a split sec",
+              "position": 6643
+            },
+            {
+              "text": "fall",
+              "context": "right. Momentum shifted. Again. Each teleport mid-fall, changing their vector . Not stopping the fall\u2014re",
+              "position": 7040
+            },
+            {
+              "text": "fall",
+              "context": "id-fall, changing their vector . Not stopping the fall\u2014redirecting it. Using spatial jumps like parkour ",
+              "position": 7087
+            },
+            {
+              "text": "fall",
+              "context": "there. Tess had grabbed him during one of the mid-fall teleports. He was soaking wet, looking confused. ",
+              "position": 7735
+            }
+          ]
+        },
+        "total_time_references": 11
+      },
+      {
+        "chapter": 23,
+        "temporal_references": {
+          "relative_time": [
+            {
+              "text": "before",
+              "context": "secured. He gave Ruth a look\u2014you sure about this?\u2014before driving off. Ruth was not sure about this. But th",
+              "position": 478
+            },
+            {
+              "text": "later",
+              "context": "aft, you follow instructions first, ask questions later. The transport lifted. Silent. Fast. Cloaked. Rut",
+              "position": 744
+            },
+            {
+              "text": "after",
+              "context": "f them. \"You know how your powers stopped working after the docks?\" \n\nVaughn / Go Squad / 237 \"Yeah,\" Sab",
+              "position": 1064
+            },
+            {
+              "text": "next few",
+              "context": "g bigger . Stronger . If we don't stop him in the next few hours, he'll either die or become something worse",
+              "position": 2789
+            },
+            {
+              "text": "last known",
+              "context": "lled up the tactical map. Red dots showing Kain's last known positions, moving fast and unpredictable. \"Where'",
+              "position": 3277
+            },
+            {
+              "text": "before",
+              "context": "xactly . Like the enhanced officers you've fought before, but scaled up. Fifteen feet tall, maybe more. St",
+              "position": 5875
+            },
+            {
+              "text": "before",
+              "context": " stomach dropped. \"What are the odds he completes before he dies?\" \"Based on his current acceleration? Six",
+              "position": 6633
+            },
+            {
+              "text": "before",
+              "context": "The transport went quiet. \"So we have to stop him before he completes,\" Battlea said. \"How?\" \"You can't,\" ",
+              "position": 6802
+            },
+            {
+              "text": "before",
+              "context": "thout powers, you're\u2014\" \"We've been without powers before,\" Knight said, pulling on his suit. \"We'll manage",
+              "position": 13528
+            }
+          ]
+        },
+        "total_time_references": 9
+      },
+      {
+        "chapter": 24,
+        "temporal_references": {
+          "years": [
+            {
+              "text": "2000",
+              "context": "s words finally appeared on the tablet: RATIO = 1:2000 Another line: TOO FAST = CELLS BURN A third: TRY ",
+              "position": 6539
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "next to",
+              "context": "rs. She blinked. Tried to focus. Ryu was standing next to the bed, glasses slightly crooked, looking like h",
+              "position": 3365
+            },
+            {
+              "text": "after",
+              "context": " chest like a second sun. \"Ruth and the team went after him,\" Ryu said. \"About thirty minutes ago.\" Ahdia",
+              "position": 4284
+            },
+            {
+              "text": "ago",
+              "context": " went after him,\" Ryu said. \"About thirty minutes ago.\" Ahdia stared at the screen. Watched Kain grab a",
+              "position": 4328
+            },
+            {
+              "text": "Last ones",
+              "context": " Ryu checked the monitors. \"First few integrated. Last ones barely worked. Maybe thirty percent total regener",
+              "position": 8041
+            }
+          ]
+        },
+        "total_time_references": 5
+      },
+      {
+        "chapter": 25,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "Night",
+              "context": "e even without me, you guys are, well... super .\" Night Knight was shaking his head. \"We trusted you.\" \"Y",
+              "position": 4164
+            },
+            {
+              "text": "Night",
+              "context": " of thought. She could see it clicking into place\u2014Night Knight's eyes widening, Battlea straightening des",
+              "position": 5494
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "ago",
+              "context": "st figured out that I could about fifteen minutes ago.\" She gestured weakly at the FAERIS drone. \"Would",
+              "position": 1918
+            },
+            {
+              "text": "ago",
+              "context": ". She didn't know about me until, like, two weeks ago? Maybe three? Time's been weird.\" Blood from her ",
+              "position": 2650
+            },
+            {
+              "text": "after",
+              "context": "d table the whole trust-issues intervention until after we deal with Godzilla over there?\" Ruth felt the ",
+              "position": 2849
+            },
+            {
+              "text": "ago",
+              "context": "f it crumbling because she'd made a choice months ago and now\u2014 \"We don't have time for this!\" Crimson S",
+              "position": 4472
+            }
+          ]
+        },
+        "total_time_references": 6
+      },
+      {
+        "chapter": 26,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "night",
+              "context": " in hospital gown, bleeding, barefoot downtown at night, facing down what the actual hell was that. Kain ",
+              "position": 452
+            },
+            {
+              "text": "Night",
+              "context": "bank building. Battlea behind the overturned bus. Night Knight somewhere with smoke grenades and tactical",
+              "position": 4021
+            },
+            {
+              "text": "night",
+              "context": "weat soaked through the hospital gown despite the night chill. She reached Philips. His gun was aimed whe",
+              "position": 9783
+            },
+            {
+              "text": "dawn",
+              "context": " about herself in the dark hours between 3 AM and dawn when the TV finally went to white noise and she w",
+              "position": 15718
+            }
+          ],
+          "days_of_week": [
+            {
+              "text": "Saturday",
+              "context": "e. Just enough. There'd been a cartoon like this. Saturday mornings, she thought. Or maybe Sunday afternoons",
+              "position": 7710
+            },
+            {
+              "text": "Sunday",
+              "context": "ke this. Saturday mornings, she thought. Or maybe Sunday afternoons. The coyote would set up elaborate tra",
+              "position": 7751
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "last reports",
+              "context": "round the fifteen-foot mark. He'd grown since the last reports. The Tamois Heart pulsed in his chest\u2014visible thr",
+              "position": 742
+            },
+            {
+              "text": "before",
+              "context": " disaster who hadn't left her apartment in months before all this cosmic bullshit fell into her bathroom. ",
+              "position": 4729
+            },
+            {
+              "text": "last two",
+              "context": "tever Ryu had been pumping into her veins for the last two days. \"I thought I was making conversation. You k",
+              "position": 5022
+            },
+            {
+              "text": "after",
+              "context": " gasping. Like she'd played full court basketball after sitting on her couch for six months straight. Lik",
+              "position": 10479
+            },
+            {
+              "text": "before",
+              "context": "osing distance. Smart. If she couldn't freeze him before he reached her\u2014 His hand shot out. She tried to m",
+              "position": 10711
+            },
+            {
+              "text": "Later",
+              "context": "she continued. The words felt heavy . Important. \"Later . When we're with more polite company .\" Firas al",
+              "position": 15989
+            },
+            {
+              "text": "Later",
+              "context": "e polite company .\" Firas almost smiled. Almost. \"Later .\" \"Later ,\" she agreed. He was already moving. S",
+              "position": 16066
+            },
+            {
+              "text": "Later",
+              "context": "ompany .\" Firas almost smiled. Almost. \"Later .\" \"Later ,\" she agreed. He was already moving. Stripping o",
+              "position": 16076
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": "rom his frozen hand. Ejected the magazine. Let it fall. Counted the bullets\u2014one, two, three, all the way",
+              "position": 9960
+            }
+          ]
+        },
+        "total_time_references": 15
+      },
+      {
+        "chapter": 27,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "Night",
+              "context": "reet shattered beneath him. Edgar tried to dodge. Night Knight course-corrected mid-strike, impossible an",
+              "position": 989
+            },
+            {
+              "text": "Night",
+              "context": "icked in. Protect the medic. Protect each other . Night Knight got there first. Restraint hold. Crimson S",
+              "position": 2376
+            },
+            {
+              "text": "Night",
+              "context": "ble swept his legs. Gloom Girl hit from the side. Night Knight secured. Nightingale delivered the final b",
+              "position": 3058
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "before",
+              "context": " accelerated. Not imperceptible, though. Not like before. She was weakened\u2014Kain could see her swaying, bre",
+              "position": 638
+            },
+            {
+              "text": "before",
+              "context": "iras\u2014who barely had time to register her presence before she flipped off the entire intersection and yanke",
+              "position": 1340
+            },
+            {
+              "text": "Before",
+              "context": "raping pavement as he clawed up from the crater . Before he could rise, Crimson Sable's staff caught his t",
+              "position": 1838
+            },
+            {
+              "text": "before",
+              "context": "e. \n\nVaughn / Go Squad / 279 The team intercepted before he made three steps. Training kicked in. Protect ",
+              "position": 2288
+            },
+            {
+              "text": "last one",
+              "context": "ent down hard. Stayed down. Tank Orlansky was the last one standing. The youngest. Eyes wide. He'd watched t",
+              "position": 2525
+            },
+            {
+              "text": "after",
+              "context": "ait. And now\u2014 The fragments slammed into him. One after another . Power surging. Growing. Twenty-five fee",
+              "position": 4677
+            },
+            {
+              "text": "before",
+              "context": "uman beings with families, with names, with lives before he'd twisted them into weapons. The fighters just",
+              "position": 5501
+            }
+          ],
+          "seasons": [
+            {
+              "text": "fall",
+              "context": "om Girl didn't strike a Tank. She blinked out mid-fall. Reappeared beside Firas\u2014who barely had time to r",
+              "position": 1265
+            },
+            {
+              "text": "fall",
+              "context": " The youngest. Eyes wide. He'd watched the others fall. Watched the coordinated assault take down enhanc",
+              "position": 2593
+            }
+          ]
+        },
+        "total_time_references": 12
+      },
+      {
+        "chapter": 28,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "Night",
+              "context": "basketball whistled past Ahdia's head. \"Scatter!\" Night Knight's voice. Military command. \"Don't let him ",
+              "position": 1303
+            },
+            {
+              "text": "Night",
+              "context": "ttention. Crimson Sable went right, staff ready . Night Knight fell back to tactical position. Ruth grabb",
+              "position": 1501
+            },
+            {
+              "text": "Night",
+              "context": "ng momentum and exploiting angles. \"Keep moving!\" Night Knight yelled. \"Don't stop!\" Crimson Sable swung ",
+              "position": 1942
+            },
+            {
+              "text": "Night",
+              "context": "gasped. \"I'm\u2014\" Kain's hand reached for them both. Night Knight hit from the side. Not Kain\u2014hit Battlea an",
+              "position": 2928
+            },
+            {
+              "text": "Night",
+              "context": "hands above his head. Going to bring them down on Night Knight and the others. Going to crush them like i",
+              "position": 3327
+            },
+            {
+              "text": "Night",
+              "context": "nd. Ruth was running toward them. Trying to reach Night Knight. Trying to do something, anything. She was",
+              "position": 3769
+            },
+            {
+              "text": "Night",
+              "context": "Kain's corpse. Dead. They'd won. Ruth was helping Night Knight up. Battlea was checking on Crimson Sable.",
+              "position": 5806
+            },
+            {
+              "text": "Night",
+              "context": "or . ER. I've got this.\" She was already checking Night Knight's ribs. Then she looked past the CADENS op",
+              "position": 6476
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "Before",
+              "context": ". Medical precision cutting through shock. \"Now . Before he\u2014\" Kain moved. Faster than something that size ",
+              "position": 655
+            },
+            {
+              "text": "before",
+              "context": "g around empty air where she'd been a half-second before. She'd changed direction. Roller derby instincts.",
+              "position": 1830
+            },
+            {
+              "text": "before",
+              "context": "ive. Everyone was\u2014 \"Overseer wanted authorization before engaging,\" Bourn said. He was still talking into ",
+              "position": 5927
+            },
+            {
+              "text": "before",
+              "context": "y\u2014\" \"Safe,\" the operative said. \"Translocated out before engagement. We tracked them to\u2014\" The ground shook",
+              "position": 6655
+            }
+          ],
+          "seasons": [
+            {
+              "text": "Fall",
+              "context": "eart at the center pulling everything toward it. \"Fall back!\" Bourn yelled. \"Everyone back!\" The CADENS ",
+              "position": 7166
+            },
+            {
+              "text": "fall",
+              "context": "ng. Structural supports groaning. It was going to fall. And when it did, it was going to take everyone w",
+              "position": 9047
+            }
+          ]
+        },
+        "total_time_references": 14
+      },
+      {
+        "chapter": 29,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "Night",
+              "context": " others now. Battlea helping Crimson Sable stand. Night Knight favoring his ribs. Gloom Girl emer ging fr",
+              "position": 1790
+            },
+            {
+              "text": "Night",
+              "context": "ping Ruth's waist. Battlea holding Crimson Sable. Night Knight anchoring Battlea. Gloom Girl at the back,",
+              "position": 11484
+            },
+            {
+              "text": "Night",
+              "context": "tlea. Gloom Girl at the back, arms wrapped around Night Knight, her legs braced against the overturned bu",
+              "position": 11560
+            }
+          ],
+          "seasons": [
+            {
+              "text": "Fall",
+              "context": "eryone back!\" Bourn was screaming into her comm. \"Fall back! NOW!\" The CADENS team was already moving. P",
+              "position": 761
+            },
+            {
+              "text": "fall",
+              "context": "ndamental forces pulled it apart. It was going to fall. And when it did, it would take everyone on this ",
+              "position": 1508
+            }
+          ]
+        },
+        "total_time_references": 5
+      },
+      {
+        "chapter": 30,
+        "temporal_references": {
+          "time_of_day": [
+            {
+              "text": "morning",
+              "context": " Ahdia's penthouse. CADENS had released them that morning after twelve hours of medical checks and debriefi",
+              "position": 5014
+            },
+            {
+              "text": "night",
+              "context": "ound rooftops in our pajamas in the middle of the night. And we just lost\u2014\" Her voice cracked. \"We just l",
+              "position": 8122
+            },
+            {
+              "text": "morning",
+              "context": " singularity\u2014\" \"You saw the press conference this morning?\" Overseer pulled up another display . News foota",
+              "position": 9939
+            }
+          ],
+          "relative_time": [
+            {
+              "text": "after",
+              "context": "rehead. CADENS command center . Twenty-four hours after downtown. Twenty-four hours since she'd watched h",
+              "position": 98
+            },
+            {
+              "text": "after",
+              "context": "er. Shiba. She'd started thinking of him as Shiba after spending twelve hours getting debriefed yesterday",
+              "position": 384
+            },
+            {
+              "text": "yesterday",
+              "context": "iba after spending twelve hours getting debriefed yesterday . First-name basis happened when you almost ended",
+              "position": 430
+            },
+            {
+              "text": "next to",
+              "context": " \"That counts for something.\" \"It does.\" He moved next to her at the window . Didn't push. Good. She apprec",
+              "position": 588
+            },
+            {
+              "text": "after",
+              "context": " told you that.\" Sure. Thanks for the condolences after the fact. After not sending support when Ahdia ha",
+              "position": 1745
+            },
+            {
+              "text": "After",
+              "context": " Sure. Thanks for the condolences after the fact. After not sending support when Ahdia had begged for it.",
+              "position": 1761
+            },
+            {
+              "text": "After",
+              "context": "not sending support when Ahdia had begged for it. After letting her go in alone against Kain. \"Sure,\" Ahd",
+              "position": 1817
+            },
+            {
+              "text": "yesterday",
+              "context": "od. Let her sit with it. \"That was quick thinking yesterday ,\" Overseer said. \"Using opposing temporal forces",
+              "position": 2000
+            },
+            {
+              "text": "Next time",
+              "context": " out this time. They used timing and positioning. Next time, they die.\" \n\nVaughn / Go Squad / 304 \"And yet, y",
+              "position": 2538
+            },
+            {
+              "text": "last thing",
+              "context": "d. Ahdia gave a side smile. Turned to leave. \"One last thing.\" Overseer's voice stopped her. \"How close did yo",
+              "position": 4461
+            },
+            {
+              "text": "yesterday",
+              "context": "e did you come to draining all of your life force yesterday?\" Ahdia blinked slowly . Considered answering. Co",
+              "position": 4563
+            },
+            {
+              "text": "after",
+              "context": " penthouse. CADENS had released them that morning after twelve hours of medical checks and debriefing. No",
+              "position": 5022
+            },
+            {
+              "text": "yesterday",
+              "context": " human chain. They'd agreed to meet here. Process yesterday together before going back to their lives. If the",
+              "position": 5226
+            },
+            {
+              "text": "before",
+              "context": "d agreed to meet here. Process yesterday together before going back to their lives. If they could. \n\nVaugh",
+              "position": 5245
+            },
+            {
+              "text": "before",
+              "context": "llenged. \"You guys know Kain is no worse off than before, right? He's already rebuilding his mansion. His ",
+              "position": 6859
+            },
+            {
+              "text": "yesterday",
+              "context": "hdia?\" Ruth continued. \"We haven't seen her since yesterday . Since downtown. Where is she? She just sends me",
+              "position": 7258
+            },
+            {
+              "text": "Yesterday",
+              "context": "st lost\u2014\" Her voice cracked. \"We just lost Firas. Yesterday . He's gone and that's\u2014\" She stopped. Breathed. \"",
+              "position": 8188
+            },
+            {
+              "text": "before",
+              "context": "h treatment. The one she told you she'd completed before leaving the facility .\" \"She didn't take it.\" Shi",
+              "position": 9259
+            },
+            {
+              "text": "before",
+              "context": "uested executive clearance to intervene six hours before Auerbach went downtown. Do you know when I receiv",
+              "position": 11063
+            },
+            {
+              "text": "ago",
+              "context": " received it?\" Shiba waited. \"Forty-seven minutes ago,\" Overseer said. \"Fourteen hours after the event ",
+              "position": 11162
+            },
+            {
+              "text": "after",
+              "context": "even minutes ago,\" Overseer said. \"Fourteen hours after the event concluded. With a note thanking us for ",
+              "position": 11199
+            },
+            {
+              "text": "next time",
+              "context": " activity . Track the Seed-bearers. And hope that next time, a depressed girl with time powers and a death wi",
+              "position": 12259
+            },
+            {
+              "text": "yesterday",
+              "context": "like she had more to say. \"You guys saved my life yesterday . Downtown. The singularity .\" Ahdia's voice was ",
+              "position": 12636
+            },
+            {
+              "text": "before",
+              "context": " I know I can't go back to my life the way it was before you guys but you're the only family I have and my",
+              "position": 13687
+            },
+            {
+              "text": "yesterday",
+              "context": "-fitting tactical suits\u2014not the CADENS armor from yesterday , but their own gear. Custom. Familiar . Theirs. ",
+              "position": 14801
+            },
+            {
+              "text": "before",
+              "context": "m but here anyway), Ben, Tess\u2014nodding at each one before stepping onto the ledge. She turned back to them.",
+              "position": 15302
+            },
+            {
+              "text": "Yesterday",
+              "context": "he turned back to them. \"This is it,\" Ruth said. \"Yesterday , we lost someone. Today , we keep going. Because",
+              "position": 15385
+            },
+            {
+              "text": "Today",
+              "context": " is it,\" Ruth said. \"Yesterday , we lost someone. Today , we keep going. Because that's what Firas would'",
+              "position": 15414
+            },
+            {
+              "text": "before",
+              "context": ". Ruth dove faster , passing the lowest buildings before deploying her wingsuit. She pulled up to level of",
+              "position": 16144
+            }
+          ]
+        },
+        "total_time_references": 32
+      }
+    ],
+    "temporal_shifts": [
+      {
+        "chapter": 2,
+        "type": "flashback",
+        "strength": 3
+      },
+      {
+        "chapter": 2,
+        "type": "flashforward",
+        "strength": 4
+      },
+      {
+        "chapter": 3,
+        "type": "flashback",
+        "strength": 3
+      },
+      {
+        "chapter": 12,
+        "type": "flashback",
+        "strength": 3
+      },
+      {
+        "chapter": 14,
+        "type": "flashback",
+        "strength": 3
+      },
+      {
+        "chapter": 17,
+        "type": "flashback",
+        "strength": 4
+      },
+      {
+        "chapter": 18,
+        "type": "flashback",
+        "strength": 3
+      },
+      {
+        "chapter": 26,
+        "type": "flashback",
+        "strength": 3
+      }
+    ]
+  },
+  "hooks_and_cliffhangers": [
+    {
+      "chapter": 1,
+      "opening_hook_score": 2,
+      "closing_cliffhanger_score": 1.5,
+      "opening_sentence": "Chapter 1 Caledonia at night",
+      "closing_sentence": "A moment later, he squeezed it and added, \"Thanks, Ruth",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 2,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 2.0,
+      "opening_sentence": "Chapter 2 They didn\u2019 t often allow their children to accompany them on their excavations",
+      "closing_sentence": "They aren't here",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 3,
+      "opening_hook_score": 1,
+      "closing_cliffhanger_score": 4.5,
+      "opening_sentence": "Chapter 3 The alarm rang and she heaved her arm over her half asleep head to the nightstand to silence it",
+      "closing_sentence": "Maybe longer",
+      "has_strong_hook": false,
+      "has_cliffhanger": true
+    },
+    {
+      "chapter": 4,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 1.5,
+      "opening_sentence": "Chapter 4 Ahdia had been watching him breathe for three hours",
+      "closing_sentence": "Because when we do\u2026 I feel really bad for them",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 5,
+      "opening_hook_score": 7,
+      "closing_cliffhanger_score": 0.0,
+      "opening_sentence": "Chapter 5 \"Okay , so now tell me what happened tonight,\" Ahdia insisted after processing everything Ruth shared",
+      "closing_sentence": "\"We'll see,\" she muttered",
+      "has_strong_hook": true,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 6,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 2.0,
+      "opening_sentence": "Chapter 6 When Ahdia arrived at the warehouse, she approached the door to get in",
+      "closing_sentence": "\" he barked",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 7,
+      "opening_hook_score": 1,
+      "closing_cliffhanger_score": 6.5,
+      "opening_sentence": "Chapter 7 They slowly raised their hands",
+      "closing_sentence": "\" The Go Squad all turned to face him but he had already pulled the trigger",
+      "has_strong_hook": false,
+      "has_cliffhanger": true
+    },
+    {
+      "chapter": 8,
+      "opening_hook_score": 1,
+      "closing_cliffhanger_score": 0.0,
+      "opening_sentence": "Chapter 8 Ruth and the Go Squad dove, each in a direction towards the respective wall they were nearest to, fanning out like a bursting firecracker of",
+      "closing_sentence": "At Ahdia's pyre",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 9,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 6.0,
+      "opening_sentence": "Chapter 9 Two nights after the warehouse",
+      "closing_sentence": "The frightened cry of a child could be heard, both from the radio and on the street",
+      "has_strong_hook": false,
+      "has_cliffhanger": true
+    },
+    {
+      "chapter": 10,
+      "opening_hook_score": 8,
+      "closing_cliffhanger_score": 3.0,
+      "opening_sentence": "Chapter 10 That same night",
+      "closing_sentence": "\" she screamed when she saw Gloom Girl jump",
+      "has_strong_hook": true,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 11,
+      "opening_hook_score": 1,
+      "closing_cliffhanger_score": 4.0,
+      "opening_sentence": "Chapter 11 That same night",
+      "closing_sentence": "He turned around with his hands up like Rocky and yelled, \"I'm a freakin' superhero",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 12,
+      "opening_hook_score": 2,
+      "closing_cliffhanger_score": 1.5,
+      "opening_sentence": "Chapter 12 Night Knight jumped",
+      "closing_sentence": "Vaughn / Go Squad / 96 In the corner , where Ahdia had been standing\u2014where he'd imagined her standing\u2014the air was still and empty",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 13,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 7.5,
+      "opening_sentence": "Chapter 13 Ahdia finished throwing up and looked up",
+      "closing_sentence": "\"That's when we knew for certain",
+      "has_strong_hook": false,
+      "has_cliffhanger": true
+    },
+    {
+      "chapter": 14,
+      "opening_hook_score": 2,
+      "closing_cliffhanger_score": 1.5,
+      "opening_sentence": "Chapter 14 \"Knew what for certain",
+      "closing_sentence": "\"But I have conditions",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 15,
+      "opening_hook_score": 2,
+      "closing_cliffhanger_score": 0.0,
+      "opening_sentence": "Chapter 15 \"What conditions",
+      "closing_sentence": "Small victories",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 16,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 0.0,
+      "opening_sentence": "Chapter 16 Ahdia had seen a lot of surveillance montages in spy movies",
+      "closing_sentence": "On the screen, the team, laughing, celebrating, completely in sync",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 17,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 1.5,
+      "opening_sentence": "Chapter 17 SETTING THE TRAP The footage played for the fourteenth time",
+      "closing_sentence": "He was starting to think that was an understatement",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 18,
+      "opening_hook_score": 2,
+      "closing_cliffhanger_score": 1.5,
+      "opening_sentence": "Chapter 18 The tip came through Ben's contact at the precinct",
+      "closing_sentence": "The kind of windup that would cave in her skull",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 19,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 0.0,
+      "opening_sentence": "Chapter 19 Ruth closed her eyes",
+      "closing_sentence": "Save someone who was dying to save everyone else",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 20,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 3.0,
+      "opening_sentence": "Chapter 20 Dr",
+      "closing_sentence": "Vaughn / Go Squad / 211 If she could just learn how before time ran out",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 21,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 4.5,
+      "opening_sentence": "Chapter 21 The first rule of losing your superpowers is you don't talk about losing your superpowers",
+      "closing_sentence": "The team was surrounded",
+      "has_strong_hook": false,
+      "has_cliffhanger": true
+    },
+    {
+      "chapter": 22,
+      "opening_hook_score": 1,
+      "closing_cliffhanger_score": 6.0,
+      "opening_sentence": "Chapter 22 \"Open fire",
+      "closing_sentence": "\" she asked",
+      "has_strong_hook": false,
+      "has_cliffhanger": true
+    },
+    {
+      "chapter": 23,
+      "opening_hook_score": 3,
+      "closing_cliffhanger_score": 1.5,
+      "opening_sentence": "Chapter 23 The CADENS transport interior looked like it cost more than Caledonia's entire police budget",
+      "closing_sentence": "Tess, Knight, Sable, Battlea, Ruth\u2014five people running toward certain death",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 24,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 0.0,
+      "opening_sentence": "Chapter 24 She was running backward",
+      "closing_sentence": "Who'd saved everyone",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 25,
+      "opening_hook_score": 1,
+      "closing_cliffhanger_score": 1.5,
+      "opening_sentence": "Chapter 25 The FAERIS drone moved",
+      "closing_sentence": "\"Then let's run",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 26,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 1.0,
+      "opening_sentence": "Chapter 26 The cold hit her feet first",
+      "closing_sentence": "\" \n\nVaughn / Go Squad / 276 From the tops of the surrounding buildings, every Go Squad member rained down on their enemies while screaming back in rep",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 27,
+      "opening_hook_score": 1,
+      "closing_cliffhanger_score": 0.0,
+      "opening_sentence": "Chapter 27 \"No better time than now",
+      "closing_sentence": "And she'd fed the monster",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 28,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 1.0,
+      "opening_sentence": "Chapter 28 Ahdia's legs gave out",
+      "closing_sentence": "And when it did, it was going to take everyone with it",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 29,
+      "opening_hook_score": 0,
+      "closing_cliffhanger_score": 0.0,
+      "opening_sentence": "Chapter 29 The pull was gentle at first",
+      "closing_sentence": "And she hadn't even gotten to say goodbye",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    },
+    {
+      "chapter": 30,
+      "opening_hook_score": 2,
+      "closing_cliffhanger_score": 3.0,
+      "opening_sentence": "Chapter 30 The glass was cold against Ahdia's forehead",
+      "closing_sentence": "Kain stood alone in the tank room, surrounded by sleeping versions of himself",
+      "has_strong_hook": false,
+      "has_cliffhanger": false
+    }
+  ]
+}

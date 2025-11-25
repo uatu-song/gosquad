@@ -1,0 +1,2440 @@
+{
+  "file": "/workspaces/gosquad/book1_manuscript.txt",
+  "total_characters": 235,
+  "character_list": [
+    "Go Squad",
+    "Caledonia",
+    "Good",
+    "One",
+    "Home",
+    "They",
+    "Firas",
+    "To",
+    "Someone",
+    "He",
+    "We",
+    "For",
+    "In",
+    "Radio",
+    "The Go Squad",
+    "She",
+    "Doing",
+    "Breathing",
+    "You",
+    "No",
+    "Hearing",
+    "Running",
+    "Three",
+    "Copy",
+    "Left",
+    "Standing",
+    "It",
+    "Go",
+    "More",
+    "As",
+    "Nightingale",
+    "Ruth",
+    "Ahdia",
+    "Faraz",
+    "Naima",
+    "Yes",
+    "Let",
+    "Whoever",
+    "On",
+    "Get",
+    "Using",
+    "Not",
+    "Right",
+    "Time",
+    "After",
+    "Of",
+    "An",
+    "Grey",
+    "From",
+    "Feeling",
+    "Her",
+    "Something",
+    "Inside",
+    "Blood",
+    "Waiting",
+    "Nothing",
+    "Somewhere",
+    "At",
+    "When Firas",
+    "Night Knight",
+    "Literally",
+    "Sure",
+    "Academy",
+    "Gloom Girl",
+    "Crimson Sable",
+    "Battlea",
+    "My",
+    "Sable",
+    "And Battlea",
+    "Close",
+    "Harding Kain",
+    "Museum",
+    "Kain",
+    "Before",
+    "Back",
+    "Out",
+    "Careful",
+    "Really",
+    "People",
+    "Being",
+    "Man",
+    "Suddenly",
+    "Target",
+    "Already",
+    "Harding",
+    "Whatever",
+    "Watching",
+    "Slowly",
+    "Throwing",
+    "Wrong",
+    "Burning",
+    "Around",
+    "Crimson",
+    "Gale",
+    "At Ahdia",
+    "Tonight",
+    "Step",
+    "Show",
+    "Looking",
+    "Everyone",
+    "Getting",
+    "Victor",
+    "Victor Hernandez",
+    "Leah",
+    "Ben",
+    "Ruth Carter",
+    "Tess",
+    "Everything",
+    "Outside",
+    "Had",
+    "Rooftop",
+    "Bourn",
+    "Mack",
+    "Field",
+    "Tracking",
+    "Night",
+    "Monitoring Kain",
+    "Carter",
+    "The Hyper Seed",
+    "Heart",
+    "Subject",
+    "The Seed",
+    "Impressed",
+    "Holding",
+    "Walking",
+    "Force",
+    "Better",
+    "Fine",
+    "Drone",
+    "Ten",
+    "Got",
+    "Day",
+    "Medicine",
+    "And Ahdia",
+    "Made",
+    "Seed",
+    "Less",
+    "At Mack",
+    "About",
+    "Whitford",
+    "Alone",
+    "Working",
+    "Japanese",
+    "Ryu",
+    "Run",
+    "Rambling",
+    "Again",
+    "Full",
+    "Focused",
+    "Tomorrow",
+    "Shiba Ryu",
+    "Raised",
+    "Gone",
+    "Leadership",
+    "Team",
+    "Reed",
+    "Overseer",
+    "Community",
+    "Almost",
+    "Jericho",
+    "Under Kain",
+    "Surrounded",
+    "Figure",
+    "Built",
+    "Never",
+    "Window",
+    "Scrambling",
+    "Note",
+    "Faster",
+    "Squad",
+    "Stay",
+    "Dead",
+    "Finally",
+    "Sprinting",
+    "Swaying",
+    "Voice",
+    "Skin",
+    "Dying",
+    "Clock",
+    "Unconscious",
+    "Afraid",
+    "Knight",
+    "The Tamois Heart",
+    "Going",
+    "Rodriguez",
+    "Sophie Clement",
+    "Clement",
+    "Mansion",
+    "Grabbed Knight",
+    "Heading",
+    "Soaking",
+    "Through",
+    "Tamois Heart",
+    "How Kain",
+    "Helmet",
+    "Security",
+    "Always",
+    "Herself",
+    "Little Ahdia",
+    "Warm",
+    "Alive",
+    "Edgar",
+    "Ogden",
+    "Philips",
+    "Focusing",
+    "Saw Ruth",
+    "Saw Sable",
+    "Saw Gloom Girl",
+    "Even Gloom Girl",
+    "Girl",
+    "Half",
+    "Nudged Edgar",
+    "Screaming",
+    "And Firas",
+    "Body",
+    "Positioned",
+    "At Kain",
+    "Becoming",
+    "Instinct",
+    "Car",
+    "Coming",
+    "Terrified",
+    "Singularity",
+    "Determined",
+    "Into",
+    "Shiba",
+    "Aides",
+    "Wearing",
+    "Phone",
+    "Hernandez",
+    "System",
+    "Special",
+    "Guard",
+    "Dr. Ryu",
+    "Dr. Jericho"
+  ],
+  "character_details": {
+    "Go Squad": {
+      "full_name": "Go Squad",
+      "first_name": "Go",
+      "last_name": "Squad",
+      "count": 365,
+      "aliases": [
+        "Go Squad"
+      ]
+    },
+    "Caledonia": {
+      "full_name": "Caledonia",
+      "first_name": "Caledonia",
+      "last_name": "",
+      "count": 83,
+      "aliases": [
+        "Caledonia"
+      ]
+    },
+    "Good": {
+      "full_name": "Good",
+      "first_name": "Good",
+      "last_name": "",
+      "count": 36,
+      "aliases": [
+        "Good"
+      ]
+    },
+    "One": {
+      "full_name": "One",
+      "first_name": "One",
+      "last_name": "",
+      "count": 60,
+      "aliases": [
+        "One"
+      ]
+    },
+    "Home": {
+      "full_name": "Home",
+      "first_name": "Home",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Home"
+      ]
+    },
+    "They": {
+      "full_name": "They",
+      "first_name": "They",
+      "last_name": "",
+      "count": 348,
+      "aliases": [
+        "They"
+      ]
+    },
+    "Firas": {
+      "full_name": "Firas",
+      "first_name": "Firas",
+      "last_name": "",
+      "count": 524,
+      "aliases": [
+        "Firas"
+      ]
+    },
+    "To": {
+      "full_name": "To",
+      "first_name": "To",
+      "last_name": "",
+      "count": 32,
+      "aliases": [
+        "To"
+      ]
+    },
+    "Someone": {
+      "full_name": "Someone",
+      "first_name": "Someone",
+      "last_name": "",
+      "count": 71,
+      "aliases": [
+        "Someone"
+      ]
+    },
+    "He": {
+      "full_name": "He",
+      "first_name": "He",
+      "last_name": "",
+      "count": 554,
+      "aliases": [
+        "He"
+      ]
+    },
+    "We": {
+      "full_name": "We",
+      "first_name": "We",
+      "last_name": "",
+      "count": 338,
+      "aliases": [
+        "We"
+      ]
+    },
+    "For": {
+      "full_name": "For",
+      "first_name": "For",
+      "last_name": "",
+      "count": 53,
+      "aliases": [
+        "For"
+      ]
+    },
+    "In": {
+      "full_name": "In",
+      "first_name": "In",
+      "last_name": "",
+      "count": 88,
+      "aliases": [
+        "In"
+      ]
+    },
+    "Radio": {
+      "full_name": "Radio",
+      "first_name": "Radio",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Radio"
+      ]
+    },
+    "The Go Squad": {
+      "full_name": "The Go Squad",
+      "first_name": "The",
+      "last_name": "Squad",
+      "count": 27,
+      "aliases": [
+        "The Go Squad"
+      ]
+    },
+    "She": {
+      "full_name": "She",
+      "first_name": "She",
+      "last_name": "",
+      "count": 1028,
+      "aliases": [
+        "She"
+      ]
+    },
+    "Doing": {
+      "full_name": "Doing",
+      "first_name": "Doing",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Doing"
+      ]
+    },
+    "Breathing": {
+      "full_name": "Breathing",
+      "first_name": "Breathing",
+      "last_name": "",
+      "count": 10,
+      "aliases": [
+        "Breathing"
+      ]
+    },
+    "You": {
+      "full_name": "You",
+      "first_name": "You",
+      "last_name": "",
+      "count": 479,
+      "aliases": [
+        "You"
+      ]
+    },
+    "No": {
+      "full_name": "No",
+      "first_name": "No",
+      "last_name": "",
+      "count": 216,
+      "aliases": [
+        "No"
+      ]
+    },
+    "Hearing": {
+      "full_name": "Hearing",
+      "first_name": "Hearing",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Hearing"
+      ]
+    },
+    "Running": {
+      "full_name": "Running",
+      "first_name": "Running",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Running"
+      ]
+    },
+    "Three": {
+      "full_name": "Three",
+      "first_name": "Three",
+      "last_name": "",
+      "count": 32,
+      "aliases": [
+        "Three"
+      ]
+    },
+    "Copy": {
+      "full_name": "Copy",
+      "first_name": "Copy",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Copy"
+      ]
+    },
+    "Left": {
+      "full_name": "Left",
+      "first_name": "Left",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Left"
+      ]
+    },
+    "Standing": {
+      "full_name": "Standing",
+      "first_name": "Standing",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Standing"
+      ]
+    },
+    "It": {
+      "full_name": "It",
+      "first_name": "It",
+      "last_name": "",
+      "count": 378,
+      "aliases": [
+        "It"
+      ]
+    },
+    "Go": {
+      "full_name": "Go",
+      "first_name": "Go",
+      "last_name": "",
+      "count": 406,
+      "aliases": [
+        "Go"
+      ]
+    },
+    "More": {
+      "full_name": "More",
+      "first_name": "More",
+      "last_name": "",
+      "count": 28,
+      "aliases": [
+        "More"
+      ]
+    },
+    "As": {
+      "full_name": "As",
+      "first_name": "As",
+      "last_name": "",
+      "count": 24,
+      "aliases": [
+        "As"
+      ]
+    },
+    "Nightingale": {
+      "full_name": "Nightingale",
+      "first_name": "Nightingale",
+      "last_name": "",
+      "count": 39,
+      "aliases": [
+        "Nightingale"
+      ]
+    },
+    "Ruth": {
+      "full_name": "Ruth",
+      "first_name": "Ruth",
+      "last_name": "",
+      "count": 1057,
+      "aliases": [
+        "Ruth"
+      ]
+    },
+    "Ahdia": {
+      "full_name": "Ahdia",
+      "first_name": "Ahdia",
+      "last_name": "",
+      "count": 1133,
+      "aliases": [
+        "Ahdia"
+      ]
+    },
+    "Faraz": {
+      "full_name": "Faraz",
+      "first_name": "Faraz",
+      "last_name": "",
+      "count": 60,
+      "aliases": [
+        "Faraz"
+      ]
+    },
+    "Naima": {
+      "full_name": "Naima",
+      "first_name": "Naima",
+      "last_name": "",
+      "count": 44,
+      "aliases": [
+        "Naima"
+      ]
+    },
+    "Yes": {
+      "full_name": "Yes",
+      "first_name": "Yes",
+      "last_name": "",
+      "count": 32,
+      "aliases": [
+        "Yes"
+      ]
+    },
+    "Let": {
+      "full_name": "Let",
+      "first_name": "Let",
+      "last_name": "",
+      "count": 52,
+      "aliases": [
+        "Let"
+      ]
+    },
+    "Whoever": {
+      "full_name": "Whoever",
+      "first_name": "Whoever",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Whoever"
+      ]
+    },
+    "On": {
+      "full_name": "On",
+      "first_name": "On",
+      "last_name": "",
+      "count": 50,
+      "aliases": [
+        "On"
+      ]
+    },
+    "Get": {
+      "full_name": "Get",
+      "first_name": "Get",
+      "last_name": "",
+      "count": 33,
+      "aliases": [
+        "Get"
+      ]
+    },
+    "Using": {
+      "full_name": "Using",
+      "first_name": "Using",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Using"
+      ]
+    },
+    "Not": {
+      "full_name": "Not",
+      "first_name": "Not",
+      "last_name": "",
+      "count": 241,
+      "aliases": [
+        "Not"
+      ]
+    },
+    "Right": {
+      "full_name": "Right",
+      "first_name": "Right",
+      "last_name": "",
+      "count": 34,
+      "aliases": [
+        "Right"
+      ]
+    },
+    "Time": {
+      "full_name": "Time",
+      "first_name": "Time",
+      "last_name": "",
+      "count": 42,
+      "aliases": [
+        "Time"
+      ]
+    },
+    "After": {
+      "full_name": "After",
+      "first_name": "After",
+      "last_name": "",
+      "count": 32,
+      "aliases": [
+        "After"
+      ]
+    },
+    "Of": {
+      "full_name": "Of",
+      "first_name": "Of",
+      "last_name": "",
+      "count": 18,
+      "aliases": [
+        "Of"
+      ]
+    },
+    "An": {
+      "full_name": "An",
+      "first_name": "An",
+      "last_name": "",
+      "count": 16,
+      "aliases": [
+        "An"
+      ]
+    },
+    "Grey": {
+      "full_name": "Grey",
+      "first_name": "Grey",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Grey"
+      ]
+    },
+    "From": {
+      "full_name": "From",
+      "first_name": "From",
+      "last_name": "",
+      "count": 30,
+      "aliases": [
+        "From"
+      ]
+    },
+    "Feeling": {
+      "full_name": "Feeling",
+      "first_name": "Feeling",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Feeling"
+      ]
+    },
+    "Her": {
+      "full_name": "Her",
+      "first_name": "Her",
+      "last_name": "",
+      "count": 226,
+      "aliases": [
+        "Her"
+      ]
+    },
+    "Something": {
+      "full_name": "Something",
+      "first_name": "Something",
+      "last_name": "",
+      "count": 48,
+      "aliases": [
+        "Something"
+      ]
+    },
+    "Inside": {
+      "full_name": "Inside",
+      "first_name": "Inside",
+      "last_name": "",
+      "count": 24,
+      "aliases": [
+        "Inside"
+      ]
+    },
+    "Blood": {
+      "full_name": "Blood",
+      "first_name": "Blood",
+      "last_name": "",
+      "count": 28,
+      "aliases": [
+        "Blood"
+      ]
+    },
+    "Waiting": {
+      "full_name": "Waiting",
+      "first_name": "Waiting",
+      "last_name": "",
+      "count": 16,
+      "aliases": [
+        "Waiting"
+      ]
+    },
+    "Nothing": {
+      "full_name": "Nothing",
+      "first_name": "Nothing",
+      "last_name": "",
+      "count": 50,
+      "aliases": [
+        "Nothing"
+      ]
+    },
+    "Somewhere": {
+      "full_name": "Somewhere",
+      "first_name": "Somewhere",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Somewhere"
+      ]
+    },
+    "At": {
+      "full_name": "At",
+      "first_name": "At",
+      "last_name": "",
+      "count": 107,
+      "aliases": [
+        "At"
+      ]
+    },
+    "When Firas": {
+      "full_name": "When Firas",
+      "first_name": "When",
+      "last_name": "Firas",
+      "count": 2,
+      "aliases": [
+        "When Firas"
+      ]
+    },
+    "Night Knight": {
+      "full_name": "Night Knight",
+      "first_name": "Night",
+      "last_name": "Knight",
+      "count": 49,
+      "aliases": [
+        "Night Knight"
+      ]
+    },
+    "Literally": {
+      "full_name": "Literally",
+      "first_name": "Literally",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Literally"
+      ]
+    },
+    "Sure": {
+      "full_name": "Sure",
+      "first_name": "Sure",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Sure"
+      ]
+    },
+    "Academy": {
+      "full_name": "Academy",
+      "first_name": "Academy",
+      "last_name": "",
+      "count": 23,
+      "aliases": [
+        "Academy"
+      ]
+    },
+    "Gloom Girl": {
+      "full_name": "Gloom Girl",
+      "first_name": "Gloom",
+      "last_name": "Girl",
+      "count": 98,
+      "aliases": [
+        "Gloom Girl"
+      ]
+    },
+    "Crimson Sable": {
+      "full_name": "Crimson Sable",
+      "first_name": "Crimson",
+      "last_name": "Sable",
+      "count": 29,
+      "aliases": [
+        "Crimson Sable"
+      ]
+    },
+    "Battlea": {
+      "full_name": "Battlea",
+      "first_name": "Battlea",
+      "last_name": "",
+      "count": 363,
+      "aliases": [
+        "Battlea"
+      ]
+    },
+    "My": {
+      "full_name": "My",
+      "first_name": "My",
+      "last_name": "",
+      "count": 32,
+      "aliases": [
+        "My"
+      ]
+    },
+    "Sable": {
+      "full_name": "Sable",
+      "first_name": "Sable",
+      "last_name": "",
+      "count": 155,
+      "aliases": [
+        "Sable"
+      ]
+    },
+    "And Battlea": {
+      "full_name": "And Battlea",
+      "first_name": "And",
+      "last_name": "Battlea",
+      "count": 1,
+      "aliases": [
+        "And Battlea"
+      ]
+    },
+    "Close": {
+      "full_name": "Close",
+      "first_name": "Close",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Close"
+      ]
+    },
+    "Harding Kain": {
+      "full_name": "Harding Kain",
+      "first_name": "Harding",
+      "last_name": "Kain",
+      "count": 12,
+      "aliases": [
+        "Harding Kain"
+      ]
+    },
+    "Museum": {
+      "full_name": "Museum",
+      "first_name": "Museum",
+      "last_name": "",
+      "count": 5,
+      "aliases": [
+        "Museum"
+      ]
+    },
+    "Kain": {
+      "full_name": "Kain",
+      "first_name": "Kain",
+      "last_name": "",
+      "count": 437,
+      "aliases": [
+        "Kain"
+      ]
+    },
+    "Before": {
+      "full_name": "Before",
+      "first_name": "Before",
+      "last_name": "",
+      "count": 19,
+      "aliases": [
+        "Before"
+      ]
+    },
+    "Back": {
+      "full_name": "Back",
+      "first_name": "Back",
+      "last_name": "",
+      "count": 20,
+      "aliases": [
+        "Back"
+      ]
+    },
+    "Out": {
+      "full_name": "Out",
+      "first_name": "Out",
+      "last_name": "",
+      "count": 14,
+      "aliases": [
+        "Out"
+      ]
+    },
+    "Careful": {
+      "full_name": "Careful",
+      "first_name": "Careful",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Careful"
+      ]
+    },
+    "Really": {
+      "full_name": "Really",
+      "first_name": "Really",
+      "last_name": "",
+      "count": 16,
+      "aliases": [
+        "Really"
+      ]
+    },
+    "People": {
+      "full_name": "People",
+      "first_name": "People",
+      "last_name": "",
+      "count": 32,
+      "aliases": [
+        "People"
+      ]
+    },
+    "Being": {
+      "full_name": "Being",
+      "first_name": "Being",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Being"
+      ]
+    },
+    "Man": {
+      "full_name": "Man",
+      "first_name": "Man",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Man"
+      ]
+    },
+    "Suddenly": {
+      "full_name": "Suddenly",
+      "first_name": "Suddenly",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Suddenly"
+      ]
+    },
+    "Target": {
+      "full_name": "Target",
+      "first_name": "Target",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Target"
+      ]
+    },
+    "Already": {
+      "full_name": "Already",
+      "first_name": "Already",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Already"
+      ]
+    },
+    "Harding": {
+      "full_name": "Harding",
+      "first_name": "Harding",
+      "last_name": "",
+      "count": 18,
+      "aliases": [
+        "Harding"
+      ]
+    },
+    "Whatever": {
+      "full_name": "Whatever",
+      "first_name": "Whatever",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Whatever"
+      ]
+    },
+    "Watching": {
+      "full_name": "Watching",
+      "first_name": "Watching",
+      "last_name": "",
+      "count": 14,
+      "aliases": [
+        "Watching"
+      ]
+    },
+    "Slowly": {
+      "full_name": "Slowly",
+      "first_name": "Slowly",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Slowly"
+      ]
+    },
+    "Throwing": {
+      "full_name": "Throwing",
+      "first_name": "Throwing",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Throwing"
+      ]
+    },
+    "Wrong": {
+      "full_name": "Wrong",
+      "first_name": "Wrong",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Wrong"
+      ]
+    },
+    "Burning": {
+      "full_name": "Burning",
+      "first_name": "Burning",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Burning"
+      ]
+    },
+    "Around": {
+      "full_name": "Around",
+      "first_name": "Around",
+      "last_name": "",
+      "count": 3,
+      "aliases": [
+        "Around"
+      ]
+    },
+    "Crimson": {
+      "full_name": "Crimson",
+      "first_name": "Crimson",
+      "last_name": "",
+      "count": 67,
+      "aliases": [
+        "Crimson"
+      ]
+    },
+    "Gale": {
+      "full_name": "Gale",
+      "first_name": "Gale",
+      "last_name": "",
+      "count": 16,
+      "aliases": [
+        "Gale"
+      ]
+    },
+    "At Ahdia": {
+      "full_name": "At Ahdia",
+      "first_name": "At",
+      "last_name": "Ahdia",
+      "count": 3,
+      "aliases": [
+        "At Ahdia"
+      ]
+    },
+    "Tonight": {
+      "full_name": "Tonight",
+      "first_name": "Tonight",
+      "last_name": "",
+      "count": 7,
+      "aliases": [
+        "Tonight"
+      ]
+    },
+    "Step": {
+      "full_name": "Step",
+      "first_name": "Step",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Step"
+      ]
+    },
+    "Show": {
+      "full_name": "Show",
+      "first_name": "Show",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Show"
+      ]
+    },
+    "Looking": {
+      "full_name": "Looking",
+      "first_name": "Looking",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Looking"
+      ]
+    },
+    "Everyone": {
+      "full_name": "Everyone",
+      "first_name": "Everyone",
+      "last_name": "",
+      "count": 48,
+      "aliases": [
+        "Everyone"
+      ]
+    },
+    "Getting": {
+      "full_name": "Getting",
+      "first_name": "Getting",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Getting"
+      ]
+    },
+    "Victor": {
+      "full_name": "Victor",
+      "first_name": "Victor",
+      "last_name": "",
+      "count": 95,
+      "aliases": [
+        "Victor"
+      ]
+    },
+    "Victor Hernandez": {
+      "full_name": "Victor Hernandez",
+      "first_name": "Victor",
+      "last_name": "Hernandez",
+      "count": 2,
+      "aliases": [
+        "Victor Hernandez"
+      ]
+    },
+    "Leah": {
+      "full_name": "Leah",
+      "first_name": "Leah",
+      "last_name": "",
+      "count": 72,
+      "aliases": [
+        "Leah"
+      ]
+    },
+    "Ben": {
+      "full_name": "Ben",
+      "first_name": "Ben",
+      "last_name": "",
+      "count": 61,
+      "aliases": [
+        "Ben"
+      ]
+    },
+    "Ruth Carter": {
+      "full_name": "Ruth Carter",
+      "first_name": "Ruth",
+      "last_name": "Carter",
+      "count": 5,
+      "aliases": [
+        "Ruth Carter"
+      ]
+    },
+    "Tess": {
+      "full_name": "Tess",
+      "first_name": "Tess",
+      "last_name": "",
+      "count": 200,
+      "aliases": [
+        "Tess"
+      ]
+    },
+    "Everything": {
+      "full_name": "Everything",
+      "first_name": "Everything",
+      "last_name": "",
+      "count": 50,
+      "aliases": [
+        "Everything"
+      ]
+    },
+    "Outside": {
+      "full_name": "Outside",
+      "first_name": "Outside",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Outside"
+      ]
+    },
+    "Had": {
+      "full_name": "Had",
+      "first_name": "Had",
+      "last_name": "",
+      "count": 18,
+      "aliases": [
+        "Had"
+      ]
+    },
+    "Rooftop": {
+      "full_name": "Rooftop",
+      "first_name": "Rooftop",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Rooftop"
+      ]
+    },
+    "Bourn": {
+      "full_name": "Bourn",
+      "first_name": "Bourn",
+      "last_name": "",
+      "count": 316,
+      "aliases": [
+        "Bourn"
+      ]
+    },
+    "Mack": {
+      "full_name": "Mack",
+      "first_name": "Mack",
+      "last_name": "",
+      "count": 84,
+      "aliases": [
+        "Mack"
+      ]
+    },
+    "Field": {
+      "full_name": "Field",
+      "first_name": "Field",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Field"
+      ]
+    },
+    "Tracking": {
+      "full_name": "Tracking",
+      "first_name": "Tracking",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Tracking"
+      ]
+    },
+    "Night": {
+      "full_name": "Night",
+      "first_name": "Night",
+      "last_name": "",
+      "count": 58,
+      "aliases": [
+        "Night"
+      ]
+    },
+    "Monitoring Kain": {
+      "full_name": "Monitoring Kain",
+      "first_name": "Monitoring",
+      "last_name": "Kain",
+      "count": 1,
+      "aliases": [
+        "Monitoring Kain"
+      ]
+    },
+    "Carter": {
+      "full_name": "Carter",
+      "first_name": "Carter",
+      "last_name": "",
+      "count": 18,
+      "aliases": [
+        "Carter"
+      ]
+    },
+    "The Hyper Seed": {
+      "full_name": "The Hyper Seed",
+      "first_name": "The",
+      "last_name": "Seed",
+      "count": 11,
+      "aliases": [
+        "The Hyper Seed"
+      ]
+    },
+    "Heart": {
+      "full_name": "Heart",
+      "first_name": "Heart",
+      "last_name": "",
+      "count": 69,
+      "aliases": [
+        "Heart"
+      ]
+    },
+    "Subject": {
+      "full_name": "Subject",
+      "first_name": "Subject",
+      "last_name": "",
+      "count": 14,
+      "aliases": [
+        "Subject"
+      ]
+    },
+    "The Seed": {
+      "full_name": "The Seed",
+      "first_name": "The",
+      "last_name": "Seed",
+      "count": 23,
+      "aliases": [
+        "The Seed"
+      ]
+    },
+    "Impressed": {
+      "full_name": "Impressed",
+      "first_name": "Impressed",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Impressed"
+      ]
+    },
+    "Holding": {
+      "full_name": "Holding",
+      "first_name": "Holding",
+      "last_name": "",
+      "count": 12,
+      "aliases": [
+        "Holding"
+      ]
+    },
+    "Walking": {
+      "full_name": "Walking",
+      "first_name": "Walking",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Walking"
+      ]
+    },
+    "Force": {
+      "full_name": "Force",
+      "first_name": "Force",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Force"
+      ]
+    },
+    "Better": {
+      "full_name": "Better",
+      "first_name": "Better",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Better"
+      ]
+    },
+    "Fine": {
+      "full_name": "Fine",
+      "first_name": "Fine",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Fine"
+      ]
+    },
+    "Drone": {
+      "full_name": "Drone",
+      "first_name": "Drone",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Drone"
+      ]
+    },
+    "Ten": {
+      "full_name": "Ten",
+      "first_name": "Ten",
+      "last_name": "",
+      "count": 24,
+      "aliases": [
+        "Ten"
+      ]
+    },
+    "Got": {
+      "full_name": "Got",
+      "first_name": "Got",
+      "last_name": "",
+      "count": 12,
+      "aliases": [
+        "Got"
+      ]
+    },
+    "Day": {
+      "full_name": "Day",
+      "first_name": "Day",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Day"
+      ]
+    },
+    "Medicine": {
+      "full_name": "Medicine",
+      "first_name": "Medicine",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Medicine"
+      ]
+    },
+    "And Ahdia": {
+      "full_name": "And Ahdia",
+      "first_name": "And",
+      "last_name": "Ahdia",
+      "count": 1,
+      "aliases": [
+        "And Ahdia"
+      ]
+    },
+    "Made": {
+      "full_name": "Made",
+      "first_name": "Made",
+      "last_name": "",
+      "count": 12,
+      "aliases": [
+        "Made"
+      ]
+    },
+    "Seed": {
+      "full_name": "Seed",
+      "first_name": "Seed",
+      "last_name": "",
+      "count": 92,
+      "aliases": [
+        "Seed"
+      ]
+    },
+    "Less": {
+      "full_name": "Less",
+      "first_name": "Less",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Less"
+      ]
+    },
+    "At Mack": {
+      "full_name": "At Mack",
+      "first_name": "At",
+      "last_name": "Mack",
+      "count": 1,
+      "aliases": [
+        "At Mack"
+      ]
+    },
+    "About": {
+      "full_name": "About",
+      "first_name": "About",
+      "last_name": "",
+      "count": 14,
+      "aliases": [
+        "About"
+      ]
+    },
+    "Whitford": {
+      "full_name": "Whitford",
+      "first_name": "Whitford",
+      "last_name": "",
+      "count": 49,
+      "aliases": [
+        "Whitford"
+      ]
+    },
+    "Alone": {
+      "full_name": "Alone",
+      "first_name": "Alone",
+      "last_name": "",
+      "count": 10,
+      "aliases": [
+        "Alone"
+      ]
+    },
+    "Working": {
+      "full_name": "Working",
+      "first_name": "Working",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Working"
+      ]
+    },
+    "Japanese": {
+      "full_name": "Japanese",
+      "first_name": "Japanese",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Japanese"
+      ]
+    },
+    "Ryu": {
+      "full_name": "Ryu",
+      "first_name": "Ryu",
+      "last_name": "",
+      "count": 228,
+      "aliases": [
+        "Ryu"
+      ]
+    },
+    "Run": {
+      "full_name": "Run",
+      "first_name": "Run",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Run"
+      ]
+    },
+    "Rambling": {
+      "full_name": "Rambling",
+      "first_name": "Rambling",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Rambling"
+      ]
+    },
+    "Again": {
+      "full_name": "Again",
+      "first_name": "Again",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Again"
+      ]
+    },
+    "Full": {
+      "full_name": "Full",
+      "first_name": "Full",
+      "last_name": "",
+      "count": 18,
+      "aliases": [
+        "Full"
+      ]
+    },
+    "Focused": {
+      "full_name": "Focused",
+      "first_name": "Focused",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Focused"
+      ]
+    },
+    "Tomorrow": {
+      "full_name": "Tomorrow",
+      "first_name": "Tomorrow",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Tomorrow"
+      ]
+    },
+    "Shiba Ryu": {
+      "full_name": "Shiba Ryu",
+      "first_name": "Shiba",
+      "last_name": "Ryu",
+      "count": 2,
+      "aliases": [
+        "Shiba Ryu"
+      ]
+    },
+    "Raised": {
+      "full_name": "Raised",
+      "first_name": "Raised",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Raised"
+      ]
+    },
+    "Gone": {
+      "full_name": "Gone",
+      "first_name": "Gone",
+      "last_name": "",
+      "count": 12,
+      "aliases": [
+        "Gone"
+      ]
+    },
+    "Leadership": {
+      "full_name": "Leadership",
+      "first_name": "Leadership",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Leadership"
+      ]
+    },
+    "Team": {
+      "full_name": "Team",
+      "first_name": "Team",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Team"
+      ]
+    },
+    "Reed": {
+      "full_name": "Reed",
+      "first_name": "Reed",
+      "last_name": "",
+      "count": 18,
+      "aliases": [
+        "Reed"
+      ]
+    },
+    "Overseer": {
+      "full_name": "Overseer",
+      "first_name": "Overseer",
+      "last_name": "",
+      "count": 75,
+      "aliases": [
+        "Overseer"
+      ]
+    },
+    "Community": {
+      "full_name": "Community",
+      "first_name": "Community",
+      "last_name": "",
+      "count": 3,
+      "aliases": [
+        "Community"
+      ]
+    },
+    "Almost": {
+      "full_name": "Almost",
+      "first_name": "Almost",
+      "last_name": "",
+      "count": 14,
+      "aliases": [
+        "Almost"
+      ]
+    },
+    "Jericho": {
+      "full_name": "Jericho",
+      "first_name": "Jericho",
+      "last_name": "",
+      "count": 97,
+      "aliases": [
+        "Jericho"
+      ]
+    },
+    "Under Kain": {
+      "full_name": "Under Kain",
+      "first_name": "Under",
+      "last_name": "Kain",
+      "count": 1,
+      "aliases": [
+        "Under Kain"
+      ]
+    },
+    "Surrounded": {
+      "full_name": "Surrounded",
+      "first_name": "Surrounded",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Surrounded"
+      ]
+    },
+    "Figure": {
+      "full_name": "Figure",
+      "first_name": "Figure",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Figure"
+      ]
+    },
+    "Built": {
+      "full_name": "Built",
+      "first_name": "Built",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Built"
+      ]
+    },
+    "Never": {
+      "full_name": "Never",
+      "first_name": "Never",
+      "last_name": "",
+      "count": 8,
+      "aliases": [
+        "Never"
+      ]
+    },
+    "Window": {
+      "full_name": "Window",
+      "first_name": "Window",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Window"
+      ]
+    },
+    "Scrambling": {
+      "full_name": "Scrambling",
+      "first_name": "Scrambling",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Scrambling"
+      ]
+    },
+    "Note": {
+      "full_name": "Note",
+      "first_name": "Note",
+      "last_name": "",
+      "count": 3,
+      "aliases": [
+        "Note"
+      ]
+    },
+    "Faster": {
+      "full_name": "Faster",
+      "first_name": "Faster",
+      "last_name": "",
+      "count": 14,
+      "aliases": [
+        "Faster"
+      ]
+    },
+    "Squad": {
+      "full_name": "Squad",
+      "first_name": "Squad",
+      "last_name": "",
+      "count": 400,
+      "aliases": [
+        "Squad"
+      ]
+    },
+    "Stay": {
+      "full_name": "Stay",
+      "first_name": "Stay",
+      "last_name": "",
+      "count": 10,
+      "aliases": [
+        "Stay"
+      ]
+    },
+    "Dead": {
+      "full_name": "Dead",
+      "first_name": "Dead",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Dead"
+      ]
+    },
+    "Finally": {
+      "full_name": "Finally",
+      "first_name": "Finally",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Finally"
+      ]
+    },
+    "Sprinting": {
+      "full_name": "Sprinting",
+      "first_name": "Sprinting",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Sprinting"
+      ]
+    },
+    "Swaying": {
+      "full_name": "Swaying",
+      "first_name": "Swaying",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Swaying"
+      ]
+    },
+    "Voice": {
+      "full_name": "Voice",
+      "first_name": "Voice",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Voice"
+      ]
+    },
+    "Skin": {
+      "full_name": "Skin",
+      "first_name": "Skin",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Skin"
+      ]
+    },
+    "Dying": {
+      "full_name": "Dying",
+      "first_name": "Dying",
+      "last_name": "",
+      "count": 6,
+      "aliases": [
+        "Dying"
+      ]
+    },
+    "Clock": {
+      "full_name": "Clock",
+      "first_name": "Clock",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Clock"
+      ]
+    },
+    "Unconscious": {
+      "full_name": "Unconscious",
+      "first_name": "Unconscious",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Unconscious"
+      ]
+    },
+    "Afraid": {
+      "full_name": "Afraid",
+      "first_name": "Afraid",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Afraid"
+      ]
+    },
+    "Knight": {
+      "full_name": "Knight",
+      "first_name": "Knight",
+      "last_name": "",
+      "count": 220,
+      "aliases": [
+        "Knight"
+      ]
+    },
+    "The Tamois Heart": {
+      "full_name": "The Tamois Heart",
+      "first_name": "The",
+      "last_name": "Heart",
+      "count": 13,
+      "aliases": [
+        "The Tamois Heart"
+      ]
+    },
+    "Going": {
+      "full_name": "Going",
+      "first_name": "Going",
+      "last_name": "",
+      "count": 14,
+      "aliases": [
+        "Going"
+      ]
+    },
+    "Rodriguez": {
+      "full_name": "Rodriguez",
+      "first_name": "Rodriguez",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Rodriguez"
+      ]
+    },
+    "Sophie Clement": {
+      "full_name": "Sophie Clement",
+      "first_name": "Sophie",
+      "last_name": "Clement",
+      "count": 2,
+      "aliases": [
+        "Sophie Clement"
+      ]
+    },
+    "Clement": {
+      "full_name": "Clement",
+      "first_name": "Clement",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Clement"
+      ]
+    },
+    "Mansion": {
+      "full_name": "Mansion",
+      "first_name": "Mansion",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Mansion"
+      ]
+    },
+    "Grabbed Knight": {
+      "full_name": "Grabbed Knight",
+      "first_name": "Grabbed",
+      "last_name": "Knight",
+      "count": 1,
+      "aliases": [
+        "Grabbed Knight"
+      ]
+    },
+    "Heading": {
+      "full_name": "Heading",
+      "first_name": "Heading",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Heading"
+      ]
+    },
+    "Soaking": {
+      "full_name": "Soaking",
+      "first_name": "Soaking",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Soaking"
+      ]
+    },
+    "Through": {
+      "full_name": "Through",
+      "first_name": "Through",
+      "last_name": "",
+      "count": 10,
+      "aliases": [
+        "Through"
+      ]
+    },
+    "Tamois Heart": {
+      "full_name": "Tamois Heart",
+      "first_name": "Tamois",
+      "last_name": "Heart",
+      "count": 8,
+      "aliases": [
+        "Tamois Heart"
+      ]
+    },
+    "How Kain": {
+      "full_name": "How Kain",
+      "first_name": "How",
+      "last_name": "Kain",
+      "count": 1,
+      "aliases": [
+        "How Kain"
+      ]
+    },
+    "Helmet": {
+      "full_name": "Helmet",
+      "first_name": "Helmet",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Helmet"
+      ]
+    },
+    "Security": {
+      "full_name": "Security",
+      "first_name": "Security",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Security"
+      ]
+    },
+    "Always": {
+      "full_name": "Always",
+      "first_name": "Always",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Always"
+      ]
+    },
+    "Herself": {
+      "full_name": "Herself",
+      "first_name": "Herself",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Herself"
+      ]
+    },
+    "Little Ahdia": {
+      "full_name": "Little Ahdia",
+      "first_name": "Little",
+      "last_name": "Ahdia",
+      "count": 3,
+      "aliases": [
+        "Little Ahdia"
+      ]
+    },
+    "Warm": {
+      "full_name": "Warm",
+      "first_name": "Warm",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Warm"
+      ]
+    },
+    "Alive": {
+      "full_name": "Alive",
+      "first_name": "Alive",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Alive"
+      ]
+    },
+    "Edgar": {
+      "full_name": "Edgar",
+      "first_name": "Edgar",
+      "last_name": "",
+      "count": 21,
+      "aliases": [
+        "Edgar"
+      ]
+    },
+    "Ogden": {
+      "full_name": "Ogden",
+      "first_name": "Ogden",
+      "last_name": "",
+      "count": 25,
+      "aliases": [
+        "Ogden"
+      ]
+    },
+    "Philips": {
+      "full_name": "Philips",
+      "first_name": "Philips",
+      "last_name": "",
+      "count": 32,
+      "aliases": [
+        "Philips"
+      ]
+    },
+    "Focusing": {
+      "full_name": "Focusing",
+      "first_name": "Focusing",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Focusing"
+      ]
+    },
+    "Saw Ruth": {
+      "full_name": "Saw Ruth",
+      "first_name": "Saw",
+      "last_name": "Ruth",
+      "count": 1,
+      "aliases": [
+        "Saw Ruth"
+      ]
+    },
+    "Saw Sable": {
+      "full_name": "Saw Sable",
+      "first_name": "Saw",
+      "last_name": "Sable",
+      "count": 1,
+      "aliases": [
+        "Saw Sable"
+      ]
+    },
+    "Saw Gloom Girl": {
+      "full_name": "Saw Gloom Girl",
+      "first_name": "Saw",
+      "last_name": "Girl",
+      "count": 1,
+      "aliases": [
+        "Saw Gloom Girl"
+      ]
+    },
+    "Even Gloom Girl": {
+      "full_name": "Even Gloom Girl",
+      "first_name": "Even",
+      "last_name": "Girl",
+      "count": 1,
+      "aliases": [
+        "Even Gloom Girl"
+      ]
+    },
+    "Girl": {
+      "full_name": "Girl",
+      "first_name": "Girl",
+      "last_name": "",
+      "count": 110,
+      "aliases": [
+        "Girl"
+      ]
+    },
+    "Half": {
+      "full_name": "Half",
+      "first_name": "Half",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Half"
+      ]
+    },
+    "Nudged Edgar": {
+      "full_name": "Nudged Edgar",
+      "first_name": "Nudged",
+      "last_name": "Edgar",
+      "count": 1,
+      "aliases": [
+        "Nudged Edgar"
+      ]
+    },
+    "Screaming": {
+      "full_name": "Screaming",
+      "first_name": "Screaming",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Screaming"
+      ]
+    },
+    "And Firas": {
+      "full_name": "And Firas",
+      "first_name": "And",
+      "last_name": "Firas",
+      "count": 1,
+      "aliases": [
+        "And Firas"
+      ]
+    },
+    "Body": {
+      "full_name": "Body",
+      "first_name": "Body",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Body"
+      ]
+    },
+    "Positioned": {
+      "full_name": "Positioned",
+      "first_name": "Positioned",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Positioned"
+      ]
+    },
+    "At Kain": {
+      "full_name": "At Kain",
+      "first_name": "At",
+      "last_name": "Kain",
+      "count": 1,
+      "aliases": [
+        "At Kain"
+      ]
+    },
+    "Becoming": {
+      "full_name": "Becoming",
+      "first_name": "Becoming",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Becoming"
+      ]
+    },
+    "Instinct": {
+      "full_name": "Instinct",
+      "first_name": "Instinct",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Instinct"
+      ]
+    },
+    "Car": {
+      "full_name": "Car",
+      "first_name": "Car",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Car"
+      ]
+    },
+    "Coming": {
+      "full_name": "Coming",
+      "first_name": "Coming",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Coming"
+      ]
+    },
+    "Terrified": {
+      "full_name": "Terrified",
+      "first_name": "Terrified",
+      "last_name": "",
+      "count": 4,
+      "aliases": [
+        "Terrified"
+      ]
+    },
+    "Singularity": {
+      "full_name": "Singularity",
+      "first_name": "Singularity",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Singularity"
+      ]
+    },
+    "Determined": {
+      "full_name": "Determined",
+      "first_name": "Determined",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Determined"
+      ]
+    },
+    "Into": {
+      "full_name": "Into",
+      "first_name": "Into",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Into"
+      ]
+    },
+    "Shiba": {
+      "full_name": "Shiba",
+      "first_name": "Shiba",
+      "last_name": "",
+      "count": 34,
+      "aliases": [
+        "Shiba"
+      ]
+    },
+    "Aides": {
+      "full_name": "Aides",
+      "first_name": "Aides",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Aides"
+      ]
+    },
+    "Wearing": {
+      "full_name": "Wearing",
+      "first_name": "Wearing",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Wearing"
+      ]
+    },
+    "Phone": {
+      "full_name": "Phone",
+      "first_name": "Phone",
+      "last_name": "",
+      "count": 1,
+      "aliases": [
+        "Phone"
+      ]
+    },
+    "Hernandez": {
+      "full_name": "Hernandez",
+      "first_name": "Hernandez",
+      "last_name": "",
+      "count": 2,
+      "aliases": [
+        "Hernandez"
+      ]
+    },
+    "System": {
+      "full_name": "System",
+      "first_name": "System",
+      "last_name": "",
+      "count": 1,
+      "aliases": [
+        "System"
+      ]
+    },
+    "Special": {
+      "full_name": "Special",
+      "first_name": "Special",
+      "last_name": "",
+      "count": 1,
+      "aliases": [
+        "Special"
+      ]
+    },
+    "Guard": {
+      "full_name": "Guard",
+      "first_name": "Guard",
+      "last_name": "",
+      "count": 1,
+      "aliases": [
+        "Guard"
+      ]
+    },
+    "Dr. Ryu": {
+      "full_name": "Dr. Ryu",
+      "first_name": "Dr.",
+      "last_name": "Ryu",
+      "count": 7,
+      "aliases": [
+        "Dr. Ryu"
+      ]
+    },
+    "Dr. Jericho": {
+      "full_name": "Dr. Jericho",
+      "first_name": "Dr.",
+      "last_name": "Jericho",
+      "count": 10,
+      "aliases": [
+        "Dr. Jericho"
+      ]
+    }
+  },
+  "dialogue_statistics": {
+    "total_lines": 10,
+    "by_character": {
+      "Ruth": 3,
+      "He": 1,
+      "Bourn": 3,
+      "Ahdia": 2,
+      "Ryu": 1
+    }
+  },
+  "top_relationships": [
+    {
+      "characters": [
+        "Go",
+        "Squad"
+      ],
+      "interactions": 655
+    },
+    {
+      "characters": [
+        "Go Squad",
+        "Squad"
+      ],
+      "interactions": 652
+    },
+    {
+      "characters": [
+        "Go",
+        "Go Squad"
+      ],
+      "interactions": 652
+    },
+    {
+      "characters": [
+        "Go",
+        "She"
+      ],
+      "interactions": 389
+    },
+    {
+      "characters": [
+        "Go",
+        "He"
+      ],
+      "interactions": 364
+    },
+    {
+      "characters": [
+        "Ahdia",
+        "Go"
+      ],
+      "interactions": 361
+    },
+    {
+      "characters": [
+        "She",
+        "Squad"
+      ],
+      "interactions": 360
+    },
+    {
+      "characters": [
+        "Go Squad",
+        "She"
+      ],
+      "interactions": 357
+    },
+    {
+      "characters": [
+        "Ahdia",
+        "Squad"
+      ],
+      "interactions": 342
+    },
+    {
+      "characters": [
+        "Ahdia",
+        "Go Squad"
+      ],
+      "interactions": 341
+    }
+  ]
+}
