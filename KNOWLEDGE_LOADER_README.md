@@ -58,13 +58,18 @@ python3 gosquad_knowledge_loader.py --category characters
 
 Loads only files from specified category:
 - `characters` - Character profiles
+- `character_arcs` - Per-character arc trackers (Ahdia, Ruth, Tess, Ryu, Ben, Victor, Leah, Korede, Diana, Leta, Suzie, Jericho)
 - `artifacts` - Hyper Seed, FAERIS drones
 - `organizations` - CADENS, Titan Strategic
 - `locations` - Facilities and settings
 - `powers` - Time manipulation mechanics
 - `timeline` - Book 1-2 event timelines
+- `universe` - **CRITICAL** Cyclic universe cosmology, time travel mechanics
 - `themes` - Core themes, arcs, worldbuilding
 - `ttrpg` - TTRPG system documentation
+- `book2_planning` - Book 2 story bible and beats
+- `book3_planning` - Book 3 story bible and beats
+- `book4_planning` - Book 4 story bible and beats
 - `root` - Top-level synopsis and notes
 
 **Use case:** Deep dive into specific aspect of the universe.
@@ -94,11 +99,13 @@ The script scans the workspace for knowledge files using category patterns:
 
 ```
 character_profiles/          → characters
+character_arcs/              → character_arcs
 story_bibles/artifacts/      → artifacts
 story_bibles/organizations/  → organizations
 story_bibles/locations/      → locations
 story_bibles/powers and cost → powers
 story_bibles/timeline/       → timeline
+story_bibles/universe/       → universe (CRITICAL: cyclic cosmology)
 themes/                      → themes
 TTRPG/                       → ttrpg
 .gosquad/                    → knowledge_base
@@ -179,12 +186,27 @@ And provides comprehensive context about:
 ## Current Stats
 
 Based on latest scan:
-- **37 files** across **9 categories**
-- **10,620+ total lines** of content
-- **20 character profiles**
+- **170+ files** across **13 categories**
+- **17 character arc trackers** (heroes, villains, supporting cast)
+- **20+ character profiles**
 - **5 TTRPG guides**
-- **2 timelines** (Books 1-2)
+- **Book 2-4 planning** (story bibles, beat sheets, session decisions)
+- **Books 5-8 touchpoints** (SERIES_TOUCHPOINTS.md)
 - **Comprehensive worldbuilding** (themes, research, frameworks)
+
+### Key Planning Documents
+- `SERIES_TOUCHPOINTS.md` - Complete 8-book arc guide with touchpoints, antagonists, New Earth migration
+- `SERIES_SYNOPSIS.md` - Detailed Books 1-4 synopsis
+- `character_arcs/README.md` - Index of all character arc trackers
+- `Villain_Concepts_Books_4-7.md` - Additional antagonist concepts
+- `story_bibles/universe/CYCLIC_UNIVERSE_COSMOLOGY.md` - **CRITICAL** Core time travel mechanics and cyclic universe theory
+
+### Book 4 Key Documents (Chapters 15-31)
+- `story_bibles/book 4/BOOK4_BRAIDED_TOUCHPOINTS.md` - Four-timeline structure (Ahdia/Ruth/Korede/Antagonist)
+- `story_bibles/book 4/BOOK4_SIGNAL_COMMUNICATION_MECHANIC.md` - **CRITICAL** How Earth detects Ahdia (fold echoes/temporal wake), picoframe solution, THE POWERS TRUTH (her powers DO work in The Between)
+- `story_bibles/book 4/book4_chapter15-21_beats.md` - TTRPG-rolled chapter beats
+- `character_arcs/Ahdia_Arc_Tracker.md` - THE POWERS TRUTH section (her powers work differently, not "not at all")
+- `character_arcs/Rahs_Jericho_Arc_Tracker.md` - **CRITICAL** Full mastermind arc, Bourn's asset reveal, Dr. Doom analog
 
 ## Extending the System
 

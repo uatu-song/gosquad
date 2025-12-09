@@ -485,8 +485,8 @@ def main():
 
     args = parser.parse_args()
 
-    # Initialize paths
-    root_path = Path(__file__).parent
+    # Initialize paths - go up two levels from editor_suite/knowledge_system/ to workspace root
+    root_path = Path(__file__).parent.parent.parent
     config_path = Path(args.config) if args.config else root_path / '.gosquad' / 'api_config.json'
 
     # Handle config creation

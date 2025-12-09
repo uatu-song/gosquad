@@ -715,15 +715,90 @@
 
 ---
 
-## Books 5-8: Planning Stage
+## Books 5-8: Touchpoint Planning Complete
 
-**Book 5:** Turning point (stalemate, DBT introduction, processing Book 4 losses)
+**See `SERIES_TOUCHPOINTS.md` for complete arc guide**
 
-**Books 6-8:** DBT approach succeeding
+### Book 5: Turning Point - DBT Introduction
+**Emotional Arc:** CBT has definitively failed → New approach required
 
-**Status:** Pre-production, awaiting Books 1-4 completion
+**Key Events:**
+- Processing Book 4 losses (AR-Ryu erased, Suzie sacrificed)
+- **The Collector** appears - Type III being offering to "preserve" humanity in cosmic zoo
+- Team refuses easy salvation, chooses earned struggle
+- Discovery that Firas was displaced, not killed (consciousness exists)
+- First Bellatrix negotiations
+- Diana's cosmic messages begin
 
-**Note:** Ahdia returns to Earth at end of Book 4 (via Suzie's sacrifice), so Book 5 begins with team reunited but processing grief and survivor's guilt.
+**Core Question:** How do you function when control is impossible?
+
+---
+
+### Book 6: Radical Acceptance
+**Emotional Arc:** Accept reality as it is, not as we wish it were
+
+**Key Events:**
+- **The Predecessor** appears - failed species sabotaging humanity
+- Bellatrix's history revealed (she's Ahdia/Firas's biological mother)
+- "Love infection" - Type IV beings eliminated emotion, Bellatrix caught it
+- Mother FAERIS awakened via Bourn's stolen wake protocol
+- Ahdia's designed singularity truth revealed
+- Firas located in dimensional space (but unreachable)
+
+**Antagonist:** The Predecessor - cyborg remnants of species that failed Bellatrix's test millennia ago. "If we couldn't achieve utopia, no one should get the chance."
+
+---
+
+### Book 7: Both/And Mastery
+**Emotional Arc:** Hold contradictions without collapsing into either/or
+
+**Key Events:**
+- Firas rescue operation (returns changed by dimensional existence)
+- Earth declared unsalvageable (Kain + Bellatrix + Predecessor damage)
+- **New Earth migration announced** - near-lightspeed vessel
+- Predecessor's final assault on migration preparations
+- Bellatrix finally understands motherhood and love
+- **Deceleration problem revealed** - designed singularities exist for this
+
+**The Deceleration Problem:**
+- Near-lightspeed vessel can't slow down conventionally
+- Ahdia and Firas's temporal/dimensional manipulation can affect spacetime
+- **This is why Type VI created designed singularities**
+- They can create controlled deceleration field around vessel
+
+---
+
+### Book 8: Worth Without Fixing (Series Climax)
+**Emotional Arc:** "You don't have to be fixed to be worthy"
+
+**Key Events:**
+- Migration vessel launches (leaving broken Earth)
+- Diana returns from cosmic space (proves transcendence ≠ corruption)
+- Near-lightspeed achieved - point of no return
+- Deceleration begins - siblings working together
+
+**THE CRISIS:**
+- Field collapses, one sibling must absorb full load
+- Firas moves to sacrifice himself again (echo of Book 1)
+- Ahdia tries to take his place
+
+**BELLATRIX'S SACRIFICE:**
+- Intervenes, pushes both children aside
+- Type IV being, her dimensional capacity exceeds theirs
+- **The Book 1 Inversion:**
+  - Book 1: Firas sacrifices from misunderstanding (thought Ahdia would die)
+  - Book 8: Bellatrix sacrifices from understanding (knows children will live)
+- "I finally understand what I made. Let me do this one thing right."
+- Dies saving her children - love finally comprehended
+
+**Final Image:**
+- New Earth in viewport
+- Ahdia and Firas exhausted, holding each other
+- Where Bellatrix was: empty space
+- Behind them: everyone who survived
+- Ahead: a world they didn't break yet
+
+**Status:** Touchpoint planning complete. See `SERIES_TOUCHPOINTS.md` for full details.
 
 ---
 

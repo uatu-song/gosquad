@@ -50,7 +50,7 @@
 
 21. **Debate moderator:** "Governor Windrow, your opening statement."
 22. Geneva Windrow takes podium: Poised, experienced, compassionate
-23. **Geneva:** "Three days ago, Caledonia witnessed tragedy. Sixteen people died in a protest turned violent."
+23. **Geneva:** "Three days ago, Caledonia witnessed tragedy. A man named Daniel Okonkwo died in a protest turned violent. Dozens more were injured."
 24. **Geneva:** "Mayor Kain calls this proof we need more police, more force, more control."
 25. **Geneva:** "I call it proof we need to address the conditions that create desperation."
 26. Audience applause (liberal section), boos (conservative section)
@@ -273,10 +273,12 @@
 174. Ahdia leaning against wall: Exhausted, nosebleeding again
 175. **Figure's posture:** Deep sadness, recognition, guilt
 176. Purple lightning flickers around figure's hands: Same color as Ahdia's powers
-177. **Figure (whispered, unheard by Go Squad):** "I'm sorry. You don't know yet."
+177. **[CUT - No dialogue. Pure visual mystery.]**
 178. Figure turns away: Disappears into darkness
 179. **Readers still don't know who this is:** But pattern emerging (appears after Ahdia uses powers)
 180. Mystery building: Who is watching? Why the sadness?
+
+**DECISION (2025-12-09):** Mystery figure is pure visual—no dialogue, no "I'm sorry." Let readers build theories from behavior only.
 
 ### Beat 181-190: The New Mission
 
@@ -297,7 +299,7 @@
 192. Ruth: "You couldn't see it coming. None of us could."
 193. **Ahdia:** "I can freeze time and I'm still useless."
 194. Ruth: "You saved people from the stampede. That's not useless."
-195. **Ahdia:** "But she's still dead. And sixteen people died in the riot."
+195. **Ahdia:** "But she's still dead. And Daniel Okonkwo didn't go home."
 196. Ruth: "You can't save everyone. I learned that with—"
 197. **Ruth stops:** Almost said Firas, can't finish
 198. Ahdia: "I know. Your brother."
@@ -308,7 +310,9 @@
 
 ## SCENE 5: Kain's Victory Lap
 
-**Setting:** Kain campaign headquarters, 2 hours post-assassination. Kain meeting with inner circle. This scene is OUTSIDE POV (not Go Squad perspective—establishing villain operations).
+**Setting:** Kain campaign headquarters, 2 hours post-assassination. Kain meeting with inner circle.
+
+**POV BREAK (2025-12-09 DECISION):** This scene uses Kain POV, not Ahdia. Narrator voice shifts to match Kain's character profile—cold, transactional, viewing people as assets. Method actor protocol applies: load Kain profile for narrator filter.
 
 **Present:** Harding Kain, campaign advisors, security chief
 

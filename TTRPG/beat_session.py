@@ -81,7 +81,7 @@ class BeatSession:
             'leah': 'leah_turner',
             'tess': 'tess_whitford',
             'faeris': 'faeris_drone',
-            'leta': 'leta_thompson',
+            'korede': 'korede_owolowo',
             'ryu': 'ryu_tanaka',
             'tanaka': 'ryu_tanaka',
             'bourn': 'harriet_bourn',

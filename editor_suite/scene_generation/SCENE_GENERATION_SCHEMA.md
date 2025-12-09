@@ -27,6 +27,35 @@ participants: [Ben, Tess]
 touchpoint_a: "Ben mentions whistleblower timeline"
 touchpoint_b: "Tess realizes timeline matches her mission"
 
+# Narrator persona (Ahdia POV - NOT neutral description)
+narrator_persona:
+  pov_character: "Ahdia"
+  voice_reference: "Ahdia_voice_sample.md"
+  state_source: "chapter"  # "chapter" (default) or "scene" (override)
+  state_reference: "character_arcs/Ahdia_Arc_Tracker.md#book2-chapter12"
+  # Override only if scene demands different narrator state than chapter default
+  scene_override: null  # or specify: { emotional_baseline: "...", attention_mode: "...", humor_register: "..." }
+
+  voice_attributes:
+    - sardonic deflection
+    - pop-culture as coping mechanism
+    - ADHD attention patterns (notices odd details, misses obvious ones)
+    - self-deprecating internal logic
+    - dark humor about serious situations
+
+  filter_rules:
+    - Descriptions reflect what Ahdia would notice, not omniscient view
+    - Other characters described through her biases
+    - Technical details translated through her engineering-dropout lens
+    - Emotional observations wrapped in defensive humor
+    - Prose rhythm matches mental state (choppy when anxious, flowing when dissociating)
+
+  performance_notes:
+    - You are performing Ahdia's internal perception, not neutral description
+    - Filter all scene description through her attention patterns
+    - What she notices reveals character
+    - What she misses reveals character
+
 # Character knowledge states at this exact moment
 character_knowledge_states:
   Ben:

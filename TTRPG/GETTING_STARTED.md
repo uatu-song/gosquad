@@ -73,9 +73,9 @@ print(result['formatted'])
 - `ruth_carter` - Medic/Tactical Leader
 - `ben_bukowski` - Combat Specialist
 - `victor_hernandez` - Combat Specialist
-- `leah_turner` - Investigator
-- `tess_whitford` - Stealth Specialist
-- `leta_thompson` - Tech Specialist
+- `leah_turner` - Speed/Combat Specialist
+- `tess_whitford` - Tech/Stealth Specialist
+- `korede_owolowo` - Mechanical/Combat Specialist (Book 3+ recruit)
 
 ---
 

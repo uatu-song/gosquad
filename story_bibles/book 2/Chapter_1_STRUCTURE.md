@@ -149,8 +149,8 @@
 85. **Ahdia:** "How many?"
 86. Ruth: "How many what?"
 87. **Ahdia:** "How many died?"
-88. Ben (grim): "Sixteen confirmed. Twice that in critical condition."
-89. **Ahdia processes:** Saved 23, lost 16, more dying
+88. Ben (grim): "One confirmed dead. Dozens in critical condition."
+89. **Ahdia processes:** Saved 23, lost one, more critical
 90. **Guilt loads:** Not enough. Never enough.
 
 ### Beat 91-100: The Narrative Takes Shape
@@ -236,7 +236,7 @@
 146. **Ahdia:** "Then what good are these powers?"
 147. **Silence:** No one has good answer
 148. Victor (gently): "You saved 23 people. That matters."
-149. **Ahdia:** "And sixteen died anyway."
+149. **Ahdia:** "And one person still died. Daniel Okonkwo. He was an accountant."
 150. **Guilt visible:** Math of life-saving doesn't add up in her head
 
 ### Beat 151-160: Korede and Leta's Perspective
@@ -300,7 +300,7 @@
 **Ahdia crowd control:**
 - **Task:** SUCCESS (saved 23 people from certain death)
 - **Cost:** EXTREME (47 minutes frozen time, burned massive lifespan, nearly died)
-- **Limitation:** Can't save everyone, guilt over 16 dead, powers cost life
+- **Limitation:** Can't save everyone, guilt over Daniel Okonkwo's death, powers cost life
 
 **Go Squad civilian protection:**
 - **Task:** SUCCESS (minimized casualties, maintained non-lethal approach)

@@ -1,0 +1,1229 @@
+# CHARACTER_STATE_INDEX.yaml
+# Version 2.0
+# Go Squad Book 2 - Queryable Character State Index
+
+meta:
+  version: "2.0"
+  book: 2
+  last_updated: "2025-12-07"
+  total_chapters: 24
+
+# ============================================
+# TIMELINE MAPPING
+# ============================================
+
+timeline:
+  ch1:  { month: 1,  event: "isaiah_riot", date_approx: "early_month" }
+  ch2:  { month: 1,  event: "geneva_assassination", date_approx: "mid_month" }
+  ch3:  { month: 1,  event: "aftermath_investigations_begin", date_approx: "late_month" }
+  ch4:  { month: 2,  event: "ryu_crosses_line", date_approx: "early_month" }
+  ch5:  { month: 2,  event: "webb_exonerated", date_approx: "mid_month" }
+  ch6:  { month: 3,  event: "investigations_deepen", date_approx: null }
+  ch7:  { month: 3,  event: "ruth_discovers_decline", date_approx: null }
+  ch8:  { month: 4,  event: "evidence_building", date_approx: null }
+  ch9:  { month: 4,  event: "exile_island_expansion", date_approx: null }
+  ch10: { month: 5,  event: "investigations_converge", date_approx: null }
+  ch11: { month: 5,  event: "harassment_escalates", date_approx: null }
+  ch12: { month: 6,  event: "triomf_discovered", date_approx: null }
+  ch13: { month: 6,  event: "exile_island_exposed", date_approx: null }
+  ch14: { month: 7,  event: "clone_immortality_revealed", date_approx: null }
+  ch15: { month: 8,  event: "ben_leaks_evidence", date_approx: "early_month" }
+  ch16: { month: 8,  event: "48_hours_of_hope", date_approx: "mid_month" }
+  ch17: { month: 8,  event: "eidolon_reframes", date_approx: "late_month" }
+  ch18: { month: 9,  event: "leah_releases_recording", date_approx: null }
+  ch19: { month: 10, event: "officers_cleared", date_approx: null }
+  ch20: { month: 10, event: "system_protection_undeniable", date_approx: null }
+  ch21: { month: 11, event: "leta_killed_manhunt_begins", date_approx: null }
+  ch22: { month: 11, event: "faeris_broadcast_mob_breaks", date_approx: null }
+  ch23: { month: 11, event: "bourn_extracted_tess_vengeance", date_approx: null }
+  ch24: { month: 12, event: "election_night_reactor_crisis", date_approx: "election_day" }
+
+# ============================================
+# CANON WARNINGS (query before any generation)
+# ============================================
+
+canon_warnings:
+  - id: "tess_no_kill"
+    severity: "critical"
+    warning: "Tess does NOT kill anyone in Book 2. She brutalizes Webb but leaves him alive."
+    applies_to: ["tess", "webb"]
+
+  - id: "isaiah_killer"
+    severity: "critical"
+    warning: "Isaiah Bennett was killed by Officer Webb BEFORE Book 2 begins (6-8 months prior)."
+    applies_to: ["isaiah", "webb", "tess"]
+
+  - id: "company_name"
+    severity: "moderate"
+    warning: "The company is TRIOMF, not 'Titan Strategic' (outdated name)."
+    applies_to: ["triomf", "kain"]
+
+  - id: "firas_status"
+    severity: "moderate"
+    warning: "Firas is displaced (will return Book 7), not permanently dead."
+    applies_to: ["firas"]
+
+# ============================================
+# TAG DEFINITIONS
+# ============================================
+
+tag_definitions:
+  arc_types:
+    cbt_failing: "CBT approach failing - trying to control outcomes makes things worse"
+    institutional_betrayal: "Discovery that trusted institutions protect power"
+    institutional_faith_collapse: "Evidence-based worldview shatters when evidence doesn't matter"
+    caretaker_limits: "Learning you can't save everyone"
+    white_moderate_awakening: "MLK concept - learning solidarity through crisis"
+    ethical_erosion: "Gradual compromise of professional/moral standards"
+    observer_radicalized: "Witness to injustice becomes activist"
+    fear_amplification: "Exploiting existing fears for control"
+
+  relationship_types:
+    best_friends: "Deep platonic bond, mutual support"
+    romantic_partners: "Committed relationship"
+    family_betrayal: "Trust broken by family member"
+    professional_boundary_crossed: "Work relationship becomes personal/compromised"
+    mentor_student: "Teaching/learning dynamic"
+    investigation_allies: "Collaborating on shared goal"
+    antagonist: "Active opposition"
+
+# ============================================
+# CHARACTERS
+# ============================================
+
+characters:
+
+  # ==========================================
+  # AHDIA BACCHUS (Protagonist)
+  # ==========================================
+  ahdia:
+    meta:
+      arc_tracker: "Ahdia_Arc_Tracker.md"
+      codename: "Auerbach"
+      full_name: "Ahdia Sade Bacchus"
+      book2_role: "protagonist_pov"
+
+    arc:
+      summary: "Sacrifice everything -> Win through vulnerability"
+      type: "cbt_failing"
+
+    motives:
+      stable:
+        - { id: "save_lives", priority: 1 }
+        - { id: "prove_worth", priority: 2 }
+        - { id: "protect_team", priority: 3 }
+      evolving:
+        - { id: "control_outcomes", chapters: [1,2,3,4,5,6,7,8,9,10], note: "CBT thinking - will fail" }
+        - { id: "accept_limits", chapters: [11,12,13,14,15,16,17,18,19,20,21,22,23,24], note: "forced learning" }
+
+    emotional_progression:
+      - { stage: "confident_operator", chapters: [1,2,3,4,5], description: "Has powers, helping team, feels capable" }
+      - { stage: "secret_keeper", chapters: [6,7,8,9,10], description: "Hiding decline and solo ops from team" }
+      - { stage: "exposed_desperate", chapters: [11,12,13,14,15], description: "Secrets revealed, scrambling" }
+      - { stage: "sacrificial", chapters: [16,17,18,19,20], description: "Willing to burn everything" }
+      - { stage: "hollow_victory", chapters: [21,22,23,24], description: "Won battles, lost war, exhausted" }
+
+    threads:
+
+      baseline_decline:
+        type: "resource_depletion"
+        description: "Cellular degradation from power use"
+        chapters: [1,4,8,11,15,19,23,24]
+        gates:
+          ch1:
+            state: "significant_burn"
+            trigger: "47_minute_freeze_at_riot"
+            value_before: "90%"
+            value_after: "67-71%"
+            cost: "23_years_equivalent"
+          ch4:
+            state: "continued_decline"
+            trigger: "eastern_europe_operations"
+            value_before: "67-71%"
+            value_after: "52%"
+            cost: "solo_global_ops"
+          ch11:
+            state: "critical_depletion"
+            trigger: "manhunt_defense"
+            value_before: "~30%"
+            value_after: "7%"
+            cost: "protecting_team_from_mob"
+          ch24:
+            state: "near_death"
+            trigger: "reactor_translocation"
+            value_before: "7%"
+            value_after: "0.7%"
+            cost: "800_mile_translocation_plus_freeze"
+
+      exile_island_secret:
+        type: "hidden_operation"
+        description: "Secret global vigilante operations"
+        chapters: [3,5,7,9,11,13]
+        reveal_chapter: 13
+        gates:
+          ch3:
+            state: "begins_solo_ops"
+            trigger: "frustration_with_local_limits"
+            knows: ["ryu_providing_coordinates"]
+            hides_from: ["team"]
+          ch7:
+            state: "28_targets_identified"
+            trigger: "systematic_targeting"
+            knows: ["global_scope"]
+            hides_from: ["team"]
+          ch13:
+            state: "exposed"
+            trigger: "team_discovers_operation"
+            knows: ["team_knows"]
+            consequence: "trust_damaged"
+
+      team_trust:
+        type: "relationship_arc"
+        description: "Trust with Go Squad members"
+        chapters: [1,7,13,17,21,24]
+        gates:
+          ch1:
+            state: "trusted_member"
+            level: "high"
+          ch7:
+            state: "lying_about_decline"
+            level: "compromised_unknown"
+            hidden: ["terminal_decline"]
+          ch13:
+            state: "exile_secret_exposed"
+            level: "damaged"
+            trigger: "team_discovers_solo_ops"
+          ch17:
+            state: "rebuilding"
+            level: "recovering"
+          ch21:
+            state: "crisis_bonds"
+            level: "strengthened_through_trauma"
+          ch24:
+            state: "profound"
+            level: "willing_to_die_for"
+
+    chapter_states:
+      ch1:
+        location: "caledonia_memorial_protest"
+        emotional: "determined_operator"
+        physical:
+          baseline: { start: "90%", end: "67-71%" }
+          injuries: null
+          fatigue: "severe_post_freeze"
+        knows:
+          - "team_dynamics"
+          - "power_costs_general"
+          - "kain_local_threat"
+        learns:
+          - "eidolon_fear_amplification_exists"
+          - "cant_save_everyone_16_died"
+        doesnt_know:
+          - "geneva_is_bellatrix"
+          - "prime_watching"
+          - "full_triomf_scope"
+        believes:
+          - "can_make_difference"
+          - "team_trusts_her"
+        relationships:
+          ruth: { state: "close_friend", notes: null }
+          team: { state: "trusted_member", notes: null }
+          ryu: { state: "professional_ally", notes: "beginning_to_enable" }
+        key_actions:
+          - "burns_47_minutes_frozen_time"
+          - "saves_23_people"
+          - "loses_16_people"
+          - "saves_korede_specifically"
+
+      ch24:
+        location: "fusion_reactor_facility"
+        emotional: "sacrificial_exhausted"
+        physical:
+          baseline: { start: "7%", end: "0.7%" }
+          injuries: "cellular_critical"
+          fatigue: "near_collapse"
+        knows:
+          - "full_triomf_scope"
+          - "kain_clone_immortality"
+          - "team_positions"
+          - "eidolon_mechanics"
+        learns:
+          - "prime_exists"
+          - "other_timelines_exist"
+        doesnt_know:
+          - "what_prime_will_reveal"
+          - "book3_events"
+        believes:
+          - "sacrifice_was_worth_it"
+          - "team_will_continue"
+        relationships:
+          ruth: { state: "profound_bond", notes: "saved_each_other" }
+          team: { state: "family", notes: "willing_to_die_for" }
+        key_actions:
+          - "translocates_team_800_miles"
+          - "freezes_reactor_meltdown"
+          - "survives_at_0.7_percent"
+          - "meets_prime"
+
+  # ==========================================
+  # TESS WHITFORD
+  # ==========================================
+  tess:
+    meta:
+      arc_tracker: "Tess_Arc_Tracker.md"
+      codename: "Gloom Girl"
+      full_name: "Tess Whitford"
+      book2_role: "investigation_lead_institutional"
+
+    arc:
+      summary: "Father's betrayal -> Vigilante justice"
+      type: "institutional_betrayal"
+
+    motives:
+      stable:
+        - { id: "protect_leta", priority: 1 }
+        - { id: "find_truth", priority: 2 }
+      evolving:
+        - { id: "protect_family_image", chapters: [1,2,3,4,5], note: "early denial" }
+        - { id: "seek_truth", chapters: [6,7,8,9,10,11,12,13,14], note: "investigation phase" }
+        - { id: "avenge_leta", chapters: [21,22,23,24], note: "post-death" }
+        - { id: "destroy_corrupt_systems", chapters: [15,16,17,18,19,20,21,22,23,24], note: "radicalized" }
+
+    emotional_progression:
+      - { stage: "defensive_denial", chapters: [1,2,3,4,5], description: "Protecting father's image" }
+      - { stage: "reluctant_investigator", chapters: [6,7,8,9], description: "Can't ignore evidence" }
+      - { stage: "truth_seeker", chapters: [10,11,12,13,14], description: "Committed to exposing" }
+      - { stage: "grieving_vigilante", chapters: [21,22,23,24], description: "Leta dead, vengeance mode" }
+
+    threads:
+
+      father_complicity:
+        type: "betrayal_discovery"
+        description: "Learning father covered up Isaiah's murder"
+        chapters: [3,5,8,12,15,19]
+        related_characters: ["chief_whitford", "ben", "isaiah_bennett"]
+        gates:
+          ch3:
+            state: "first_suspicion"
+            trigger: "anomaly_in_records"
+            knows: ["something_wrong_with_timeline"]
+            believes: ["must_be_mistake"]
+          ch5:
+            state: "finds_evidence"
+            trigger: "discovers_memo"
+            knows: ["father_signed_something"]
+            believes: ["maybe_didnt_understand"]
+            loses: ["certainty_of_innocence"]
+          ch8:
+            state: "confirms_complicity"
+            trigger: "ben_shares_investigation"
+            knows: ["father_knew_and_covered"]
+            believes: null
+            loses: ["denial"]
+          ch12:
+            state: "confronts_father"
+            trigger: "direct_confrontation"
+            knows: ["full_cover_up_scope"]
+            consequence: "relationship_severed"
+          ch15:
+            state: "full_scope_revealed"
+            trigger: "triomf_connection_clear"
+            knows: ["systematic_corruption"]
+          ch19:
+            state: "cuts_ties"
+            trigger: "final_break"
+            knows: ["father_is_enemy"]
+            consequence: "no_contact"
+
+      leta_relationship:
+        type: "romantic_arc"
+        description: "Partnership with Leta through harassment to death"
+        chapters: [1,6,11,17,21]
+        terminus: { chapter: 21, event: "leta_killed_by_webb" }
+        gates:
+          ch1:
+            state: "established_partners"
+            relationship_health: "strong"
+          ch6:
+            state: "harassment_strain"
+            trigger: "leta_targeted_online"
+            relationship_health: "stressed_but_solid"
+          ch11:
+            state: "protective"
+            trigger: "harassment_escalates"
+            relationship_health: "fierce_protection"
+          ch17:
+            state: "fear_for_safety"
+            trigger: "credible_threats"
+            relationship_health: "desperate"
+          ch21:
+            state: "severed_by_death"
+            trigger: "webb_kills_leta"
+            relationship_health: null
+            consequence: "grief_rage"
+
+      webb_vengeance:
+        type: "vigilante_arc"
+        description: "Hunting Webb after Leta's murder"
+        chapters: [21,22,23]
+        canon_warning: "tess_no_kill"
+        constraints:
+          - "does_NOT_kill_webb"
+          - "brutalizes_but_leaves_alive"
+          - "acts_masked_and_solo"
+          - "team_does_not_know"
+        gates:
+          ch21:
+            state: "triggered"
+            trigger: "witnesses_leta_death"
+            emotional: "shattered_rage"
+            decides: "webb_will_pay"
+          ch22:
+            state: "hunting"
+            trigger: "tracks_webb_movements"
+            emotional: "cold_focused"
+          ch23:
+            state: "vengeance_taken"
+            trigger: "confronts_webb_masked"
+            action: "brutalizes_severely"
+            constraint: "leaves_alive"
+            secret: "team_doesnt_know"
+
+    chapter_states:
+      ch1:
+        location: "memorial_protest"
+        emotional: "defensive_about_institutions"
+        physical:
+          injuries: null
+        knows:
+          - "father_is_police_chief"
+          - "isaiah_killed_by_police"
+          - "leta_is_activist"
+        doesnt_know:
+          - "father_signed_cover_up"
+          - "webb_specific_role"
+          - "triomf_exists"
+        believes:
+          - "system_has_bad_actors_not_bad_system"
+          - "father_is_good_man"
+        relationships:
+          leta: { state: "partners", notes: "loving_stable" }
+          father: { state: "complicated_loyalty", notes: "wants_to_believe" }
+          ben: { state: "teammate", notes: null }
+
+      ch21:
+        location: "street_confrontation"
+        emotional: "shattered_rage"
+        physical:
+          injuries: "minor_from_manhunt"
+        knows:
+          - "father_full_complicity"
+          - "webb_killed_isaiah"
+          - "webb_killed_leta"
+          - "triomf_connection"
+        learns:
+          - "leta_is_dead"
+        doesnt_know:
+          - "how_to_live_without_leta"
+        believes:
+          - "webb_must_pay"
+          - "system_is_enemy"
+        relationships:
+          leta: { state: "dead", notes: "witnessed_murder" }
+          father: { state: "severed", notes: "enemy" }
+          korede: { state: "revealed_identity", notes: "he_saw_her_as_gosquad" }
+        key_actions:
+          - "reveals_gosquad_identity_to_korede"
+          - "vows_vengeance_on_webb"
+
+  # ==========================================
+  # BEN BUKOWSKI
+  # ==========================================
+  ben:
+    meta:
+      arc_tracker: "Ben_Arc_Tracker.md"
+      codename: "Night Knight"
+      full_name: "Ben Bukowski"
+      book2_role: "investigation_lead_evidence"
+
+    arc:
+      summary: "Perfect evidence -> System failure -> Faith shattered"
+      type: "institutional_faith_collapse"
+
+    motives:
+      stable:
+        - { id: "protect_innocents", priority: 1 }
+        - { id: "bring_accountability", priority: 2 }
+      evolving:
+        - { id: "trust_the_system", chapters: [1,2,3,4,5,6,7,8,9,10], note: "conservative faith" }
+        - { id: "question_everything", chapters: [11,12,13,14,15,16,17,18,19,20,21,22,23,24], note: "faith collapsing" }
+
+    emotional_progression:
+      - { stage: "methodical_investigator", chapters: [1,2,3,4,5,6,7], description: "Building case by the book" }
+      - { stage: "hopeful_prosecutor", chapters: [8,9,10], description: "Case complete, system will work" }
+      - { stage: "disillusioned", chapters: [11,12,13,14,15], description: "Evidence ignored, reframed" }
+      - { stage: "faith_shattered", chapters: [16,17,18,19,20,21,22,23,24], description: "What am I conserving?" }
+
+    threads:
+
+      tank_kain_investigation:
+        type: "evidence_building"
+        description: "Building case against Kain's violence"
+        chapters: [2,4,6,8,10,15]
+        gates:
+          ch2:
+            state: "begins_investigation"
+            trigger: "riot_aftermath_questions"
+            focus: "who_funded_provocateurs"
+          ch4:
+            state: "massacre_evidence"
+            trigger: "finds_tank_kain_records"
+            knows: ["kain_ordered_violence"]
+          ch6:
+            state: "triomf_connection"
+            trigger: "follows_money"
+            knows: ["corporate_coordination"]
+          ch8:
+            state: "case_complete"
+            trigger: "all_evidence_compiled"
+            knows: ["airtight_documentation"]
+            believes: ["system_will_act"]
+          ch10:
+            state: "ready_to_leak"
+            trigger: "official_channels_stalling"
+            decides: ["go_public"]
+          ch15:
+            state: "leaked_publicly"
+            trigger: "releases_everything"
+            consequence: "48_hours_of_hope"
+
+      system_faith:
+        type: "belief_collapse"
+        description: "Conservative's faith in institutions crumbling"
+        chapters: [8,10,15,17,19,20]
+        key_moment: "ch17_evidence_reframed"
+        key_line: "What the hell am I conserving?"
+        gates:
+          ch8:
+            state: "confident"
+            believes: ["evidence_matters", "system_works", "truth_wins"]
+          ch10:
+            state: "still_hopeful"
+            believes: ["public_pressure_will_work"]
+          ch15:
+            state: "hopeful_release"
+            believes: ["48_hours_changes_everything"]
+          ch17:
+            state: "crushed"
+            trigger: "eidolon_reframes_narrative"
+            learns: ["kain_up_12_points_after_evidence"]
+            loses: ["faith_in_public"]
+          ch19:
+            state: "shattered"
+            trigger: "officers_cleared_despite_evidence"
+            learns: ["system_protects_power"]
+            loses: ["faith_in_institutions"]
+          ch20:
+            state: "broken_questioning"
+            key_line: "What the hell am I conserving?"
+
+    chapter_states:
+      ch8:
+        location: "team_base"
+        emotional: "triumphant_confident"
+        knows:
+          - "full_tank_kain_evidence"
+          - "riot_funding_trail"
+          - "triomf_coordination"
+          - "massacre_documentation"
+        believes:
+          - "system_will_work"
+          - "evidence_is_enough"
+          - "truth_matters"
+        relationships:
+          tess: { state: "investigation_allies", notes: "sharing_findings" }
+          team: { state: "respected_member", notes: null }
+
+      ch20:
+        location: "varies"
+        emotional: "shattered_questioning"
+        knows:
+          - "evidence_perfect_and_irrelevant"
+          - "system_protects_power"
+          - "eidolon_manipulation"
+          - "officers_cleared"
+        believes:
+          - "nothing_he_believed_was_true"
+        key_line: "What the hell am I conserving?"
+        relationships:
+          team: { state: "bonded_through_disillusion", notes: null }
+
+  # ==========================================
+  # LEAH TURNER
+  # ==========================================
+  leah:
+    meta:
+      arc_tracker: "Leah_Arc_Tracker.md"
+      codename: "Battlea"
+      full_name: "Leah Turner"
+      book2_role: "investigation_abuse_pattern"
+
+    arc:
+      summary: "Silent complicity -> Public action -> Solidarity too late"
+      type: "white_moderate_awakening"
+
+    motives:
+      stable:
+        - { id: "do_the_right_thing", priority: 1, note: "vague early, specific later" }
+      evolving:
+        - { id: "avoid_conflict", chapters: [1,2,3,4,5], note: "white moderate comfort" }
+        - { id: "process_own_trauma", chapters: [6,7,8,9,10,11,12], note: "kain_harassed_her" }
+        - { id: "speak_for_silenced", chapters: [13,14,15,16,17,18,19,20,21,22,23,24], note: "finding voice" }
+
+    emotional_progression:
+      - { stage: "uncomfortable_bystander", chapters: [1,2,3,4,5], description: "Knows something wrong, avoids" }
+      - { stage: "processing_trauma", chapters: [6,7,8,9,10], description: "Own harassment driving action" }
+      - { stage: "building_courage", chapters: [11,12,13,14,15], description: "Preparing to act publicly" }
+      - { stage: "public_actor", chapters: [16,17,18], description: "Releases recording" }
+      - { stage: "solidarity_learner", chapters: [19,20,21,22,23,24], description: "Too late but learning" }
+
+    threads:
+
+      kain_harassment_investigation:
+        type: "evidence_building"
+        description: "Documenting Kain's abuse pattern"
+        chapters: [3,6,9,12,15,18]
+        personal_stake: "harassed_at_red_dress_heist_book1"
+        gates:
+          ch3:
+            state: "begins_quietly"
+            trigger: "processing_own_experience"
+            method: "online_research"
+          ch6:
+            state: "finds_nda_pattern"
+            trigger: "discovers_silenced_women"
+            knows: ["systematic_cover_ups"]
+          ch9:
+            state: "victim_count_grows"
+            trigger: "connects_with_survivors"
+            knows: ["15-20_victims_minimum"]
+          ch12:
+            state: "recording_obtained"
+            trigger: "survivor_shares_evidence"
+            has: ["damning_audio"]
+          ch15:
+            state: "decides_to_release"
+            trigger: "courage_builds"
+            decides: ["go_public"]
+          ch18:
+            state: "releases_recording"
+            trigger: "makes_it_public"
+            consequence: ["media_firestorm", "personal_exposure"]
+
+      solidarity_learning:
+        type: "political_awakening"
+        description: "White moderate learning real solidarity"
+        chapters: [1,7,14,21,24]
+        mentor: "victor"
+        gates:
+          ch1:
+            state: "uncomfortable_at_protest"
+            feels: ["out_of_place", "unsure_of_role"]
+          ch7:
+            state: "victor_teaches"
+            learns: ["both_and_thinking", "solidarity_not_charity"]
+          ch14:
+            state: "starting_to_get_it"
+            understands: ["cant_be_neutral"]
+          ch21:
+            state: "leta_death_impact"
+            learns: ["cost_of_being_late"]
+            feels: ["guilt", "grief"]
+          ch24:
+            state: "solidarity_learned"
+            understands: ["too_late_for_leta"]
+            commits: ["not_too_late_for_others"]
+
+    chapter_states:
+      ch1:
+        location: "memorial_protest"
+        emotional: "uncomfortable_uncertain"
+        knows:
+          - "kain_harassed_her_book1"
+          - "protest_is_justified"
+        doesnt_know:
+          - "how_to_help"
+          - "her_role"
+        believes:
+          - "staying_neutral_is_safe"
+        relationships:
+          team: { state: "new_member", notes: "finding_place" }
+          victor: { state: "acquaintance", notes: "will_become_mentor" }
+          leta: { state: "teammate", notes: "will_feel_guilt" }
+
+  # ==========================================
+  # RUTH CARTER
+  # ==========================================
+  ruth:
+    meta:
+      arc_tracker: "Ruth_Arc_Tracker.md"
+      codename: "Nightingale"
+      full_name: "Ruth Carter"
+      book2_role: "team_leader_medic"
+
+    arc:
+      summary: "Leadership burden -> Can't save everyone -> Acceptance"
+      type: "caretaker_limits"
+
+    motives:
+      stable:
+        - { id: "keep_team_alive", priority: 1 }
+        - { id: "lead_effectively", priority: 2 }
+        - { id: "save_ahdia", priority: 3 }
+
+    emotional_progression:
+      - { stage: "confident_leader", chapters: [1,2,3,4,5], description: "Has it together" }
+      - { stage: "weight_accumulating", chapters: [6,7,8,9,10], description: "Cracks forming" }
+      - { stage: "crisis_manager", chapters: [11,12,13,14,15], description: "Too many fires" }
+      - { stage: "accepting_limits", chapters: [16,17,18,19,20,21,22,23,24], description: "Can't save everyone" }
+
+    threads:
+
+      ahdia_treatment:
+        type: "medical_caretaker"
+        description: "Managing Ahdia's cellular degradation"
+        chapters: [1,4,7,11,15,19,24]
+        gates:
+          ch1:
+            state: "routine_treatment"
+            knows: ["degradation_exists"]
+            believes: ["manageable"]
+          ch4:
+            state: "concerned"
+            knows: ["faster_than_expected"]
+          ch7:
+            state: "discovers_severity"
+            trigger: "ryu_reveals_numbers"
+            learns: ["terminal_trajectory"]
+            emotional: "terrified_for_friend"
+          ch11:
+            state: "emergency_stabilization"
+            action: "crisis_intervention"
+          ch15:
+            state: "fighting_clock"
+            knows: ["limited_time"]
+          ch24:
+            state: "critical_intervention"
+            action: "saves_ahdia_at_0.7_percent"
+
+      leadership_burden:
+        type: "responsibility_weight"
+        description: "Weight of leading team through crisis"
+        chapters: [1,5,10,15,21]
+        gates:
+          ch1:
+            state: "confident_leader"
+            feels: ["capable", "prepared"]
+          ch5:
+            state: "weight_accumulating"
+            feels: ["strain", "responsibility"]
+          ch10:
+            state: "hope_then_crash"
+            trigger: "evidence_release_fails"
+            feels: ["crushed"]
+          ch15:
+            state: "cant_save_everyone"
+            learns: ["acceptance_required"]
+          ch21:
+            state: "leta_loss"
+            trigger: "teammate_dies"
+            feels: ["grief", "failure", "determination"]
+
+  # ==========================================
+  # VICTOR HERNANDEZ
+  # ==========================================
+  victor:
+    meta:
+      arc_tracker: "Victor_Arc_Tracker.md"
+      codename: "Crimson Sable"
+      full_name: "Victor Hernandez"
+      book2_role: "connector_mentor"
+
+    arc:
+      summary: "Community anchor -> Network saves team"
+      type: "mentor"
+
+    motives:
+      stable:
+        - { id: "build_community_power", priority: 1 }
+        - { id: "teach_both_and_thinking", priority: 2 }
+        - { id: "environmental_justice", priority: 3 }
+
+    emotional_progression:
+      - { stage: "grounded_mentor", chapters: [1,2,3,4,5,6,7,8,9,10], description: "Teaching, connecting" }
+      - { stage: "network_activator", chapters: [11,12,13,14,15,16,17,18,19,20,21,22,23,24], description: "Mobilizing community" }
+
+    threads:
+
+      both_and_teaching:
+        type: "mentor"
+        description: "Teaching team to hold contradictions"
+        chapters: [7,14,20]
+        students: ["leah", "ahdia", "ben"]
+        key_lesson: "'But' creates hierarchy, 'And' holds both truths"
+        gates:
+          ch7:
+            teaches: "leah"
+            lesson: "solidarity_not_charity"
+          ch14:
+            teaches: "team"
+            lesson: "evidence_true_AND_insufficient"
+          ch20:
+            teaches: "ben"
+            lesson: "system_failed_AND_worth_fighting"
+
+      network_activation:
+        type: "community_power"
+        description: "Safe houses and community networks"
+        chapters: [11,21,22]
+        payoff_chapter: 21
+        gates:
+          ch11:
+            state: "networks_ready"
+            has: ["safe_houses", "community_contacts", "escape_routes"]
+          ch21:
+            state: "saves_team"
+            action: "activates_network_during_manhunt"
+            outcome: "team_survives_because_of_community"
+
+  # ==========================================
+  # LETA OWOLOWO
+  # ==========================================
+  leta:
+    meta:
+      arc_tracker: "Leta_Arc_Tracker.md"
+      codename: null
+      full_name: "Leta Owolowo"
+      book2_role: "harassment_victim_activist"
+
+    arc:
+      summary: "Targeted -> Resilient -> Killed"
+      type: "martyrdom"
+      death:
+        chapter: 21
+        killed_by: "officer_webb"
+        witnessed_by: ["tess", "korede"]
+
+    motives:
+      stable:
+        - { id: "protect_community", priority: 1 }
+        - { id: "love_tess", priority: 2 }
+        - { id: "protect_korede", priority: 3 }
+
+    emotional_progression:
+      - { stage: "activist_partner", chapters: [1,2,3,4,5], description: "Established life, work, love" }
+      - { stage: "targeted", chapters: [6,7,8,9,10,11], description: "Harassment campaign victim" }
+      - { stage: "resilient", chapters: [12,13,14,15,16,17,18,19,20], description: "Fear resistance practice" }
+      - { stage: "killed", chapters: [21], description: "Murdered by Webb" }
+
+    threads:
+
+      harassment_survival:
+        type: "victim_resilience"
+        description: "Bot networks and threats targeting her"
+        chapters: [6,9,11,14,17]
+        gates:
+          ch6:
+            state: "targeting_begins"
+            trigger: "visibility_as_activist"
+          ch9:
+            state: "escalation"
+            threats: ["doxxing", "death_threats"]
+          ch11:
+            state: "severe"
+            develops: "fear_resistance_practice"
+          ch14:
+            state: "teaching_others"
+            shares: "justified_vs_distorted_fear"
+          ch17:
+            state: "credible_danger"
+            knows: ["real_threat_to_life"]
+
+      fear_resistance:
+        type: "coping_mechanism"
+        description: "Distinguishing justified from distorted fear"
+        chapters: [11,14,17]
+        effectiveness: "60-70%"
+        counters: "eidolon_amplification"
+        taught_to: ["team"]
+
+    chapter_states:
+      ch21:
+        location: "street"
+        emotional: "protective"
+        key_actions:
+          - "protecting_korede"
+          - "killed_by_webb"
+        death:
+          killed_by: "officer_webb"
+          witnessed_by: ["tess", "korede"]
+          consequence: ["tess_vengeance_arc", "korede_radicalization"]
+
+  # ==========================================
+  # KOREDE OWOLOWO
+  # ==========================================
+  korede:
+    meta:
+      arc_tracker: "Korede_Arc_Tracker.md"
+      codename: null
+      full_name: "Korede Owolowo"
+      book2_role: "observer_radicalized"
+      relationship_to_leta: "younger_brother"
+
+    arc:
+      summary: "Observer -> Witness -> Radicalized"
+      type: "observer_radicalized"
+
+    emotional_progression:
+      - { stage: "background_observer", chapters: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20], description: "Watching from edges" }
+      - { stage: "traumatized_witness", chapters: [21], description: "Sees sister killed" }
+      - { stage: "radicalized", chapters: [22,23,24], description: "Activated by loss" }
+
+    threads:
+
+      radicalization:
+        type: "political_awakening"
+        description: "Observer becomes actor through trauma"
+        key_chapter: 21
+        gates:
+          ch1:
+            state: "observer"
+            knows: ["sister_is_activist"]
+            role: "background"
+          ch21:
+            state: "witness"
+            sees: ["sister_murdered_by_webb", "tess_reveals_gosquad_identity"]
+            learns: ["tess_is_go_squad", "system_kills_people_like_leta"]
+          ch22:
+            state: "radicalized"
+            decides: ["will_fight"]
+          ch24:
+            state: "committed"
+            setup: "partners_with_tess_book3-4"
+
+  # ==========================================
+  # RYU MATSUDA
+  # ==========================================
+  ryu:
+    meta:
+      arc_tracker: "Ryu_Arc_Tracker.md"
+      codename: null
+      full_name: "Dr. Shiba Ryu"
+      book2_role: "enabler"
+
+    arc:
+      summary: "Doctor -> Enabler -> Complicit"
+      type: "ethical_erosion"
+
+    motives:
+      stable:
+        - { id: "help_ahdia", priority: 1 }
+      hidden:
+        - { id: "loves_ahdia", revealed: "never_in_book2", note: "never_confesses" }
+      evolving:
+        - { id: "maintain_professional_ethics", chapters: [1,2], note: "eroding" }
+        - { id: "justify_violations", chapters: [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24], note: "rationalization" }
+
+    emotional_progression:
+      - { stage: "professional", chapters: [1], description: "Maintaining boundaries" }
+      - { stage: "boundary_crossing", chapters: [2,3,4,5], description: "First violations" }
+      - { stage: "enabler", chapters: [6,7,8,9,10,11,12], description: "Deep in it" }
+      - { stage: "complicit", chapters: [13,14,15,16,17,18,19,20,21,22,23,24], description: "Can't go back" }
+
+    threads:
+
+      enablement:
+        type: "ethical_erosion"
+        description: "Crossing professional lines to help Ahdia"
+        chapters: [2,5,8,12,16]
+        gates:
+          ch2:
+            state: "first_intel_handoff"
+            action: "provides_target_coordinates"
+            justification: "helping_her_mission"
+            crosses: "professional_boundary"
+          ch5:
+            state: "falsifies_records"
+            action: "hides_her_decline_from_cadens"
+            justification: "protecting_her"
+            crosses: "medical_ethics"
+          ch8:
+            state: "provides_coordinates"
+            action: "enables_global_operations"
+            justification: "she_needs_this"
+          ch12:
+            state: "deep_complicity"
+            action: "systematic_cover_up"
+            justification: "too_late_to_stop"
+          ch16:
+            state: "no_way_back"
+            realizes: "enabling_her_death"
+            feels: "crushing_guilt"
+
+# ============================================
+# ANTAGONISTS
+# ============================================
+
+  eidolon:
+    meta:
+      arc_tracker: "Eidolon_Arc_Tracker.md"
+      book2_role: "fear_manipulation_weapon"
+      serves: "bellatrix"
+
+    arc:
+      summary: "Electoral weapon -> Fear amplifier"
+      type: "fear_amplification"
+
+    mechanics:
+      function: "amplifies_existing_fear"
+      cannot: "create_new_fear"
+      counter: "leta_fear_resistance_practice"
+      counter_effectiveness: "60-70%"
+
+    threads:
+
+      electoral_manipulation:
+        type: "antagonist_action"
+        chapters: [1,8,17,21]
+        gates:
+          ch1:
+            action: "amplifies_riot_fear"
+            outcome: "protest_becomes_violent"
+          ch8:
+            action: "primes_population"
+            outcome: "ready_for_reframe"
+          ch17:
+            action: "reframes_evidence"
+            outcome: "kain_up_12_points"
+          ch21:
+            action: "triggers_manhunt"
+            outcome: "civilians_hunt_gosquad"
+
+  officer_webb:
+    meta:
+      book2_role: "killer"
+      no_arc_tracker: true
+
+    actions:
+      pre_book2:
+        - "killed_isaiah_bennett"
+        - "exonerated"
+      ch5:
+        - "exonerated_again"
+      ch21:
+        - "kills_leta"
+      ch23:
+        - "brutalized_by_tess"
+        - "survives"
+
+    canon_warning: "tess_no_kill"
+
+  kain:
+    meta:
+      arc_tracker: "Harding_Kain_Arc_Tracker.md"
+      book2_role: "ascending_villain"
+
+    arc:
+      summary: "Mayor -> President-Elect"
+
+    key_facts:
+      - "clone_avatar_immortality"
+      - "killing_him_is_inconvenience"
+      - "harassment_pattern_exposed_ch18"
+      - "wins_election_ch24"
+
+    threads:
+
+      presidential_campaign:
+        type: "antagonist_rise"
+        chapters: [1,8,15,17,24]
+        gates:
+          ch1:
+            state: "mayor"
+          ch8:
+            state: "evidence_against_him"
+          ch15:
+            state: "evidence_released"
+          ch17:
+            state: "reframed_up_12_points"
+          ch24:
+            state: "wins_presidency"
+            electoral_votes: 312
+
+# ============================================
+# CROSS-CHARACTER QUERIES
+# ============================================
+
+knowledge_tracking:
+
+  exile_island:
+    description: "Ahdia's secret global vigilante operation"
+    secret_holder: "ahdia"
+    enabler: "ryu"
+    reveal_chapter: 13
+    awareness:
+      ch1: [ahdia, ryu]
+      ch2: [ahdia, ryu]
+      ch3: [ahdia, ryu]
+      ch4: [ahdia, ryu]
+      ch5: [ahdia, ryu]
+      ch6: [ahdia, ryu]
+      ch7: [ahdia, ryu]
+      ch8: [ahdia, ryu]
+      ch9: [ahdia, ryu]
+      ch10: [ahdia, ryu]
+      ch11: [ahdia, ryu]
+      ch12: [ahdia, ryu]
+      ch13: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch14: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch15: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch16: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch17: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch18: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch19: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch20: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch21: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch22: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch23: [ahdia, ryu, ruth, ben, tess, victor, leah]
+      ch24: [ahdia, ryu, ruth, ben, tess, victor, leah]
+
+  ahdia_terminal_decline:
+    description: "Ahdia's accelerating cellular degradation"
+    secret_holders: [ahdia, ryu]
+    reveal_chapter: 7
+    awareness:
+      ch1: [ahdia, ryu]
+      ch2: [ahdia, ryu]
+      ch3: [ahdia, ryu]
+      ch4: [ahdia, ryu]
+      ch5: [ahdia, ryu]
+      ch6: [ahdia, ryu]
+      ch7: [ahdia, ryu, ruth]
+      ch8: [ahdia, ryu, ruth]
+      ch9: [ahdia, ryu, ruth]
+      ch10: [ahdia, ryu, ruth]
+      ch11: [ahdia, ryu, ruth]
+      ch12: [ahdia, ryu, ruth]
+      ch13: [ahdia, ryu, ruth]
+      ch14: [ahdia, ryu, ruth]
+      ch15: [ahdia, ryu, ruth]
+      ch16: [ahdia, ryu, ruth]
+      ch17: [ahdia, ryu, ruth]
+      ch18: [ahdia, ryu, ruth]
+      ch19: [ahdia, ryu, ruth]
+      ch20: [ahdia, ryu, ruth]
+      ch21: [ahdia, ryu, ruth]
+      ch22: [ahdia, ryu, ruth]
+      ch23: [ahdia, ryu, ruth]
+      ch24: [ahdia, ryu, ruth]
+
+  tess_webb_attack:
+    description: "Tess brutalized Webb after Leta's death"
+    secret_holder: "tess"
+    reveal_chapter: null
+    awareness:
+      ch1: []
+      ch22: []
+      ch23: [tess]
+      ch24: [tess]
+
+  gosquad_identities:
+    korede_learns: 21
+    context: "tess_reveals_during_leta_death"
+    awareness:
+      ch1: [team]
+      ch20: [team]
+      ch21: [team, korede]
+      ch24: [team, korede]
+
+# ============================================
+# REVERSE LOOKUPS
+# ============================================
+
+knowledge_events:
+  - { knowledge: "father_complicity", character: "tess", learned_chapter: 8, source: "investigation" }
+  - { knowledge: "ahdia_terminal_decline", character: "ruth", learned_chapter: 7, source: "ryu_disclosure" }
+  - { knowledge: "exile_island", character: "team", learned_chapter: 13, source: "discovered" }
+  - { knowledge: "kain_clone_immortality", character: "team", learned_chapter: 14, source: "revealed" }
+  - { knowledge: "triomf_connection", character: "ben", learned_chapter: 6, source: "investigation" }
+  - { knowledge: "leta_death", character: "tess", learned_chapter: 21, source: "witnessed" }
+  - { knowledge: "leta_death", character: "korede", learned_chapter: 21, source: "witnessed" }
+  - { knowledge: "gosquad_identity", character: "korede", learned_chapter: 21, source: "tess_revealed" }
+
+relationship_events:
+  - { relationship: "tess_leta", event: "severed_by_death", chapter: 21 }
+  - { relationship: "tess_father", event: "confrontation", chapter: 12 }
+  - { relationship: "tess_father", event: "severed", chapter: 19 }
+  - { relationship: "ahdia_ruth", event: "strained_by_lies", chapter: 7 }
+  - { relationship: "ahdia_ruth", event: "rebuilding", chapter: 13 }
+  - { relationship: "ahdia_team", event: "trust_damaged", chapter: 13 }
+
+# ============================================
+# RELATIONSHIP MATRIX
+# ============================================
+
+relationships:
+
+  ahdia_ruth:
+    type: "best_friends"
+    progression:
+      ch1: { state: "close_trusted", notes: null }
+      ch7: { state: "strained", notes: "ruth_discovers_lies" }
+      ch13: { state: "rebuilding", notes: "exile_exposed_working_through" }
+      ch24: { state: "profound", notes: "near_death_bonded" }
+
+  ahdia_ryu:
+    type: "professional_boundary_crossed"
+    progression:
+      ch1: { state: "professional", notes: "doctor_patient" }
+      ch2: { state: "enabling_begins", notes: "first_intel_handoff" }
+      ch7: { state: "complicit_together", notes: "hiding_decline" }
+      ch24: { state: "guilt_bonded", notes: "he_enabled_her_destruction" }
+
+  tess_leta:
+    type: "romantic_partners"
+    progression:
+      ch1: { state: "loving_stable", notes: null }
+      ch6: { state: "stressed", notes: "harassment_strain" }
+      ch11: { state: "protective", notes: "tess_fierce" }
+      ch21: { state: "severed", notes: "leta_killed" }
+
+  tess_father:
+    type: "family_betrayal"
+    progression:
+      ch1: { state: "complicated_loyalty", notes: "wants_to_believe" }
+      ch5: { state: "suspicious", notes: "found_evidence" }
+      ch8: { state: "confirmed_betrayal", notes: "knows_truth" }
+      ch12: { state: "confrontational", notes: "direct_conflict" }
+      ch19: { state: "severed", notes: "no_contact" }
+
+  ben_tess:
+    type: "investigation_allies"
+    progression:
+      ch3: { state: "teammates", notes: null }
+      ch6: { state: "investigation_allies", notes: "sharing_findings" }
+      ch8: { state: "trusting", notes: "mutual_respect" }
+
+  leah_victor:
+    type: "mentor_student"
+    progression:
+      ch1: { state: "acquaintances", notes: null }
+      ch7: { state: "learning", notes: "both_and_teaching" }
+      ch14: { state: "understanding", notes: "solidarity_clicking" }
+
+  korede_tess:
+    type: "connected_through_leta"
+    progression:
+      ch1: { state: "knows_of", notes: "sisters_girlfriend" }
+      ch21: { state: "revealed", notes: "witnessed_together_knows_identity" }
+      ch24: { state: "allied", notes: "setup_for_book3" }

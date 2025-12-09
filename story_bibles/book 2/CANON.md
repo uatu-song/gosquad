@@ -113,7 +113,7 @@
 4. Both/and: Eidolon supernatural manipulation AND material provocateurs
 5. Protest turns violent ("inexplicable" riot)
 6. Ahdia intervenes (burns 47 minutes saving 23 lives)
-7. 16 protesters die anyway
+7. One protester dies anyway (Daniel Okonkwo, 31, accountant)
 8. Kain immediately blames "radical elements" and campaigns on "law and order"
 
 **Narrative Function:**
@@ -847,7 +847,7 @@
 
 ## Month Structure (Overview)
 
-**Month 1:** Isaiah protest → Eidolon riot, Ahdia burns 47 minutes, 16 die
+**Month 1:** Isaiah protest → Eidolon riot, Ahdia burns 47 minutes, one dies (Daniel Okonkwo)
 **Months 2-5:** Investigations deepen independently
 **Month 6:** Convergence moment (all investigations connect through Titan Strategic)
 **Month 7-8:** Evidence compiled, public exposure, Kain damaged but surviving

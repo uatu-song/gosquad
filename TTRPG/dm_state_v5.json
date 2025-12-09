@@ -1,0 +1,29 @@
+{
+  "characters": {},
+  "scenes": [],
+  "current_month": 1,
+  "consequence_pool": [],
+  "eidolon": {
+    "activity_level": 0,
+    "current_targets": [],
+    "resistance_practiced": [],
+    "amplification_events": []
+  },
+  "investigations": {},
+  "public_opinion": {
+    "kain_polling": 8,
+    "go_squad_reputation": 50,
+    "media_events": []
+  },
+  "ahdia_powers": {
+    "baseline_percentage": 100.0,
+    "minutes_frozen_this_month": 0.0,
+    "total_minutes_frozen": 0.0,
+    "treatment_count": 0,
+    "next_treatment_month": 2,
+    "power_usage_log": []
+  },
+  "key_events": {},
+  "last_saved": "2025-12-07T15:48:22.918843",
+  "version": "5.0"
+}

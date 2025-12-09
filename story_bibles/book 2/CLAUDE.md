@@ -12,7 +12,47 @@ This file provides guidance to Claude Code (claude.ai/code) when working on Book
 
 **Chess Structure:** TBD - Game selection in progress
 
+## Book 2A/2B Split
+
+Book 2 is split into two parts:
+- **Book 2A:** Chapters 1-19, ends with Ruth discovering Exile Island
+- **Book 2B:** Chapters 20+, ends with Kain winning election, Prime reveals herself
+
+This naming avoids renumbering the 7-book series.
+
 ## Where to Find Information
+
+### Critical Reference Documents
+
+**Before writing ANY prose, consult these in order:**
+
+1. **`/story_bibles/book 2/BOOK2A_CONTINUITY_TRACKER.md`** - CHARACTER STATES, SEED TRACKING, TIMELINE
+   - Ahdia's baseline numbers (must be consistent)
+   - Who knows what, when
+   - Seeds planted → when they bloom
+   - "Why didn't you save her?" undercurrent tracking
+
+2. **`/story_bibles/book 2/Chapter_X_STRUCTURE.md`** - SCENE BEATS
+   - Detailed beat-by-beat scene breakdowns
+   - Exists for all 24 chapters
+
+3. **`/story_bibles/book 2/Chapter_X_METHOD_ACTOR.md`** - DIALOGUE/VOICE (if exists)
+   - `[NARRATOR]` / `[AS CHARACTER]` formatted scenes
+   - Completed for Ch 3-6, voice-critical scenes only thereafter
+
+4. **`/story_bibles/book 2/METHOD_ACTOR_BRIEFING_DRAFT.md`** - CHARACTER VOICE CARDS
+   - How each character speaks, thinks, reacts
+   - Performance notes for dialogue scenes
+
+### The Tragedy Engine
+
+Book 2 is a tragedy engine. Every chapter plants seeds for devastation:
+- **Leta's death** (Month 11, killed by Webb)
+- **Ben's breakdown** (Month 8, evidence fails)
+- **Ruth's institutional capture** (Bourn grooming arc)
+- **Ahdia's benevolent dictator arc** (Exile Island)
+
+Underneath it all: **"Why didn't you save her?"** - the question the reader doesn't know is being asked.
 
 ### Universal Series Resources (Root Directory)
 
@@ -24,6 +64,7 @@ These resources cover ALL 7 books:
   - Timeline and major events
   - Organizations (CADENS, Go Squad, etc.)
   - Cosmic entities and artifacts
+  - **`/story_bibles/universe/CYCLIC_UNIVERSE_COSMOLOGY.md`** - CRITICAL: Time travel mechanics, cyclic universe theory
 
 - **`/Writing_Guide/`** - Series-wide craft methodology
   - `/Writing_Guide/Voice_and_Style/Ahdia_Voice_Checklist.md` - Protagonist voice patterns
@@ -123,7 +164,40 @@ Book 2 is part of the "CBT approach failing" arc (Books 1-3).
 
 ## Common Tasks
 
-### Starting New Chapters
+### Writing Prose for a Chapter
+
+**Pre-flight checklist:**
+
+1. **Check continuity tracker** (`BOOK2A_CONTINUITY_TRACKER.md`)
+   - What is Ahdia's baseline this chapter?
+   - What does each character know at this point?
+   - What seeds are being planted? What seeds are blooming?
+   - How does "why didn't you save her?" manifest?
+
+2. **Read the structure file** (`Chapter_X_STRUCTURE.md`)
+   - Scene-by-scene beats
+   - Touchpoints A→B for each scene
+   - TTRPG dice results if applicable
+
+3. **Check for Method Actor draft** (`Chapter_X_METHOD_ACTOR.md`)
+   - If exists: Use for dialogue, voice, emotional calibration
+   - If doesn't exist: Reference `METHOD_ACTOR_BRIEFING_DRAFT.md` for character voices
+
+4. **Write prose** referencing structure, maintaining voice consistency
+
+5. **Post-flight: Update continuity tracker** if any state changes occurred
+
+### Voice-Critical Scenes
+
+Some scenes need extra dialogue/voice calibration. Method Actor scaffolds exist for:
+- Ch 3-6 (complete)
+- Ch 10 (Victor teaches but/and - dialogue heavy)
+- Ch 17 (Ruth/Ahdia confrontation - emotional climax)
+- Ch 19 (Exile Island discovery - Both/And complexity)
+
+For other dialogue-heavy scenes, reference `METHOD_ACTOR_BRIEFING_DRAFT.md` character voice cards.
+
+### Starting New Chapters (Legacy)
 
 1. Consult `/Story_Bible/` for canon
 2. Check `/Character_Profiles/` for character arcs
@@ -138,6 +212,7 @@ Book 2 is part of the "CBT approach failing" arc (Books 1-3).
 3. Ensure pop culture references reveal isolation
 4. Confirm thematic beats align with Book 2 arc
 5. Test dialogue by reading aloud
+6. **Cross-check continuity tracker for consistency**
 
 ## Quality Checks
 
@@ -170,6 +245,26 @@ Book 2 is part of the "CBT approach failing" arc (Books 1-3).
 - [ ] Emotionally safe? (Would confused reader feel included or judged?)
 - [ ] Extraneous load minimal? (No unnecessary jargon)
 - [ ] Multi-level? (Experts notice accuracy without it being required)
+
+### Continuity Checks (CRITICAL)
+
+- [ ] Ahdia's baseline number matches tracker?
+- [ ] Character knowledge consistent? (They don't know what they shouldn't yet)
+- [ ] Seeds planted at correct depth? (Not too obvious, not too subtle)
+- [ ] "Treatment ran long" excuse wearing thin at right pace?
+- [ ] Relationships consistent? (Victor/Leah = lovers, Bourn = woman, etc.)
+- [ ] Timeline consistent with month markers?
+- [ ] Tragedy countdown intact? (Leta death foreshadowing, Ben's faith, etc.)
+
+### The Undercurrent Check
+
+For every chapter, ask: **How does "Why didn't you save her?" manifest here?**
+
+- Ahdia: Guilt about Geneva, guilt about team, guilt about global ops
+- Ruth: Firas, Ahdia (enabling), eventually everyone she can't triage
+- Ben: Sarah, eventually the election
+- Tess: Leta (warning wasn't enough)
+- Leah: Leta (silence enabled harassment)
 
 ## The Golden Rules
 

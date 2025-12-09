@@ -19,6 +19,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working on Book
 These resources cover ALL 7 books:
 
 - **`/Story_Bible/`** - Complete series canon
+- **`/story_bibles/universe/CYCLIC_UNIVERSE_COSMOLOGY.md`** - CRITICAL: Time travel mechanics, cyclic universe theory
 - **`/Writing_Guide/`** - Series-wide craft methodology
   - `/Writing_Guide/Voice_and_Style/Ahdia_Voice_Checklist.md` - Protagonist voice patterns
   - `/Writing_Guide/Chess_Structure/` - Chess-to-narrative methodology

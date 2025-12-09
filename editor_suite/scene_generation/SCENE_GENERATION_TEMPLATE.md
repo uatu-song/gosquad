@@ -80,7 +80,8 @@ SCENE GENERATION: {scene_id}
 
 [CURTAIN RISES]
 
-[NARRATOR]: {initial_scene_description}
+[AS NARRATOR - AHDIA POV, {narrator_state_tags}]:
+{scene_description_filtered_through_ahdia_perception}
 
 [AS {CHARACTER_1}, {character_descriptor_tags}]:
 {character_1_initial_action_or_dialogue}
@@ -88,14 +89,16 @@ SCENE GENERATION: {scene_id}
 [AS {CHARACTER_2}, {character_descriptor_tags}]:
 {character_2_response}
 
-[NARRATOR]: {describe_physical_reactions_or_scene_changes}
+[AS NARRATOR - AHDIA POV]:
+{describe_physical_reactions_through_ahdia_filter}
 
 [AS {CHARACTER_1}]:
 {continue_dialogue}
 
 [Continue alternating until touchpoint_b achieved]
 
-[NARRATOR]: {describe_scene_ending_state}
+[AS NARRATOR - AHDIA POV]:
+{scene_ending_through_ahdia_perception}
 
 [CURTAIN FALLS]
 
@@ -256,7 +259,10 @@ SCENE GENERATION: book2_month6_investigation_convergence
 
 [CURTAIN RISES]
 
-[NARRATOR]: Evening at team base. Dim overhead lights cast long shadows across the conference table where Ben sits surrounded by printed documents and handwritten notes. Timeline markers on papers: April 1st, April 3rd, April 5th. Tess enters through side door, laptop bag over shoulder, expecting empty room.
+[AS NARRATOR - AHDIA POV, grief-functional, hypervigilant, dark humor]:
+Evening at team base. The overhead lights did that thing where they couldn't decide between "interrogation room" and "sad municipal building"—dim enough to feel secretive, bright enough to see every coffee ring on the conference table. Ben sat in the middle of what looked like a serial killer's evidence board, papers spread around him like he was planning a heist or a nervous breakdown. Timeline markers: April 1st, April 3rd, April 5th. Dates that probably meant something to someone.
+
+Tess came through the side door with her laptop bag, that specific posture of someone who expected an empty room and got ambushed by human interaction.
 
 [AS BEN, former Marine, methodical investigator, exhausted]:
 "Still here. Thought you'd gone back to campus."
@@ -335,9 +341,14 @@ SCENE GENERATION: book2_month6_investigation_convergence
 
 [Watching her leave. Makes note on paper: "Tess - reaction to April 3rd?"]
 
-[NARRATOR]: Door closes. Ben alone with timeline. Tess in hallway outside, back against wall, breathing carefully. Trying not to process what she just heard. Not yet. Not here. She walks toward parking lot, each step mechanical. Inside her head: April 3rd. April 5th. Two days. Father's evasiveness. The files she stole. The man who died.
+[AS NARRATOR - AHDIA POV]:
+Door closed. Ben alone with his timeline and whatever obsessive spiral that was feeding.
 
-Did she help kill the whistleblower?
+In the hallway—not that Ahdia could see it, but she knew the posture anyway—Tess would be doing that thing. Back against wall. Breathing like someone who just got gut-punched but was pretending they didn't. The "I'm fine, I just need a minute" body language that Ahdia recognized because she lived there.
+
+April 3rd. April 5th. Two days.
+
+The math wasn't complicated. The math was never complicated. It was the part where you had to feel it that got you.
 
 [CURTAIN FALLS]
 
@@ -380,11 +391,20 @@ END SCENE GENERATION
 
 ## OUTPUT FORMAT RULES
 
-### [NARRATOR] Blocks
-- Use for scene setting, physical descriptions, transitions
-- Show don't tell: Describe observable actions
-- No explaining internal state in narrator voice
-- Keep cinematic: What a camera would see
+### [AS NARRATOR - AHDIA POV] Blocks
+- **THIS IS A PERFORMED CHARACTER, NOT NEUTRAL DESCRIPTION**
+- Filter all scene description through Ahdia's perception
+- What she notices reveals character (odd details, wrong priorities)
+- What she misses reveals character (social cues, obvious things)
+- Prose rhythm matches mental state (choppy when anxious, flowing when dissociating)
+- Use voice tools from Ahdia_voice_sample.md:
+  - Sardonic deflection
+  - Pop-culture processing (varied structures, not just similes)
+  - Self-interrupting dashes
+  - Dark humor about serious situations
+  - Flat dark statements without softening
+- Technical details translated through her engineering-dropout lens
+- Other characters described through her biases, not objectively
 
 ### [AS CHARACTER] Blocks
 - Always tag with character name and key descriptors

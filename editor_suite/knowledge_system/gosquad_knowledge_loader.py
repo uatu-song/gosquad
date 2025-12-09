@@ -62,6 +62,7 @@ class KnowledgeBase:
         'story_bibles/locations': 'locations',
         'story_bibles/powers and cost': 'powers',
         'story_bibles/timeline': 'timeline',
+        'story_bibles/universe': 'universe',  # Cyclic universe cosmology, time travel mechanics
         'story_bibles/book 2': 'book2_planning',
         'story_bibles/book 3': 'book3_planning',
         'story_bibles/book 4': 'book4_planning',
@@ -226,29 +227,31 @@ class KnowledgeBase:
 
         # Load key files for context - ordered by importance
         essential_files = [
-            # Core synopsis
-            ('SERIES_SYNOPSIS.md', None, 200),
+            # Core synopsis and series arc
+            ('SERIES_SYNOPSIS.md', None, 250),
+            ('SERIES_TOUCHPOINTS.md', None, 200),  # Books 5-8 arc guide
 
-            # Critical Book 2 planning (Geneva/Bellatrix reveal)
-            ('story_bibles/book 2/Time_Loop_Utopia_Iterations.md', None, 150),
-            ('story_bibles/book 2/CANON.md', 100, 50),
+            # Character arcs overview
+            ('character_arcs/README.md', None, 110),
 
-            # Book 3 key moments
-            ('story_bibles/book 3/book3_ahdia_stranded_beats.md', None, 100),
-            ('story_bibles/book 3/BOOK3_PLANNING_STATUS.md', None, 100),
-
-            # Book 4 current state
+            # Book 4 current state (active development)
             ('story_bibles/book 4/SESSION_DECISIONS_2025-11-24.md', None, 150),
             ('story_bibles/book 4/EMOTIONAL_ARC_AHDIA_ARRYU.md', None, 80),
-            ('story_bibles/book 4/book4_chapter15_beats.md', None, 100),
-            ('story_bibles/book 4/BOOK4_CHAPTERS_1-15_RECAP.md', None, 150),
+            ('story_bibles/book 4/EARTH_ARC_STRUCTURE.md', None, 120),
 
-            # Key character profiles
-            ('character_profiles/Ahdia Auerbach', None, 100),
-            ('character_profiles/Bellatrix_Naima.md', None, 80),
+            # Key character arcs
+            ('character_arcs/Ahdia_Arc_Tracker.md', None, 80),
+            ('character_arcs/Diana_Arc_Tracker.md', None, 100),
+            ('character_arcs/Korede_Arc_Tracker.md', None, 80),
+
+            # Key antagonists
+            ('character_arcs/Eidolon_Arc_Tracker.md', None, 80),
+            ('character_arcs/The_Predecessor_Arc_Tracker.md', None, 80),
+            ('character_arcs/Harding_Kain_Arc_Tracker.md', None, 60),
 
             # Critical worldbuilding
             ('story_bibles/artifacts/Hyper_Seed.md', None, 50),
+            ('story_bibles/book 2/Cosmology_Designed_Singularity.md', None, 100),
 
             # Scene generation system
             ('editor_suite/scene_generation/SCENE_GENERATION_SCHEMA.md', None, 100),

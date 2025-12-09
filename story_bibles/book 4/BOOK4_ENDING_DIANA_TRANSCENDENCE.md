@@ -47,7 +47,9 @@
 ## Chapter 32: Reunion and Kaiju Threat
 
 **Ahdia's State:**
-- Returned to Earth, powers restored
+- Returned to Earth, powers still critically damaged (~0.7%)
+- Book 2: Broke own powers through extreme use at fusion reactor (10+ min freeze)
+- Book 3-4: Powers blocked in The Between (dimensional interference)
 - Grieving AR-Ryu (battery died, upload failed)
 - Sees real Ryu, kisses him (he doesn't remember)
 - Realizes: AR-Ryu is gone forever
@@ -369,6 +371,60 @@ But we choose to act anyway.
 ---
 
 ## Setup for Books 5-8
+
+### Diana's Transcendence Gift: The Seed
+
+**See Also:** `/story_bibles/universe/CYCLIC_UNIVERSE_COSMOLOGY.md` for full cosmology
+
+**Context:**
+- Ahdia broke her own powers in Book 2 (fusion reactor sacrifice, 10+ min freeze)
+- Powers degraded to 0.7% baseline - can barely function
+- Diana did NOT take Ahdia's powers - Ahdia's extreme sacrifice caused the damage
+
+**What Diana Gives at Transcendence:**
+
+Not direct restoration. Something better: **a glimpse of the truth of time**.
+
+**The Moment:**
+As Diana transcends, for one instant Ahdia sees through Diana's eyes - and glimpses:
+- The cyclic nature of time (forward only, through universal death/rebirth)
+- That "rewinding" isn't going backward - it's cycling forward until reality loops
+- Diana has watched three universes die and be reborn
+- The numbered Ahdias (1, 2, 3, 4) aren't "versions" - they're generations of reality
+- But most importantly: **this works at smaller scales too**
+
+**The Implication Diana Plants:**
+- What if you could cycle just PART of something?
+- A localized temporal loop
+- Cycle just your powers through micro-death and micro-rebirth
+- They "return" to a prior state by completing a tiny cycle
+- Same physics as universe-scale cycling, but contained
+
+**Book 2 vs Book 4 - The Contrast:**
+- Book 2: Diana PREVENTS Ahdia from discovering universe-scale cycling (would repeat her mistakes)
+- Book 4: Diana ENABLES Ahdia to eventually discover micro-cycling (trusts her growth)
+- The difference: Ahdia has grown. She won't try to "fix" everything. She'll restore herself.
+
+**Books 5-6: Slow Recovery**
+- Ahdia's powers begin slow recovery (~5-10% baseline)
+- Still dangerous to use extensively
+- DBT approach (sustainable use) becomes critical
+- She's working toward understanding, not brute-forcing
+
+**Books 7-8: Micro-Cycling Mastery**
+- Ahdia figures out localized temporal loops
+- Same physics as universe-scale cycling, but contained
+- Cycles her own powers through micro-death/rebirth
+- Full restoration through EARNED understanding
+- Not a gift - she figured it out herself, using Diana's seed
+
+**Thematic Purpose:**
+- Diana's sacrifice benefits those she loves even from cosmic space
+- Powers don't define worth - Ahdia proved herself without them
+- Recovery through understanding, not brute force (CBT → DBT transition)
+- Gift from one who transcended to one who stayed
+
+---
 
 ### Diana's Role Going Forward
 
