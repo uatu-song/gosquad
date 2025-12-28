@@ -101,3 +101,45 @@ Character development documents tracking arcs across the complete 8-book series.
 - `SERIES_TOUCHPOINTS.md` - Big picture arc guide with all touchpoints
 - `Villain_Concepts_Books_4-7.md` - Additional villain concepts
 - `story_bibles/book 2/Eidolon_Antagonist_Design.md` - Detailed Eidolon design
+
+---
+
+## Directory Usage Guide
+
+### Key Files
+
+| File | Purpose |
+|------|---------|
+| `CHARACTER_STATE_INDEX.yaml` | Master index: who knows what, when |
+| `CHARACTER_STATE_INDEX_SCHEMA_v2.md` | How to structure state entries |
+| `*_Arc_Tracker.md` | Individual character progression |
+| `UPDATE_PROTOCOL.md` | How to update arc files |
+
+### Profiles vs Arcs
+
+| Aspect | character_profiles/ | character_arcs/ |
+|--------|---------------------|-----------------|
+| **Contains** | Static info (background, personality, voice) | Dynamic info (what changes per book) |
+| **Updates** | Rarely (when correcting) | Frequently (as story progresses) |
+| **Purpose** | "Who is this person?" | "What happens to them?" |
+
+### When to Update
+
+Update arc trackers when:
+- Chapter is finalized
+- Major decision is made
+- Knowledge gate changes
+- Relationship shifts
+- Constraint is discovered
+
+### Validation
+
+Before writing a chapter:
+1. Check `CHARACTER_STATE_INDEX.yaml` for relevant characters
+2. Load arc trackers for characters in scene
+3. Verify knowledge gates
+4. Check relationship states
+
+---
+
+*Last Updated: December 2025*

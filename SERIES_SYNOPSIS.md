@@ -1,10 +1,8 @@
 # Auerbach Series - Complete Synopsis
 
-**Eight-Book Arc:** CBT approach failing (Books 1-4) → Turning point (Book 5) → DBT approach succeeding (Books 6-8)
+**Seven-Book Arc:** CBT approach failing (Books 1-3) → Turning point (Book 4) → DBT approach succeeding (Books 5-7)
 
 **Thematic Core:** You don't have to be fixed to be worthy
-
-**Note:** Book 3 was originally planned as 51+ chapters and was split into two books (Books 3 & 4) during development.
 
 ---
 
@@ -17,231 +15,26 @@
 - **File:** `/home/josephsong15/Auerbach/Book_1/builds/go_squad_manuscript.txt`
 - **Format:** 30 chapters + epilogue, full narrative prose
 
-**Story:** Ahdia Bacchus, a depressed hermit living in a penthouse, is forced out of isolation when her brother Firas gets shot during reconnaissance. An impossible warehouse rescue reveals she's unconsciously using time-manipulation powers from a 4D artifact called the Hyper Seed. Over 5 nights, she secretly trains her powers, helps the Go Squad without their knowledge, and finally reveals herself with a frozen-time raspberry at her own eulogy.
+**Story:** Ahdia Bacchus, a depressed hermit with time-manipulation powers, is forced out of isolation when her city erupts in crisis. She discovers her powers come at a cost—every use burns her lifespan through cellular degradation. The book establishes her isolation, her reliance on TV as her primary frame of reference, and introduces the Go Squad team.
 
-### Timeline Structure (5 Nights):
-
-**NIGHT 1: Firas Patrols**
-- Chapter 1: Firas (Night Knight) on patrol in Little Poland neighborhood
-- Stops mugging (3 goons vs woman)
-- Failed one-liner: "This ain't Burger King"
-- Radio contact with Ruth (Nightingale)
-
-**NIGHT 2: Warehouse Incident**
-- **Evening (Chapters 3-8):**
-  - Firas scouts Kain's warehouse, sees him interrogating museum worker about Hyper Seed
-  - Gets shot with shotgun escaping (through body armor)
-  - Bleeds in Ahdia's penthouse bathroom, passes out
-  - Ruth arrives, treats him, explains Go Squad backstory to Ahdia
-  - Firas describes the Hyper Seed (impossible 4D object)
-  - Ahdia skeptical but agrees to investigate
-
-- **Late Night:**
-  - Ahdia goes to warehouse in business-casual pajamas, rain starts
-  - Ruth appears, they enter together
-  - Confronted by Kain's guard, Ruth captured and bound to chair
-  - Ahdia shot through crate (bullet hits chest), passes out
-  - Go Squad arrives (smoke grenades, rescue in darkness)
-  - **Kain fires RPG at clustered team**
-
-- **The Impossible Rescue:**
-  - Explosion happens... but distant
-  - Everyone wakes up OUTSIDE warehouse, warehouse burning
-  - Kain and thugs already bound with ropes/zip-ties/chains
-  - Ahdia missing, presumed dead in fire
-  - Team evacuates before police arrive
-
-- **Chapter 13 Flashback - What Actually Happened (Ahdia's POV):**
-  - Ahdia wakes during RPG flight, everything frozen (time stopped)
-  - **The Intermediary appears** - cosmic being guiding her
-  - Explains Ahdia is unconsciously freezing time
-  - Hyper Seed visible through shot-through crate
-  - **Ahdia touches Seed → bonds with her permanently**
-  - Becomes "the Temporalist"
-  - Saves everyone one by one, binds Kain, gets them outside
-  - Releases time freeze, runs away before anyone sees her
-
-**DAYS 3-4: Secret Training**
-- **Day 3 Morning:**
-  - Runs home 10 blocks uphill (exhausted)
-  - Takes stairs (34 floors, elevator = lawsuit risk)
-  - Discovers she can slow heart rate (bad idea - slams back to racing)
-  - Checks on sleeping Firas, leaves coffee mug out
-
-- **Power Experiments:**
-  - Practices freezing time on coffee mug
-  - Tries voice commands, anime references ("Za Warudo!")
-  - Can hold freeze for 6+ hours in frozen time
-  - Chest aches from extended use (Hyper Seed cold)
-  - Training in frozen time = more practice without real time passing
-
-- **Apartment Break-ins (Learning About Team):**
-  - **Ruth's apartment:** Medical books, tactical gear, photo with Firas
-  - **Gloom Girl (Tess):** Studio apt, Sertraline prescription (another depressed girl, Ahdia relates)
-  - **Crimson Sable (Victor):** Community center, wedding photo with face scratched out
-  - **Battlea (Leah):** Anger management books, roller derby gear, punching bag (Ahdia tests amplification)
-
-- **Training Results:**
-  - Can hold 30-minute freezes
-  - Silent infiltration skills
-  - Force amplification control (gentle tap → major impact)
-  - Ready to help team secretly
-
-**NIGHT 4: Police Ambush (Two Nights After Warehouse)**
-- **Chapter 9 (Nightingale, Battlea, Gloom Girl):**
-  - Go Squad on patrol, Ruth distracted (dwelling on impossible warehouse rescue)
-  - Police stop minivan (mother and child)
-  - Officers escalate (draw weapons, arrest child)
-  - Go Squad intervenes despite order to stand down
-
-- **Chapter 10 (Gloom Girl POV):**
-  - Gloom Girl and Battlea rescue mother and child
-  - Police helicopter pursues, team scatters
-  - Helicopter follows Gloom Girl west
-  - Cornered on Frederick Douglass Bridge, police blockade both ends
-  - **Gloom Girl jumps off bridge (swan dive)**
-
-- **Chapter 11 (Battlea POV):**
-  - Battlea chased by dogs, trapped in construction site dead-end
-  - Shot in body armor (survives)
-  - Crimson Sable rescues her
-  - SWAT team corners them on rooftop
-  - **Guns mysteriously jam**
-  - Crimson kicks officer across city block (super-strength)
-  - Battlea crashes officers through ledge
-  - SWAT retreats in confusion
-  - "I'm a freakin' superhero!"
-
-- **Chapter 14 (Second Half) - Ahdia's Secret Intervention:**
-  - Ahdia follows Go Squad on patrol
-  - **Gloom Girl jumps from bridge:**
-    - Ahdia freezes time, runs up bridge, catches her mid-air
-    - Places Gloom Girl on rooftop near Ruth
-    - Gloom Girl appears to "teleport"
-  - Ahdia exhausted from sprint, tries heart-slowing again (mistake)
-  - Discovers muscle time-slowing (success!)
-  - **Helps Crimson and Battlea:**
-    - Yanks officer in direction of Sable's kick (amplification)
-    - Empties all rifle magazines
-    - Drops rifles off rooftop
-  - After ambush ends, releases muscle time-slow
-  - **Delayed pain hits like freight train** (hours of exertion = seconds of agony)
-  - Collapses in alley, crying from pain
-  - **The Intermediary appears:**
-    - Surprised Ahdia used cosmic power for "raspberry" (revenge on Firas)
-    - Warns about consequences
-    - **"You're at half life force remaining"**
-    - Ahdia deflects: "Not touching that potato"
-
-**DAY 5: The Reveal**
-- **Chapter 12 - Morning After Police Ambush:**
-  - Go Squad meeting at parkour academy
-  - Night Knight demonstrates failed super-jump attempt
-  - Everyone shares "impossible" stories:
-    - Gloom Girl "teleported" from bridge to rooftop
-    - Night Knight super-jumped quarter-mile
-    - Battlea and Crimson had super-strength
-    - Weapons mysteriously jammed
-  - News footage shows Gloom Girl's "disappearing act"
-  - Ruth: "We all teleported from warehouse. Connected?"
-  - Team can't replicate powers consciously
-  - Gloom Girl: "Maybe panic-based?"
-
-- **Disbanding Discussion:**
-  - Firas proposes disbanding (too dangerous)
-  - Team refuses to quit
-  - Night Knight: "Who leaked our positions?"
-  - Everyone suspects Gloom Girl (Police Chief's daughter)
-
-- **Identity Reveals:**
-  - Gloom Girl uncomfortable, defensive
-  - **Crimson Sable shares first:** "Victor Hernandez, community organizer"
-  - **Battlea:** "Leah Turner, barista and roller derby jammer"
-  - **Night Knight:** "Ben Bukowski" (everyone already knew—personal trainer)
-  - **Ruth:** "Ruth Carter, doctor"
-  - They trust Tess, reveal to support her
-
-- **Ahdia Discussion:**
-  - Ruth: "What about Ahdia?"
-  - Firas's expression darkens: "She didn't make it out. The warehouse."
-
-- **Firas's Brutal Eulogy:**
-  - "Maybe it's for the best."
-  - "My sister was already dead inside anyway."
-  - "Sat in penthouse 8 hours day, 8 hours night"
-  - "Raspberry freezes and gummy bears"
-  - "Gave up on life years ago"
-  - "At least this way it was quick"
-  - Voice cracks, tears, but forces words out
-
-- **TIME FREEZES:**
-  - Room goes dead silent
-  - Everyone frozen mid-reaction:
-    - Ruth's mouth open mid-inhale
-    - Tear on Firas's cheek suspended
-    - Battlea's hand reaching toward Gloom Girl
-    - Night Knight mid-blink
-    - Fluorescent lights humming, dust particles like stars
-  - **Everything stopped**
-
-- **The Reveal:**
-  - Ahdia stands up from behind foam parkour obstacle
-  - Walks across frozen room (footsteps silent)
-  - Stops in front of frozen Firas
-  - Shakes her head
-  - **Sticks tongue out at him (raspberry)**
-  - *Chapter ends - cliffhanger*
-
-**CHAPTERS 21-23: Red Dress Heist (Later in Book)**
-- **Mission:** Rescue Dr. Jericho, steal artifact research from Kain's mansion
-- Leah goes undercover as "Sophie Clement" (wealthy French donor)
-- Wears red dress to infiltrate Kain's gala event
-- **Leah as bait/distraction** while Knight & Sable search mansion
-- **Kain's creepy behavior:**
-  - Takes her hand, kisses it, holds it too long
-  - Looks her up and down, "not even trying to be subtle"
-  - Tess in van: "He's so gross"
-  - Flirts: "a woman of your... refined tastes"
-  - Shows off mansion, statue of himself
-  - Takes her to office to show off Tamois Heart
-- **Team recording via comms/surveillance** (audio evidence of harassment)
-- They find **Dr. Jericho** working on **Tamois Heart** (cosmic artifact)
-- Team steals research data, rescues Jericho
-- Massive firefight, Leah uses Kain as human shield in wheeled chair
-- Tess teleports everyone to safety via fountain
-- **Kain integrates Tamois Heart into his chest** (transforms into kaiju)
-- Epic final battle, CADENS arrives, Kain killed
-
-**CHAPTER 2 (Flashback, Not in Main Timeline):**
-- Montana excavation trip 10+ years earlier
-- Young Ahdia and Firas with parents
-- Father's stories about chosen ones, black holes, Hyper Seed legends
-- Parents disappear at end
-- Foreshadowing and backstory
+**Key Events:**
+- Ahdia's introduction as isolated Temporalist
+- Powers revealed: time freeze, translocation, cellular degradation cost
+- CADENS (governmental enhanced agency) relationship established
+- Treatment dependency begins (Ruth as medical provider)
+- Team formation: Go Squad assembles
+- Red dress heist (Kain abuse evidence obtained)
+- Ahdia learns using powers = burning lifespan
+- First major crisis forces her into action
 
 **Ending State:**
-- Ahdia's reveal as the Temporalist (time frozen)
-- Team doesn't know she saved them (warehouse, police ambush)
-- Kain dead (integrated Tamois Heart, transformed to kaiju, killed by CADENS)
-- Dr. Jericho rescued
-- Red dress harassment audio recorded (used later in Book 2)
-- CADENS introduced (shadow organization)
-- Cellular baseline: ~100% → ~50% (half life force from Intermediary warning)
+- Ahdia forced out of avoidance
+- Team formed but relationships shallow
+- Treatment dependency established
+- Kain introduced as mayoral threat
+- Cellular baseline: ~100% → ~90%
 
-**Key Characters Introduced:**
-- **Ahdia Bacchus:** Depressed hermit, the Temporalist, TV as frame of reference
-- **Firas Bacchus:** Ahdia's brother, Night Knight, parkour expert
-- **Ruth Carter (Nightingale):** Doctor, best friend material, tactical leader
-- **Tess Whitford (Gloom Girl):** Teleporter, Police Chief's daughter, depressed (Sertraline), dating Leta
-- **Leah Turner (Battlea):** Barista, roller derby jammer, anger management issues
-- **Victor Hernandez (Crimson Sable):** Community organizer, widower (wedding photo scratched out)
-- **Ben Bukowski (Night Knight):** Personal trainer, ex-cop
-- **Harding Kain:** Billionaire, TRIOMF executive, presidential candidate, artifact collector
-- **The Intermediary:** Cosmic being guiding Ahdia
-- **Dr. Jericho:** Artifact expert kidnapped by Kain
-- **Leta:** Tess's girlfriend (minor role in Book 1, major in Book 2)
-
-**Notes:** Book 1 establishes Ahdia's voice (TV references, deadpan humor, isolation), the cost-benefit tension of her powers (cellular degradation), and the central mystery of the impossible warehouse rescue. The 5-night structure builds to the frozen-time raspberry reveal.
+**Notes:** This is the baseline. Book 1 establishes Ahdia's voice, her coping mechanisms (TV references, deadpan humor, isolation), and the cost-benefit tension of her powers.
 
 ---
 
@@ -256,40 +49,10 @@
 
 **Timeline:** 12 months, Month 1 = Isaiah riot through Month 12 = Election Night
 
-### Pre-Book 2 Backstory:
-
-**Isaiah Bennett Whistleblower (6-8 Months Before Book 2):**
-- Isaiah Bennett (environmental engineer) consulted on CADENS Southwest fusion facility
-- Discovered safety violations, environmental crimes, illegal mining exploitation
-- Prepared to go public before Kain's campaign announcement
-- Kain's team launched social media smear campaign (deepfakes, bot armies, character assassination)
-- **CORRECTED CANON:** When Isaiah persisted, he was **killed by POLICE at a peaceful protest**
-- **Chief Whitford** (Tess's father) complicit in cover-up
-- Cover-up complete, Isaiah's warnings buried
-- **Tess's arc in Book 2:** Discovering her father's complicity in the cover-up (NOT guilt over killing Isaiah herself)
-
-**Red Dress Recording (During Book 1, Used in Book 2):**
-- From Book 1 Chapters 21-23: Leah's undercover mission at Kain's mansion
-- Team surveillance captured Kain's harassment via comms
-- Audio recording: Sexually explicit comments, hand kiss held too long, ogling, boasts about NDAs
-- Leah kept recording, processing what happened
-- Triggers her investigation into Kain's abuse patterns (Month 2 onward)
-- **Released publicly in Month 8** as evidence (briefly tanks Kain's polling)
-
-**Book 1 Ending → Book 2 Opening:**
-- Time unfreezes after Ahdia's frozen raspberry reveal
-- Ahdia confronts Firas about eulogy
-- Team processes Ahdia's survival and power reveal
-- Go Squad identity reveals to Ahdia (they know hers, she learns theirs)
-- Ahdia explains she saved everyone (warehouse, police ambush)
-- Team learns their "powers" were actually Ahdia's help
-- Ruth advocates for Ahdia joining team
-- Firas resistant but eventually agrees
-
 ### Month-by-Month Summary:
 
 **Month 1: Crisis Cascade**
-- **Isaiah Bennett memorial riot** → Ahdia freezes time 47 minutes (saves 23, loses 16, nearly dies)
+- Isaiah Bennett memorial riot → Ahdia freezes time 47 minutes (saves 23, loses 16, nearly dies)
 - Governor Geneva Windrow assassinated at debate (professional sniper, translocation signature)
 - Ahdia prevents stampede (3min freeze)
 - Officer Marcus Webb exonerated for Isaiah killing (Grand jury no-bill)
@@ -323,12 +86,10 @@
 - Team realizes scope of enemy
 - Dramatic irony peak: Reader saw pattern, characters now see it too
 
-**Month 7: Ruth AND Ryu Discover Truth**
-- Ruth and Ryu discover Ahdia's global operations together (not separately)
-- Both see terminal decline data
-- Ryu's medical ethics violation exposed (hiding data from CADENS)
+**Month 7: Ruth Discovers Truth**
+- Ruth and Ryu discover Ahdia's operations together
+- Terminal decline visible
 - Ahdia's lies exposed to best friend
-- Relationship triad: Ruth-Ahdia-Ryu all complicit in different ways
 - Relationship damage: medical dependency + deception = toxic imbalance
 
 **Month 8: Evidence Fails**
@@ -475,330 +236,211 @@
 
 ---
 
-## Book 3: Beat Sheets Complete (19 Chapters Planned)
+## Book 3: TTRPG Campaign In Progress (57 Scenes Generated)
 
-**Emotional Arc:** Confidence → Incomprehensible challenge → Stranded
-
-**Status:**
-- Beat sheets: Chapters 1-19 complete
-- Planning files: `story_bibles/book 3/` directory
-- Master plan: `BOOK3_MASTER_PLAN.md` (comprehensive structure)
-- Prose: Prologue + Chapter 1 complete, remaining chapters beat sheets only
-
-**Story:** Ahdia's powers are burned out by **Ahdia-Prime** (who poses as "Aunt Diana from Montana," Ahdia's estranged aunt). Diana is actually **Ahdia from the first timeline iteration** who has lived through **5 timeline attempts** trying to create utopias - all failed. She burned out Ahdia-4's powers to prevent her from time traveling and creating a 6th iteration. Kain becomes President and seizes control of CADENS to bring Bellatrix physically to Earth through a dimensional gateway using Mother FAERIS. The team discovers CADENS' institutional exploitation of Mother FAERIS (forced production of drones while dormant). Bellatrix arrives on Earth and the FAERIS drones abandon the team. Diana secretly enhances the team with temporal powers (they assume it's Ahdia like in Book 1). **On Exile Island, Diana shares the iteration stories** - failed utopia attempts that taught her acceptance over perfection. Book ends with Ahdia accidentally stranded in an interdimensional space called "The Between."
-
-### Key Events:
-
-**Act 1: Confidence (Chapters 1-7)**
-- Prologue: FAERIS perspective, witnesses 5 timeline iterations
-- Chapter 1: Prime burns out Ahdia's powers, poses as "Aunt Diana"
-- Chapters 2-4: Team enhanced with FAERIS drones, Ahdia powerless but training
-- Chapter 5: Kain takes Presidential control of CADENS, Mother FAERIS revealed underground
-- Chapter 6: Bourn's warning - artificial sun = dimensional gateway
-- Chapter 7: Too late - Bellatrix arrives on Earth
-
-**Act 2: Incomprehensible Challenge (Chapters 8-19)**
-- Chapter 8: FAERIS drones abandon team, Diana secretly enhances them
-- Chapter 9: Eidolon gets clone avatar body, builds fear army
-- Chapter 10: Team evacuates to Exile Island (Tess's FAERIS stayed loyal)
-- Chapter 11: **Diana shares Iteration 2 story** - rational blueprint (Platonic philosopher-queen) that became authoritarian after 8 years
-- Chapters 12-19: Team dynamics on island, **more iteration stories revealed:**
-  - **Iteration 3:** Piecemeal engineering → Bellatrix reveals herself (Geneva was Bellatrix in clone avatar)
-  - **Iteration 4:** Human conditioning → dystopian nightmare
-  - **Iteration 5 (current):** No utopia attempt, acceptance of imperfection
-- Chapter 19: Ahdia accidentally stranded in "The Between"
-
-**Ending State:**
-- Ahdia: Stranded in interdimensional space called "The Between" (no one knows if she's alive)
-- Diana/Prime: With team on Exile Island, secret enhancement continues
-- Bellatrix: On Earth with clone avatar army
-- Mother FAERIS: Underground at CADENS, exploitation ongoing
-- Team: Assumes Ahdia is dead/gone, must function without her
-
-### Key Technology & Plot Mechanics:
-
-**The Artificial Sun (CADENS Fusion Reactor):**
-- Advanced stellarator fusion technology (creates miniature star)
-- Originally meant to provide clean energy
-- Established in Book 2 coup mission
-- **Kain's Plan (Book 3):**
-  1. Seize Presidential control of CADENS
-  2. Access Mother FAERIS underground
-  3. **Deliberately collapse the artificial sun** (orders it "tested")
-  4. Stellar death → gravity overwhelms → **spacetime warps**
-  5. Dimensional barriers weaken
-  6. Mother FAERIS quantum entanglement scales to dimensional level
-  7. **Dimensional gateway opens** → Bellatrix crosses through
-- **Perfect irony:** Hope weapon becomes invasion point
-- **Book 4 use:** Team travels to other nation's artificial sun to open rift and rescue Ahdia
-- **Risk:** "Dying star energy" = supernova danger if kept open too long (limited time window ~4 minutes)
-
-**Mother FAERIS:**
-- Sentient AI, commercial jet-sized, buried underground at CADENS HQ
-- Produces smaller FAERIS drones naturally (maternal)
-- **CADENS exploitation:** Kept her dormant for decades, forced drone production while unconscious
-- Can translocate locally (small drones) or **bridge across dimensions** (Mother's full power)
-- Origin unknown (alien tech? Ancient protector? Bellatrix planted?)
-
-**Clone Avatar Army:**
-- Human husks inhabited by interdimensional beings
-- Allow higher-dimensional entities to exist in 3D Earth
-- Type IV civilization technology
-- Kain uses multiple bodies (same consciousness transfers)
-- Can't be permanently killed (consciousness just transfers to new body)
-- **Ahdia and her brother are progeny of clone avatars** (Bellatrix = mother via clone body)
-
-**Fear Army (Eidolon's Creation):**
-- Empty clone avatars animated by terror/fear
-- Eidolon given physical clone body by Bellatrix (embodied for first time)
-- Mass production of fear-driven husks
-- Experiencing embodiment confusion: clarity → complexity
-- **Eidolon's arc:** Pure function → Embodied → Contradictory emotions → Questioning orders
-- Mirror for every character's struggle with contradiction
-
-**Temporal Powers Cost-Benefit System:**
-- **Ahdia's powers:** Time freeze, translocation, temporal manipulation
-- **Cost:** Cellular degradation (burning lifespan to use powers)
-- **Baseline percentage:** Measures remaining lifespan/cellular health
-- Book 1: 100% → 90%
-- Book 2: 90% → 52% (Jakarta) → 7% (Month 11) → 0.7% (Election Night freeze)
-- Book 3: 0.7% (cannot use powers without dying immediately)
-- Book 4: Powers return when crossing from The Between, but baseline still critical
-- **Treatment dependency:** Ruth provides cellular regenerative treatments (limited effectiveness)
-- Ryu calculates she'll reach critical threshold, hides data from CADENS
-- Cost-benefit decisions drive every major action
-
-**TRIOMF Network (Book 2):**
-- Connects ALL investigations: riots, illegal mining, harassment, fusion reactor, abuse
-- Pattern emerges in Month 6
-- Kain's coordination system
-- CADENS infiltrated by TRIOMF
-- Bourn and Mack defect when they discover infiltration
-
-**Harriet Bourn & Bentley Mack:**
-- Bourn: CADENS Chief Overseer, participated in Mother FAERIS exploitation
-- Knew truth, eventually couldn't live with it
-- Stole wake protocol for Mother FAERIS when Kain demanded access
-- Defected with Mack, hunted by both CADENS and TRIOMF
-- Book 3: On the run, carrying wake protocol
-- Gives it to Ryu at bleakest moment
-- Redemption through action, not absolution
-
-### Major Themes:
-
-**The Five Iterations (Diana's Failed Utopias):**
-- **Iteration 1:** Geneva assassinated, no utopia attempt (Diana = Ahdia-1 from this timeline)
-- **Iteration 2:** Rational blueprint (Platonic philosopher-queen) → authoritarian control after 8 years
-- **Iteration 3:** Piecemeal engineering → **Bellatrix reveals herself** (Geneva Windrow was Bellatrix's clone avatar)
-- **Iteration 4:** Human conditioning approach → dystopian nightmare
-- **Iteration 5 (current):** No utopia attempt, radical acceptance of imperfection
-- **Key lesson:** Perfection is impossible, acceptance is the path forward
-
-**Diana/Ahdia-Prime:**
-- Lived through all 5 iterations (chronologically 27, actually much older)
-- Burned out Ahdia-4's powers to prevent 6th iteration
-- "Learn to be powerless. Learn to be helped. Learn to be enough."
-- Secret enhancement of team (they think it's Ahdia)
-- Teaching acceptance through iteration stories
-
-**Institutional Violence:**
-- CADENS exploited Mother FAERIS (forced drone production while dormant)
-- Ryu used unknowingly for exploitation
-- Bourn's guilt and defection
-
-**Learn to Be Enough:**
-- Ahdia powerless but training in human skills
-- Diana teaching acceptance after 5 failed iterations
-- Value without temporal abilities
-- CBT perfectionism failing → need for DBT acceptance
-
-**Both/And Thinking:**
-- Powerless AND valuable
-- Guilty AND redemptive
-- Angry AND protective
-- Technology as hope AND weapon
-- Failed iterations AND still worthy
-
----
-
-## Book 4: Beat Sheets In Progress (Guerrilla Timelines)
-
-**Emotional Arc:** Psychological collapse → Guerrilla resistance → Desperate survival
+**Emotional Arc:** Confidence → Incomprehensible challenge → Psychological collapse
 
 **Status:**
-- Beat sheets: Chapters 1-14 complete (originally numbered 18-31+ from Book 3 split)
-- Planning files: `story_bibles/book 4/` directory
+- Emergent dice-based campaign: 57 scenes generated (spanning 22 years of backstory + Month 1 present)
+- Campaign JSON: `/home/josephsong15/Auerbach/Book_3/tools/campaigns/book3_campaign_01.json` (45KB, 1,512 lines)
+- Synopsis: `/home/josephsong15/Auerbach/Book_3/tools/campaigns/CAMPAIGN_SYNOPSIS.md`
+- Method: d10 + competency vs difficulty, outcomes/costs drive narrative
 - Prose: NOT YET STARTED
 
-**Story:** While Ahdia is stranded in "The Between," the Earth-side team fractures and operates as scattered guerrilla cells. Book 4 follows multiple parallel timelines:
+### Three Story Arcs Generated:
 
-### Parallel Story Threads:
+**Arc 1: FAERIS Unit 7 Origin Story (22 years ago, Days 1-1251, Scenes 1-10)**
 
-**Guerrilla Timeline (Ben & Leah):**
-- Ben and Leah find each other after escape
-- Protecting civilians (families with children)
-- Small-unit guerrilla tactics against CADENS patrols
-- Building resistance through hit-and-run operations
+Establishes Ryu/FAERIS bond crucial for Book 3:
+- Day 1: Ryu discovers damaged FAERIS unit, repairs it
+- Day 2: FAERIS scans Ryu's visual cortex, discovers he sees her true form (winged light, not drone shell)
+- Day 3: Ryu tests Unit 7, discovers she prioritizes agent survival over mission objectives
+- Days 365-1250: **Prime's three failed timelines montage**
+  - **Timeline Alpha:** Egalitarian utopia attempt, assassination attempt (Ryu absent), Prime survives (margin +2)
+  - **Timeline Beta:** Maximum liberty approach, assassination attempt (Ryu present but marginalized), Prime survives (margin +1)
+  - **Timeline Gamma:** Perfection utopia attempt, assassination attempt (Ryu blocked by Bellatrix), **Geneva reveals herself as Bellatrix** (Prime crit success)
+- Day 1251: FAERIS calculates correlation: **Ryu's presence = Prime's survival differential across all four timelines**
 
-**Gloom Girl Timeline (Tess):**
-- Tess's FAERIS bond explored (why it stayed loyal)
-- Mystical/emotional connection protects from Mother FAERIS network
-- Detective work investigating CADENS and Bellatrix
-- Processing Leta's death while continuing mission
+**Emergent Theme:** Unit 7 learning that protecting people you care about matters more than mission objectives.
 
-**Resistance Timeline (Korede):**
-- Leta's younger brother building civilian resistance networks
-- Social media coordination
-- Providing safe houses and supplies
-- Eventually partners with other team members
+**Arc 2: Book 1-2 Era Bonds (Days 7300-7946, Scenes 11-28)**
 
-**The Between Timeline (Ahdia):**
-- Stranded in interdimensional space called "The Between"
-- **AR-Ryu companion** (augmented reality construct in visor, real-time processing only)
-- Ancient ruins, wrong physics, kaiju threats
-- **AR-Ryu dies** - visor battery critical, no memory storage (data volatile)
-- **Meets Captain Suzie Rivets** (callsign "Troublemaker") - mech pilot from **Iteration 3**
-- **Pio** - Suzie's battle-scarred two-seater mech (nearly destroyed from years fighting)
-- Bond quickly over shared loss (Suzie lost squadron and entire world)
-- Collaborate on quantum beacon to send morse code signal to Earth via Mother FAERIS
-- Earth team receives signal, opens rift but can't cross through (supernova risk)
-- **Kaiju pack blocks escape path** - rift closing in minutes, can't reach it in time
-- **Suzie's sacrifice:** Uses Pio's last harpoon to eject Ahdia through rift against her will
-- **Visor dies mid-flight** (1% → 0%) - all AR-Ryu data **erased forever** during ejection
-- Ahdia crosses rift to Earth, powers return instantly, freezes self to stop momentum
-- **Suzie stays behind** for final stand with Pio - rift seals, fate unknown (likely dead)
-- **Double loss:** AR-Ryu erased, Suzie sacrificed
-- Suzie's last words: *"Tell them about Iteration 3"*
-- Only Ahdia remembers Iteration 3's last witness - no proof, just memory
+Shows relationships forming through mutual vulnerability:
 
-**Ending State:**
-- Multiple resistance cells operating independently
-- **Ahdia returns to Earth** (via Suzie's sacrifice, Chapter 31+)
-- Team reunited but Ahdia carrying double grief (AR-Ryu erased, Suzie lost)
-- Dead visor only evidence - no proof of what happened in The Between
-- Ahdia must tell Ryu about AR-Ryu's last words with no verification
-- Must explain Iteration 3 to Diana through Suzie's story
-- Bellatrix consolidating power on Earth
-- Fear army deployment escalating
-- Survivor's guilt and processing losses
-- Setup for Book 5 (team together but fundamentally changed)
+**Ryu & FAERIS:**
+- Day 7300 (Book 1 era): Ahdia's first major mission, baseline dropping critically
+  - FAERIS breaks formation to protect Ahdia → **Critical failure** (rolled 1), shell damaged
+  - Ryu monitors Ahdia's distress, FAERIS observes his reaction
+- Day 7301: Ryu personally repairs Unit 7, thanks her for prioritizing Ahdia over function
+- Day 7665 (Book 2 Month 6): Ryu calculates Ahdia will reach critical threshold by Month 11
+  - **Critical failure** (rolled 1 despite competency 9): Closes file without reporting to CADENS
+  - Cost: "Psychological break (CBT coping fails)"
+- Day 7665: FAERIS proves Ryu extended Ahdia's timeline +3 months within constraints (not absolution, but accuracy)
+- Day 7820 (Book 2 Month 11): Leta's death - Unit 7 watches Ryu frozen at console, broadcasts to network: "Ryu is breaking"
+- Day 7850 (Book 2 Month 12, Election Night): FAERIS perceives three collapsed timelines where Ryu was absent/blocked
+  - Makes autonomous choice to act on Ryu's algorithm, not CADENS directive
+  - **Failure** (margin -1): Cost = "Emotional toll (confidence eroding)"
+- Day 7910 (Book 3 Month 1): Unit 7 breaks formation during Ahdia's patrol, returns to check on Ryu alone
+  - Establishes standing directive: Monitor Ryu over CADENS protocol
 
-### Major Themes:
+**Ahdia's Struggle:**
+- Day 7920: Parkour training without time freeze → **Critical failure** (rolled 1), injury
+- Day 7920: Ruth treats injury perfectly → **Critical success** (rolled 10), confronts Ahdia about overconfidence
+- Day 7933: Ahdia decides to hunt clones without powers, overrules Ruth and Ryu's objections
+- Day 7935: First clone hunt - overwhelmed but survives
 
-**Functioning While Broken:**
-- Team operating without Ahdia
-- Scattered cells, no coordination
-- Small victories, guerrilla tactics
-- Continuing despite overwhelming odds
+**Clone War Discovery:**
+- Day 7925: Tess & Korede investigate coordinated activity → **Critical success** (rolled 10), discover clone pattern
+- Day 7930: Ben's first clone encounter, discovers Temporalist abilities
+- Day 7945: Leah reports 50+ active clone avatars, coordinated patterns
 
-**Found Family Under Pressure:**
-- Separated but fighting for same cause
-- Protecting civilians
-- Trust despite distance
-- Different approaches to resistance
-- Brief but profound bond (Ahdia & Suzie)
-- Forced sacrifice to save family member
+**Emergent Theme:** Both FAERIS and Ryu had critical failures (rolled 1s) at moments of caring for Ahdia = shared understanding of complicity, protection, and choosing people over duty.
 
-**Loss and Memory:**
-- AR-Ryu dies, then data erased - exists only in Ahdia's memory
-- Suzie from erased timeline, sacrifices herself - doubly erased
-- "Tell him I loved her" - Ryu will never have proof
-- "Tell them about Iteration 3" - Diana will never face survivor
-- Survivor's guilt (two deaths for Ahdia's survival)
-- Memory vs proof - ghost stories only Ahdia can tell
+**Arc 3: Book 3 Month 1 - The Collapse (Days 7915-7921, Scenes 29-57)**
 
-**Heroic Sacrifice:**
-- Suzie: "Something that matters" - saved harpoon for Ahdia's life
-- Ejects Ahdia against her will (forced survival)
-- Last stand with Pio fighting impossible odds
-- From erased world, erased herself to save another
+Three parallel storylines showing fragmentation:
+
+**Storyline A: CADENS Takeover (Scenes 29-43)**
+
+- Day 7915: Harriet Bourn discovers TRIOMF infiltration **but acts too late** (roll 2, failure margin -1)
+  - Cost: "Team trust strained (secrets surfacing)"
+- Day 7915: Harriet & Bentley Mack escape CADENS, TRIOMF pursuing (bare success)
+- Day 7915: Bentley uses tech to disable tracking, reach safe house
+- Day 7916: Harriet assesses situation from safe house (success, but someone questions her judgment)
+- Day 7916: TRIOMF finds them anyway (success)
+- Day 7916: Bentley establishes secure comms with Go Squad → **Critical success** (rolled 10)
+- Day 7916: Ahdia Bacchus convinces Prime to extract Harriet (success, but missed connection elsewhere)
+- Day 7916: Prime's extraction **fails** (9 vs 10, margin -1) - barely misses window, TRIOMF almost gets them
+- Day 7917: Harriet briefs Go Squad on TRIOMF takeover (bare success, exhausted)
+- Day 7917: Go Squad decides to operate independently (bare success, everyone strained)
+- Day 7917: **Kain consolidates CADENS control** (11 vs 6, margin +5) - dominates effortlessly
+- Day 7917: **Ahdia Bacchus CRITICAL FAILURE** (rolled 1) - completely breaks down losing CADENS
+  - Cost: **"Prime intervenes (manipulation exposed)"** - Prime saves her but reveals his controlling nature to team
+- Day 7918: FAERIS processes Prime manipulating Ahdia (success, but missed connection with Ahdia needing her)
+- Day 7918: Prime defends his actions to team (success, emotionally strained)
+- Day 7918: Ryu mediates conflict (15 vs 8, his competency 9 holds team together), everyone exhausted
+
+**Storyline B: Clone War Escalation (Scenes 44-51)**
+
+- Day 7919: Go Squad hunts Clone Avatar 001 → **Critical success** (rolled 10), perfect ambush setup
+- Day 7919: Clone Avatar 001 defends itself → **ALSO critical success** (rolled 10!), escapes perfectly
+  - **Double crit = Both sides succeeded:** Perfect hunt meets perfect escape, clone gains intelligence
+  - Cost (clone): "Unexpected bonus (gained more than expected)"
+- Day 7919: Ahdia processes "failure" → **Critical success** (rolled 10!) - breakthrough instead of breakdown
+  - She learns something crucial FROM the failure
+  - Cost: "Unexpected bonus (gained more than expected)"
+- Day 7920: Clone reports intel to Kain (success)
+- Day 7920: Kain analyzes tactics, **identifies Ahdia as weak link** (14 vs 7, margin +7)
+  - But his own team questions his judgment
+- Day 7921: Kain deploys multiple clones simultaneously (8 vs 8, bare success, relationship friction)
+- Day 7921: Go Squad **overwhelmed** by coordinated attack (9 vs 10, failure margin -1)
+  - Cost: **"Position exposed (enemies aware)"** - safe houses, patterns, everything compromised
+- Day 7921: Ahdia fights clone alone with no powers (10 vs 10, EXACT TIE - survives by fingernails)
+  - Cost: "Relationship friction (tension surfaces)"
+
+**Storyline C: The Two Ahdias (Scenes 52-57)**
+
+- Day 7918: Ahdia Prime observes Prime manipulating Ahdia Bacchus, decides to confront him (13 vs 8, success)
+  - Cost: "Missed connection" - too late, or not present for critical moment
+- Day 7917: Ahdia Prime tries to reach out to Ahdia Bacchus after CADENS loss (9 vs 7, bare success)
+  - Doesn't fully connect, creates awkwardness
+  - Cost: "Missed connection" - attempt creates distance, not closeness
+- Day 7918: Ahdia Bacchus processes being face-to-face with "everything she should have been" (8 vs 8, EXACT TIE)
+  - Barely holding it together
+  - Cost: "Relationship friction" - comparison creates tension, not healing
+- Day 7919: Ahdia Prime fights clone with FULL POWERS → **Critical success** (rolled 10, total 15 vs 8)
+  - Makes it look effortless
+  - Cost: "Minimal cost (surprisingly smooth)"
+- Day 7919: Ahdia Bacchus watches her perfect self do what she can no longer do (9 vs 7, bare success processing)
+  - Cost: "Missed connection" - while processing obsolescence, misses something important
+- Day 7919: Prime navigates relationship with Ahdia Prime while managing Ahdia Bacchus crisis (12 vs 9, success)
+  - Cost: "Minor injury (bruised, strained)" - emotionally exhausting
+
+**Emergent Theme:** Ahdia Bacchus watching living proof she's obsolete - Ahdia Prime has full powers, isn't constantly dying, is in romantic relationship with Prime, represents "successful" timeline.
+
+### Recurring Cost Patterns (What Dice Tell Us):
+
+**"Team trust strained"** - Appears **16 times**
+- Team fragmenting with every success
+
+**"Minor injury (bruised, strained)"** - Appears **14 times**
+- Everyone physically/emotionally exhausted
+
+**"Missed connection"** - Appears **8 times**
+- Always one step behind, missing crucial moments while dealing with crises
+
+**"Prime intervenes (manipulation exposed)"** - Appears **3 times**
+- Control showing cracks at worst possible moments
+
+**"Relationship friction"** - Tension in personal relationships
+**"Position exposed"** - Tactical vulnerabilities mounting
+
+### Critical Moments (Rolled 1 or 10):
+
+**Critical Successes (Rolled 10):**
+1. Prime survives Timeline Gamma assassination (Bellatrix reveals herself)
+2. Ruth treats Ahdia's training injury, confronts overconfidence
+3. Tess & Korede discover clone pattern
+4. Bentley establishes secure comms with Go Squad
+5. Go Squad's perfect ambush (Scene 44)
+6. Clone's perfect escape (Scene 45) - BOTH SIDES CRIT SAME DAY
+7. Ahdia Bacchus's breakthrough processing failure (Scene 46)
+8. Ahdia Prime effortlessly defeats clone with powers (Scene 55)
+
+**Critical Failures (Rolled 1):**
+1. FAERIS damaged protecting Ahdia (broke formation out of care)
+2. Ryu hiding Ahdia's terminal data from CADENS (chose her over duty)
+3. Ahdia's parkour training injury (overconfidence without powers)
+4. Ahdia's complete breakdown losing CADENS (Prime's manipulation exposed)
+
+**Pattern:** Critical failures at moments of emotional vulnerability/care. Critical successes show technical excellence but create new problems.
+
+### Current Status (End of Scene 57):
+
+**Ahdia Bacchus:**
+- Baseline: 0.7% CRITICAL (cannot use powers without transcending)
+- Confidence: 8/10 (brittle - one crit failure from collapse)
+- Just watched "perfect self" effortlessly do what she can't
+- CADENS (legitimacy anchor) gone
+- Team questions if she's liability
+
+**Team:** Cohesion 6/10 (fraying)
+- Prime's manipulation exposed
+- Split up, position exposed to Kain
+- Trust strained across 16+ scenes
+
+**Tactical:**
+- CADENS hostile (Kain/TRIOMF control)
+- Operating independently, no institutional support
+- Clone avatars escalating (50+ estimated)
+- Kain identified Ahdia as weak link
+
+**Relationships:**
+- Ryu & FAERIS: Deep bond through mutual "failures" of caring
+- Prime & two Ahdias: Torn between perfect partner and broken version he's trying to save
+- Ahdia Bacchus: Watching her own obsolescence embodied
+- Go Squad: Exhausted, fractured, held together by Ryu's mediation
+
+**Emergent Narrative:** They're not losing fights dramatically, they're **eroding from within**. Every win costs something. Every success has complications. Winning doesn't matter when fragmenting internally.
+
+### Book 3 Purpose:
+
+Complete "CBT approach failing" arc (Books 1-3):
+- **Book 1:** Avoidance → Forced action
+- **Book 2:** Sacrifice/vulnerability → Unexpected strength
+- **Book 3:** Confidence → Psychological collapse ← **Necessary for Book 4's new approach**
+
+The dice-based storytelling creates Book 3's psychological breaking point that necessitates Book 4's DBT introduction.
 
 ---
 
-## Books 5-8: Touchpoint Planning Complete
+## Books 4-7: Planning Stage
 
-**See `SERIES_TOUCHPOINTS.md` for complete arc guide**
+**Book 4:** Turning point (stalemate, DBT introduction)
 
-### Book 5: Turning Point - DBT Introduction
-**Emotional Arc:** CBT has definitively failed → New approach required
+**Books 5-7:** DBT approach succeeding
 
-**Key Events:**
-- Processing Book 4 losses (AR-Ryu erased, Suzie sacrificed)
-- **The Collector** appears - Type III being offering to "preserve" humanity in cosmic zoo
-- Team refuses easy salvation, chooses earned struggle
-- Discovery that Firas was displaced, not killed (consciousness exists)
-- First Bellatrix negotiations
-- Diana's cosmic messages begin
-
-**Core Question:** How do you function when control is impossible?
-
----
-
-### Book 6: Radical Acceptance
-**Emotional Arc:** Accept reality as it is, not as we wish it were
-
-**Key Events:**
-- **The Predecessor** appears - failed species sabotaging humanity
-- Bellatrix's history revealed (she's Ahdia/Firas's biological mother)
-- "Love infection" - Type IV beings eliminated emotion, Bellatrix caught it
-- Mother FAERIS awakened via Bourn's stolen wake protocol
-- Ahdia's designed singularity truth revealed
-- Firas located in dimensional space (but unreachable)
-
-**Antagonist:** The Predecessor - cyborg remnants of species that failed Bellatrix's test millennia ago. "If we couldn't achieve utopia, no one should get the chance."
-
----
-
-### Book 7: Both/And Mastery
-**Emotional Arc:** Hold contradictions without collapsing into either/or
-
-**Key Events:**
-- Firas rescue operation (returns changed by dimensional existence)
-- Earth declared unsalvageable (Kain + Bellatrix + Predecessor damage)
-- **New Earth migration announced** - near-lightspeed vessel
-- Predecessor's final assault on migration preparations
-- Bellatrix finally understands motherhood and love
-- **Deceleration problem revealed** - designed singularities exist for this
-
-**The Deceleration Problem:**
-- Near-lightspeed vessel can't slow down conventionally
-- Ahdia and Firas's temporal/dimensional manipulation can affect spacetime
-- **This is why Type VI created designed singularities**
-- They can create controlled deceleration field around vessel
-
----
-
-### Book 8: Worth Without Fixing (Series Climax)
-**Emotional Arc:** "You don't have to be fixed to be worthy"
-
-**Key Events:**
-- Migration vessel launches (leaving broken Earth)
-- Diana returns from cosmic space (proves transcendence ≠ corruption)
-- Near-lightspeed achieved - point of no return
-- Deceleration begins - siblings working together
-
-**THE CRISIS:**
-- Field collapses, one sibling must absorb full load
-- Firas moves to sacrifice himself again (echo of Book 1)
-- Ahdia tries to take his place
-
-**BELLATRIX'S SACRIFICE:**
-- Intervenes, pushes both children aside
-- Type IV being, her dimensional capacity exceeds theirs
-- **The Book 1 Inversion:**
-  - Book 1: Firas sacrifices from misunderstanding (thought Ahdia would die)
-  - Book 8: Bellatrix sacrifices from understanding (knows children will live)
-- "I finally understand what I made. Let me do this one thing right."
-- Dies saving her children - love finally comprehended
-
-**Final Image:**
-- New Earth in viewport
-- Ahdia and Firas exhausted, holding each other
-- Where Bellatrix was: empty space
-- Behind them: everyone who survived
-- Ahead: a world they didn't break yet
-
-**Status:** Touchpoint planning complete. See `SERIES_TOUCHPOINTS.md` for full details.
+**Status:** Pre-production, awaiting Books 1-3 completion
 
 ---
 
@@ -815,13 +457,8 @@
 - Ruth/Ahdia: Best friends → Medical dependency → Lies discovered → Boundary setting
 - Ryu/Ahdia: Doctor → Enabler → Complicit → Processing guilt
 - Ryu/FAERIS: Repair → Recognition → Mutual failures → Deep bond prioritizing each other
-- **Ahdia/AR-Ryu:** Augmented reality companion → Dying (visor battery critical) → Erased forever mid-flight
-- **Ahdia/Suzie Rivets:** Strangers → Rescue → Bond over loss → Forced sacrifice (ejection) → Grief/survivor's guilt
-- **Diana (Ahdia-Prime)/Team:** Poses as "Aunt Diana" → Secret enhancement → Iteration stories reveal → Teaching acceptance
-- **Diana/Ahdia-4:** Future self teaching what took 5 iterations to learn → "Learn to be enough"
-- **Diana/Suzie:** Never met - Suzie from Iteration 3 (Diana's erased timeline), now doubly erased
-- Prime/Ahdia Prime: Romantic partners from abandoned timeline (Diana's partner from Iteration 1)
-- Prime/Both Ahdias: Managing relationship with Diana while helping Ahdia-4
+- Prime/Ahdia Prime: Romantic partners from abandoned timeline
+- Prime/Ahdia Bacchus: Future self trying to save broken version
 
 **Institutional Arcs:**
 - CADENS Book 1: Governmental ally
@@ -831,8 +468,7 @@
 **Kain Progression:**
 - Book 1: Mayor, local threat
 - Book 2: Presidential candidate → President-Elect (Month 12)
-- Book 3: President, controls CADENS, enables Bellatrix's arrival
-- Book 4: Consolidating power, hunting resistance cells
+- Book 3: Controls CADENS, clone avatar army, identified Ahdia as weak link
 
 **FAERIS Evolution:**
 - Book 1 end: 10% autonomous
@@ -840,17 +476,10 @@
 - Book 2 Month 11: First autonomous decision (Exile Island broadcast)
 - Book 3: Prioritizes Ryu over CADENS protocol
 
-**Diana/Ahdia-Prime's Role:**
-- Pre-Book 3: Lived through 5 timeline iterations, learned acceptance
-- Book 3 start: Burns out Ahdia-4's powers, poses as "Aunt Diana from Montana"
-- Book 3: Secret enhancement of team, iteration story reveals, teaching acceptance
-- Relationship with Prime (her partner from Iteration 1)
-- Teaching Ahdia-4: "Learn to be powerless. Learn to be helped. Learn to be enough."
-
 **Prime's Role:**
-- Book 2: Watcher, subtle probability tilting (separate character from Diana)
-- Book 3: Romantic relationship with Diana (Ahdia-Prime), helping manage Ahdia-4 situation
-- Note: Prime ≠ Diana; Prime is Diana's partner from Iteration 1
+- Book 2: Watcher, subtle probability tilting
+- Book 2 Month 12: Reveal as original Ahdia from Timeline Gamma
+- Book 3: Romantic relationship with Ahdia Prime, manipulating Ahdia Bacchus, exposure
 
 ---
 
@@ -880,12 +509,9 @@
 
 ## Series Completion Status
 
-✅ **Book 1:** Complete prose (6,342 lines, 30 chapters + epilogue)
-📊 **Book 2:** Complete TTRPG data - 24 chapters, 5,000+ beats (prose pending)
-📝 **Book 3:** Beat sheets complete - 19 chapters planned (Prologue + Ch1 prose done)
-📝 **Book 4:** Beat sheets in progress - 14+ chapters planned (guerrilla timelines)
-⏳ **Books 5-8:** Planning stage
+✅ **Book 1:** Complete prose
+📊 **Book 2:** Complete TTRPG data (prose pending)
+🎲 **Book 3:** 57 scenes generated (campaign in progress)
+⏳ **Books 4-7:** Planning stage
 
-**Current Phase:** Book 3 and 4 beat sheet development. Books 2-4 ready for prose conversion once planning is complete.
-
-**Note:** Original Book 3 was split into Books 3 & 4 during development (51+ chapters was too long). Series expanded from 7 books to 8 books.
+**Current Phase:** Building Book 3 campaign through emergent dice-based storytelling, following Book 2's successful TTRPG planning methodology.
