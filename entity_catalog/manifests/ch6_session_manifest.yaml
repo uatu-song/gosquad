@@ -1,0 +1,253 @@
+# SESSION MANIFEST: Chapter 6
+# Generated: 2025-12-10
+# Task: Generate prose for Chapter 6 "Rest and Recovery"
+
+manifest:
+  session_id: "2025-12-10_ch6_prose"
+  chapter: "book2_ch6"
+  timeline_position: "month_1_late (two days after ch5)"
+  chapter_title: "Rest and Recovery"
+
+  # === THEMATIC CORE ===
+  theme: "How the team processes trauma in downtime - lovers, family, grief"
+  tone: "Domestic, intimate, grounded"
+  contrast: "Connection as healing vs. isolation as avoidance"
+
+  # === SCENE STRUCTURE ===
+  scenes:
+    - scene: 1
+      name: "Coming Home"
+      pov: "Tess (close third)"
+      touchpoint_a: "Tess arrives home from work, domestic intimacy"
+      touchpoint_b: "Early harassment signs noticed, Tess protective instincts engaged"
+      setting: "Tess and Leta's apartment, 7 PM"
+      present: ["Tess", "Leta", "Korede (arrives mid-scene)"]
+      tone: "Domestic warmth, noir-comedy dialogue, creeping threat"
+
+    - scene: 2
+      name: "Alone with Grief"
+      pov: "Ben (close third)"
+      touchpoint_a: "Ben comes home to empty apartment"
+      touchpoint_b: "Grief breaks through avoidance, work fails as coping"
+      setting: "Ben's apartment, late night"
+      present: ["Ben (alone)"]
+      tone: "Heavy, isolated, suppressed grief surfacing"
+
+  # === ENTITIES ACTIVE ===
+  entities_active:
+    characters:
+      - id: "CHAR_005"
+        name: "Tess Whitford"
+        role: "Scene 1 POV"
+        occupation: "Day shift exotic dancer (strategic choice)"
+        relationship: "Leta's girlfriend"
+        emotional_state: "Protective, investigator brain engaged"
+        knowledge_state: "ALREADY KNOWS father is corrupt"
+
+      - id: "CHAR_010"
+        name: "Leta Owolowo"
+        role: "Scene 1 partner"
+        occupation: "Trans activist, sex worker rights organizer"
+        emotional_state: "Confident, dismissive of early harassment"
+        foreshadowing: "Will be killed by Webb in 9 months"
+
+      - id: "CHAR_011"
+        name: "Korede Owolowo"
+        role: "Scene 1 - Leta's younger brother"
+        age: "17 (almost 18)"
+        emotional_state: "Learning activism, observant"
+        foreshadowing: "Will be radicalized by Leta's death"
+        forbidden_knowledge: ["Go Squad identities (until ch21)"]
+
+      - id: "CHAR_003"
+        name: "Ben Bukowski"
+        role: "Scene 2 POV"
+        emotional_state: "Grief suppressed 8 months, breaking through"
+        relationship_history:
+          marital_status: "widower"
+          deceased_spouse: "Sarah"
+          death_cause: "UNSPECIFIED protest violence"
+          death_timing: "8 months ago"
+
+      - id: "CHAR_017"
+        name: "Sarah"
+        role: "Referenced in Scene 2 (deceased)"
+        status: "deceased"
+        death_cause: "UNSPECIFIED"
+        note: "Do NOT specify how she died beyond 'protest turned violent'"
+
+      - id: "CHAR_002"
+        name: "Ruth Carter"
+        role: "Scene 2 - texts Ben to check in"
+        note: "Shows she notices who's struggling"
+
+  # === KNOWLEDGE GATES (CH6) ===
+  knowledge_gates:
+    CHAR_005:  # Tess
+      knows:
+        - "Father is corrupt (ALREADY KNEW)"
+        - "Go Squad mob attack happened"
+        - "Eidolon exists (fear manipulation)"
+      learns_this_chapter:
+        - "Leta being targeted by coordinated harassment"
+
+    CHAR_011:  # Korede
+      knows:
+        - "Sister does activist work"
+        - "Go Squad exists"
+      learns_this_chapter:
+        - "Consequences of activism (harassment)"
+      doesnt_know:
+        - "Go Squad identities (until ch21)"
+        - "Tess is Gloom Girl"
+
+    CHAR_003:  # Ben
+      knows:
+        - "Sarah died 8 months ago"
+        - "Building Kain case"
+      realizes_this_chapter:
+        - "Work as avoidance is failing"
+        - "Can't keep grief suppressed"
+
+  # === RELATIONSHIP STATES (CH6) ===
+  relationship_states:
+    REL_003:  # Tess-Leta
+      status: "loving_stable"
+      dynamic: "Tess protective / Leta independent (balanced)"
+      seeds: "Will become strained when Tess becomes overprotective"
+
+    korede_leta:
+      status: "siblings"
+      dynamic: "Leta teaching activism / Korede learning"
+      note: "Korede is younger brother, not yet radicalized"
+
+    ben_sarah:
+      status: "widower_grieving"
+      dynamic: "8 months suppressed, breaking through"
+      note: "Sarah's death cause UNSPECIFIED"
+
+    ben_ruth:
+      status: "teammate_checking_in"
+      dynamic: "Ruth notices who's struggling"
+
+  # === ACTIVE CONSTRAINTS FROM CATALOG ===
+  active_constraints:
+    forbidden_associations:
+      CHAR_003:  # Ben
+        - "Sarah death cause specified"
+        - "Sarah protest death details"
+        - "Sarah shot/killed by [anyone]"
+
+      CHAR_004:  # Victor (not in chapter, but enforce)
+        - "wife"
+        - "widow"
+        - "Clara"
+
+    forbidden_entities:
+      - "Clara"
+      - "Shiba"
+      - "Titan Strategic"
+
+    forbidden_knowledge:
+      - "Korede knows Go Squad identities (ch21)"
+      - "Tess discovers father corruption (she ALREADY KNOWS)"
+
+    sarah_death_constraint:
+      allowed: "protest turned violent"
+      allowed: "agent provocateurs"
+      allowed: "stampede"
+      forbidden: "specific cause of death"
+      forbidden: "shot"
+      forbidden: "killed by [specific person]"
+
+  # === SEEDS TO PLANT ===
+  seeds_to_plant:
+    - name: "Harassment campaign beginning"
+      method: "Three burner accounts targeting Leta this week"
+      foreshadows: "Month 5-7 escalation"
+
+    - name: "External watcher"
+      method: "Figure outside taking photos of their apartment"
+      foreshadows: "Doxxing, escalation"
+
+    - name: "Tess protective instincts"
+      method: "Investigator brain engaged, pattern recognition"
+      foreshadows: "Will become overprotective (relationship strain)"
+
+    - name: "Korede learning consequences"
+      method: "Watching Tess investigate, seeing sister targeted"
+      foreshadows: "Radicalization after Leta's death"
+
+    - name: "Ben's work-as-avoidance failing"
+      method: "Grief breaks through, he knows it's avoidance now"
+      foreshadows: "Month 8-9 breakdown when evidence fails"
+
+    - name: "Ruth as support figure"
+      method: "Texts to check in, Ben deflects"
+      foreshadows: "Team as support network (Ben needs but resists)"
+
+  # === VOICE REQUIREMENTS ===
+  voice_requirements:
+    CHAR_005:  # Tess
+      style: "Noir-comedy, deadpan wit masking worry"
+      patterns:
+        - Sharp observations
+        - Deadpan delivery
+        - Investigator instinct showing
+      occupation_detail: "Day shift dancer - strategic choice (safer, intel gathering)"
+
+    CHAR_010:  # Leta
+      style: "Confident activist, dismissive of threats"
+      patterns:
+        - Independent
+        - Community-focused
+        - "I know what I'm doing"
+
+    CHAR_011:  # Korede
+      style: "17-year-old learning, observant"
+      patterns:
+        - Teen enthusiasm
+        - Blurts things out
+        - Watching and learning
+
+    CHAR_003:  # Ben
+      style: "Military precision falling apart, internal grief"
+      patterns:
+        - Work obsession
+        - Avoidance cracking
+        - Can't talk about it yet
+
+  # === FORBIDDEN ENTITIES (BLOCKING) ===
+  forbidden_entities:
+    - id: "FORBID_001"
+      name: "Clara"
+      detection: "Clara|Victor.*(wife|widow|married)"
+      note: "Victor not in chapter but enforce globally"
+
+    - id: "FORBID_002"
+      name: "Sarah death cause"
+      detection: "Sarah.*(protest|riot|shot|killed by)"
+      note: "Sarah's death cause is UNSPECIFIED"
+      allowed_phrasing:
+        - "protest turned violent"
+        - "stampede"
+        - "agent provocateurs"
+        - "died helping someone escape"
+
+    - id: "FORBID_003"
+      name: "Tess discovers corruption"
+      detection: "Tess.*(discovers|learns|realizes).*father.*corrupt"
+      note: "She ALREADY KNOWS"
+
+    - id: "FORBID_009"
+      name: "Shiba"
+      detection: "Shiba"
+      canonical: "Ryu Matsuda"
+
+  # === OUTPUT SPEC ===
+  output:
+    type: "prose"
+    target_words: "3500-4500"
+    scenes: 2
+    povs: ["Tess", "Ben"]
+    contrast: "Connection vs isolation"

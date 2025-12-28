@@ -123,7 +123,7 @@ Ahdia gives an impromptu speech to the grieving team, thanking them for saving h
 
 **Final Status:** They are her "only family" (her words). She's gone from total isolation to found family. However, the relationship is still developing - they know her as the quiet tactical support with time powers, not yet as a fully integrated team member. Trust is building but fragile.
 
-### CADENS (Overseer Bourn, Dr. Shiba Ryu)
+### CADENS (Overseer Bourn, Dr. Ryu Matsuda)
 **Beginning:** Doesn't exist in her awareness.
 
 **Middle:** CADENS recruits her after the warehouse incident. Overseer offers partnership; Dr. Ryu becomes her handler. They provide resources, training, and purpose in exchange for her help containing cataclysm threats. The relationship is transactional but not cold.

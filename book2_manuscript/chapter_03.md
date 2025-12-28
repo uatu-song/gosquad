@@ -339,107 +339,135 @@ But she would.
 
 ## Scene 3: The Kettle
 
-Ruth had been standing at the kettle for three minutes. She knew because she'd been counting. Counting was better than thinking. Thinking led to places she couldn't afford to go.
+The kettle wasn't boiling because Ruth hadn't turned it on.
 
-The kitchen was dark except for the blue light of the gas burner. Everyone else had gone home or gone to bed. She'd told them she was fine. She'd told herself she was fine.
+She knew this. Had known it for—how long now? Three minutes. Five. The blue pilot light glowed but the flame wasn't lit, and her hands rested flat on the counter like they belonged to someone else.
 
-The kettle wasn't boiling. She'd forgotten to turn it on.
+She'd finally done it tonight. Couldn't sleep anyway, everyone gone home, the penthouse too quiet. Thought: just start. One drawer. You can do one drawer.
 
-"Can't sleep either?"
+Eight months of walking past his jacket on the chair. Eight months of not opening his side of the closet. His books still stacked on the nightstand in their bedroom—her bedroom now, just hers, except it wasn't because it still smelled like him when she let herself notice.
 
-Victor's voice, soft from the doorway. Ruth didn't startle—she'd heard him coming. Old habit from the ER. Always know who's behind you.
+She'd opened his dresser. First drawer. Socks. Just socks. She could fold them, box them, donate them. Normal task. Manageable.
 
-"Just thinking."
+Then her hand hit the box.
 
-"About Geneva?"
+Small. Velvet. Hidden under wool socks he'd never worn because Caledonia wasn't cold enough.
 
-"About all of it."
+She'd known what it was before she opened it.
 
-He moved into the kitchen. Got himself a glass of water. Leaned against the counter like he had nowhere else to be—which, at 2 AM in a penthouse that belonged to someone else, he probably didn't.
+She'd opened it anyway.
 
-"You're holding a lot right now."
+Simple ring. Silver band. Small diamond. He'd known she didn't want anything flashy. He'd known her taste better than she did.
 
-"Someone has to."
+She'd closed it. Put it back. Closed the drawer. Walked out here. Put the kettle on.
 
-"That's not what I meant."
+Forgot to turn it on.
 
-Ruth finally turned on the kettle. Watched the blue flame lick the bottom of the metal.
+Had been standing here since.
 
-"Firas would've known what to do." The name slipped out before she could stop it. "He always—"
+"Hey."
 
-She stopped. The name hung in the air like smoke.
+Ahdia's voice, soft from the doorway. Ruth didn't startle—old ER habit, always know who's behind you—but she didn't turn around either.
 
-"Sorry. I don't know why I said that."
+"Can't sleep?"
 
-"Because you're grieving." Victor's voice was patient. Kind. "And you haven't stopped long enough to feel it."
+"Treatment makes me jittery." A pause. Shuffling footsteps. "You?"
 
-"There's no time to—"
+Ruth didn't answer. Just looked at the kettle that wasn't boiling.
 
-"Ruth."
+Ahdia moved into the kitchen. Got herself water. Leaned against the counter a few feet away, giving Ruth space without leaving. For a while neither of them spoke. The pilot light flickered blue. The microwave clock said 2:17 AM.
 
-She finally looked at him. His face was kind, which made it worse. She could handle cold. She couldn't handle kind.
+Ruth reached out. Turned the dial. The flame caught, licking the bottom of the kettle.
 
-"He told me, you know." Victor set down his water glass. "About a month before."
+"I tried to clear his things tonight."
 
-"Told you what?"
+She heard Ahdia go still behind her.
 
-"That he was going to propose."
+"First time." Ruth's voice came out flat, too controlled. "Eight months and I finally thought I could."
 
-Ruth's breath caught. Her hands stopped moving.
+Pause. Swallow.
 
-"He had a whole plan. After the mission calmed down. He was going to take you to that place you went on your first date—the one with the terrible pasta but the view of the bridge."
+"I found a ring. In his sock drawer."
 
-"Marcello's." The word came out barely audible.
+Silence. Ruth could feel Ahdia processing it.
 
-"He said you'd complain about the food the whole time and he'd pretend to be offended and then he'd ask."
+"He was going to propose." The words tasted like ash. "I wasn't supposed to find it. He was waiting. For the right moment. After things calmed down."
 
-Ruth set down the tea she'd been holding. Her hands were shaking. The kettle started to whistle.
-
-"He never said anything."
-
-"He was waiting for the right moment."
+She watched the flame heat the water. Watched bubbles start to form at the bottom of the kettle.
 
 "And then there wasn't one."
 
-"No."
+Her hands were shaking now, pressed flat against the counter like she could hold herself together through the granite.
 
-The kettle screamed. Ruth turned off the burner. The silence after was worse.
+"I put it back. Closed the drawer. Came out here." Her voice got smaller. "I can't do it. I thought I could and I can't."
 
-"I was going to tell him I loved him." Her voice cracked on the last word. "I kept putting it off. Kept thinking there'd be time."
+"Ruth—"
 
-"He knew."
+"I was going to tell him I loved him." The words came faster now, eight months of holding them back. "I kept waiting for the right moment and I kept thinking there would be time and then there wasn't any time and now there's a ring in his sock drawer that I was never supposed to find and I never said it, I never—"
 
-"How could he know if I never—"
+Her voice cracked. Broke.
 
-"Because he knew you." Victor's voice was gentle but certain. "The way you looked at him. The way you always saved him the good coffee. The way you'd check his gear three times before missions."
+"He knew, right?" Almost begging. "He must have known."
 
-Ruth was crying now. First time since Firas died. First time since the singularity took him. First time since she'd started holding everything together because someone had to.
+"He knew." Ahdia's voice was quiet but certain.
 
-"He knew, Ruth."
+"How? If I never said it?"
 
-"I should've said it."
+"Because you were you. With him."
 
-"Yeah. You should've." Victor didn't soften the words. "And he should've proposed sooner. And Geneva should've had security that knew what to look for. And none of that changes what's true."
+Ruth turned around. Looked at Ahdia—really looked—and something in her chest finally gave way.
 
-"What's true?"
+She was crying. First time since Firas died. First time since the singularity took him. First time since she'd started holding everything together because someone had to.
 
-"That you loved him. That he loved you. That it mattered." He paused. "And that you're allowed to grieve AND lead. Both things. Not one or the other."
+"His things are still everywhere." Sobbing now, couldn't stop. "His jacket on the chair. His books. I walk past them every day and I can't—I thought if I just started I could—"
 
-Ruth wiped her eyes. Couldn't find words.
+The kettle started to whistle. Neither of them moved.
 
-"You don't have to be okay right now," Victor said. "You just have to keep going."
+Ahdia stepped closer. Not touching. Just there. Present. Witnessing.
 
-"That's what I'm trying to do."
+Ruth didn't know how long she cried. Long enough for the kettle to scream and then go quiet when the water boiled down. Long enough for the shaking to subside into something duller, heavier.
 
-"I know. Just... don't forget you're a person too. Not just the one holding everything together."
+She turned off the burner. Wiped her eyes with the back of her hand.
 
-He squeezed her shoulder. Left her alone with her tea.
+"I'm sorry." Her voice was wrecked. "You didn't need to—"
 
-Ruth stood in the dark kitchen. Finally letting herself feel it. The grief. The loss. The proposal that would never happen. The words she'd never said.
+"Stop."
 
-Tomorrow she'd be the leader again. Tomorrow she'd hold everything together.
+Ruth looked at her.
 
-Tonight, she let it fall apart.
+"You're allowed to fall apart." Ahdia's voice was awkward, uncertain, like she was reading from a script she'd only half-memorized. "And lead. Both things."
+
+Ruth almost laughed. Wet, broken. "Both things."
+
+Silence. But different now. Less like drowning.
+
+"You don't have to clear it all tonight," Ahdia said.
+
+"I know. I just thought if I started—"
+
+"You started. You opened a drawer. That counts."
+
+Ruth nodded. Barely.
+
+"And you should make tea." Ahdia gestured at the empty kettle. "That's what it was for. Before you boiled it dry."
+
+Ruth filled the kettle again. Turned it on. Hands still shaking, but moving. Ahdia stayed—didn't fill the silence with words, didn't try to fix anything. Just present.
+
+The drawer in the bedroom was still closed. The ring was still there, hidden under wool socks he'd never wear.
+
+But Ruth had told someone. After eight months, she'd said it out loud.
+
+That was something. That was a drawer opened.
+
+Tomorrow she would be the leader again. She would hold everything together because someone had to.
+
+Tonight she was a woman who found a ring and couldn't finish clearing a sock drawer. And someone had witnessed it. Someone she trusted.
+
+She didn't know yet what that trust would cost her. What Ahdia was already hiding, would keep hiding, would hide for months while Ruth defended her absences and made excuses to the team. She didn't know that the woman standing in her kitchen right now was lying about everything except this moment.
+
+But that was later. That was a different kitchen, a different conversation, a different kind of breaking.
+
+Tonight, there was just tea, and silence, and the small mercy of not being alone with a velvet box in a sock drawer.
 
 ---
 

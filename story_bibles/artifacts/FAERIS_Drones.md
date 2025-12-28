@@ -8,9 +8,9 @@ Advanced surveillance and translocation technology managed by CADENS
 
 **Primary Function:** Monitoring cataclysmic events and cosmic anomalies
 
-**Managed By:** Dr. Shiba Ryu
+**Managed By:** Dr. Ryu Matsuda
 
-**Named By:** Dr. Shiba Ryu (technical designation reflecting dual capabilities)
+**Named By:** Dr. Ryu Matsuda (technical designation reflecting dual capabilities)
 
 ---
 
@@ -345,7 +345,7 @@ Advanced surveillance and translocation technology managed by CADENS
 
 **Related Files:**
 - `Organizations/CADENS.md` - Organization using FAERIS
-- `Characters/Shiba_Ryu.md` - FAERIS manager (TBD)
+- `Characters/Ryu_Matsuda.md` - FAERIS manager (TBD)
 - `Powers_and_Costs/Time_Manipulation.md` - What FAERIS monitors
 - `Artifacts/Hyper_Seed.md` - What FAERIS tracked before Ahdia bonded
 

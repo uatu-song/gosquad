@@ -1,0 +1,197 @@
+# SESSION MANIFEST: Chapter 3
+# Generated: 2025-12-10
+# Task: Generate prose for Chapter 3 "The Gaps"
+
+manifest:
+  session_id: "2025-12-10_ch3_prose"
+  chapter: "book2_ch3"
+  timeline_position: "month_1_late"
+  chapter_title: "The Gaps"
+
+  # === SCENE STRUCTURE ===
+  scenes:
+    - scene: 1
+      name: "Team Debrief"
+      touchpoint_a: "Team gathers morning after assassination"
+      touchpoint_b: "Ahdia has heard what the team needs to continue investigating"
+
+    - scene: 2
+      name: "Treatment"
+      touchpoint_a: "Ryu arrives for routine treatment"
+      touchpoint_b: "Ryu agrees to look into CADENS intel off the record"
+
+    - scene: 3
+      name: "The Kettle"
+      touchpoint_a: "Ruth alone, late night, finds ring"
+      touchpoint_b: "Ruth allows herself to grieve (first time since Firas died)"
+
+  # === ENTITIES ACTIVE ===
+  entities_active:
+    characters:
+      - id: "CHAR_001"
+        name: "Ahdia"
+        role: "POV protagonist"
+        emotional_state: "depleted, heavy, disconnected"
+        baseline: "67-71%"
+
+      - id: "CHAR_002"
+        name: "Ruth"
+        role: "Team leader, grieving"
+        emotional_state: "controlled grief surfacing"
+
+      - id: "CHAR_003"
+        name: "Ben"
+        role: "Investigation reporter"
+        delivers: "sniper nest findings, translocation signature"
+
+      - id: "CHAR_004"
+        name: "Victor"
+        role: "Support, brief appearance"
+
+      - id: "CHAR_005"
+        name: "Tess"
+        role: "Investigation reporter"
+        delivers: "bot network timing findings"
+
+      - id: "CHAR_006"
+        name: "Leah"
+        role: "Present, loveseat with Victor"
+
+      - id: "CHAR_007"
+        name: "Ryu"
+        role: "Doctor, crosses first ethical line"
+
+    organizations:
+      - "ORG_002"  # Go Squad
+      - "ORG_001"  # CADENS (referenced)
+
+  entities_referenced:
+    - id: "CHAR_013"
+      name: "Geneva"
+      context: "assassination victim, recent death"
+
+    - id: "CHAR_012"
+      name: "Firas"
+      context: "Ruth's deceased boyfriend, ring discovery"
+
+  # === KNOWLEDGE GATES ===
+  knowledge_gates:
+    CHAR_001:  # Ahdia
+      knows:
+        - "power costs lifespan"
+        - "geneva was assassinated"
+        - "team dynamics"
+      doesnt_know:
+        - "prime exists"
+        - "geneva is bellatrix"  # learned ch2 but processing
+
+    CHAR_002:  # Ruth
+      knows:
+        - "team needs to investigate quietly"
+        - "firas died (8 months ago)"
+      doesnt_know:
+        - "ahdia terminal trajectory"  # learns ch7
+        - "exile island"  # learns ch13
+
+    CHAR_007:  # Ryu
+      knows:
+        - "ahdia baseline numbers"
+        - "CADENS access logs exist"
+        - "translocation tracking capabilities"
+
+  # === RELATIONSHIP STATES (ch3) ===
+  relationship_states:
+    REL_001:  # Ahdia-Ruth
+      status: "close_trusted"
+
+    REL_002:  # Victor-Leah
+      status: "romantic_partners"
+      note: "sharing loveseat, established couple"
+
+    REL_005:  # Ahdia-Ryu
+      status: "professional"
+      transition: "enabling_begins"
+      key_moment: "Ryu agrees to off-record intel"
+
+  # === ACTIVE CONSTRAINTS FROM CATALOG ===
+  active_constraints:
+    forbidden_associations:
+      CHAR_004:  # Victor
+        - "wife"
+        - "widow"
+        - "Clara"
+        - "married"
+
+      CHAR_003:  # Ben
+        - "Sarah death cause specified"
+
+    forbidden_events:
+      - "Ruth knows terminal trajectory"  # ch7
+      - "Team knows Exile Island"  # ch13
+      - "Leta dies"  # ch21
+
+    forbidden_knowledge:
+      CHAR_002:  # Ruth
+        - "ahdia terminal trajectory"
+      CHAR_011:  # Korede
+        - "go squad identities"
+
+  # === SEEDS TO PLANT ===
+  seeds_to_plant:
+    - name: "Ryu enablement pattern"
+      method: "Ryu agrees to 'look into a few things off the record'"
+      foreshadows: "systematic enablement through Book 2"
+
+    - name: "News trickle - dictator"
+      method: "Background news mentions Eastern European dictator vanishing"
+      foreshadows: "Exile Island global ops reveal"
+
+    - name: "Cage metaphor"
+      method: "Freedom costs life, life costs freedom"
+      foreshadows: "Ahdia's impossible position"
+
+  # === VOICE REQUIREMENTS ===
+  voice_requirements:
+    CHAR_001:  # Ahdia
+      style: "Rambling, self-correcting, TV/movie references"
+      patterns:
+        - "What the actual hell?"
+        - "[Statement]. Or rather, [correction]?"
+        - "Like that episode where..."
+      limitation: "TV framing as distance mechanism, alienating"
+
+    CHAR_002:  # Ruth
+      style: "Medical precision, triage voice, controlled"
+
+    CHAR_003:  # Ben
+      style: "Military briefing, evidence-based, methodical"
+
+    CHAR_007:  # Ryu
+      style: "Clinical precision, careful word choice, slight warmth"
+
+  # === FORBIDDEN ENTITIES (BLOCKING) ===
+  forbidden_entities:
+    - id: "FORBID_001"
+      name: "Clara"
+      detection: "Victor + wife/widow/Clara"
+
+    - id: "FORBID_002"
+      name: "Sarah death cause"
+      detection: "Sarah + protest/riot/killed by"
+
+    - id: "FORBID_003"
+      name: "Tess discovers corruption"
+      detection: "Tess + discovers/learns + father + corrupt"
+      note: "Tess ALREADY KNOWS - not relevant to ch3 focus but enforce"
+
+    - id: "FORBID_007"
+      name: "Bourn male pronouns"
+      detection: "Bourn + he/him/his"
+      note: "Bourn not in ch3 but enforce globally"
+
+  # === OUTPUT SPEC ===
+  output:
+    type: "prose"
+    target_words: "4000-5000"
+    scenes: 3
+    pov: "Ahdia (close third, present tense moments, past tense narration)"

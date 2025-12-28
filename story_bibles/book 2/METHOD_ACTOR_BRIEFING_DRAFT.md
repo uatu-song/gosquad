@@ -182,7 +182,7 @@
 
 | Name | Role | Notes |
 |------|------|-------|
-| **Dr. Shiba Ryu** | CADENS Liaison | Provides treatments, becomes enabler |
+| **Dr. Ryu Matsuda** | CADENS Liaison | Provides treatments, becomes enabler |
 | **Leta Owolowo** | Tess's Partner | Trans activist, not Go Squad, dies Month 11 |
 | **Korede Owolowo** | Leta's Brother | Observer, radicalized by sister's death |
 
@@ -371,7 +371,7 @@ Dialogue and internal monologue in their authentic voice
 **Voice:** Young, watching, processing. Quiet intensity.
 **Arc:** Radicalized by sister's death → Partners with Tess for Book 4 investigation
 
-### Ryu (Dr. Shiba Ryu)
+### Ryu (Dr. Ryu Matsuda)
 **Core:** CADENS doctor, team liaison. Provides cellular treatments to Ahdia. Neurodivergent (autistic traits).
 **Book 2 State:** Crosses professional lines. Provides intel coordinates. Falsifies records. Loves Ahdia, never confesses.
 **Voice:** Rambles when emotional (more words, not fewer). Self-interrupts: "Sorry. I'm doing it again." Finger drumming when processing. Adjusts crooked glasses. Info-dumps when excited.

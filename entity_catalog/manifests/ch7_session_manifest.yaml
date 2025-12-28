@@ -1,0 +1,205 @@
+# SESSION MANIFEST: Chapter 7
+# Generated: 2025-12-10
+# Task: Generate prose for Chapter 7 "Concerns and Shared Trauma"
+
+manifest:
+  session_id: "2025-12-10_ch7_prose"
+  chapter: "book2_ch7"
+  timeline_position: "month_1_late (day after ch6, 3 days post mob attack)"
+  chapter_title: "Concerns and Shared Trauma"
+
+  # === CRITICAL CHAPTER ===
+  critical_events:
+    - "Ruth discovers degradation doesn't match timeline"
+    - "First suspicion solidifies"
+    - "Ruth will check with Ryu (Month 8 discovery setup)"
+    - "Firas grief shared - Ruth vulnerability"
+    - "Ahdia lies to Ruth's face"
+
+  # === SCENE STRUCTURE ===
+  scenes:
+    - scene: 1
+      name: "Ruth Arrives"
+      pov: "Ruth (close third)"
+      touchpoint_a: "Ruth arrives unannounced at Ahdia's apartment"
+      touchpoint_b: "Ruth's suspicion solidifies but she chooses trust for now"
+      setting: "Ahdia's apartment, afternoon"
+      present: ["Ruth", "Ahdia"]
+      key_moments:
+        - "Medical assessment - numbers don't match"
+        - "Firas grief shared"
+        - "Ahdia lies about absence"
+        - "Treatment administered"
+
+    - scene: 2
+      name: "Ruth Runs"
+      pov: "Ruth (close third)"
+      touchpoint_a: "Ruth processing after visit"
+      touchpoint_b: "Decision: trust but verify"
+      setting: "Caledonia rooftops, night"
+      present: ["Ruth (alone)"]
+      note: "Ruth's parkour/freerunning established"
+
+  # === ENTITIES ACTIVE ===
+  entities_active:
+    characters:
+      - id: "CHAR_002"
+        name: "Ruth Carter"
+        role: "POV protagonist both scenes"
+        emotional_state: "Suspicious but trusting, processing Firas grief"
+        actions:
+          - "Checks Ahdia's vitals (numbers don't match)"
+          - "Shares Firas grief (vulnerability)"
+          - "Administers treatment"
+          - "Decides to check with Ryu"
+        key_knowledge_change: "Learns degradation doesn't match timeline"
+
+      - id: "CHAR_001"
+        name: "Ahdia Bacchus"
+        role: "Scene 1 partner (Ruth's POV)"
+        emotional_state: "Guilty, exhausted, hiding global ops"
+        actions:
+          - "Lies about absence ('treatment knocked her out')"
+          - "Evasions too practiced"
+          - "Genuine depression visible"
+          - "Wants to tell truth, can't"
+
+      - id: "CHAR_012"
+        name: "Firas"
+        role: "Referenced - Ruth's deceased boyfriend"
+        status: "deceased"
+        key_reveal: "He was going to propose"
+
+      - id: "CHAR_007"
+        name: "Ryu Matsuda"
+        role: "Referenced - Ruth will check with him"
+        note: "Setup for Month 8 discovery"
+
+  # === KNOWLEDGE GATES (CH7) ===
+  knowledge_gates:
+    CHAR_002:  # Ruth
+      knows_before:
+        - "Ahdia has been absent"
+        - "Treatment schedule"
+        - "Firas died 8 months ago"
+      learns_this_chapter:
+        - "Degradation numbers don't match timeline"
+        - "Ahdia's evasions too practiced"
+        - "Something is wrong (can't name what yet)"
+      decides_this_chapter:
+        - "Will check with Ryu tomorrow"
+        - "Trust but verify"
+
+    CHAR_001:  # Ahdia
+      knows:
+        - "She was in Jakarta (not revealed)"
+        - "Ruth keeps her alive"
+        - "She's lying to Ruth"
+      hides:
+        - "Global operations"
+        - "Real reason for degradation"
+
+  # === RELATIONSHIP STATES (CH7) ===
+  relationship_states:
+    REL_001:  # Ahdia-Ruth
+      status: "close_trusted"
+      transition: "first_crack_forming"
+      dynamic:
+        - "Genuine friendship and care"
+        - "Treatment dependency (Ruth keeps Ahdia alive)"
+        - "Ruth's suspicion growing"
+        - "Ahdia's guilt compounding"
+
+  # === ACTIVE CONSTRAINTS FROM CATALOG ===
+  active_constraints:
+    forbidden_associations:
+      CHAR_004:  # Victor (not in chapter but enforce)
+        - "wife"
+        - "widow"
+        - "Clara"
+
+    forbidden_entities:
+      - "Clara"
+      - "Shiba"
+      - "Titan Strategic"
+
+    forbidden_knowledge:
+      - "Ruth knows Ahdia's global ops (until ch13)"
+      - "Ruth knows terminal trajectory specifics (this is setup, not reveal)"
+
+    firas_details:
+      status: "deceased"
+      new_reveal: "Was going to propose"
+      constraint: "Consistent with ch3 (Ruth found ring)"
+
+  # === SEEDS TO PLANT ===
+  seeds_to_plant:
+    - name: "Ruth will check with Ryu"
+      method: "Ruth decides to compare notes with Ryu"
+      foreshadows: "Month 8 discovery"
+
+    - name: "Degradation timeline mismatch"
+      method: "Numbers show more power use than Ahdia admits"
+      foreshadows: "Evidence of global ops"
+
+    - name: "First crack in friendship"
+      method: "Ruth hears lies, chooses trust for now"
+      foreshadows: "Trust eroding over months 2-7"
+
+    - name: "Treatment dependency"
+      method: "Ruth administers treatment, keeps Ahdia alive"
+      foreshadows: "Power imbalance in friendship"
+
+    - name: "Firas proposal reveal"
+      method: "Ruth tells Ahdia about the ring"
+      connects_to: "Ch3 sock drawer scene"
+
+  # === VOICE REQUIREMENTS ===
+  voice_requirements:
+    CHAR_002:  # Ruth
+      style: "Medical precision + emotional vulnerability"
+      patterns:
+        - "Doctor brain cataloging symptoms"
+        - "Friend mode overriding suspicion"
+        - "Grief surfacing in safe space"
+        - "Team leader burden"
+      physical: "Parkour/freerunning in Scene 2"
+
+    CHAR_001:  # Ahdia
+      style: "Deflection, TV references, genuine depression"
+      patterns:
+        - "Evasions too practiced"
+        - "Guilt visible but misinterpreted"
+        - "Wanting to tell truth, can't"
+        - "Hero complex justification"
+
+  # === FORBIDDEN ENTITIES (BLOCKING) ===
+  forbidden_entities:
+    - id: "FORBID_001"
+      name: "Clara"
+      detection: "Clara|Victor.*(wife|widow|married)"
+
+    - id: "FORBID_009"
+      name: "Shiba"
+      detection: "Shiba"
+      canonical: "Ryu Matsuda"
+
+  # === CONTINUITY CHECKS ===
+  continuity:
+    firas_ring:
+      ch3: "Ruth found ring in sock drawer"
+      ch7: "Ruth tells Ahdia about the ring (Victor found it when cleaning locker)"
+      note: "Slight variation okay - both show ring discovered"
+
+    ahdia_baseline:
+      ch1_end: "67-71%"
+      ch7_context: "Post-treatment but degradation higher than expected"
+      explanation: "Secret Jakarta mission (backend)"
+
+  # === OUTPUT SPEC ===
+  output:
+    type: "prose"
+    target_words: "2500-3500"
+    scenes: 2
+    povs: ["Ruth"]
+    tone: "Intimate, tense, quiet - two friends who care deeply, one hiding secrets"

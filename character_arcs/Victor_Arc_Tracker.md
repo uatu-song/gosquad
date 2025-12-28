@@ -30,7 +30,6 @@
 - Has relationships with people affected by gentrification/policing
 - Also knows cops personally (community policing meetings)
 - Sees humanity and failure on both sides
-- Wife murdered by gang (carries grief/rage)
 
 ### Skills
 - Bo staff combat (elegant, fluid strikes)
@@ -43,7 +42,6 @@
 ### Living Space/Work
 - Community center in poor neighborhood
 - Desk with flyers, donation jar (~$6 in coins)
-- Wedding photo: wife's face scratched out with black marker (deep gouges)
 
 ---
 
@@ -51,8 +49,8 @@
 
 ### Pre-Story State
 - **Role:** Crimson Sable, Go Squad community connection
-- **Relationships:** Team member, most tragic backstory (wife's murder)
-- **Emotional:** Warm but damaged, carrying grief
+- **Relationships:** Team member, in relationship with Leah
+- **Emotional:** Warm, grounded, practical
 
 ### Key Moments
 - **Chapter 11:** Rescues Battlea from construction site
@@ -62,7 +60,7 @@
 
 ### Book 1 End State
 - **Knowledge:** Knows about team's enhanced abilities, Ahdia's powers
-- **Emotional:** Grief channeled into protective community work
+- **Emotional:** Grounded, practical, connector
 - **Role:** Most grounded team member
 
 ---
@@ -76,7 +74,7 @@
 ---
 
 ### Opening State (Between Books)
-- **Emotional:** Carrying grief (wife's murder), channeled into work
+- **Emotional:** Grounded, practical—work gives purpose
 - **Role:** Connector—community networks enable everyone else's work
 - **Political:** Pragmatic reformist (between Tess's abolition and Ben's conservatism)
 - **Function:** The team's backbone and bridge
@@ -427,9 +425,9 @@
 - Continues doing the work regardless of outcome
 
 ### "You Don't Have to Be Fixed to Be Worthy"
-- Carries deep grief (wife's murder)
+- Carries weight of community responsibility
 - Still functions, still helps others
-- Worth through action despite damage
+- Worth through action and consistency
 
 ---
 

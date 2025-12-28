@@ -2,225 +2,305 @@
 
 ## Scene 1: The Footage
 
-Ben's apartment. 2 AM. Desk covered in files, multiple screens glowing, coffee cups forming geological strata.
+Two in the morning. Ben's apartment looked like a crime scene.
 
-The Tank Kain massacre footage played for the dozenth time. Frame by frame. Every angle he could find.
+Files covered every horizontal surface—coffee table, kitchen counter, the floor around his desk. Three monitors glowed in the darkness: primary display frozen on a grainy protest video, secondary showing police dispatch logs, tertiary running financial tracking software he'd borrowed from his FBI days.
 
-Six months since it happened. Fresh in public memory, fresher in his.
+He hadn't turned on the lights. Didn't need them. The screens provided enough illumination to work, and darkness felt appropriate for the kind of evidence he was reviewing.
 
-Kain running for President now. Campaign built on "tough choices" and "law and order." Using the massacre as proof he could make hard decisions.
+Tank Kain massacre. Six months ago. Fresh enough that the country still remembered, distant enough that most people had moved on to the next outrage.
 
-Ben paused the footage. Advanced one frame. Back. Forward.
+Kain was running for President now. "Tough on crime," the campaign slogan said. "Hard choices for hard times." The massacre footage played in every campaign ad—edited carefully, of course, to show only Kain's response. The armored vehicle. The decisive action. The candidate who didn't flinch when violence erupted.
 
-There.
+The footage Ben was watching showed something different.
 
-The violence didn't start with protesters. He'd suspected it from the first viewing, but suspicion wasn't evidence.
+He dragged the playhead back to 13:47. Again. For the forty-third time, if he was counting correctly. The protest had been peaceful until this moment—signs, chants, organized march along the permitted route. Standard demonstration, the kind that happened every weekend somewhere in America.
 
-A group moved through the crowd—body language wrong, positioning tactical. Not protesters. Not police. Something else.
+At 13:47, violence erupted.
 
-He tracked them through multiple camera angles. Same group. Starting fires. Breaking windows. Throwing the first rock at the police line.
+Ben isolated the frame and zoomed in. There—moving through the crowd—a group of six individuals. They wore protest gear. Black hoodies, face coverings, the kind of anonymizing uniform that real protesters sometimes adopted.
 
-Protesters trying to stop them. Visible in the footage. Ordinary people grabbing arms, shouting "not like this."
+But their body language was wrong.
 
-None of that made the news.
+He'd spent twenty years reading people. FBI training, military intelligence before that. Body language didn't lie the way words did. These six weren't protesters. They moved with purpose. Tactical positioning. Coordinated sight lines.
 
-Ben pulled up traffic camera records. CADENS clearance gave him access to things he shouldn't have.
+Operators.
 
-Kain's armored vehicle. Positioned two blocks away. Arrived forty minutes before the protest started. Before any violence.
+At 13:48, one of them threw the first object. Rock. Hit an officer's shield. At 13:49, another started a fire in a trash can. At 13:51, the third group member attacked a police line from behind.
 
-Either incredible foresight, or advance knowledge.
+Each action calculated. Each escalation precisely timed.
 
-He cross-referenced police dispatch logs. No calls for armored support until after violence erupted. So who ordered the vehicle positioned early?
+Ben had found them in multiple camera angles now—news crews, security footage, civilian phones that had been uploaded to social media before anyone realized their evidentiary value. The same six individuals, starting violence, then fading back into the crowd to let chaos spread.
 
-The requisition trail led to Kain's campaign security team. Not police. Not federal. Private.
+Agent provocateurs. Textbook tactics.
 
-Ben leaned back. Stared at the ceiling.
+Plant operatives. Start violence. Blame the target group. Justify response.
 
-This was planned.
+He pulled up another window: traffic camera feeds from the surrounding area. The armored vehicle that became Kain's campaign footage had been positioned two blocks from the protest site.
 
----
+It had arrived forty minutes before the march began.
 
-## Scene 2: The Pattern
+Forty minutes before violence erupted.
 
-Week two. Sleep becoming optional.
+Kain's team had positioned for response before there was anything to respond to.
 
-If Tank Kain was orchestrated, what else?
+Ben's hands were steady. Years of training kept them that way. But something cold was growing in his chest—the particular weight of seeing a pattern he couldn't unsee.
 
-Ben searched news archives. Kain-connected violence over the past year.
+Fourteen people had died. Forty-seven injured. Mostly protesters. Some police. Some bystanders who'd just been walking by when the world exploded.
 
-Seven major riots. Every city Kain visited for campaign events. Every one followed the same pattern: peaceful protest, sudden violence, Kain's "decisive response."
+Names scrolling on his screen. Faces. Maria Gutierrez, 34, community organizer. James Chen, 19, college sophomore. Denise Washington, 67, retired teacher.
 
-Every one boosted his polling.
+Not rioters. Not violent. Just people exercising their constitutional rights who happened to be in the blast radius when someone decided their deaths would make good campaign footage.
 
-Either coincidence—statistically impossible—or systematic.
+Sarah's name wasn't on this list.
 
-Ben tracked agent provocateurs through each incident. Different individuals, identical methods. Like they'd all trained from the same playbook.
+Different protest. Different city. Different day.
 
-The money trail appeared in week three. TRIOMF Solutions. Private security firm with minimal footprint, shell company ownership, offshore registration.
+Same tactics.
 
-Large payments from Kain's campaign every month before a riot. "Event security." "Risk assessment." "Crisis management."
+Ben closed his eyes. Opened them. Focused on the evidence.
 
-Ben documented everything. Timestamps. Sources. Chain of custody.
-
-This was what he was good at. Building cases. Following evidence.
-
-Not processing grief. Not healing. Just working.
-
-Sarah would understand. She'd always understood that about him.
-
-Sarah.
-
-He pushed the thought away. Focused on the files.
+Work was safer than remembering.
 
 ---
 
-## Scene 3: The FBI Meeting
+## Scene 2: The FBI Contact
 
-FBI field office. Ben's former colleague, Agent Marcus Webb—different Webb, common name—reviewed the evidence.
+The Caledonia FBI field office looked exactly like every other federal facility Ben had ever worked in. Fluorescent lights, government-issue furniture, the particular institutional smell of floor wax and coffee that had been sitting too long.
 
-"This is solid work." Webb flipped through the timeline analysis. "Tank Kain, the seven other incidents, TRIOMF connections..."
+He'd worn a suit. First time in months. The briefcase in his hand contained everything—printouts, USB drives, timeline documents, his comprehensive analysis.
 
-"It's systematic," Ben said. "Campaign-wide strategy."
+Agent Marcus Webb met him in the lobby. Former colleague, still active duty. They'd worked cases together back when Ben was stationed in Caledonia, before Sarah, before everything changed.
 
-"I see that." Webb closed the folder. "You know what happens if we investigate a presidential candidate."
+"Ben." Webb shook his hand, grip firm but careful. "You look like shit."
 
-"We do our jobs."
+"Thanks. I've been sleeping great."
 
-"We get eaten alive." Webb leaned forward. "Political pressure, media circus, career destruction. You sure you want that fight?"
+"I can tell." Webb gestured toward the elevator. "Conference room six. Pulled the morning clear when you called."
 
-"Evidence matters more than politics."
+They rode up in silence. The building felt familiar and foreign simultaneously—like visiting a house you used to live in after someone else had repainted it.
 
-"Does it?" Webb's expression was unreadable. "Hope so. I'll take this to my supervisor. Preliminary review, see if we can get authorization for deeper investigation."
+Conference room six had windows overlooking the city. Ben set up his materials while Webb poured coffee neither of them would drink.
 
-"Timeline?"
+"Tank Kain massacre," Ben said. "I've been reviewing the footage."
 
-"Weeks. Maybe months." Webb shrugged. "This is proper procedure. Presidential campaign investigation requires Director-level approval, possibly DOJ."
+"Lot of people have reviewed that footage."
 
-Ben understood. He'd spent decades in the system. Knew how it worked.
+"Not like this." Ben pulled up the first video on the room's display screen. "Watch the crowd at 13:47. These six individuals."
 
-The system worked. If you trusted it.
+Webb watched. His expression didn't change, but Ben knew him well enough to read the subtle shift—the way his attention sharpened, the micro-adjustment in his posture that meant he was actually seeing what Ben was showing him.
 
-"One thing." Webb walked him out. "Kain has connections. Resources. Legal teams that specialize in burying investigations. If this moves forward, expect resistance."
+"Body language is wrong," Webb said.
 
-"I'm not afraid of lawyers."
+"Operators. Moving tactical." Ben advanced the video frame by frame. "First violence starts here. Then here. Then here. Each escalation precisely timed. Coordinated sight lines, professional execution."
 
-"You should be." Webb met his eyes. "I've seen good agents destroyed by political investigations. Just... eyes open."
+"Agent provocateurs."
 
-Ben left with his evidence package delivered. Process begun.
+"Textbook." Ben pulled up the traffic camera data. "Kain's armored vehicle was positioned two blocks away. Arrived forty minutes before the protest started."
 
-The system would work.
+Webb was quiet for a long moment. His coffee sat untouched.
 
-Had to work.
+"This is solid work, Ben."
 
----
+"There's more." Financial records now—shell company analysis, payment timelines. "Security firm called TRIOMF Solutions. Large payments from Kain's campaign every month. Vague service descriptions—'event security,' 'risk assessment.' Payments spike before each incident."
 
-## Scene 4: Fusion Discoveries
+"Each incident?"
 
-The TRIOMF trail branched in unexpected directions.
+"Seven riots in the past year. All in cities where Kain made campaign stops. All following the same pattern—peaceful protest, sudden violence, Kain gets his 'decisive response' footage. Polling numbers go up every time."
 
-New expenditure series. Massive. Southwest facility acquisition—land, construction, specialized equipment. Different from riot funding.
+Webb ran a hand over his face. The gesture was tired. Older than Ben remembered him being.
 
-Ben cross-referenced equipment manifests: magnetic coil arrays, plasma containment vessels, cooling systems.
+"You understand what you're bringing me."
 
-Fusion reactor components.
+"Evidence of systematic campaign violence orchestrated by a presidential candidate."
 
-Kain had announced the American Energy Independence Act same week. Artificial sun prototype. Type I civilization rhetoric. Ten months to operational prototype.
+"Evidence that, if pursued, puts us in direct conflict with one of the most powerful political operations in the country."
 
-Scientists saying impossible in that timeline. Kain pushing anyway.
+"The evidence is solid, Marcus. The analysis holds up."
 
-Ben dug deeper. Construction permits rushed. Environmental reviews incomplete. Safety inspections waived. EPA officials raising concerns, being overruled.
+"I'm not questioning your analysis." Webb leaned forward. "I'm questioning whether you understand what happens next. This isn't a normal case. Presidential campaigns have protection most investigations don't have to deal with. Political pressure. Media attention. Legal teams with unlimited resources."
 
-Same pattern as the riots. Cut corners. Prioritize speed. Ignore consequences.
+"So we let him get away with it?"
 
-But this time, the stakes were nuclear-level.
+"I'm not saying that." Webb's voice was careful. "I'm saying authorization for this kind of investigation comes from the Director's office. Possibly DOJ. That's weeks of bureaucratic process, minimum. And every step of that process, there will be people trying to shut it down."
 
-Catastrophic failure scenarios from academic papers: magnetic field collapse, plasma containment breach. Hundred million degrees released uncontrolled. Vaporization. Radiation. Environmental devastation for decades.
+Ben felt the frustration rising. Pushed it back down. Webb wasn't the enemy. Webb was doing exactly what a professional investigator should do—laying out the obstacles, making sure Ben understood the terrain.
 
-Ten months wasn't safe. Three to five years minimum, according to every expert not on Kain's payroll.
+"I'll wait for authorization," Ben said. "Follow proper procedure. That's how the system works."
 
-Ben added the fusion evidence to his case. Pattern of recklessness. Lives endangered for political optics.
+Something flickered across Webb's face. Not quite skepticism—more like the particular expression of someone who'd seen too many proper procedures lead nowhere.
 
-Different goal—clean energy was genuinely good. But same methods. Same disregard for safety.
+"I'll bring this to my supervisors. Start the preliminary review process." Webb gathered the materials Ben had spread across the table. "You've done good work here, Ben. Thorough. Professional."
 
-Same man.
+"But?"
 
----
+"But I've seen investigations like this before. Good cases. Solid evidence. The kind of work that should lead to indictments." Webb paused at the door. "Sometimes it does. Sometimes political pressure buries it so deep no one ever sees it again. I'm not telling you not to pursue this. I'm telling you to go in with your eyes open."
 
-## Scene 5: Sarah's Connection
+Ben nodded. The weight in his chest hadn't lifted.
 
-Ben avoided Sarah's protest footage for weeks.
+"Sarah would have understood," he said quietly. "Why I have to do this."
 
-Finally, he couldn't.
+Webb's expression softened. The professional mask slipping for just a moment.
 
-Eight months ago. Different city. Different cause. Peaceful demonstration turned violent. Sarah caught in the crush.
+"Yeah. She would have."
 
-Died helping someone else escape.
+He left. Ben sat alone in the conference room, evidence scattered around him like fragments of a bomb that hadn't gone off yet.
 
-He watched the footage. Military precision applied to personal devastation.
+The system would work. Evidence mattered. That was what he had to believe.
 
-Same tactical signature. Agent provocateurs. Coordinated violence.
-
-Not Kain's agents specifically—different campaign event, different target. But same playbook. Same methods.
-
-Sarah died from riot orchestration tactics. Manufactured crisis for someone's political gain.
-
-Her death wasn't random tragedy.
-
-It was murder by algorithm.
-
-Ben sat on his kitchen floor for an hour. Grief and rage merging into something harder than either.
-
-Then he got back to work.
+Anything else was unbearable.
 
 ---
 
-## Scene 6: Submission and Hope
+## Scene 3: Expanded Investigation
 
-Morning. Case complete. Professional presentation, federal investigation standard.
+One week later. Ben's apartment had transformed from crime scene to something worse—the particular organized chaos of obsession.
 
-Everything sourced. Everything verified. Evidence of systematic campaign violence, pattern recognition across incidents, financial connections to TRIOMF, fusion project safety violations.
+Files sorted by date, color-coded by category. Wall covered in photos and timeline markers, connected by string like a movie detective's conspiracy board because the cliché existed for a reason: it worked.
 
-And Sarah.
+Seven riots. Seven cities. Seven instances of the same pattern.
 
-He didn't emphasize the personal connection. Wanted this about justice, not vendetta.
+Portland. Minneapolis. Atlanta. Phoenix. Detroit. Denver. Chicago.
 
-Though of course it was both.
+Each one preceded by TRIOMF payments. Each one featuring the same tactical signatures—agent provocateurs, coordinated violence, Kain campaign response teams already positioned before chaos erupted.
 
-Ben showered. Shaved. Put on proper clothes.
+He'd mapped the financial trail through CADENS databases. His clearance still worked, even in semi-retirement. Enhanced access that let him follow money through shell companies, offshore registrations, the particular labyrinth of corporate structures designed to hide ownership.
 
-The evidence package fit in a single briefcase. Months of work. Thousands of hours. Everything.
+TRIOMF Solutions. Owned by a holding company. Owned by another holding company. Owned by—
 
-Ruth's text appeared: *Team meeting tomorrow. Will you be there?*
+The trail got murky there. Deliberately obscured. But the payments were clear, and the timing was undeniable.
 
-He typed back: *Yes. Will explain everything soon.*
+Violence follows Kain. Every time.
 
-He'd return as a hero. Case delivered. Conspiracy exposed. Kain stopped.
+The fusion project had been a surprise.
 
-Sarah's death given meaning.
+Ben noticed it while reviewing TRIOMF expenditures, looking for more riot-funding patterns. A new payment series, starting three weeks ago. Different scale—construction costs, equipment purchases, facility acquisition.
 
-Walking to the FBI office, briefcase in hand, Ben felt hope for the first time in eight months.
+Southwest lab. Stellarator prototype. American Energy Independence Act.
 
-The system would work.
+Kain's campaign promise: artificial sun, American jobs, clean energy dominance. Announced the same week the payments started.
 
-The evidence was undeniable.
+Ben pulled construction permits. Environmental reviews. Safety inspection schedules.
 
-Truth would matter.
+Permits rushed through in weeks instead of months. Environmental impact statements incomplete, sections waived entirely. Safety inspections scheduled but not completed before construction began.
+
+EPA communication logs showed officials raising concerns. Being overruled. Political appointees pushing approval over career scientists' objections.
+
+The same pattern. Cut corners, prioritize speed, ignore safety.
+
+Except fusion wasn't crowd control. Fusion was nuclear-level energy release. A hundred million degrees of plasma contained by magnetic fields that had never been tested at this scale.
+
+Scientists said three to five years minimum for safe prototype development. Kain promised ten months.
+
+Catastrophic failure scenarios from academic papers: magnetic field collapse, plasma containment breach, thermal devastation in the blast radius. Environmental contamination lasting decades.
+
+Ben documented everything. Safety violations. Environmental violations. Timeline pressure. Scientists' concerns noted in emails, then silenced.
+
+The same shell company funding riots was funding a reactor that could kill thousands if it failed.
+
+Different scale. Same recklessness.
+
+He added the fusion evidence to his comprehensive case. Another pattern. Another demonstration that Kain touched nothing without corrupting it.
+
+Good goals—clean energy, law and order—twisted by execution that valued image over safety, polling over lives.
+
+Sarah would have seen this clearly. Would have named the pattern without hesitation.
+
+But Sarah wasn't here.
+
+Ben worked until his eyes burned. Until the numbers blurred and the coffee turned cold and the apartment felt like it was shrinking around him.
+
+He didn't stop.
 
 ---
 
-He didn't know yet.
+## Scene 4: The Parallel
 
-Month 8, the evidence would leak.
+Four in the morning. Ben caught his reflection in the darkened window and barely recognized himself.
 
-Month 9, Kain's polling would rise. "Decisive action." "Hard choices." The evidence reframed as strength.
+Dark circles under his eyes. Weight loss visible in his face, his clothes hanging looser than they should. He hadn't shaved in—how many days? The stubble had graduated to something approaching an actual beard.
 
-Month 12, Kain would win anyway.
+The apartment looked like his reflection felt. Dishes piled in the sink. Takeout containers on surfaces he'd cleared of files only to bury under new evidence. The military precision he'd maintained his whole life had dissolved into something messier, more desperate.
 
-But Ben didn't know that yet.
+Obsession replacing discipline.
 
-He still had hope.
+Somewhere in Eastern Europe—he didn't know exactly where, would never know—Ahdia was doing the same thing. Different investigation, different scale, but the same pattern. Working alone. Carrying secret burden. Convinced only she could do this.
 
-He still believed.
+He didn't know about her operations. Didn't know she was burning through her cellular integrity preventing genocides, lying to the team, using Ryu as her enabler. But if he'd seen it, he would have recognized the shape.
+
+Hero complex. Isolation. Work as avoidance.
+
+Both of them drowning in purpose to avoid feeling anything else.
+
+His phone showed seventeen missed calls. Ruth (4). Victor (3). Tess (2). Team group chat (47 unread messages). He'd stopped responding days ago. Couldn't explain what he was doing without revealing the investigation, and couldn't stop long enough to make up convincing lies.
+
+*Team meeting tomorrow*, Ruth's latest message said. *Will you be there?*
+
+He should go. Should reconnect with the people who cared about him. Should let them help carry whatever weight he was accumulating.
+
+But the case was almost done. Just a little more. Finish the documentation, prepare the submission, then he'd explain everything. They'd understand. They'd see why it had to be this way.
+
+Ben turned back to his screens. More evidence to catalog. More patterns to document. More work to fill the space where grief wanted to live.
+
+Sarah had been an activist. Had believed in the power of collective action, community organizing, people working together to change systems. She would have told him not to do this alone. Would have insisted that isolation was the enemy of justice.
+
+But Sarah was dead.
+
+And the only way Ben knew to make that mean something was to stop the man whose tactics had killed her.
+
+He worked until dawn crept through the windows. Until his hands finally started shaking too hard to type.
+
+Then he slept for three hours and started again.
+
+---
+
+## Scene 5: Submission and Hope
+
+Morning light. Ben stood in front of his bathroom mirror, actually seeing himself for the first time in weeks.
+
+He'd shaved. Showered. Put on a clean suit—the same one he'd worn to Webb's office, now pressed and professional. The dark circles remained, but the wildness was contained. Federal investigator mode, activated by conscious effort.
+
+The briefcase on his bed contained everything. Master document. Evidence summaries. Timeline analysis. Financial tracking. Video timestamps with frame-by-frame breakdowns. Fusion project safety violations. Everything sourced, verified, timestamped, organized by category.
+
+Months of work compressed into physical form. Eighteen inches of documentation that could end a presidential campaign.
+
+If the system worked the way it was supposed to.
+
+Ben believed it would. Had to believe it would. That was the foundation his entire worldview rested on—the conservative faith that institutions served justice, that proper procedure led to proper outcomes, that presenting truth clearly enough would make the truth matter.
+
+Webb's warning echoed in his memory. *Political pressure. Idealism gets crushed. I've seen good cases buried.*
+
+But those were other cases. Other evidence. Not this comprehensive. Not this undeniable.
+
+Ben picked up his phone. Typed a response to Ruth's message: *Yes. Will explain everything soon.*
+
+Soon he'd return to the team. Soon he'd share what he'd found. Soon they'd understand why he'd disappeared, why he'd worked in isolation, why he couldn't stop until the case was complete.
+
+Soon Sarah's death would mean something.
+
+He gathered the briefcase. Checked his reflection one more time. Professional. Competent. Ready.
+
+The walk to the FBI field office took twenty minutes. Ben used the time to organize his thoughts, rehearse his presentation, prepare for the questions Webb's supervisors would ask. Every objection anticipated. Every gap in the evidence acknowledged and explained.
+
+This was what he was good at. Building cases. Following evidence. Trusting process.
+
+The system would work. It had to work.
+
+Because if evidence this comprehensive, this undeniable, this carefully documented couldn't stop a man who orchestrated violence for political gain—
+
+Then what was any of it for?
+
+Ben pushed through the field office doors. Ready to submit. Ready to wait for proper procedure to unfold.
+
+Ready to believe.
+
+He didn't know yet that the evidence wouldn't matter. That CADENS would classify portions of his case as national security concerns. That witnesses would be intimidated into silence. That months of proper procedure would lead to nothing—except a desperate leak in Month 8, followed by the devastating revelation that truth didn't change minds, that Kain's polling would actually rise when the evidence went public, reframed by fear into proof of his willingness to make "hard choices."
+
+He didn't know that his faith in institutions would shatter. That Sarah's death would remain meaningless no matter how much work he poured into giving it purpose. That the system he trusted would fail him so completely he'd spend years rebuilding his understanding of how the world worked.
+
+Ben walked into the FBI field office with hope.
+
+It was the last time he'd feel it for a very long time.
 
 ---
 

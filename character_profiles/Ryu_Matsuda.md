@@ -1,4 +1,4 @@
-# Dr. Shiba Ryu
+# Dr. Ryu Matsuda
 
 ## Basic Information
 - **Age:** Mid-to-late 20s (closer to Ahdia's age)

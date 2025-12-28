@@ -238,7 +238,7 @@ Rahs Jericho appears to be a brilliant but marginalized scientist who found legi
 
 ## Key Relationships
 
-### Dr. Shiba Ryu
+### Dr. Ryu Matsuda
 - Ryu consults Jericho about Ahdia's condition
 - Jericho offers mentorship
 - Ryu trusts him (sees him as brilliant but marginalized colleague)

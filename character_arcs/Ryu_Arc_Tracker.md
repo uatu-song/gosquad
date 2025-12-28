@@ -1,4 +1,4 @@
-# Dr. Shiba Ryu - Character Arc Tracker
+# Dr. Ryu Matsuda - Character Arc Tracker
 
 **Purpose:** Track Ryu's emotional state, knowledge, relationships, and capabilities at each major story point
 

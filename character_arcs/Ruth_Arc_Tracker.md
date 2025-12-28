@@ -33,17 +33,25 @@
 
 ---
 
-## Book 2: Leadership Burden → Can't Save Everyone → Acceptance
+## Book 2: Three Intertwined Arcs
 
 **Timeline:** 12 months (Month 1 = Isaiah riot → Month 12 = Election Night)
-**Arc Type:** Caretaker limits—learning you can't save everyone
+
+**ARC 1 - Grief:** Avoidance through overwork → Cracks (Firas ring) → Buries again → Can't outrun it (Leta) → Acceptance
+
+**ARC 2 - Leadership:** Drowning in responsibility → Accepts institutional help (Bourn) → Discovers enabling → Sets boundaries → Leadership is presence, not control
+
+**ARC 3 - Ahdia Relationship:** Caretaker/enabler → Lies for her → Discovers betrayal → Confrontation → Boundaries with love → "Saved each other"
+
+**NARRATIVE NOTE:** When Ahdia goes dark (global ops, lying to team), Ruth becomes the narrative perspective. Voice shifts from Ahdia's TV-reference internal monologue to Ruth's grounded, medical, observational POV. Reader experiences Ahdia's absence the way the team does.
 
 ---
 
 ### Opening State (Between Books)
-- **Emotional:** Confident leader, has team together
-- **Role:** Team leader, medic, Ahdia's best friend
-- **Relationships:** Close with Ahdia, trusted by whole team
+- **Emotional:** Unprocessed grief masked as hyper-competence. Firas died, was going to propose.
+- **Coping:** Overwork. If busy enough, doesn't have to feel. Team leader, medic, treatment provider, emotional support for everyone.
+- **Role:** Drowning but won't admit it. Thinks leadership means preventing all bad outcomes.
+- **Relationships:** Caretaker to Ahdia—needs someone to save so she doesn't have to feel her own loss.
 - **Knowledge:** Knows Ahdia has powers, believes costs are manageable
 
 ---

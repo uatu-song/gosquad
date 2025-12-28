@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 2A Character Timeline</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #e94560;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .timeline-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+
+        .timeline-header {
+            display: flex;
+            position: sticky;
+            top: 0;
+            background: #1a1a2e;
+            z-index: 100;
+            border-bottom: 2px solid #e94560;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .character-label {
+            width: 120px;
+            min-width: 120px;
+            font-weight: bold;
+            padding: 8px;
+            background: #16213e;
+        }
+
+        .chapter-headers {
+            display: flex;
+            flex: 1;
+        }
+
+        .chapter-header {
+            width: 140px;
+            min-width: 140px;
+            text-align: center;
+            padding: 8px 4px;
+            font-size: 11px;
+            border-left: 1px solid #333;
+        }
+
+        .chapter-header .ch-num {
+            font-weight: bold;
+            color: #e94560;
+        }
+
+        .chapter-header .month {
+            color: #888;
+            font-size: 10px;
+        }
+
+        .character-row {
+            display: flex;
+            border-bottom: 1px solid #333;
+        }
+
+        .character-row:hover {
+            background: rgba(233, 69, 96, 0.1);
+        }
+
+        .character-name {
+            width: 120px;
+            min-width: 120px;
+            padding: 10px 8px;
+            font-weight: bold;
+            background: #16213e;
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .character-events {
+            display: flex;
+            flex: 1;
+        }
+
+        .event-cell {
+            width: 140px;
+            min-width: 140px;
+            padding: 8px 6px;
+            border-left: 1px solid #333;
+            font-size: 11px;
+            line-height: 1.4;
+            position: relative;
+        }
+
+        .event-cell.present {
+            background: rgba(76, 175, 80, 0.15);
+        }
+
+        .event-cell.absent {
+            background: rgba(255, 152, 0, 0.1);
+        }
+
+        .event-cell.crisis {
+            background: rgba(244, 67, 54, 0.2);
+        }
+
+        .event-cell.hidden {
+            background: rgba(156, 39, 176, 0.15);
+        }
+
+        .event-cell.not-featured {
+            background: rgba(100, 100, 100, 0.1);
+            color: #666;
+        }
+
+        .baseline {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 10px;
+            margin-bottom: 3px;
+        }
+
+        .baseline.warning {
+            background: #ff9800;
+        }
+
+        .baseline.critical {
+            background: #f44336;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 9px;
+            margin: 1px 2px 1px 0;
+        }
+
+        .tag.seed { background: #3f51b5; }
+        .tag.bloom { background: #9c27b0; }
+        .tag.grief { background: #607d8b; }
+        .tag.institutional { background: #009688; }
+        .tag.investigation { background: #795548; }
+        .tag.harassment { background: #f44336; }
+        .tag.eidolon { background: #673ab7; }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #16213e;
+            border-radius: 8px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 14px;
+            border-radius: 3px;
+        }
+
+        .future-chapters {
+            border-left: 3px dashed #e94560;
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #e94560, transparent);
+            margin: 10px 0;
+        }
+
+        .notes {
+            margin-top: 30px;
+            padding: 20px;
+            background: #16213e;
+            border-radius: 8px;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .notes h3 {
+            color: #e94560;
+            margin-bottom: 10px;
+        }
+
+        .notes ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book 2A Character Timeline</h1>
+    <p class="subtitle">Chapters 1-19 | Month 1 → Month 6-7 | Ends with Ruth discovering Exile Island</p>
+
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(76, 175, 80, 0.4);"></div>
+            <span>Present/Active</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(255, 152, 0, 0.3);"></div>
+            <span>Absent (excuses)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(156, 39, 176, 0.3);"></div>
+            <span>Secret Ops (hidden from reader)</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(244, 67, 54, 0.3);"></div>
+            <span>Crisis Moment</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: rgba(100, 100, 100, 0.2);"></div>
+            <span>Not Featured</span>
+        </div>
+        <div class="legend-item">
+            <span class="tag seed">SEED</span>
+            <span>Planted</span>
+        </div>
+        <div class="legend-item">
+            <span class="tag bloom">BLOOM</span>
+            <span>Payoff</span>
+        </div>
+    </div>
+
+    <div class="timeline-container">
+        <div class="timeline-header">
+            <div class="character-label">CHARACTER</div>
+            <div class="chapter-headers">
+                <div class="chapter-header"><div class="ch-num">Ch 1</div><div class="month">Month 1</div></div>
+                <div class="chapter-header"><div class="ch-num">Ch 2</div><div class="month">Month 1</div></div>
+                <div class="chapter-header"><div class="ch-num">Ch 3</div><div class="month">Month 1</div></div>
+                <div class="chapter-header"><div class="ch-num">Ch 4</div><div class="month">Month 1</div></div>
+                <div class="chapter-header"><div class="ch-num">Ch 5</div><div class="month">Month 1</div></div>
+                <div class="chapter-header"><div class="ch-num">Ch 6</div><div class="month">Month 1</div></div>
+                <div class="chapter-header"><div class="ch-num">Ch 7</div><div class="month">Month 2</div></div>
+                <div class="chapter-header"><div class="ch-num">Ch 8</div><div class="month">Month 2</div></div>
+                <div class="chapter-header"><div class="ch-num">Ch 9</div><div class="month">Month 2</div></div>
+                <div class="chapter-header future-chapters"><div class="ch-num">Ch 10-13</div><div class="month">Month 2-5</div></div>
+                <div class="chapter-header future-chapters"><div class="ch-num">Ch 14-16</div><div class="month">Month 5-6</div></div>
+                <div class="chapter-header future-chapters"><div class="ch-num">Ch 17-19</div><div class="month">Month 6-7</div></div>
+            </div>
+        </div>
+
+        <!-- AHDIA -->
+        <div class="character-row">
+            <div class="character-name">AHDIA</div>
+            <div class="character-events">
+                <div class="event-cell present">
+                    <span class="baseline">95%</span><br>
+                    Riot. Burns 47 min saving 23 people.
+                    <span class="tag eidolon">EIDOLON</span>
+                </div>
+                <div class="event-cell crisis">
+                    <span class="baseline warning">88%</span><br>
+                    Assassination. Fails to save Geneva. Burns 3 min.
+                </div>
+                <div class="event-cell present">
+                    <span class="baseline warning">71%</span><br>
+                    Debrief. Treatment. Manipulates Ryu for intel. Witnesses Ruth's grief (ring).
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell not-featured">
+                    <span class="baseline warning">71%</span><br>
+                    (Bourn/Victor/Ruth focus)
+                </div>
+                <div class="event-cell absent">
+                    <span class="baseline warning">~68%</span><br>
+                    "Treatment." Absent during mob attack. Watching footage, guilty.
+                </div>
+                <div class="event-cell not-featured">
+                    <span class="baseline warning">~68%</span><br>
+                    (Tess/Ben focus)
+                </div>
+                <div class="event-cell absent">
+                    <span class="baseline warning">~65%</span><br>
+                    "Treatment." Ruth drives home suspicious.
+                </div>
+                <div class="event-cell not-featured">
+                    <span class="baseline warning">~63%</span><br>
+                    (Ben investigation focus)
+                </div>
+                <div class="event-cell not-featured">
+                    <span class="baseline warning">~63%</span><br>
+                    (Victor/Leah focus)
+                </div>
+                <div class="event-cell hidden">
+                    <span class="baseline warning">63%→55%</span><br>
+                    Secret global ops. Team sees "depression."
+                    <span class="tag bloom">HIDDEN</span>
+                </div>
+                <div class="event-cell hidden">
+                    <span class="baseline critical">55%→54%</span><br>
+                    Full benevolent dictator. Investigations converge.
+                </div>
+                <div class="event-cell crisis">
+                    <span class="baseline critical">54%→50%</span><br>
+                    CONFRONTATION. Ruth discovers baseline. EXILE ISLAND REVEALED.
+                    <span class="tag bloom">BLOOM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RUTH -->
+        <div class="character-row">
+            <div class="character-name">RUTH</div>
+            <div class="character-events">
+                <div class="event-cell present">
+                    Crisis mode. Team leader.
+                </div>
+                <div class="event-cell present">
+                    Crisis mode. Failed to protect Geneva.
+                </div>
+                <div class="event-cell crisis">
+                    Grief breaks through. Confesses to Ahdia: found ring in Firas's drawer.
+                    <span class="tag grief">GRIEF</span>
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell present">
+                    Bourn approaches. First meeting. Seeds of capture.
+                    <span class="tag seed">SEED</span>
+                    <span class="tag institutional">INST</span>
+                </div>
+                <div class="event-cell present">
+                    Defends Ahdia to team. "Treatment ran long."
+                </div>
+                <div class="event-cell not-featured">
+                    (Tess/Ben focus)
+                </div>
+                <div class="event-cell present">
+                    Drives home. Suspicious of Ahdia. Grieving Firas.
+                </div>
+                <div class="event-cell not-featured">
+                    (Ben investigation focus)
+                </div>
+                <div class="event-cell not-featured">
+                    (Victor/Leah focus)
+                </div>
+                <div class="event-cell present">
+                    Rationalizing. CADENS liaison forming. Bourn relationship deepening.
+                    <span class="tag institutional">INST</span>
+                </div>
+                <div class="event-cell present">
+                    Can't ignore anymore. Full liaison. Dependent on Bourn.
+                </div>
+                <div class="event-cell crisis">
+                    CONFRONTATION with Ahdia. Discovers EXILE ISLAND with Ryu.
+                    <span class="tag bloom">BLOOM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- BEN -->
+        <div class="character-row">
+            <div class="character-name">BEN</div>
+            <div class="character-events">
+                <div class="event-cell present">
+                    Present. Fighting.
+                </div>
+                <div class="event-cell present">
+                    Finds sniper nest. Translocation signature.
+                </div>
+                <div class="event-cell present">
+                    Investigation. EM trace. Exhausted.
+                    <span class="tag investigation">INVEST</span>
+                </div>
+                <div class="event-cell not-featured">
+                    (Bourn/Victor/Ruth focus)
+                </div>
+                <div class="event-cell present">
+                    Isaiah exoneration. Webb walks. First crack in faith.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell crisis">
+                    Alone. Sarah grief surfaces. Work as avoidance failing.
+                    <span class="tag grief">GRIEF</span>
+                </div>
+                <div class="event-cell not-featured">
+                    (Ahdia/Ruth focus)
+                </div>
+                <div class="event-cell present">
+                    Building Kain case. Footage. Pattern recognition. FBI contact.
+                    <span class="tag investigation">INVEST</span>
+                </div>
+                <div class="event-cell not-featured">
+                    (Victor/Leah focus)
+                </div>
+                <div class="event-cell present">
+                    Case building. "Evidence will matter."
+                </div>
+                <div class="event-cell present">
+                    Case complete. Submits to FBI. Believes system will work.
+                    <span class="tag seed">SEED</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TESS -->
+        <div class="character-row">
+            <div class="character-name">TESS</div>
+            <div class="character-events">
+                <div class="event-cell present">
+                    Present. Fighting.
+                </div>
+                <div class="event-cell present">
+                    Present.
+                </div>
+                <div class="event-cell present">
+                    Investigation support.
+                </div>
+                <div class="event-cell not-featured">
+                    (Bourn/Victor/Ruth focus)
+                </div>
+                <div class="event-cell present">
+                    Watches father protect Webb. Warns Leta.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell present">
+                    Domestic with Leta. Early harassment (3 accounts). Protective.
+                    <span class="tag harassment">HARASS</span>
+                </div>
+                <div class="event-cell not-featured">
+                    (Ahdia/Ruth focus)
+                </div>
+                <div class="event-cell not-featured">
+                    (Ben investigation focus)
+                </div>
+                <div class="event-cell not-featured">
+                    (Victor/Leah focus)
+                </div>
+                <div class="event-cell present">
+                    Investigating father's department. Harassment escalating. Overprotective of Leta.
+                </div>
+                <div class="event-cell present">
+                    Investigation continues. Harassment worsening.
+                    <span class="tag harassment">HARASS</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- LETA -->
+        <div class="character-row">
+            <div class="character-name">LETA</div>
+            <div class="character-events">
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell present">
+                    Mentioned. "9 months until death" title card.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell present">
+                    Domestic with Tess. Organizing. 3 burner accounts.
+                    <span class="tag harassment">HARASS</span>
+                </div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell crisis">
+                    Harassment escalates. Death threats. Doxxing.
+                    <span class="tag harassment">HARASS</span>
+                </div>
+                <div class="event-cell crisis">
+                    Continues organizing despite threats. (Book 2B: killed by Webb)
+                </div>
+            </div>
+        </div>
+
+        <!-- VICTOR -->
+        <div class="character-row">
+            <div class="character-name">VICTOR</div>
+            <div class="character-events">
+                <div class="event-cell present">
+                    Present. Fighting. Arrested. Organizer backstory to Leah.
+                </div>
+                <div class="event-cell present">
+                    Present. Memorial.
+                </div>
+                <div class="event-cell present">
+                    Present. Team debrief.
+                </div>
+                <div class="event-cell crisis">
+                    Attacked by fear-manipulated civilians. Eidolon effect.
+                    <span class="tag eidolon">EIDOLON</span>
+                </div>
+                <div class="event-cell present">
+                    Present for mob attack.
+                </div>
+                <div class="event-cell not-featured">
+                    (Tess/Ben focus)
+                </div>
+                <div class="event-cell not-featured">
+                    (Ahdia/Ruth focus)
+                </div>
+                <div class="event-cell not-featured">
+                    (Ben investigation focus)
+                </div>
+                <div class="event-cell present">
+                    Teaches Leah "but" vs "and." Resistance practice seeded.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell present">
+                    Coordinated attacks. Teaching resistance. (Book 2B: election night)
+                </div>
+            </div>
+        </div>
+
+        <!-- LEAH -->
+        <div class="character-row">
+            <div class="character-name">LEAH</div>
+            <div class="character-events">
+                <div class="event-cell present">
+                    Bails Victor out. Academy visit. "City safety" deflection. Academy seed planted.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell present">Present. Memorial.</div>
+                <div class="event-cell present">Present. Team debrief.</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell present">Silent during Isaiah verdict.</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell present">
+                    Learns "but" vs "and" from Victor. Will fail to apply.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell crisis">
+                    SILENT on Leta harassment. White moderate arc.
+                    <span class="tag bloom">BLOOM</span>
+                </div>
+                <div class="event-cell not-featured">
+                    Still silent. (Book 2B: finally speaks, too late)
+                </div>
+            </div>
+        </div>
+
+        <!-- RYU -->
+        <div class="character-row">
+            <div class="character-name">RYU</div>
+            <div class="character-events">
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell present">
+                    Treatment. Agrees to "look into" intel. First line crossed.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">Treatment (off-page)</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">Treatment</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell hidden">
+                    Full enabler. Treatment + intel + translocation coords.
+                </div>
+                <div class="event-cell crisis">
+                    AR-RYU SYSTEM DISCOVERED with Exile Island.
+                    <span class="tag bloom">BLOOM</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOURN -->
+        <div class="character-row">
+            <div class="character-name">BOURN</div>
+            <div class="character-events">
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell present">CADENS briefing.</div>
+                <div class="event-cell present">
+                    Patterson threatens CADENS. Approaches Ruth.
+                    <span class="tag seed">SEED</span>
+                    <span class="tag institutional">INST</span>
+                </div>
+                <div class="event-cell present">Names Eidolon.</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell present">
+                    Ruth relationship deepening. Institutional capture.
+                </div>
+                <div class="event-cell present">
+                    Revealed as ally. Open coordination with Ruth.
+                </div>
+            </div>
+        </div>
+
+        <!-- WEBB -->
+        <div class="character-row">
+            <div class="character-name">WEBB</div>
+            <div class="character-events">
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell crisis">
+                    Exonerated. Back on duty. Armed, cleared.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">On patrol. (Book 2B: kills Leta)</div>
+            </div>
+        </div>
+
+        <!-- PRIME -->
+        <div class="character-row">
+            <div class="character-name">PRIME</div>
+            <div class="character-events">
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">Watching (unknown)</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell hidden">
+                    On rooftop watching Ahdia.
+                    <span class="tag seed">SEED</span>
+                </div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell hidden">Watching</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell not-featured">—</div>
+                <div class="event-cell hidden">Watching, not interfering. (Book 2B: reveals herself)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notes">
+        <h3>Book 2A ends with Ruth discovering Exile Island (Ch 19, Month 7)</h3>
+
+        <h3 style="margin-top: 20px;">Book 2B Preview (Month 8-12)</h3>
+        <ul>
+            <li><strong>Month 8:</strong> Ben's evidence leaks. Kain's polling RISES ("decisive action").</li>
+            <li><strong>Month 9:</strong> Leah finally speaks up about Leta's harassment. Too late, clumsy.</li>
+            <li><strong>Month 11:</strong> Protest goes awry. Webb kills Leta. Tess becomes vigilante.</li>
+            <li><strong>Month 12:</strong> Election night. Victor's resistance 60% effective—insufficient. Kain wins. Prime reveals herself.</li>
+            <li><strong>Ahdia:</strong> Baseline continues declining toward &lt;10%.</li>
+        </ul>
+
+        <h3 style="margin-top: 20px;">The Undercurrent: "Why Didn't You Save Her?"</h3>
+        <ul>
+            <li><strong>Ahdia:</strong> "I have time powers and couldn't save Geneva" / "I was doing ops while my team got attacked"</li>
+            <li><strong>Ruth:</strong> "I couldn't save Firas" / "I can't save Ahdia from herself"</li>
+            <li><strong>Ben:</strong> "I was across town when Sarah died" / "Perfect evidence couldn't save the election"</li>
+            <li><strong>Tess:</strong> "I warned Leta and it wasn't enough"</li>
+            <li><strong>Leah:</strong> "I stayed silent while Leta was harassed"</li>
+            <li><strong>Victor:</strong> "I taught resistance and it only works 60%"</li>
+        </ul>
+
+        <h3 style="margin-top: 20px;">Key Numbers</h3>
+        <ul>
+            <li>Ahdia baseline: 95% → 54% (Ch 17) → ~50% (Ch 19) → &lt;10% (Book 2B end)</li>
+            <li>Treatment gap: 11 days = death</li>
+            <li>Eidolon resistance: 60-70% effective (insufficient - Kain wins)</li>
+        </ul>
+
+        <h3 style="margin-top: 20px;">Current Manuscript Status</h3>
+        <p>Chapters 1-9 complete. Dashed border indicates future chapters not yet written.</p>
+    </div>
+</body>
+</html>

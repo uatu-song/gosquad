@@ -122,7 +122,7 @@
 
 ---
 
-### Dr. Shiba Ryu
+### Dr. Ryu Matsuda
 
 **Role:** CADENS FAERIS Operations Specialist, Ahdia's handler
 

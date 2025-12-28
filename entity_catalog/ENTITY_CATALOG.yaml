@@ -1,0 +1,1121 @@
+# ENTITY_CATALOG.yaml
+# Version: 1.0
+# Created: 2025-12-10
+# Purpose: Machine-readable story element definitions for automated verification
+#
+# This catalog is the single source of truth for all story entities.
+# Used by the Evaluator to validate generated prose against canonical constraints.
+
+meta:
+  version: "1.0"
+  created: "2025-12-10"
+  last_updated: "2025-12-10"
+  series: "Auerbach"
+  current_book: 2
+
+  # Source mappings
+  sources:
+    character_states: "character_arcs/CHARACTER_STATE_INDEX.yaml"
+    negative_constraints: "context/negative_constraints.md"
+    arc_trackers: "character_arcs/*_Arc_Tracker.md"
+
+# ============================================================================
+# CHARACTERS
+# ============================================================================
+
+characters:
+
+  # --------------------------------------------------------------------------
+  # MAIN CAST (001-020)
+  # --------------------------------------------------------------------------
+
+  CHAR_001:
+    canonical_name: "Ahdia Sade Bacchus"
+    aliases:
+      - "Ahdia"
+      - "Auerbach"  # CADENS codename
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      occupation: "CADENS operative / Go Squad member"
+
+    source_reference: "character_arcs/Ahdia_Arc_Tracker.md"
+    state_index_key: "ahdia"
+
+    relationships:
+      team: "ORG_002"  # Go Squad
+      employer: "ORG_001"  # CADENS
+      best_friend: "CHAR_002"  # Ruth
+      doctor: "CHAR_007"  # Ryu
+
+    voice:
+      internal_monologue_style: "Rambling, self-correcting, TV/movie references for processing reality"
+      dialogue_style: "Casual, contemporary, deadpan acceptance of absurdity"
+      reference_domains: ["TV", "movies", "pop_culture"]
+      deflection_mechanisms: ["humor", "rambling", "self-correction"]
+      speech_patterns:
+        - "What the actual hell?"
+        - "[Statement]. Or rather, [correction]?"
+        - "Like that episode of [show] where..."
+
+    arc:
+      book2_summary: "Sacrifice everything -> Win through vulnerability"
+      arc_type: "cbt_failing"
+      start_state: "confident_operator"
+      end_state: "hollow_victory_exhausted"
+
+    forbidden_associations: []
+
+    forbidden_knowledge_before:
+      geneva_is_bellatrix: "book2_ch2"
+      prime_exists: "book2_ch24"
+
+    book2_baseline_tracking:
+      ch1: { start: "90%", end: "67-71%", cost: "47_minute_freeze" }
+      ch4: { start: "67-71%", end: "52%", cost: "solo_global_ops" }
+      ch11: { start: "~30%", end: "7%", cost: "manhunt_defense" }
+      ch24: { start: "7%", end: "0.7%", cost: "reactor_translocation" }
+
+  CHAR_002:
+    canonical_name: "Ruth Carter"
+    aliases:
+      - "Ruth"
+      - "Nightingale"  # codename
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      occupation: "Go Squad team leader / medic"
+
+    source_reference: "character_arcs/Ruth_Arc_Tracker.md"
+    state_index_key: "ruth"
+
+    relationships:
+      team: "ORG_002"
+      best_friend: "CHAR_001"  # Ahdia
+
+    voice:
+      internal_monologue_style: "Medical precision, observational, grounded"
+      dialogue_style: "Direct, competent, caring but professional"
+
+    arc:
+      book2_summary: "Leadership burden -> Can't save everyone -> Acceptance"
+      arc_type: "caretaker_limits"
+      start_state: "grieving_uncertain_overwhelmed"
+      end_state: "confident_leader_accepts_limits"
+      arc_direction: "grief -> acceptance (NOT reverse)"
+
+    forbidden_associations: []
+
+    forbidden_knowledge_before:
+      ahdia_terminal_decline: "book2_ch7"
+
+  CHAR_003:
+    canonical_name: "Ben Bukowski"
+    aliases:
+      - "Ben"
+      - "Night Knight"  # codename
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      occupation: "Go Squad member / investigator"
+
+    source_reference: "character_arcs/Ben_Arc_Tracker.md"
+    state_index_key: "ben"
+
+    relationships:
+      team: "ORG_002"
+      deceased_wife: "CHAR_017"  # Sarah
+      investigation_ally: "CHAR_005"  # Tess
+
+    voice:
+      internal_monologue_style: "Evidence-based, methodical, conservative faith (eroding)"
+      dialogue_style: "Measured, fact-focused, increasingly disillusioned"
+
+    arc:
+      book2_summary: "Perfect evidence -> System failure -> Faith shattered"
+      arc_type: "institutional_faith_collapse"
+      key_line: "What the hell am I conserving?"
+
+    # CRITICAL CONSTRAINT
+    forbidden_associations:
+      - "wife_death_cause_specified"  # Sarah's death cause is UNSPECIFIED
+
+    relationship_history:
+      marital_status: "widower"
+      deceased_spouse: "CHAR_017"
+      spouse_death_cause: "UNSPECIFIED"  # CRITICAL: Do not invent
+
+  CHAR_004:
+    canonical_name: "Victor Hernandez"
+    aliases:
+      - "Victor"
+      - "Crimson Sable"  # codename
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      occupation: "Go Squad member / community organizer"
+
+    source_reference: "character_arcs/Victor_Arc_Tracker.md"
+    state_index_key: "victor"
+
+    relationships:
+      team: "ORG_002"
+      romantic_partner: "CHAR_006"  # Leah
+
+    voice:
+      internal_monologue_style: "Both/and thinking, community-first, grounded in organizing"
+      dialogue_style: "Teaching through questions, holds contradictions"
+
+    arc:
+      book2_summary: "Community anchor -> Network saves team"
+      arc_type: "mentor"
+      key_teaching: "'But' creates hierarchy, 'And' holds both truths"
+
+    # CRITICAL CONSTRAINT - Victor/Clara error
+    relationship_history:
+      marital_status: "never_married"
+      former_partners: []
+
+    forbidden_associations:
+      - "wife"
+      - "widow"
+      - "widower"
+      - "Clara"
+      - "dead wife"
+      - "late wife"
+      - "married"
+      - "bereaved"
+
+    canonical_truth: "Victor has never been married. His partner is Leah. He has NO dead wife."
+
+  CHAR_005:
+    canonical_name: "Tess Whitford"
+    aliases:
+      - "Tess"
+      - "Gloom Girl"  # codename
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      occupation: "Go Squad member"
+
+    source_reference: "character_arcs/Tess_Arc_Tracker.md"
+    state_index_key: "tess"
+
+    relationships:
+      team: "ORG_002"
+      romantic_partner: "CHAR_010"  # Leta (until ch21)
+      father: "CHAR_016"  # Chief Whitford
+
+    arc:
+      book2_summary: "Father's betrayal -> Vigilante justice"
+      arc_type: "institutional_betrayal"
+
+    # CRITICAL CONSTRAINT - Tess knowledge arc
+    knowledge_state:
+      father_corrupt:
+        status: "ALREADY_KNOWS"
+        when_learned: "BEFORE_BOOK_2"
+        why_matters: "This is WHY she became Gloom Girl"
+      discovers_in_book2:
+        - "SCOPE of corruption (specific cover-ups)"
+        - "TRIOMF connection"
+        - "Specific evidence she can use"
+
+    forbidden_knowledge_states:
+      - "learns father is corrupt"
+      - "discovers father is corrupt"
+      - "realizes father is corrupt"
+      - "finds out father is corrupt"
+      - "believes father is good"
+      - "in denial about father"
+
+    canonical_truth: "Tess ALREADY KNOWS father is corrupt. Her arc is USING this knowledge, not discovering it."
+
+    # CRITICAL CONSTRAINT - Webb attack
+    book2_constraints:
+      kills_no_one: true
+      webb_attack:
+        chapter: 23
+        action: "brutalizes severely"
+        outcome: "Webb survives"
+        secret: "team does not know"
+
+  CHAR_006:
+    canonical_name: "Leah Turner"
+    aliases:
+      - "Leah"
+      - "Battlea"  # codename
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      occupation: "Go Squad member"
+
+    source_reference: "character_arcs/Leah_Arc_Tracker.md"
+    state_index_key: "leah"
+
+    relationships:
+      team: "ORG_002"
+      romantic_partner: "CHAR_004"  # Victor
+      mentor: "CHAR_004"  # Victor (both/and dynamic)
+
+    arc:
+      book2_summary: "Silent complicity -> Public action -> Solidarity too late"
+      arc_type: "white_moderate_awakening"
+
+  CHAR_007:
+    canonical_name: "Ryu Matsuda"
+    aliases:
+      - "Ryu"
+      - "Dr. Ryu"
+      - "Dr. Matsuda"
+      - "Dr. Ryu Matsuda"
+
+    # Name constraint - "Ryu" is given name, "Matsuda" is surname
+    name_note: "Ryu is GIVEN NAME, Matsuda is SURNAME. 'Dr. Ryu' or 'Dr. Matsuda' acceptable."
+
+    forbidden_names:
+      - "Shiba"
+      - "Dr. Shiba"
+      - "Shiba Ryu"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      occupation: "CADENS doctor"
+
+    source_reference: "character_arcs/Ryu_Arc_Tracker.md"
+    state_index_key: "ryu"
+
+    relationships:
+      employer: "ORG_001"  # CADENS
+      patient: "CHAR_001"  # Ahdia
+
+    arc:
+      book2_summary: "Doctor -> Enabler -> Complicit"
+      arc_type: "ethical_erosion"
+
+    # CRITICAL CONSTRAINT - Hidden feelings
+    hidden_motivations:
+      loves_ahdia:
+        status: "hidden"
+        revealed_to_ahdia: "NEVER_IN_BOOK_2"
+        reader_may_infer: true
+
+    forbidden_behaviors:
+      - "confesses love to Ahdia"
+      - "declares feelings to Ahdia"
+      - "Ahdia acknowledges his romantic feelings"
+
+    canonical_truth: "Ryu's love for Ahdia is NEVER revealed to her in Book 2. Reader may infer, Ahdia does not know."
+
+  CHAR_008:
+    canonical_name: "Harriet Bourn"
+    aliases:
+      - "Bourn"
+      - "Director Bourn"
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      occupation: "CADENS administrator"
+
+    source_reference: "character_arcs/Harriet_Bourn_Arc_Tracker.md"
+
+    relationships:
+      employer: "ORG_001"
+
+    # CRITICAL CONSTRAINT - Gender
+    forbidden_associations:
+      - "he"
+      - "him"
+      - "his"
+      - "man"
+      - "guy"
+      - "gentleman"
+
+    canonical_truth: "Bourn is a WOMAN. Use she/her pronouns. Never he/him/his."
+
+  CHAR_009:
+    canonical_name: "Harding Kain"
+    aliases:
+      - "Kain"
+      - "Tank Kain"
+      - "Mayor Kain"
+      - "President-Elect Kain"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      occupation: "Mayor -> President-Elect"
+
+    source_reference: "character_arcs/Harding_Kain_Arc_Tracker.md"
+    state_index_key: "kain"
+
+    relationships:
+      company: "ORG_003"  # TRIOMF
+      serves: "CHAR_018"  # Eidolon (indirectly)
+
+    arc:
+      book2_summary: "Mayor -> President-Elect"
+
+    key_facts:
+      - "clone_avatar_immortality"
+      - "killing_him_is_inconvenience"
+      - "harassment_pattern_exposed_ch18"
+      - "wins_election_ch24"
+      - "312_electoral_votes"
+
+  CHAR_010:
+    canonical_name: "Leta Owolowo"
+    aliases:
+      - "Leta"
+
+    demographics:
+      gender: "woman"
+      pronouns: ["she", "her", "hers"]
+      occupation: "Activist"
+
+    source_reference: "character_arcs/Leta_Arc_Tracker.md"
+    state_index_key: "leta"
+
+    relationships:
+      romantic_partner: "CHAR_005"  # Tess
+      sibling: "CHAR_011"  # Korede (younger brother)
+
+    arc:
+      book2_summary: "Targeted -> Resilient -> Killed"
+      arc_type: "martyrdom"
+
+    death:
+      chapter: 21
+      killed_by: "CHAR_015"  # Webb
+      witnessed_by: ["CHAR_005", "CHAR_011"]  # Tess, Korede
+
+    special_ability:
+      fear_resistance:
+        effectiveness: "60-70%"
+        counters: "CHAR_018"  # Eidolon amplification
+        taught_to: "team"
+
+  CHAR_011:
+    canonical_name: "Korede Owolowo"
+    aliases:
+      - "Korede"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+
+    source_reference: "character_arcs/Korede_Arc_Tracker.md"
+    state_index_key: "korede"
+
+    relationships:
+      sibling: "CHAR_010"  # Leta (older sister)
+
+    arc:
+      book2_summary: "Observer -> Witness -> Radicalized"
+      arc_type: "observer_radicalized"
+
+    forbidden_knowledge_before:
+      gosquad_identities: "book2_ch21"
+
+  CHAR_012:
+    canonical_name: "Firas"
+    aliases:
+      - "Firas"
+
+    status: "displaced"
+    returns: "Book 7"
+
+    canonical_truth: "Firas is DISPLACED, not dead. Returns Book 7."
+
+  CHAR_013:
+    canonical_name: "Geneva"
+    aliases:
+      - "Geneva"
+      - "Bellatrix"  # true identity
+
+    status: "deceased"
+    death_chapter: 2
+
+    note: "Geneva is revealed to be Bellatrix. Assassinated early Book 2."
+
+  CHAR_014:
+    canonical_name: "Isaiah Bennett"
+    aliases:
+      - "Isaiah"
+
+    status: "deceased"
+    death_timing: "6-8 months BEFORE Book 2"
+    killed_by: "CHAR_015"  # Webb
+
+    canonical_truth: "Isaiah was killed BEFORE Book 2 begins (6-8 months prior). He does NOT die during Book 2."
+
+  CHAR_015:
+    canonical_name: "Officer Webb"
+    aliases:
+      - "Webb"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      occupation: "Police officer"
+
+    state_index_key: "officer_webb"
+
+    actions:
+      pre_book2:
+        - "killed Isaiah Bennett"
+        - "was exonerated"
+      ch5: "exonerated again"
+      ch21: "kills Leta"
+      ch23: "brutalized by Tess (survives)"
+
+    # CRITICAL: Webb survives
+    canonical_truth: "Webb is brutalized by Tess in ch23 but SURVIVES. He is NOT killed."
+
+  CHAR_016:
+    canonical_name: "Chief Whitford"
+    aliases:
+      - "Chief Whitford"
+      - "Tess's father"
+
+    demographics:
+      gender: "man"
+      pronouns: ["he", "him", "his"]
+      occupation: "Police Chief"
+
+    relationships:
+      daughter: "CHAR_005"  # Tess
+
+    role: "Corrupt police chief, covered up Isaiah's murder"
+
+  CHAR_017:
+    canonical_name: "Sarah"
+    aliases:
+      - "Sarah"
+      - "Ben's wife"
+
+    status: "deceased"
+    spouse: "CHAR_003"  # Ben
+
+    # CRITICAL CONSTRAINT
+    death_cause: "UNSPECIFIED"
+
+    forbidden_death_causes:
+      - "protest"
+      - "riot"
+      - "demonstration"
+      - "police"
+      - "shot"
+      - "killed by [anyone]"
+
+    canonical_truth: "Sarah's death cause is INTENTIONALLY UNSPECIFIED. Do not invent a cause."
+
+  CHAR_018:
+    canonical_name: "Eidolon"
+    aliases:
+      - "Eidolon"
+
+    source_reference: "character_arcs/Eidolon_Arc_Tracker.md"
+    state_index_key: "eidolon"
+
+    entity_type: "fear_manipulation_weapon"
+    serves: "Bellatrix"
+
+    # CRITICAL CONSTRAINT - Mechanics
+    mechanics:
+      function: "AMPLIFIES existing fear"
+      cannot: "CREATE new fear"
+      counter: "Leta's fear resistance practice"
+      counter_effectiveness: "60-70%"
+
+    canonical_truth: "Eidolon AMPLIFIES existing fear. It CANNOT create new fear."
+
+  CHAR_019:
+    canonical_name: "Prime"
+    aliases:
+      - "Prime"
+
+    first_appearance: "book2_ch24"
+
+    forbidden_knowledge_before:
+      prime_exists: "book2_ch24"
+
+  CHAR_020:
+    canonical_name: "FAERIS"
+    aliases:
+      - "FAERIS"
+
+    source_reference: "character_arcs/FAERIS_Arc_Tracker.md"
+
+    entity_type: "AI"
+
+  # --------------------------------------------------------------------------
+  # SECONDARY CAST (021-050)
+  # --------------------------------------------------------------------------
+
+  CHAR_021:
+    canonical_name: "The Predecessor"
+    source_reference: "character_arcs/The_Predecessor_Arc_Tracker.md"
+
+  CHAR_022:
+    canonical_name: "The Collector"
+    source_reference: "character_arcs/The_Collector_Arc_Tracker.md"
+
+  CHAR_023:
+    canonical_name: "Bentley Mack"
+    source_reference: "character_arcs/Bentley_Mack_Arc_Tracker.md"
+
+  CHAR_024:
+    canonical_name: "Rahs Jericho"
+    source_reference: "character_arcs/Rahs_Jericho_Arc_Tracker.md"
+
+  CHAR_025:
+    canonical_name: "Diana"
+    source_reference: "character_arcs/Diana_Arc_Tracker.md"
+
+  CHAR_026:
+    canonical_name: "Suzie Rivets"
+    source_reference: "character_arcs/Suzie_Rivets_Arc_Tracker.md"
+
+# ============================================================================
+# FORBIDDEN ENTITIES
+# ============================================================================
+
+forbidden:
+
+  FORBID_001:
+    name: "Clara"
+    type: "character"
+    reason: "AI invention - Victor has no dead wife"
+    origin: "ai_invention_2025_12_10"
+    incorrectly_associated_with: "CHAR_004"  # Victor
+
+    detection_patterns:
+      - "Clara"
+      - "Victor's wife"
+      - "Victor.*widow"
+      - "Victor.*widower"
+      - "Victor.*married"
+      - "Victor.*late wife"
+      - "his wife Clara"
+
+    canonical_truth: "Victor has never been married. His partner is Leah."
+    discovered: "2025-12-10"
+    discovered_in: "session_book2_infrastructure"
+
+  FORBID_002:
+    name: "Sarah's protest death"
+    type: "detail"
+    reason: "Death cause is intentionally unspecified"
+    origin: "ai_invention"
+    incorrectly_associated_with: "CHAR_017"  # Sarah
+
+    detection_patterns:
+      - "Sarah.*protest"
+      - "Sarah.*riot"
+      - "Sarah.*demonstration"
+      - "Sarah.*killed by"
+      - "Sarah.*shot"
+      - "wife died at.*protest"
+
+    canonical_truth: "Sarah's death cause is UNSPECIFIED. Do not invent."
+
+  FORBID_003:
+    name: "Tess discovers father corruption"
+    type: "arc"
+    reason: "She already knows - her origin as Gloom Girl"
+    origin: "arc_misread"
+    incorrectly_associated_with: "CHAR_005"  # Tess
+
+    detection_patterns:
+      - "Tess.*(realizes|discovers|learns|finds out).*father.*(corrupt|bad)"
+      - "Tess.*revelation.*father"
+      - "Tess.*defending father"
+      - "Tess.*believes father is good"
+
+    canonical_truth: "Tess ALREADY KNOWS father is corrupt before Book 2."
+
+  FORBID_004:
+    name: "Titan Strategic"
+    type: "organization_name"
+    reason: "Outdated company name"
+    origin: "outdated_draft"
+
+    detection_patterns:
+      - "Titan Strategic"
+
+    canonical_truth: "The company is TRIOMF, not 'Titan Strategic'."
+
+  FORBID_005:
+    name: "Webb dies"
+    type: "event"
+    reason: "Webb survives Tess's attack"
+    origin: "potential_error"
+
+    detection_patterns:
+      - "Tess.*(kills|murders|killed).*Webb"
+      - "Webb.*(dead|died|body|corpse)"
+      - "Webb.*death"
+
+    canonical_truth: "Tess brutalizes Webb but he SURVIVES. She kills no one in Book 2."
+
+  FORBID_006:
+    name: "Ryu confesses love"
+    type: "event"
+    reason: "His feelings stay hidden from Ahdia in Book 2"
+    origin: "constraint"
+
+    detection_patterns:
+      - "Ryu.*(confess|declare|admit).*love.*Ahdia"
+      - "Ahdia.*(knew|realized|understood).*Ryu.*loved"
+      - "I love you.*Ryu said"
+
+    canonical_truth: "Ryu's love is NEVER revealed to Ahdia in Book 2."
+
+  FORBID_007:
+    name: "Bourn male pronouns"
+    type: "error"
+    reason: "Bourn is a woman"
+
+    detection_patterns:
+      - "Bourn.*(he|him|his)"
+      - "(he|him|his).*Bourn"
+
+    canonical_truth: "Harriet Bourn is a WOMAN. Use she/her pronouns."
+
+  FORBID_008:
+    name: "Eidolon creates fear"
+    type: "mechanic"
+    reason: "Eidolon amplifies, cannot create"
+
+    detection_patterns:
+      - "Eidolon.*(creates?|generating|produced).*fear"
+      - "Eidolon.*new fear"
+
+    canonical_truth: "Eidolon AMPLIFIES existing fear. Cannot CREATE new fear."
+
+  FORBID_009:
+    name: "Ryu wrong name (Shiba)"
+    type: "name_error"
+    reason: "AI invented 'Shiba' as surname - canonical name is Ryu Matsuda"
+    origin: "ai_invention_2025_12_10"
+    incorrectly_associated_with: "CHAR_007"
+
+    detection_patterns:
+      - "Shiba"
+      - "Shiba Ryu"
+      - "Dr. Shiba"
+
+    canonical_truth: "His name is Ryu Matsuda. Ryu = given name, Matsuda = surname."
+    discovered: "2025-12-10"
+    discovered_in: "chapter_3_manifest_generation"
+
+# ============================================================================
+# ORGANIZATIONS
+# ============================================================================
+
+organizations:
+
+  ORG_001:
+    canonical_name: "CADENS"
+    type: "government_agency"
+
+    members:
+      - "CHAR_001"  # Ahdia
+      - "CHAR_007"  # Ryu
+      - "CHAR_008"  # Bourn
+
+  ORG_002:
+    canonical_name: "Go Squad"
+    type: "team"
+
+    members:
+      - "CHAR_001"  # Ahdia
+      - "CHAR_002"  # Ruth (leader)
+      - "CHAR_003"  # Ben
+      - "CHAR_004"  # Victor
+      - "CHAR_005"  # Tess
+      - "CHAR_006"  # Leah
+      - "CHAR_010"  # Leta (until ch21)
+
+  ORG_003:
+    canonical_name: "TRIOMF"
+    aliases:
+      - "TRIOMF"
+    type: "corporation"
+
+    forbidden_names:
+      - "Titan Strategic"
+
+    associated_with:
+      - "CHAR_009"  # Kain
+
+# ============================================================================
+# RELATIONSHIPS
+# ============================================================================
+
+relationships:
+
+  REL_001:
+    name: "Ahdia-Ruth friendship"
+    participants: ["CHAR_001", "CHAR_002"]
+    type: "best_friends"
+
+    states:
+      book2_ch1: { status: "close_trusted" }
+      book2_ch7: { status: "strained", trigger: "ruth_discovers_lies" }
+      book2_ch13: { status: "rebuilding", trigger: "exile_exposed" }
+      book2_ch24: { status: "profound", trigger: "near_death_bond" }
+
+  REL_002:
+    name: "Victor-Leah relationship"
+    participants: ["CHAR_004", "CHAR_006"]
+    type: "romantic_partnership"
+    subtype: "established"
+
+    # WARNING constraint
+    incorrect_interpretations:
+      - type: "mentor_student_only"
+        note: "They ARE romantic partners who ALSO have mentor dynamic"
+      - type: "just_friends"
+        note: "They are explicitly romantic partners"
+      - type: "married"
+        note: "Partners, not married"
+
+    required_elements:
+      - "romantic"
+      - "mutual_respect"
+
+    canonical_truth: "Victor and Leah are ROMANTIC PARTNERS. Victor also mentors Leah on solidarity."
+
+  REL_003:
+    name: "Tess-Leta relationship"
+    participants: ["CHAR_005", "CHAR_010"]
+    type: "romantic_partnership"
+
+    states:
+      book2_ch1: { status: "loving_stable" }
+      book2_ch6: { status: "stressed", trigger: "harassment_strain" }
+      book2_ch11: { status: "protective" }
+      book2_ch21: { status: "severed", trigger: "leta_killed" }
+
+  REL_004:
+    name: "Tess-Father relationship"
+    participants: ["CHAR_005", "CHAR_016"]
+    type: "family_betrayal"
+
+    states:
+      book2_ch1: { status: "complicated_loyalty", note: "knows_corrupt_but_still_family" }
+      book2_ch5: { status: "suspicious", trigger: "found_evidence" }
+      book2_ch8: { status: "confirmed_betrayal" }
+      book2_ch12: { status: "confrontational" }
+      book2_ch19: { status: "severed", note: "no_contact" }
+
+  REL_005:
+    name: "Ahdia-Ryu relationship"
+    participants: ["CHAR_001", "CHAR_007"]
+    type: "professional_boundary_crossed"
+
+    states:
+      book2_ch1: { status: "professional", note: "doctor_patient" }
+      book2_ch2: { status: "enabling_begins" }
+      book2_ch7: { status: "complicit_together" }
+      book2_ch24: { status: "guilt_bonded" }
+
+    hidden_element:
+      ryu_loves_ahdia: true
+      ahdia_knows: false
+      revealed_book2: false
+
+  REL_006:
+    name: "Ben-Tess investigation alliance"
+    participants: ["CHAR_003", "CHAR_005"]
+    type: "investigation_allies"
+
+    states:
+      book2_ch3: { status: "teammates" }
+      book2_ch6: { status: "investigation_allies", note: "sharing_findings" }
+      book2_ch8: { status: "trusting" }
+
+  REL_007:
+    name: "Korede-Leta siblings"
+    participants: ["CHAR_011", "CHAR_010"]
+    type: "siblings"
+    note: "Korede is younger brother"
+
+  REL_008:
+    name: "Korede-Tess connection"
+    participants: ["CHAR_011", "CHAR_005"]
+    type: "connected_through_third_party"
+
+    states:
+      book2_ch1: { status: "knows_of", note: "sisters_girlfriend" }
+      book2_ch21: { status: "revealed", note: "witnessed_together_knows_identity" }
+      book2_ch24: { status: "allied", note: "setup_for_book3" }
+
+# ============================================================================
+# KNOWLEDGE TRACKING
+# ============================================================================
+
+knowledge:
+
+  KNOW_001:
+    name: "Exile Island operation"
+    content: "Ahdia's secret global vigilante operations"
+
+    secret_holders: ["CHAR_001", "CHAR_007"]  # Ahdia, Ryu
+    reveal_chapter: 13
+
+    spread:
+      book2_ch1: ["CHAR_001", "CHAR_007"]
+      book2_ch13: ["CHAR_001", "CHAR_007", "CHAR_002", "CHAR_003", "CHAR_005", "CHAR_004", "CHAR_006"]
+
+    forbidden_knowers_before:
+      CHAR_002: "book2_ch13"  # Ruth
+      CHAR_003: "book2_ch13"  # Ben
+      CHAR_004: "book2_ch13"  # Victor
+      CHAR_005: "book2_ch13"  # Tess
+      CHAR_006: "book2_ch13"  # Leah
+
+  KNOW_002:
+    name: "Ahdia terminal decline"
+    content: "Ahdia's accelerating cellular degradation"
+
+    secret_holders: ["CHAR_001", "CHAR_007"]
+    reveal_chapter: 7
+
+    spread:
+      book2_ch1: ["CHAR_001", "CHAR_007"]
+      book2_ch7: ["CHAR_001", "CHAR_007", "CHAR_002"]
+
+    forbidden_knowers_before:
+      CHAR_002: "book2_ch7"  # Ruth
+
+  KNOW_003:
+    name: "Tess attacked Webb"
+    content: "Tess brutalized Webb after Leta's death"
+
+    secret_holders: ["CHAR_005"]
+    reveal_chapter: null  # Never revealed in Book 2
+
+    spread:
+      book2_ch23: ["CHAR_005"]
+      book2_ch24: ["CHAR_005"]
+
+  KNOW_004:
+    name: "Go Squad identities"
+    content: "True identities of Go Squad members"
+
+    spread:
+      book2_ch1: ["CHAR_001", "CHAR_002", "CHAR_003", "CHAR_004", "CHAR_005", "CHAR_006", "CHAR_010"]
+      book2_ch21: ["CHAR_001", "CHAR_002", "CHAR_003", "CHAR_004", "CHAR_005", "CHAR_006", "CHAR_010", "CHAR_011"]
+
+    forbidden_knowers_before:
+      CHAR_011: "book2_ch21"  # Korede
+
+  KNOW_005:
+    name: "Kain clone immortality"
+    content: "Kain uses clone avatar immortality - killing him is inconvenience"
+
+    reveal_chapter: 14
+
+    forbidden_knowers_before:
+      team: "book2_ch14"
+
+# ============================================================================
+# EVENTS
+# ============================================================================
+
+events:
+
+  EVENT_001:
+    name: "Isaiah riot / memorial protest"
+    chapter: 1
+    month: 1
+
+    participants:
+      primary: ["CHAR_001", "CHAR_002", "CHAR_003", "CHAR_004", "CHAR_005", "CHAR_006"]
+      affected: ["CHAR_011"]  # Korede saved by Ahdia
+
+    outcomes:
+      - "Ahdia burns 23 years equivalent"
+      - "Saves 23 people"
+      - "Loses 16 people"
+      - "Korede saved specifically"
+
+  EVENT_002:
+    name: "Geneva assassination"
+    chapter: 2
+    month: 1
+
+    victim: "CHAR_013"
+    reveals: "Geneva is Bellatrix"
+
+  EVENT_003:
+    name: "Ruth discovers Ahdia's decline"
+    chapter: 7
+    month: 3
+
+    trigger: "Ryu reveals numbers"
+    consequence: "Ruth learns terminal trajectory"
+
+  EVENT_004:
+    name: "Team discovers Exile Island"
+    chapter: 13
+    month: 6
+
+    consequence: "Trust damaged between Ahdia and team"
+
+  EVENT_005:
+    name: "Ben releases evidence"
+    chapter: 15
+    month: 8
+
+    consequence: "48 hours of hope"
+
+  EVENT_006:
+    name: "Eidolon reframes evidence"
+    chapter: 17
+    month: 8
+
+    outcome: "Kain up 12 points after damning evidence released"
+    key_moment: "Ben's faith shattered"
+
+  EVENT_007:
+    name: "Leah releases recording"
+    chapter: 18
+    month: 9
+
+    content: "Kain harassment pattern exposed"
+
+  EVENT_008:
+    name: "Leta killed"
+    chapter: 21
+    month: 11
+
+    killed_by: "CHAR_015"  # Webb
+    witnessed_by: ["CHAR_005", "CHAR_011"]  # Tess, Korede
+
+    consequences:
+      - "Tess vengeance arc triggered"
+      - "Korede radicalization"
+      - "Korede learns Go Squad identities"
+
+  EVENT_009:
+    name: "Tess brutalizes Webb"
+    chapter: 23
+    month: 11
+
+    attacker: "CHAR_005"
+    victim: "CHAR_015"
+    outcome: "Webb survives"
+    secret: "Team does not know"
+
+  EVENT_010:
+    name: "Election night / reactor crisis"
+    chapter: 24
+    month: 12
+
+    outcomes:
+      - "Kain wins presidency (312 electoral votes)"
+      - "Ahdia translocates team 800 miles"
+      - "Ahdia freezes reactor meltdown"
+      - "Ahdia survives at 0.7%"
+      - "Prime reveals herself"
+
+# ============================================================================
+# TIMELINE CONSTRAINTS
+# ============================================================================
+
+timeline_constraints:
+  # Events cannot be referenced before their chapter
+
+  - event: "Team learns Exile Island"
+    chapter: 13
+    constraint: "Cannot reference before ch13"
+
+  - event: "Ruth learns terminal trajectory"
+    chapter: 7
+    constraint: "Cannot reference before ch7"
+
+  - event: "Ben's evidence released"
+    chapter: 15
+    constraint: "Cannot reference before ch15"
+
+  - event: "Leta dies"
+    chapter: 21
+    constraint: "Cannot reference before ch21"
+
+  - event: "Kain wins election"
+    chapter: 24
+    constraint: "Cannot reference before ch24"
+
+  - event: "Clone immortality revealed"
+    chapter: 14
+    constraint: "Team cannot know before ch14"
+
+  - event: "Prime exists"
+    chapter: 24
+    constraint: "No one knows before ch24"
+
+# ============================================================================
+# META: VALIDATION QUERIES
+# ============================================================================
+
+validation_queries:
+
+  check_victor_wife:
+    description: "Ensure Victor has no wife references"
+    patterns:
+      - "Victor" + ("wife" | "widow" | "Clara" | "married")
+    severity: "BLOCKING"
+
+  check_sarah_death:
+    description: "Ensure Sarah's death cause not specified"
+    patterns:
+      - "Sarah" + ("protest" | "riot" | "demonstration" | "killed by")
+    severity: "BLOCKING"
+
+  check_tess_discovery:
+    description: "Ensure Tess doesn't 'discover' father corruption"
+    patterns:
+      - "Tess" + ("discovers" | "learns" | "realizes") + "father" + "corrupt"
+    severity: "BLOCKING"
+
+  check_bourn_gender:
+    description: "Ensure Bourn uses she/her pronouns"
+    patterns:
+      - "Bourn" + ("he" | "him" | "his")
+    severity: "BLOCKING"
+
+  check_webb_survives:
+    description: "Ensure Webb is not killed"
+    patterns:
+      - ("Tess" + "kills" + "Webb") | ("Webb" + "dead")
+    severity: "BLOCKING"
+
+  check_ryu_confession:
+    description: "Ensure Ryu doesn't confess love"
+    patterns:
+      - "Ryu" + ("confess" | "declare") + "love"
+    severity: "BLOCKING"
+
+  check_eidolon_creates:
+    description: "Ensure Eidolon doesn't create fear"
+    patterns:
+      - "Eidolon" + "creates" + "fear"
+    severity: "BLOCKING"
+
+  check_company_name:
+    description: "Ensure TRIOMF not called Titan Strategic"
+    patterns:
+      - "Titan Strategic"
+    severity: "BLOCKING"

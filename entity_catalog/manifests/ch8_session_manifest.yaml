@@ -1,0 +1,223 @@
+# SESSION MANIFEST: Chapter 8
+# Generated: 2025-12-10
+# Task: Generate prose for Chapter 8 "The First Line Crossed"
+
+manifest:
+  session_id: "2025-12-10_ch8_prose"
+  chapter: "book2_ch8"
+  timeline_position: "month_2_day_1"
+  chapter_title: "The First Line Crossed"
+
+  # === CRITICAL CHAPTER ===
+  importance: "PLOT CRITICAL - establishes Months 2-9 pattern"
+
+  critical_events:
+    - "Ryu provides CADENS intelligence to Ahdia"
+    - "First global intervention coordinates given"
+    - "Enablement cycle begins"
+    - "First falsified medical record"
+    - "Fusion subplot introduced (Kain's American Energy Independence Act)"
+
+  # === SCENE STRUCTURE ===
+  scenes:
+    - scene: 1
+      name: "Routine Treatment"
+      pov: "Ahdia (close third)"
+      touchpoint_a: "Ryu arrives for scheduled treatment"
+      touchpoint_b: "Ryu casually mentions CADENS intercept about arms shipment"
+      setting: "Ahdia's apartment, morning"
+      present: ["Ahdia", "Ryu"]
+      key_moments:
+        - "Treatment administered (legitimate)"
+        - "Casual mention of Eastern Europe arms shipment"
+        - "Fusion subplot digression (Kardashev Scale)"
+        - "Ahdia asks for coordinates"
+        - "Ryu agrees (line crossed)"
+
+    - scene: 2
+      name: "The Aftermath"
+      pov: "Ahdia (close third)"
+      touchpoint_a: "48 hours later, Ahdia returns from intervention"
+      touchpoint_b: "Ryu arrives for emergency treatment, falsifies records"
+      setting: "Ahdia's apartment, post-mission"
+      present: ["Ahdia", "Ryu"]
+      key_moments:
+        - "Mission successful (8,000 lives saved)"
+        - "Massive degradation (52% from 73%)"
+        - "Emergency treatment"
+        - "First falsified record"
+        - "Next intel planted"
+
+    - scene: 3
+      name: "Justification"
+      pov: "Ahdia (close third)"
+      touchpoint_a: "Ahdia alone after Ryu leaves"
+      touchpoint_b: "Pattern established, cycle will repeat"
+      setting: "Ahdia's apartment, evening"
+      present: ["Ahdia (alone)"]
+
+  # === ENTITIES ACTIVE ===
+  entities_active:
+    characters:
+      - id: "CHAR_001"
+        name: "Ahdia Bacchus"
+        role: "POV protagonist"
+        emotional_state: "Hero complex activating, guilt over lies"
+        baseline_start: "73%"
+        baseline_end: "52%"
+        actions:
+          - "Receives treatment"
+          - "Asks for coordinates"
+          - "Intervenes in Eastern Europe"
+          - "Accepts falsified records"
+
+      - id: "CHAR_007"
+        name: "Ryu Matsuda"
+        role: "Enabler"
+        emotional_state: "Love overriding ethics"
+        actions:
+          - "Provides treatment"
+          - "Mentions intercept casually"
+          - "Gives coordinates"
+          - "Emergency treatment"
+          - "Falsifies records"
+        motivation: "Loves Ahdia (hidden), can't say no"
+        note: "Does NOT confess love - motivation shown through actions"
+
+    characters_referenced:
+      - id: "CHAR_002"
+        name: "Ruth"
+        context: "Missed calls, texts, Ryu hiding degradation from her"
+
+      - id: "CHAR_009"
+        name: "Kain"
+        context: "Fusion subplot - American Energy Independence Act"
+
+  # === KNOWLEDGE GATES (CH8) ===
+  knowledge_gates:
+    reader_learns:
+      - "Ryu provides intel to Ahdia"
+      - "Ahdia does global operations"
+      - "Records being falsified"
+      - "Kain pushing fusion project"
+      - "Kardashev Scale (Type 0.72)"
+
+    team_doesnt_know:
+      - "Any of this (until ch13)"
+      - "Ryu's complicity"
+      - "Ahdia's global ops"
+
+    ruth_doesnt_know:
+      - "Degradation spike (falsified)"
+      - "Emergency treatment happened"
+
+  # === RELATIONSHIP STATES (CH8) ===
+  relationship_states:
+    REL_005:  # Ahdia-Ryu
+      status: "professional"
+      transition: "enabling_begins"
+      dynamic:
+        - "Treatment dependency"
+        - "Ryu's hidden love"
+        - "First conspiracy formed"
+        - "Neither acknowledges what they're doing"
+
+  # === ACTIVE CONSTRAINTS FROM CATALOG ===
+  active_constraints:
+    forbidden_associations:
+      CHAR_004:  # Victor (not in chapter)
+        - "wife"
+        - "widow"
+        - "Clara"
+
+    forbidden_entities:
+      - "Clara"
+      - "Shiba"  # Ryu's name is Matsuda
+      - "Titan Strategic"
+
+    forbidden_events:
+      - "Ryu confesses love (FORBID_006)"
+
+    ryu_love_constraint:
+      status: "hidden"
+      shown_through: "actions, enabling, can't say no"
+      NOT_shown_through: "confession, declaration, explicit acknowledgment"
+
+  # === SEEDS TO PLANT ===
+  seeds_to_plant:
+    - name: "Enablement cycle"
+      method: "Intel → coordinates → intervention → treatment → falsification → repeat"
+      foreshadows: "7 months of this pattern"
+
+    - name: "Fusion subplot"
+      method: "Kain's American Energy Independence Act, 10-month timeline"
+      foreshadows: "Chapter 24 reactor crisis"
+
+    - name: "Kardashev Scale"
+      method: "Type 0.72, cosmic toddlers, fusion as threshold technology"
+      educational_function: "Explain humanity's technological position"
+
+    - name: "Falsified records"
+      method: "Ryu hides emergency treatment from Ruth"
+      foreshadows: "Month 8 discovery"
+
+    - name: "Benevolent dictator pattern"
+      method: "Ahdia manipulating leaders, staging evidence, psychological warfare"
+      foreshadows: "Exile Island methodology"
+
+  # === VOICE REQUIREMENTS ===
+  voice_requirements:
+    CHAR_001:  # Ahdia
+      style: "TV references, rambling, self-correction, guilt visible"
+      patterns:
+        - "Hero complex justification"
+        - "Depression as real AND as cover"
+        - "Wants to tell truth, can't"
+
+    CHAR_007:  # Ryu
+      style: "Clinical precision, careful word choice, slight warmth"
+      patterns:
+        - "Professional veneer"
+        - "Rationalizations forming"
+        - "Love shown through enabling, NOT confession"
+      name: "Ryu Matsuda (NOT Shiba)"
+
+  # === EDUCATIONAL CONTENT ===
+  educational:
+    kardashev_scale:
+      type_0: "Pre-industrial"
+      type_0.72: "Current humanity"
+      type_1: "Planetary energy (fusion threshold)"
+      type_2: "Stellar energy (Dyson spheres)"
+      type_3: "Galactic energy"
+      type_4: "Cosmic (Conclave level)"
+
+    fusion_basics:
+      process: "Hydrogen fusing to helium, same as stars"
+      temperature: "100 million degrees"
+      containment: "Magnetic (stellarator/tokamak)"
+      irony: "Fusion IS solar power - that's what stars do"
+
+  # === FORBIDDEN ENTITIES (BLOCKING) ===
+  forbidden_entities:
+    - id: "FORBID_001"
+      name: "Clara"
+      detection: "Clara|Victor.*(wife|widow)"
+
+    - id: "FORBID_006"
+      name: "Ryu confesses love"
+      detection: "Ryu.*(confess|declare|admit).*love"
+      note: "Love shown through actions, NEVER confessed"
+
+    - id: "FORBID_009"
+      name: "Shiba"
+      detection: "Shiba"
+      canonical: "Ryu Matsuda"
+
+  # === OUTPUT SPEC ===
+  output:
+    type: "prose"
+    target_words: "4000-5000"
+    scenes: 3
+    pov: "Ahdia (close third)"
+    tone: "Intimate, quiet, dangerous - line crossed without fanfare"

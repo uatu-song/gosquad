@@ -156,7 +156,7 @@ Track and respond to temporal anomalies, cosmic events, and Hyper Seed manifesta
 - Quiet support presence
 - Handles tactical logistics
 
-**Dr. Shiba Ryu:**
+**Dr. Ryu Matsuda:**
 - Age: Mid-to-late 20s (closer to Ahdia's age)
 - Ethnicity: Japanese
 - FAERIS Operations Specialist
@@ -165,7 +165,7 @@ Track and respond to temporal anomalies, cosmic events, and Hyper Seed manifesta
 - Designer of HUD interface and AR communication system
 - Only person who can consistently interface with FAERIS drones
 - Neurodivergent brain architecture allows unique 4D tech interface
-- See: `/Story_Bible/Characters/Shiba_Ryu.md`
+- See: `/Story_Bible/Characters/Ryu_Matsuda.md`
 
 ### TBD
 - Other research personnel

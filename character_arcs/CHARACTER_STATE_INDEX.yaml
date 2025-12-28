@@ -43,6 +43,8 @@ timeline:
 # ============================================
 
 canon_warnings:
+  # === CRITICAL (BLOCKING) ===
+
   - id: "tess_no_kill"
     severity: "critical"
     warning: "Tess does NOT kill anyone in Book 2. She brutalizes Webb but leaves him alive."
@@ -53,6 +55,35 @@ canon_warnings:
     warning: "Isaiah Bennett was killed by Officer Webb BEFORE Book 2 begins (6-8 months prior)."
     applies_to: ["isaiah", "webb", "tess"]
 
+  - id: "victor_not_widower"
+    severity: "critical"
+    warning: "Victor is NOT a widower. He has NO dead wife. Clara does not exist. He is in a relationship with Leah (partner, not wife)."
+    applies_to: ["victor", "leah"]
+    error_source: "Previous Claude sessions conflated Victor with Ben's backstory"
+
+  - id: "ben_wife_unspecified"
+    severity: "critical"
+    warning: "Ben's wife Sarah died, but death cause is UNSPECIFIED. Do NOT invent cause (not protest, not riot, not demonstration)."
+    applies_to: ["ben", "sarah"]
+
+  - id: "tess_already_knows_corruption"
+    severity: "critical"
+    warning: "Tess ALREADY KNOWS father is corrupt BEFORE Book 2. This is WHY she became Gloom Girl. Her arc is USING this knowledge, not discovering it. She discovers SCOPE, not base corruption."
+    applies_to: ["tess", "chief_whitford"]
+    error_source: "Arc misread as 'daughter discovers father is bad' instead of 'daughter who knows acts on it'"
+
+  - id: "bourn_is_woman"
+    severity: "critical"
+    warning: "Harriet Bourn is a WOMAN. Use she/her pronouns. Never he/him/his."
+    applies_to: ["bourn"]
+
+  - id: "ryu_no_confession"
+    severity: "critical"
+    warning: "Ryu's love for Ahdia is NEVER revealed to her in Book 2. He never confesses. Reader may infer, Ahdia does not know."
+    applies_to: ["ryu", "ahdia"]
+
+  # === MODERATE (WARNING) ===
+
   - id: "company_name"
     severity: "moderate"
     warning: "The company is TRIOMF, not 'Titan Strategic' (outdated name)."
@@ -62,6 +93,16 @@ canon_warnings:
     severity: "moderate"
     warning: "Firas is displaced (will return Book 7), not permanently dead."
     applies_to: ["firas"]
+
+  - id: "eidolon_mechanics"
+    severity: "moderate"
+    warning: "Eidolon AMPLIFIES existing fear. Cannot CREATE new fear. Leta's resistance practice counters it 60-70%."
+    applies_to: ["eidolon", "leta"]
+
+  - id: "victor_leah_relationship"
+    severity: "moderate"
+    warning: "Victor and Leah are ROMANTIC PARTNERS. Not just mentor/student, not just friends. Both dynamic exists."
+    applies_to: ["victor", "leah"]
 
 # ============================================
 # TAG DEFINITIONS
@@ -918,7 +959,7 @@ characters:
     meta:
       arc_tracker: "Ryu_Arc_Tracker.md"
       codename: null
-      full_name: "Dr. Shiba Ryu"
+      full_name: "Dr. Ryu Matsuda"
       book2_role: "enabler"
 
     arc:

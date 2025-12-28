@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 2 Events Timeline</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #e94560;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #16213e;
+            border-radius: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .controls label {
+            font-size: 13px;
+            color: #888;
+        }
+
+        .controls input[type="range"] {
+            width: 150px;
+        }
+
+        .controls button {
+            background: #e94560;
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .controls button:hover {
+            background: #d63850;
+        }
+
+        .controls button.secondary {
+            background: #16213e;
+            border: 1px solid #e94560;
+        }
+
+        .controls button.secondary:hover {
+            background: #1f2b47;
+        }
+
+        .zoom-display {
+            color: #e94560;
+            font-weight: bold;
+            min-width: 50px;
+        }
+
+        /* Track container */
+        .track-container {
+            margin: 10px 0;
+            border: 1px solid #333;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .track-header {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background: #16213e;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .track-header:hover {
+            background: #1f2b47;
+        }
+
+        .collapse-icon {
+            margin-right: 10px;
+            font-size: 12px;
+            transition: transform 0.2s;
+            color: #e94560;
+        }
+
+        .track-container.collapsed .collapse-icon {
+            transform: rotate(-90deg);
+        }
+
+        .track-label {
+            font-weight: bold;
+            font-size: 14px;
+            color: #e94560;
+            flex: 1;
+        }
+
+        .track-label .subtitle {
+            font-weight: normal;
+            font-size: 11px;
+            color: #666;
+            margin-left: 10px;
+        }
+
+        .event-count {
+            font-size: 11px;
+            color: #666;
+            margin-left: 10px;
+        }
+
+        .arc-toggle {
+            background: #0f3460;
+            border: 1px solid #e94560;
+            color: #e94560;
+            padding: 3px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 10px;
+            margin-left: 10px;
+        }
+
+        .arc-toggle:hover {
+            background: #1a4a7a;
+        }
+
+        .arc-toggle.expanded {
+            background: #e94560;
+            color: white;
+        }
+
+        .sub-track {
+            margin-left: 20px;
+            border-left: 2px solid #e94560;
+        }
+
+        .sub-track .track-header {
+            background: #0f1a2e;
+        }
+
+        .sub-track .track-label {
+            font-size: 12px;
+        }
+
+        .track-content {
+            max-height: 160px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .track-container.collapsed .track-content {
+            max-height: 0;
+        }
+
+        .timeline-scroll {
+            overflow-x: auto;
+            padding: 10px 0 15px 0;
+            cursor: grab;
+        }
+
+        .timeline-scroll:active {
+            cursor: grabbing;
+        }
+
+        .timeline {
+            position: relative;
+            height: 130px;
+            min-width: 3000px;
+            background: linear-gradient(to right,
+                #1a1a2e 0%, #1a1a2e 58.33%,
+                rgba(233, 69, 96, 0.08) 58.33%, rgba(233, 69, 96, 0.08) 100%);
+        }
+
+        /* The main line */
+        .timeline-line {
+            position: absolute;
+            top: 45px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #333;
+        }
+
+        /* Month markers */
+        .month-marker {
+            position: absolute;
+            top: 25px;
+            width: 1px;
+            height: 40px;
+            background: #444;
+        }
+
+        .month-marker.book2b {
+            background: rgba(233, 69, 96, 0.5);
+        }
+
+        .month-label {
+            position: absolute;
+            top: 8px;
+            transform: translateX(-50%);
+            font-size: 10px;
+            color: #555;
+            white-space: nowrap;
+        }
+
+        .month-label.book2b {
+            color: #e94560;
+        }
+
+        /* Events */
+        .event {
+            position: absolute;
+            top: 58px;
+            transform: translateX(-50%);
+            background: #1a1a2e;
+            border: 2px solid #e94560;
+            border-radius: 5px;
+            padding: 5px 8px;
+            max-width: 150px;
+            font-size: 10px;
+            line-height: 1.3;
+            cursor: grab;
+            transition: box-shadow 0.2s, transform 0.1s;
+            user-select: none;
+            z-index: 10;
+        }
+
+        .event:hover {
+            box-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            z-index: 100;
+        }
+
+        .event.dragging {
+            cursor: grabbing;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.8);
+            z-index: 1000;
+            opacity: 0.9;
+        }
+
+        .event::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 8px;
+            background: #e94560;
+        }
+
+        .event::after {
+            content: '';
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 6px;
+            background: #e94560;
+            border-radius: 50%;
+        }
+
+        /* Event types */
+        .event.crisis { border-color: #f44336; }
+        .event.crisis::before, .event.crisis::after { background: #f44336; }
+
+        .event.hidden { border-color: #9c27b0; }
+        .event.hidden::before, .event.hidden::after { background: #9c27b0; }
+
+        .event.bloom { border-color: #4CAF50; background: rgba(76, 175, 80, 0.15); }
+        .event.bloom::before, .event.bloom::after { background: #4CAF50; }
+
+        .event.grief { border-color: #607d8b; }
+        .event.grief::before, .event.grief::after { background: #607d8b; }
+
+        .event.institutional { border-color: #009688; }
+        .event.institutional::before, .event.institutional::after { background: #009688; }
+
+        .event.investigation { border-color: #795548; }
+        .event.investigation::before, .event.investigation::after { background: #795548; }
+
+        .event.harassment { border-color: #ff9800; }
+        .event.harassment::before, .event.harassment::after { background: #ff9800; }
+
+        .event.seed { border-color: #3f51b5; }
+        .event.seed::before, .event.seed::after { background: #3f51b5; }
+
+        .baseline {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 9px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .baseline.warning { background: #ff9800; }
+        .baseline.critical { background: #f44336; }
+
+        /* Position indicator */
+        .position-indicator {
+            position: absolute;
+            bottom: 1px;
+            right: 3px;
+            font-size: 8px;
+            color: #555;
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding: 12px;
+            background: #16213e;
+            border-radius: 8px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 11px;
+        }
+
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .instructions {
+            text-align: center;
+            color: #555;
+            font-size: 11px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book 2 Events Timeline</h1>
+    <p class="subtitle">Drag events to reposition | Click headers to collapse/expand | Scroll to navigate</p>
+
+    <div class="controls">
+        <label>Zoom:</label>
+        <input type="range" id="zoomSlider" min="50" max="200" value="100">
+        <span class="zoom-display" id="zoomDisplay">100%</span>
+        <button onclick="resetZoom()">Reset Zoom</button>
+        <button class="secondary" onclick="expandAll()">Expand All</button>
+        <button class="secondary" onclick="collapseAll()">Collapse All</button>
+        <button onclick="exportPositions()">Export JSON</button>
+    </div>
+
+    <div id="tracks-container">
+        <!-- Tracks will be generated by JS -->
+    </div>
+
+    <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background: #e94560;"></div><span>Action</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background: #f44336;"></div><span>Crisis</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background: #9c27b0;"></div><span>Hidden</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background: #607d8b;"></div><span>Grief</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background: #009688;"></div><span>Institutional</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background: #795548;"></div><span>Investigation</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background: #ff9800;"></div><span>Harassment</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background: #3f51b5;"></div><span>Seed</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background: #4CAF50;"></div><span>Bloom</span></div>
+    </div>
+
+    <p class="instructions">Positions shown as month.day (e.g., 1.15 = Month 1, Day 15). Book 2B begins at Month 8.</p>
+
+    <script>
+        // Configuration
+        const BASE_WIDTH = 3000;
+        const MONTHS = 12;
+        const DAYS_PER_MONTH = 30;
+        let currentZoom = 100;
+
+        // Character groups - which tracks belong together
+        const characterGroups = {
+            ahdia: { name: 'AHDIA', subtitle: 'baseline: 95% → <10%', tracks: ['ahdia'] },
+            ruth: { name: 'RUTH', subtitle: 'three arcs', tracks: ['ruth_grief', 'ruth_leadership', 'ruth_ahdia'] },
+            ben: { name: 'BEN', subtitle: 'system believer arc', tracks: ['ben'] },
+            tess: { name: 'TESS', subtitle: 'three arcs', tracks: ['tess_father', 'tess_hero', 'tess_leta'] },
+            leta: { name: 'LETA', subtitle: '† Month 11', tracks: ['leta'] },
+            victor: { name: 'VICTOR', subtitle: 'resistance arc', tracks: ['victor'] },
+            leah: { name: 'LEAH', subtitle: 'white moderate arc', tracks: ['leah'] },
+            ryu: { name: 'RYU', subtitle: 'enabler arc', tracks: ['ryu'] },
+            bourn: { name: 'BOURN', subtitle: 'CADENS', tracks: ['bourn'] },
+            webb: { name: 'WEBB', subtitle: 'killer', tracks: ['webb'] },
+            prime: { name: 'PRIME', subtitle: 'watching', tracks: ['prime'] },
+            eidolon: { name: 'EIDOLON', subtitle: 'fear entity', tracks: ['eidolon'] }
+        };
+
+        // Track definitions with display names and subtitles
+        const trackConfig = {
+            ahdia: { name: 'AHDIA', subtitle: 'baseline: 95% → <10%', group: 'ahdia' },
+            ruth_grief: { name: 'RUTH', subtitle: 'grief arc', group: 'ruth' },
+            ruth_leadership: { name: 'RUTH', subtitle: 'leadership arc', group: 'ruth' },
+            ruth_ahdia: { name: 'RUTH', subtitle: 'Ahdia relationship arc', group: 'ruth' },
+            ben: { name: 'BEN', subtitle: 'system believer arc', group: 'ben' },
+            tess_father: { name: 'TESS', subtitle: 'father/identity arc', group: 'tess' },
+            tess_hero: { name: 'TESS', subtitle: 'shadow → hero arc', group: 'tess' },
+            tess_leta: { name: 'TESS', subtitle: 'Leta as anchor arc', group: 'tess' },
+            leta: { name: 'LETA', subtitle: '† Month 11', group: 'leta' },
+            victor: { name: 'VICTOR', subtitle: 'resistance arc', group: 'victor' },
+            leah: { name: 'LEAH', subtitle: 'white moderate arc', group: 'leah' },
+            ryu: { name: 'RYU', subtitle: 'enabler arc', group: 'ryu' },
+            bourn: { name: 'BOURN', subtitle: 'CADENS', group: 'bourn' },
+            webb: { name: 'WEBB', subtitle: 'killer', group: 'webb' },
+            prime: { name: 'PRIME', subtitle: 'watching', group: 'prime' },
+            eidolon: { name: 'EIDOLON', subtitle: 'fear entity', group: 'eidolon' }
+        };
+
+        // Track expanded state for character groups (true = show separate arcs)
+        const expandedGroups = {
+            ruth: false,
+            tess: false
+        };
+
+        // Event data - positions aligned for simultaneous events
+        // Format: month.day where day is 01-30
+        const eventsData = {
+            ahdia: [
+                // MONTH 1: Riot & Geneva
+                { id: 'a1', pos: 1.03, type: '', baseline: '95%', text: 'Riot. Burns 47 min saving 23 people.' },
+                { id: 'a2', pos: 1.08, type: 'crisis', baseline: '88%', baselineClass: 'warning', text: 'Fails to save Geneva. Burns 3 min.' },
+                { id: 'a3', pos: 1.15, type: '', baseline: '82%', baselineClass: 'warning', text: 'Confesses to Ruth. First vulnerability.' },
+                { id: 'a4', pos: 1.20, type: 'hidden', baseline: '75%', baselineClass: 'warning', text: 'Manipulates Ryu for intel. First line crossed.' },
+                // MONTH 2: Global ops begin
+                { id: 'a5', pos: 2.05, type: 'hidden', baseline: '72%', baselineClass: 'warning', text: 'First global op. "Treatment" excuses begin.' },
+                { id: 'a6', pos: 2.20, type: 'hidden', baseline: '68%', baselineClass: 'warning', text: 'Team sees "depression." Ruth suspicious.' },
+                // MONTH 3-6: Escalation
+                { id: 'a7', pos: 3.15, type: 'hidden', baseline: '65%', baselineClass: 'warning', text: 'Escalating ops. Full benevolent dictator mode.' },
+                { id: 'a8', pos: 4.15, type: 'hidden', baseline: '62%', baselineClass: 'warning', text: 'Investigations begin to converge.' },
+                { id: 'a9', pos: 5.15, type: 'hidden', baseline: '58%', baselineClass: 'warning', text: 'Exile Island established.' },
+                { id: 'a10', pos: 6.10, type: 'hidden', baseline: '54%', baselineClass: 'critical', text: 'Multiple investigations closing in.' },
+                // MONTH 7: Confrontation
+                { id: 'a11', pos: 7.10, type: 'bloom', baseline: '50%', baselineClass: 'critical', text: 'CONFRONTATION. Ruth discovers baseline.' },
+                { id: 'a12', pos: 7.20, type: 'bloom', baseline: '48%', baselineClass: 'critical', text: 'Exile Island revealed. Full scope visible.' },
+                // MONTH 8-10: Post-confrontation decline
+                { id: 'a13', pos: 8.15, type: 'hidden', baseline: '42%', baselineClass: 'critical', text: 'Continues ops despite confrontation.' },
+                { id: 'a14', pos: 9.15, type: 'hidden', baseline: '35%', baselineClass: 'critical', text: 'Accelerating decline.' },
+                { id: 'a15', pos: 10.15, type: 'hidden', baseline: '25%', baselineClass: 'critical', text: 'Crisis point approaching.' },
+                // MONTH 11-12: Collapse
+                { id: 'a16', pos: 11.10, type: 'crisis', baseline: '15%', baselineClass: 'critical', text: 'Leta killed. Near collapse.' },
+                { id: 'a17', pos: 12.10, type: 'crisis', baseline: '5%', baselineClass: 'critical', text: 'Reactor crisis. Crashes to 0.7%.' },
+                { id: 'a18', pos: 12.15, type: 'bloom', baseline: '0.7%', baselineClass: 'critical', text: 'Ruth saves her. Coup stopped. Kain wins.' },
+            ],
+            ruth_grief: [
+                { id: 'rg1', pos: 1.03, type: '', text: 'Overworking to avoid feeling. Firas grief buried.' },
+                { id: 'rg2', pos: 1.08, type: 'grief', text: 'Geneva dies. Another person she couldn\'t save.' },
+                { id: 'rg3', pos: 1.15, type: 'grief', text: 'CRACK: Confesses Firas ring to Ahdia. First surfacing.' },
+                { id: 'rg4', pos: 1.20, type: 'grief', text: 'Buries again. More work. More responsibility.' },
+                { id: 'rg5', pos: 2.20, type: 'grief', text: 'Night run. Processing alone. Won\'t look too closely.' },
+                { id: 'rg6', pos: 7.10, type: 'bloom', text: 'CONFRONTATION. Mirror cracking—Ahdia\'s avoidance = her own.' },
+                { id: 'rg7', pos: 11.10, type: 'bloom', text: 'LETA KILLED. Can\'t outwork this grief. Strategy fails.' },
+                { id: 'rg8', pos: 11.15, type: 'grief', text: 'Holds team through grief. Presence, not avoidance.' },
+                { id: 'rg9', pos: 12.15, type: 'bloom', text: 'Grief acknowledged. Limits accepted. "Saved who we could."' },
+            ],
+            ruth_leadership: [
+                { id: 'rl1', pos: 1.03, type: '', text: 'Medical triage. Taking on too much.' },
+                { id: 'rl2', pos: 1.24, type: 'institutional', text: 'Bourn approaches. Drowning. Accepts help.' },
+                { id: 'rl3', pos: 3.15, type: 'institutional', text: 'CADENS liaison forming. Resources = more enabling.' },
+                { id: 'rl4', pos: 5.15, type: 'institutional', text: 'Full liaison. Leadership as control. Still drowning.' },
+                { id: 'rl5', pos: 7.10, type: 'bloom', text: 'CONFRONTATION. Discovers enabling. Sets boundaries.' },
+                { id: 'rl6', pos: 8.05, type: '', text: 'Supports Ben\'s leak. Holding space, not control.' },
+                { id: 'rl7', pos: 8.20, type: 'crisis', text: 'Eidolon reframes. Can\'t control outcomes.' },
+                { id: 'rl8', pos: 11.15, type: 'bloom', text: 'Holds team through grief. Leadership is presence.' },
+                { id: 'rl9', pos: 12.15, type: 'bloom', text: 'Leadership redefined. Accepts limits.' },
+            ],
+            ruth_ahdia: [
+                { id: 'ra1', pos: 1.15, type: '', text: 'Best friend. Caretaker. Needs someone to save.' },
+                { id: 'ra2', pos: 2.05, type: 'seed', text: 'Lies for Ahdia. "Treatment ran long." Enabling.' },
+                { id: 'ra3', pos: 2.20, type: '', text: 'Suspicious. Won\'t look too closely—it\'s a mirror.' },
+                { id: 'ra4', pos: 4.15, type: '', text: 'Rationalizing absences. Avoiding looking at avoidance.' },
+                { id: 'ra5', pos: 6.10, type: '', text: 'Can\'t ignore anymore. Numbers wrong.' },
+                { id: 'ra6', pos: 7.10, type: 'bloom', text: 'CONFRONTATION. 54% baseline. Ryu falsified records.' },
+                { id: 'ra7', pos: 7.15, type: 'bloom', text: 'Sets boundaries. Still loves her.' },
+                { id: 'ra8', pos: 7.20, type: 'bloom', text: 'EXILE ISLAND. Friendship rebuilt on honesty.' },
+                { id: 'ra9', pos: 12.10, type: 'crisis', text: 'Ahdia crashes to 0.7%.' },
+                { id: 'ra10', pos: 12.15, type: 'bloom', text: 'SAVES AHDIA. "Saved each other." Real support.' },
+            ],
+            ben: [
+                // MONTH 1
+                { id: 'b1', pos: 1.03, type: '', text: 'Riot. Sees orchestration—too coordinated.' },
+                { id: 'b2', pos: 1.08, type: 'investigation', text: 'Geneva assassination. Notes professional execution.' },
+                { id: 'b3', pos: 1.20, type: 'investigation', text: 'Formally starts Tank Kain investigation.' },
+                // MONTH 2
+                { id: 'b4', pos: 2.05, type: 'seed', text: 'Webb exonerated. Files as data point. "Different case."' },
+                { id: 'b5', pos: 2.15, type: 'investigation', text: 'Following money trail. TRIOMF appears.' },
+                // MONTH 3-4
+                { id: 'b6', pos: 3.15, type: 'investigation', text: 'TRIOMF network mapped. All roads lead to Kain.' },
+                { id: 'b7', pos: 3.20, type: '', text: 'Shares findings with Tess. Investigations overlap.' },
+                { id: 'b8', pos: 4.15, type: 'investigation', text: 'Case complete. Airtight documentation.' },
+                { id: 'b9', pos: 4.25, type: 'seed', text: 'Submits through proper channels. "Evidence will bring justice."' },
+                // MONTH 5-6
+                { id: 'b10', pos: 5.10, type: 'crisis', text: 'CADENS blocks. "National security." Witnesses intimidated.' },
+                { id: 'b11', pos: 5.20, type: 'crisis', text: 'Evidence "mysteriously" corrupted. System blocking him.' },
+                { id: 'b12', pos: 6.15, type: '', text: 'TRIOMF discovered by team. Kain clone immortality revealed.' },
+                // MONTH 7
+                { id: 'b13', pos: 7.10, type: 'seed', text: 'Decision: Follow rules OR leak publicly.' },
+                // MONTH 8: The Leak
+                { id: 'b14', pos: 8.05, type: 'bloom', text: 'THE LEAK. Releases everything. Burns CADENS access.' },
+                { id: 'b15', pos: 8.08, type: '', text: '48 hours of hope. Kain polling dips. Media firestorm.' },
+                { id: 'b16', pos: 8.12, type: 'crisis', text: 'EIDOLON REFRAMES. Same evidence, Kain +12 points.' },
+                { id: 'b17', pos: 8.15, type: 'crisis', text: 'Faith shattered. "Evidence doesn\'t matter."' },
+                // MONTH 9-10
+                { id: 'b18', pos: 9.15, type: '', text: 'Supports Leah\'s recording release. Braces for disappointment.' },
+                { id: 'b19', pos: 10.10, type: 'crisis', text: 'Officers cleared. "What the hell am I conserving?"' },
+                // MONTH 11-12
+                { id: 'b20', pos: 11.10, type: '', text: 'Leta killed by Webb. Tactical mode—protecting team.' },
+                { id: 'b21', pos: 12.15, type: 'bloom', text: 'Election night. Coup stopped. KAIN WINS ANYWAY.' },
+                { id: 'b22', pos: 12.20, type: '', text: '"Some people listened. I\'m one of them now."' },
+            ],
+            tess_father: [
+                { id: 'tf1', pos: 1.03, type: '', text: 'Already knows father corrupt. Why she\'s Gloom Girl.' },
+                { id: 'tf2', pos: 2.05, type: 'seed', text: 'Webb exonerated. Father\'s signature on memo.' },
+                { id: 'tf3', pos: 3.15, type: 'investigation', text: 'More documents. Father deeper than thought.' },
+                { id: 'tf4', pos: 3.20, type: 'investigation', text: 'Ben shares findings. Father fully complicit.' },
+                { id: 'tf5', pos: 6.10, type: 'bloom', text: 'INFILTRATES FATHER\'S GALA with Korede. Gets proof.' },
+                { id: 'tf6', pos: 6.15, type: 'bloom', text: 'Face-to-face with corruption. Relationship weaponized.' },
+                { id: 'tf7', pos: 8.12, type: 'crisis', text: 'Evidence fails. System protects him anyway.' },
+                { id: 'tf8', pos: 12.15, type: '', text: 'Election night. Father\'s side won. Nothing changed.' },
+            ],
+            tess_hero: [
+                { id: 'th1', pos: 1.03, type: '', text: 'Social media darling. Documents team. Behind screens.' },
+                { id: 'th2', pos: 1.20, type: 'investigation', text: 'Starts own investigation. Learning the craft.' },
+                { id: 'th3', pos: 3.20, type: '', text: 'Vlogs everything. Creating record she exists.' },
+                { id: 'th4', pos: 3.20, type: 'investigation', text: 'Ben mentorship. Case-building skills.' },
+                { id: 'th5', pos: 6.10, type: 'bloom', text: 'GALA INFILTRATION. Steps out of shadows. Field work.' },
+                { id: 'th6', pos: 10.10, type: '', text: 'Officers cleared. Radicalized. "System is the problem."' },
+                { id: 'th7', pos: 11.12, type: 'bloom', text: 'Reveals identity to Korede. No more hiding.' },
+                { id: 'th8', pos: 11.20, type: 'crisis', text: 'HUNTS WEBB. Brutalizes him. Vigilante activated.' },
+                { id: 'th9', pos: 12.15, type: 'bloom', text: 'Person who documented heroes BECOMES one. Setup for spinoff.' },
+            ],
+            tess_leta: [
+                { id: 'tl1', pos: 1.15, type: '', text: 'Leta: only person who sees real Tess. No masks.' },
+                { id: 'tl2', pos: 2.15, type: 'harassment', text: 'Leta harassment begins. 3 burner accounts.' },
+                { id: 'tl3', pos: 3.15, type: 'harassment', text: 'Harassment escalating. Relationship stressed.' },
+                { id: 'tl4', pos: 4.15, type: 'harassment', text: 'Death threats to Leta. "I can\'t lose her."' },
+                { id: 'tl5', pos: 5.15, type: 'harassment', text: 'Doxxing. Deepfakes. Desperate to protect.' },
+                { id: 'tl6', pos: 6.20, type: '', text: 'Still together. Leta is her anchor.' },
+                { id: 'tl7', pos: 9.15, type: '', text: 'Relationship solid despite everything.' },
+                { id: 'tl8', pos: 11.10, type: 'bloom', text: 'LETA KILLED BY WEBB. Loses only place mask came off.' },
+                { id: 'tl9', pos: 11.20, type: 'crisis', text: 'Hollow. The antidepressant that worked is gone.' },
+                { id: 'tl10', pos: 12.15, type: '', text: 'Grief carried. Korede new ally. Not the same.' },
+            ],
+            leta: [
+                { id: 'l1', pos: 1.03, type: 'seed', text: 'Title card: "9 months until death."' },
+                { id: 'l2', pos: 1.15, type: '', text: 'Domestic with Tess. Organizing.' },
+                { id: 'l3', pos: 2.15, type: 'harassment', text: 'Harassment begins. 3 burner accounts.' },
+                { id: 'l4', pos: 3.15, type: 'harassment', text: 'Harassment growing.' },
+                { id: 'l5', pos: 4.15, type: 'harassment', text: 'Death threats begin.' },
+                { id: 'l6', pos: 5.15, type: 'harassment', text: 'Doxxed. Still organizing.' },
+                { id: 'l7', pos: 6.15, type: 'crisis', text: 'Continues despite threats.' },
+                { id: 'l8', pos: 7.15, type: 'crisis', text: 'Still organizing.' },
+                { id: 'l9', pos: 11.10, type: 'bloom', text: 'KILLED BY WEBB at protest.' },
+            ],
+            victor: [
+                { id: 'v1', pos: 1.03, type: '', text: 'Riot. Fighting. Arrested.' },
+                { id: 'v2', pos: 1.05, type: '', text: 'Bailed out. Backstory to Leah.' },
+                { id: 'v3', pos: 1.08, type: 'seed', text: 'Academy visit with Leah. Seed planted.' },
+                { id: 'v4', pos: 2.08, type: 'crisis', text: 'Attacked by fear-manipulated civilians.' },
+                { id: 'v5', pos: 2.15, type: 'seed', text: 'Teaches Leah "but" vs "and."' },
+                { id: 'v6', pos: 3.15, type: '', text: 'Coordinated attacks. Teaching resistance.' },
+                { id: 'v7', pos: 4.15, type: '', text: 'Resistance practice.' },
+                { id: 'v8', pos: 5.15, type: '', text: 'Network building.' },
+                { id: 'v9', pos: 6.15, type: '', text: 'Preparing for election.' },
+                { id: 'v10', pos: 7.15, type: '', text: 'Resistance training continues.' },
+                { id: 'v11', pos: 12.10, type: 'bloom', text: 'Election night. Resistance 60% effective.' },
+                { id: 'v12', pos: 12.15, type: 'crisis', text: 'Insufficient. Kain wins.' },
+            ],
+            leah: [
+                { id: 'le1', pos: 1.05, type: '', text: 'Bails Victor out of jail.' },
+                { id: 'le2', pos: 1.08, type: 'seed', text: 'Academy visit. "Someone should do something."' },
+                { id: 'le3', pos: 2.05, type: '', text: 'Silent during Isaiah verdict.' },
+                { id: 'le4', pos: 2.15, type: 'seed', text: 'Learns "but" vs "and" from Victor.' },
+                { id: 'le5', pos: 5.15, type: 'bloom', text: 'SILENT on Leta harassment. White moderate.' },
+                { id: 'le6', pos: 6.15, type: 'bloom', text: 'Still silent.' },
+                { id: 'le7', pos: 7.15, type: 'bloom', text: 'Still silent.' },
+                { id: 'le8', pos: 9.15, type: 'bloom', text: 'Finally speaks up. Too late, clumsy.' },
+                { id: 'le9', pos: 11.10, type: 'grief', text: 'Leta killed. Silence enabled this.' },
+            ],
+            ryu: [
+                { id: 'ry1', pos: 1.15, type: 'seed', text: 'Treatment. Agrees to "look into" intel.' },
+                { id: 'ry2', pos: 1.20, type: 'hidden', text: 'First line crossed. Provides coordinates.' },
+                { id: 'ry3', pos: 2.05, type: 'hidden', text: 'Falsifies first medical record.' },
+                { id: 'ry4', pos: 3.15, type: 'hidden', text: 'Full enabler. Treatment + intel + coords.' },
+                { id: 'ry5', pos: 4.15, type: 'hidden', text: 'Deep enabling. Love + guilt.' },
+                { id: 'ry6', pos: 5.15, type: 'hidden', text: 'AR-RYU system established.' },
+                { id: 'ry7', pos: 6.15, type: 'hidden', text: 'Translocation support for ops.' },
+                { id: 'ry8', pos: 7.20, type: 'bloom', text: 'AR-RYU DISCOVERED. Exposed to Ruth.' },
+            ],
+            bourn: [
+                { id: 'bo1', pos: 1.08, type: 'institutional', text: 'Geneva assassinated. CADENS on alert.' },
+                { id: 'bo2', pos: 1.10, type: 'institutional', text: 'Patterson threatens CADENS oversight.' },
+                { id: 'bo3', pos: 1.24, type: 'seed', text: 'Approaches Ruth. First meeting.' },
+                { id: 'bo4', pos: 2.08, type: 'institutional', text: 'Names "Eidolon" threat.' },
+                { id: 'bo5', pos: 3.15, type: 'institutional', text: 'Ruth relationship deepening.' },
+                { id: 'bo6', pos: 4.15, type: 'institutional', text: 'Institutional capture ongoing.' },
+                { id: 'bo7', pos: 5.15, type: 'institutional', text: 'Full liaison established.' },
+                { id: 'bo8', pos: 6.15, type: '', text: 'Revealed as ally (resisting from inside).' },
+                { id: 'bo9', pos: 7.15, type: '', text: 'Open coordination with Ruth.' },
+                { id: 'bo10', pos: 11.20, type: 'bloom', text: 'FAERIS broadcast. Bourn extracted.' },
+            ],
+            webb: [
+                { id: 'w1', pos: 1.10, type: 'seed', text: 'Exonerated (Isaiah). Back on duty.' },
+                { id: 'w2', pos: 2.15, type: '', text: 'On patrol. Armed.' },
+                { id: 'w3', pos: 11.10, type: 'bloom', text: 'KILLS LETA at protest.' },
+                { id: 'w4', pos: 12.05, type: 'crisis', text: 'Brutalized by Tess.' },
+            ],
+            prime: [
+                { id: 'p1', pos: 1.10, type: 'hidden', text: 'Watching Ahdia (unknown to reader).' },
+                { id: 'p2', pos: 2.15, type: 'hidden', text: 'On rooftop watching.' },
+                { id: 'p3', pos: 3.15, type: 'hidden', text: 'Watching.' },
+                { id: 'p4', pos: 4.15, type: 'hidden', text: 'Watching.' },
+                { id: 'p5', pos: 5.15, type: 'hidden', text: 'Watching, not interfering.' },
+                { id: 'p6', pos: 6.15, type: 'hidden', text: 'Watching.' },
+                { id: 'p7', pos: 7.15, type: 'hidden', text: 'Watching.' },
+                { id: 'p8', pos: 12.20, type: 'bloom', text: 'REVEALS HERSELF.' },
+            ],
+            eidolon: [
+                { id: 'e1', pos: 1.03, type: 'crisis', text: 'RIOT—amplifying fear.' },
+                { id: 'e2', pos: 1.08, type: 'crisis', text: 'Assassination fear spike.' },
+                { id: 'e3', pos: 2.08, type: 'crisis', text: 'Victor attacked by manipulated civilians.' },
+                { id: 'e4', pos: 2.12, type: '', text: 'CADENS names the entity.' },
+                { id: 'e5', pos: 3.15, type: 'crisis', text: 'Coordinated fear attacks.' },
+                { id: 'e6', pos: 4.15, type: 'crisis', text: 'Growing influence.' },
+                { id: 'e7', pos: 5.15, type: 'crisis', text: 'Election fear campaigns.' },
+                { id: 'e8', pos: 6.15, type: 'crisis', text: 'Intensifying.' },
+                { id: 'e9', pos: 7.15, type: '', text: 'Victor\'s resistance 60-70%.' },
+                { id: 'e10', pos: 11.10, type: 'crisis', text: 'Protest manipulation.' },
+                { id: 'e11', pos: 12.15, type: 'bloom', text: 'ELECTION. Fear wins. Kain elected.' },
+            ]
+        };
+
+        // Convert position (month.day) to pixels
+        function posToPixels(pos, zoom = currentZoom) {
+            const totalDays = MONTHS * DAYS_PER_MONTH;
+            const month = Math.floor(pos);
+            const day = (pos - month) * 100;
+            const absoluteDay = (month - 1) * DAYS_PER_MONTH + day;
+            const width = BASE_WIDTH * (zoom / 100);
+            return (absoluteDay / totalDays) * width;
+        }
+
+        // Convert pixels to position (month.day)
+        function pixelsToPos(px, zoom = currentZoom) {
+            const totalDays = MONTHS * DAYS_PER_MONTH;
+            const width = BASE_WIDTH * (zoom / 100);
+            const absoluteDay = (px / width) * totalDays;
+            const month = Math.floor(absoluteDay / DAYS_PER_MONTH) + 1;
+            const day = absoluteDay % DAYS_PER_MONTH;
+            return Math.min(12.30, Math.max(1.01, month + day / 100));
+        }
+
+        // Format position for display
+        function formatPos(pos) {
+            const month = Math.floor(pos);
+            const day = Math.round((pos - month) * 100);
+            return `${month}.${day.toString().padStart(2, '0')}`;
+        }
+
+        // Create month markers
+        function createMonthMarkers(timeline, zoom = currentZoom) {
+            const width = BASE_WIDTH * (zoom / 100);
+            const monthWidth = width / MONTHS;
+
+            for (let i = 1; i <= MONTHS; i++) {
+                const x = (i - 0.5) * monthWidth;
+                const isBook2B = i >= 8;
+
+                const marker = document.createElement('div');
+                marker.className = 'month-marker' + (isBook2B ? ' book2b' : '');
+                marker.style.left = x + 'px';
+                timeline.appendChild(marker);
+
+                const label = document.createElement('div');
+                label.className = 'month-label' + (isBook2B ? ' book2b' : '');
+                label.style.left = x + 'px';
+                label.textContent = i === 8 ? 'M8 (2B)' : 'M' + i;
+                timeline.appendChild(label);
+            }
+        }
+
+        // Create an event element
+        function createEventElement(eventData, track) {
+            const el = document.createElement('div');
+            el.className = 'event' + (eventData.type ? ' ' + eventData.type : '');
+            el.dataset.id = eventData.id;
+            el.dataset.track = track;
+            el.style.left = posToPixels(eventData.pos) + 'px';
+
+            let html = '';
+            if (eventData.baseline) {
+                html += `<div class="baseline ${eventData.baselineClass || ''}">${eventData.baseline}</div>`;
+            }
+            html += `<div>${eventData.text}</div>`;
+            html += `<div class="position-indicator">${formatPos(eventData.pos)}</div>`;
+            el.innerHTML = html;
+
+            makeDraggable(el, track);
+            return el;
+        }
+
+        // Make an event draggable
+        function makeDraggable(el, track) {
+            let isDragging = false;
+            let startX, startLeft;
+
+            el.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                el.classList.add('dragging');
+                startX = e.clientX;
+                startLeft = parseFloat(el.style.left);
+                e.stopPropagation();
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const dx = e.clientX - startX;
+                let newLeft = startLeft + dx;
+                const width = BASE_WIDTH * (currentZoom / 100);
+                newLeft = Math.max(50, Math.min(width - 50, newLeft));
+                el.style.left = newLeft + 'px';
+                const newPos = pixelsToPos(newLeft);
+                el.querySelector('.position-indicator').textContent = formatPos(newPos);
+                const eventId = el.dataset.id;
+                const eventData = eventsData[track].find(e => e.id === eventId);
+                if (eventData) eventData.pos = newPos;
+            });
+
+            document.addEventListener('mouseup', () => {
+                if (isDragging) {
+                    isDragging = false;
+                    el.classList.remove('dragging');
+                }
+            });
+        }
+
+        // Create a track
+        function createTrack(trackId) {
+            const config = trackConfig[trackId];
+            const events = eventsData[trackId];
+
+            const container = document.createElement('div');
+            container.className = 'track-container';
+            container.dataset.track = trackId;
+
+            const header = document.createElement('div');
+            header.className = 'track-header';
+            header.innerHTML = `
+                <span class="collapse-icon">▼</span>
+                <span class="track-label">${config.name}<span class="subtitle">${config.subtitle}</span></span>
+                <span class="event-count">${events.length} events</span>
+            `;
+            header.addEventListener('click', () => {
+                container.classList.toggle('collapsed');
+            });
+
+            const content = document.createElement('div');
+            content.className = 'track-content';
+
+            const scroll = document.createElement('div');
+            scroll.className = 'timeline-scroll';
+
+            const timeline = document.createElement('div');
+            timeline.className = 'timeline';
+            timeline.id = `timeline-${trackId}`;
+
+            const width = BASE_WIDTH * (currentZoom / 100);
+            timeline.style.minWidth = width + 'px';
+
+            const book2bStart = (7 / 12) * 100;
+            timeline.style.background = `linear-gradient(to right,
+                #1a1a2e 0%, #1a1a2e ${book2bStart}%,
+                rgba(233, 69, 96, 0.08) ${book2bStart}%, rgba(233, 69, 96, 0.08) 100%)`;
+
+            timeline.innerHTML = '<div class="timeline-line"></div>';
+            createMonthMarkers(timeline);
+
+            events.forEach(eventData => {
+                const el = createEventElement(eventData, trackId);
+                timeline.appendChild(el);
+            });
+
+            scroll.appendChild(timeline);
+            content.appendChild(scroll);
+            container.appendChild(header);
+            container.appendChild(content);
+
+            return container;
+        }
+
+        // Get merged events for a character group
+        function getMergedEvents(groupId) {
+            const group = characterGroups[groupId];
+            const allEvents = [];
+            group.tracks.forEach(trackId => {
+                if (eventsData[trackId]) {
+                    eventsData[trackId].forEach(event => {
+                        allEvents.push({
+                            ...event,
+                            sourceTrack: trackId,
+                            arcLabel: trackConfig[trackId].subtitle.replace(' arc', '')
+                        });
+                    });
+                }
+            });
+            return allEvents.sort((a, b) => a.pos - b.pos);
+        }
+
+        // Create a merged track for collapsed groups
+        function createMergedTrack(groupId) {
+            const group = characterGroups[groupId];
+            const events = getMergedEvents(groupId);
+            const hasMultipleTracks = group.tracks.length > 1;
+
+            const container = document.createElement('div');
+            container.className = 'track-container';
+            container.dataset.group = groupId;
+
+            const header = document.createElement('div');
+            header.className = 'track-header';
+
+            let headerHTML = `
+                <span class="collapse-icon">▼</span>
+                <span class="track-label">${group.name}<span class="subtitle">${group.subtitle}</span></span>
+                <span class="event-count">${events.length} events</span>
+            `;
+
+            if (hasMultipleTracks) {
+                headerHTML += `<button class="arc-toggle" onclick="toggleGroupExpand('${groupId}', event)">Split Arcs</button>`;
+            }
+
+            header.innerHTML = headerHTML;
+            header.addEventListener('click', (e) => {
+                if (!e.target.classList.contains('arc-toggle')) {
+                    container.classList.toggle('collapsed');
+                }
+            });
+
+            const content = document.createElement('div');
+            content.className = 'track-content';
+
+            const scroll = document.createElement('div');
+            scroll.className = 'timeline-scroll';
+
+            const timeline = document.createElement('div');
+            timeline.className = 'timeline';
+            timeline.id = `timeline-${groupId}`;
+
+            const width = BASE_WIDTH * (currentZoom / 100);
+            timeline.style.minWidth = width + 'px';
+
+            const book2bStart = (7 / 12) * 100;
+            timeline.style.background = `linear-gradient(to right,
+                #1a1a2e 0%, #1a1a2e ${book2bStart}%,
+                rgba(233, 69, 96, 0.08) ${book2bStart}%, rgba(233, 69, 96, 0.08) 100%)`;
+
+            timeline.innerHTML = '<div class="timeline-line"></div>';
+            createMonthMarkers(timeline);
+
+            events.forEach(eventData => {
+                const el = createEventElement(eventData, eventData.sourceTrack);
+                if (hasMultipleTracks && eventData.arcLabel) {
+                    const arcTag = document.createElement('div');
+                    arcTag.className = 'arc-tag';
+                    arcTag.style.cssText = 'font-size: 8px; color: #888; margin-top: 2px; font-style: italic;';
+                    arcTag.textContent = eventData.arcLabel;
+                    el.appendChild(arcTag);
+                }
+                timeline.appendChild(el);
+            });
+
+            scroll.appendChild(timeline);
+            content.appendChild(scroll);
+            container.appendChild(header);
+            container.appendChild(content);
+
+            return container;
+        }
+
+        // Create expanded sub-tracks for a group
+        function createExpandedGroup(groupId) {
+            const group = characterGroups[groupId];
+            const wrapper = document.createElement('div');
+            wrapper.className = 'group-wrapper';
+            wrapper.dataset.group = groupId;
+
+            // Main header
+            const mainHeader = document.createElement('div');
+            mainHeader.className = 'track-container';
+            mainHeader.innerHTML = `
+                <div class="track-header">
+                    <span class="collapse-icon">▼</span>
+                    <span class="track-label">${group.name}<span class="subtitle">${group.subtitle}</span></span>
+                    <button class="arc-toggle expanded" onclick="toggleGroupExpand('${groupId}', event)">Merge Arcs</button>
+                </div>
+            `;
+            mainHeader.querySelector('.track-header').addEventListener('click', (e) => {
+                if (!e.target.classList.contains('arc-toggle')) {
+                    wrapper.querySelectorAll('.sub-track').forEach(t => t.classList.toggle('collapsed'));
+                }
+            });
+            wrapper.appendChild(mainHeader);
+
+            // Sub-tracks
+            group.tracks.forEach(trackId => {
+                const track = createTrack(trackId);
+                track.classList.add('sub-track');
+                wrapper.appendChild(track);
+            });
+
+            return wrapper;
+        }
+
+        // Toggle expand/collapse for a character group
+        function toggleGroupExpand(groupId, event) {
+            event.stopPropagation();
+            expandedGroups[groupId] = !expandedGroups[groupId];
+            renderAll();
+        }
+
+        // Render all tracks
+        function renderAll() {
+            const container = document.getElementById('tracks-container');
+            const collapsedStates = {};
+
+            // Save collapsed states
+            container.querySelectorAll('.track-container').forEach(track => {
+                const id = track.dataset.track || track.dataset.group;
+                if (id) collapsedStates[id] = track.classList.contains('collapsed');
+            });
+
+            container.innerHTML = '';
+
+            const renderedGroups = new Set();
+
+            Object.keys(characterGroups).forEach(groupId => {
+                if (renderedGroups.has(groupId)) return;
+                renderedGroups.add(groupId);
+
+                const group = characterGroups[groupId];
+                const isExpanded = expandedGroups[groupId];
+
+                if (isExpanded && group.tracks.length > 1) {
+                    // Render expanded with sub-tracks
+                    const wrapper = createExpandedGroup(groupId);
+                    container.appendChild(wrapper);
+                } else {
+                    // Render merged/single track
+                    const track = createMergedTrack(groupId);
+                    if (collapsedStates[groupId]) {
+                        track.classList.add('collapsed');
+                    }
+                    container.appendChild(track);
+                }
+            });
+
+            // Re-enable scroll sync and drag
+            setupScrollSync();
+        }
+
+        // Setup scroll synchronization
+        function setupScrollSync() {
+            const scrollContainers = document.querySelectorAll('.timeline-scroll');
+
+            scrollContainers.forEach(container => {
+                let isDown = false;
+                let startX, scrollLeft;
+
+                container.addEventListener('mousedown', (e) => {
+                    if (e.target.closest('.event')) return;
+                    isDown = true;
+                    startX = e.pageX - container.offsetLeft;
+                    scrollLeft = container.scrollLeft;
+                });
+
+                container.addEventListener('mouseleave', () => isDown = false);
+                container.addEventListener('mouseup', () => isDown = false);
+
+                container.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - container.offsetLeft;
+                    container.scrollLeft = scrollLeft - (x - startX);
+                });
+
+                container.addEventListener('scroll', () => {
+                    scrollContainers.forEach(other => {
+                        if (other !== container) {
+                            other.scrollLeft = container.scrollLeft;
+                        }
+                    });
+                });
+            });
+        }
+
+        // Zoom handling
+        const zoomSlider = document.getElementById('zoomSlider');
+        const zoomDisplay = document.getElementById('zoomDisplay');
+
+        zoomSlider.addEventListener('input', (e) => {
+            currentZoom = parseInt(e.target.value);
+            zoomDisplay.textContent = currentZoom + '%';
+            renderAll();
+        });
+
+        function resetZoom() {
+            currentZoom = 100;
+            zoomSlider.value = 100;
+            zoomDisplay.textContent = '100%';
+            renderAll();
+        }
+
+        function expandAll() {
+            document.querySelectorAll('.track-container').forEach(t => t.classList.remove('collapsed'));
+        }
+
+        function collapseAll() {
+            document.querySelectorAll('.track-container').forEach(t => t.classList.add('collapsed'));
+        }
+
+        // Export positions as JSON file download
+        function exportPositions() {
+            const output = {
+                exported: new Date().toISOString(),
+                tracks: {}
+            };
+
+            Object.keys(eventsData).forEach(trackId => {
+                output.tracks[trackId] = eventsData[trackId].map(e => ({
+                    id: e.id,
+                    pos: parseFloat(formatPos(e.pos)),
+                    type: e.type || 'action',
+                    baseline: e.baseline || null,
+                    text: e.text
+                }));
+            });
+
+            const json = JSON.stringify(output, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `timeline_positions_${new Date().toISOString().slice(0,10)}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Initial render
+        renderAll();
+    </script>
+</body>
+</html>

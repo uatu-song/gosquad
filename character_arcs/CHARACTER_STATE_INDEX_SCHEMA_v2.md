@@ -936,7 +936,7 @@ characters:
     meta:
       arc_tracker: "Ryu_Arc_Tracker.md"
       codename: null
-      full_name: "Dr. Shiba Ryu"
+      full_name: "Dr. Ryu Matsuda"
       book2_role: "enabler"
 
     arc:

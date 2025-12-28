@@ -112,7 +112,7 @@ The cage became visible. Different from the one holding Ahdia Bacchus. Same bars
 
 Victor had been doing this work for fifteen years.
 
-Community organizing, mutual aid, showing up when showing up mattered. He'd faced cops, fascists, corporate security. He'd buried a wife—Clara, shot during a protest that turned violent, five years ago now—and kept going. Grief didn't stop the work. The work was what you did instead of drowning.
+Community organizing, mutual aid, showing up when showing up mattered. He'd faced cops, fascists, corporate security. He'd seen friends arrested, neighbors evicted, small victories erased by larger defeats—and kept going. Setbacks didn't stop the work. The work was what you did instead of drowning.
 
 Tonight felt different. Wrong in a way he couldn't name.
 

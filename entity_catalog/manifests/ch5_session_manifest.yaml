@@ -1,0 +1,307 @@
+# SESSION MANIFEST: Chapter 5
+# Generated: 2025-12-10
+# Task: Generate prose for Chapter 5 "Where Is Ahdia?"
+
+manifest:
+  session_id: "2025-12-10_ch5_prose"
+  chapter: "book2_ch5"
+  timeline_position: "month_1_late_to_month_2_early"
+  chapter_title: "Where Is Ahdia?"
+
+  # === CENTRAL QUESTION ===
+  central_question: "Where is Ahdia when the team needs her?"
+
+  # === SCENE STRUCTURE ===
+  scenes:
+    - scene: 1
+      name: "Pre-Patrol Briefing"
+      pov: "Ruth"
+      touchpoint_a: "Team gathers, Ahdia's absence noted"
+      touchpoint_b: "Team proceeds without her, rationalizing"
+      setting: "CADENS command center, evening"
+      present: ["Ruth", "Ben", "Victor", "Tess", "Leah", "Korede"]
+      absent: ["Ahdia"]
+
+    - scene: 2
+      name: "The Shift"
+      pov: "Team"
+      touchpoint_a: "Normal civilian interactions"
+      touchpoint_b: "Atmosphere shifts - Eidolon's influence visible"
+      setting: "Downtown Caledonia, evening patrol"
+      key_moment: "Book 1 callback - selfie civilian now terrified"
+
+    - scene: 3
+      name: "Flash Mob Attack"
+      pov: "Ruth/Team"
+      touchpoint_a: "Fear escalates into mob"
+      touchpoint_b: "Team retreats without fighting civilians"
+      setting: "Same patrol route, crowd growing"
+      key_constraint: "Team CANNOT fight back - that proves enemy right"
+
+    - scene: 4
+      name: "Eidolon Named"
+      pov: "Team"
+      touchpoint_a: "Team processing attack, injuries treated"
+      touchpoint_b: "Bourn names the entity: Eidolon"
+      setting: "CADENS medical bay"
+      key_reveal: "Eidolon = fear-class entity, amplifies existing fear"
+
+    - scene: 5
+      name: "Parallel Isolation"
+      pov: "Split - Ruth and Ahdia"
+      touchpoint_a: "Team together / Ahdia alone"
+      touchpoint_b: "Mystery deepens - what is Ahdia hiding?"
+      split_settings:
+        - "CADENS - team dispersing"
+        - "Ahdia's apartment - alone in dark"
+        - "Rooftop across street - Prime watching"
+
+    - scene: 6
+      name: "Isaiah Bennett Exoneration"
+      pov: "Team, focus on Tess"
+      touchpoint_a: "Grand jury declines to indict Webb"
+      touchpoint_b: "Tess warns Leta, Webb back on streets"
+      setting: "Safe house watching news"
+      key_foreshadowing: "9 months until Leta's death"
+
+  # === ENTITIES ACTIVE ===
+  entities_active:
+    characters:
+      - id: "CHAR_002"
+        name: "Ruth Carter"
+        role: "Team leader, Scene 1/3/4/5 POV"
+        emotional_state: "suspicious but rationalizing Ahdia's absences"
+
+      - id: "CHAR_003"
+        name: "Ben Bukowski"
+        role: "Tactical analysis, scanner data"
+        emotional_state: "frustrated by tactical impossibility"
+
+      - id: "CHAR_004"
+        name: "Victor Hernandez"
+        role: "Community connection, compassion for mob"
+        key_line: "They're scared. Being MADE scared. Not their fault."
+        forbidden_associations: ["wife", "widow", "Clara", "married"]
+
+      - id: "CHAR_005"
+        name: "Tess Whitford"
+        role: "Scene 6 focus - father's betrayal, warning Leta"
+        emotional_state: "realizing father protected killer"
+        knowledge_state: "ALREADY KNOWS father is corrupt (this confirms it)"
+
+      - id: "CHAR_006"
+        name: "Leah Turner"
+        role: "Team member, injured (cut on forehead)"
+        emotional_state: "shaken by mob violence"
+
+      - id: "CHAR_011"
+        name: "Korede Owolowo"
+        role: "Observer, radicalization seed"
+        key_moment: "Watching Tess's fear, 'Remember that name'"
+        forbidden_knowledge: ["Go Squad identities (until ch21)"]
+
+      - id: "CHAR_001"
+        name: "Ahdia Bacchus"
+        role: "ABSENT from team scenes, Scene 5 isolation"
+        emotional_state: "guilty, exhausted, hiding global ops"
+        where_actually_was: "Jakarta (backend only - not revealed to reader)"
+
+      - id: "CHAR_008"
+        name: "Harriet Bourn"
+        role: "Scene 4 - names Eidolon, provides context"
+        gender: "woman"
+        pronouns: ["she", "her"]
+
+      - id: "CHAR_007"
+        name: "Ryu Matsuda"
+        role: "Scene 1 comms, Scene 4 data analysis"
+        key_detail: "Complicit in Ahdia's cover story"
+
+      - id: "CHAR_010"
+        name: "Leta Owolowo"
+        role: "Scene 6 phone call with Tess"
+        foreshadowing: "9 months until death"
+
+      - id: "CHAR_015"
+        name: "Officer Webb"
+        role: "Scene 6 - exonerated, back on duty"
+        status: "walks free, returns to patrol"
+        key_fact: "Killed Isaiah Bennett, will kill Leta in 9 months"
+
+      - id: "CHAR_016"
+        name: "Chief Whitford"
+        role: "Scene 6 - on TV defending Webb"
+        relationship: "Tess's father, protected killer"
+
+      - id: "CHAR_018"
+        name: "Eidolon"
+        role: "Antagonist - first clear appearance"
+        mechanics:
+          function: "AMPLIFIES existing fear"
+          cannot: "CREATE new fear"
+        first_named: "Scene 4 by Bourn"
+
+      - id: "CHAR_019"
+        name: "Prime"
+        role: "Scene 5 end - watching Ahdia"
+        note: "Readers don't know her identity yet"
+
+    organizations:
+      - "ORG_001"  # CADENS
+      - "ORG_002"  # Go Squad
+
+  # === KNOWLEDGE GATES (CH5) ===
+  knowledge_gates:
+    team_learns:
+      - "Eidolon exists (named by Bourn)"
+      - "Fear amplification mechanism"
+      - "Pattern targeting enhanced individuals"
+
+    team_doesnt_know:
+      - "Where Ahdia actually was (Jakarta)"
+      - "Ahdia's terminal trajectory (ch7)"
+      - "Exile Island operations (ch13)"
+
+    reader_learns:
+      - "Ahdia is hiding something"
+      - "News ticker hint (arms deal Southeast Asia)"
+      - "Prime is watching"
+
+    reader_doesnt_know:
+      - "Ahdia was in Jakarta specifically"
+      - "Full scope of global operations"
+
+    tess_state:
+      already_knows: "Father is corrupt"
+      confirmed_this_chapter: "Father protected Webb specifically"
+
+  # === ACTIVE CONSTRAINTS FROM CATALOG ===
+  active_constraints:
+    forbidden_associations:
+      CHAR_004:  # Victor
+        - "wife"
+        - "widow"
+        - "Clara"
+        - "married"
+        - "bereaved"
+
+      CHAR_008:  # Bourn
+        - "he"
+        - "him"
+        - "his"
+
+    forbidden_entities:
+      - "Clara"
+      - "Titan Strategic"
+      - "Shiba"
+
+    forbidden_knowledge:
+      - "Korede knows Go Squad identities (ch21)"
+      - "Ruth knows terminal trajectory (ch7)"
+      - "Team knows Exile Island (ch13)"
+
+    forbidden_events:
+      - "Leta dies (ch21)"
+      - "Webb dies (never in book 2)"
+      - "Tess discovers father corruption (she ALREADY KNOWS)"
+
+    eidolon_mechanics:
+      correct: "AMPLIFIES existing fear"
+      incorrect: "CREATES new fear"
+
+  # === SEEDS TO PLANT ===
+  seeds_to_plant:
+    - name: "Ahdia's secret operations"
+      method: "News ticker about arms deal falling through (Southeast Asia)"
+      note: "Nobody connects it to Ahdia"
+      foreshadows: "Month 8 discovery"
+
+    - name: "Treatment excuse wearing thin"
+      method: "'Third time this week' - team noticing pattern"
+      foreshadows: "Ruth's eventual confrontation"
+
+    - name: "FAERIS autonomy"
+      method: "'Autonomous support patterns' - 10% independent"
+      foreshadows: "Book 2B FAERIS evolution"
+
+    - name: "Eidolon as electoral weapon"
+      method: "First appearance tied to public opinion shift"
+      foreshadows: "Months 8-12 electoral manipulation"
+
+    - name: "Webb will kill again"
+      method: "'9 months until Leta's death' - explicit countdown"
+      foreshadows: "Chapter 21"
+
+    - name: "Prime watching"
+      method: "Figure on rooftop, looks like older Ahdia"
+      foreshadows: "Book 2 climax reveal"
+
+    - name: "Korede radicalization"
+      method: "Watching, observing, 'Remember that name'"
+      foreshadows: "Book 3 arc"
+
+  # === VOICE REQUIREMENTS ===
+  voice_requirements:
+    CHAR_002:  # Ruth
+      style: "Triage thinking, team leader voice"
+      patterns:
+        - Making impossible calls
+        - Defending Ahdia while doubting
+        - Carrying weight alone
+
+    CHAR_004:  # Victor
+      style: "Community organizer, compassionate even under attack"
+      key_line: "They're scared. Being MADE scared. Not their fault."
+      forbidden: ["wife", "widow", "Clara", "married"]
+
+    CHAR_005:  # Tess
+      style: "Anger masking fear, protective of Leta"
+      note: "She ALREADY KNOWS father is corrupt - this confirms it"
+
+    CHAR_001:  # Ahdia (Scene 5 only)
+      style: "Isolated, guilty, TV-processing"
+      limitation: "Cannot reveal where she actually was"
+
+    CHAR_008:  # Bourn
+      style: "Institutional authority, information control"
+      pronouns: "she/her ONLY"
+
+    CHAR_018:  # Eidolon
+      style: "Not dialogue - shown through effects"
+      mechanics: "Amplifies, does not create"
+
+  # === FORBIDDEN ENTITIES (BLOCKING) ===
+  forbidden_entities:
+    - id: "FORBID_001"
+      name: "Clara"
+      detection: "Clara|Victor.*(wife|widow|married)"
+
+    - id: "FORBID_003"
+      name: "Tess discovers corruption"
+      detection: "Tess.*(discovers|learns|realizes).*father.*corrupt"
+      note: "She ALREADY KNOWS"
+
+    - id: "FORBID_005"
+      name: "Webb dies"
+      detection: "Webb.*(dead|died|killed|body)"
+      note: "Webb survives all of Book 2"
+
+    - id: "FORBID_007"
+      name: "Bourn male pronouns"
+      detection: "Bourn.*(he|him|his)"
+
+    - id: "FORBID_008"
+      name: "Eidolon creates fear"
+      detection: "Eidolon.*(creates?|generating|produced).*fear"
+
+    - id: "FORBID_009"
+      name: "Shiba"
+      detection: "Shiba"
+      canonical: "Ryu Matsuda"
+
+  # === OUTPUT SPEC ===
+  output:
+    type: "prose"
+    target_words: "5000-6000"
+    scenes: 6
+    povs: ["Ruth", "Team", "Ahdia (Scene 5)", "Tess (Scene 6)"]

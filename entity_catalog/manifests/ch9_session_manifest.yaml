@@ -1,0 +1,307 @@
+# SESSION MANIFEST: Chapter 9
+# Generated: 2025-12-10
+# Task: Generate prose for Chapter 9 "Building the Case"
+
+manifest:
+  session_id: "2025-12-10_ch9_prose"
+  chapter: "book2_ch9"
+  timeline_position: "month_2_mid"
+  chapter_title: "Building the Case"
+
+  # === CRITICAL CHAPTER ===
+  importance: "BEN CHARACTER ARC - system believer before faith shatters"
+
+  critical_events:
+    - "Ben building comprehensive Tank Kain case"
+    - "Agent provocateur evidence identified"
+    - "FBI contact (Webb) - institutional faith shown"
+    - "Sarah's death connected to riot tactics"
+    - "Fusion project discovery (TRIOMF)"
+    - "Parallel to Ahdia's obsessive work"
+    - "Conservative ideology pre-shatter"
+
+  # === SCENE STRUCTURE ===
+  scenes:
+    - scene: 1
+      name: "The Footage"
+      pov: "Ben (close third)"
+      touchpoint_a: "Ben reviewing Tank Kain massacre footage"
+      touchpoint_b: "Agent provocateur pattern identified"
+      setting: "Ben's apartment, 2 AM"
+      present: ["Ben (alone)"]
+      key_moments:
+        - "Tank Kain massacre - 6 months ago"
+        - "Frame-by-frame analysis"
+        - "Timeline inconsistency (vehicle positioned BEFORE violence)"
+        - "Agent provocateurs identified"
+        - "14 dead, 47 injured"
+
+    - scene: 2
+      name: "The FBI Contact"
+      pov: "Ben (close third)"
+      touchpoint_a: "Ben presents evidence to FBI colleague"
+      touchpoint_b: "First warning about political pressure"
+      setting: "FBI field office, Caledonia division"
+      present: ["Ben", "Agent Marcus Webb"]
+      key_moments:
+        - "Professional presentation of evidence"
+        - "Webb agrees evidence is solid"
+        - "But: Authorization levels, jurisdiction"
+        - "Warning about Kain's connections"
+        - "First crack in institutional faith"
+
+    - scene: 3
+      name: "Expanded Investigation"
+      pov: "Ben (close third)"
+      touchpoint_a: "Ben expands scope"
+      touchpoint_b: "Comprehensive case complete"
+      setting: "Ben's apartment, CADENS archives"
+      present: ["Ben (alone)"]
+      key_moments:
+        - "Seven riots with same pattern"
+        - "TRIOMF financial trail"
+        - "Sarah's death connection"
+        - "Fusion project safety violations"
+        - "Professional documentation"
+
+    - scene: 4
+      name: "The Parallel"
+      pov: "Ben (close third)"
+      touchpoint_a: "Obsessive work patterns visible"
+      touchpoint_b: "Ben-Ahdia parallel established"
+      setting: "Ben's apartment, 4 AM"
+      present: ["Ben (alone)"]
+      key_moments:
+        - "Physical deterioration (not eating, not sleeping)"
+        - "Military precision replaced by obsession"
+        - "Both using work to avoid grief"
+        - "Both convinced only they can do this"
+
+    - scene: 5
+      name: "Submission and Hope"
+      pov: "Ben (close third)"
+      touchpoint_a: "Case complete, ready for submission"
+      touchpoint_b: "Faith intact, hope present (before failure)"
+      setting: "Ben's apartment, morning"
+      present: ["Ben (alone)"]
+      key_moments:
+        - "Professional presentation prepared"
+        - "Conservative faith in institutions"
+        - "Sarah's death given meaning"
+        - "Doesn't know evidence will fail"
+
+  # === ENTITIES ACTIVE ===
+  entities_active:
+    characters:
+      - id: "CHAR_003"
+        name: "Ben Bukowski"
+        role: "POV protagonist all scenes"
+        emotional_state: "Obsessive, driven, grief-avoidant, hopeful"
+        actions:
+          - "Reviews Tank Kain massacre footage"
+          - "Identifies agent provocateur pattern"
+          - "Meets with FBI contact Webb"
+          - "Builds comprehensive case"
+          - "Connects Sarah's death to tactics"
+          - "Discovers fusion project violations"
+          - "Prepares submission"
+        key_knowledge_change: "Understands Kain campaign conspiracy"
+        internal_conflict: "Work as avoidance vs. facing grief"
+
+      - id: "CHAR_018"
+        name: "Agent Marcus Webb"
+        role: "Scene 2 - FBI colleague"
+        emotional_state: "Professional, cautious, warning"
+        note: "Different person from Officer Webb who kills Leta"
+        actions:
+          - "Reviews Ben's evidence"
+          - "Agrees it's solid"
+          - "Warns about political pressure"
+          - "Promises to bring to supervisors"
+
+      - id: "CHAR_017"
+        name: "Sarah"
+        role: "Referenced throughout (deceased)"
+        status: "deceased"
+        death_cause: "UNSPECIFIED - protest turned violent, trampled helping others escape"
+        key_function: "Ben's motivation, grief driver"
+        note: "Do NOT specify exact death cause beyond 'protest violence'"
+
+    characters_referenced:
+      - id: "CHAR_002"
+        name: "Ruth Carter"
+        context: "Missed calls, checking on Ben"
+
+      - id: "CHAR_004"
+        name: "Victor Hernandez"
+        context: "Missed calls, team concern"
+
+      - id: "CHAR_005"
+        name: "Tess Whitford"
+        context: "Missed calls"
+
+      - id: "CHAR_001"
+        name: "Ahdia Bacchus"
+        context: "Parallel structure - both isolated, obsessive"
+        note: "NOT present, implied parallel only"
+
+      - id: "CHAR_009"
+        name: "Tank Kain"
+        context: "Target of investigation, presidential candidate"
+
+  # === KNOWLEDGE GATES (CH9) ===
+  knowledge_gates:
+    CHAR_003:  # Ben
+      knows_before:
+        - "Sarah died 8 months ago"
+        - "Tank Kain massacre happened 6 months ago"
+        - "Kain running for President"
+        - "CADENS database access"
+      learns_this_chapter:
+        - "Agent provocateurs in Tank Kain massacre"
+        - "Timeline proves foreknowledge"
+        - "Seven riots with same pattern"
+        - "TRIOMF financial connections"
+        - "Sarah's death used same tactics"
+        - "Fusion project safety violations"
+      decides_this_chapter:
+        - "Submit evidence through proper channels"
+        - "Trust institutional process"
+
+    team:
+      doesnt_know:
+        - "Ben building case against Kain"
+        - "Ben's deep isolation"
+        - "Ben connecting Sarah's death to investigation"
+
+  # === RELATIONSHIP STATES (CH9) ===
+  relationship_states:
+    ben_sarah:
+      status: "widower_grieving"
+      dynamic: "8 months, grief channeled into work"
+      note: "Sarah's death cause UNSPECIFIED"
+
+    ben_team:
+      status: "drifting"
+      dynamic: "Missed calls, excuses, isolated"
+
+    ben_institutions:
+      status: "faithful"
+      dynamic: "Believes system works if evidence strong enough"
+      note: "Pre-shatter - faith intact"
+
+  # === ACTIVE CONSTRAINTS FROM CATALOG ===
+  active_constraints:
+    forbidden_associations:
+      CHAR_003:  # Ben
+        - "Sarah death cause specified"
+        - "Sarah shot/killed by [anyone]"
+        - "Explicit death details"
+
+      CHAR_004:  # Victor (not in chapter, but enforce)
+        - "wife"
+        - "widow"
+        - "Clara"
+
+    forbidden_entities:
+      - "Clara"
+      - "Shiba"
+      - "Titan Strategic"  # Use "TRIOMF" not Titan
+
+    sarah_death_constraint:
+      allowed: "protest turned violent"
+      allowed: "trampled helping others escape"
+      allowed: "caught in crush"
+      allowed: "panic"
+      forbidden: "shot"
+      forbidden: "killed by [specific person]"
+      forbidden: "specific weapon"
+
+    webb_differentiation:
+      note: "Agent Marcus Webb (FBI) is DIFFERENT from Officer Webb who kills Leta"
+      context: "FBI colleague, professional"
+
+  # === SEEDS TO PLANT ===
+  seeds_to_plant:
+    - name: "Institutional faith"
+      method: "Ben's conservative belief that system works"
+      foreshadows: "Month 8-9 shattering when evidence fails"
+
+    - name: "Evidence won't matter"
+      method: "Webb's warning about political pressure"
+      foreshadows: "Kain's polling goes UP after leak"
+
+    - name: "Ben-Ahdia parallel"
+      method: "Both isolated, obsessive, hero complex"
+      foreshadows: "Both arcs converging in Book 4"
+
+    - name: "TRIOMF trail"
+      method: "Financial connections to riot funding AND fusion project"
+      foreshadows: "Chapter 24 reactor crisis"
+
+    - name: "Fusion safety violations"
+      method: "10-month timeline, corners cut, scientists silenced"
+      foreshadows: "Reactor crisis payoff"
+
+    - name: "Conservative ideology pre-shatter"
+      method: "Ben believes in process, checks/balances"
+      foreshadows: "Book 4 complete ideological collapse"
+
+  # === VOICE REQUIREMENTS ===
+  voice_requirements:
+    CHAR_003:  # Ben
+      style: "Military precision, methodical, obsessive, controlled grief"
+      patterns:
+        - "Frame-by-frame analysis language"
+        - "Evidence documentation vocabulary"
+        - "Work as structure against chaos"
+        - "Professional distance from emotion"
+        - "Sarah memories pushing through"
+      physical:
+        - "Not eating, dark circles"
+        - "Apartment in disarray"
+        - "Coffee cups accumulating"
+        - "Obsessive focus"
+
+    CHAR_018:  # Agent Marcus Webb (FBI)
+      style: "Professional, cautious, honest warning"
+      patterns:
+        - "Federal investigator vocabulary"
+        - "Bureaucratic realism"
+        - "Former colleague warmth"
+        - "Political awareness"
+
+  # === FORBIDDEN ENTITIES (BLOCKING) ===
+  forbidden_entities:
+    - id: "FORBID_001"
+      name: "Clara"
+      detection: "Clara|Victor.*(wife|widow|married)"
+
+    - id: "FORBID_002"
+      name: "Sarah death cause"
+      detection: "Sarah.*(shot|killed by|murdered)"
+      allowed_phrasing:
+        - "protest turned violent"
+        - "trampled"
+        - "caught in crush"
+        - "helping others escape"
+        - "died in the panic"
+
+    - id: "FORBID_009"
+      name: "Ryu wrong name (Shiba)"
+      detection: "Shiba"
+      canonical: "Ryu Matsuda"
+
+    - id: "FORBID_010"
+      name: "Titan Strategic (use TRIOMF)"
+      detection: "Titan Strategic"
+      canonical: "TRIOMF Solutions"
+      note: "In this chapter, the shell company is TRIOMF"
+
+  # === OUTPUT SPEC ===
+  output:
+    type: "prose"
+    target_words: "4000-5000"
+    scenes: 5
+    pov: "Ben (close third)"
+    tone: "Methodical obsession, controlled grief, institutional faith before failure"

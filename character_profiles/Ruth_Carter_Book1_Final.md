@@ -136,7 +136,7 @@ After Firas's death, team nearly disbands. Ruth argues they should stop - too da
 
 **Final Status:** She's their leader now. Close friendship with Leah maintained and deepened through shared loss. Mutual respect with Victor (both community-focused, both leaders in different ways - potential slow-burn romance). Protective of Tess (youngest member). Works well with Ben (military precision meets medical precision). However, she's keeping secrets from them (full extent of CADENS involvement, ongoing Ahdia treatment details, FAERIS independence progress).
 
-### CADENS (Director Overseer Bourn, Dr. Shiba Ryu)
+### CADENS (Director Overseer Bourn, Dr. Ryu Matsuda)
 **Beginning:** Doesn't know they exist.
 
 **Middle (Chapter 19-20):** Extracted to CADENS facility after docks incident. Meets Bourn and Ryu. Learns they've monitored her research for 2 years. Negotiates partnership as equal - she brings CR-7 expertise, they provide resources.

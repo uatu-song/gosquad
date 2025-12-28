@@ -7,7 +7,7 @@
 ## AR-Ryu System
 
 ### What It Is
-AR-Ryu is a cybernetic brain mapping of Dr. Shiba Ryu that runs on Ahdia's HUD processors. It's not just a voice assistant—it's a full holographic presence that appears to be physically standing next to her.
+AR-Ryu is a cybernetic brain mapping of Dr. Ryu Matsuda that runs on Ahdia's HUD processors. It's not just a voice assistant—it's a full holographic presence that appears to be physically standing next to her.
 
 ### How It Works
 
@@ -201,7 +201,7 @@ Shadow government agency protecting humanity from cosmic threats. Modern version
 - Career bureaucrat, believed in mission
 - Eventually defects (Book 2) after learning TRIOMF infiltrated CADENS
 
-**Dr. Shiba Ryu:**
+**Dr. Ryu Matsuda:**
 - FAERIS Operations Specialist
 - Ahdia's handler
 - In love with Ahdia (unspoken)

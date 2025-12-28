@@ -1,0 +1,237 @@
+# SESSION MANIFEST: Chapter 4
+# Generated: 2025-12-10
+# Task: Generate prose for Chapter 4 "Dependencies"
+
+manifest:
+  session_id: "2025-12-10_ch4_prose"
+  chapter: "book2_ch4"
+  timeline_position: "month_1_late"
+  chapter_title: "Dependencies"
+
+  # === THEMATIC CORE ===
+  thematic_parallel:
+    personal: "Ahdia needs CADENS (treatment to stay human)"
+    institutional: "CADENS needs President (autonomy from oversight)"
+    foreshadowing: "When Kain becomes President, both dependencies become weapons"
+
+  # === SCENE STRUCTURE ===
+  scenes:
+    - scene: 1
+      name: "The Call"
+      pov: "Bourn"
+      touchpoint_a: "SecDef Patterson contacts Bourn"
+      touchpoint_b: "Bourn realizes CADENS could be weaponized by wrong President"
+      setting: "CADENS headquarters, secure hologram room"
+
+    - scene: 2
+      name: "The Alley"
+      pov: "Victor"
+      touchpoint_a: "Victor on routine patrol, normal night"
+      touchpoint_b: "Victor nearly overwhelmed by fear-amplified civilians"
+      setting: "Downtown Caledonia, evening patrol"
+
+    - scene: 3
+      name: "Neutral Ground"
+      pov: "Ruth"
+      touchpoint_a: "Bourn requests meeting with Ruth"
+      touchpoint_b: "Seeds planted for Ruth's institutional seduction"
+      setting: "CADENS satellite facility, converted warehouse"
+
+  # === ENTITIES ACTIVE ===
+  entities_active:
+    characters:
+      - id: "CHAR_008"
+        name: "Harriet Bourn"
+        role: "Scene 1 POV, Scene 3 recruiter"
+        emotional_state: "realizing vulnerability of system she built"
+        gender: "woman"
+        pronouns: ["she", "her", "hers"]
+
+      - id: "CHAR_004"
+        name: "Victor Hernandez"
+        role: "Scene 2 POV"
+        emotional_state: "trusted community figure suddenly targeted"
+        relationship_status: "partner is Leah (romantic)"
+
+      - id: "CHAR_002"
+        name: "Ruth Carter"
+        role: "Scene 3 POV"
+        emotional_state: "exhausted, grieving, vulnerable to help offers"
+
+      - id: "NEW_CHAR"
+        name: "SecDef Patterson"
+        role: "Scene 1 antagonist"
+        context: "Defense Secretary, backing Kain or hedging bets"
+
+    characters_referenced:
+      - id: "CHAR_001"
+        name: "Ahdia"
+        context: "parallel dependency (treatment)"
+
+      - id: "CHAR_006"
+        name: "Leah"
+        context: "Victor's partner, en route for extraction"
+
+      - id: "CHAR_009"
+        name: "Kain"
+        context: "threat if elected - controls CADENS"
+
+      - id: "CHAR_012"
+        name: "Firas"
+        context: "Ruth's grief, referenced in internal monologue"
+
+    organizations:
+      - "ORG_001"  # CADENS
+      - "ORG_003"  # TRIOMF (referenced via Kain)
+
+  # === KNOWLEDGE GATES (CH4) ===
+  knowledge_gates:
+    CHAR_008:  # Bourn
+      knows:
+        - "CADENS vulnerable to Presidential control"
+        - "Patterson backing Kain"
+        - "Ahdia is enhanced asset"
+      realizes_this_chapter:
+        - "System she built can be weaponized"
+
+    CHAR_004:  # Victor
+      knows:
+        - "community organizing 15 years"
+        - "team dynamics"
+      learns_this_chapter:
+        - "something is amplifying fear (doesn't know it's Eidolon)"
+      doesnt_know:
+        - "Eidolon exists"
+        - "Exile Island"
+
+    CHAR_002:  # Ruth
+      knows:
+        - "Firas is dead"
+        - "she's carrying too much"
+      doesnt_know:
+        - "Ahdia terminal trajectory"  # ch7
+        - "Bourn's own desperation"
+
+  # === RELATIONSHIP STATES (CH4) ===
+  relationship_states:
+    REL_002:  # Victor-Leah
+      status: "romantic_partners"
+      note: "Leah coming to extract Victor"
+
+    victor_community:
+      status: "trusted_but_eroding"
+      note: "15 years of trust, now fear-targeted"
+
+    ruth_bourn:
+      status: "initiating"
+      note: "first real meeting, seeds of institutional seduction"
+
+  # === ACTIVE CONSTRAINTS FROM CATALOG ===
+  active_constraints:
+    forbidden_associations:
+      CHAR_004:  # Victor
+        - "wife"
+        - "widow"
+        - "Clara"
+        - "married"
+        - "dead wife"
+        - "late wife"
+        - "bereaved"
+
+      CHAR_008:  # Bourn
+        - "he"
+        - "him"
+        - "his"
+        - "man"
+
+    forbidden_entities:
+      - "Clara"
+      - "Titan Strategic"  # company is TRIOMF
+      - "Shiba"  # Ryu's name is Matsuda
+
+    forbidden_knowledge:
+      CHAR_002:  # Ruth
+        - "ahdia terminal trajectory"  # ch7
+      CHAR_004:  # Victor
+        - "Eidolon by name"  # learned later
+        - "Exile Island"  # ch13
+
+    forbidden_events:
+      - "Leta dies"  # ch21
+      - "Webb exonerated"  # ch5
+
+  # === SEEDS TO PLANT ===
+  seeds_to_plant:
+    - name: "Eidolon fear amplification"
+      method: "Civilians turn on Victor with irrational fear"
+      note: "Don't name Eidolon - just show effect"
+      foreshadows: "Eidolon as electoral weapon"
+
+    - name: "Bourn's institutional seduction of Ruth"
+      method: "Offer help, acknowledge Ruth's exhaustion, promise partnership not control"
+      foreshadows: "Ruth becoming CADENS liaison"
+
+    - name: "CADENS vulnerability to Kain"
+      method: "Patterson threatens oversight reform under Kain"
+      foreshadows: "Book 2B when Kain wins"
+
+    - name: "Parallel cages"
+      method: "Bourn realizes her cage parallels Ahdia's"
+      foreshadows: "Both controlled by same threat"
+
+  # === VOICE REQUIREMENTS ===
+  voice_requirements:
+    CHAR_008:  # Bourn
+      style: "Institutional, precise, controlled exterior with internal doubt"
+      patterns:
+        - Long experience with power conversations
+        - Waits before speaking
+        - Internal conflict visible only to reader
+
+    CHAR_004:  # Victor
+      style: "Community organizer, grounded, both/and thinker"
+      patterns:
+        - 15 years of experience
+        - Calm under pressure
+        - Won't hurt civilians to save himself
+      forbidden:
+        - "widow"
+        - "wife"
+        - "Clara"
+        - Any reference to dead wife (HE HAS NEVER BEEN MARRIED)
+
+    CHAR_002:  # Ruth
+      style: "Medical precision, exhausted, suspicious but vulnerable"
+      patterns:
+        - Triage thinking
+        - Grief for Firas underlying everything
+        - Recognizes manipulation but tired enough to consider it
+
+  # === FORBIDDEN ENTITIES (BLOCKING) ===
+  forbidden_entities:
+    - id: "FORBID_001"
+      name: "Clara"
+      detection: "Victor + wife/widow/Clara"
+      note: "Victor has NEVER BEEN MARRIED. Partner is Leah."
+
+    - id: "FORBID_004"
+      name: "Titan Strategic"
+      detection: "Titan Strategic"
+      canonical: "Company is TRIOMF"
+
+    - id: "FORBID_007"
+      name: "Bourn male pronouns"
+      detection: "Bourn + he/him/his"
+      canonical: "Bourn is a WOMAN"
+
+    - id: "FORBID_009"
+      name: "Shiba (wrong name)"
+      detection: "Shiba"
+      canonical: "Name is Ryu Matsuda"
+
+  # === OUTPUT SPEC ===
+  output:
+    type: "prose"
+    target_words: "3500-4500"
+    scenes: 3
+    povs: ["Bourn", "Victor", "Ruth"]

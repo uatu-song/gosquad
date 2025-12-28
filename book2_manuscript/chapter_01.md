@@ -767,7 +767,7 @@ The plastic chair was designed by someone who hated human bodies. The fluorescen
 
 *He's fine. He's going to be fine. They would have called if he wasn't fine.*
 
-Except they hadn't called. They hadn't called because Victor's phone was evidence, his earpiece was confiscated, and Leah had spent the last twelve hours working the system—calls to lawyers, calls to bail bondsmen, calls to that one guy from the ACLU who owed her a favor from the roller derby charity match.
+Except they hadn't called. They hadn't called because Victor's phone was evidence, his earpiece was confiscated, and Leah had spent the last twelve hours working the system—calls to lawyers, calls to bail bondsmen, calls to Marcus from the ACLU who came into her coffee shop every morning for a cortado and always tipped five dollars on a four-dollar drink.
 
 The system was designed to make you wait. To make you feel small. To remind you that your person was in a cage somewhere behind those doors and there wasn't a damn thing you could do about it except sit in a plastic chair and wait.
 
@@ -815,37 +815,105 @@ They reached the car. Leah helped him into the passenger seat, watched him wince
 
 "Hospital," she said. "Now."
 
-"Leah—"
+"Not yet."
 
-"Don't." She got in the driver's side, slammed the door harder than necessary. "Don't tell me you're fine. Don't tell me it's not that bad. Don't tell me there's work to do."
+"Victor—"
 
-"There *is* work to do. The community—"
+"I need to see something first."
 
-"The community can wait four hours while someone who went to actual medical school looks at your shoulder." She started the engine. "You got beaten by four cops, Victor. Four. And you spent the night in holding because the system wanted to remind you who's in charge."
+She knew where he meant before he said it. The same place she'd been avoiding since Firas disappeared. The place that held both their histories in its walls.
 
-"I know who's in charge." His voice was quiet. "That's why I was there."
+"The academy."
 
-She pulled out of the parking lot. The city looked different in morning light—softer, almost innocent. Like it hadn't just chewed someone up and spit them out.
+He nodded. Just once.
 
-"What happened?" she asked. "After your comms went dark."
+She started the engine.
 
-Victor was quiet for a moment. Watching the streets pass.
+---
 
-"I got the woman out. Her and the kid—they made it to the alley. Then..." He touched his shoulder, winced. "Four of them. I got two down before the third caught me. After that—" He shrugged with his good shoulder. "Holding cell. Concrete floor. Lot of time to think."
+The Bacchus Academy of Movement Arts looked wrong in daylight.
 
-"Think about what?"
+Leah had only ever been here at night—Tuesday and Thursday evenings, 7 to 9, Firas's self-defense classes in the back studio while the parkour kids ran the main floor. The building was supposed to be alive with bodies in motion, the thump of landing mats, Firas's voice calling corrections across the space.
 
-"About how many other people were in there with me. Protesters. Kids who'd never been arrested before. Old man who'd been at every civil rights march since '68." Victor's jaw tightened. "They kept us together. Let us talk. I think they wanted us scared, but instead—"
+Now it was just a building. Dark windows. Chain on the door. A handwritten sign that said CLOSED UNTIL FURTHER NOTICE in Ruth's careful handwriting.
 
-"Instead you organized."
+She parked across the street. Neither of them moved to get out.
 
-A ghost of a smile. "Old habits."
+"When's the last time you were here?" Victor asked.
 
-*Of course he did.* Of course Victor Santos spent his night in county lockup building solidarity instead of sleeping. Of course he came out with new contacts, new intel, new understanding of how the system operated from the inside.
+"The night before." Her voice came out smaller than she intended. "The night before the singularity. Thursday class. He was teaching knife defense."
 
-She loved him for it. She also wanted to shake him.
+Victor was quiet for a moment. "He used to let me use the community room for organizing meetings. Free of charge. Said it was good for the neighborhood to see people gathering for something other than exercise."
 
-"The memorial's in three days," she said instead. "Geneva's speaking. Kain too."
+"That sounds like him."
+
+"He asked me once why I kept doing it. The organizing. After all the setbacks."
+
+Leah looked at him. He was staring at the building, not at her.
+
+"What did you tell him?"
+
+"That the neighborhood would be pissed if I stopped." A ghost of a smile, there and gone. "He laughed. Said that was the right answer."
+
+They sat in silence. The morning sun crept higher, turning the academy's windows into mirrors.
+
+"I never told him why I came," Leah said. The words surprised her—she hadn't planned to say them. "To his classes, I mean. He asked once. Why self-defense specifically."
+
+"What did you say?"
+
+"City safety." She shrugged, the same shrug she'd given Firas two years ago. "You know how it is."
+
+Victor didn't push. Didn't ask what "city safety" meant, didn't press for details she wasn't offering. Just like Firas hadn't.
+
+"He never asked twice," she said quietly. "I always wondered if he knew anyway."
+
+"Firas knew a lot of things he didn't say out loud."
+
+"Yeah."
+
+More silence. A jogger passed on the sidewalk, glanced at them, kept moving.
+
+"I've seen what happens when communities don't have spaces like this," Victor said. "Five years doing this work, you see the same playbook over and over. Provocateurs, escalation, chaos." He touched his injured shoulder absently. "People trying to help each other, getting caught in the crush."
+
+Leah didn't say anything. There wasn't anything to say.
+
+"That's why the work matters. Why places like this matter." His voice was quiet but firm. "Anger keeps the work going. But you need somewhere to channel it."
+
+Leah looked at the shuttered academy. At Firas's name still on the sign, fading in the sun.
+
+"Someone should do something with this place," she said.
+
+Victor turned to look at her.
+
+"He'd hate seeing it dark," she continued. "All those mats just sitting there. The community room empty."
+
+"You thinking what I'm thinking?"
+
+"I don't know what I'm thinking." She kept her eyes on the building. "I just know he saw something in both of us. And now he's gone and the place where he saw it is just... sitting here."
+
+Victor's hand found hers on the gear shift. Squeezed.
+
+"Not yet," he said. "But maybe. Someday."
+
+"Someday."
+
+They sat there a while longer. Two people who'd lost something they couldn't name, looking at a building that held the shape of who they used to be.
+
+"Okay," Leah said finally. "Hospital now."
+
+"Hospital now."
+
+She pulled away from the curb. In the rearview mirror, the academy got smaller, then disappeared around a corner.
+
+But she'd remember where it was. They both would.
+
+---
+
+The hospital took four hours, two X-rays, and one extremely judgmental nurse who clearly knew a protest injury when she saw one.
+
+Victor's shoulder was stable but needed rest. His ribs were bruised, not broken. The cut on his temple got proper stitches this time.
+
+"The memorial's in three days," Leah said as they walked back to the car. "Geneva's speaking. Kain too."
 
 "I know."
 
@@ -855,7 +923,7 @@ She loved him for it. She also wanted to shake him.
 
 "You're not okay. You're held together with stubbornness and scar tissue." She kept her eyes on the road. "But yeah. You'll be functional. You always are."
 
-They drove in silence for a while. The city waking up around them—coffee shops opening, commuters starting their routines, everything pretending last night hadn't happened.
+They drove in silence for a while. The city fully awake now—coffee shops crowded, commuters in full rush, everything pretending last night hadn't happened.
 
 "The cops who did this," Leah said finally. "The ones who beat you."
 
@@ -863,9 +931,9 @@ They drove in silence for a while. The city waking up around them—coffee shops
 
 "I want their names."
 
-Victor's hand found hers on the gear shift. Squeezed.
+Victor's hand found hers again. Squeezed.
 
-"Later," he said. "Right now—hospital. Then rest. Then we figure out who wanted this riot and why."
+"Later," he said. "Right now—rest. Then we figure out who wanted this riot and why."
 
 She squeezed back.
 

@@ -108,7 +108,7 @@ Ahdia blinked. "What?"
 
 Ahdia was quiet. Listening. Not trying to fix it.
 
-"He was going to propose," Ruth said. "Did I tell you that? After the singularity mission. He had a ring. Victor found it when we cleaned out his locker."
+"He was going to propose," Ruth said. "Did I tell you that? I found a ring. In his sock drawer. After."
 
 "You didn't tell me."
 
@@ -194,53 +194,61 @@ For now, she'd trust. But she'd verify.
 
 ---
 
-## Scene 2: Parallel Isolation
+## Scene 2: Ruth Runs
 
-Ahdia sat on the couch after Ruth left.
+Ruth hit the fire escape at a dead sprint.
 
-The treatment vial was still on the table. Ruth's care made physical. The woman who kept her alive, who showed up without being asked, who noticed when the numbers didn't match.
+Three floors up, she vaulted the railing and caught the drainage pipe, swinging her momentum into a wall run that carried her to the adjacent rooftop. Her body knew this route—had mapped it years ago when she first moved to the city, back when running was about joy instead of escape.
 
-And Ahdia had lied to her face.
+Tonight it was both.
 
-*Jakarta saved 11,000 lives.*
+*The numbers didn't add up.*
 
-That's what she told herself. The math that justified everything. The arms shipment she'd stopped, the massacre she'd prevented, the people walking around right now who would have been dead if she'd stayed home.
+She cleared the gap between buildings without breaking stride, rolling through the landing into her next step. Two days post-treatment, degradation that high—Ahdia was either burning through power she wasn't admitting to, or something else entirely was happening.
 
-Ruth couldn't know. Would try to stop her. Medical concerns, team concerns, whatever. Ruth would see the degradation numbers and panic, and then Ahdia would be confined to approved operations only, and thousands of people would die because she wasn't there.
+*"It's just the depression. I promise."*
 
-*She'd understand if she knew.*
+Ruth heard the lie. Clear as the city lights spreading below her.
 
-Would she?
+She reached the water tower and climbed it without thinking, hands finding familiar grips. At the top, she paused—lungs burning, heart pounding, the good kind of pain that reminded her she was alive.
 
-Or would she see a friend spiraling? Making dangerous choices? Burning herself down for a hero complex that couldn't be sustained?
+What was she supposed to do? Interrogate Ahdia? Demand answers? She wasn't a patient. She was a friend. And friends got to have secrets, even stupid ones.
 
-Ahdia pulled up her laptop. The news ticker showed something about a diplomatic crisis averted in Southeast Asia. Officials declining to comment. No connection to a woman in Caledonia who'd spent forty minutes frozen in time, reading documents she shouldn't have access to.
+Even dangerous ones.
 
-*They wouldn't understand. They'd try to stop me.*
+Ruth dropped from the tower, caught the ladder halfway down, used it to redirect into a precision jump to the next building's ledge. Her fingers found the concrete lip and she mantled up smoothly, muscle memory taking over while her mind kept spinning.
 
-The justification felt hollow with Ruth's words still echoing.
+The empty apartment waited for her. The one Firas used to fill with his presence, his laugh, his terrible cooking experiments that somehow always tasted better than they looked. Now it was just Ruth and the silence and the ring she'd found in his sock drawer.
 
-*Any time. Day or night. You call, I come.*
+*He was going to propose.*
 
-She closed the laptop. Sat in the dark.
+She ran harder. Longer strides, bigger gaps, the kind of risks Firas would have scolded her for. *"Calculated risks, Ruth. Not emotional ones."*
 
-The Hyper Seed was cold. Always cold now.
+But Firas wasn't here to scold her anymore.
 
-Her phone buzzed. Text from Ryu: *Intel briefing tomorrow. New intercepts.*
+A chimney stack ahead—she planted her foot and launched over it, twisting mid-air to spot her landing. The rooftop garden on the other side was soft under her shoes. Someone's tomato plants, thriving despite the altitude. Life finding a way.
 
-The cycle continuing. Information leading to crisis leading to intervention leading to lies.
+She was team leader now. Medical officer. Treatment coordinator. Grief counselor, apparently. Every role piling up, none of them fitting right. She carried them all across these rooftops, weight she couldn't put down.
 
-She typed back: *I'll be ready.*
+*Why couldn't I save him?*
 
-Closed her eyes.
+The thought hit mid-stride and she stumbled. Caught herself on a ventilation unit, breathing hard. The city sprawled indifferent below—cars and lights and people who didn't know that somewhere above them, a woman was running from questions she couldn't answer.
 
-Somewhere across the city, Ruth was going home to an empty apartment where Firas used to live. Carrying her own grief. Wondering what was wrong with her friend.
+Ahdia was lying about something. Ruth could feel it the same way she felt a bad landing coming—in her bones, before her brain caught up. But pressing wouldn't help. Would just make her retreat further into that penthouse, that TV, that isolation.
 
-Both of them alone.
+Ruth straightened. Rolled her shoulders. Found her center again.
 
-Both of them carrying secrets.
+She had three more miles to home. Three more miles of rooftops and fire escapes and the particular freedom that came from moving through space on her own terms.
 
-Both of them doing what they thought was right.
+So Ruth would wait. Watch. Be there when Ahdia was ready to talk.
+
+That's what you did for people you loved.
+
+You stayed.
+
+Even when they lied.
+
+She ran.
 
 ---
 

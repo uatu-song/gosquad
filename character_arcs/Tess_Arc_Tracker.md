@@ -29,20 +29,39 @@
 
 ---
 
-## Book 2: Father's Betrayal → Vigilante Justice
+## Book 2: Three Intertwined Arcs
 
 **Timeline:** 12 months (Month 1 = Isaiah riot → Month 12 = Election Night)
-**Arc Type:** Institutional betrayal—discovering trusted family protects corrupt systems
+
+**BASELINE:** Depression (medicated). Living double life—police chief's daughter by day, vigilante exposing his department by night. Can't be authentic with father. Constant performance is exhausting.
+
+**ARC 1 - Father/Identity:** Already knows father is corrupt (that's WHY she's Gloom Girl) → Uses access to investigate → Infiltrates gala → Gets proof → Relationship is all performance, weaponized by end
+
+**ARC 2 - Shadow → Hero:** Social media documenter → Field investigator → Steps into light. Person who celebrated heroes becomes one.
+
+**ARC 3 - Leta as Anchor:** Only person who sees real Tess → Harassment escalates → Can't protect her → Loses her → Loses only place mask came off
+
+**COMPENSATORY BEHAVIORS (Depression-aligned):**
+- **Vlogging/Documenting:** Creating evidence she exists. Record fights invisibility.
+- **Leta:** Only relationship without masks. Losing her = losing only place to be real.
+- **Information as control:** Can't control internal state, can't be honest with father—controls what she KNOWS.
+- **Performative authenticity online:** Fake with dad, aggressively real anonymously.
+- **Vigilantism as purpose:** Depression asks "why bother?" Vigilantism answers.
+
+**THE TRAGEDY:** Leta was the only antidepressant that actually worked. Now she's gone.
 
 **CRITICAL CANON:** Tess does NOT kill anyone. She brutalizes Webb but leaves him alive.
+
+**SPINOFF SETUP:** Korede knows her identity. They've worked together (gala). She's lost Leta but gained a partner. Not hiding anymore.
 
 ---
 
 ### Opening State (Between Books)
-- **Emotional:** Conflicted about father, committed to Go Squad
-- **Relationships:** Dating Leta, close with team, complicated loyalty to father
-- **Knowledge:** Knows father is Police Chief, knows Isaiah was killed by police
-- **Beliefs:** "System has bad actors, not a bad system" / "Father is a good man"
+- **Emotional:** Depressed (medicated). Exhausted by constant performance with father.
+- **Relationships:** Dating Leta (her anchor), close with team, betraying father from shadows
+- **Knowledge:** Already knows father is corrupt—that's why she became Gloom Girl
+- **Beliefs:** Father is dirty. System protects him. She works around it, not within it.
+- **Coping:** Vlogs, documents, creates records. Information is control. Leta is safety.
 
 ---
 
@@ -51,10 +70,10 @@
 **The Event:** Isaiah Bennett memorial protest turns violent. Tess is present as Go Squad.
 
 **State After:**
-- **Emotional:** Defensive about institutions when team criticizes police
-- **Relationships:** Leta is activist at protest—Tess protective
-- **Knowledge:** Knows Isaiah was killed by police (Officer Webb), doesn't know father's role
-- **Beliefs:** Still defending system. "Not all cops."
+- **Emotional:** Performing for team. Can't reveal she already suspects father's involvement.
+- **Relationships:** Leta is activist at protest—Tess fiercely protective
+- **Knowledge:** Knows Isaiah was killed by Webb. Suspects father's department covered it up.
+- **Action:** Already sending intel to Go Squad anonymously. Now investigating herself.
 
 ---
 
