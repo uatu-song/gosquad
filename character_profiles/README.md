@@ -20,8 +20,18 @@
 ### For Book 2 Drafting:
 
 1. **Primary:** `Character_Name.md` (current state)
-2. **Reference:** `Character_Name_Book1_Final.md` (backstory consistency)
-3. **Arc:** `../character_arcs/Character_Name_Arc_Tracker.md` (progression)
+2. **Voice/Psychology:** `Character_Name_EXTENDED.md` (dialogue patterns, psychological profile)
+3. **Reference:** `Character_Name_Book1_Final.md` (backstory consistency)
+4. **Arc:** `../character_arcs/Character_Name_Arc_Tracker.md` (progression)
+
+**Important:** The `*_EXTENDED.md` files contain rich content not in base files:
+- Psychological profiles and internal conflicts
+- Dialogue patterns and voice characteristics
+- Character strengths/weaknesses
+- Quote collections and example dialogue
+- Thematic significance
+
+For POV work, always load BOTH the base `.md` AND the `_EXTENDED.md`.
 
 ### For Continuity Checking:
 
