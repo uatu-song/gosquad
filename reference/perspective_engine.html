@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chess Chronicles · Perspective Engine Setup</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1117;--surface:#161b22;--surface2:#1c2333;--border:#2a3040;--text:#e2e6ed;--text-muted:#7d8590;--text-dim:#484f58;--white-accent:#58a6ff;--white-light:rgba(88,166,255,0.1);--black-accent:#f0883e;--black-light:rgba(240,136,62,0.1);--kill:#f85149;--kill-light:rgba(248,81,73,0.1);--death:#8b949e;--check:#d2a8ff;--promote:#3fb950;--overlap:#f0e050;--overlap-light:rgba(240,224,80,0.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+header{text-align:center;padding:40px 20px 10px;border-bottom:1px solid var(--border)}
+header h1{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;letter-spacing:-0.5px;background:linear-gradient(135deg,var(--white-accent),var(--black-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header .sub{color:var(--text-muted);font-size:.9rem;margin-top:4px}
+.container{max-width:1100px;margin:0 auto;padding:0 20px 60px}
+.step{margin:24px 0;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:8px}
+.step h2{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.step-num{display:inline-flex;width:28px;height:28px;border-radius:50%;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;background:var(--white-accent);color:var(--bg)}
+label{display:block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text-muted);margin-bottom:4px}
+textarea,input[type=text],select{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;background:var(--surface2);color:var(--text);font-family:'Source Sans 3',sans-serif;font-size:.9rem;resize:vertical}
+textarea:focus,input:focus{outline:none;border-color:var(--white-accent)}
+.btn{padding:9px 20px;border:none;border-radius:6px;font-family:'Source Sans 3',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:background .2s,transform .1s}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--white-accent);color:var(--bg)}
+.btn-primary:hover{background:#79b8ff}
+.btn-secondary{background:var(--surface2);color:var(--text-muted);border:1px solid var(--border)}
+.btn-secondary:hover{border-color:var(--text-muted);color:var(--text)}
+.btn-danger{background:var(--kill);color:white}
+.btn-export{background:var(--promote);color:var(--bg);font-size:1rem;padding:14px 32px}
+.btn-export:hover{background:#4dc960}
+.btn-sm{padding:5px 12px;font-size:.8rem}
+
+.game-info{display:flex;justify-content:center;gap:24px;padding:12px;margin:12px 0;background:var(--surface2);border-radius:6px;font-size:.85rem;flex-wrap:wrap;color:var(--text-muted)}
+.game-info strong{color:var(--text)}
+
+/* Piece assignment grid */
+.assign-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
+@media(max-width:700px){.assign-grid{grid-template-columns:1fr}}
+.assign-side h3{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.assign-card{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px;margin-bottom:10px}
+.assign-card.king-card{border-color:var(--check);background:rgba(210,168,255,0.05)}
+.ac-header{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.ac-icon{font-size:1.4rem}
+.ac-piece-info{flex:1}
+.ac-piece-name{font-weight:700;font-size:.95rem}
+.ac-piece-stats{font-size:.75rem;color:var(--text-dim)}
+.ac-fields{display:grid;gap:6px}
+.ac-fields input{padding:7px 10px;font-size:.85rem}
+.ac-row{display:flex;gap:6px;align-items:flex-end}
+.ac-row input{flex:1}
+
+/* Tags (motifs, themes) */
+.tag-container{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px;min-height:30px}
+.tag{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:14px;font-size:.8rem;font-weight:600;background:var(--surface2);border:1px solid var(--border)}
+.tag .tag-x{cursor:pointer;opacity:.5;font-size:.9rem}
+.tag .tag-x:hover{opacity:1;color:var(--kill)}
+.tag-add{display:flex;gap:4px;margin-top:4px}
+.tag-add input{flex:1;padding:5px 8px;font-size:.8rem}
+
+/* Pawn companions */
+.pawn-assign{margin-top:6px}
+.pawn-chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.pawn-chip{padding:3px 10px;border-radius:14px;font-size:.75rem;cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--text-dim);transition:all .15s}
+.pawn-chip:hover{border-color:var(--text-muted)}
+.pawn-chip.active{border-color:var(--text-dim);background:var(--surface2);color:var(--text)}
+
+#status-bar{position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--border);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;z-index:100}
+#status-bar .status-text{font-size:.85rem;color:var(--text-muted)}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Chess Chronicles · Perspective Engine</h1>
+    <div class="sub">Setup Tool — Configure your collaborative book, then export a student-facing scaffold.</div>
+</header>
+
+<div class="container">
+    <!-- STEP 1: PGN -->
+    <div class="step" id="step-pgn">
+        <h2><span class="step-num">1</span> Paste PGN</h2>
+        <textarea id="pgn-input" rows="6" placeholder="Paste PGN here...">1. e4 Nf6 2. e5 Ng4 3. f4 Nh6 4. h3 Nc6 5. d4 Nf5 6. d5 Na5 7. g4 Nh6 8. g5 Ng8
+9. b4 Nc4 10. Nc3 Nb6 11. a4 d6 12. Nf3 dxe5 13. fxe5 Nxd5 14. Nxd5 c6 15. Nf4 Bf5
+16. Ra2 Qxd1+ 17. Kxd1 Rd8+ 18. Ke1 Bxc2 19. Rxc2 e6 20. h4 Bxb4+ 21. Kf2 Rc8
+22. Be3 Ne7 23. Bxa7 Ba5 24. g6 fxg6 25. Nxe6 Rg8 26. Nfd4 Ra8 27. Nxc6 bxc6
+28. Bc5 Ra6 29. Bxa6 Bc7 30. Kf3 Bxe5 31. Re2 Bb8 32. Rh3 Nd5 33. Rd2 Nc3 34. a5
+Nb1 35. Rg2 Rf8+ 36. Ke2 Rf6 37. Nxg7+ Kf7 38. Rxg6 Kxg6 39. Ne8 Rf8 40. Nd6 Rd8
+41. Nb7 Rd5 42. Bf8 Rd8 43. Ba3 Rd4 44. Bf8 Bf4 45. Nd8 c5 46. Ne6 c4 47. Bxc4 Rxc4
+48. a6 Ra4 49. Nc5 Rxa6 50. Nxa6 Bd6 51. Rg3+ Kf6 52. Rg8 Bxf8 53. Rxf8+ Kg7
+54. Rf1 Nc3+ 55. Kf2 Ne4+ 56. Kg1 Nc5 57. h5 Nxa6 58. Rf5 Kh6 59. Kf2 Nc5
+60. Rxc5 Kg7 61. Rc7+ Kh8 62. h6 Kg8 63. Ke2 Kf8 64. Rxh7 Kg8 65. Rc7 Kf8 66. h7
+Ke8 67. h8=Q#</textarea>
+        <div style="margin-top:8px"><button class="btn btn-primary" onclick="analyzeGame()">Analyze Game →</button></div>
+        <div class="game-info" id="game-info" style="display:none"></div>
+    </div>
+
+    <!-- STEP 2: Story Details -->
+    <div class="step" id="step-story" style="display:none">
+        <h2><span class="step-num">2</span> Story Details</h2>
+        <div style="display:grid;gap:12px">
+            <div><label>Title</label><input type="text" id="story-title" placeholder="e.g. The Siege of Iron Gate"></div>
+            <div><label>Setting</label><input type="text" id="story-setting" placeholder="e.g. A frozen kingdom at the edge of the world, 1347 AD"></div>
+            <div><label>Genre / Tone</label><input type="text" id="story-tone" placeholder="e.g. Dark Fantasy, Epic War"></div>
+            <div>
+                <label>Themes</label>
+                <div class="tag-container" id="themes-tags"></div>
+                <div class="tag-add"><input type="text" id="theme-input" placeholder="Add a theme..." onkeydown="if(event.key==='Enter')addTag('themes')"><button class="btn btn-sm btn-secondary" onclick="addTag('themes')">+ Add</button></div>
+            </div>
+            <div>
+                <label>Global Motifs</label>
+                <div class="tag-container" id="motifs-tags"></div>
+                <div class="tag-add"><input type="text" id="motif-input" placeholder="Add a motif..." onkeydown="if(event.key==='Enter')addTag('motifs')"><button class="btn btn-sm btn-secondary" onclick="addTag('motifs')">+ Add</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 3: Kings -->
+    <div class="step" id="step-kings" style="display:none">
+        <h2><span class="step-num">3</span> Define the Kings (MacGuffin / NPC / Goal)</h2>
+        <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:12px">Kings are not assigned to students. They represent what each side is fighting for — a captured leader, a sacred artifact, a homeland, etc.</p>
+        <div class="assign-grid" id="king-grid"></div>
+    </div>
+
+    <!-- STEP 4: Assign Pieces -->
+    <div class="step" id="step-assign" style="display:none">
+        <h2><span class="step-num">4</span> Assign Characters</h2>
+        <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:12px">Assign each piece to a student. Name their character, describe them, and add character-specific motifs. Toggle pawn companions to extend thin stories.</p>
+        <div class="assign-grid" id="assign-grid"></div>
+    </div>
+
+    <!-- STEP 5: Save / Load -->
+    <div class="step" id="step-sheets" style="display:none">
+        <h2><span class="step-num">5</span> Save / Load Configuration</h2>
+        <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:12px">Save your full setup (PGN, story details, characters) to Google Sheets. Load it later to make changes and re-export.</p>
+        <div style="display:grid;gap:12px">
+            <div><label>Configuration Name</label>
+                <p style="font-size:.8rem;color:var(--text-dim);margin-bottom:4px">This becomes the Sheet tab name. Use the story title or assignment name.</p>
+                <input type="text" id="sheets-tab" placeholder="e.g. Siege_of_Iron_Gate" oninput="storyConfig.sheetsConfig.tab=this.value">
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <button class="btn btn-primary" onclick="saveConfigToSheets()">💾 Save Configuration</button>
+                <button class="btn btn-secondary" onclick="loadTabList()">📂 Load Existing...</button>
+                <button class="btn btn-sm btn-secondary" onclick="testSheetsConnection()">🔗 Test Connection</button>
+            </div>
+            <div id="sheets-test-result" style="display:none;padding:8px 12px;border-radius:6px;font-size:.85rem"></div>
+            <div id="load-picker" style="display:none;padding:12px;background:var(--surface2);border-radius:6px">
+                <label>Select a saved configuration:</label>
+                <select id="tab-select" style="margin-top:4px"><option value="">Loading...</option></select>
+                <div style="margin-top:8px"><button class="btn btn-primary btn-sm" onclick="loadConfigFromSheets()">Load Selected</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STEP 6: Export -->
+    <div class="step" id="step-export" style="display:none;text-align:center">
+        <h2 style="justify-content:center"><span class="step-num">6</span> Export</h2>
+        <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:16px">Generate a standalone HTML file that students use as their read-only story scaffold reference. Filterable by piece, with all character names, themes, and motifs baked in.</p>
+        <button class="btn btn-export" onclick="exportHTML()">📥 Export Student Scaffold</button>
+    </div>
+</div>
+
+<div id="status-bar" style="display:none">
+    <div class="status-text" id="status-text">Game loaded</div>
+    <div style="display:flex;gap:8px">
+        <button class="btn btn-sm btn-secondary" onclick="document.getElementById('step-export').scrollIntoView({behavior:'smooth'})">↓ Export</button>
+    </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// ENGINE (carried from v2 — board, parse, analysis)
+// ═══════════════════════════════════════
+const PIECE_ICONS={K:{white:'♔',black:'♚'},Q:{white:'♕',black:'♛'},R:{white:'♖',black:'♜'},B:{white:'♗',black:'♝'},N:{white:'♘',black:'♞'},P:{white:'♙',black:'♟'}};
+const PIECE_NAMES={K:'King',Q:'Queen',R:'Rook',B:'Bishop',N:'Knight',P:'Pawn'};
+
+class Board{
+    constructor(){this.board=Array.from({length:8},()=>Array(8).fill(null));const br=['R','N','B','Q','K','B','N','R'];for(let f=0;f<8;f++){this.board[0][f]={type:br[f],color:'white'};this.board[1][f]={type:'P',color:'white'};this.board[6][f]={type:'P',color:'black'};this.board[7][f]={type:br[f],color:'black'};}}
+    sq2i(sq){return[sq.charCodeAt(0)-97,parseInt(sq[1])-1]}
+    i2sq(f,r){return String.fromCharCode(97+f)+(r+1)}
+    get(sq){const[f,r]=this.sq2i(sq);return(r>=0&&r<8&&f>=0&&f<8)?this.board[r][f]:null}
+    set(sq,v){const[f,r]=this.sq2i(sq);this.board[r][f]=v}
+    snapshot(){return this.board.map(row=>row.map(c=>c?{...c}:null))}
+    pathClear(ff,fr,tf,tr){const sf=Math.sign(tf-ff),sr=Math.sign(tr-fr);let f=ff+sf,r=fr+sr;while(f!==tf||r!==tr){if(this.board[r][f])return false;f+=sf;r+=sr}return true}
+    canReach(from,to,pt,color,cap){const[ff,fr]=this.sq2i(from),[tf,tr]=this.sq2i(to),df=tf-ff,dr=tr-fr;if(pt==='P'){const dir=color==='white'?1:-1;if(cap)return Math.abs(df)===1&&dr===dir;if(df!==0)return false;if(dr===dir&&!this.board[tr][tf])return true;const sr=color==='white'?1:6;return fr===sr&&dr===2*dir&&!this.board[fr+dir][ff]&&!this.board[tr][tf]}if(pt==='N')return(Math.abs(df)===1&&Math.abs(dr)===2)||(Math.abs(df)===2&&Math.abs(dr)===1);if(pt==='K')return Math.abs(df)<=1&&Math.abs(dr)<=1;if(pt==='B'||pt==='Q'){if(Math.abs(df)===Math.abs(dr)&&df!==0&&this.pathClear(ff,fr,tf,tr))return true;if(pt==='B')return false}if(pt==='R'||pt==='Q'){if((df===0||dr===0)&&(df!==0||dr!==0)&&this.pathClear(ff,fr,tf,tr))return true}return false}
+    findSource(move,color){for(let r=0;r<8;r++)for(let f=0;f<8;f++){const p=this.board[r][f];if(!p||p.type!==move.piece||p.color!==color)continue;const sq=this.i2sq(f,r);if(move.srcF&&sq[0]!==move.srcF)continue;if(move.srcR&&sq[1]!==move.srcR)continue;if(this.canReach(sq,move.dest,move.piece,color,move.cap))return sq}return null}
+    getAttacked(sq){const p=this.get(sq);if(!p)return[];const[f,r]=this.sq2i(sq),res=[];if(p.type==='P'){const d=p.color==='white'?1:-1;if(f>0&&r+d>=0&&r+d<8)res.push(this.i2sq(f-1,r+d));if(f<7&&r+d>=0&&r+d<8)res.push(this.i2sq(f+1,r+d));return res}const dirs={N:[[-2,-1],[-2,1],[-1,-2],[-1,2],[1,-2],[1,2],[2,-1],[2,1]],K:[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]],B:[[-1,-1],[-1,1],[1,-1],[1,1]],R:[[-1,0],[1,0],[0,-1],[0,1]],Q:[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]]};const slider=['B','R','Q'].includes(p.type);for(const[df,dr]of(dirs[p.type]||[])){let nf=f+df,nr=r+dr;if(!slider){if(nf>=0&&nf<8&&nr>=0&&nr<8)res.push(this.i2sq(nf,nr))}else{while(nf>=0&&nf<8&&nr>=0&&nr<8){res.push(this.i2sq(nf,nr));if(this.board[nr][nf])break;nf+=df;nr+=dr}}}return res}
+    allAttacked(color){const s=new Set();for(let r=0;r<8;r++)for(let f=0;f<8;f++){const p=this.board[r][f];if(p&&p.color===color)for(const sq of this.getAttacked(this.i2sq(f,r)))s.add(sq)}return s}
+    adjacentSquares(sq){const[f,r]=this.sq2i(sq),res=[];for(let df=-1;df<=1;df++)for(let dr=-1;dr<=1;dr++){if(df===0&&dr===0)continue;const nf=f+df,nr=r+dr;if(nf>=0&&nf<8&&nr>=0&&nr<8)res.push(this.i2sq(nf,nr))}return res}
+}
+function parseMove(s){let m=s.trim().replace(/[!?]/g,'');const r={raw:s,piece:'P',dest:null,srcF:null,srcR:null,cap:false,check:false,mate:false,castle:null,promo:null};if(m.includes('#')){r.mate=true;r.check=true;m=m.replace('#','')}else if(m.includes('+')){r.check=true;m=m.replace(/\+/g,'')}if(m==='O-O'||m==='0-0'){r.castle='K';r.piece='K';return r}if(m==='O-O-O'||m==='0-0-0'){r.castle='Q';r.piece='K';return r}const pm=m.match(/=([QRBN])/);if(pm){r.promo=pm[1];m=m.replace(/=[QRBN]/,'')}if(m.includes('x')){r.cap=true;m=m.replace('x','')}if('KQRBN'.includes(m[0])){r.piece=m[0];m=m.slice(1)}const dm=m.match(/([a-h][1-8])$/);if(dm){r.dest=dm[1];m=m.replace(/[a-h][1-8]$/,'')}if(m.length>0){if(/[a-h]/.test(m))r.srcF=m.match(/[a-h]/)[0];if(/[1-8]/.test(m))r.srcR=m.match(/[1-8]/)[0]}return r}
+
+// ═══════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════
+let pieces = {};
+let timeline = [];
+let boardSnapshots = [];
+let plotStructure = {};
+let gameResult = '';
+let totalMoves = 0;
+let totalCaptures = 0;
+
+// User-configured data
+const storyConfig = {
+    title: '', setting: '', tone: '',
+    themes: [], motifs: [],
+    kings: { white: { type: 'MacGuffin', name: '', desc: '' }, black: { type: 'MacGuffin', name: '', desc: '' } },
+    assignments: {}, // pieceId -> { student, charName, charDesc, motifs:[], pawns:[] }
+    sheetsConfig: { url: 'https://script.google.com/macros/s/AKfycbzpjVrzzPN244NpP79o3fsLJ0NTVVAXhLWQpcc7G_paeK1dQ7F5m04YwNo3mu6Xzg-4/exec', tab: '' }
+};
+const SHEETS_URL = storyConfig.sheetsConfig.url;
+
+// ═══════════════════════════════════════
+// ANALYSIS
+// ═══════════════════════════════════════
+function analyzeGame() {
+    const PGN = document.getElementById('pgn-input').value;
+    if (!PGN.trim()) return;
+    // Reset
+    pieces = {}; timeline = []; boardSnapshots = [];
+    const savedAssignments = JSON.parse(JSON.stringify(storyConfig.assignments));
+
+    // Init pieces
+    const files='abcdefgh';const back=['R','N','B','Q','K','B','N','R'];
+    for(let f=0;f<8;f++){const t=back[f],sq=files[f]+'1',suffix=(t==='R'||t==='N'||t==='B')?files[f]:'',id=`w_${t}${suffix}`;
+        pieces[id]={id,color:'white',type:t,origType:t,startSq:sq,sq,alive:true,isPawn:false,label:`White ${PIECE_NAMES[t]}`,shortLabel:`${PIECE_NAMES[t]} (${sq})`,moves:[],captures:[],capturedBy:null,capturedOnMove:null,capturedByLabel:'',threats:[],witnesses:[],checksGiven:[],promoted:false,deliversMate:false};}
+    for(let f=0;f<8;f++){const sq=files[f]+'2',id=`w_P${files[f]}`;
+        pieces[id]={id,color:'white',type:'P',origType:'P',startSq:sq,sq,alive:true,isPawn:true,label:`White Pawn (${files[f]})`,shortLabel:`Pawn ${files[f]}2`,moves:[],captures:[],capturedBy:null,capturedOnMove:null,capturedByLabel:'',threats:[],witnesses:[],checksGiven:[],promoted:false,deliversMate:false};}
+    for(let f=0;f<8;f++){const t=back[f],sq=files[f]+'8',suffix=(t==='R'||t==='N'||t==='B')?files[f]:'',id=`b_${t}${suffix}`;
+        pieces[id]={id,color:'black',type:t,origType:t,startSq:sq,sq,alive:true,isPawn:false,label:`Black ${PIECE_NAMES[t]}`,shortLabel:`${PIECE_NAMES[t]} (${sq})`,moves:[],captures:[],capturedBy:null,capturedOnMove:null,capturedByLabel:'',threats:[],witnesses:[],checksGiven:[],promoted:false,deliversMate:false};}
+    for(let f=0;f<8;f++){const sq=files[f]+'7',id=`b_P${files[f]}`;
+        pieces[id]={id,color:'black',type:'P',origType:'P',startSq:sq,sq,alive:true,isPawn:true,label:`Black Pawn (${files[f]})`,shortLabel:`Pawn ${files[f]}7`,moves:[],captures:[],capturedBy:null,capturedOnMove:null,capturedByLabel:'',threats:[],witnesses:[],checksGiven:[],promoted:false,deliversMate:false};}
+
+    function findPieceIdAt(sq){for(const[id,p]of Object.entries(pieces)){if(p.alive&&p.sq===sq)return id}return null}
+
+    const clean=PGN.replace(/\{[^}]*\}/g,'').replace(/\([^)]*\)/g,'').replace(/\[[^\]]*\]/g,'').replace(/\n/g,' ');
+    const tokens=clean.split(/\s+/).filter(t=>t&&!t.match(/^\d+\./)&&!['1-0','0-1','1/2-1/2','*'].includes(t));
+
+    // Detect result
+    if(PGN.includes('1-0'))gameResult='White wins';
+    else if(PGN.includes('0-1'))gameResult='Black wins';
+    else if(PGN.includes('1/2'))gameResult='Draw';
+    else gameResult='';
+    // Check for checkmate in last move
+    if(tokens.length>0&&tokens[tokens.length-1].includes('#')){
+        const lastColor=tokens.length%2===1?'White':'Black';
+        gameResult=lastColor+' wins by checkmate';
+    }
+
+    const board=new Board();
+    for(const[id,p]of Object.entries(pieces)){const cell=board.get(p.startSq);if(cell)cell.id=id}
+    boardSnapshots.push(board.snapshot());
+
+    const parsedForPlot=[];
+    totalCaptures=0;
+
+    tokens.forEach((str,index)=>{
+        const color=index%2===0?'white':'black';const moveNum=Math.floor(index/2)+1;const halfMove=index+1;
+        const move=parseMove(str);const events=[];let moverId=null,capturedId=null,fromSq=null,toSq=move.dest;
+
+        if(move.castle){
+            const rank=color==='white'?'1':'8';const kSq='e'+rank;moverId=findPieceIdAt(kSq);
+            if(move.castle==='K'){const rSq='h'+rank,rId=findPieceIdAt(rSq);board.set('g'+rank,board.get(kSq));board.set('f'+rank,board.get(rSq));board.set(kSq,null);board.set(rSq,null);if(moverId){pieces[moverId].sq='g'+rank;pieces[moverId].moves.push({halfMove,moveNum,from:kSq,to:'g'+rank,raw:str})}if(rId){pieces[rId].sq='f'+rank;pieces[rId].moves.push({halfMove,moveNum,from:rSq,to:'f'+rank,raw:str})}fromSq=kSq;toSq='g'+rank}
+            else{const rSq='a'+rank,rId=findPieceIdAt(rSq);board.set('c'+rank,board.get(kSq));board.set('d'+rank,board.get(rSq));board.set(kSq,null);board.set(rSq,null);if(moverId){pieces[moverId].sq='c'+rank;pieces[moverId].moves.push({halfMove,moveNum,from:kSq,to:'c'+rank,raw:str})}if(rId){pieces[rId].sq='d'+rank;pieces[rId].moves.push({halfMove,moveNum,from:rSq,to:'d'+rank,raw:str})}fromSq=kSq;toSq='c'+rank}
+        }else{
+            fromSq=board.findSource(move,color);
+            if(fromSq){moverId=findPieceIdAt(fromSq);
+                if(move.cap){capturedId=findPieceIdAt(move.dest);if(!capturedId&&move.piece==='P'){const epSq=move.dest[0]+fromSq[1];capturedId=findPieceIdAt(epSq);if(capturedId)board.set(epSq,null)}}
+                const mover=board.get(fromSq);board.set(fromSq,null);
+                if(move.promo){board.set(move.dest,{type:move.promo,color,id:moverId});if(moverId){pieces[moverId].promoted=true;pieces[moverId].type=move.promo}}
+                else board.set(move.dest,mover);
+                if(moverId){pieces[moverId].sq=move.dest;pieces[moverId].moves.push({halfMove,moveNum,from:fromSq,to:move.dest,raw:str})}
+            }
+        }
+
+        if(capturedId&&moverId){totalCaptures++;
+            pieces[moverId].captures.push({halfMove,moveNum,victimId:capturedId,victimLabel:pieces[capturedId].label});
+            pieces[capturedId].alive=false;pieces[capturedId].sq=null;pieces[capturedId].capturedBy=moverId;pieces[capturedId].capturedOnMove=moveNum;pieces[capturedId].capturedByLabel=pieces[moverId].label;
+            events.push({type:'capture',moveNum,halfMove,raw:str,moverId,capturedId,moverLabel:pieces[moverId].label,victimLabel:pieces[capturedId].label,moverColor:pieces[moverId].color});
+        }else if(moverId){events.push({type:'move',moveNum,halfMove,raw:str,moverId,moverLabel:pieces[moverId].label,moverColor:pieces[moverId].color,from:fromSq,to:toSq})}
+
+        if(move.check&&moverId){pieces[moverId].checksGiven.push({halfMove,moveNum});events.push({type:move.mate?'checkmate':'check',moveNum,halfMove,moverId,moverLabel:pieces[moverId].label,moverColor:pieces[moverId].color});if(move.mate)pieces[moverId].deliversMate=true}
+        if(move.promo&&moverId)events.push({type:'promotion',moveNum,halfMove,moverId,moverLabel:pieces[moverId].label,moverColor:pieces[moverId].color,promotedTo:move.promo});
+
+        const enemyColor=color==='white'?'black':'white';const attacked=board.allAttacked(color);
+        for(const[id,p]of Object.entries(pieces)){if(p.alive&&p.color===enemyColor&&p.sq&&attacked.has(p.sq)&&p.type!=='K')p.threats.push({halfMove,moveNum,byColor:color})}
+        if(capturedId){const adjSqs=board.adjacentSquares(toSq||move.dest);for(const[id,p]of Object.entries(pieces)){if(p.alive&&p.sq&&id!==moverId&&id!==capturedId&&adjSqs.includes(p.sq))p.witnesses.push({halfMove,moveNum,event:`${pieces[capturedId].label} captured`})}}
+
+        boardSnapshots.push(board.snapshot());
+        timeline.push({moveNum,halfMove,color,raw:str,events});
+        parsedForPlot.push({dest:toSq,color,check:move.check,mate:move.mate});
+    });
+
+    totalMoves=Math.ceil(tokens.length/2);
+
+    // Plot structure
+    let conflictIdx=0;
+    for(let i=0;i<parsedForPlot.length;i++){const m=parsedForPlot[i];if(!m.dest)continue;const rank=parseInt(m.dest[1]);if(m.color==='white'&&rank>=5){conflictIdx=i;break}if(m.color==='black'&&rank<=4){conflictIdx=i;break}}
+    const mateIdx=parsedForPlot.findIndex(m=>m.mate);let climaxIdx;
+    if(mateIdx>0){climaxIdx=mateIdx-1;for(let i=mateIdx-1;i>=0;i--){if(parsedForPlot[i].check){climaxIdx=i;break}}}
+    else{climaxIdx=parsedForPlot.length-2;for(let i=parsedForPlot.length-2;i>=0;i--){if(parsedForPlot[i].check){climaxIdx=i;break}}}
+    const conclusionIdx=mateIdx>=0?mateIdx:parsedForPlot.length-1;
+    if(climaxIdx<=conflictIdx){if(climaxIdx>=2)conflictIdx=Math.max(1,climaxIdx-Math.floor(climaxIdx/2));else{conflictIdx=0;climaxIdx=Math.max(1,climaxIdx)}}
+    plotStructure={conflictIdx,climaxIdx,conclusionIdx,conflictMove:Math.floor(conflictIdx/2)+1,climaxMove:Math.floor(climaxIdx/2)+1,conclusionMove:Math.floor(conclusionIdx/2)+1};
+
+    // Init assignments for non-pawn non-king pieces
+Object.values(pieces).filter(p=>!p.isPawn&&p.origType!=='K').forEach(p=>{
+    if(savedAssignments[p.id]){
+        storyConfig.assignments[p.id] = savedAssignments[p.id];
+    } else if(!storyConfig.assignments[p.id]){
+        storyConfig.assignments[p.id] = {student:'',charName:'',charDesc:'',motifs:[],pawns:[]};
+    }
+});
+
+    showAllSteps();
+}
+
+// ═══════════════════════════════════════
+// UI RENDERING
+// ═══════════════════════════════════════
+function showAllSteps(){
+    document.getElementById('game-info').style.display='flex';
+    document.getElementById('game-info').innerHTML=`<strong>${totalMoves}</strong> moves &nbsp;|&nbsp; <strong>${totalCaptures}</strong> captures &nbsp;|&nbsp; <strong>${gameResult||'In progress'}</strong> &nbsp;|&nbsp; Conflict: <strong>M${plotStructure.conflictMove}</strong> &nbsp;|&nbsp; Climax: <strong>M${plotStructure.climaxMove}</strong>`;
+    ['step-story','step-kings','step-assign','step-sheets','step-export'].forEach(id=>document.getElementById(id).style.display='');
+    document.getElementById('status-bar').style.display='flex';
+    renderKingCards();
+    renderAssignmentCards();
+}
+
+function renderKingCards(){
+    const grid=document.getElementById('king-grid');grid.innerHTML='';
+    ['white','black'].forEach(color=>{
+        const id=color==='white'?'w_K':'b_K';const p=pieces[id];if(!p)return;
+        const icon=PIECE_ICONS.K[color];const k=storyConfig.kings[color];
+        const div=document.createElement('div');div.className='assign-side';
+        div.innerHTML=`<h3 style="color:${color==='white'?'var(--white-accent)':'var(--black-accent)'}">${icon} ${color==='white'?'White':'Black'} King</h3>
+        <div class="assign-card king-card"><div class="ac-fields">
+            <div><label>Role Type</label><select onchange="storyConfig.kings.${color}.type=this.value">
+                <option${k.type==='MacGuffin'?' selected':''}>MacGuffin</option>
+                <option${k.type==='NPC'?' selected':''}>NPC</option>
+                <option${k.type==='Goal'?' selected':''}>Goal</option>
+                <option${k.type==='Custom'?' selected':''}>Custom</option>
+            </select></div>
+            <div><label>Name</label><input type="text" value="${esc(k.name)}" placeholder="e.g. The Crystal Throne" onchange="storyConfig.kings.${color}.name=this.value"></div>
+            <div><label>Description</label><input type="text" value="${esc(k.desc)}" placeholder="What does this represent?" onchange="storyConfig.kings.${color}.desc=this.value"></div>
+        </div></div>`;
+        grid.appendChild(div);
+    });
+}
+
+function renderAssignmentCards(){
+    const grid=document.getElementById('assign-grid');grid.innerHTML='';
+    ['white','black'].forEach(color=>{
+        const sideDiv=document.createElement('div');sideDiv.className='assign-side';
+        sideDiv.innerHTML=`<h3 style="color:${color==='white'?'var(--white-accent)':'var(--black-accent)'}">${color==='white'?'⬜ White':'⬛ Black'} Side</h3>`;
+        const sidePieces=Object.values(pieces).filter(p=>p.color===color&&!p.isPawn&&p.origType!=='K');
+        const sidePawns=Object.values(pieces).filter(p=>p.color===color&&p.isPawn);
+
+        sidePieces.forEach(p=>{
+            const a=storyConfig.assignments[p.id]||{student:'',charName:'',charDesc:'',motifs:[],pawns:[]};
+            const icon=PIECE_ICONS[p.origType][color];
+            const status=p.alive?(p.deliversMate?'Checkmate':p.promoted?'Promoted':'Survives'):`Dies M${p.capturedOnMove}`;
+            const card=document.createElement('div');card.className='assign-card';card.id=`card-${p.id}`;
+            card.innerHTML=`
+                <div class="ac-header">
+                    <div class="ac-icon">${icon}</div>
+                    <div class="ac-piece-info"><div class="ac-piece-name">${PIECE_NAMES[p.origType]} (${p.startSq})</div>
+                        <div class="ac-piece-stats">${p.moves.length} moves · ${p.captures.length} kills · ${status}</div></div>
+                </div>
+                <div class="ac-fields">
+                    <div class="ac-row"><div style="flex:1"><label>Student</label><input type="text" value="${esc(a.student)}" placeholder="Student name" onchange="storyConfig.assignments['${p.id}'].student=this.value"></div>
+                        <div style="flex:1"><label>Character Name</label><input type="text" value="${esc(a.charName)}" placeholder="Character name" onchange="storyConfig.assignments['${p.id}'].charName=this.value"></div></div>
+                    <div><label>Character Description</label><input type="text" value="${esc(a.charDesc)}" placeholder="Brief description or role" onchange="storyConfig.assignments['${p.id}'].charDesc=this.value"></div>
+                    <div><label>Character Motifs</label>
+                        <div class="tag-container" id="motifs-${p.id}">${a.motifs.map((m,i)=>`<span class="tag">${esc(m)}<span class="tag-x" onclick="removeCharMotif('${p.id}',${i})">×</span></span>`).join('')}</div>
+                        <div class="tag-add"><input type="text" id="motif-input-${p.id}" placeholder="Add motif..." onkeydown="if(event.key==='Enter')addCharMotif('${p.id}')"><button class="btn btn-sm btn-secondary" onclick="addCharMotif('${p.id}')">+</button></div>
+                    </div>
+                    <div class="pawn-assign"><label>Pawn Companions</label>
+                        <div class="pawn-chips">${sidePawns.map(pw=>{
+                            const active=a.pawns.includes(pw.id)?'active':'';
+                            const ps=pw.alive?'✓':`†M${pw.capturedOnMove}`;
+                            return`<div class="pawn-chip ${active}" onclick="togglePawn('${p.id}','${pw.id}')">${PIECE_ICONS.P[color]} ${pw.shortLabel} (${pw.moves.length}mv ${ps})</div>`;
+                        }).join('')}</div>
+                    </div>
+                </div>`;
+            sideDiv.appendChild(card);
+        });
+        grid.appendChild(sideDiv);
+    });
+}
+
+// ═══════════════════════════════════════
+// TAG MANAGEMENT
+// ═══════════════════════════════════════
+function addTag(type){
+    const input=document.getElementById(type==='themes'?'theme-input':'motif-input');
+    const val=input.value.trim();if(!val)return;
+    storyConfig[type].push(val);input.value='';renderTags(type);
+}
+function removeTag(type,i){storyConfig[type].splice(i,1);renderTags(type)}
+function renderTags(type){
+    const container=document.getElementById(type+'-tags');
+    container.innerHTML=storyConfig[type].map((t,i)=>`<span class="tag">${esc(t)}<span class="tag-x" onclick="removeTag('${type}',${i})">×</span></span>`).join('');
+}
+function addCharMotif(pieceId){
+    const input=document.getElementById('motif-input-'+pieceId);const val=input.value.trim();if(!val)return;
+    storyConfig.assignments[pieceId].motifs.push(val);input.value='';
+    const container=document.getElementById('motifs-'+pieceId);
+    container.innerHTML=storyConfig.assignments[pieceId].motifs.map((m,i)=>`<span class="tag">${esc(m)}<span class="tag-x" onclick="removeCharMotif('${pieceId}',${i})">×</span></span>`).join('');
+}
+function removeCharMotif(pieceId,i){
+    storyConfig.assignments[pieceId].motifs.splice(i,1);
+    const container=document.getElementById('motifs-'+pieceId);
+    container.innerHTML=storyConfig.assignments[pieceId].motifs.map((m,j)=>`<span class="tag">${esc(m)}<span class="tag-x" onclick="removeCharMotif('${pieceId}',${j})">×</span></span>`).join('');
+}
+function togglePawn(pieceId,pawnId){
+    const a=storyConfig.assignments[pieceId];
+    const idx=a.pawns.indexOf(pawnId);if(idx>=0)a.pawns.splice(idx,1);else a.pawns.push(pawnId);
+    renderAssignmentCards();
+}
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+
+// ═══════════════════════════════════════
+// SHEETS: SAVE / LOAD / TEST
+// ═══════════════════════════════════════
+function testSheetsConnection(){
+    const result=document.getElementById('sheets-test-result');
+    result.style.display='block';result.style.background='var(--surface2)';result.style.color='var(--text-muted)';result.textContent='Testing connection...';
+    const old=document.getElementById('sheetsTestScript');if(old)old.remove();
+    window._sheetsTestCallback=function(resp){
+        if(resp&&resp.status==='success'){result.style.background='rgba(63,185,80,.15)';result.style.color='var(--promote)';result.textContent='✅ Connected! Saved configs: '+(resp.tabs&&resp.tabs.length?resp.tabs.join(', '):'(none yet)');}
+        else{result.style.background='var(--kill-light)';result.style.color='var(--kill)';result.textContent='❌ Error: '+(resp?.message||'Unknown error');}
+    };
+    const script=document.createElement('script');script.id='sheetsTestScript';
+    script.src=SHEETS_URL+'?listTabs=true&callback=_sheetsTestCallback&_='+Date.now();
+    script.onerror=function(){result.style.background='var(--kill-light)';result.style.color='var(--kill)';result.textContent='❌ Could not reach the URL.';};
+    document.body.appendChild(script);
+}
+
+function gatherConfig(){
+    storyConfig.title=document.getElementById('story-title').value;
+    storyConfig.setting=document.getElementById('story-setting').value;
+    storyConfig.tone=document.getElementById('story-tone').value;
+    storyConfig.sheetsConfig.tab=document.getElementById('sheets-tab').value;
+    return {
+        pgn: document.getElementById('pgn-input').value,
+        storyConfig: JSON.parse(JSON.stringify(storyConfig))
+    };
+}
+
+function saveConfigToSheets(){
+    const tab=document.getElementById('sheets-tab').value.trim();
+    if(!tab){alert('Enter a configuration name first.');return}
+    // Auto-generate from title if empty
+    storyConfig.sheetsConfig.tab=tab;
+    const configData=gatherConfig();
+    const configJSON=JSON.stringify(configData);
+    const result=document.getElementById('sheets-test-result');
+    result.style.display='block';result.style.background='var(--surface2)';result.style.color='var(--text-muted)';result.textContent='Saving...';
+    // Use JSONP for the save (config can be large, so POST would be better but JSONP is what we have)
+    // For large configs, we chunk via URL. If too large, we'll need a workaround.
+    const encoded=encodeURIComponent(configJSON);
+    if(encoded.length>8000){
+        // Too large for GET — use a form POST approach
+        const iframe=document.createElement('iframe');iframe.style.display='none';iframe.name='saveFrame';document.body.appendChild(iframe);
+        const form=document.createElement('form');form.method='POST';form.action=SHEETS_URL;form.target='saveFrame';
+        ['saveConfig=true','tab='+encodeURIComponent(tab)].forEach(p=>{const[k,v]=p.split('=');const inp=document.createElement('input');inp.type='hidden';inp.name=k;inp.value=decodeURIComponent(v);form.appendChild(inp)});
+        const ci=document.createElement('input');ci.type='hidden';ci.name='config';ci.value=configJSON;form.appendChild(ci);
+        document.body.appendChild(form);form.submit();
+        setTimeout(()=>{document.body.removeChild(form);document.body.removeChild(iframe);
+            result.style.background='rgba(63,185,80,.15)';result.style.color='var(--promote)';result.textContent='✅ Saved to: '+tab;
+        },2500);
+        return;
+    }
+    const cbName='_saveCb'+Date.now();
+    window[cbName]=function(resp){delete window[cbName];
+        if(resp&&resp.status==='success'){result.style.background='rgba(63,185,80,.15)';result.style.color='var(--promote)';result.textContent='✅ '+resp.message;}
+        else{result.style.background='var(--kill-light)';result.style.color='var(--kill)';result.textContent='❌ '+(resp?.message||'Save failed');}
+    };
+    const s=document.createElement('script');
+    s.src=SHEETS_URL+'?saveConfig=true&tab='+encodeURIComponent(tab)+'&config='+encoded+'&callback='+cbName+'&_='+Date.now();
+    s.onerror=function(){delete window[cbName];result.style.background='var(--kill-light)';result.style.color='var(--kill)';result.textContent='❌ Network error on save.';};
+    document.body.appendChild(s);
+}
+
+function loadTabList(){
+    const picker=document.getElementById('load-picker');
+    picker.style.display='block';
+    const sel=document.getElementById('tab-select');
+    sel.innerHTML='<option value="">Loading...</option>';
+    const cbName='_listCb'+Date.now();
+    window[cbName]=function(resp){delete window[cbName];
+        if(resp&&resp.status==='success'&&resp.tabs){
+            sel.innerHTML='<option value="">— Select —</option>'+resp.tabs.map(t=>'<option value="'+esc(t)+'">'+esc(t)+'</option>').join('');
+        }else{sel.innerHTML='<option value="">Error loading tabs</option>';}
+    };
+    const s=document.createElement('script');
+    s.src=SHEETS_URL+'?listTabs=true&callback='+cbName+'&_='+Date.now();
+    s.onerror=function(){delete window[cbName];sel.innerHTML='<option value="">Connection error</option>';};
+    document.body.appendChild(s);
+}
+
+function loadConfigFromSheets(){
+    const tab=document.getElementById('tab-select').value;
+    if(!tab){alert('Select a configuration first.');return}
+    const result=document.getElementById('sheets-test-result');
+    result.style.display='block';result.style.background='var(--surface2)';result.style.color='var(--text-muted)';result.textContent='Loading '+tab+'...';
+    const cbName='_loadCb'+Date.now();
+    window[cbName]=function(resp){delete window[cbName];
+        if(resp&&resp.status==='success'&&resp.config){
+            try{
+                const data=typeof resp.config==='string'?JSON.parse(resp.config):resp.config;
+                // Restore PGN
+                if(data.pgn)document.getElementById('pgn-input').value=data.pgn;
+                // Restore storyConfig
+                if(data.storyConfig){
+                    const sc=data.storyConfig;
+                    storyConfig.title=sc.title||'';storyConfig.setting=sc.setting||'';storyConfig.tone=sc.tone||'';
+                    storyConfig.themes=sc.themes||[];storyConfig.motifs=sc.motifs||[];
+                    storyConfig.kings=sc.kings||storyConfig.kings;
+                    storyConfig.assignments=sc.assignments||{};
+                    if(sc.sheetsConfig)storyConfig.sheetsConfig=sc.sheetsConfig;
+                }
+                // Re-analyze the game to rebuild pieces/timeline
+                analyzeGame();
+                // Populate form fields
+                document.getElementById('story-title').value=storyConfig.title;
+                document.getElementById('story-setting').value=storyConfig.setting;
+                document.getElementById('story-tone').value=storyConfig.tone;
+                document.getElementById('sheets-tab').value=storyConfig.sheetsConfig.tab||tab;
+                renderTags('themes');renderTags('motifs');
+                renderKingCards();renderAssignmentCards();
+                result.style.background='rgba(63,185,80,.15)';result.style.color='var(--promote)';
+                result.textContent='✅ Loaded: '+tab+(resp.savedAt?' (saved '+new Date(resp.savedAt).toLocaleDateString()+')':'');
+            }catch(ex){
+                result.style.background='var(--kill-light)';result.style.color='var(--kill)';result.textContent='❌ Error parsing config: '+ex.message;
+            }
+        }else{
+            result.style.background='var(--kill-light)';result.style.color='var(--kill)';result.textContent='❌ '+(resp?.message||'Load failed');
+        }
+    };
+    const s=document.createElement('script');
+    s.src=SHEETS_URL+'?loadConfig=true&tab='+encodeURIComponent(tab)+'&callback='+cbName+'&_='+Date.now();
+    s.onerror=function(){delete window[cbName];result.style.background='var(--kill-light)';result.style.color='var(--kill)';result.textContent='❌ Network error on load.';};
+    document.body.appendChild(s);
+}
+
+// ═══════════════════════════════════════
+// EXPORT
+// ═══════════════════════════════════════
+function getPhase(halfMoveIdx){
+    if(halfMoveIdx<=plotStructure.conflictIdx)return'expo';
+    if(halfMoveIdx===plotStructure.conflictIdx+1||halfMoveIdx===plotStructure.conflictIdx+2)return'conflict';
+    if(halfMoveIdx<plotStructure.climaxIdx)return'rising';
+    if(halfMoveIdx>=plotStructure.climaxIdx&&halfMoveIdx<=plotStructure.climaxIdx+1)return'climax';
+    return'conclusion';
+}
+
+function charName(pieceId){
+    const a=storyConfig.assignments[pieceId];
+    if(a&&a.charName)return a.charName;
+    return pieces[pieceId]?.label||pieceId;
+}
+
+function exportHTML(){
+    // Read current form values
+    storyConfig.title=document.getElementById('story-title').value;
+    storyConfig.setting=document.getElementById('story-setting').value;
+    storyConfig.tone=document.getElementById('story-tone').value;
+    storyConfig.sheetsConfig.tab=document.getElementById('sheets-tab').value;
+
+    // Auto-generate tab name from title if not set
+    if(!storyConfig.sheetsConfig.tab&&storyConfig.title){
+        storyConfig.sheetsConfig.tab=storyConfig.title.replace(/[^a-z0-9 ]/gi,'').replace(/\s+/g,'_').slice(0,40);
+        document.getElementById('sheets-tab').value=storyConfig.sheetsConfig.tab;
+    }
+
+    // Build the serialized data the exported HTML needs
+    const exportData={
+        pieces: Object.fromEntries(Object.entries(pieces).map(([id,p])=>[id,{
+            id:p.id,color:p.color,type:p.type,origType:p.origType,startSq:p.startSq,alive:p.alive,isPawn:p.isPawn,
+            label:p.label,shortLabel:p.shortLabel,moves:p.moves,captures:p.captures,
+            capturedOnMove:p.capturedOnMove,capturedByLabel:p.capturedByLabel,
+            threats:p.threats,witnesses:p.witnesses,checksGiven:p.checksGiven,
+            promoted:p.promoted,deliversMate:p.deliversMate
+        }])),
+        timeline,
+        boardSnapshots,
+        plotStructure,
+        storyConfig:{...storyConfig},
+        gameResult,
+        totalMoves,
+        totalCaptures
+    };
+
+    const dataJSON=JSON.stringify(exportData);
+
+    const html=`<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(storyConfig.title||'Chess Chronicles · Story Scaffold')}</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1117;--surface:#161b22;--surface2:#1c2333;--border:#2a3040;--text:#e2e6ed;--text-muted:#7d8590;--text-dim:#484f58;--white-accent:#58a6ff;--white-light:rgba(88,166,255,0.1);--black-accent:#f0883e;--black-light:rgba(240,136,62,0.1);--kill:#f85149;--kill-light:rgba(248,81,73,0.1);--death:#8b949e;--check:#d2a8ff;--promote:#3fb950;--overlap:#f0e050;--overlap-light:rgba(240,224,80,0.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{text-align:center;padding:30px 20px 10px;border-bottom:1px solid var(--border)}
+header h1{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3.5vw,2rem);font-weight:900;background:linear-gradient(135deg,var(--white-accent),var(--black-accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.container{max-width:1100px;margin:0 auto;padding:0 20px 60px}
+.story-banner{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px;margin:20px 0}
+.story-banner h2{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:8px}
+.sb-row{font-size:.9rem;margin-bottom:4px;color:var(--text-muted)}.sb-row strong{color:var(--text)}
+.sb-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:4px}
+.sb-tag{padding:3px 10px;border-radius:14px;font-size:.8rem;font-weight:600;background:var(--surface2);border:1px solid var(--border)}
+.game-info{display:flex;justify-content:center;gap:20px;padding:12px;margin:12px 0;background:var(--surface2);border-radius:6px;font-size:.85rem;flex-wrap:wrap;color:var(--text-muted)}.game-info strong{color:var(--text)}
+.side-tabs{display:flex;gap:4px;margin-bottom:12px}
+.side-tab{flex:1;padding:10px;text-align:center;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:1px;border-radius:6px 6px 0 0;cursor:pointer;border:1px solid var(--border);border-bottom:none;transition:background .2s}
+.side-tab.white-tab{color:var(--white-accent);background:var(--surface)}.side-tab.white-tab.active{background:var(--white-light);border-color:var(--white-accent)}
+.side-tab.black-tab{color:var(--black-accent);background:var(--surface)}.side-tab.black-tab.active{background:var(--black-light);border-color:var(--black-accent)}
+.piece-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-bottom:20px}
+.piece-card{background:var(--surface);border:1.5px solid var(--border);border-radius:8px;padding:14px;cursor:pointer;transition:all .2s;position:relative}
+.piece-card:hover{border-color:var(--text-muted);transform:translateY(-1px)}
+.piece-card.selected.wc{border-color:var(--white-accent);background:var(--white-light)}
+.piece-card.selected.bc{border-color:var(--black-accent);background:var(--black-light)}
+.pc-icon{font-size:1.6rem;margin-bottom:4px}.pc-char{font-family:'Playfair Display',serif;font-weight:700;font-size:1rem}
+.pc-sub{font-size:.75rem;color:var(--text-dim)}.pc-student{font-size:.8rem;color:var(--text-muted);margin-top:2px}
+.pc-stats{display:flex;gap:10px;margin-top:6px;font-size:.75rem;color:var(--text-muted)}.pc-stats .sv{color:var(--text);font-weight:700}
+.pc-badge{position:absolute;top:8px;right:8px;font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;text-transform:uppercase}
+.badge-alive{background:rgba(63,185,80,.15);color:var(--promote)}.badge-dead{background:rgba(139,148,158,.15);color:var(--death)}.badge-promo{background:rgba(63,185,80,.2);color:var(--promote)}.badge-mate{background:rgba(248,81,73,.2);color:var(--kill)}
+.controls{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+.sel-count{font-size:.85rem;color:var(--text-muted)}.sel-count strong{color:var(--text)}
+.btn{padding:8px 18px;border:none;border-radius:6px;font-family:'Source Sans 3',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .15s}.btn:active{transform:scale(.97)}
+.btn-p{background:var(--white-accent);color:var(--bg)}.btn-s{background:var(--surface2);color:var(--text-muted);border:1px solid var(--border)}
+#output{display:none}#output.vis{display:block}
+.scaffold-section{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:16px}
+.scaffold-section h3{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sf{margin-bottom:10px;font-size:.9rem}.sf-label{font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text-muted);margin-bottom:2px}.sf-val{color:var(--text)}
+.sf-prompt{border:1.5px dashed var(--border);border-radius:6px;padding:12px 16px;margin-top:6px;color:var(--text-dim);font-style:italic;font-size:.85rem;min-height:50px}
+.journey{margin:16px 0;text-align:center}
+.tl-move{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(42,48,64,.5)}.tl-move:last-child{border-bottom:none}
+.tl-mn{width:50px;flex-shrink:0;font-family:monospace;font-size:.8rem;color:var(--text-dim);padding-top:3px;text-align:right}.tl-mb{flex:1}
+.tl-ev{display:flex;align-items:flex-start;gap:10px;padding:6px 10px;border-radius:6px;margin-bottom:4px;font-size:.9rem;line-height:1.5}
+.tl-ev .ti{font-size:.85rem;flex-shrink:0;margin-top:2px}.tl-ev .pn{font-weight:700}.tl-ev .nt{font-family:monospace;color:var(--text-dim);font-size:.8rem}.tl-ev .dt{color:var(--text-muted)}
+.ev-w{background:var(--white-light)}.ev-w .pn{color:var(--white-accent)}.ev-b{background:var(--black-light)}.ev-b .pn{color:var(--black-accent)}
+.ev-k{background:var(--kill-light)}.ev-o{background:var(--overlap-light);border:1px solid rgba(240,224,80,.25)}.ev-d{background:rgba(139,148,158,.08);border-left:3px solid var(--death)}
+.board-tog{font-size:.75rem;color:var(--text-dim);cursor:pointer;margin-top:4px;display:inline-block;padding:2px 8px;border-radius:4px;border:1px solid var(--border)}.board-tog:hover{color:var(--text-muted);border-color:var(--text-muted)}
+.board-box{margin-top:8px;display:none}.board-box.open{display:block}
+.ph-mark{padding:10px 16px;margin:20px 0 10px;font-family:'Playfair Display',serif;font-weight:700;font-size:.95rem;border-radius:6px;border-left:4px solid}
+.ph-expo{border-color:var(--white-accent);color:var(--white-accent);background:rgba(88,166,255,.06)}.ph-conflict{border-color:var(--black-accent);color:var(--black-accent);background:rgba(240,136,62,.06)}.ph-rising{border-color:var(--check);color:var(--check);background:rgba(210,168,255,.06)}.ph-climax{border-color:var(--kill);color:var(--kill);background:rgba(248,81,73,.06)}.ph-conclusion{border-color:var(--promote);color:var(--promote);background:rgba(63,185,80,.06)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:16px;font-size:.8rem;color:var(--text-muted)}.legend-item{display:flex;align-items:center;gap:5px}.legend-dot{width:10px;height:10px;border-radius:3px}
+@media print{body{background:#fff;color:#222}header{border-color:#ccc}.story-banner,.scaffold-section{border-color:#ccc;background:#fafafa}.tl-ev{background:#f5f5f5!important;border:1px solid #ddd;color:#222}.btn,.controls,.side-tabs,.piece-grid{display:none!important}#output{display:block!important}.board-box{display:block!important}.ph-mark{background:#f0f0f0!important;color:#333!important}}
+</style>
+</head>
+<body>
+<header><h1>${esc(storyConfig.title||'Chess Chronicles · Story Scaffold')}</h1></header>
+<div class="container">
+<div class="story-banner"><h2>📖 Story Details</h2>
+${storyConfig.setting?`<div class="sb-row"><strong>Setting:</strong> ${esc(storyConfig.setting)}</div>`:''}
+${storyConfig.tone?`<div class="sb-row"><strong>Genre/Tone:</strong> ${esc(storyConfig.tone)}</div>`:''}
+<div class="sb-row"><strong>Result:</strong> ${esc(gameResult)}</div>
+${storyConfig.themes.length?`<div class="sb-row"><strong>Themes:</strong></div><div class="sb-tags">${storyConfig.themes.map(t=>`<span class="sb-tag">${esc(t)}</span>`).join('')}</div>`:''}
+${storyConfig.motifs.length?`<div class="sb-row" style="margin-top:6px"><strong>Global Motifs:</strong></div><div class="sb-tags">${storyConfig.motifs.map(t=>`<span class="sb-tag">${esc(t)}</span>`).join('')}</div>`:''}
+<div style="margin-top:10px;display:flex;gap:20px">
+<div><div class="sb-row"><strong>${esc(storyConfig.kings.white.type)}:</strong> ${esc(storyConfig.kings.white.name||'White King')}</div>${storyConfig.kings.white.desc?`<div class="sb-row" style="font-size:.85rem">${esc(storyConfig.kings.white.desc)}</div>`:''}</div>
+<div><div class="sb-row"><strong>${esc(storyConfig.kings.black.type)}:</strong> ${esc(storyConfig.kings.black.name||'Black King')}</div>${storyConfig.kings.black.desc?`<div class="sb-row" style="font-size:.85rem">${esc(storyConfig.kings.black.desc)}</div>`:''}</div>
+</div></div>
+<div class="game-info"><strong>${totalMoves}</strong> moves | <strong>${totalCaptures}</strong> captures | Conflict: <strong>M${plotStructure.conflictMove}</strong> | Climax: <strong>M${plotStructure.climaxMove}</strong></div>
+<div class="side-tabs"><div class="side-tab white-tab active" onclick="showSide('white')">⬜ White Side</div><div class="side-tab black-tab" onclick="showSide('black')">⬛ Black Side</div></div>
+<div id="white-grid" class="piece-grid"></div><div id="black-grid" class="piece-grid" style="display:none"></div>
+<div class="controls"><div class="sel-count" id="sel-count">Select a piece to view their scaffold</div><div style="display:flex;gap:8px"><button class="btn btn-s" onclick="clearSel()">Clear</button><button class="btn btn-p" onclick="build()">Build Scaffold →</button></div></div>
+<div id="output"></div>
+</div>
+<script>
+const D=${dataJSON};
+const ICONS=${JSON.stringify(PIECE_ICONS)};
+const NAMES=${JSON.stringify(PIECE_NAMES)};
+const pieces=D.pieces,tl=D.timeline,snaps=D.boardSnapshots,plot=D.plotStructure,cfg=D.storyConfig;
+const SK='cc_sel_'+(cfg.title||'').replace(/\\W/g,'');
+let sel=new Set();
+function showSide(s){document.querySelectorAll('.side-tab').forEach(t=>t.classList.remove('active'));document.querySelector('.'+s+'-tab').classList.add('active');document.getElementById('white-grid').style.display=s==='white'?'grid':'none';document.getElementById('black-grid').style.display=s==='black'?'grid':'none'}
+function cn(id){const a=cfg.assignments[id];return(a&&a.charName)?a.charName:pieces[id]?.label||id}
+function renderCards(){['white','black'].forEach(color=>{const grid=document.getElementById(color+'-grid');grid.innerHTML='';Object.values(pieces).filter(p=>p.color===color&&!p.isPawn&&p.origType!=='K').forEach(p=>{const a=cfg.assignments[p.id]||{};const icon=ICONS[p.origType]?.[color]||'?';let badge='';if(p.deliversMate)badge='<div class="pc-badge badge-mate">Checkmate</div>';else if(p.promoted)badge='<div class="pc-badge badge-promo">Promoted</div>';else if(p.alive)badge='<div class="pc-badge badge-alive">Survives</div>';else badge='<div class="pc-badge badge-dead">Dies M'+p.capturedOnMove+'</div>';const card=document.createElement('div');card.className='piece-card '+(color==='white'?'wc':'bc');card.dataset.id=p.id;card.onclick=()=>{if(sel.has(p.id))sel.delete(p.id);else sel.add(p.id);updSel()};card.innerHTML=badge+'<div class="pc-icon">'+icon+'</div><div class="pc-char">'+(a.charName||NAMES[p.origType])+'</div><div class="pc-sub">'+NAMES[p.origType]+' ('+p.startSq+')</div>'+(a.student?'<div class="pc-student">👤 '+a.student+'</div>':'')+'<div class="pc-stats"><div><span class="sv">'+p.moves.length+'</span> moves</div><div><span class="sv">'+p.captures.length+'</span> kills</div><div><span class="sv">'+p.threats.length+'</span> threats</div></div>';grid.appendChild(card)})})}
+function updSel(){document.querySelectorAll('.piece-card').forEach(c=>{c.classList.toggle('selected',sel.has(c.dataset.id))});const n=sel.size;document.getElementById('sel-count').innerHTML=n===0?'Select a piece':'<strong>'+n+'</strong> selected: '+[...sel].map(id=>cn(id)).join(', ')}
+function clearSel(){sel.clear();updSel();document.getElementById('output').classList.remove('vis');try{localStorage.removeItem(SK)}catch(e){}}
+function getPhase(hi){if(hi<=plot.conflictIdx)return'expo';if(hi===plot.conflictIdx+1||hi===plot.conflictIdx+2)return'conflict';if(hi<plot.climaxIdx)return'rising';if(hi>=plot.climaxIdx&&hi<=plot.climaxIdx+1)return'climax';return'conclusion'}
+function phLbl(ph){return{expo:'📖 Exposition',conflict:'⚡ Inciting Incident',rising:'📈 Rising Action',climax:'💥 Climax',conclusion:'🏁 Conclusion'}[ph]||''}
+function renderSVG(bs,hl,sz){const sq=sz/8;const pc={white:{K:'♔',Q:'♕',R:'♖',B:'♗',N:'♘',P:'♙'},black:{K:'♚',Q:'♛',R:'♜',B:'♝',N:'♞',P:'♟'}};let s='<svg xmlns="http://www.w3.org/2000/svg" width="'+sz+'" height="'+sz+'" viewBox="0 0 '+sz+' '+sz+'" style="border-radius:4px;border:1px solid #2a3040">';for(let r=7;r>=0;r--)for(let f=0;f<8;f++){const x=f*sq,y=(7-r)*sq;const sn=String.fromCharCode(97+f)+(r+1);const dk=(f+r)%2===0;let fl=dk?'#1a2230':'#2a3444';if(hl[sn])fl=hl[sn];s+='<rect x="'+x+'" y="'+y+'" width="'+sq+'" height="'+sq+'" fill="'+fl+'"/>';const p=bs[r][f];if(p){const ch=pc[p.color]?.[p.type]||'?';const tc=hl[sn]?(p.color==='white'?'#fff':'#ffd0a0'):(p.color==='white'?'#e2e6ed':'#a0a8b4');s+='<text x="'+(x+sq/2)+'" y="'+(y+sq/2+sq*.12)+'" text-anchor="middle" dominant-baseline="middle" font-size="'+(sq*.7)+'" fill="'+tc+'" style="text-shadow:0 1px 2px rgba(0,0,0,.6)">'+ch+'</text>'}}for(let f=0;f<8;f++)s+='<text x="'+(f*sq+sq/2)+'" y="'+(sz-2)+'" text-anchor="middle" font-size="'+(sq*.3)+'" fill="#484f58">'+String.fromCharCode(97+f)+'</text>';for(let r=0;r<8;r++)s+='<text x="3" y="'+((7-r)*sq+sq/2+sq*.1)+'" font-size="'+(sq*.3)+'" fill="#484f58">'+(r+1)+'</text>';s+='</svg>';return s}
+function renderTrail(p,sz){const sq=sz/8;const ac=p.color==='white'?'#58a6ff':'#f0883e';const ad=p.color==='white'?'rgba(88,166,255,.3)':'rgba(240,136,62,.3)';let s='<svg xmlns="http://www.w3.org/2000/svg" width="'+sz+'" height="'+sz+'" viewBox="0 0 '+sz+' '+sz+'" style="border-radius:6px;border:1px solid #2a3040">';for(let r=7;r>=0;r--)for(let f=0;f<8;f++){const x=f*sq,y=(7-r)*sq;s+='<rect x="'+x+'" y="'+y+'" width="'+sq+'" height="'+sq+'" fill="'+((f+r)%2===0?'#1a2230':'#222d3a')+'"/>';}const path=[{sq:p.startSq,type:'start'}];p.moves.forEach(m=>{if(m.to){const isCap=p.captures.some(c=>c.halfMove===m.halfMove);path.push({sq:m.to,type:isCap?'capture':'move'})}});if(!p.alive)path.push({sq:p.moves.length>0?p.moves[p.moves.length-1].to:p.startSq,type:'death'});for(let i=1;i<path.length;i++){const[f1,r1]=[path[i-1].sq.charCodeAt(0)-97,parseInt(path[i-1].sq[1])-1];const[f2,r2]=[path[i].sq.charCodeAt(0)-97,parseInt(path[i].sq[1])-1];s+='<line x1="'+(f1*sq+sq/2)+'" y1="'+((7-r1)*sq+sq/2)+'" x2="'+(f2*sq+sq/2)+'" y2="'+((7-r2)*sq+sq/2)+'" stroke="'+ad+'" stroke-width="2" stroke-dasharray="4,3"/>';}path.forEach((pt,i)=>{const[f,r]=[pt.sq.charCodeAt(0)-97,parseInt(pt.sq[1])-1];const x=f*sq+sq/2,y=(7-r)*sq+sq/2;if(pt.type==='start')s+='<circle cx="'+x+'" cy="'+y+'" r="'+(sq*.3)+'" fill="'+ac+'" opacity=".9"/><text x="'+x+'" y="'+(y+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="'+(sq*.35)+'" fill="#0e1117" font-weight="bold">S</text>';else if(pt.type==='capture')s+='<circle cx="'+x+'" cy="'+y+'" r="'+(sq*.25)+'" fill="#f85149" opacity=".8"/><text x="'+x+'" y="'+(y+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="'+(sq*.3)+'" fill="white" font-weight="bold">'+i+'</text>';else if(pt.type==='death'){s+='<line x1="'+(x-sq*.2)+'" y1="'+(y-sq*.2)+'" x2="'+(x+sq*.2)+'" y2="'+(y+sq*.2)+'" stroke="#f85149" stroke-width="2.5"/>';s+='<line x1="'+(x+sq*.2)+'" y1="'+(y-sq*.2)+'" x2="'+(x-sq*.2)+'" y2="'+(y+sq*.2)+'" stroke="#f85149" stroke-width="2.5"/>';}else s+='<circle cx="'+x+'" cy="'+y+'" r="'+(sq*.2)+'" fill="'+ac+'" opacity=".6"/><text x="'+x+'" y="'+(y+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="'+(sq*.28)+'" fill="white">'+i+'</text>';});for(let f=0;f<8;f++)s+='<text x="'+(f*sq+sq/2)+'" y="'+(sz-2)+'" text-anchor="middle" font-size="'+(sq*.28)+'" fill="#484f58">'+String.fromCharCode(97+f)+'</text>';for(let r=0;r<8;r++)s+='<text x="3" y="'+((7-r)*sq+sq/2+sq*.08)+'" font-size="'+(sq*.28)+'" fill="#484f58">'+(r+1)+'</text>';s+='</svg>';return s}
+function toggleB(id){const el=document.getElementById(id);if(!el)return;const o=el.classList.toggle('open');el.previousElementSibling.textContent=o?'▾ Hide board':'▸ Show board'}
+function build(){if(sel.size===0)return;const out=document.getElementById('output');out.classList.add('vis');let h='';
+    try{localStorage.setItem(SK,JSON.stringify([...sel]))}catch(e){}
+    h+='<div class="scaffold-section" style="border-left:3px solid var(--kill)"><h3>🎯 Shared Plot Structure</h3>';
+    h+='<div class="sf"><div class="sf-label">Inciting Incident (Move '+plot.conflictMove+')</div><div class="sf-val">The conflict that affects every character begins here.</div><div class="sf-prompt">What central problem sparks this conflict? Every character is impacted by this moment.</div></div>';
+    h+='<div class="sf"><div class="sf-label">Climax (Move '+plot.climaxMove+')</div><div class="sf-val">The decisive moment that addresses the inciting incident.</div><div class="sf-prompt">How is the central problem confronted or resolved?</div></div>';
+    h+='<div class="sf"><div class="sf-label">Resolution (Move '+plot.conclusionMove+')</div><div class="sf-val">'+D.gameResult+'</div></div></div>';
+    for(const id of sel){const p=pieces[id];if(!p)continue;const a=cfg.assignments[id]||{};const icon=ICONS[p.origType]?.[p.color]||'?';const ac=p.color==='white'?'var(--white-accent)':'var(--black-accent)';
+        const fm=p.moves.length>0?p.moves[0].moveNum:null;const lm=p.moves.length>0?p.moves[p.moves.length-1].moveNum:null;
+        const entry=fm?'Move '+fm:'Never moves';const exit=p.alive?'Survives':'Captured M'+p.capturedOnMove+' by '+p.capturedByLabel;
+        const phases=new Set();p.moves.forEach(m=>phases.add(getPhase(m.halfMove-1)));
+        const km=[];p.captures.forEach(c=>km.push('M'+c.moveNum+': Captures '+cn(c.victimId)));p.checksGiven.forEach(c=>km.push('M'+c.moveNum+': Gives check'));if(p.promoted)km.push('Promoted to '+NAMES[p.type]);if(p.deliversMate)km.push('Delivers checkmate');
+        const trail=renderTrail(p,220);const pawnIds=a.pawns||[];const pawnInfo=pawnIds.map(pid=>pieces[pid]).filter(Boolean);
+        h+='<div class="scaffold-section" style="border-left:3px solid '+ac+'"><h3>'+icon+' <span style="color:'+ac+'">'+(a.charName||p.label)+'</span> <span style="color:var(--text-dim);font-weight:400;font-size:.85rem">('+p.startSq+')</span></h3>';
+        if(a.student)h+='<div class="sf"><div class="sf-label">Student</div><div class="sf-val">'+a.student+'</div></div>';
+        if(a.charDesc)h+='<div class="sf"><div class="sf-label">Character</div><div class="sf-val">'+a.charDesc+'</div></div>';
+        if(a.motifs&&a.motifs.length)h+='<div class="sf"><div class="sf-label">Character Motifs</div><div class="sb-tags">'+a.motifs.map(m=>'<span class="sb-tag">'+m+'</span>').join('')+'</div></div>';
+        h+='<div class="journey">'+trail+'<div style="font-size:.75rem;color:var(--text-dim);margin-top:6px"><span style="color:'+ac+'">● S</span> = Start <span style="color:'+ac+'">●</span> = Move <span style="color:var(--kill)">●</span> = Capture <span style="color:var(--kill)">✕</span> = Death</div></div>';
+        h+='<div class="sf"><div class="sf-label">Character Arc</div><div class="sf-val">Entry: '+entry+'<br>Active: '+p.moves.length+' moves'+(p.moves.length>0?' ('+fm+'–'+lm+')':'')+'<br>Exit: '+exit+'<br>Phases: '+[...phases].map(phLbl).join(', ')+'</div></div>';
+        h+='<div class="sf"><div class="sf-label">Combat Record</div><div class="sf-val">Kills: '+p.captures.length+(p.captures.length>0?' — '+p.captures.map(c=>cn(c.victimId)).join(', '):'')+'<br>Times threatened: '+p.threats.length+'</div></div>';
+        if(km.length)h+='<div class="sf"><div class="sf-label">Key Moments</div><div class="sf-val">'+km.join('<br>')+'</div></div>';
+        if(p.witnesses.length)h+='<div class="sf"><div class="sf-label">Witnesses</div><div class="sf-val">'+p.witnesses.map(w=>'M'+w.moveNum+': '+w.event).join('<br>')+'</div></div>';
+        if(pawnInfo.length)h+='<div class="sf"><div class="sf-label">Companion Characters (Pawns)</div><div class="sf-val">'+pawnInfo.map(pw=>pw.shortLabel+' — '+(pw.alive?'survives':'dies M'+pw.capturedOnMove)+', '+pw.moves.length+' moves').join('<br>')+'</div></div>';
+        h+='<div class="sf"><div class="sf-label">Exposition Prompt</div><div class="sf-prompt">'+(fm&&fm<=plot.conflictMove?'Your character is active before the conflict. How do you introduce them? What are they doing when everything changes?':fm?'Your character enters after the conflict begins (M'+fm+'). How do they react to a fight already in progress?':'Your character never moves. What is their inner world like? What do they observe?')+'</div></div>';
+        h+='<div class="sf"><div class="sf-label">Climax Prompt</div><div class="sf-prompt">'+(p.capturedOnMove&&p.capturedOnMove<plot.climaxMove?'Your character dies on M'+p.capturedOnMove+' — before the climax. They never see the resolution. What do they leave behind?':phases.has('climax')?'Your character is active during the climax. What role do they play in the decisive moment?':'Your character is alive during the climax but not directly involved. How do they experience it from the edges?')+'</div></div>';
+        if(p.captures.length)h+='<div class="sf"><div class="sf-prompt">This character takes '+p.captures.length+(p.captures.length===1?' life':' lives')+'. How do they feel about it?</div></div>';
+        if(p.threats.length>=5)h+='<div class="sf"><div class="sf-prompt">Threatened '+p.threats.length+' times — constant danger. How does that shape them?</div></div>';
+        h+='</div>';}
+    h+='<h2 style="font-family:Playfair Display,serif;margin:30px 0 16px">📅 Move-by-Move Timeline</h2>';
+    h+='<div class="legend"><div class="legend-item"><div class="legend-dot" style="background:var(--white-accent)"></div> White</div><div class="legend-item"><div class="legend-dot" style="background:var(--black-accent)"></div> Black</div><div class="legend-item"><div class="legend-dot" style="background:var(--kill)"></div> Capture</div><div class="legend-item"><div class="legend-dot" style="background:var(--overlap)"></div> Overlap</div><div class="legend-item"><div class="legend-dot" style="background:var(--death)"></div> Death</div></div>';
+    const rel=[];tl.forEach(tm=>{const re=tm.events.filter(ev=>(ev.moverId&&sel.has(ev.moverId))||(ev.capturedId&&sel.has(ev.capturedId)));const ex=[];for(const id of sel){const p=pieces[id];const th=p.threats.find(t=>t.halfMove===tm.halfMove);if(th)ex.push({type:'threatened',moveNum:tm.moveNum,halfMove:tm.halfMove,targetId:id,targetLabel:cn(id),targetColor:p.color});const wi=p.witnesses.find(w=>w.halfMove===tm.halfMove);if(wi)ex.push({type:'witness',moveNum:tm.moveNum,halfMove:tm.halfMove,witnessId:id,witnessLabel:cn(id),event:wi.event})}const all=[...re,...ex];if(all.length)rel.push({...tm,events:all})});
+    const grp={};rel.forEach(tm=>{if(!grp[tm.moveNum])grp[tm.moveNum]=[];grp[tm.moveNum].push(tm)});
+    let curPh='';
+    Object.keys(grp).sort((a,b)=>a-b).forEach(mn=>{const g=grp[mn];const fh=g[0].halfMove;const ph=getPhase(fh-1);
+        if(ph!==curPh){curPh=ph;const mr=ph==='expo'?'M1–'+plot.conflictMove:ph==='conflict'?'M'+plot.conflictMove:ph==='rising'?'M'+(plot.conflictMove+1)+'–'+(plot.climaxMove-1):ph==='climax'?'M'+plot.climaxMove:'M'+(plot.climaxMove+1)+'–'+plot.conclusionMove;h+='<div class="ph-mark ph-'+ph+'">'+phLbl(ph)+' <span style="font-weight:400;font-size:.8rem;opacity:.7;margin-left:8px">'+mr+'</span></div>'}
+        const lh=g[g.length-1].halfMove;const bs=snaps[lh];const hl={};for(const id of sel){const p=pieces[id];if(p.capturedOnMove&&parseInt(mn)>p.capturedOnMove)continue;let psq=p.startSq;for(const m of p.moves){if(m.halfMove<=lh)psq=m.to;else break}if(psq)hl[psq]=p.color==='white'?'rgba(88,166,255,.4)':'rgba(240,136,62,.4)'}
+        const bsvg=renderSVG(bs,hl,180);const bid='b'+mn;
+        h+='<div class="tl-move"><div class="tl-mn">M'+mn+'</div><div class="tl-mb">';
+        g.forEach(tm=>{tm.events.forEach(ev=>{let ec=ev.moverColor==='white'?'ev-w':'ev-b';if(ev.type==='capture')ec='ev-k';if(ev.type==='threatened')ec=ev.targetColor==='white'?'ev-w':'ev-b';if(ev.type==='witness')ec='ev-w';if(ev.capturedId&&sel.has(ev.capturedId))ec+=' ev-d';const inv=new Set();if(ev.moverId&&sel.has(ev.moverId))inv.add(ev.moverId);if(ev.capturedId&&sel.has(ev.capturedId))inv.add(ev.capturedId);if(ev.targetId&&sel.has(ev.targetId))inv.add(ev.targetId);if(ev.witnessId&&sel.has(ev.witnessId))inv.add(ev.witnessId);if(inv.size>=2||(sel.size>1&&inv.size>=1))ec='ev-o';
+            let ic='→',tx='';
+            if(ev.type==='move'){ic='→';tx='<span class="pn">'+cn(ev.moverId)+'</span> moves <span class="nt">'+ev.raw+'</span>'}
+            else if(ev.type==='capture'){ic='⚔️';tx=sel.has(ev.capturedId)?'<span class="pn" style="color:var(--kill)">'+cn(ev.capturedId)+'</span> is captured by '+cn(ev.moverId):'<span class="pn">'+cn(ev.moverId)+'</span> captures <span style="color:var(--kill)">'+cn(ev.capturedId)+'</span>'}
+            else if(ev.type==='check'){ic='⚡';tx='<span class="pn" style="color:var(--check)">'+cn(ev.moverId)+'</span> gives check'}
+            else if(ev.type==='checkmate'){ic='👑';tx='<span class="pn" style="color:var(--promote)">'+cn(ev.moverId)+'</span> delivers <strong>CHECKMATE</strong>'}
+            else if(ev.type==='promotion'){ic='⭐';tx='<span class="pn" style="color:var(--promote)">'+cn(ev.moverId)+'</span> promotes to <strong>'+NAMES[ev.promotedTo]+'</strong>'}
+            else if(ev.type==='threatened'){ic='⚠️';tx='<span class="pn">'+ev.targetLabel+'</span> is <span class="dt">threatened</span>'}
+            else if(ev.type==='witness'){ic='👁';tx='<span class="pn">'+ev.witnessLabel+'</span> <span class="dt">witnesses: '+ev.event+'</span>'}
+            h+='<div class="tl-ev '+ec+'"><span class="ti">'+ic+'</span><span>'+tx+'</span></div>'})});
+        h+='<div class="board-tog" onclick="toggleB(\\''+bid+'\\')">▸ Show board</div><div class="board-box" id="'+bid+'">'+bsvg+'</div>';
+        h+='</div></div>'});
+    out.innerHTML=h;out.scrollIntoView({behavior:'smooth'})}
+renderCards();
+try{var sv=JSON.parse(localStorage.getItem(SK));if(sv&&sv.length){sv.forEach(function(id){if(pieces[id])sel.add(id)});if(sel.size){updSel();build()}}}catch(e){}
+<\\/script>
+</body></html>`;
+
+    // Download
+    const blob=new Blob([html.replace(/<\\\/script>/g,'<\/script>')],{type:'text/html'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');a.href=url;a.download=(storyConfig.title||'chess_chronicles_scaffold').replace(/[^a-z0-9]/gi,'_')+'.html';
+    a.click();URL.revokeObjectURL(url);
+    document.getElementById('status-text').textContent='✅ Exported!';
+}
+</script>
+</body>
+</html>
+
