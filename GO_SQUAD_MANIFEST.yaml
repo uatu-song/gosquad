@@ -1,0 +1,741 @@
+# GO SQUAD MANIFEST
+# Repository Index for RLM-Based Multi-Agent Creative System
+#
+# This manifest maps existing files to Go Squad agent roles,
+# tracks duplicates requiring Director decision, and defines
+# query paths for the Archivist agent.
+#
+# Generated: 2026-01-14
+# Updated: 2026-02-15
+# Status: Phase 0 - Initial Archive Index
+
+meta:
+  version: "1.1"
+  repository: "/workspaces/gosquad"
+  total_files: 516
+  total_size_mb: 15.5
+  primary_format: "markdown"  # 89% of files
+
+  # RLM Architecture Notes
+  # - Files are external state, not loaded into context
+  # - Agents query via Archivist, not direct file access
+  # - Locked files (*_Book1_Final.md) are read-only
+
+---
+
+# ============================================================
+# SECTION 1: GO SQUAD ROLE MAPPINGS
+# Which files feed which agent?
+# ============================================================
+
+role_mappings:
+
+  # ----------------------------------------------------------
+  # ARCHIVIST (Retrieval and Indexing)
+  # Domain: Rapid retrieval of any established content
+  # ----------------------------------------------------------
+  archivist:
+    description: "Reference desk for all agents - retrieves, never judges"
+    primary_corpus:
+      - path: "5_story_bibles/"
+        purpose: "Canonical story world documentation"
+        priority: 1
+        notes: "PRIMARY source of truth for all storytelling"
+
+      - path: "7_characters/"
+        purpose: "Character profiles and arc trackers"
+        priority: 1
+
+      - path: "6_manuscript/"
+        purpose: "Published prose for continuity reference"
+        priority: 2
+
+    secondary_corpus:
+      - path: "_archive/old_root/"
+        purpose: "Historical documentation (context, not canon)"
+        priority: 3
+        notes: "Superseded but valuable for understanding evolution"
+
+    query_entry_points:
+      character_lookup: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+      canon_verification: "5_story_bibles/book_X/CANON.md"
+      timeline_check: "5_story_bibles/universe/Book_X_Events.md"
+
+  # ----------------------------------------------------------
+  # STATUS TRACKER (Real-time Character State)
+  # Domain: Physical condition, emotional state, knowledge
+  # ----------------------------------------------------------
+  status_tracker:
+    description: "Tracks who knows what, when - gates knowledge reveals"
+    primary_sources:
+      - path: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+        purpose: "MASTER INDEX - single source of truth for character states"
+        format: "yaml"
+        critical: true
+
+      - path: "5_story_bibles/book_X/CONTINUITY_TRACKER.md"
+        purpose: "Per-book character state tracking"
+        pattern: "One per book"
+
+      - path: "7_characters/arcs/*_Arc_Tracker.md"
+        purpose: "Individual character progression"
+        count: 22
+
+    query_patterns:
+      - "What does [Character] know in Chapter [N]?"
+      - "What is [Character]'s physical state after [Event]?"
+      - "When does [Character] learn [Secret]?"
+
+  # ----------------------------------------------------------
+  # THEME GUARDIAN (Thematic Consistency)
+  # Domain: Artistic vision, thematic drift detection
+  # ----------------------------------------------------------
+  theme_guardian:
+    description: "Enforces 'You don't have to be fixed to be worthy'"
+    primary_sources:
+      - path: "4_constraints/THEMATIC_CONSTRAINTS.md"
+        purpose: "Core theme enforcement rules"
+
+      - path: "4_constraints/NEGATIVE_CONSTRAINTS.md"
+        purpose: "What NEVER to do - hard rules"
+        critical: true
+
+      - path: "5_story_bibles/SERIES_MECHANICS.md"
+        purpose: "Power system rules (thematic: powers cost)"
+
+    thematic_core:
+      primary: "You don't have to be fixed to be worthy"
+      approach: "Both/And thinking - never binary"
+      arc_pattern: "CBT failing (Books 1-3) → DBT succeeding (Books 4-7)"
+
+  # ----------------------------------------------------------
+  # TIMELINE KEEPER (Chronological Accuracy)
+  # Domain: When things happen, temporal consistency
+  # ----------------------------------------------------------
+  timeline_keeper:
+    description: "Tracks when events occur, prevents anachronisms"
+    primary_sources:
+      - path: "5_story_bibles/universe/CYCLIC_UNIVERSE_COSMOLOGY.md"
+        purpose: "TIME MECHANICS - critical for time loop stories"
+        critical: true
+
+      - path: "5_story_bibles/universe/Book_1_Events.md"
+        purpose: "Book 1 timeline"
+
+      - path: "5_story_bibles/universe/Book_2_Events.md"
+        purpose: "Book 2 timeline"
+
+      - path: "5_story_bibles/universe/Time_Manipulation.md"
+        purpose: "Rules for time powers"
+
+    query_patterns:
+      - "What month is Chapter [N]?"
+      - "Has [Event] happened yet at this point?"
+      - "How much time passes between [A] and [B]?"
+
+  # ----------------------------------------------------------
+  # SCENE CHOREOGRAPHER (Movement and Blocking)
+  # Domain: Character positions, sightlines, action sequences
+  # ----------------------------------------------------------
+  scene_choreographer:
+    description: "Tracks who is where, movement logistics"
+    primary_sources:
+      - path: "5_story_bibles/book_X/structure/Chapter_N_STRUCTURE.md"
+        purpose: "Scene beats with blocking notes"
+        pattern: "24 files per book"
+
+      - path: "5_story_bibles/locations/"
+        purpose: "Spatial layouts of key locations"
+
+      - path: "1_writing_guides/Fight_Guide.md"
+        purpose: "Combat choreography methodology"
+        size_kb: 45
+
+  # ----------------------------------------------------------
+  # READER PROXY (Audience Knowledge State)
+  # Domain: What has been revealed to readers
+  # ----------------------------------------------------------
+  reader_proxy:
+    description: "Tracks dramatic irony - what readers know vs characters"
+    primary_sources:
+      - path: "5_story_bibles/CALLBACK_TRACKER.md"
+        purpose: "Seeds planted, when they bloom"
+
+      - path: "5_story_bibles/book_X/threads/*_thread.md"
+        purpose: "Character-specific plot threads"
+        notes: "14 thread files per book"
+
+    query_patterns:
+      - "Does the reader know [Secret] yet?"
+      - "What callbacks have been planted for [Payoff]?"
+      - "What dramatic irony is active in Chapter [N]?"
+
+  # ----------------------------------------------------------
+  # PACING MONITOR (Tension Curves and Rhythm)
+  # Domain: Emotional pacing, tension tracking
+  # ----------------------------------------------------------
+  pacing_monitor:
+    description: "Ensures proper pacing via chess structure"
+    primary_sources:
+      - path: "5_story_bibles/book_X/structure/"
+        purpose: "Beat sheets mapped to chess positions"
+
+    notes: "Chess game provides structural pacing scaffold"
+
+  # ----------------------------------------------------------
+  # TECHNICAL CONSULTANT (Rotating Subject Matter Expert)
+  # Domain: Combat, medical, tech, legal, psychology
+  # ----------------------------------------------------------
+  technical_consultant:
+    description: "Rotates based on scene needs"
+    sources_by_specialty:
+      combat:
+        - path: "1_writing_guides/Fight_Guide.md"
+        - path: "1_writing_guides/Action_Terminology.md"
+
+      psychology:
+        - path: "_archive/research/"
+          notes: "Background research on trauma, therapy approaches"
+
+      technology:
+        - path: "5_story_bibles/artifacts/"
+          notes: "FAERIS drones, Hyper Seed mechanics"
+
+  # ----------------------------------------------------------
+  # INTIMACY COORDINATOR (Sensitive Content)
+  # Domain: Content guidance, agent dynamics
+  # ----------------------------------------------------------
+  intimacy_coordinator:
+    description: "Monitors sensitive content, relational health"
+    primary_sources:
+      - path: "4_constraints/NEGATIVE_CONSTRAINTS.md"
+        purpose: "Hard limits on content"
+
+    notes: "Not yet formalized - uses constraint files"
+
+  # ----------------------------------------------------------
+  # OUTLINE DEVELOPMENT ASSISTANT (Story Structure)
+  # Domain: Beat sheets, structural planning
+  # ----------------------------------------------------------
+  outline_assistant:
+    description: "Plans structure, adjusts based on discoveries"
+    primary_sources:
+      - path: "5_story_bibles/book_X/structure/"
+        purpose: "Chapter beat sheets"
+
+      - path: "3_ttrpg/"
+        purpose: "TTRPG campaign generates structure"
+        notes: "Book 2 structure emerged from TTRPG campaign"
+
+  # ----------------------------------------------------------
+  # PRODUCTION DESIGNER (Objects, Costumes, Tech)
+  # Domain: Physical design consistency
+  # ----------------------------------------------------------
+  production_designer:
+    description: "Visual/physical consistency for objects and tech"
+    primary_sources:
+      - path: "5_story_bibles/artifacts/"
+        purpose: "Tech specifications"
+        files:
+          - "FAERIS_Drones.md"
+          - "Hyper_Seed.md"
+
+      - path: "5_story_bibles/organizations/"
+        purpose: "Organization aesthetics and resources"
+        files:
+          - "CADENS.md"
+          - "Titan_Strategic.md"
+
+  # ----------------------------------------------------------
+  # CHARACTER STEWARDS (Performance Cast)
+  # Domain: Character embodiment across series
+  # ----------------------------------------------------------
+  character_stewards:
+    description: "ALREADY PARTIALLY IMPLEMENTED as Method Actor System"
+
+    existing_implementation:
+      system_doc: "2_method_actor/METHOD_ACTOR_SYSTEM.md"
+      templates: "2_method_actor/METHOD_ACTOR_TEMPLATES.md"
+      voice_prose: "2_method_actor/METHOD_ACTOR_VOICE_PROSE.md"
+      briefings: "2_method_actor/briefings/"
+
+    what_method_actor_already_does:
+      - "Voice cards for each character"
+      - "[NARRATOR] / [AS CHARACTER] mode switching"
+      - "Touchpoint A→B scene structure"
+      - "Backstage context loading"
+      - "Director notes for state changes"
+      - "Evaluator gate for canon validation"
+
+    what_go_squad_adds:
+      - "Exploration Mode vs Performance Mode distinction"
+      - "Query protocol to Production Crew"
+      - "Lane enforcement via process log"
+      - "Persistent character state across 30 books"
+
+    voice_sources:
+      - path: "1_writing_guides/Ahdia_Voice.md"
+        purpose: "Protagonist voice patterns"
+        critical: true
+
+      - path: "1_writing_guides/GOSQUAD_PROSE_VOICE.md"
+        purpose: "All character voices"
+
+      - path: "7_characters/profiles/*_EXTENDED.md"
+        purpose: "Rich psychological detail for embodiment"
+
+    per_character_profiles: "7_characters/profiles/"
+    per_character_arcs: "7_characters/arcs/"
+
+---
+
+# ============================================================
+# SECTION 1B: TOOLS
+# Utility tools for series development
+# ============================================================
+
+tools:
+
+  perspective_engine:
+    description: "Multi-character timeline visualization and query interface"
+    added: "2026-02-15"
+    location: "_tools/perspective_engine/"
+    files:
+      - "engine.py"           # Python query interface
+      - "visualization.html"  # HTML template
+      - "generate_visualization.py"  # Generates standalone HTML
+    output: "book2_perspective_engine.html"
+    data_source: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+    use_cases:
+      - "Steward consultations (query knowledge states)"
+      - "Multi-Steward coordination (find overlap scenes)"
+      - "Canon verification (check what characters know when)"
+      - "Dramatic irony tracking (knowledge distribution)"
+    cli_examples:
+      - "python engine.py know -c tess -ch 12"
+      - "python engine.py overlaps"
+      - "python engine.py chapter -ch 21"
+
+  prose_indexer:
+    description: "AI slop detection and entity indexing"
+    location: "_tools/prose_indexer/"
+    cli_examples:
+      - "python prose_indexer.py slop --book 2"
+      - "python prose_indexer.py ingest --book 2"
+
+  knowledge_loaders:
+    description: "Load series context for AI assistants"
+    files:
+      - "gosquad_knowledge_loader.py"
+      - "gosquad_knowledge_loader_advanced.py"
+
+---
+
+# ============================================================
+# SECTION 2: DUPLICATE RESOLUTION (DIRECTOR DECISIONS APPLIED)
+# Resolved: 2026-01-14
+# ============================================================
+
+duplicates_resolved:
+
+  - id: "DUPE_001"
+    description: "Story bibles location duplication"
+    status: "RESOLVED"
+    decision: "Merged unique files from story_bibles/ into 5_story_bibles/"
+    actions_taken:
+      - "Created organized subfolders: concepts/, method_actor/, planning/, scenes/"
+      - "Migrated ~50 unique files from story_bibles/book 2/"
+      - "Archived old location to _archive/story_bibles_old/"
+    canonical_location: "5_story_bibles/"
+    migration_date: "2026-01-14"
+    new_structure:
+      book_2:
+        - "concepts/ - Ahdia Benevolent Dictator, Eidolon design, cosmology, etc."
+        - "method_actor/ - Chapter briefings, voice cards, scene scaffolds"
+        - "planning/ - Structure docs, chess analysis, time loops, subplots"
+        - "scenes/ - Geneva Speech, Timeline_Map, etc."
+        - "structure/ - All 24 chapter beat sheets"
+        - "threads/ - 14 character thread files"
+        - "sessions/ - Session handoffs and reflections"
+
+  - id: "DUPE_002"
+    description: "Editing tools location duplication"
+    status: "RESOLVED"
+    decision: "Completed migration to _tools/, archived editor_suite/"
+    actions_taken:
+      - "Copied Manuscript_reader.md to _tools/"
+      - "Moved deprecated scripts to _archive/deprecated_scripts/"
+      - "Moved chapter packets to 6_manuscript/packets/"
+      - "Archived entire editor_suite/ to _archive/editor_suite_legacy/"
+    canonical_location: "_tools/"
+    migration_date: "2026-01-14"
+
+  - id: "DUPE_003"
+    description: "Entity catalog vs CHARACTER_STATE_INDEX"
+    status: "DEFERRED"
+    decision: "Hold - revisit after Phase 1 implementation"
+    notes: |
+      Director determined these are likely complementary systems:
+      - entity_catalog = per-chapter validation manifests (scene-level)
+      - CHARACTER_STATE_INDEX = series-wide character state (arc-level)
+      Will clarify during Phase 1 state architecture work.
+
+---
+
+# ============================================================
+# SECTION 3: LOCKED FILES (Read-Only Canon)
+# Pattern: *_Book1_Final.md = IMMUTABLE
+# ============================================================
+
+locked_files:
+  pattern: "*_Book1_Final.md"
+  purpose: "Locked snapshots of character state at book end"
+
+  files:
+    - path: "7_characters/profiles/Ahdia_Bacchus_Book1_Final.md"
+      locks: "Ahdia's state at end of Book 1"
+
+    - path: "7_characters/profiles/Ruth_Carter_Book1_Final.md"
+      locks: "Ruth's state at end of Book 1"
+
+    - path: "7_characters/profiles/Harding_Kain_Book1_Final.md"
+      locks: "Kain's state at end of Book 1"
+
+    - path: "7_characters/profiles/Firas_Bacchus_Book1_Final.md"
+      locks: "Firas's state at death (Book 1)"
+
+    - path: "7_characters/profiles/The_Go_Squad_Book1_Final.md"
+      locks: "Team composition at end of Book 1"
+
+  go_squad_protocol:
+    - "Agents MUST NOT modify locked files"
+    - "Archivist returns locked files as read-only"
+    - "Status Tracker references but never updates"
+    - "New books create new *_BookN_Final.md snapshots"
+
+---
+
+# ============================================================
+# SECTION 4: DEPENDENCY MAP (Query Paths)
+# What references what - critical for Archivist routing
+# ============================================================
+
+dependency_map:
+
+  # Character query chain
+  character_query:
+    entry_point: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+    flows_to:
+      - "7_characters/arcs/[Character]_Arc_Tracker.md"
+      - "7_characters/profiles/[Character].md"
+      - "7_characters/profiles/[Character]_EXTENDED.md"
+      - "5_story_bibles/book_X/threads/[Character]_thread.md"
+    locked_reference: "7_characters/profiles/[Character]_Book1_Final.md"
+
+  # Continuity query chain
+  continuity_query:
+    entry_point: "5_story_bibles/book_X/CANON.md"
+    flows_to:
+      - "5_story_bibles/book_X/CONTINUITY_TRACKER.md"
+      - "5_story_bibles/universe/Book_X_Events.md"
+      - "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+
+  # Scene generation chain
+  scene_generation:
+    entry_point: "5_story_bibles/book_X/structure/Chapter_N_STRUCTURE.md"
+    requires:
+      - "2_method_actor/METHOD_ACTOR_SYSTEM.md"
+      - "1_writing_guides/GOSQUAD_PROSE_VOICE.md"
+      - "4_constraints/NEGATIVE_CONSTRAINTS.md"
+    produces: "6_manuscript/book_X/chapter_N.md"
+    validated_by: "4_constraints/evaluator_spec.md"
+
+  # Constraint enforcement chain
+  constraint_check:
+    entry_point: "4_constraints/NEGATIVE_CONSTRAINTS.md"
+    cross_references:
+      - "5_story_bibles/SERIES_MECHANICS.md"
+      - "4_constraints/THEMATIC_CONSTRAINTS.md"
+    validation_spec: "4_constraints/evaluator_spec.md"
+
+---
+
+# ============================================================
+# SECTION 5: GAPS AND MISSING ELEMENTS
+# What's not documented that should be
+# ============================================================
+
+identified_gaps:
+
+  - id: "GAP_001"
+    description: "No formal Set Designer sources"
+    needed: "Location layouts, spatial ground truth"
+    current_state: "Scattered in story_bibles/locations/ (only 1 file)"
+    recommendation: "Expand 5_story_bibles/locations/ with key locations"
+
+  - id: "GAP_002"
+    description: "No Intimacy Coordinator protocol"
+    needed: "Content guidance, sensitive scene handling"
+    current_state: "Implicit in negative constraints"
+    recommendation: "Formalize as part of constraint system"
+
+  - id: "GAP_003"
+    description: "Books 3-4 structure incomplete"
+    current_state: "Beat sheets exist, but less detailed than Book 2"
+    book_3: "19 chapter beat files"
+    book_4: "24 chapter beat files + braided structure"
+    recommendation: "These are in progress - not gaps, just WIP"
+
+  - id: "GAP_004"
+    description: "No Book 5-7 content"
+    current_state: "Series is 7 books, only 1-4 have structure"
+    recommendation: "Expected - these books haven't been developed yet"
+
+  - id: "GAP_005"
+    description: "Reader Proxy system underdeveloped"
+    needed: "Formal dramatic irony tracking"
+    current_state: "CALLBACK_TRACKER exists but sparse"
+    recommendation: "Expand as prose production continues"
+
+---
+
+# ============================================================
+# SECTION 6: FILE FORMAT INVENTORY
+# For Archivist query optimization
+# ============================================================
+
+file_formats:
+  markdown:
+    count: 458
+    percentage: 89
+    locations: "All directories"
+    use: "Primary content - narratives, bibles, guides"
+    parser: "Standard markdown"
+
+  yaml:
+    count: 9
+    percentage: 2
+    locations:
+      - "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+      - "entity_catalog/"
+    use: "Structured state tracking, entity schemas"
+    parser: "YAML"
+    critical_files:
+      - "CHARACTER_STATE_INDEX.yaml"
+      - "ENTITY_CATALOG.yaml"
+
+  json:
+    count: 10
+    percentage: 2
+    locations:
+      - "3_ttrpg/data/"
+      - "_archive/"
+    use: "TTRPG data, research bundles"
+    parser: "JSON"
+
+  python:
+    count: 34
+    percentage: 7
+    locations:
+      - "_tools/"
+      - "3_ttrpg/scripts/"
+    use: "Editing tools, TTRPG mechanics"
+    parser: "N/A - executable, not queryable content"
+
+  other:
+    html: 4
+    pdf: 3
+    txt: 5
+    png: 2
+
+---
+
+# ============================================================
+# SECTION 7: RECOMMENDED QUERY PATTERNS
+# How agents should request information
+# ============================================================
+
+query_patterns:
+
+  # Pattern 1: Character state at point in story
+  character_state:
+    question: "What does [Character] know in Chapter [N] of Book [X]?"
+    query_chain:
+      1: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml → character entry"
+      2: "7_characters/arcs/[Character]_Arc_Tracker.md → chapter state"
+      3: "5_story_bibles/book_X/CONTINUITY_TRACKER.md → verify"
+    returns: "Knowledge list, emotional state, physical state"
+
+  # Pattern 2: Scene beats
+  scene_beats:
+    question: "What are the beats for Chapter [N], Scene [M]?"
+    query_chain:
+      1: "5_story_bibles/book_X/structure/Chapter_N_STRUCTURE.md"
+    returns: "Touchpoint A, Touchpoint B, requirements, constraints"
+
+  # Pattern 3: Character voice
+  character_voice:
+    question: "How does [Character] speak?"
+    query_chain:
+      1: "1_writing_guides/GOSQUAD_PROSE_VOICE.md → character section"
+      2: "7_characters/profiles/[Character]_EXTENDED.md → dialogue patterns"
+      3: "2_method_actor/briefings/ → if exists for this scene"
+    returns: "Voice patterns, forbidden phrases, example dialogue"
+
+  # Pattern 4: Canon verification
+  canon_check:
+    question: "Did [Event] happen? When? Who was involved?"
+    query_chain:
+      1: "5_story_bibles/book_X/CANON.md"
+      2: "5_story_bibles/universe/Book_X_Events.md"
+      3: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml → affected characters"
+    returns: "Canonical truth, timeline position, participants"
+
+  # Pattern 5: Constraint validation
+  constraint_check:
+    question: "Is [proposed content] allowed?"
+    query_chain:
+      1: "4_constraints/NEGATIVE_CONSTRAINTS.md → forbidden patterns"
+      2: "5_story_bibles/SERIES_MECHANICS.md → power rules"
+      3: "4_constraints/THEMATIC_CONSTRAINTS.md → thematic alignment"
+    returns: "ALLOWED / BLOCKED / FLAGGED with reason"
+
+---
+
+# ============================================================
+# SECTION 8: METHOD ACTOR → GO SQUAD MAPPING
+# Existing system already implements much of Go Squad
+# ============================================================
+
+method_actor_to_go_squad:
+
+  existing_components:
+    entity_catalog:
+      method_actor: "Component 1: Entity Catalog"
+      go_squad_role: "Archivist corpus"
+      location: "entity_catalog/ENTITY_CATALOG.yaml"
+
+    negative_constraints:
+      method_actor: "Component 2: Negative Constraints"
+      go_squad_role: "Theme Guardian + Lane Enforcement"
+      location: "4_constraints/NEGATIVE_CONSTRAINTS.md"
+
+    session_manifests:
+      method_actor: "Component 3: Session Manifests"
+      go_squad_role: "Process Log (partial)"
+      location: "entity_catalog/manifests/"
+
+    character_state_index:
+      method_actor: "Component 4: Character State Index"
+      go_squad_role: "Status Tracker source"
+      location: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+
+    method_actor_prose:
+      method_actor: "Component 5: Method Actor Prose Generation"
+      go_squad_role: "Character Steward protocol"
+      location: "2_method_actor/"
+
+    ttrpg_dice:
+      method_actor: "Component 6: TTRPG Dice Mechanics"
+      go_squad_role: "Controlled randomness in pre-production"
+      location: "3_ttrpg/"
+
+    evaluator:
+      method_actor: "Component 7: Evaluator"
+      go_squad_role: "Process Log Gate"
+      location: "4_constraints/evaluator_spec.md"
+
+  what_go_squad_formalizes:
+    - "Lane enforcement via explicit role boundaries"
+    - "Process log as gate (not just evaluator)"
+    - "Multi-agent coordination (vs single-agent method acting)"
+    - "RLM-style external state queries (vs context loading)"
+    - "Exploration vs Performance mode distinction"
+
+---
+
+# ============================================================
+# SECTION 9: NEXT STEPS FOR IMPORTER AGENT
+# What needs to happen to make this queryable
+# ============================================================
+
+importer_tasks:
+
+  phase_1_state_architecture:
+    status: "COMPLETE (2026-01-14)"
+    completed:
+      - "✓ SCHEMAS.yaml - Schema definitions for all state types"
+      - "✓ Location schema (GAP_001 addressed)"
+      - "✓ Object/Prop schema"
+      - "✓ Process Log schema"
+      - "✓ query.py - Python query interface"
+      - "✓ Test with Ahdia + Caledonia Memorial"
+    files_created:
+      - "_tools/state_architecture/SCHEMAS.yaml"
+      - "_tools/state_architecture/query.py"
+      - "_tools/state_architecture/README.md"
+      - "5_story_bibles/locations/caledonia_memorial.yaml"
+      - "5_story_bibles/artifacts/OBJECTS_INDEX.yaml"
+
+  phase_2_process_log:
+    status: "COMPLETE (2026-01-14)"
+    completed:
+      - "✓ ProcessLog class - generates compliant process logs"
+      - "✓ GateValidator - validates against Go Squad protocol"
+      - "✓ ConsultationLog - tracks AI-AI consultations"
+      - "✓ Agent workflow test (Status Tracker)"
+      - "✓ All validation tests passing"
+    files_created:
+      - "_tools/state_architecture/process_log.py"
+      - "_tools/state_architecture/test_agent_workflow.py"
+    validation_rules:
+      rejection_criteria:
+        - "Missing domain declaration"
+        - "Task outside declared domain"
+        - "Missing queries when task type requires them"
+        - "Missing source attribution for factual claims"
+        - "Character Steward missing mode declaration"
+      warning_flags:
+        - "All queries answered by self"
+        - "Complex operation with no deferrals"
+        - "Task description doesn't match role keywords"
+
+  phase_3_validation:
+    status: "NEXT"
+    tasks:
+      - "Verify all paths in this manifest exist"
+      - "Identify any files not captured in role mappings"
+      - "Flag formatting inconsistencies in key YAML files"
+
+  phase_2_director_decisions:
+    status: "COMPLETE (2026-01-14)"
+    completed:
+      - "✓ DUPE_001: Merged story_bibles/ → 5_story_bibles/, archived old"
+      - "✓ DUPE_002: Migrated editor_suite/ → _tools/, archived old"
+      - "⏸ DUPE_003: Deferred entity_catalog decision to Phase 1"
+
+  phase_3_gap_filling:
+    status: "PENDING"
+    tasks:
+      - "Expand 5_story_bibles/locations/ for Set Designer"
+      - "Formalize Intimacy Coordinator protocol"
+      - "Enhance CALLBACK_TRACKER for Reader Proxy"
+
+  phase_4_schema_creation:
+    status: "PENDING"
+    tasks:
+      - "Define YAML schema for agent queries"
+      - "Create query interface for Archivist"
+      - "Build validation layer for lane enforcement"
+
+---
+
+# End of Manifest
+#
+# This file is the Archivist's initial corpus index.
+# It maps existing content to Go Squad roles without
+# modifying any underlying files.
+#
+# Director decisions required on: DUPE_001, DUPE_002, DUPE_003
+# Locked files pattern: *_Book1_Final.md (read-only)
+# Primary format: Markdown (89%), with YAML for structured state

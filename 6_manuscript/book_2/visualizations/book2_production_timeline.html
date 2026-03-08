@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book 2 Production Timeline — Go Squad</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1a1a2e;
+            color: #eee;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+            color: #e94560;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #888;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .version {
+            text-align: center;
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 11px;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding: 12px;
+            background: #16213e;
+            border-radius: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .controls label {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .controls input[type="range"] {
+            width: 120px;
+        }
+
+        .controls button {
+            background: #e94560;
+            border: none;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .controls button:hover {
+            background: #d63850;
+        }
+
+        .controls button.secondary {
+            background: #16213e;
+            border: 1px solid #e94560;
+        }
+
+        .controls button.secondary:hover {
+            background: #1f2b47;
+        }
+
+        .zoom-display {
+            color: #e94560;
+            font-weight: bold;
+            min-width: 40px;
+            font-size: 12px;
+        }
+
+        /* Filter buttons */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: #16213e;
+            border: 1px solid #444;
+            color: #888;
+            padding: 4px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            border-color: #e94560;
+            color: #e94560;
+        }
+
+        .filter-btn.active {
+            background: #e94560;
+            border-color: #e94560;
+            color: white;
+        }
+
+        /* Group headers */
+        .group-header {
+            background: #0f1a2e;
+            padding: 8px 15px;
+            border-bottom: 2px solid #e94560;
+            font-size: 14px;
+            font-weight: bold;
+            color: #e94560;
+            margin-top: 15px;
+        }
+
+        .group-header:first-child {
+            margin-top: 0;
+        }
+
+        /* Track container */
+        .track-container {
+            margin: 8px 0;
+            border: 1px solid #333;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .track-header {
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            background: #16213e;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .track-header:hover {
+            background: #1f2b47;
+        }
+
+        .collapse-icon {
+            margin-right: 8px;
+            font-size: 10px;
+            transition: transform 0.2s;
+            color: #e94560;
+        }
+
+        .track-container.collapsed .collapse-icon {
+            transform: rotate(-90deg);
+        }
+
+        .track-label {
+            font-weight: bold;
+            font-size: 13px;
+            color: #e94560;
+            flex: 1;
+        }
+
+        .track-label .track-subtitle {
+            font-weight: normal;
+            font-size: 10px;
+            color: #666;
+            margin-left: 8px;
+        }
+
+        .event-count {
+            font-size: 10px;
+            color: #666;
+            margin-left: 8px;
+        }
+
+        .canon-warning {
+            font-size: 9px;
+            color: #ff9800;
+            margin-left: 8px;
+            padding: 2px 6px;
+            background: rgba(255, 152, 0, 0.15);
+            border-radius: 3px;
+        }
+
+        .track-content {
+            max-height: 140px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .track-container.collapsed .track-content {
+            max-height: 0;
+        }
+
+        .timeline-scroll {
+            overflow-x: auto;
+            padding: 8px 0 12px 0;
+            cursor: grab;
+        }
+
+        .timeline-scroll:active {
+            cursor: grabbing;
+        }
+
+        .timeline {
+            position: relative;
+            height: 110px;
+            min-width: 2800px;
+            background: linear-gradient(to right,
+                #1a1a2e 0%, #1a1a2e 41.6%,
+                rgba(100, 100, 100, 0.08) 41.6%, rgba(100, 100, 100, 0.08) 62.5%,
+                rgba(233, 69, 96, 0.1) 62.5%, rgba(233, 69, 96, 0.1) 100%);
+        }
+
+        .timeline-line {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #333;
+        }
+
+        /* Chapter markers */
+        .chapter-marker {
+            position: absolute;
+            top: 22px;
+            width: 1px;
+            height: 35px;
+            background: #444;
+        }
+
+        .chapter-marker.crisis {
+            background: rgba(255, 165, 0, 0.6);
+        }
+
+        .chapter-marker.finale {
+            background: rgba(233, 69, 96, 0.6);
+        }
+
+        .chapter-label {
+            position: absolute;
+            top: 6px;
+            transform: translateX(-50%);
+            font-size: 9px;
+            color: #555;
+            white-space: nowrap;
+        }
+
+        .chapter-label.crisis {
+            color: #ff9800;
+        }
+
+        .chapter-label.finale {
+            color: #e94560;
+        }
+
+        /* Events */
+        .event {
+            position: absolute;
+            top: 52px;
+            transform: translateX(-50%);
+            background: #1a1a2e;
+            border: 2px solid #e94560;
+            border-radius: 4px;
+            padding: 4px 6px;
+            max-width: 140px;
+            font-size: 9px;
+            line-height: 1.3;
+            cursor: grab;
+            transition: box-shadow 0.2s, transform 0.1s;
+            user-select: none;
+            z-index: 10;
+        }
+
+        .event:hover {
+            box-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+            z-index: 100;
+        }
+
+        .event.dragging {
+            opacity: 0.8;
+            cursor: grabbing;
+            z-index: 1000;
+            box-shadow: 0 0 15px rgba(233, 69, 96, 0.8);
+        }
+
+        .event.editing {
+            z-index: 1000;
+            box-shadow: 0 0 12px rgba(100, 200, 255, 0.8);
+            border-color: #64c8ff;
+        }
+
+        /* Event types */
+        .event[data-type="action"] { border-color: #e94560; }
+        .event[data-type="emotional"] { border-color: #9b59b6; }
+        .event[data-type="revelation"] { border-color: #f39c12; }
+        .event[data-type="crisis"] { border-color: #f44336; background: rgba(244, 67, 54, 0.1); }
+        .event[data-type="hidden"] { border-color: #673ab7; background: rgba(103, 58, 183, 0.1); }
+        .event[data-type="seed"] { border-color: #3f51b5; }
+        .event[data-type="bloom"] { border-color: #4CAF50; background: rgba(76, 175, 80, 0.1); }
+        .event[data-type="grief"] { border-color: #607d8b; }
+        .event[data-type="institutional"] { border-color: #009688; }
+        .event[data-type="harassment"] { border-color: #ff5722; background: rgba(255, 87, 34, 0.1); }
+        .event[data-type="infiltration"] { border-color: #e91e63; background: rgba(233, 30, 99, 0.1); }
+
+        .event-text {
+            pointer-events: none;
+        }
+
+        .event-text.editable {
+            pointer-events: auto;
+            cursor: text;
+            outline: none;
+            min-width: 40px;
+        }
+
+        .event-chapter {
+            font-size: 8px;
+            color: #888;
+            margin-top: 2px;
+        }
+
+        .baseline {
+            display: inline-block;
+            background: #e94560;
+            color: white;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 8px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .baseline.warning { background: #ff9800; }
+        .baseline.critical { background: #f44336; }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #16213e;
+            border-radius: 8px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 10px;
+        }
+
+        .legend-color {
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            border: 2px solid;
+        }
+
+        /* Convergence info */
+        .convergence-info {
+            text-align: center;
+            padding: 8px;
+            background: #16213e;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 11px;
+            color: #888;
+        }
+
+        .convergence-info strong {
+            color: #e94560;
+        }
+
+        /* Canon warnings panel */
+        .canon-panel {
+            background: #1a1a2e;
+            border: 1px solid #ff9800;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 15px;
+        }
+
+        .canon-panel h3 {
+            color: #ff9800;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .canon-panel ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .canon-panel li {
+            font-size: 10px;
+            color: #ccc;
+            background: rgba(255, 152, 0, 0.1);
+            padding: 3px 8px;
+            border-radius: 3px;
+        }
+
+        /* Undercurrent tracker */
+        .undercurrent {
+            background: #16213e;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 20px;
+        }
+
+        .undercurrent h3 {
+            color: #9b59b6;
+            font-size: 12px;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .undercurrent-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 8px;
+        }
+
+        .undercurrent-item {
+            font-size: 10px;
+            padding: 6px 8px;
+            background: rgba(155, 89, 182, 0.1);
+            border-radius: 4px;
+            border-left: 3px solid #9b59b6;
+        }
+
+        .undercurrent-item strong {
+            color: #e94560;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book 2 Production Timeline</h1>
+    <div class="subtitle">Go Squad | Chapters 1-24 | Character Steward System</div>
+    <div class="version">v2.0 — January 2026 | Aligned with /2_method_actor/stewards/</div>
+
+    <div class="canon-panel">
+        <h3>CANON WARNINGS — Check Every Time</h3>
+        <ul>
+            <li>Tess does NOT kill Webb (brutalizes, leaves alive)</li>
+            <li>Victor has NO dead wife (partner is Leah)</li>
+            <li>Ryu NEVER confesses love to Ahdia in Book 2</li>
+            <li>Bourn is a WOMAN (she/her)</li>
+            <li>Eidolon AMPLIFIES fear (cannot create new fears)</li>
+            <li>Ben's wife Sarah — cause of death UNSPECIFIED</li>
+            <li>Leah background: BARISTA (not investigator)</li>
+            <li>Leah/Victor revealed identities BEFORE group reveal</li>
+        </ul>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item"><div class="legend-color" style="border-color: #e94560;"></div><span>Action</span></div>
+        <div class="legend-item"><div class="legend-color" style="border-color: #9b59b6;"></div><span>Emotional</span></div>
+        <div class="legend-item"><div class="legend-color" style="border-color: #f39c12;"></div><span>Revelation</span></div>
+        <div class="legend-item"><div class="legend-color" style="border-color: #f44336; background: rgba(244,67,54,0.2);"></div><span>Crisis</span></div>
+        <div class="legend-item"><div class="legend-color" style="border-color: #673ab7; background: rgba(103,58,183,0.2);"></div><span>Hidden</span></div>
+        <div class="legend-item"><div class="legend-color" style="border-color: #3f51b5;"></div><span>Seed</span></div>
+        <div class="legend-item"><div class="legend-color" style="border-color: #4CAF50; background: rgba(76,175,80,0.2);"></div><span>Bloom</span></div>
+        <div class="legend-item"><div class="legend-color" style="border-color: #e91e63; background: rgba(233,30,99,0.2);"></div><span>Infiltration</span></div>
+        <div class="legend-item"><div class="legend-color" style="border-color: #ff5722; background: rgba(255,87,34,0.2);"></div><span>Harassment</span></div>
+    </div>
+
+    <div class="convergence-info">
+        <strong>Thread Convergence Points:</strong>
+        Ch1 (Isaiah Riot) • Ch7 (Ruth/Ryu discover decline) • Ch13 (Exile Island exposed) •
+        Ch15 (Evidence leak) • Ch17 (Eidolon reframes) • Ch18 (Leah releases recording) •
+        Ch21 (Leta killed) • Ch23-24 (Finale: Bourn extraction, reactor, election)
+    </div>
+
+    <div class="controls">
+        <label>Timeline: <input type="range" id="zoomSlider" min="50" max="200" value="100"></label>
+        <span class="zoom-display" id="zoomDisplay">100%</span>
+        <label>Text: <input type="range" id="textZoomSlider" min="50" max="150" value="100"></label>
+        <span class="zoom-display" id="textZoomDisplay">100%</span>
+        <button onclick="resetZoom()">Reset</button>
+        <button class="secondary" onclick="expandAll()">Expand All</button>
+        <button class="secondary" onclick="collapseAll()">Collapse All</button>
+        <button onclick="exportData()">Export JSON</button>
+        <button class="secondary" onclick="document.getElementById('importFile').click()">Import</button>
+        <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all" onclick="setFilter('all')">All</button>
+        <button class="filter-btn" data-filter="squad" onclick="setFilter('squad')">Go Squad</button>
+        <button class="filter-btn" data-filter="antagonists" onclick="setFilter('antagonists')">Antagonists</button>
+        <button class="filter-btn" data-filter="supporting" onclick="setFilter('supporting')">Supporting</button>
+    </div>
+
+    <div id="tracks-container"></div>
+
+    <div class="undercurrent">
+        <h3>"Why Didn't You Save Her?" — The Undercurrent</h3>
+        <div class="undercurrent-grid">
+            <div class="undercurrent-item"><strong>Ahdia:</strong> "I have time powers and couldn't save Geneva" / global ops while team was attacked</div>
+            <div class="undercurrent-item"><strong>Ruth:</strong> Couldn't save Firas / can't save Ahdia from herself / enabling as failed saving</div>
+            <div class="undercurrent-item"><strong>Ben:</strong> Across town when Sarah died / perfect evidence couldn't save the election</div>
+            <div class="undercurrent-item"><strong>Tess:</strong> Warned Leta and it wasn't enough / father's corruption she knew but couldn't stop</div>
+            <div class="undercurrent-item"><strong>Leah:</strong> Silent while Leta was harassed / infiltration trauma weaponized</div>
+            <div class="undercurrent-item"><strong>Victor:</strong> Taught resistance, only 60% effective / can't protect Leah from her past</div>
+        </div>
+    </div>
+
+    <script>
+        // ============================================
+        // TIMELINE DATA — Aligned with Character Stewards
+        // Source: /2_method_actor/stewards/
+        // ============================================
+
+        const eventsData = {
+            // ========== GO SQUAD (7) ==========
+
+            'ahdia': [
+                { id: 'ahdia-1', pos: 0.25, text: '47-min freeze saves 23 during riot; collapses', type: 'action', chapter: 1, baseline: '95%' },
+                { id: 'ahdia-2', pos: 0.75, text: 'Witnesses Geneva assassination; 3-min freeze fails', type: 'crisis', chapter: 2, baseline: '88%', baselineClass: 'warning' },
+                { id: 'ahdia-3', pos: 1.25, text: 'Investigates crime scene; finds translocation signature', type: 'action', chapter: 3, baseline: '82%', baselineClass: 'warning' },
+                { id: 'ahdia-4', pos: 1.75, text: 'Treatment scene; manipulates Ryu for intel', type: 'hidden', chapter: 4, baseline: '75%', baselineClass: 'warning' },
+                { id: 'ahdia-5', pos: 2.25, text: 'Jakarta mission (secret); misses mob attack on team', type: 'hidden', chapter: 5, baseline: '68%', baselineClass: 'warning' },
+                { id: 'ahdia-7', pos: 3.25, text: 'Lies to Ruth about location; suspicion planted', type: 'emotional', chapter: 7, baseline: '65%', baselineClass: 'warning' },
+                { id: 'ahdia-8', pos: 3.75, text: 'First enablement cycle with Ryu; 8K lives saved', type: 'hidden', chapter: 8, baseline: '63%', baselineClass: 'warning' },
+                { id: 'ahdia-13', pos: 6.25, text: 'Exile Island revealed to team', type: 'bloom', chapter: 13, baseline: '55%', baselineClass: 'critical' },
+                { id: 'ahdia-15', pos: 7.25, text: 'Watches Ben\'s evidence leak; isolated', type: 'emotional', chapter: 15, baseline: '50%', baselineClass: 'critical' },
+                { id: 'ahdia-17', pos: 8.25, text: 'Eidolon reframes; evidence fails', type: 'crisis', chapter: 17, baseline: '42%', baselineClass: 'critical' },
+                { id: 'ahdia-21', pos: 10.25, text: 'Leta killed; Ahdia wasn\'t there', type: 'crisis', chapter: 21, baseline: '25%', baselineClass: 'critical' },
+                { id: 'ahdia-23', pos: 11.25, text: 'FAERIS power deflation; window opens', type: 'action', chapter: 23, baseline: '15%', baselineClass: 'critical' },
+                { id: 'ahdia-24', pos: 11.75, text: '10+ min freeze; crashes to 0.7%; Prime reveals', type: 'revelation', chapter: 24, baseline: '0.7%', baselineClass: 'critical' }
+            ],
+
+            'ruth': [
+                { id: 'ruth-1', pos: 0.25, text: 'Leads riot response; catches collapsed Ahdia', type: 'action', chapter: 1 },
+                { id: 'ruth-2', pos: 0.75, text: 'Geneva dies; another she couldn\'t save', type: 'grief', chapter: 2 },
+                { id: 'ruth-3', pos: 1.25, text: 'Confesses Firas ring to Ahdia; grief surfaces', type: 'emotional', chapter: 3 },
+                { id: 'ruth-4', pos: 1.75, text: 'Bourn approaches; first meeting; seeds of capture', type: 'institutional', chapter: 4 },
+                { id: 'ruth-5', pos: 2.25, text: 'Defends Ahdia to team: "Treatment ran long"', type: 'seed', chapter: 5 },
+                { id: 'ruth-7', pos: 3.25, text: 'Drives Ahdia home; suspicious but won\'t look', type: 'emotional', chapter: 7 },
+                { id: 'ruth-7b', pos: 3.50, text: 'With Ryu discovers terminal decline; confronts', type: 'bloom', chapter: 7 },
+                { id: 'ruth-13', pos: 6.25, text: 'Discovers Exile Island; must process betrayal', type: 'revelation', chapter: 13 },
+                { id: 'ruth-18', pos: 8.75, text: 'Ch18: Conscious boundary-setting (inverts enabling)', type: 'bloom', chapter: 18 },
+                { id: 'ruth-21', pos: 10.25, text: 'Leta killed; holds team through grief', type: 'grief', chapter: 21 },
+                { id: 'ruth-23', pos: 11.25, text: 'Extracts Bourn with reactor intel', type: 'action', chapter: 23 },
+                { id: 'ruth-24', pos: 11.75, text: 'Emergency treatment; stabilizes Ahdia at 0.7%', type: 'action', chapter: 24 }
+            ],
+
+            'tess': [
+                { id: 'tess-1', pos: 0.25, text: 'Parkour recon during riot; protects Leta', type: 'action', chapter: 1 },
+                { id: 'tess-2', pos: 0.75, text: 'Security overwatch; witnesses assassination', type: 'action', chapter: 2 },
+                { id: 'tess-5', pos: 2.25, text: 'Webb exonerated; father\'s signature on memo', type: 'seed', chapter: 5 },
+                { id: 'tess-6', pos: 2.75, text: 'Domestic with Leta; harassment begins (3 accounts)', type: 'harassment', chapter: 6 },
+                { id: 'tess-10', pos: 4.75, text: 'With Leta; harassment escalating; protective', type: 'harassment', chapter: 10 },
+                { id: 'tess-13', pos: 6.25, text: 'Finds Exile Island funny; both/and processing', type: 'emotional', chapter: 13 },
+                { id: 'tess-15', pos: 7.25, text: 'Father fully betrayed; still fighting anyway', type: 'emotional', chapter: 15 },
+                { id: 'tess-21', pos: 10.25, text: 'LETA KILLED BY WEBB; loses her anchor', type: 'crisis', chapter: 21 },
+                { id: 'tess-21b', pos: 10.50, text: 'Hunts Webb; brutalizes him; DOES NOT KILL', type: 'action', chapter: 21 },
+                { id: 'tess-23', pos: 11.25, text: 'Leads rooftop escape; protects Korede', type: 'action', chapter: 23 },
+                { id: 'tess-24', pos: 11.75, text: 'Reactor mission; "at least we\'re still here"', type: 'emotional', chapter: 24 }
+            ],
+
+            'ben': [
+                { id: 'ben-1', pos: 0.25, text: 'Military tactics; identifies provocateurs at riot', type: 'action', chapter: 1 },
+                { id: 'ben-2', pos: 0.75, text: 'Security analysis; sniper trajectory ID', type: 'action', chapter: 2 },
+                { id: 'ben-3', pos: 1.25, text: 'Leads evidence analysis; TRIOMF connection', type: 'action', chapter: 3 },
+                { id: 'ben-5', pos: 2.25, text: 'Webb exonerated; first crack in faith', type: 'seed', chapter: 5 },
+                { id: 'ben-6', pos: 2.75, text: 'Alone; Sarah grief surfaces; work as avoidance', type: 'grief', chapter: 6 },
+                { id: 'ben-8', pos: 3.75, text: 'Building airtight Kain case; FBI contact', type: 'action', chapter: 8 },
+                { id: 'ben-15', pos: 7.25, text: 'LEAKS EVERYTHING; 48 hours of hope', type: 'bloom', chapter: 15 },
+                { id: 'ben-16', pos: 7.75, text: 'Polling dips; believes system will work', type: 'emotional', chapter: 16 },
+                { id: 'ben-17', pos: 8.25, text: 'Eidolon reframes; Kain +12 points; faith shattered', type: 'crisis', chapter: 17 },
+                { id: 'ben-21', pos: 10.25, text: 'Leta killed; tactical mode protecting team', type: 'action', chapter: 21 },
+                { id: 'ben-23', pos: 11.25, text: 'Military evasion; extracts Bourn', type: 'action', chapter: 23 },
+                { id: 'ben-24', pos: 11.75, text: '"What am I conserving?" — faith destroyed', type: 'revelation', chapter: 24 }
+            ],
+
+            'victor_leah': [
+                // PRE-BOOK: Foundation
+                { id: 'vl-pre1', pos: -0.50, text: '[LEAH] Met Firas as barista; recruited to parkour school', type: 'seed', chapter: 0, who: 'leah' },
+                { id: 'vl-pre2', pos: -0.35, text: '[BOTH] Found each other in anonymity; connected before faces revealed', type: 'emotional', chapter: 0, who: 'both' },
+                { id: 'vl-pre3', pos: -0.25, text: '[LEAH] Kain infiltration (femme fatale); Victor held her after', type: 'infiltration', chapter: 0, who: 'leah' },
+                { id: 'vl-pre4', pos: -0.15, text: '[BOTH] Revealed identities to each other BEFORE group reveal', type: 'seed', chapter: 0, who: 'both' },
+
+                // CH1: Isaiah Riot
+                { id: 'vl-1a', pos: 0.20, text: '[VICTOR] Fighting at riot; arrested', type: 'action', chapter: 1, who: 'victor' },
+                { id: 'vl-1b', pos: 0.30, text: '[LEAH] Bails him out; carrying infiltration weight', type: 'emotional', chapter: 1, who: 'leah' },
+                { id: 'vl-1c', pos: 0.40, text: '[BOTH] He shares organizer backstory; she listens without sharing hers', type: 'emotional', chapter: 1, who: 'both' },
+
+                // CH2-3: Assassination aftermath
+                { id: 'vl-2', pos: 0.75, text: '[BOTH] Witness assassination aftermath together; she processes in silence', type: 'emotional', chapter: 2, who: 'both' },
+                { id: 'vl-3', pos: 1.25, text: '[VICTOR] Notices Leah\'s distance; doesn\'t push', type: 'emotional', chapter: 3, who: 'victor' },
+
+                // CH4: Eidolon attack
+                { id: 'vl-4', pos: 1.75, text: '[VICTOR] Attacked by fear-manipulated civilians', type: 'crisis', chapter: 4, who: 'victor' },
+                { id: 'vl-4b', pos: 1.85, text: '[LEAH] Watches him hurt; old fears surface', type: 'emotional', chapter: 4, who: 'leah' },
+
+                // CH5-6: Growing tension
+                { id: 'vl-5', pos: 2.25, text: '[BOTH] Isaiah verdict; she stays silent; he notices', type: 'seed', chapter: 5, who: 'both' },
+                { id: 'vl-6', pos: 2.75, text: '[VICTOR] Wonders why she won\'t speak up; respects her pace', type: 'emotional', chapter: 6, who: 'victor' },
+
+                // CH7-9: Building toward teaching
+                { id: 'vl-7', pos: 3.25, text: '[BOTH] Quiet domestic moment; she almost tells him about past', type: 'emotional', chapter: 7, who: 'both' },
+                { id: 'vl-8', pos: 3.75, text: '[VICTOR] Sees her freeze at news coverage of harassment; connects dots', type: 'seed', chapter: 8, who: 'victor' },
+                { id: 'vl-9', pos: 4.25, text: '[LEAH] Watches him build resistance training; feels inadequate', type: 'emotional', chapter: 9, who: 'leah' },
+
+                // CH10: THE TEACHING (Key Scene)
+                { id: 'vl-10', pos: 4.75, text: '[BOTH] "BUT vs AND" teaching — "I was brave AND scared"', type: 'revelation', chapter: 10, who: 'both' },
+                { id: 'vl-10b', pos: 4.85, text: '[LEAH] Framework lands; "I\'ve been using \'but\' my whole life"', type: 'bloom', chapter: 10, who: 'leah' },
+
+                // CH11-12: Korede enters
+                { id: 'vl-11', pos: 5.25, text: '[VICTOR] Korede mentorship begins; sees his own young rage', type: 'emotional', chapter: 11, who: 'victor' },
+                { id: 'vl-11b', pos: 5.35, text: '[LEAH] Watches Victor with Korede; sees how he guides without pushing', type: 'emotional', chapter: 11, who: 'leah' },
+                { id: 'vl-12', pos: 5.75, text: '[BOTH] Private moment; she thanks him for not asking about her past', type: 'emotional', chapter: 12, who: 'both' },
+
+                // CH13-14: Exile Island aftermath
+                { id: 'vl-13', pos: 6.25, text: '[BOTH] Process Ahdia\'s secret together; discuss systemic betrayal', type: 'emotional', chapter: 13, who: 'both' },
+                { id: 'vl-14', pos: 6.75, text: '[VICTOR] Teaching resistance to community; Leah assists quietly', type: 'action', chapter: 14, who: 'both' },
+
+                // CH15: Silence on Leta
+                { id: 'vl-15', pos: 7.25, text: '[LEAH] SILENT on Leta harassment; white moderate failing', type: 'bloom', chapter: 15, who: 'leah' },
+                { id: 'vl-15b', pos: 7.35, text: '[VICTOR] Asks: "What would you say if you weren\'t afraid?"', type: 'seed', chapter: 15, who: 'victor' },
+
+                // CH16-17: Crisis deepens
+                { id: 'vl-16', pos: 7.75, text: '[BOTH] Watch Ben\'s evidence fail together; he holds her', type: 'grief', chapter: 16, who: 'both' },
+                { id: 'vl-17', pos: 8.25, text: '[VICTOR] "The system failed. We\'re still here."', type: 'emotional', chapter: 17, who: 'victor' },
+                { id: 'vl-17b', pos: 8.35, text: '[LEAH] Decision crystallizing: she has the recording', type: 'seed', chapter: 17, who: 'leah' },
+
+                // CH18: THE RECORDING (Key Scene)
+                { id: 'vl-18a', pos: 8.65, text: '[LEAH] Tells Victor about infiltration for first time', type: 'revelation', chapter: 18, who: 'leah' },
+                { id: 'vl-18b', pos: 8.75, text: '[LEAH] RELEASES KAIN RECORDING; burns privacy/safety', type: 'bloom', chapter: 18, who: 'leah' },
+                { id: 'vl-18c', pos: 8.85, text: '[VICTOR] Holds her; "You were brave AND it cost you"', type: 'emotional', chapter: 18, who: 'victor' },
+                { id: 'vl-18d', pos: 9.00, text: '[BOTH] Recording fails; Eidolon reframes; hunted together', type: 'crisis', chapter: 18, who: 'both' },
+
+                // CH19-20: On the run
+                { id: 'vl-19', pos: 9.25, text: '[BOTH] Hiding together; she finally tells him fragments of past', type: 'revelation', chapter: 19, who: 'both' },
+                { id: 'vl-20', pos: 9.75, text: '[VICTOR] "I don\'t need the whole story. I just need you here."', type: 'emotional', chapter: 20, who: 'victor' },
+
+                // CH21: Leta killed
+                { id: 'vl-21a', pos: 10.25, text: '[BOTH] LETA KILLED; Leah\'s silence enabled this', type: 'crisis', chapter: 21, who: 'both' },
+                { id: 'vl-21b', pos: 10.35, text: '[VICTOR] Holds Leah through guilt; shapes Korede\'s rage', type: 'grief', chapter: 21, who: 'victor' },
+                { id: 'vl-21c', pos: 10.45, text: '[LEAH] "I should have spoken. AND I was afraid. Both true."', type: 'bloom', chapter: 21, who: 'leah' },
+
+                // CH22: Preparation
+                { id: 'vl-22', pos: 10.75, text: '[BOTH] Final prep; resistance training at 60-70%', type: 'action', chapter: 22, who: 'both' },
+
+                // CH23-24: Finale
+                { id: 'vl-23', pos: 11.25, text: '[BOTH] Escape together; she fights alongside him now', type: 'action', chapter: 23, who: 'both' },
+                { id: 'vl-24a', pos: 11.65, text: '[VICTOR] Resistance 60% effective; insufficient; Kain wins', type: 'crisis', chapter: 24, who: 'victor' },
+                { id: 'vl-24b', pos: 11.75, text: '[LEAH] "Being seen is the cost of solidarity"', type: 'revelation', chapter: 24, who: 'leah' },
+                { id: 'vl-24c', pos: 11.85, text: '[BOTH] Still together; both changed; foundation for Book 3', type: 'emotional', chapter: 24, who: 'both' }
+            ],
+
+            'leta': [
+                { id: 'leta-1', pos: 0.25, text: 'Digital coordination during riot', type: 'action', chapter: 1 },
+                { id: 'leta-5', pos: 2.25, text: '"9 months until death" — seed planted', type: 'seed', chapter: 5 },
+                { id: 'leta-6', pos: 2.75, text: 'Domestic with Tess; harassment begins (3 accounts)', type: 'harassment', chapter: 6 },
+                { id: 'leta-10', pos: 4.75, text: 'Both/and existence; Leah\'s lesson example', type: 'emotional', chapter: 10 },
+                { id: 'leta-15', pos: 7.25, text: 'Harassment intensifies; death threats; doxxing', type: 'harassment', chapter: 15 },
+                { id: 'leta-21', pos: 10.25, text: 'KILLED BY WEBB at protest', type: 'crisis', chapter: 21 },
+            ],
+
+            'korede': [
+                { id: 'korede-5', pos: 2.25, text: 'Introduced; Leta\'s younger brother; observer', type: 'seed', chapter: 5 },
+                { id: 'korede-11', pos: 5.25, text: 'Victor mentorship; channeling anger', type: 'emotional', chapter: 11 },
+                { id: 'korede-21', pos: 10.25, text: 'SISTER KILLED; radicalization begins', type: 'crisis', chapter: 21 },
+                { id: 'korede-23', pos: 11.25, text: 'Tess protects him during escape', type: 'action', chapter: 23 },
+                { id: 'korede-24', pos: 11.75, text: 'Setup for Book 3 arc; rage without outlet', type: 'seed', chapter: 24 }
+            ],
+
+            // ========== ANTAGONISTS (3) ==========
+
+            'bellatrix': [
+                { id: 'bellatrix-2', pos: 0.75, text: '"Assassinated" as Geneva Windrow (avatar withdrawal)', type: 'hidden', chapter: 2 },
+                { id: 'bellatrix-3', pos: 1.25, text: 'Autopsy; exotic ammunition; mystery deepens', type: 'hidden', chapter: 3 },
+                { id: 'bellatrix-hidden', pos: 5.75, text: 'Watching; cultivating; not interfering (hidden)', type: 'hidden', chapter: 12 },
+                { id: 'bellatrix-24', pos: 11.75, text: 'Observing finale; plans advancing', type: 'hidden', chapter: 24 }
+            ],
+
+            'kain': [
+                { id: 'kain-pre', pos: -0.25, text: 'PRE-BOOK: Compromised by Leah infiltration (recorded)', type: 'infiltration', chapter: 0 },
+                { id: 'kain-1', pos: 0.25, text: 'Orchestrates riot; campaigns on chaos', type: 'action', chapter: 1 },
+                { id: 'kain-2', pos: 0.75, text: 'Geneva assassination benefits his campaign', type: 'action', chapter: 2 },
+                { id: 'kain-8', pos: 3.75, text: 'Fusion project announced; impossible timeline', type: 'action', chapter: 8 },
+                { id: 'kain-15', pos: 7.25, text: 'Evidence leaks; Eidolon begins reframing', type: 'action', chapter: 15 },
+                { id: 'kain-17', pos: 8.25, text: 'Eidolon completes reframe; +12 polling points', type: 'action', chapter: 17 },
+                { id: 'kain-18', pos: 8.75, text: 'Leah recording released; neutralized quickly', type: 'action', chapter: 18 },
+                { id: 'kain-23', pos: 11.25, text: 'Manhunt orchestrated against Go Squad', type: 'action', chapter: 23 },
+                { id: 'kain-24', pos: 11.75, text: 'WINS ELECTION (312 EV); coup stopped but president', type: 'bloom', chapter: 24 }
+            ],
+
+            'eidolon': [
+                { id: 'eidolon-1', pos: 0.25, text: 'AMPLIFIES fear; transforms protest to riot', type: 'action', chapter: 1 },
+                { id: 'eidolon-2', pos: 0.75, text: 'Exploits assassination; fear serves Kain', type: 'action', chapter: 2 },
+                { id: 'eidolon-4', pos: 1.75, text: 'Civilians weaponized vs Victor (cannot CREATE fear)', type: 'action', chapter: 4 },
+                { id: 'eidolon-5', pos: 2.25, text: 'Named by CADENS; threat identified', type: 'revelation', chapter: 5 },
+                { id: 'eidolon-15', pos: 7.25, text: 'Begins neutralizing Ben\'s evidence', type: 'action', chapter: 15 },
+                { id: 'eidolon-17', pos: 8.25, text: 'Reframes narrative; Kain gains +12 points', type: 'action', chapter: 17 },
+                { id: 'eidolon-18', pos: 8.75, text: 'Neutralizes Leah recording quickly', type: 'action', chapter: 18 },
+                { id: 'eidolon-23', pos: 11.25, text: 'FAERIS breaks grip temporarily', type: 'revelation', chapter: 23 },
+                { id: 'eidolon-24', pos: 11.75, text: 'Weakened but delivers election win for Kain', type: 'action', chapter: 24 }
+            ],
+
+            // ========== SUPPORTING (2) ==========
+
+            'ryu': [
+                { id: 'ryu-3', pos: 1.25, text: 'Treatment; agrees to "look into" intel; first line crossed', type: 'seed', chapter: 3 },
+                { id: 'ryu-4', pos: 1.75, text: 'Provides Eastern Europe coordinates; falsifies records', type: 'hidden', chapter: 4 },
+                { id: 'ryu-7', pos: 3.25, text: 'Ruth discovers decline; Ryu exposed as enabler', type: 'bloom', chapter: 7 },
+                { id: 'ryu-8', pos: 3.75, text: 'Full enabler cycle; love + guilt intertwined', type: 'hidden', chapter: 8 },
+                { id: 'ryu-13', pos: 6.25, text: 'AR-RYU system discovered with Exile Island', type: 'revelation', chapter: 13 },
+                { id: 'ryu-24', pos: 11.75, text: 'Watches Ahdia hit 0.7%; never confesses love', type: 'emotional', chapter: 24 }
+            ],
+
+            'bourn': [
+                { id: 'bourn-3', pos: 1.25, text: 'CADENS briefing; Patterson threatens oversight', type: 'institutional', chapter: 3 },
+                { id: 'bourn-4', pos: 1.75, text: 'Approaches Ruth; first meeting', type: 'seed', chapter: 4 },
+                { id: 'bourn-5', pos: 2.25, text: 'Names "Eidolon" threat to team', type: 'revelation', chapter: 5 },
+                { id: 'bourn-12', pos: 5.75, text: 'Discovers TRIOMF has infiltrated CADENS', type: 'revelation', chapter: 12 },
+                { id: 'bourn-16', pos: 7.75, text: 'Internal resistance; leaving breadcrumbs for Ruth', type: 'hidden', chapter: 16 },
+                { id: 'bourn-18', pos: 8.75, text: 'Ruth\'s theory voiced: Bourn is inside resistance', type: 'revelation', chapter: 18 },
+                { id: 'bourn-23', pos: 11.25, text: 'EXTRACTED with reactor intel; 28 positions; midnight', type: 'bloom', chapter: 23 }
+            ]
+        };
+
+        // Character configuration — aligned with Steward Index
+        const characterGroups = {
+            'squad': {
+                name: 'Go Squad',
+                tracks: ['ahdia', 'ruth', 'tess', 'ben', 'victor_leah', 'leta', 'korede']
+            },
+            'antagonists': {
+                name: 'Antagonists',
+                tracks: ['bellatrix', 'kain', 'eidolon']
+            },
+            'supporting': {
+                name: 'Supporting',
+                tracks: ['ryu', 'bourn']
+            }
+        };
+
+        const characterConfig = {
+            'ahdia': { name: 'Ahdia Bacchus', subtitle: 'Baseline: 95% → 0.7%', canonWarning: null },
+            'ruth': { name: 'Ruth Carter', subtitle: 'Caretaker limits', canonWarning: null },
+            'tess': { name: 'Tess Whitford', subtitle: 'Institutional betrayal → vigilante', canonWarning: 'Does NOT kill Webb' },
+            'ben': { name: 'Ben Bukowski', subtitle: 'Faith collapse', canonWarning: 'Sarah death UNSPECIFIED' },
+            'victor_leah': { name: 'Victor & Leah', subtitle: 'Both/And + White Moderate Awakening', canonWarning: 'NO dead wife; Leah=barista' },
+            'leta': { name: 'Leta Owolowo', subtitle: 'Targeted → killed (Ch21)', canonWarning: null },
+            'korede': { name: 'Korede Owolowo', subtitle: 'Observer → radicalized', canonWarning: null },
+            'bellatrix': { name: 'Bellatrix / Geneva', subtitle: 'Hidden orchestrator', canonWarning: null },
+            'kain': { name: 'Harding Kain', subtitle: 'Mayor → President-elect', canonWarning: null },
+            'eidolon': { name: 'Eidolon', subtitle: 'Electoral manipulation', canonWarning: 'AMPLIFIES only' },
+            'ryu': { name: 'Ryu Matsuda', subtitle: 'Ethical erosion', canonWarning: 'Never confesses love' },
+            'bourn': { name: 'Harriet Bourn', subtitle: 'Institutional authority → defector', canonWarning: 'SHE/HER pronouns' }
+        };
+
+        // Configuration
+        const BASE_WIDTH = 2800;
+        let currentZoom = 100;
+        let currentTextZoom = 100;
+        let currentFilter = 'all';
+
+        // Chapter markers (24 chapters mapped to 0-12 scale)
+        const chapters = [];
+        for (let i = 1; i <= 24; i++) {
+            const pos = (i - 0.5) / 2;
+            let type = 'normal';
+            if ([7, 13, 15, 17, 21].includes(i)) type = 'crisis';
+            if ([23, 24].includes(i)) type = 'finale';
+            chapters.push({ num: i, pos: pos, type: type });
+        }
+
+        function posToPercent(pos) {
+            return ((pos + 0.5) / 12.5) * 100; // Adjusted for pre-book events
+        }
+
+        function percentToPos(percent) {
+            return (percent / 100) * 12.5 - 0.5;
+        }
+
+        function createChapterMarkers(timeline) {
+            chapters.forEach(ch => {
+                const marker = document.createElement('div');
+                marker.className = 'chapter-marker' + (ch.type !== 'normal' ? ' ' + ch.type : '');
+                marker.style.left = posToPercent(ch.pos) + '%';
+                timeline.appendChild(marker);
+
+                const label = document.createElement('div');
+                label.className = 'chapter-label' + (ch.type !== 'normal' ? ' ' + ch.type : '');
+                label.style.left = posToPercent(ch.pos) + '%';
+                label.textContent = ch.num;
+                timeline.appendChild(label);
+            });
+        }
+
+        function createEventElement(eventData, trackId) {
+            const el = document.createElement('div');
+            el.className = 'event';
+            el.dataset.id = eventData.id;
+            el.dataset.track = trackId;
+            el.dataset.type = eventData.type || 'action';
+            el.style.left = posToPercent(eventData.pos) + '%';
+
+            let html = '';
+            if (eventData.baseline) {
+                const bClass = eventData.baselineClass || '';
+                html += `<div class="baseline ${bClass}">${eventData.baseline}</div>`;
+            }
+
+            const textSpan = document.createElement('span');
+            textSpan.className = 'event-text';
+            textSpan.textContent = eventData.text;
+
+            el.innerHTML = html;
+            el.appendChild(textSpan);
+
+            const chapterSpan = document.createElement('div');
+            chapterSpan.className = 'event-chapter';
+            chapterSpan.textContent = eventData.chapter === 0 ? 'Pre-B2' : 'Ch ' + eventData.chapter;
+            el.appendChild(chapterSpan);
+
+            // Drag functionality
+            let isDragging = false;
+            let startX, startLeft;
+
+            el.addEventListener('mousedown', (e) => {
+                if (el.classList.contains('editing')) return;
+                isDragging = true;
+                el.classList.add('dragging');
+                startX = e.clientX;
+                startLeft = parseFloat(el.style.left);
+                e.stopPropagation();
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const timeline = el.parentElement;
+                const rect = timeline.getBoundingClientRect();
+                const deltaX = e.clientX - startX;
+                const deltaPercent = (deltaX / rect.width) * 100;
+                let newLeft = startLeft + deltaPercent;
+                newLeft = Math.max(0, Math.min(100, newLeft));
+                el.style.left = newLeft + '%';
+
+                const newPos = percentToPos(newLeft);
+                const event = eventsData[trackId].find(ev => ev.id === eventData.id);
+                if (event) event.pos = newPos;
+            });
+
+            document.addEventListener('mouseup', () => {
+                if (isDragging) {
+                    isDragging = false;
+                    el.classList.remove('dragging');
+                }
+            });
+
+            // Double-click to edit
+            el.addEventListener('dblclick', (e) => {
+                e.stopPropagation();
+                el.classList.add('editing');
+                textSpan.classList.add('editable');
+                textSpan.contentEditable = true;
+                textSpan.focus();
+
+                const range = document.createRange();
+                range.selectNodeContents(textSpan);
+                const sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(range);
+            });
+
+            textSpan.addEventListener('blur', () => {
+                el.classList.remove('editing');
+                textSpan.classList.remove('editable');
+                textSpan.contentEditable = false;
+
+                const event = eventsData[trackId].find(ev => ev.id === eventData.id);
+                if (event) event.text = textSpan.textContent;
+            });
+
+            textSpan.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    textSpan.blur();
+                }
+                if (e.key === 'Escape') {
+                    const event = eventsData[trackId].find(ev => ev.id === eventData.id);
+                    if (event) textSpan.textContent = event.text;
+                    textSpan.blur();
+                }
+            });
+
+            return el;
+        }
+
+        function createTrack(trackId) {
+            const events = eventsData[trackId] || [];
+            const config = characterConfig[trackId];
+
+            const container = document.createElement('div');
+            container.className = 'track-container';
+            container.dataset.track = trackId;
+
+            const header = document.createElement('div');
+            header.className = 'track-header';
+
+            let headerHTML = `
+                <span class="collapse-icon">▼</span>
+                <span class="track-label">${config.name}<span class="track-subtitle">${config.subtitle}</span></span>
+                <span class="event-count">${events.length} events</span>
+            `;
+
+            if (config.canonWarning) {
+                headerHTML += `<span class="canon-warning">${config.canonWarning}</span>`;
+            }
+
+            header.innerHTML = headerHTML;
+            header.addEventListener('click', () => {
+                container.classList.toggle('collapsed');
+            });
+
+            const content = document.createElement('div');
+            content.className = 'track-content';
+
+            const scroll = document.createElement('div');
+            scroll.className = 'timeline-scroll';
+
+            const timeline = document.createElement('div');
+            timeline.className = 'timeline';
+            timeline.id = `timeline-${trackId}`;
+
+            const width = BASE_WIDTH * (currentZoom / 100);
+            timeline.style.minWidth = width + 'px';
+
+            timeline.innerHTML = '<div class="timeline-line"></div>';
+            createChapterMarkers(timeline);
+
+            events.forEach(eventData => {
+                const el = createEventElement(eventData, trackId);
+                timeline.appendChild(el);
+            });
+
+            scroll.appendChild(timeline);
+            content.appendChild(scroll);
+            container.appendChild(header);
+            container.appendChild(content);
+
+            return container;
+        }
+
+        function renderAll() {
+            const container = document.getElementById('tracks-container');
+            container.innerHTML = '';
+
+            Object.keys(characterGroups).forEach(groupId => {
+                if (currentFilter !== 'all' && currentFilter !== groupId) return;
+
+                const group = characterGroups[groupId];
+
+                const groupHeader = document.createElement('div');
+                groupHeader.className = 'group-header';
+                groupHeader.textContent = group.name;
+                container.appendChild(groupHeader);
+
+                group.tracks.forEach(trackId => {
+                    const track = createTrack(trackId);
+                    container.appendChild(track);
+                });
+            });
+
+            setupScrollSync();
+            applyTextZoom();
+        }
+
+        function setupScrollSync() {
+            const scrollContainers = document.querySelectorAll('.timeline-scroll');
+
+            scrollContainers.forEach(container => {
+                let isDown = false;
+                let startX, scrollLeft;
+
+                container.addEventListener('mousedown', (e) => {
+                    if (e.target.closest('.event')) return;
+                    isDown = true;
+                    startX = e.pageX - container.offsetLeft;
+                    scrollLeft = container.scrollLeft;
+                });
+
+                container.addEventListener('mouseleave', () => isDown = false);
+                container.addEventListener('mouseup', () => isDown = false);
+
+                container.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - container.offsetLeft;
+                    container.scrollLeft = scrollLeft - (x - startX);
+                });
+
+                container.addEventListener('scroll', () => {
+                    scrollContainers.forEach(other => {
+                        if (other !== container) {
+                            other.scrollLeft = container.scrollLeft;
+                        }
+                    });
+                });
+            });
+        }
+
+        // Controls
+        const zoomSlider = document.getElementById('zoomSlider');
+        const zoomDisplay = document.getElementById('zoomDisplay');
+        const textZoomSlider = document.getElementById('textZoomSlider');
+        const textZoomDisplay = document.getElementById('textZoomDisplay');
+
+        zoomSlider.addEventListener('input', (e) => {
+            currentZoom = parseInt(e.target.value);
+            zoomDisplay.textContent = currentZoom + '%';
+            document.querySelectorAll('.timeline').forEach(tl => {
+                tl.style.minWidth = (BASE_WIDTH * currentZoom / 100) + 'px';
+            });
+        });
+
+        textZoomSlider.addEventListener('input', (e) => {
+            currentTextZoom = parseInt(e.target.value);
+            textZoomDisplay.textContent = currentTextZoom + '%';
+            applyTextZoom();
+        });
+
+        function applyTextZoom() {
+            const scale = currentTextZoom / 100;
+            document.querySelectorAll('.event').forEach(el => {
+                el.style.fontSize = (9 * scale) + 'px';
+                el.style.maxWidth = (140 * scale) + 'px';
+                el.style.padding = (4 * scale) + 'px ' + (6 * scale) + 'px';
+            });
+            document.querySelectorAll('.event-chapter').forEach(el => {
+                el.style.fontSize = (8 * scale) + 'px';
+            });
+            document.querySelectorAll('.baseline').forEach(el => {
+                el.style.fontSize = (8 * scale) + 'px';
+            });
+        }
+
+        function resetZoom() {
+            currentZoom = 100;
+            currentTextZoom = 100;
+            zoomSlider.value = 100;
+            textZoomSlider.value = 100;
+            zoomDisplay.textContent = '100%';
+            textZoomDisplay.textContent = '100%';
+            document.querySelectorAll('.timeline').forEach(tl => {
+                tl.style.minWidth = BASE_WIDTH + 'px';
+            });
+            applyTextZoom();
+        }
+
+        function expandAll() {
+            document.querySelectorAll('.track-container').forEach(t => t.classList.remove('collapsed'));
+        }
+
+        function collapseAll() {
+            document.querySelectorAll('.track-container').forEach(t => t.classList.add('collapsed'));
+        }
+
+        function setFilter(filter) {
+            currentFilter = filter;
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.filter === filter);
+            });
+            renderAll();
+        }
+
+        function exportData() {
+            const output = {
+                exported: new Date().toISOString(),
+                version: '2.0',
+                source: 'book2_production_timeline.html',
+                tracks: {}
+            };
+
+            Object.keys(eventsData).forEach(trackId => {
+                output.tracks[trackId] = eventsData[trackId].map(e => ({
+                    id: e.id,
+                    pos: Math.round(e.pos * 100) / 100,
+                    chapter: e.chapter,
+                    type: e.type,
+                    text: e.text,
+                    baseline: e.baseline || null
+                }));
+            });
+
+            const json = JSON.stringify(output, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `book2_production_timeline_${new Date().toISOString().slice(0,10)}.json`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function importData(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const data = JSON.parse(e.target.result);
+                    if (data.tracks) {
+                        Object.keys(data.tracks).forEach(trackId => {
+                            if (eventsData[trackId]) {
+                                eventsData[trackId] = data.tracks[trackId];
+                            }
+                        });
+                        renderAll();
+                        alert('Timeline imported successfully!');
+                    } else {
+                        alert('Invalid file format: no tracks found');
+                    }
+                } catch (err) {
+                    alert('Error importing file: ' + err.message);
+                }
+            };
+            reader.readAsText(file);
+            event.target.value = '';
+        }
+
+        // Keyboard shortcuts
+        document.addEventListener('wheel', (e) => {
+            if (e.ctrlKey || e.metaKey) {
+                e.preventDefault();
+                const delta = e.deltaY > 0 ? -5 : 5;
+                currentTextZoom = Math.max(50, Math.min(150, currentTextZoom + delta));
+                textZoomSlider.value = currentTextZoom;
+                textZoomDisplay.textContent = currentTextZoom + '%';
+                applyTextZoom();
+            } else if (e.shiftKey) {
+                e.preventDefault();
+                const delta = e.deltaY > 0 ? -10 : 10;
+                currentZoom = Math.max(50, Math.min(200, currentZoom + delta));
+                zoomSlider.value = currentZoom;
+                zoomDisplay.textContent = currentZoom + '%';
+                document.querySelectorAll('.timeline').forEach(tl => {
+                    tl.style.minWidth = (BASE_WIDTH * currentZoom / 100) + 'px';
+                });
+            }
+        }, { passive: false });
+
+        // Initial render
+        renderAll();
+    </script>
+</body>
+</html>

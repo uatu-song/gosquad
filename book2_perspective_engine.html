@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go Squad · Perspective Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg: #0e1117;
+    --surface: #161b22;
+    --surface2: #1c2333;
+    --border: #2a3040;
+    --text: #e2e6ed;
+    --text-muted: #7d8590;
+    --text-dim: #484f58;
+
+    /* Character colors */
+    --ahdia: #58a6ff;
+    --ruth: #f0883e;
+    --tess: #a371f7;
+    --ben: #3fb950;
+    --leah: #f778ba;
+    --leta: #ffd33d;
+    --victor: #79c0ff;
+    --korede: #56d4dd;
+    --ryu: #8b949e;
+
+    /* Event types */
+    --action: #58a6ff;
+    --revelation: #f0883e;
+    --emotional: #a371f7;
+    --tragedy: #f85149;
+
+    /* Overlap */
+    --overlap: #ffd33d;
+    --overlap-light: rgba(255, 211, 61, 0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 3.5vw, 2rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--ahdia), var(--ruth));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .subtitle {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Book Info Banner */
+.book-banner {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.book-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+}
+
+.book-stats {
+    display: flex;
+    gap: 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.book-stats strong {
+    color: var(--text);
+}
+
+/* Character Filters */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 12px;
+    background: var(--surface);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.filter-btn {
+    padding: 6px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+    background: var(--surface2);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.filter-btn:hover {
+    border-color: var(--text-muted);
+    color: var(--text);
+}
+
+.filter-btn.active {
+    border-color: var(--char-color, var(--text));
+    background: color-mix(in srgb, var(--char-color, var(--text)) 15%, transparent);
+    color: var(--char-color, var(--text));
+}
+
+.filter-btn .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--char-color, var(--text-muted));
+}
+
+.filter-group {
+    display: flex;
+    gap: 4px;
+    padding-left: 12px;
+    border-left: 1px solid var(--border);
+}
+
+.filter-group:first-child {
+    padding-left: 0;
+    border-left: none;
+}
+
+/* Timeline Container */
+.timeline-container {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+/* Month Headers */
+.month-header {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+}
+
+.month-label {
+    flex: 1;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+}
+
+/* Chapter Headers */
+.chapter-header {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.chapter-cell {
+    flex: 0 0 calc(100% / 24);
+    min-width: 50px;
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    padding: 4px 2px;
+    border-right: 1px solid rgba(42, 48, 64, 0.5);
+}
+
+.chapter-cell:last-child {
+    border-right: none;
+}
+
+.chapter-cell.highlight {
+    background: var(--overlap-light);
+    color: var(--overlap);
+    font-weight: 700;
+}
+
+/* Character Tracks */
+.tracks {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    min-height: 36px;
+}
+
+.track-label {
+    width: 100px;
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--char-color, var(--text));
+    padding-right: 12px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+.track-label .icon {
+    font-size: 1rem;
+}
+
+.track-timeline {
+    flex: 1;
+    display: flex;
+    position: relative;
+    height: 32px;
+}
+
+.track-cell {
+    flex: 0 0 calc(100% / 24);
+    min-width: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Event Markers */
+.event-marker {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--char-color, var(--text-muted));
+    cursor: pointer;
+    transition: all 0.15s;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    color: var(--bg);
+    font-weight: 700;
+}
+
+.event-marker:hover {
+    transform: scale(1.3);
+    z-index: 10;
+}
+
+.event-marker.action {
+    border: 2px solid var(--action);
+}
+
+.event-marker.revelation {
+    border: 2px solid var(--revelation);
+    background: var(--revelation);
+}
+
+.event-marker.emotional {
+    border: 2px solid var(--emotional);
+    background: var(--emotional);
+}
+
+.event-marker.tragedy {
+    border: 2px solid var(--tragedy);
+    background: var(--tragedy);
+}
+
+.event-marker.overlap {
+    box-shadow: 0 0 0 3px var(--overlap), 0 0 8px var(--overlap);
+}
+
+/* Connection lines */
+.track-line {
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background: var(--char-color, var(--text-dim));
+    opacity: 0.3;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+/* Overlap Indicator */
+.overlap-indicator {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--overlap);
+    color: var(--bg);
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+/* Event Detail Panel */
+.detail-panel {
+    display: none;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.detail-panel.visible {
+    display: block;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.detail-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+}
+
+.detail-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.detail-close {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.detail-close:hover {
+    color: var(--text);
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.detail-section {
+    background: var(--surface2);
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.detail-section h4 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.detail-section ul {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.detail-section li {
+    padding: 2px 0;
+    color: var(--text);
+}
+
+.detail-section li::before {
+    content: "→ ";
+    color: var(--text-dim);
+}
+
+/* Knowledge Heatmap */
+.heatmap-container {
+    margin-top: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.heatmap-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.heatmap-grid {
+    display: grid;
+    gap: 4px;
+}
+
+.heatmap-row {
+    display: flex;
+    align-items: center;
+}
+
+.heatmap-label {
+    width: 150px;
+    flex-shrink: 0;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-align: right;
+    padding-right: 12px;
+}
+
+.heatmap-cells {
+    display: flex;
+    flex: 1;
+}
+
+.heatmap-cell {
+    flex: 0 0 calc(100% / 24);
+    min-width: 20px;
+    height: 20px;
+    background: var(--surface2);
+    margin: 1px;
+    border-radius: 2px;
+    transition: background 0.15s;
+}
+
+.heatmap-cell.known {
+    background: var(--action);
+}
+
+.heatmap-cell.revealed {
+    background: var(--revelation);
+}
+
+/* Overlaps Panel */
+.overlaps-panel {
+    margin-top: 30px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.overlaps-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.overlap-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--overlap);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+}
+
+.overlap-card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.overlap-card .meta {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.overlap-card .characters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.overlap-card .char-tag {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--char-color, var(--surface));
+    color: var(--bg);
+}
+
+/* Legend */
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .track-label {
+        width: 70px;
+        font-size: 0.7rem;
+    }
+
+    .track-cell {
+        min-width: 35px;
+    }
+
+    .chapter-cell {
+        min-width: 35px;
+        font-size: 0.6rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body { background: #fff; color: #222; }
+    .filter-bar, .detail-close { display: none !important; }
+    .timeline-container, .heatmap-container, .overlaps-panel {
+        border-color: #ccc;
+        background: #fafafa;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Go Squad · Perspective Engine</h1>
+    <div class="subtitle">Multi-character timeline visualization and query interface</div>
+</header>
+
+<div class="container">
+    <div class="book-banner">
+        <div class="book-title">Book 2: Sacrifice Everything</div>
+        <div class="book-stats">
+            <span><strong>24</strong> chapters</span>
+            <span><strong>12</strong> months</span>
+            <span><strong id="overlap-count">0</strong> overlap moments</span>
+        </div>
+    </div>
+
+    <div class="filter-bar" id="filter-bar">
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="all" onclick="toggleFilter('all')">
+                All Characters
+            </button>
+        </div>
+        <div class="filter-group" id="protagonist-filters"></div>
+        <div class="filter-group" id="antagonist-filters"></div>
+    </div>
+
+    <div class="timeline-container">
+        <div class="month-header" id="month-header"></div>
+        <div class="chapter-header" id="chapter-header"></div>
+        <div class="tracks" id="tracks"></div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-dot" style="background: var(--action)"></div>
+                Action
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot" style="background: var(--revelation)"></div>
+                Revelation
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot" style="background: var(--emotional)"></div>
+                Emotional
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot" style="background: var(--tragedy)"></div>
+                Tragedy
+            </div>
+            <div class="legend-item">
+                <div class="legend-dot" style="background: var(--overlap); box-shadow: 0 0 0 2px var(--overlap)"></div>
+                Overlap Moment
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-panel" id="detail-panel">
+        <div class="detail-header">
+            <div>
+                <div class="detail-title" id="detail-title">Event Details</div>
+                <div class="detail-meta" id="detail-meta">Chapter X · Month Y</div>
+            </div>
+            <button class="detail-close" onclick="closeDetail()">×</button>
+        </div>
+        <div class="detail-grid" id="detail-content"></div>
+    </div>
+
+    <div class="heatmap-container">
+        <div class="heatmap-title">🔐 Knowledge Distribution</div>
+        <div class="heatmap-grid" id="knowledge-heatmap"></div>
+    </div>
+
+    <div class="overlaps-panel">
+        <div class="overlaps-title">⚡ Overlap Moments (Multi-Steward Scenes)</div>
+        <div id="overlaps-list"></div>
+    </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// AUTO-GENERATED DATA FROM CHARACTER_STATE_INDEX.yaml
+// Generated by generate_visualization.py
+// ═══════════════════════════════════════
+
+const CHARACTERS = {
+    "ahdia": {
+        "name": "Ahdia Sade Bacchus",
+        "icon": "\u26a1",
+        "color": "#58a6ff",
+        "group": "protagonist"
+    },
+    "tess": {
+        "name": "Tess Whitford",
+        "icon": "\ud83c\udf11",
+        "color": "#a371f7",
+        "group": "protagonist"
+    },
+    "ben": {
+        "name": "Ben Bukowski",
+        "icon": "\ud83d\udee1\ufe0f",
+        "color": "#3fb950",
+        "group": "protagonist"
+    },
+    "leah": {
+        "name": "Leah Turner",
+        "icon": "\u2694\ufe0f",
+        "color": "#f778ba",
+        "group": "protagonist"
+    },
+    "ruth": {
+        "name": "Ruth Carter",
+        "icon": "\ud83d\udc9a",
+        "color": "#f0883e",
+        "group": "protagonist"
+    },
+    "victor": {
+        "name": "Victor Hernandez",
+        "icon": "\ud83d\udd17",
+        "color": "#79c0ff",
+        "group": "protagonist"
+    },
+    "leta": {
+        "name": "Leta Owolowo",
+        "icon": "\ud83d\udce1",
+        "color": "#ffd33d",
+        "group": "protagonist"
+    },
+    "korede": {
+        "name": "Korede Owolowo",
+        "icon": "\ud83d\udc41\ufe0f",
+        "color": "#56d4dd",
+        "group": "protagonist"
+    },
+    "ryu": {
+        "name": "Dr. Ryu Matsuda",
+        "icon": "\ud83d\udc89",
+        "color": "#8b949e",
+        "group": "supporting"
+    },
+    "eidolon": {
+        "name": "Eidolon",
+        "icon": "\ud83d\ude31",
+        "color": "#f85149",
+        "group": "antagonist"
+    },
+    "officer_webb": {
+        "name": "Officer_Webb",
+        "icon": "\u25cf",
+        "color": "#8b949e",
+        "group": "supporting"
+    },
+    "kain": {
+        "name": "Kain",
+        "icon": "\ud83c\udfdb\ufe0f",
+        "color": "#da3633",
+        "group": "antagonist"
+    }
+};
+
+const TIMELINE = {
+    "1": {
+        "month": 1,
+        "event": "Isaiah Riot",
+        "type": "action"
+    },
+    "2": {
+        "month": 1,
+        "event": "Geneva Assassination",
+        "type": "action"
+    },
+    "3": {
+        "month": 1,
+        "event": "Aftermath Investigations Begin",
+        "type": "action"
+    },
+    "4": {
+        "month": 2,
+        "event": "Ryu Crosses Line",
+        "type": "action"
+    },
+    "5": {
+        "month": 2,
+        "event": "Webb Exonerated",
+        "type": "action"
+    },
+    "6": {
+        "month": 3,
+        "event": "Investigations Deepen",
+        "type": "action"
+    },
+    "7": {
+        "month": 3,
+        "event": "Ruth Discovers Decline",
+        "type": "action"
+    },
+    "8": {
+        "month": 4,
+        "event": "Evidence Building",
+        "type": "action"
+    },
+    "9": {
+        "month": 4,
+        "event": "Exile Island Expansion",
+        "type": "action"
+    },
+    "10": {
+        "month": 5,
+        "event": "Investigations Converge",
+        "type": "action"
+    },
+    "11": {
+        "month": 5,
+        "event": "Harassment Escalates",
+        "type": "action"
+    },
+    "12": {
+        "month": 6,
+        "event": "Triomf Discovered",
+        "type": "action"
+    },
+    "13": {
+        "month": 6,
+        "event": "Exile Island Exposed",
+        "type": "action"
+    },
+    "14": {
+        "month": 7,
+        "event": "Clone Immortality Revealed",
+        "type": "action"
+    },
+    "15": {
+        "month": 8,
+        "event": "Ben Leaks Evidence",
+        "type": "action"
+    },
+    "16": {
+        "month": 8,
+        "event": "48 Hours Of Hope",
+        "type": "action"
+    },
+    "17": {
+        "month": 8,
+        "event": "Eidolon Reframes",
+        "type": "action"
+    },
+    "18": {
+        "month": 9,
+        "event": "Leah Releases Recording",
+        "type": "action"
+    },
+    "19": {
+        "month": 10,
+        "event": "Officers Cleared",
+        "type": "action"
+    },
+    "20": {
+        "month": 10,
+        "event": "System Protection Undeniable",
+        "type": "action"
+    },
+    "21": {
+        "month": 11,
+        "event": "Leta Killed Manhunt Begins",
+        "type": "action"
+    },
+    "22": {
+        "month": 11,
+        "event": "Faeris Broadcast Mob Breaks",
+        "type": "action"
+    },
+    "23": {
+        "month": 11,
+        "event": "Bourn Extracted Tess Vengeance",
+        "type": "action"
+    },
+    "24": {
+        "month": 12,
+        "event": "Election Night Reactor Crisis",
+        "type": "action"
+    }
+};
+
+const CHARACTER_EVENTS = {
+    "ahdia": [
+        {
+            "ch": 1,
+            "type": "revelation",
+            "text": "burns_47_minutes_frozen_time, saves_23_people"
+        },
+        {
+            "ch": 3,
+            "type": "action",
+            "text": "frustration with local limits"
+        },
+        {
+            "ch": 4,
+            "type": "action",
+            "text": "eastern europe operations"
+        },
+        {
+            "ch": 7,
+            "type": "action",
+            "text": "systematic targeting"
+        },
+        {
+            "ch": 11,
+            "type": "action",
+            "text": "manhunt defense"
+        },
+        {
+            "ch": 13,
+            "type": "action",
+            "text": "team discovers operation"
+        },
+        {
+            "ch": 17,
+            "type": "action",
+            "text": "rebuilding"
+        },
+        {
+            "ch": 21,
+            "type": "action",
+            "text": "crisis bonds"
+        },
+        {
+            "ch": 24,
+            "type": "revelation",
+            "text": "translocates_team_800_miles, freezes_reactor_meltdown"
+        }
+    ],
+    "tess": [
+        {
+            "ch": 1,
+            "type": "emotional",
+            "text": "defensive_about_institutions"
+        },
+        {
+            "ch": 3,
+            "type": "action",
+            "text": "anomaly in records"
+        },
+        {
+            "ch": 5,
+            "type": "action",
+            "text": "discovers memo"
+        },
+        {
+            "ch": 6,
+            "type": "action",
+            "text": "leta targeted online"
+        },
+        {
+            "ch": 8,
+            "type": "action",
+            "text": "ben shares investigation"
+        },
+        {
+            "ch": 11,
+            "type": "action",
+            "text": "harassment escalates"
+        },
+        {
+            "ch": 12,
+            "type": "action",
+            "text": "direct confrontation"
+        },
+        {
+            "ch": 15,
+            "type": "action",
+            "text": "triomf connection clear"
+        },
+        {
+            "ch": 17,
+            "type": "action",
+            "text": "credible threats"
+        },
+        {
+            "ch": 19,
+            "type": "action",
+            "text": "final break"
+        },
+        {
+            "ch": 21,
+            "type": "revelation",
+            "text": "reveals_gosquad_identity_to_korede, vows_vengeance_on_webb"
+        },
+        {
+            "ch": 22,
+            "type": "action",
+            "text": "tracks webb movements"
+        },
+        {
+            "ch": 23,
+            "type": "action",
+            "text": "confronts webb masked"
+        }
+    ],
+    "ben": [
+        {
+            "ch": 2,
+            "type": "action",
+            "text": "riot aftermath questions"
+        },
+        {
+            "ch": 4,
+            "type": "action",
+            "text": "finds tank kain records"
+        },
+        {
+            "ch": 6,
+            "type": "action",
+            "text": "follows money"
+        },
+        {
+            "ch": 8,
+            "type": "emotional",
+            "text": "triumphant_confident"
+        },
+        {
+            "ch": 10,
+            "type": "action",
+            "text": "official channels stalling"
+        },
+        {
+            "ch": 15,
+            "type": "action",
+            "text": "releases everything"
+        },
+        {
+            "ch": 17,
+            "type": "action",
+            "text": "eidolon reframes narrative"
+        },
+        {
+            "ch": 19,
+            "type": "action",
+            "text": "officers cleared despite evidence"
+        },
+        {
+            "ch": 20,
+            "type": "emotional",
+            "text": "shattered_questioning"
+        }
+    ],
+    "leah": [
+        {
+            "ch": 1,
+            "type": "emotional",
+            "text": "uncomfortable_uncertain"
+        },
+        {
+            "ch": 3,
+            "type": "action",
+            "text": "processing own experience"
+        },
+        {
+            "ch": 6,
+            "type": "action",
+            "text": "discovers silenced women"
+        },
+        {
+            "ch": 7,
+            "type": "action",
+            "text": "victor teaches"
+        },
+        {
+            "ch": 9,
+            "type": "action",
+            "text": "connects with survivors"
+        },
+        {
+            "ch": 12,
+            "type": "action",
+            "text": "survivor shares evidence"
+        },
+        {
+            "ch": 14,
+            "type": "action",
+            "text": "starting to get it"
+        },
+        {
+            "ch": 15,
+            "type": "action",
+            "text": "courage builds"
+        },
+        {
+            "ch": 18,
+            "type": "action",
+            "text": "makes it public"
+        },
+        {
+            "ch": 21,
+            "type": "action",
+            "text": "leta death impact"
+        },
+        {
+            "ch": 24,
+            "type": "action",
+            "text": "solidarity learned"
+        }
+    ],
+    "ruth": [
+        {
+            "ch": 1,
+            "type": "action",
+            "text": "routine treatment"
+        },
+        {
+            "ch": 4,
+            "type": "action",
+            "text": "concerned"
+        },
+        {
+            "ch": 5,
+            "type": "action",
+            "text": "weight accumulating"
+        },
+        {
+            "ch": 7,
+            "type": "action",
+            "text": "ryu reveals numbers"
+        },
+        {
+            "ch": 10,
+            "type": "action",
+            "text": "evidence release fails"
+        },
+        {
+            "ch": 11,
+            "type": "action",
+            "text": "emergency stabilization"
+        },
+        {
+            "ch": 15,
+            "type": "action",
+            "text": "fighting clock"
+        },
+        {
+            "ch": 21,
+            "type": "action",
+            "text": "teammate dies"
+        },
+        {
+            "ch": 24,
+            "type": "action",
+            "text": "critical intervention"
+        }
+    ],
+    "victor": [
+        {
+            "ch": 11,
+            "type": "action",
+            "text": "networks ready"
+        },
+        {
+            "ch": 21,
+            "type": "action",
+            "text": "saves team"
+        }
+    ],
+    "leta": [
+        {
+            "ch": 6,
+            "type": "action",
+            "text": "visibility as activist"
+        },
+        {
+            "ch": 9,
+            "type": "action",
+            "text": "escalation"
+        },
+        {
+            "ch": 11,
+            "type": "action",
+            "text": "severe"
+        },
+        {
+            "ch": 14,
+            "type": "action",
+            "text": "teaching others"
+        },
+        {
+            "ch": 17,
+            "type": "action",
+            "text": "credible danger"
+        },
+        {
+            "ch": 21,
+            "type": "action",
+            "text": "protecting_korede, killed_by_webb"
+        }
+    ],
+    "korede": [
+        {
+            "ch": 1,
+            "type": "action",
+            "text": "observer"
+        },
+        {
+            "ch": 21,
+            "type": "action",
+            "text": "witness"
+        },
+        {
+            "ch": 22,
+            "type": "action",
+            "text": "radicalized"
+        },
+        {
+            "ch": 24,
+            "type": "action",
+            "text": "committed"
+        }
+    ],
+    "ryu": [
+        {
+            "ch": 2,
+            "type": "action",
+            "text": "first intel handoff"
+        },
+        {
+            "ch": 5,
+            "type": "action",
+            "text": "falsifies records"
+        },
+        {
+            "ch": 8,
+            "type": "action",
+            "text": "provides coordinates"
+        },
+        {
+            "ch": 12,
+            "type": "action",
+            "text": "deep complicity"
+        },
+        {
+            "ch": 16,
+            "type": "action",
+            "text": "no way back"
+        }
+    ],
+    "eidolon": [],
+    "officer_webb": [],
+    "kain": [
+        {
+            "ch": 1,
+            "type": "action",
+            "text": "mayor"
+        },
+        {
+            "ch": 8,
+            "type": "action",
+            "text": "evidence against him"
+        },
+        {
+            "ch": 15,
+            "type": "action",
+            "text": "evidence released"
+        },
+        {
+            "ch": 17,
+            "type": "action",
+            "text": "reframed up 12 points"
+        },
+        {
+            "ch": 24,
+            "type": "action",
+            "text": "wins presidency"
+        }
+    ]
+};
+
+const SECRETS = {
+    "exile_island": {
+        "name": "Ahdia's secret global vigilante operation",
+        "holder": "ahdia",
+        "reveal_ch": 13,
+        "aware": {
+            "1": [
+                "ahdia",
+                "ryu"
+            ],
+            "2": [
+                "ahdia",
+                "ryu"
+            ],
+            "3": [
+                "ahdia",
+                "ryu"
+            ],
+            "4": [
+                "ahdia",
+                "ryu"
+            ],
+            "5": [
+                "ahdia",
+                "ryu"
+            ],
+            "6": [
+                "ahdia",
+                "ryu"
+            ],
+            "7": [
+                "ahdia",
+                "ryu"
+            ],
+            "8": [
+                "ahdia",
+                "ryu"
+            ],
+            "9": [
+                "ahdia",
+                "ryu"
+            ],
+            "10": [
+                "ahdia",
+                "ryu"
+            ],
+            "11": [
+                "ahdia",
+                "ryu"
+            ],
+            "12": [
+                "ahdia",
+                "ryu"
+            ],
+            "13": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "14": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "15": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "16": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "17": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "18": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "19": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "20": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "21": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "22": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "23": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ],
+            "24": [
+                "ahdia",
+                "ryu",
+                "ruth",
+                "ben",
+                "tess",
+                "victor",
+                "leah"
+            ]
+        }
+    },
+    "ahdia_terminal_decline": {
+        "name": "Ahdia's accelerating cellular degradation",
+        "holder": "",
+        "reveal_ch": 7,
+        "aware": {
+            "1": [
+                "ahdia",
+                "ryu"
+            ],
+            "2": [
+                "ahdia",
+                "ryu"
+            ],
+            "3": [
+                "ahdia",
+                "ryu"
+            ],
+            "4": [
+                "ahdia",
+                "ryu"
+            ],
+            "5": [
+                "ahdia",
+                "ryu"
+            ],
+            "6": [
+                "ahdia",
+                "ryu"
+            ],
+            "7": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "8": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "9": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "10": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "11": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "12": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "13": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "14": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "15": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "16": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "17": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "18": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "19": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "20": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "21": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "22": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "23": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ],
+            "24": [
+                "ahdia",
+                "ryu",
+                "ruth"
+            ]
+        }
+    },
+    "tess_webb_attack": {
+        "name": "Tess brutalized Webb after Leta's death",
+        "holder": "tess",
+        "reveal_ch": null,
+        "aware": {
+            "1": [],
+            "22": [],
+            "23": [
+                "tess"
+            ],
+            "24": [
+                "tess"
+            ]
+        }
+    },
+    "gosquad_identities": {
+        "name": "Gosquad Identities",
+        "holder": "",
+        "reveal_ch": null,
+        "aware": {
+            "1": [
+                "team"
+            ],
+            "20": [
+                "team"
+            ],
+            "21": [
+                "team",
+                "korede"
+            ],
+            "24": [
+                "team",
+                "korede"
+            ]
+        }
+    }
+};
+
+const OVERLAPS = [
+    {
+        "ch": 1,
+        "title": "Isaiah Riot",
+        "chars": [
+            "leah",
+            "ruth",
+            "ahdia",
+            "tess"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 3,
+        "title": "Aftermath Investigations Begin",
+        "chars": [
+            "leah",
+            "tess",
+            "ahdia"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 4,
+        "title": "Ryu Crosses Line",
+        "chars": [
+            "ben",
+            "ruth",
+            "ahdia"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 5,
+        "title": "Webb Exonerated",
+        "chars": [
+            "ruth",
+            "ahdia",
+            "tess"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 6,
+        "title": "Investigations Deepen",
+        "chars": [
+            "ben",
+            "leah",
+            "tess",
+            "leta"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 7,
+        "title": "Ruth Discovers Decline",
+        "chars": [
+            "victor",
+            "leah",
+            "ruth",
+            "ahdia"
+        ],
+        "type": "confrontation"
+    },
+    {
+        "ch": 8,
+        "title": "Evidence Building",
+        "chars": [
+            "ben",
+            "tess",
+            "ahdia"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 9,
+        "title": "Exile Island Expansion",
+        "chars": [
+            "leta",
+            "leah",
+            "ahdia"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 10,
+        "title": "Investigations Converge",
+        "chars": [
+            "ben",
+            "ruth"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 11,
+        "title": "Harassment Escalates",
+        "chars": [
+            "ruth",
+            "ahdia",
+            "tess",
+            "victor",
+            "leta"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 12,
+        "title": "Triomf Discovered",
+        "chars": [
+            "leah",
+            "tess"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 14,
+        "title": "Clone Immortality Revealed",
+        "chars": [
+            "victor",
+            "leah",
+            "leta"
+        ],
+        "type": "revelation"
+    },
+    {
+        "ch": 15,
+        "title": "Ben Leaks Evidence",
+        "chars": [
+            "ben",
+            "ruth",
+            "ahdia",
+            "leah",
+            "tess"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 17,
+        "title": "Eidolon Reframes",
+        "chars": [
+            "ben",
+            "leta",
+            "tess",
+            "ahdia"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 19,
+        "title": "Officers Cleared",
+        "chars": [
+            "ben",
+            "tess",
+            "ruth",
+            "ahdia"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 20,
+        "title": "System Protection Undeniable",
+        "chars": [
+            "ben",
+            "victor"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 21,
+        "title": "Leta Killed Manhunt Begins",
+        "chars": [
+            "ruth",
+            "ahdia",
+            "leah",
+            "tess",
+            "victor",
+            "leta"
+        ],
+        "type": "tragedy"
+    },
+    {
+        "ch": 22,
+        "title": "Faeris Broadcast Mob Breaks",
+        "chars": [
+            "victor",
+            "tess"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 23,
+        "title": "Bourn Extracted Tess Vengeance",
+        "chars": [
+            "tess",
+            "ahdia"
+        ],
+        "type": "action_ensemble"
+    },
+    {
+        "ch": 24,
+        "title": "Election Night Reactor Crisis",
+        "chars": [
+            "leah",
+            "ruth",
+            "ahdia"
+        ],
+        "type": "action_ensemble"
+    }
+];
+
+// ═══════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════
+
+let activeFilters = new Set(['all']);
+let selectedEvent = null;
+
+// ═══════════════════════════════════════
+// RENDERING
+// ═══════════════════════════════════════
+
+function init() {
+    renderFilters();
+    renderMonthHeader();
+    renderChapterHeader();
+    renderTracks();
+    renderKnowledgeHeatmap();
+    renderOverlaps();
+    updateOverlapCount();
+}
+
+function renderFilters() {
+    const protFilters = document.getElementById('protagonist-filters');
+    const antFilters = document.getElementById('antagonist-filters');
+
+    Object.entries(CHARACTERS).forEach(([id, char]) => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.dataset.filter = id;
+        btn.style.setProperty('--char-color', char.color);
+        btn.onclick = () => toggleFilter(id);
+        btn.innerHTML = `<span class="dot"></span>${char.name.split(' ')[0]}`;
+
+        if (char.group === 'protagonist' || char.group === 'supporting') {
+            protFilters.appendChild(btn);
+        } else {
+            antFilters.appendChild(btn);
+        }
+    });
+}
+
+function renderMonthHeader() {
+    const header = document.getElementById('month-header');
+    const months = [];
+    for (let m = 1; m <= 12; m++) {
+        const chaptersInMonth = Object.entries(TIMELINE)
+            .filter(([ch, data]) => data.month === m)
+            .length;
+        months.push({ month: m, span: chaptersInMonth });
+    }
+
+    header.innerHTML = months.map(m =>
+        `<div class="month-label" style="flex: ${m.span}">Month ${m.month}</div>`
+    ).join('');
+}
+
+function renderChapterHeader() {
+    const header = document.getElementById('chapter-header');
+    const overlapChapters = new Set(OVERLAPS.map(o => o.ch));
+
+    let html = '';
+    for (let ch = 1; ch <= 24; ch++) {
+        const isOverlap = overlapChapters.has(ch);
+        html += `<div class="chapter-cell${isOverlap ? ' highlight' : ''}" title="${TIMELINE[ch]?.event || ''}">${ch}</div>`;
+    }
+    header.innerHTML = html;
+}
+
+function renderTracks() {
+    const container = document.getElementById('tracks');
+    container.innerHTML = '';
+
+    const visibleChars = activeFilters.has('all')
+        ? Object.keys(CHARACTERS)
+        : [...activeFilters];
+
+    visibleChars.forEach(charId => {
+        const char = CHARACTERS[charId];
+        if (!char) return;
+
+        const events = CHARACTER_EVENTS[charId] || [];
+        const eventMap = new Map(events.map(e => [e.ch, e]));
+
+        const track = document.createElement('div');
+        track.className = 'track';
+        track.style.setProperty('--char-color', char.color);
+
+        // Label
+        const label = document.createElement('div');
+        label.className = 'track-label';
+        label.innerHTML = `<span class="icon">${char.icon}</span>${char.name.split(' ')[0]}`;
+        track.appendChild(label);
+
+        // Timeline
+        const timeline = document.createElement('div');
+        timeline.className = 'track-timeline';
+
+        // Connection line
+        const firstCh = events.length > 0 ? events[0].ch : 0;
+        const lastCh = events.length > 0 ? events[events.length - 1].ch : 0;
+        if (firstCh && lastCh) {
+            const line = document.createElement('div');
+            line.className = 'track-line';
+            line.style.left = `calc(${(firstCh - 0.5) / 24 * 100}% + 25px)`;
+            line.style.width = `calc(${(lastCh - firstCh) / 24 * 100}%)`;
+            timeline.appendChild(line);
+        }
+
+        // Chapter cells with events
+        for (let ch = 1; ch <= 24; ch++) {
+            const cell = document.createElement('div');
+            cell.className = 'track-cell';
+
+            const event = eventMap.get(ch);
+            if (event) {
+                const isOverlap = OVERLAPS.some(o => o.ch === ch && o.chars.includes(charId));
+
+                const marker = document.createElement('div');
+                marker.className = `event-marker ${event.type}${isOverlap ? ' overlap' : ''}`;
+                marker.title = event.text;
+                marker.onclick = () => showDetail(charId, ch, event);
+
+                cell.appendChild(marker);
+            }
+
+            timeline.appendChild(cell);
+        }
+
+        track.appendChild(timeline);
+        container.appendChild(track);
+    });
+}
+
+function renderKnowledgeHeatmap() {
+    const container = document.getElementById('knowledge-heatmap');
+    container.innerHTML = '';
+
+    Object.entries(SECRETS).forEach(([secretId, secret]) => {
+        const row = document.createElement('div');
+        row.className = 'heatmap-row';
+
+        const label = document.createElement('div');
+        label.className = 'heatmap-label';
+        label.textContent = secret.name;
+        row.appendChild(label);
+
+        const cells = document.createElement('div');
+        cells.className = 'heatmap-cells';
+
+        for (let ch = 1; ch <= 24; ch++) {
+            const cell = document.createElement('div');
+            cell.className = 'heatmap-cell';
+
+            // Find awareness at this chapter
+            let aware = [];
+            Object.entries(secret.aware).forEach(([aCh, chars]) => {
+                if (parseInt(aCh) <= ch) {
+                    aware = chars;
+                }
+            });
+
+            if (aware.length > 0) {
+                cell.classList.add(ch >= secret.reveal_ch ? 'revealed' : 'known');
+                cell.title = `Ch${ch}: Known by ${aware.join(', ')}`;
+            }
+
+            cells.appendChild(cell);
+        }
+
+        row.appendChild(cells);
+        container.appendChild(row);
+    });
+}
+
+function renderOverlaps() {
+    const container = document.getElementById('overlaps-list');
+    container.innerHTML = '';
+
+    OVERLAPS.forEach(overlap => {
+        const card = document.createElement('div');
+        card.className = 'overlap-card';
+
+        const typeLabels = {
+            action_ensemble: 'Action Ensemble',
+            confrontation: 'Confrontation',
+            tragedy: 'Tragedy',
+            revelation: 'Revelation'
+        };
+
+        card.innerHTML = `
+            <h4>Ch${overlap.ch}: ${overlap.title}</h4>
+            <div class="meta">${typeLabels[overlap.type] || overlap.type} · ${overlap.chars.length} characters</div>
+            <div class="characters">
+                ${overlap.chars.map(c => {
+                    const char = CHARACTERS[c];
+                    return `<span class="char-tag" style="--char-color: ${char?.color || '#888'}">${char?.name.split(' ')[0] || c}</span>`;
+                }).join('')}
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+}
+
+function updateOverlapCount() {
+    document.getElementById('overlap-count').textContent = OVERLAPS.length;
+}
+
+// ═══════════════════════════════════════
+// INTERACTIONS
+// ═══════════════════════════════════════
+
+function toggleFilter(filterId) {
+    if (filterId === 'all') {
+        activeFilters.clear();
+        activeFilters.add('all');
+    } else {
+        activeFilters.delete('all');
+        if (activeFilters.has(filterId)) {
+            activeFilters.delete(filterId);
+            if (activeFilters.size === 0) {
+                activeFilters.add('all');
+            }
+        } else {
+            activeFilters.add(filterId);
+        }
+    }
+
+    // Update button states
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        const isActive = activeFilters.has(btn.dataset.filter);
+        btn.classList.toggle('active', isActive);
+    });
+
+    renderTracks();
+}
+
+function showDetail(charId, chapter, event) {
+    const panel = document.getElementById('detail-panel');
+    const char = CHARACTERS[charId];
+    const chData = TIMELINE[chapter];
+
+    document.getElementById('detail-title').textContent = `${char.name} · Chapter ${chapter}`;
+    document.getElementById('detail-meta').textContent = `Month ${chData.month} · ${chData.event}`;
+
+    // Build detail content
+    const content = document.getElementById('detail-content');
+
+    // Find overlapping characters
+    const overlap = OVERLAPS.find(o => o.ch === chapter);
+    const otherChars = overlap ? overlap.chars.filter(c => c !== charId) : [];
+
+    // Find active secrets
+    const activeSecrets = Object.entries(SECRETS)
+        .filter(([id, s]) => {
+            const aware = Object.entries(s.aware)
+                .filter(([ch]) => parseInt(ch) <= chapter)
+                .pop();
+            return aware && aware[1].includes(charId);
+        })
+        .map(([id, s]) => s.name);
+
+    content.innerHTML = `
+        <div class="detail-section">
+            <h4>Event</h4>
+            <ul><li>${event.text}</li></ul>
+        </div>
+        <div class="detail-section">
+            <h4>Event Type</h4>
+            <ul><li>${event.type.charAt(0).toUpperCase() + event.type.slice(1)}</li></ul>
+        </div>
+        ${otherChars.length > 0 ? `
+        <div class="detail-section">
+            <h4>Also Present</h4>
+            <ul>${otherChars.map(c => `<li>${CHARACTERS[c]?.name || c}</li>`).join('')}</ul>
+        </div>
+        ` : ''}
+        ${activeSecrets.length > 0 ? `
+        <div class="detail-section">
+            <h4>Secrets Known</h4>
+            <ul>${activeSecrets.map(s => `<li>${s}</li>`).join('')}</ul>
+        </div>
+        ` : ''}
+    `;
+
+    panel.classList.add('visible');
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function closeDetail() {
+    document.getElementById('detail-panel').classList.remove('visible');
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', init);
+</script>
+
+</body>
+</html>

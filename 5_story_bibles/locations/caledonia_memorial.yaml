@@ -1,0 +1,177 @@
+# LOCATION: Caledonia Memorial
+# Schema: location_schema v1.0
+#
+# This is a test location implementing the Go Squad location schema.
+# Book 2, Chapter 1 - Isaiah Bennett memorial protest/riot
+
+meta:
+  id: "caledonia_memorial"
+  name: "Caledonia Memorial Plaza"
+  type: "public_space"
+  first_appearance: "2.1"
+  significance: "major"
+  description: |
+    Public plaza in downtown Caledonia where the Isaiah Bennett memorial
+    protest takes place. Becomes the site of the riot after Eidolon's
+    fear amplification turns peaceful protesters into a mob.
+
+physical:
+  layout_type: "outdoor"
+  size: "large"
+  accessibility:
+    - "Multiple street entrances from all cardinal directions"
+    - "Subway station entrance at northwest corner"
+    - "Parking garage access on south side"
+  hazards:
+    - "Crowd crush risk when densely packed"
+    - "Limited cover during riot"
+    - "Glass storefronts on perimeter"
+  visibility: |
+    Open sightlines across plaza. Elevated memorial statue provides
+    landmark. Surrounding buildings create observation points.
+    Police staging visible from most locations.
+
+atmosphere:
+  lighting: "Daylight (afternoon), shifts to emergency lighting during riot"
+  sound: "Crowd noise, chanting, then screaming and sirens"
+  smell: "Tear gas, smoke from fires"
+  temperature: "Warm summer day"
+  mood: |
+    Transforms from solemn determination to chaos and terror.
+    The space itself becomes a character - peaceful public space
+    turned into battleground.
+
+narrative_function:
+  scenes:
+    - { book: 2, chapter: 1, scene_num: 1, description: "Peaceful memorial begins" }
+    - { book: 2, chapter: 1, scene_num: 2, description: "Eidolon amplification triggers riot" }
+    - { book: 2, chapter: 1, scene_num: 3, description: "Ahdia's 47-minute freeze" }
+    - { book: 2, chapter: 1, scene_num: 4, description: "Aftermath - 23 saved, 16 dead" }
+
+  character_associations:
+    - ahdia      # Burns 23% baseline here
+    - ruth       # Team leader during crisis
+    - tess       # Present, defensive about institutions
+    - ben        # Present, investigation begins
+    - victor     # Community connections tested
+    - leah       # Uncomfortable bystander
+    - leta       # Activist present
+    - korede     # Saved by Ahdia, later significance
+    - eidolon    # Orchestrates fear amplification
+
+  thematic_weight: |
+    The memorial represents institutional failure - Isaiah killed by
+    police, system failed to hold anyone accountable, peaceful protest
+    for accountability itself becomes violent. Sets up Book 2's
+    "CBT failing" theme: trying to control outcomes makes things worse.
+
+spatial_relationships:
+  contains:
+    - "memorial_statue"      # Central landmark
+    - "fountain_area"        # Western section
+    - "stage_platform"       # Where speakers address crowd
+  contained_by: null
+  adjacent_to:
+    - "downtown_caledonia"
+    - "city_hall"            # Visible from plaza
+  travel_time_to:
+    go_squad_base: "15 minutes by car"
+    cadens_facility: "25 minutes by car"
+    hospital: "8 minutes by ambulance"
+
+choreography_notes:
+  entry_points:
+    - { name: "Main Avenue entrance", description: "Wide boulevard, main crowd flow" }
+    - { name: "Side streets", description: "Four secondary entrances, crowd overflow" }
+    - { name: "Subway exit", description: "Underground access, escape route potential" }
+
+  cover_positions:
+    - "Memorial statue base - limited cover"
+    - "Fountain structure - water feature provides partial concealment"
+    - "Vendor carts - scattered, flimsy"
+    - "Perimeter buildings - doorways and alcoves"
+
+  crowd_capacity: 15000
+  peak_attendance: "~12000 at riot peak"
+
+  movement_constraints:
+    - "Crowd density limits individual movement"
+    - "Police barriers create chokepoints"
+    - "Panic causes stampede-like crowd dynamics"
+    - "Ahdia's freeze creates static zones amidst chaos"
+
+# ============================================================
+# SCENE CHOREOGRAPHY: Chapter 1 Riot
+# ============================================================
+
+chapter_1_choreography:
+  phase_1_peaceful:
+    duration: "~2 hours"
+    crowd_mood: "Solemn, determined, hopeful"
+    ahdia_position: "Perimeter, observing with team"
+    police_position: "Staged at edges, visible but not aggressive"
+
+  phase_2_eidolon_trigger:
+    duration: "~15 minutes"
+    trigger: "Eidolon activates fear amplification"
+    crowd_transformation: "Existing fear becomes panic"
+    flashpoint: "Near stage area"
+    ahdia_recognizes: "Something wrong with the fear pattern"
+
+  phase_3_riot:
+    duration: "~47 minutes (frozen time for Ahdia)"
+    ahdia_action: |
+      Enters frozen time. Moves through crowd for 47 subjective minutes.
+      Must physically relocate people one at a time. Cannot affect
+      physics - can only position bodies before time resumes.
+    saves: 23
+    cannot_save: 16
+    korede_save: "Specific moment - pulls him from crush zone"
+    physical_cost: "23% baseline burned (90% → 67-71%)"
+
+  phase_4_aftermath:
+    crowd_dispersal: "Chaotic, some arrested, most flee"
+    team_extraction: "Ruth coordinates withdrawal"
+    ahdia_state: "Collapsed exhaustion, hides severity from team"
+
+# ============================================================
+# KNOWLEDGE STATE AT LOCATION
+# ============================================================
+
+knowledge_during_scene:
+  ahdia:
+    knows_before:
+      - "Team dynamics"
+      - "Power costs in general"
+      - "Kain is local threat"
+    learns_during:
+      - "Eidolon fear amplification exists"
+      - "Can't save everyone (16 died)"
+      - "47 minutes burns 23% baseline"
+    hides_after:
+      - "Severity of baseline loss"
+      - "Emotional impact of deaths"
+
+  team:
+    knows_before:
+      - "Isaiah was killed by police"
+      - "Protest is high-risk"
+    learns_during:
+      - "Eidolon's fear manipulation capabilities"
+      - "Ahdia's rescue attempt"
+    doesnt_know:
+      - "Ahdia's baseline dropped 23%"
+      - "Eidolon's connection to larger conspiracy"
+
+# ============================================================
+# CANON LOCKS
+# ============================================================
+
+canon_locks:
+  - "16 people died in the riot"
+  - "Ahdia saved 23 people including Korede"
+  - "Ahdia burned 47 minutes frozen time"
+  - "Ahdia's baseline dropped from 90% to 67-71%"
+  - "Eidolon's fear amplification was active"
+  - "Team was present and witnessed riot"
+  - "Korede was saved by Ahdia specifically"

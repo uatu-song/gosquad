@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Narrative Engine 6.8</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #8e44ad;
+            --bg: #f4f4f9;
+            --card: #ffffff;
+            --text: #333333;
+            --intro: #3498db;
+            --conflict: #e67e22;
+            --rising: #f39c12;
+            --climax: #e74c3c;
+            --falling: #9b59b6;
+            --conclusion: #27ae60;
+            --tactic: #9b59b6;
+            --trope: #e74c3c;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; }
+
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: var(--primary); margin-bottom: 5px; }
+        .subtitle { color: #666; font-style: italic; }
+        .version { font-size: 0.8em; color: #999; margin-top: 5px; }
+
+        .step {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: none;
+        }
+        .step.active { display: block; animation: fadeIn 0.5s; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        h2 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-top: 0; }
+        h3 { color: var(--primary); margin-top: 25px; }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        select { cursor: pointer; }
+        textarea { resize: vertical; }
+
+        button {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover { background-color: #34495e; }
+        button.secondary { background-color: #95a5a6; }
+        button.accent { background-color: var(--accent); }
+        button.accent:hover { background-color: #7d3c98; }
+        button.small { padding: 6px 12px; font-size: 14px; }
+        button.danger { background-color: #c0392b; }
+
+        .piece-roster { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+        .notation-display {
+            font-family: monospace;
+            background: #333;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 4px;
+            white-space: pre-wrap;
+        }
+
+        .help-text {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 8px;
+            padding: 10px 15px;
+            background: #f8f9fa;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .motif-item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+        .motif-item input { flex: 1; margin: 0; }
+        .motif-item button { margin: 0; }
+
+        /* Analysis display */
+        .analysis-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .analysis-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .analysis-item .label {
+            font-size: 0.8em;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .analysis-item .value {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        /* Plot cards */
+        .plot-card {
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .plot-header {
+            padding: 15px 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .plot-header.intro { background: var(--intro); }
+        .plot-header.conflict { background: var(--conflict); }
+        .plot-header.rising { background: var(--rising); }
+        .plot-header.climax { background: var(--climax); }
+        .plot-header.falling { background: var(--falling); }
+        .plot-header.conclusion { background: var(--conclusion); }
+
+        .plot-header h3 { margin: 0; color: white; font-size: 1.1em; }
+        .plot-header .move-range {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+
+        .plot-body { padding: 20px; }
+
+        /* Character table in introduction */
+        .character-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .character-table th {
+            background: var(--intro);
+            color: white;
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: normal;
+        }
+        .character-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .character-table tr:nth-child(even) { background: #f8f9fa; }
+
+        .pgn-box {
+            font-family: monospace;
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .prompt-group { margin-bottom: 15px; }
+        .prompt-group label {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 5px;
+            display: block;
+        }
+        .prompt-group input, .prompt-group textarea {
+            border: 2px dashed #ddd;
+        }
+        .prompt-group input:focus, .prompt-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        /* Rising events table */
+        .rising-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .rising-table th {
+            background: var(--rising);
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+        .rising-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+        .rising-table tr:nth-child(even) { background: #fafafa; }
+        
+        .rising-table .move-cell {
+            font-family: monospace;
+            font-weight: bold;
+            white-space: nowrap;
+            width: 90px;
+        }
+        .rising-table .category-cell {
+            width: 100px;
+            font-size: 0.85em;
+        }
+        .rising-table .category-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .rising-table .category-badge.tactic { background: var(--tactic); color: white; }
+        .rising-table .category-badge.category { background: var(--rising); color: white; }
+
+        .rising-table .trope-cell {
+            width: 200px;
+        }
+        .rising-table .trope-select {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid var(--trope);
+            border-radius: 4px;
+            font-size: 0.9em;
+            background: #fff9f9;
+        }
+        .rising-table .trope-desc {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        .rising-table textarea {
+            width: 100%;
+            min-height: 60px;
+            border: 1px dashed #ccc;
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 0.95em;
+        }
+
+        /* Output scaffold */
+        #scaffold-output {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: none;
+        }
+        #scaffold-output.active { display: block; }
+        #scaffold-output h2 { text-align: center; border-bottom: none; margin-bottom: 10px; }
+
+        .scaffold-meta {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .output-section {
+            margin-bottom: 35px;
+            page-break-inside: avoid;
+        }
+        .output-section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        .output-section-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        .output-section-icon.intro { background: var(--intro); }
+        .output-section-icon.conflict { background: var(--conflict); }
+        .output-section-icon.rising { background: var(--rising); }
+        .output-section-icon.climax { background: var(--climax); }
+        .output-section-icon.falling { background: var(--falling); }
+        .output-section-icon.conclusion { background: var(--conclusion); }
+
+        .output-section-title h3 { margin: 0; }
+        .output-section-title .moves { color: #666; font-size: 0.9em; }
+
+        .output-field { margin-bottom: 12px; }
+        .output-field .label { font-weight: bold; color: var(--primary); margin-bottom: 4px; }
+        .output-field .value {
+            background: #f8f9fa;
+            padding: 10px 12px;
+            border-radius: 6px;
+            border-left: 3px solid var(--accent);
+        }
+
+        .output-pgn {
+            font-family: monospace;
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .output-write-space {
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 100px;
+            background: #fafafa;
+        }
+        .output-write-space .prompt { color: #999; font-style: italic; }
+
+        .output-events-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        .output-events-table th {
+            background: var(--rising);
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+        .output-events-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #eee;
+            vertical-align: top;
+        }
+
+        .scaffold-controls {
+            margin-top: 30px;
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+
+        @media print {
+            body { background: white; padding: 0; }
+            button, .step, header { display: none !important; }
+            .container { max-width: 100%; }
+            #scaffold-output { display: block !important; box-shadow: none; padding: 20px 0; }
+            .scaffold-controls { display: none !important; }
+            .output-section { page-break-inside: avoid; }
+            .output-write-space { min-height: 120px; border: 1px solid #333; }
+        }
+
+        @media (max-width: 768px) {
+            .piece-roster { grid-template-columns: 1fr; }
+            .analysis-grid { grid-template-columns: 1fr 1fr; }
+            .rising-table { font-size: 0.9em; }
+            .rising-table .trope-cell { width: 150px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Chess Narrative Engine</h1>
+        <div class="subtitle">Plot Structure Story Planner</div>
+        <div class="version">Version 6.8 — Category Detection + Trope Selection</div>
+    </header>
+
+    <!-- STEP 1: Genre Selection -->
+    <div id="step-1" class="step active">
+        <h2>Step 1: Choose Your Genre</h2>
+        <div class="form-group">
+            <label for="genre-select">What kind of story will this be?</label>
+            <select id="genre-select">
+                <optgroup label="Action & Drama">
+                    <option value="battle">Epic Battle (Warfare)</option>
+                    <option value="sports">Sports Match (Commentary)</option>
+                </optgroup>
+                <optgroup label="Fiction & Creative">
+                    <option value="mystery">Noir Mystery (Detective)</option>
+                    <option value="horror">Horror (Survival)</option>
+                    <option value="romance">Romance (High Society)</option>
+                    <option value="scifi">Sci-Fi (Space Opera)</option>
+                    <option value="fantasy">High Fantasy (Magic)</option>
+                </optgroup>
+            </select>
+        </div>
+        <button onclick="goToStep(2)">Next: Name Your Characters</button>
+    </div>
+
+    <!-- STEP 2: Character Roster -->
+    <div id="step-2" class="step">
+        <h2>Step 2: Cast of Characters</h2>
+        <p>Name the pieces. These will be your story's characters.</p>
+        <div class="piece-roster">
+            <div id="white-roster"><h3>White Side</h3></div>
+            <div id="black-roster"><h3>Black Side</h3></div>
+        </div>
+        <br>
+        <button class="secondary" onclick="goToStep(1)">Back</button>
+        <button onclick="goToStep(3)">Next: Story Elements</button>
+    </div>
+
+    <!-- STEP 3: Story Elements -->
+    <div id="step-3" class="step">
+        <h2>Step 3: Story Elements</h2>
+        <p>Define the core of your story before the chess game shapes it.</p>
+        <div class="form-group">
+            <label for="central-conflict">The Central Conflict</label>
+            <input type="text" id="central-conflict" placeholder="What problem must be solved? What are the two sides fighting over?">
+        </div>
+        <div class="form-group">
+            <label for="stakes">The Stakes</label>
+            <input type="text" id="stakes" placeholder="What happens if they lose? Why does this matter?">
+        </div>
+        <div class="form-group">
+            <label for="climax-description">The Climax Moment</label>
+            <input type="text" id="climax-description" placeholder="How is the conflict finally solved? What changes everything?">
+        </div>
+        <h3>Recurring Motifs</h3>
+        <p>Items, symbols, or phrases that appear throughout your story.</p>
+        <div id="motifs-container">
+            <div class="motif-item" data-index="0">
+                <input type="text" placeholder="A recurring element..." id="motif-0">
+                <button class="small danger" onclick="removeMotif(0)">✕</button>
+            </div>
+        </div>
+        <button class="small" onclick="addMotif()">+ Add Another Motif</button>
+        <br><br>
+        <button class="secondary" onclick="goToStep(2)">Back</button>
+        <button onclick="goToStep(4)">Next: Input Your Game</button>
+    </div>
+
+    <!-- STEP 4: PGN Input -->
+    <div id="step-4" class="step">
+        <h2>Step 4: The Chess Game</h2>
+        <p>Paste your chess game. The engine will detect tactics AND categorize every move.</p>
+        <div class="form-group">
+            <label for="game-notation">Chess Notation (PGN)</label>
+            <textarea id="game-notation" rows="10" class="notation-display">1. e4 e5 2. d4 exd4 3. Qxd4 d6 4. e5 Nc6 5. Qa4 dxe5 6. Nf3 Bd7 7. Bb5 Bd6 8. Qb3 Nf6 9. Ng5 Ne4 10. Qxf7#</textarea>
+            <div class="help-text">
+                <strong>Tip:</strong> Every move in the Rising Action will get a category (development, threat, advance, etc.) so students always have something to work with!
+            </div>
+        </div>
+        <button class="secondary" onclick="goToStep(3)">Back</button>
+        <button onclick="analyzeGame()">Analyze Game</button>
+    </div>
+
+    <!-- STEP 5: Plot Structure -->
+    <div id="step-5" class="step">
+        <h2>Step 5: Build Your Plot</h2>
+        <p>Your chess game has been mapped to plot structure. Fill in each section.</p>
+        
+        <div class="analysis-grid">
+            <div class="analysis-item">
+                <div class="label">Total Moves</div>
+                <div class="value" id="stat-moves">--</div>
+            </div>
+            <div class="analysis-item">
+                <div class="label">Conflict Starts</div>
+                <div class="value" id="stat-conflict">--</div>
+            </div>
+            <div class="analysis-item">
+                <div class="label">Rising Events</div>
+                <div class="value" id="stat-rising">--</div>
+            </div>
+            <div class="analysis-item">
+                <div class="label">Climax Move</div>
+                <div class="value" id="stat-climax">--</div>
+            </div>
+        </div>
+
+        <div id="plot-container"></div>
+
+        <button class="secondary" onclick="goToStep(4)">Back</button>
+        <button class="accent" onclick="generateScaffold()">Generate Story Scaffold</button>
+    </div>
+
+    <!-- Output Scaffold -->
+    <div id="scaffold-output">
+        <h2>📖 Your Story Scaffold</h2>
+        <div class="scaffold-meta" id="scaffold-meta"></div>
+        <div id="output-elements"></div>
+        <div id="output-container"></div>
+        <div class="scaffold-controls">
+            <button class="secondary" onclick="closeScaffold()">Back to Editing</button>
+            <button onclick="printScaffold()">Print Story Scaffold</button>
+        </div>
+    </div>
+</div>
+
+<script>
+// ============================================================================
+// GLOBAL STATE
+// ============================================================================
+let config = { genre: 'battle' };
+let roster = { white: {}, black: {} };
+let storyElements = { conflict: '', stakes: '', climax: '', motifs: [] };
+let parsedMoves = [];
+let boardStates = [];
+let plotStructure = {
+    introEnd: 0,
+    conflictMove: 0,
+    risingMoves: [],
+    climaxMove: 0,
+    conclusionMove: 0,
+    gameResult: ''
+};
+let motifCount = 1;
+
+const pieceTypes = [
+    { code: 'K', name: 'King', defaultWhite: 'The White King', defaultBlack: 'The Black King' },
+    { code: 'Q', name: 'Queen', defaultWhite: 'The White Queen', defaultBlack: 'The Black Queen' },
+    { code: 'R', name: 'Rook', defaultWhite: 'The White Rook', defaultBlack: 'The Black Rook' },
+    { code: 'B', name: 'Bishop', defaultWhite: 'The White Bishop', defaultBlack: 'The Black Bishop' },
+    { code: 'N', name: 'Knight', defaultWhite: 'The White Knight', defaultBlack: 'The Black Knight' },
+    { code: 'P', name: 'Pawn', defaultWhite: 'The White Pawn', defaultBlack: 'The Black Pawn' }
+];
+
+const pieceValues = { 'K': 1000, 'Q': 9, 'R': 5, 'B': 3, 'N': 3, 'P': 1 };
+
+const genres = {
+    battle: { label: "Epic Battle", setting: "a war-torn battlefield" },
+    sports: { label: "Sports Match", setting: "a packed stadium" },
+    mystery: { label: "Noir Mystery", setting: "a foggy city at midnight" },
+    horror: { label: "Horror", setting: "an abandoned place full of shadows" },
+    romance: { label: "Romance", setting: "an elegant ballroom" },
+    scifi: { label: "Sci-Fi", setting: "the bridge of a starship" },
+    fantasy: { label: "High Fantasy", setting: "an enchanted kingdom" }
+};
+
+// ============================================================================
+// TROPE DATABASE: 7 genres × (9 categories + 10 tactics) × 3 options
+// ============================================================================
+const tropeDatabase = {
+    battle: {
+        // CATEGORIES
+        development: [
+            { name: "Reinforcements Arrive", desc: "Fresh troops enter the battlefield" },
+            { name: "The Reserve Deploys", desc: "Hidden forces reveal themselves" },
+            { name: "A Champion Steps Forward", desc: "A warrior joins the front lines" }
+        ],
+        advance: [
+            { name: "Ground Gained", desc: "Forces push into enemy territory" },
+            { name: "The Charge Begins", desc: "Troops surge forward aggressively" },
+            { name: "Territory Claimed", desc: "Strategic position secured" }
+        ],
+        retreat: [
+            { name: "Strategic Withdrawal", desc: "Forces fall back to regroup" },
+            { name: "Fighting Retreat", desc: "Pulling back while still engaging" },
+            { name: "Defensive Repositioning", desc: "Moving to stronger ground" }
+        ],
+        threat: [
+            { name: "Weapons Aimed", desc: "A clear threat is made" },
+            { name: "The Warning Shot", desc: "Demonstrating deadly capability" },
+            { name: "In the Crosshairs", desc: "Target acquired and vulnerable" }
+        ],
+        convergence: [
+            { name: "Pincer Movement", desc: "Multiple forces close in on one target" },
+            { name: "Surrounding the Enemy", desc: "Escape routes cut off" },
+            { name: "Concentrated Assault", desc: "All firepower on one position" }
+        ],
+        defense: [
+            { name: "Shields Raised", desc: "Protecting a vulnerable ally" },
+            { name: "Holding the Line", desc: "Standing firm against attack" },
+            { name: "Covering Fire", desc: "Suppressing enemy to protect retreat" }
+        ],
+        exchange: [
+            { name: "Mutual Casualties", desc: "Both sides lose warriors" },
+            { name: "Trading Blows", desc: "Equal damage dealt" },
+            { name: "Costly Victory", desc: "Won the skirmish but paid the price" }
+        ],
+        winningCapture: [
+            { name: "Decisive Strike", desc: "Eliminating a key enemy" },
+            { name: "High-Value Target Down", desc: "A commander falls" },
+            { name: "Breaking Their Strength", desc: "Major enemy asset destroyed" }
+        ],
+        reposition: [
+            { name: "Flanking Maneuver", desc: "Moving to attack from the side" },
+            { name: "Tactical Adjustment", desc: "Improving position" },
+            { name: "Securing the Flank", desc: "Preventing enemy flanking" }
+        ],
+        // TACTICS
+        fork: [
+            { name: "Pincer Attack", desc: "Threatening multiple targets at once" },
+            { name: "Divided Loyalties", desc: "Enemy must choose what to save" },
+            { name: "Double Jeopardy", desc: "Two threats, one defender" }
+        ],
+        pin: [
+            { name: "Frozen in Place", desc: "Cannot move without disaster" },
+            { name: "Human Shield", desc: "Trapped protecting something vital" },
+            { name: "Paralyzed by Duty", desc: "Movement means abandoning post" }
+        ],
+        skewer: [
+            { name: "Forced Retreat", desc: "Leader must flee, exposing troops" },
+            { name: "The Coward's Choice", desc: "Run and abandon, or die" },
+            { name: "Breaking Formation", desc: "Front line crumbles revealing reserves" }
+        ],
+        discoveredAttack: [
+            { name: "Ambush Revealed", desc: "Moving forces uncover hidden strike" },
+            { name: "The Feint", desc: "Distraction reveals the real attack" },
+            { name: "Hidden Artillery", desc: "Movement clears firing line" }
+        ],
+        discoveredCheck: [
+            { name: "Assassination Attempt", desc: "Attack on command revealed" },
+            { name: "The Traitor's Move", desc: "Ally steps aside, revealing threat" },
+            { name: "Command Exposed", desc: "The leader is suddenly vulnerable" }
+        ],
+        doubleCheck: [
+            { name: "Overwhelming Assault", desc: "Attacks from multiple angles" },
+            { name: "No Escape", desc: "Every direction leads to danger" },
+            { name: "The Perfect Storm", desc: "All threats converge at once" }
+        ],
+        battery: [
+            { name: "Artillery Line", desc: "Ranged units align for devastation" },
+            { name: "Concentrated Fire", desc: "Multiple units target one point" },
+            { name: "The Firing Squad", desc: "Lined up for maximum damage" }
+        ],
+        check: [
+            { name: "Assault on Command", desc: "Direct attack on the leader" },
+            { name: "The King Threatened", desc: "Ruler forced to respond" },
+            { name: "Strike at the Heart", desc: "Targeting the most important piece" }
+        ],
+        sacrifice: [
+            { name: "Heroic Sacrifice", desc: "Giving life for victory" },
+            { name: "The Rearguard", desc: "Staying behind so others escape" },
+            { name: "Blood Price", desc: "Paying dearly for advantage" }
+        ],
+        mate: [
+            { name: "Total Victory", desc: "The enemy command falls" },
+            { name: "Unconditional Surrender", desc: "No options remain" },
+            { name: "The War Ends", desc: "Final, decisive victory" }
+        ]
+    },
+    sports: {
+        development: [
+            { name: "Player Enters the Game", desc: "Fresh legs off the bench" },
+            { name: "Getting in Position", desc: "Moving into formation" },
+            { name: "Ready to Play", desc: "Taking an active role" }
+        ],
+        advance: [
+            { name: "Driving Forward", desc: "Pushing toward the goal" },
+            { name: "Breaking Through", desc: "Past the defensive line" },
+            { name: "On the Attack", desc: "Aggressive forward movement" }
+        ],
+        retreat: [
+            { name: "Falling Back", desc: "Returning to defensive position" },
+            { name: "Resetting the Play", desc: "Pulling back to try again" },
+            { name: "Defensive Stance", desc: "Prioritizing protection" }
+        ],
+        threat: [
+            { name: "In Scoring Position", desc: "Ready to strike" },
+            { name: "Open Shot", desc: "Clear opportunity ahead" },
+            { name: "Sizing Up the Goal", desc: "Preparing to score" }
+        ],
+        convergence: [
+            { name: "Double Team", desc: "Two defenders on one player" },
+            { name: "Closing the Lane", desc: "Multiple players block the path" },
+            { name: "Swarming Defense", desc: "Everyone converging" }
+        ],
+        defense: [
+            { name: "Blocking the Shot", desc: "Denying the scoring attempt" },
+            { name: "Covering the Teammate", desc: "Protecting a vulnerable player" },
+            { name: "Defensive Switch", desc: "Taking over coverage" }
+        ],
+        exchange: [
+            { name: "Trading Possessions", desc: "Back and forth action" },
+            { name: "Even Match", desc: "Neither side gains advantage" },
+            { name: "Stalemate Broken", desc: "Finally breaking the tie" }
+        ],
+        winningCapture: [
+            { name: "Turnover!", desc: "Stealing possession decisively" },
+            { name: "Key Stop", desc: "Denying a crucial play" },
+            { name: "Momentum Shift", desc: "Big play changes everything" }
+        ],
+        reposition: [
+            { name: "Finding Space", desc: "Moving to get open" },
+            { name: "Cutting Across", desc: "Lateral movement to confuse defense" },
+            { name: "Setting the Screen", desc: "Positioning to help teammate" }
+        ],
+        fork: [
+            { name: "Two on One", desc: "Outnumbering the defender" },
+            { name: "Pick Your Poison", desc: "Defender can't cover both" },
+            { name: "Creating Options", desc: "Multiple threats at once" }
+        ],
+        pin: [
+            { name: "Trapped on the Sideline", desc: "Nowhere to go" },
+            { name: "Stuck Guarding", desc: "Can't leave the assignment" },
+            { name: "Frozen Out", desc: "Unable to help teammates" }
+        ],
+        skewer: [
+            { name: "Backdoor Cut", desc: "First defender beaten, second exposed" },
+            { name: "Blown Coverage", desc: "Help defense leaves someone open" },
+            { name: "Drawing the Foul", desc: "Forcing defender to commit" }
+        ],
+        discoveredAttack: [
+            { name: "Screen and Roll", desc: "Pick reveals the play" },
+            { name: "Misdirection", desc: "Fake reveals real target" },
+            { name: "The Handoff", desc: "Movement creates opportunity" }
+        ],
+        discoveredCheck: [
+            { name: "Fast Break!", desc: "Sudden attack on goal" },
+            { name: "Breakaway", desc: "Clear path to score" },
+            { name: "The Counter", desc: "Defense becomes offense" }
+        ],
+        doubleCheck: [
+            { name: "Full Court Press", desc: "Pressure from everywhere" },
+            { name: "No Outlet", desc: "Every pass is covered" },
+            { name: "Total Coverage", desc: "Nowhere to go" }
+        ],
+        battery: [
+            { name: "Give and Go", desc: "Players aligned for quick passing" },
+            { name: "In Sync", desc: "Perfect teamwork" },
+            { name: "The Combination Play", desc: "Working together beautifully" }
+        ],
+        check: [
+            { name: "Pressure Defense", desc: "In your face defending" },
+            { name: "Star Player Challenged", desc: "Going at the best" },
+            { name: "Taking It to Them", desc: "Aggressive play" }
+        ],
+        sacrifice: [
+            { name: "Taking the Charge", desc: "Absorbing contact for the team" },
+            { name: "The Hard Foul", desc: "Stopping the play at any cost" },
+            { name: "Giving Up the Body", desc: "Physical sacrifice" }
+        ],
+        mate: [
+            { name: "Game Winner!", desc: "The final score" },
+            { name: "Buzzer Beater", desc: "Victory at the last moment" },
+            { name: "Championship Point", desc: "The clinching moment" }
+        ]
+    },
+    mystery: {
+        development: [
+            { name: "A New Lead", desc: "Evidence points somewhere new" },
+            { name: "Witness Comes Forward", desc: "Someone has information" },
+            { name: "The Plot Thickens", desc: "Complexity increases" }
+        ],
+        advance: [
+            { name: "Closing In", desc: "Getting closer to the truth" },
+            { name: "Following the Trail", desc: "Evidence leads forward" },
+            { name: "Narrowing the Suspects", desc: "Fewer possibilities remain" }
+        ],
+        retreat: [
+            { name: "Dead End", desc: "This lead goes nowhere" },
+            { name: "Back to Square One", desc: "Starting over" },
+            { name: "Rethinking the Case", desc: "Previous theory was wrong" }
+        ],
+        threat: [
+            { name: "Getting Warm", desc: "Close to something dangerous" },
+            { name: "The Warning", desc: "Someone wants you to stop" },
+            { name: "You're Being Watched", desc: "The hunter becomes hunted" }
+        ],
+        convergence: [
+            { name: "Evidence Mounts", desc: "Multiple clues point to one person" },
+            { name: "Closing the Net", desc: "Escape routes narrowing" },
+            { name: "All Roads Lead Here", desc: "Everything connects" }
+        ],
+        defense: [
+            { name: "Covering Tracks", desc: "Someone is hiding evidence" },
+            { name: "The Alibi", desc: "Protection through explanation" },
+            { name: "Laying Low", desc: "Staying out of sight" }
+        ],
+        exchange: [
+            { name: "Quid Pro Quo", desc: "Information for information" },
+            { name: "Trading Secrets", desc: "Mutual disclosure" },
+            { name: "Even Exchange", desc: "Both sides give something up" }
+        ],
+        winningCapture: [
+            { name: "Caught Red-Handed", desc: "Undeniable proof obtained" },
+            { name: "The Confession", desc: "They admit everything" },
+            { name: "Breaking the Case", desc: "Major breakthrough" }
+        ],
+        reposition: [
+            { name: "New Angle", desc: "Looking at it differently" },
+            { name: "Change of Approach", desc: "Trying a new method" },
+            { name: "Shifting Focus", desc: "Different suspect, different theory" }
+        ],
+        fork: [
+            { name: "Two Suspects Cornered", desc: "Evidence implicates both" },
+            { name: "Divided Loyalties", desc: "Someone must choose" },
+            { name: "Double Motive", desc: "Two reasons to kill" }
+        ],
+        pin: [
+            { name: "Caught in a Lie", desc: "Can't explain without revealing more" },
+            { name: "Alibi Trap", desc: "Story doesn't hold up" },
+            { name: "Boxed In", desc: "No way out of the accusation" }
+        ],
+        skewer: [
+            { name: "The Fall Guy Cracks", desc: "Patsy reveals the mastermind" },
+            { name: "Following the Money", desc: "Small fish leads to big fish" },
+            { name: "Unraveling the Conspiracy", desc: "One thread pulls it apart" }
+        ],
+        discoveredAttack: [
+            { name: "Hidden Connection", desc: "Following one lead reveals another" },
+            { name: "The Missing Link", desc: "Something connects everything" },
+            { name: "Unexpected Evidence", desc: "Looking for one thing, finding another" }
+        ],
+        discoveredCheck: [
+            { name: "The Real Target", desc: "This was about someone else" },
+            { name: "You're Next", desc: "The detective is in danger" },
+            { name: "It Was Personal", desc: "The true motive revealed" }
+        ],
+        doubleCheck: [
+            { name: "Nowhere to Run", desc: "Evidence and witness both confirm" },
+            { name: "Airtight Case", desc: "No holes in the theory" },
+            { name: "Multiple Witnesses", desc: "Everyone saw it" }
+        ],
+        battery: [
+            { name: "Building the Case", desc: "Evidence accumulating" },
+            { name: "Connecting the Dots", desc: "Clues align perfectly" },
+            { name: "The Paper Trail", desc: "Documents tell the story" }
+        ],
+        check: [
+            { name: "Confrontation", desc: "Accusing the suspect directly" },
+            { name: "The Interview", desc: "Pressing for answers" },
+            { name: "Show Your Cards", desc: "Revealing what you know" }
+        ],
+        sacrifice: [
+            { name: "The Informant", desc: "Someone risks everything to help" },
+            { name: "Taking the Fall", desc: "Accepting blame for another" },
+            { name: "Burning the Source", desc: "Giving up an asset" }
+        ],
+        mate: [
+            { name: "Case Closed", desc: "Mystery solved" },
+            { name: "Justice Served", desc: "The guilty are caught" },
+            { name: "The Truth Revealed", desc: "Everything comes to light" }
+        ]
+    },
+    horror: {
+        development: [
+            { name: "It Awakens", desc: "Something stirs in the darkness" },
+            { name: "A New Victim", desc: "Another person enters danger" },
+            { name: "The Warning Signs", desc: "Something is wrong here" }
+        ],
+        advance: [
+            { name: "Deeper Into Darkness", desc: "Venturing further in" },
+            { name: "No Turning Back", desc: "Committed to this path" },
+            { name: "Approaching the Source", desc: "Getting closer to the evil" }
+        ],
+        retreat: [
+            { name: "Running Won't Help", desc: "But they try anyway" },
+            { name: "Falling Back", desc: "Desperate escape attempt" },
+            { name: "Back to Safety?", desc: "Is anywhere really safe?" }
+        ],
+        threat: [
+            { name: "It Sees You", desc: "You've been noticed" },
+            { name: "The Shadows Move", desc: "Something is there" },
+            { name: "Death Approaches", desc: "The end draws near" }
+        ],
+        convergence: [
+            { name: "They're Surrounding You", desc: "Escape routes closing" },
+            { name: "Nowhere to Hide", desc: "They know where you are" },
+            { name: "Closing In", desc: "The circle tightens" }
+        ],
+        defense: [
+            { name: "Barricade the Door", desc: "Desperate protection" },
+            { name: "Stay Together", desc: "Safety in numbers... maybe" },
+            { name: "The Last Stand", desc: "Fighting back" }
+        ],
+        exchange: [
+            { name: "Mutual Destruction", desc: "Both sides suffer" },
+            { name: "Pyrrhic Survival", desc: "Escaped, but at what cost?" },
+            { name: "Blood for Blood", desc: "Violence begets violence" }
+        ],
+        winningCapture: [
+            { name: "Another Victim Falls", desc: "The monster claims another" },
+            { name: "It Got Them", desc: "Someone didn't make it" },
+            { name: "Taken by the Darkness", desc: "Lost to the horror" }
+        ],
+        reposition: [
+            { name: "Finding Another Way", desc: "This path is blocked" },
+            { name: "The Long Way Around", desc: "Avoiding the danger" },
+            { name: "Doubling Back", desc: "Retracing steps" }
+        ],
+        fork: [
+            { name: "Split Up!", desc: "The group divides" },
+            { name: "Which Door?", desc: "Both paths lead to danger" },
+            { name: "Choose Who Dies", desc: "Impossible decision" }
+        ],
+        pin: [
+            { name: "Paralyzed with Fear", desc: "Cannot move" },
+            { name: "Trapped", desc: "Movement means death" },
+            { name: "Don't Make a Sound", desc: "Frozen, barely breathing" }
+        ],
+        skewer: [
+            { name: "It's Right Behind You", desc: "Running exposes another" },
+            { name: "They Were Bait", desc: "Used to lure the others" },
+            { name: "Sacrifice the Weak", desc: "Survival of the fittest" }
+        ],
+        discoveredAttack: [
+            { name: "It Was Here All Along", desc: "Hiding in plain sight" },
+            { name: "The Walls Have Eyes", desc: "Being watched all this time" },
+            { name: "Inside the House", desc: "The call is coming from inside" }
+        ],
+        discoveredCheck: [
+            { name: "The Second Monster", desc: "There's more than one" },
+            { name: "The True Evil", desc: "This was just the beginning" },
+            { name: "It Can Find You Anywhere", desc: "No place is safe" }
+        ],
+        doubleCheck: [
+            { name: "No Escape", desc: "Trapped from all sides" },
+            { name: "Surrounded", desc: "They're everywhere" },
+            { name: "The Perfect Trap", desc: "This was planned" }
+        ],
+        battery: [
+            { name: "They Hunt in Packs", desc: "Coordinated predators" },
+            { name: "The Horde Approaches", desc: "Many horrors coming" },
+            { name: "United in Evil", desc: "Working together" }
+        ],
+        check: [
+            { name: "Face to Face", desc: "Confronting the horror" },
+            { name: "It Found You", desc: "Discovered at last" },
+            { name: "The Monster Revealed", desc: "Seeing it clearly now" }
+        ],
+        sacrifice: [
+            { name: "I'll Hold Them Off", desc: "One stays behind" },
+            { name: "Take the Children and Run", desc: "Ultimate sacrifice" },
+            { name: "Blood Offering", desc: "Maybe this will appease it" }
+        ],
+        mate: [
+            { name: "Final Girl/Guy", desc: "The last survivor" },
+            { name: "The Evil Wins", desc: "Darkness triumphant" },
+            { name: "It's Finally Over", desc: "...or is it?" }
+        ]
+    },
+    romance: {
+        development: [
+            { name: "A New Arrival", desc: "Someone interesting appears" },
+            { name: "First Impressions", desc: "Initial meeting" },
+            { name: "Entering Society", desc: "Joining the social scene" }
+        ],
+        advance: [
+            { name: "Growing Closer", desc: "Relationship deepening" },
+            { name: "Bold Declaration", desc: "Making feelings known" },
+            { name: "Taking a Chance", desc: "Risking the heart" }
+        ],
+        retreat: [
+            { name: "Pulling Away", desc: "Creating distance" },
+            { name: "Second Thoughts", desc: "Doubts emerge" },
+            { name: "Pride Wounded", desc: "Withdrawing after rejection" }
+        ],
+        threat: [
+            { name: "A Rival Appears", desc: "Competition for affection" },
+            { name: "The Scandal", desc: "Reputation at risk" },
+            { name: "Forbidden Feelings", desc: "This cannot be" }
+        ],
+        convergence: [
+            { name: "All Eyes on Them", desc: "Everyone watches this couple" },
+            { name: "Caught Between", desc: "Multiple parties interested" },
+            { name: "The Love Triangle Tightens", desc: "Tensions building" }
+        ],
+        defense: [
+            { name: "Protecting Reputation", desc: "Guarding against scandal" },
+            { name: "The Loyal Friend", desc: "Someone defends them" },
+            { name: "Standing By Them", desc: "Support in difficult times" }
+        ],
+        exchange: [
+            { name: "Equally Matched", desc: "Banter between equals" },
+            { name: "Give and Take", desc: "Compromise in love" },
+            { name: "Trading Barbs", desc: "Witty exchanges" }
+        ],
+        winningCapture: [
+            { name: "Winning Their Heart", desc: "Affection secured" },
+            { name: "The Dance", desc: "A perfect moment together" },
+            { name: "Outshining the Rival", desc: "Defeating the competition" }
+        ],
+        reposition: [
+            { name: "Change of Heart", desc: "Feelings shift" },
+            { name: "New Perspective", desc: "Seeing them differently" },
+            { name: "The Misunderstanding", desc: "Things are not what they seemed" }
+        ],
+        fork: [
+            { name: "Love Triangle", desc: "Two hearts, one choice" },
+            { name: "Torn Between Duty and Love", desc: "Impossible choice" },
+            { name: "Two Suitors", desc: "Both vying for attention" }
+        ],
+        pin: [
+            { name: "Bound by Propriety", desc: "Cannot act on feelings" },
+            { name: "Trapped by Engagement", desc: "Promised to another" },
+            { name: "Social Constraints", desc: "Rules forbid this love" }
+        ],
+        skewer: [
+            { name: "The Chaperone Dismissed", desc: "Finally alone" },
+            { name: "Revealing the Truth", desc: "Masks come off" },
+            { name: "Past the Defenses", desc: "Walls crumbling" }
+        ],
+        discoveredAttack: [
+            { name: "Hidden Feelings Revealed", desc: "A confession overheard" },
+            { name: "The Love Letter", desc: "Written proof of affection" },
+            { name: "Secret Admirer Unmasked", desc: "Identity revealed" }
+        ],
+        discoveredCheck: [
+            { name: "The Other Woman/Man", desc: "A rival appears unexpectedly" },
+            { name: "Already Engaged!", desc: "They're promised to another" },
+            { name: "A Scandal Uncovered", desc: "Past threatens present" }
+        ],
+        doubleCheck: [
+            { name: "Caught Between Hearts", desc: "Both confess at once" },
+            { name: "Family and Love Collide", desc: "Duty versus heart" },
+            { name: "Public and Private Pressure", desc: "No escape from choice" }
+        ],
+        battery: [
+            { name: "Matchmaker's Alliance", desc: "Friends conspire" },
+            { name: "Family Approval", desc: "Everyone supports this union" },
+            { name: "The Perfect Couple", desc: "Everyone sees it" }
+        ],
+        check: [
+            { name: "The Declaration", desc: "Confessing love directly" },
+            { name: "A Bold Move", desc: "Taking the risk" },
+            { name: "Confronting Feelings", desc: "No more hiding" }
+        ],
+        sacrifice: [
+            { name: "Letting Them Go", desc: "Love means releasing them" },
+            { name: "Stepping Aside", desc: "For their happiness" },
+            { name: "The Noble Choice", desc: "Giving up personal happiness" }
+        ],
+        mate: [
+            { name: "Happily Ever After", desc: "True love wins" },
+            { name: "The Proposal", desc: "Forever promised" },
+            { name: "At Last!", desc: "Finally together" }
+        ]
+    },
+    scifi: {
+        development: [
+            { name: "Systems Online", desc: "New technology activated" },
+            { name: "Reinforcements Warp In", desc: "Additional ships arrive" },
+            { name: "Scanning Complete", desc: "New information gathered" }
+        ],
+        advance: [
+            { name: "Approaching Target", desc: "Moving into range" },
+            { name: "Entering Enemy Space", desc: "Crossing into hostile territory" },
+            { name: "Full Speed Ahead", desc: "Aggressive approach" }
+        ],
+        retreat: [
+            { name: "Tactical Withdrawal", desc: "Pulling back to regroup" },
+            { name: "Emergency Warp", desc: "Desperate escape" },
+            { name: "Fall Back to the Fleet", desc: "Seeking reinforcements" }
+        ],
+        threat: [
+            { name: "Weapons Lock", desc: "Target acquired" },
+            { name: "Charging Main Cannon", desc: "Preparing to fire" },
+            { name: "In Firing Range", desc: "Close enough to strike" }
+        ],
+        convergence: [
+            { name: "Crossfire Position", desc: "Multiple ships targeting one" },
+            { name: "Pincer Formation", desc: "Fleet closing in" },
+            { name: "Surrounded", desc: "Enemies on all sides" }
+        ],
+        defense: [
+            { name: "Shields Up", desc: "Activating protection" },
+            { name: "Evasive Maneuvers", desc: "Avoiding incoming fire" },
+            { name: "Point Defense Active", desc: "Intercepting threats" }
+        ],
+        exchange: [
+            { name: "Mutual Damage", desc: "Both ships hit" },
+            { name: "Trading Fire", desc: "Back and forth combat" },
+            { name: "Stalemate Broken", desc: "Someone gains advantage" }
+        ],
+        winningCapture: [
+            { name: "Direct Hit!", desc: "Critical damage dealt" },
+            { name: "Ship Disabled", desc: "Enemy vessel neutralized" },
+            { name: "Boarding Successful", desc: "Taking the enemy ship" }
+        ],
+        reposition: [
+            { name: "New Vector", desc: "Changing approach angle" },
+            { name: "Flanking Maneuver", desc: "Coming around the side" },
+            { name: "Adjusting Orbit", desc: "Better tactical position" }
+        ],
+        fork: [
+            { name: "Multiple Targets", desc: "Weapons tracking several ships" },
+            { name: "Split Their Forces", desc: "Making them divide" },
+            { name: "Two Threats, One Defense", desc: "Can't protect both" }
+        ],
+        pin: [
+            { name: "Tractor Beam Lock", desc: "Ship cannot escape" },
+            { name: "Engines Offline", desc: "Dead in space" },
+            { name: "Trapped in the Debris", desc: "Cannot maneuver" }
+        ],
+        skewer: [
+            { name: "Flagship Retreats", desc: "Command ship pulls back" },
+            { name: "Shield Bearer Down", desc: "Protective ship destroyed" },
+            { name: "Formation Broken", desc: "Fleet scattered" }
+        ],
+        discoveredAttack: [
+            { name: "Decloaking", desc: "Hidden ship reveals itself" },
+            { name: "Secondary Weapons", desc: "More firepower revealed" },
+            { name: "Sensor Blind Spot", desc: "Attack from hidden angle" }
+        ],
+        discoveredCheck: [
+            { name: "The Second Fleet", desc: "More enemies arrive" },
+            { name: "It Was a Trap!", desc: "Ambush revealed" },
+            { name: "Hyperdrive Disabled", desc: "Cannot escape" }
+        ],
+        doubleCheck: [
+            { name: "Nowhere to Jump", desc: "All escape routes blocked" },
+            { name: "Total Engagement", desc: "Enemies everywhere" },
+            { name: "Caught in the Net", desc: "No way out" }
+        ],
+        battery: [
+            { name: "Synchronized Weapons", desc: "Fleet fires together" },
+            { name: "Combining Firepower", desc: "Multiple ships, one target" },
+            { name: "Attack Pattern Delta", desc: "Coordinated assault" }
+        ],
+        check: [
+            { name: "Targeting the Bridge", desc: "Attack on command center" },
+            { name: "Captain in Danger", desc: "Leadership threatened" },
+            { name: "Hull Breach!", desc: "Critical systems hit" }
+        ],
+        sacrifice: [
+            { name: "Ramming Speed", desc: "Using the ship as a weapon" },
+            { name: "Buying Time", desc: "One ship holds the line" },
+            { name: "Self-Destruct Initiated", desc: "Taking them with us" }
+        ],
+        mate: [
+            { name: "Enemy Destroyed", desc: "Total victory" },
+            { name: "Core Breach", desc: "Flagship explodes" },
+            { name: "The War Ends", desc: "Final decisive battle" }
+        ]
+    },
+    fantasy: {
+        development: [
+            { name: "A Hero Emerges", desc: "Champion steps forward" },
+            { name: "Magic Awakens", desc: "Power manifests" },
+            { name: "The Prophecy Begins", desc: "Destiny unfolds" }
+        ],
+        advance: [
+            { name: "Into the Unknown", desc: "Venturing forth" },
+            { name: "Crossing the Threshold", desc: "Entering the realm" },
+            { name: "Approaching the Tower", desc: "Nearing the goal" }
+        ],
+        retreat: [
+            { name: "Strategic Withdrawal", desc: "Living to fight another day" },
+            { name: "The Narrow Escape", desc: "Barely getting away" },
+            { name: "Return to the Sanctuary", desc: "Seeking safety" }
+        ],
+        threat: [
+            { name: "Spell Prepared", desc: "Magic ready to unleash" },
+            { name: "The Dragon Stirs", desc: "Great danger approaches" },
+            { name: "Dark Omen", desc: "Evil draws near" }
+        ],
+        convergence: [
+            { name: "Surrounded by Enemies", desc: "Foes close in" },
+            { name: "The Dark Alliance", desc: "Evil forces unite" },
+            { name: "Multiple Curses", desc: "Several threats at once" }
+        ],
+        defense: [
+            { name: "Shield Spell", desc: "Magical protection" },
+            { name: "The Guardian Stands", desc: "Protector takes position" },
+            { name: "Ward Activated", desc: "Defensive magic triggered" }
+        ],
+        exchange: [
+            { name: "Spell for Spell", desc: "Magical duel" },
+            { name: "Blood and Steel", desc: "Warriors clash equally" },
+            { name: "The Cost of Magic", desc: "Power has a price" }
+        ],
+        winningCapture: [
+            { name: "Slaying the Beast", desc: "Monster defeated" },
+            { name: "Spell Successful", desc: "Magic hits the mark" },
+            { name: "The Artifact Claimed", desc: "Treasure secured" }
+        ],
+        reposition: [
+            { name: "Teleportation", desc: "Magical movement" },
+            { name: "The Hidden Path", desc: "Secret route found" },
+            { name: "Changing Form", desc: "Shapeshifting for advantage" }
+        ],
+        fork: [
+            { name: "Hydra's Choice", desc: "Multiple heads, multiple threats" },
+            { name: "Two Curses", desc: "Can only break one" },
+            { name: "Divided Quest", desc: "Party must split up" }
+        ],
+        pin: [
+            { name: "Cursed Ground", desc: "Cannot leave this spot" },
+            { name: "Binding Spell", desc: "Magically restrained" },
+            { name: "Oath-Bound", desc: "Honor demands staying" }
+        ],
+        skewer: [
+            { name: "Dragon's Roar", desc: "Terror scatters formation" },
+            { name: "Breaking the Shield", desc: "Protector falls first" },
+            { name: "True Name Spoken", desc: "Defenses crumble" }
+        ],
+        discoveredAttack: [
+            { name: "Illusion Fades", desc: "Hidden truth revealed" },
+            { name: "The Spy Unmasked", desc: "Traitor among us" },
+            { name: "Magical Trap Triggered", desc: "Hidden spell activates" }
+        ],
+        discoveredCheck: [
+            { name: "The Prophecy Unfolds", desc: "Destiny accelerates" },
+            { name: "Greater Evil Revealed", desc: "This was only the servant" },
+            { name: "The True Enemy", desc: "Real threat emerges" }
+        ],
+        doubleCheck: [
+            { name: "Caught Between Worlds", desc: "Threatened in two realms" },
+            { name: "Dark and Light Collide", desc: "Forces converge" },
+            { name: "No Escape from Fate", desc: "Destiny demands" }
+        ],
+        battery: [
+            { name: "Combined Magic", desc: "Spellcasters unite power" },
+            { name: "The Fellowship United", desc: "Heroes stand together" },
+            { name: "Ritual Circle Complete", desc: "Power multiplied" }
+        ],
+        check: [
+            { name: "Confronting the Dark Lord", desc: "Facing ultimate evil" },
+            { name: "The Challenge Issued", desc: "Combat demanded" },
+            { name: "Spell of Binding", desc: "Magic targets the ruler" }
+        ],
+        sacrifice: [
+            { name: "Blood Magic", desc: "Power through sacrifice" },
+            { name: "The Chosen One Falls", desc: "Hero gives everything" },
+            { name: "Breaking the Curse", desc: "Life for freedom" }
+        ],
+        mate: [
+            { name: "Evil Vanquished", desc: "Darkness defeated" },
+            { name: "The Realm Saved", desc: "Peace restored" },
+            { name: "Happily Ever After", desc: "The quest complete" }
+        ]
+    }
+};
+
+// ============================================================================
+// BOARD STATE ENGINE
+// ============================================================================
+class ChessBoard {
+    constructor() { this.reset(); }
+
+    reset() {
+        this.board = Array(8).fill(null).map(() => Array(8).fill(null));
+        this.setupInitialPosition();
+    }
+
+    setupInitialPosition() {
+        this.board[0] = [
+            { type: 'R', color: 'white' }, { type: 'N', color: 'white' }, { type: 'B', color: 'white' }, { type: 'Q', color: 'white' },
+            { type: 'K', color: 'white' }, { type: 'B', color: 'white' }, { type: 'N', color: 'white' }, { type: 'R', color: 'white' }
+        ];
+        this.board[1] = Array(8).fill(null).map(() => ({ type: 'P', color: 'white' }));
+        this.board[6] = Array(8).fill(null).map(() => ({ type: 'P', color: 'black' }));
+        this.board[7] = [
+            { type: 'R', color: 'black' }, { type: 'N', color: 'black' }, { type: 'B', color: 'black' }, { type: 'Q', color: 'black' },
+            { type: 'K', color: 'black' }, { type: 'B', color: 'black' }, { type: 'N', color: 'black' }, { type: 'R', color: 'black' }
+        ];
+    }
+
+    fileToIndex(file) { return file.charCodeAt(0) - 'a'.charCodeAt(0); }
+    rankToIndex(rank) { return parseInt(rank) - 1; }
+    indexToFile(i) { return String.fromCharCode('a'.charCodeAt(0) + i); }
+    indexToRank(i) { return (i + 1).toString(); }
+    indexToSquare(f, r) { return this.indexToFile(f) + this.indexToRank(r); }
+    
+    squareToIndices(sq) {
+        if (!sq || sq.length < 2) return null;
+        return { f: this.fileToIndex(sq[0]), r: this.rankToIndex(sq[1]) };
+    }
+
+    isValidSquare(f, r) { return f >= 0 && f < 8 && r >= 0 && r < 8; }
+
+    getPiece(square) {
+        const idx = this.squareToIndices(square);
+        if (!idx || !this.isValidSquare(idx.f, idx.r)) return null;
+        return this.board[idx.r][idx.f];
+    }
+
+    setPiece(square, piece) {
+        const idx = this.squareToIndices(square);
+        if (idx && this.isValidSquare(idx.f, idx.r)) {
+            this.board[idx.r][idx.f] = piece;
+        }
+    }
+
+    findKing(color) {
+        for (let r = 0; r < 8; r++) {
+            for (let f = 0; f < 8; f++) {
+                const p = this.board[r][f];
+                if (p && p.type === 'K' && p.color === color) return this.indexToSquare(f, r);
+            }
+        }
+        return null;
+    }
+
+    findPieces(type, color) {
+        const pieces = [];
+        for (let r = 0; r < 8; r++) {
+            for (let f = 0; f < 8; f++) {
+                const p = this.board[r][f];
+                if (p && p.type === type && p.color === color) {
+                    pieces.push({ square: this.indexToSquare(f, r), piece: p });
+                }
+            }
+        }
+        return pieces;
+    }
+
+    getAllPieces(color) {
+        const pieces = [];
+        for (let r = 0; r < 8; r++) {
+            for (let f = 0; f < 8; f++) {
+                const p = this.board[r][f];
+                if (p && p.color === color) {
+                    pieces.push({ square: this.indexToSquare(f, r), piece: p });
+                }
+            }
+        }
+        return pieces;
+    }
+
+    isSlider(pieceType) { return ['B', 'R', 'Q'].includes(pieceType); }
+
+    getAttackedSquares(square) {
+        const piece = this.getPiece(square);
+        if (!piece) return [];
+        const idx = this.squareToIndices(square);
+        const attacked = [];
+
+        const addIfValid = (f, r) => { if (this.isValidSquare(f, r)) attacked.push(this.indexToSquare(f, r)); };
+
+        const trace = (directions) => {
+            for (const [df, dr] of directions) {
+                let f = idx.f + df, r = idx.r + dr;
+                while (this.isValidSquare(f, r)) {
+                    attacked.push(this.indexToSquare(f, r));
+                    if (this.board[r][f]) break;
+                    f += df; r += dr;
+                }
+            }
+        };
+
+        switch (piece.type) {
+            case 'P':
+                const dir = piece.color === 'white' ? 1 : -1;
+                addIfValid(idx.f - 1, idx.r + dir);
+                addIfValid(idx.f + 1, idx.r + dir);
+                break;
+            case 'N':
+                [[-2,-1],[-2,1],[-1,-2],[-1,2],[1,-2],[1,2],[2,-1],[2,1]].forEach(([df,dr]) => addIfValid(idx.f+df, idx.r+dr));
+                break;
+            case 'B': trace([[-1,-1],[-1,1],[1,-1],[1,1]]); break;
+            case 'R': trace([[-1,0],[1,0],[0,-1],[0,1]]); break;
+            case 'Q': trace([[-1,-1],[-1,1],[1,-1],[1,1],[-1,0],[1,0],[0,-1],[0,1]]); break;
+            case 'K':
+                [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]].forEach(([df,dr]) => addIfValid(idx.f+df, idx.r+dr));
+                break;
+        }
+        return attacked;
+    }
+
+    getAllAttackedSquares(color) {
+        const attacked = new Set();
+        this.getAllPieces(color).forEach(({ square }) => {
+            this.getAttackedSquares(square).forEach(sq => attacked.add(sq));
+        });
+        return attacked;
+    }
+
+    applyMove(move, color) {
+        move.capturedPiece = null;
+
+        if (move.isCastleKingside) {
+            const rank = color === 'white' ? '1' : '8';
+            this.setPiece('g' + rank, this.getPiece('e' + rank));
+            this.setPiece('f' + rank, this.getPiece('h' + rank));
+            this.setPiece('e' + rank, null);
+            this.setPiece('h' + rank, null);
+            move.sourceSquare = 'e' + rank;
+            return;
+        }
+        if (move.isCastleQueenside) {
+            const rank = color === 'white' ? '1' : '8';
+            this.setPiece('c' + rank, this.getPiece('e' + rank));
+            this.setPiece('d' + rank, this.getPiece('a' + rank));
+            this.setPiece('e' + rank, null);
+            this.setPiece('a' + rank, null);
+            move.sourceSquare = 'e' + rank;
+            return;
+        }
+
+        if (!move.destination) return;
+
+        if (move.isCapture) {
+            const captured = this.getPiece(move.destination);
+            if (captured) move.capturedPiece = captured.type;
+        }
+
+        const destIdx = this.squareToIndices(move.destination);
+        let sourceSquare = null;
+        const candidates = this.findPieces(move.piece, color);
+
+        for (const { square } of candidates) {
+            if (move.sourceFile && square[0] !== move.sourceFile) continue;
+            if (move.sourceRank && square[1] !== move.sourceRank) continue;
+            const attacked = this.getAttackedSquares(square);
+            
+            if (move.piece === 'P') {
+                const idx = this.squareToIndices(square);
+                const dir = color === 'white' ? 1 : -1;
+                if (move.isCapture) {
+                    if (attacked.includes(move.destination)) { sourceSquare = square; break; }
+                } else {
+                    if (idx.f === destIdx.f) {
+                        if (idx.r + dir === destIdx.r && !this.getPiece(move.destination)) { sourceSquare = square; break; }
+                        const startRank = color === 'white' ? 1 : 6;
+                        if (idx.r === startRank && idx.r + 2*dir === destIdx.r) { sourceSquare = square; break; }
+                    }
+                }
+            } else {
+                if (attacked.includes(move.destination)) { sourceSquare = square; break; }
+            }
+        }
+
+        if (sourceSquare) {
+            const piece = this.getPiece(sourceSquare);
+            this.setPiece(sourceSquare, null);
+            if (move.isPromotion) {
+                this.setPiece(move.destination, { type: move.promotionPiece, color });
+            } else {
+                this.setPiece(move.destination, piece);
+            }
+            move.sourceSquare = sourceSquare;
+        }
+    }
+
+    clone() {
+        const newBoard = new ChessBoard();
+        newBoard.board = this.board.map(row => row.map(p => p ? {...p} : null));
+        return newBoard;
+    }
+}
+
+// ============================================================================
+// MOVE CATEGORIZATION
+// ============================================================================
+
+function categorizeMove(boardBefore, boardAfter, move, color) {
+    const enemyColor = color === 'white' ? 'black' : 'white';
+    
+    // Check for tactics first (they take priority)
+    const tactics = detectTactics(boardBefore, boardAfter, move, color);
+    if (tactics.length > 0) {
+        return { type: 'tactic', tactic: tactics[0].type, tactics };
+    }
+
+    // Get source and destination info
+    const source = move.sourceSquare;
+    const dest = move.destination;
+    if (!source || !dest) return { type: 'category', category: 'reposition' };
+
+    const sourceIdx = boardAfter.squareToIndices(source);
+    const destIdx = boardAfter.squareToIndices(dest);
+    if (!sourceIdx || !destIdx) return { type: 'category', category: 'reposition' };
+
+    // Capture categorization
+    if (move.isCapture && move.capturedPiece) {
+        const movedPiece = boardAfter.getPiece(dest);
+        if (movedPiece) {
+            const capturerValue = pieceValues[movedPiece.type];
+            const capturedValue = pieceValues[move.capturedPiece];
+            if (capturerValue < capturedValue) return { type: 'category', category: 'winningCapture' };
+            if (Math.abs(capturerValue - capturedValue) <= 1) return { type: 'category', category: 'exchange' };
+        }
+    }
+
+    // Development: piece moves from back ranks
+    const backRanks = color === 'white' ? [0, 1] : [6, 7];
+    const activeRanks = color === 'white' ? [2, 3, 4, 5] : [2, 3, 4, 5];
+    if (backRanks.includes(sourceIdx.r) && !backRanks.includes(destIdx.r) && move.piece !== 'P') {
+        return { type: 'category', category: 'development' };
+    }
+
+    // Advance: moving toward enemy
+    const forward = color === 'white' ? (destIdx.r > sourceIdx.r) : (destIdx.r < sourceIdx.r);
+    const enemyHalf = color === 'white' ? destIdx.r >= 4 : destIdx.r <= 3;
+    
+    // Retreat: moving backward
+    const backward = color === 'white' ? (destIdx.r < sourceIdx.r) : (destIdx.r > sourceIdx.r);
+    const ownHalf = color === 'white' ? destIdx.r <= 3 : destIdx.r >= 4;
+
+    // Threat detection: does this piece now attack an undefended valuable enemy piece?
+    const attackedAfter = boardAfter.getAttackedSquares(dest);
+    const enemyPieces = boardAfter.getAllPieces(enemyColor);
+    for (const { square, piece } of enemyPieces) {
+        if (attackedAfter.includes(square) && pieceValues[piece.type] >= 3) {
+            return { type: 'category', category: 'threat' };
+        }
+    }
+
+    // Convergence: multiple pieces now attack same square
+    const friendlyPieces = boardAfter.getAllPieces(color);
+    for (const sq of attackedAfter) {
+        let attackers = 0;
+        for (const { square: fSq } of friendlyPieces) {
+            if (boardAfter.getAttackedSquares(fSq).includes(sq)) attackers++;
+        }
+        if (attackers >= 2) {
+            const target = boardAfter.getPiece(sq);
+            if (target && target.color === enemyColor && pieceValues[target.type] >= 3) {
+                return { type: 'category', category: 'convergence' };
+            }
+            // Check if converging on king-adjacent squares
+            const enemyKing = boardAfter.findKing(enemyColor);
+            if (enemyKing) {
+                const kingIdx = boardAfter.squareToIndices(enemyKing);
+                const sqIdx = boardAfter.squareToIndices(sq);
+                if (sqIdx && Math.abs(kingIdx.f - sqIdx.f) <= 1 && Math.abs(kingIdx.r - sqIdx.r) <= 1) {
+                    return { type: 'category', category: 'convergence' };
+                }
+            }
+        }
+    }
+
+    // Defense: moving to defend an attacked friendly piece
+    const attackedByEnemy = boardAfter.getAllAttackedSquares(enemyColor);
+    for (const { square: fSq, piece: fPiece } of friendlyPieces) {
+        if (attackedByEnemy.has(fSq) && pieceValues[fPiece.type] >= 3) {
+            if (attackedAfter.includes(fSq)) {
+                return { type: 'category', category: 'defense' };
+            }
+        }
+    }
+
+    // Direction-based categories
+    if (forward && enemyHalf) return { type: 'category', category: 'advance' };
+    if (backward && ownHalf) return { type: 'category', category: 'retreat' };
+
+    // Default
+    return { type: 'category', category: 'reposition' };
+}
+
+function detectTactics(boardBefore, boardAfter, move, color) {
+    const tactics = [];
+    const enemyColor = color === 'white' ? 'black' : 'white';
+    
+    if (!move.destination || move.isCastleKingside || move.isCastleQueenside) return tactics;
+
+    const movedPiece = boardAfter.getPiece(move.destination);
+    if (!movedPiece) return tactics;
+
+    const enemyKingSquare = boardAfter.findKing(enemyColor);
+    const attackedByMoved = boardAfter.getAttackedSquares(move.destination);
+    const enemyPieces = boardAfter.getAllPieces(enemyColor);
+
+    // Checkmate
+    if (move.isMate) {
+        tactics.push({ type: 'mate' });
+        return tactics;
+    }
+
+    // Check
+    if (move.isCheck) {
+        tactics.push({ type: 'check' });
+    }
+
+    // Fork
+    const attackedEnemies = enemyPieces.filter(({ square }) => attackedByMoved.includes(square));
+    const valuableAttacked = attackedEnemies.filter(({ piece }) => pieceValues[piece.type] >= 3 || piece.type === 'K');
+    if (valuableAttacked.length >= 2) {
+        tactics.push({ type: 'fork', targets: valuableAttacked.map(p => p.piece.type) });
+    }
+
+    // Pin / Skewer detection for sliders
+    if (boardAfter.isSlider(movedPiece.type)) {
+        const directions = [[-1,-1],[-1,1],[1,-1],[1,1],[-1,0],[1,0],[0,-1],[0,1]];
+        const destIdx = boardAfter.squareToIndices(move.destination);
+
+        for (const [df, dr] of directions) {
+            // Check if this piece type can attack in this direction
+            const isDiagonal = df !== 0 && dr !== 0;
+            const isStraight = df === 0 || dr === 0;
+            if (movedPiece.type === 'B' && !isDiagonal) continue;
+            if (movedPiece.type === 'R' && !isStraight) continue;
+
+            let f = destIdx.f + df, r = destIdx.r + dr;
+            let firstEnemy = null, secondEnemy = null;
+
+            while (boardAfter.isValidSquare(f, r)) {
+                const sq = boardAfter.indexToSquare(f, r);
+                const piece = boardAfter.board[r][f];
+                if (piece) {
+                    if (piece.color === enemyColor) {
+                        if (!firstEnemy) firstEnemy = { square: sq, piece };
+                        else { secondEnemy = { square: sq, piece }; break; }
+                    } else break;
+                }
+                f += df; r += dr;
+            }
+
+            if (firstEnemy && secondEnemy) {
+                const firstVal = pieceValues[firstEnemy.piece.type];
+                const secondVal = pieceValues[secondEnemy.piece.type];
+                // Pin: first piece is valuable (>=3) and second is King or more valuable
+                if (firstVal >= 3 && (secondEnemy.piece.type === 'K' || secondVal > firstVal)) {
+                    tactics.push({ type: 'pin', pinned: firstEnemy.piece.type });
+                } 
+                // Skewer: first piece is more valuable than second, and first is valuable
+                else if (firstVal >= 5 && firstVal > secondVal) {
+                    tactics.push({ type: 'skewer', front: firstEnemy.piece.type });
+                }
+            }
+        }
+    }
+
+    // Sacrifice
+    if (move.isCapture && move.capturedPiece && movedPiece) {
+        const capturedVal = pieceValues[move.capturedPiece];
+        const capturerVal = pieceValues[movedPiece.type];
+        if (capturerVal > capturedVal + 2) {
+            tactics.push({ type: 'sacrifice' });
+        }
+    }
+
+    return tactics;
+}
+
+// ============================================================================
+// MOVE PARSER
+// ============================================================================
+
+function parseMove(moveStr) {
+    const result = {
+        raw: moveStr, piece: 'P', destination: '', sourceFile: null, sourceRank: null,
+        isCapture: false, isCheck: false, isMate: false,
+        isCastleKingside: false, isCastleQueenside: false,
+        isPromotion: false, promotionPiece: null
+    };
+
+    let m = moveStr.trim().replace(/[!?]/g, '');
+
+    if (m.includes('#')) { result.isMate = true; result.isCheck = true; m = m.replace('#', ''); }
+    else if (m.includes('+')) { result.isCheck = true; m = m.replace(/\+/g, ''); }
+
+    if (m === 'O-O-O' || m === '0-0-0') { result.isCastleQueenside = true; result.piece = 'K'; return result; }
+    if (m === 'O-O' || m === '0-0') { result.isCastleKingside = true; result.piece = 'K'; return result; }
+
+    const promoMatch = m.match(/=([QRBN])/);
+    if (promoMatch) { result.isPromotion = true; result.promotionPiece = promoMatch[1]; m = m.replace(/=[QRBN]/, ''); }
+
+    if (m.includes('x')) { result.isCapture = true; m = m.replace('x', ''); }
+    if (['K', 'Q', 'R', 'B', 'N'].includes(m.charAt(0))) { result.piece = m.charAt(0); m = m.substring(1); }
+
+    const destMatch = m.match(/([a-h][1-8])$/);
+    if (destMatch) { result.destination = destMatch[1]; m = m.replace(/[a-h][1-8]$/, ''); }
+
+    if (m.length > 0) {
+        if (/[a-h]/.test(m)) result.sourceFile = m.match(/[a-h]/)[0];
+        if (/[1-8]/.test(m)) result.sourceRank = m.match(/[1-8]/)[0];
+    }
+
+    return result;
+}
+
+// ============================================================================
+// PLOT STRUCTURE
+// ============================================================================
+
+function detectCenterCrossing(moves) {
+    for (let i = 0; i < moves.length; i++) {
+        const move = moves[i];
+        if (!move.destination || move.isCastleKingside || move.isCastleQueenside) continue;
+        const destRank = parseInt(move.destination[1]);
+        if (move.turn === 'white' && destRank >= 5) return i;
+        if (move.turn === 'black' && destRank <= 4) return i;
+    }
+    return Math.min(5, moves.length - 1);
+}
+
+function detectClimax(moves) {
+    let mateIndex = moves.findIndex(m => m.isMate);
+    if (mateIndex > 0) {
+        for (let i = mateIndex - 1; i >= 0; i--) {
+            if (moves[i].isCheck) return i;
+        }
+        return mateIndex - 1;
+    }
+    for (let i = moves.length - 2; i >= 0; i--) {
+        if (moves[i].isCheck) return i;
+    }
+    return Math.max(0, moves.length - 2);
+}
+
+// ============================================================================
+// TROPE HELPERS
+// ============================================================================
+
+function getTropes(categoryOrTactic) {
+    const genreTropes = tropeDatabase[config.genre];
+    if (genreTropes && genreTropes[categoryOrTactic]) {
+        return genreTropes[categoryOrTactic];
+    }
+    // Fallback
+    return [
+        { name: categoryOrTactic, desc: "A significant moment" },
+        { name: categoryOrTactic, desc: "Something important happens" },
+        { name: categoryOrTactic, desc: "The story advances" }
+    ];
+}
+
+function getCategoryLabel(cat) {
+    const labels = {
+        development: 'Development',
+        advance: 'Advance',
+        retreat: 'Retreat',
+        threat: 'Threat',
+        convergence: 'Convergence',
+        defense: 'Defense',
+        exchange: 'Exchange',
+        winningCapture: 'Winning Capture',
+        reposition: 'Reposition',
+        fork: 'Fork',
+        pin: 'Pin',
+        skewer: 'Skewer',
+        discoveredAttack: 'Discovered Attack',
+        discoveredCheck: 'Discovered Check',
+        doubleCheck: 'Double Check',
+        battery: 'Battery',
+        check: 'Check',
+        sacrifice: 'Sacrifice',
+        mate: 'Checkmate'
+    };
+    return labels[cat] || cat;
+}
+
+function getPieceName(code) {
+    const names = {
+        'K': 'King',
+        'Q': 'Queen', 
+        'R': 'Rook',
+        'B': 'Bishop',
+        'N': 'Knight',
+        'P': 'Pawn'
+    };
+    return names[code] || code;
+}
+
+// ============================================================================
+// NAVIGATION
+// ============================================================================
+
+function goToStep(step) {
+    // Save any existing data first
+    saveCurrentStepData();
+    
+    // Generate roster if going to step 2
+    if (step === 2) {
+        config.genre = document.getElementById('genre-select').value;
+        generateRosterForm('white');
+        generateRosterForm('black');
+    }
+    
+    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+    document.getElementById(`step-${step}`).classList.add('active');
+    window.scrollTo(0, 0);
+}
+
+function saveCurrentStepData() {
+    // Save roster data (only if form exists)
+    ['white', 'black'].forEach(color => {
+        pieceTypes.forEach(pt => {
+            const input = document.getElementById(`${color}-${pt.code}`);
+            if (input && input.value) {
+                roster[color][pt.code] = input.value;
+            }
+        });
+    });
+    // Save story elements (only if form exists)
+    const conflict = document.getElementById('central-conflict');
+    const stakes = document.getElementById('stakes');
+    const climaxDesc = document.getElementById('climax-description');
+    if (conflict && conflict.value) storyElements.conflict = conflict.value;
+    if (stakes && stakes.value) storyElements.stakes = stakes.value;
+    if (climaxDesc && climaxDesc.value) storyElements.climax = climaxDesc.value;
+    // Save motifs
+    const motifInputs = document.querySelectorAll('.motif-item input');
+    if (motifInputs.length > 0) {
+        storyElements.motifs = [];
+        motifInputs.forEach(input => {
+            if (input.value.trim()) storyElements.motifs.push(input.value.trim());
+        });
+    }
+}
+
+function generateRosterForm(color) {
+    const container = document.getElementById(`${color}-roster`);
+    container.innerHTML = `<h3 style="margin-top:0">${color === 'white' ? 'White' : 'Black'} Side</h3>`;
+    pieceTypes.forEach(pt => {
+        const defaultName = color === 'white' ? pt.defaultWhite : pt.defaultBlack;
+        const existing = roster[color][pt.code] || defaultName;
+        container.innerHTML += `<div class="form-group"><label>${pt.name}</label><input type="text" id="${color}-${pt.code}" value="${existing}"></div>`;
+    });
+}
+
+function addMotif() {
+    const container = document.getElementById('motifs-container');
+    const index = motifCount++;
+    const div = document.createElement('div');
+    div.className = 'motif-item';
+    div.dataset.index = index;
+    div.innerHTML = `<input type="text" placeholder="Another recurring element..." id="motif-${index}"><button class="small danger" onclick="removeMotif(${index})">✕</button>`;
+    container.appendChild(div);
+}
+
+function removeMotif(index) {
+    const item = document.querySelector(`.motif-item[data-index="${index}"]`);
+    if (item && document.querySelectorAll('.motif-item').length > 1) item.remove();
+}
+
+// ============================================================================
+// GAME ANALYSIS
+// ============================================================================
+
+function analyzeGame() {
+    saveCurrentStepData();
+    const rawPgn = document.getElementById('game-notation').value;
+
+    const cleanText = rawPgn
+        .replace(/\{[^}]*\}/g, '')
+        .replace(/\[[^\]]*\]/g, '')
+        .replace(/\d+\.\s*/g, ' ')
+        .replace(/\n/g, ' ');
+
+    const resultMatch = rawPgn.match(/(1-0|0-1|1\/2-1\/2)/);
+    const gameResult = resultMatch ? resultMatch[1] : '1-0';
+
+    const moveStrings = cleanText.split(/\s+/).filter(m =>
+        m.trim().length > 0 && !['1-0', '0-1', '1/2-1/2', '*'].includes(m)
+    );
+
+    const board = new ChessBoard();
+    parsedMoves = [];
+    boardStates = [];
+
+    moveStrings.forEach((moveStr, index) => {
+        const move = parseMove(moveStr);
+        const color = index % 2 === 0 ? 'white' : 'black';
+        
+        const boardBefore = board.clone();
+        board.applyMove(move, color);
+        const boardAfter = board.clone();
+
+        // Categorize the move
+        const categorization = categorizeMove(boardBefore, boardAfter, move, color);
+        move.categorization = categorization;
+
+        move.index = index;
+        move.turn = color;
+        move.moveNumber = Math.floor(index / 2) + 1;
+        move.charName = roster[color][move.piece];
+
+        parsedMoves.push(move);
+        boardStates.push(boardAfter);
+    });
+
+    // Build plot structure
+    const conflictIndex = detectCenterCrossing(parsedMoves);
+    const climaxIndex = detectClimax(parsedMoves);
+    const mateIndex = parsedMoves.findIndex(m => m.isMate);
+    const conclusionIndex = mateIndex >= 0 ? mateIndex : parsedMoves.length - 1;
+
+    // Rising action is everything BETWEEN conflict and climax (exclusive of both)
+    const risingMoves = [];
+    for (let i = conflictIndex + 1; i < climaxIndex; i++) {
+        risingMoves.push(parsedMoves[i]);
+    }
+
+    plotStructure = {
+        introEnd: Math.max(0, conflictIndex - 1),
+        conflictMove: conflictIndex,
+        risingMoves: risingMoves,
+        climaxMove: climaxIndex,
+        conclusionMove: conclusionIndex,
+        gameResult: gameResult
+    };
+
+    // Update stats
+    document.getElementById('stat-moves').textContent = parsedMoves.length;
+    document.getElementById('stat-conflict').textContent = `Move ${conflictIndex + 1}`;
+    document.getElementById('stat-rising').textContent = risingMoves.length;
+    document.getElementById('stat-climax').textContent = `Move ${climaxIndex + 1}`;
+
+    buildPlotUI();
+    goToStep(5);
+}
+
+// ============================================================================
+// PLOT UI
+// ============================================================================
+
+function buildPlotUI() {
+    const container = document.getElementById('plot-container');
+    const genre = genres[config.genre];
+    let html = '';
+
+    // INTRODUCTION
+    const introMoves = parsedMoves.slice(0, plotStructure.introEnd + 1);
+    const introPgn = introMoves.map(m => (m.turn === 'white' ? `${m.moveNumber}. ` : '') + m.raw).join(' ');
+    
+    // Collect characters appearing in intro
+    const introCharacters = new Map();
+    introMoves.forEach(m => {
+        const key = `${m.turn}-${m.piece}`;
+        if (!introCharacters.has(key)) {
+            introCharacters.set(key, {
+                name: m.charName,
+                piece: m.piece,
+                side: m.turn,
+                moves: []
+            });
+        }
+        introCharacters.get(key).moves.push(m.moveNumber);
+    });
+    
+    const characterList = Array.from(introCharacters.values());
+    
+    html += `
+        <div class="plot-card">
+            <div class="plot-header intro">
+                <h3>📖 Introduction</h3>
+                <span class="move-range">Moves 1–${plotStructure.introEnd + 1}</span>
+            </div>
+            <div class="plot-body">
+                <div class="pgn-box">${introPgn || '(Opening moves)'}</div>
+                
+                <div class="prompt-group">
+                    <label>WHO appears in this section?</label>
+                    <table class="character-table">
+                        <thead><tr><th>Character Name</th><th>Piece</th><th>Side</th><th>Active in Move(s)</th></tr></thead>
+                        <tbody>
+                            ${characterList.map(c => `
+                                <tr>
+                                    <td><strong>${c.name}</strong></td>
+                                    <td>${getPieceName(c.piece)}</td>
+                                    <td>${c.side === 'white' ? 'White' : 'Black'}</td>
+                                    <td>${c.moves.join(', ')}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                    <p class="help-text">These characters appear in your introduction. How do you introduce them to the reader?</p>
+                    <textarea id="intro-who" rows="2" placeholder="Add details about these characters..."></textarea>
+                </div>
+                <div class="prompt-group">
+                    <label>WHAT is the situation?</label>
+                    <textarea id="intro-what" rows="2" placeholder="What's happening when the story starts?"></textarea>
+                </div>
+                <div class="prompt-group">
+                    <label>WHERE does it take place?</label>
+                    <input type="text" id="intro-where" placeholder="The setting... (Suggestion: ${genre.setting})">
+                </div>
+                <div class="prompt-group">
+                    <label>WHEN is this happening?</label>
+                    <input type="text" id="intro-when" placeholder="Time period or moment...">
+                </div>
+            </div>
+        </div>
+    `;
+
+    // CONFLICT
+    const conflictMove = parsedMoves[plotStructure.conflictMove];
+    html += `
+        <div class="plot-card">
+            <div class="plot-header conflict">
+                <h3>⚡ Conflict Begins</h3>
+                <span class="move-range">Move ${plotStructure.conflictMove + 1}</span>
+            </div>
+            <div class="plot-body">
+                <div class="pgn-box">${conflictMove.moveNumber}${conflictMove.turn === 'black' ? '...' : '.'} ${conflictMove.raw}</div>
+                <p><strong>${conflictMove.charName}</strong> crosses into enemy territory.</p>
+                ${storyElements.conflict ? `<p>Your conflict: <em>"${storyElements.conflict}"</em></p>` : ''}
+                <div class="prompt-group">
+                    <label>WHY does the conflict start now?</label>
+                    <textarea id="conflict-why" rows="2" placeholder="What triggers this moment?"></textarea>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // RISING ACTION
+    html += `
+        <div class="plot-card">
+            <div class="plot-header rising">
+                <h3>📈 Rising Action</h3>
+                <span class="move-range">Moves ${plotStructure.conflictMove + 2}–${plotStructure.climaxMove}</span>
+            </div>
+            <div class="plot-body">
+                <p>Every move is a story event. Select a trope and describe what happens.</p>
+                <table class="rising-table">
+                    <thead>
+                        <tr>
+                            <th>Move</th>
+                            <th>Type</th>
+                            <th>Choose a Trope</th>
+                            <th>What Happens?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    `;
+
+    plotStructure.risingMoves.forEach((move, i) => {
+        const cat = move.categorization;
+        const key = cat.type === 'tactic' ? cat.tactic : cat.category;
+        const tropes = getTropes(key);
+        const badgeClass = cat.type === 'tactic' ? 'tactic' : 'category';
+
+        html += `
+            <tr>
+                <td class="move-cell">${move.moveNumber}${move.turn === 'black' ? '...' : '.'} ${move.raw}</td>
+                <td class="category-cell"><span class="category-badge ${badgeClass}">${getCategoryLabel(key)}</span></td>
+                <td class="trope-cell">
+                    <select class="trope-select" id="trope-${i}" onchange="updateTropeDesc(${i})">
+                        ${tropes.map((t, ti) => `<option value="${ti}">${t.name}</option>`).join('')}
+                    </select>
+                    <div class="trope-desc" id="trope-desc-${i}">${tropes[0].desc}</div>
+                </td>
+                <td>
+                    <textarea id="event-${i}" placeholder="What does ${move.charName}'s action mean in your story?"></textarea>
+                </td>
+            </tr>
+        `;
+    });
+
+    html += `
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    `;
+
+    // CLIMAX
+    const climaxMove = parsedMoves[plotStructure.climaxMove];
+    const climaxCat = climaxMove.categorization;
+    const climaxKey = climaxCat.type === 'tactic' ? climaxCat.tactic : climaxCat.category;
+    const climaxTropes = getTropes(climaxKey);
+
+    html += `
+        <div class="plot-card">
+            <div class="plot-header climax">
+                <h3>💥 Climax</h3>
+                <span class="move-range">Move ${plotStructure.climaxMove + 1}</span>
+            </div>
+            <div class="plot-body">
+                <div class="pgn-box">${climaxMove.moveNumber}${climaxMove.turn === 'black' ? '...' : '.'} ${climaxMove.raw}</div>
+                <p><strong>${climaxMove.charName}</strong> — ${climaxMove.isCheck ? 'Check!' : 'the decisive moment.'}</p>
+                ${storyElements.climax ? `<p>Your climax idea: <em>"${storyElements.climax}"</em></p>` : ''}
+                <div class="prompt-group">
+                    <label>The Climax Trope:</label>
+                    <select class="trope-select" id="climax-trope" style="max-width:300px;">
+                        ${climaxTropes.map((t, ti) => `<option value="${ti}">${t.name} — ${t.desc}</option>`).join('')}
+                    </select>
+                </div>
+                <div class="prompt-group">
+                    <label>What is THE MOMENT that changes everything?</label>
+                    <textarea id="climax-moment" rows="3" placeholder="Describe the turning point..."></textarea>
+                </div>
+            </div>
+        </div>
+    `;
+
+    // CONCLUSION
+    const conclusionMove = parsedMoves[plotStructure.conclusionMove];
+    const resultText = plotStructure.gameResult === '1-0' ? 'White wins' : 
+                       plotStructure.gameResult === '0-1' ? 'Black wins' : 'Draw';
+    const mateText = conclusionMove.isMate ? ' by checkmate' : '';
+
+    html += `
+        <div class="plot-card">
+            <div class="plot-header conclusion">
+                <h3>🏁 Conclusion</h3>
+                <span class="move-range">Move ${plotStructure.conclusionMove + 1}</span>
+            </div>
+            <div class="plot-body">
+                <div class="pgn-box">${conclusionMove.moveNumber}${conclusionMove.turn === 'black' ? '...' : '.'} ${conclusionMove.raw}</div>
+                <p><strong>Result:</strong> ${resultText}${mateText}</p>
+                ${storyElements.stakes ? `<p>The stakes were: <em>"${storyElements.stakes}"</em></p>` : ''}
+                <div class="prompt-group">
+                    <label>How does everything settle?</label>
+                    <textarea id="conclusion-settle" rows="2" placeholder="The final state of your world..."></textarea>
+                </div>
+                <div class="prompt-group">
+                    <label>What was won? What was lost?</label>
+                    <textarea id="conclusion-outcome" rows="2" placeholder="The ultimate outcome..."></textarea>
+                </div>
+            </div>
+        </div>
+    `;
+
+    container.innerHTML = html;
+}
+
+function updateTropeDesc(index) {
+    const select = document.getElementById(`trope-${index}`);
+    const descEl = document.getElementById(`trope-desc-${index}`);
+    const move = plotStructure.risingMoves[index];
+    const cat = move.categorization;
+    const key = cat.type === 'tactic' ? cat.tactic : cat.category;
+    const tropes = getTropes(key);
+    descEl.textContent = tropes[parseInt(select.value)].desc;
+}
+
+// ============================================================================
+// SCAFFOLD GENERATION
+// ============================================================================
+
+function generateScaffold() {
+    const genre = genres[config.genre];
+
+    // Gather data
+    const scaffoldData = {
+        intro: {
+            who: document.getElementById('intro-who')?.value || '',
+            what: document.getElementById('intro-what')?.value || '',
+            where: document.getElementById('intro-where')?.value || '',
+            when: document.getElementById('intro-when')?.value || ''
+        },
+        conflict: {
+            why: document.getElementById('conflict-why')?.value || ''
+        },
+        rising: [],
+        climax: {
+            trope: '',
+            moment: document.getElementById('climax-moment')?.value || ''
+        },
+        conclusion: {
+            settle: document.getElementById('conclusion-settle')?.value || '',
+            outcome: document.getElementById('conclusion-outcome')?.value || ''
+        }
+    };
+
+    // Gather rising events
+    plotStructure.risingMoves.forEach((move, i) => {
+        const tropeSelect = document.getElementById(`trope-${i}`);
+        const eventText = document.getElementById(`event-${i}`)?.value || '';
+        const cat = move.categorization;
+        const key = cat.type === 'tactic' ? cat.tactic : cat.category;
+        const tropes = getTropes(key);
+        const selectedTrope = tropes[parseInt(tropeSelect?.value || 0)];
+
+        scaffoldData.rising.push({
+            move: `${move.moveNumber}${move.turn === 'black' ? '...' : '.'} ${move.raw}`,
+            character: move.charName,
+            category: getCategoryLabel(key),
+            trope: selectedTrope.name,
+            tropeDesc: selectedTrope.desc,
+            event: eventText
+        });
+    });
+
+    // Climax trope
+    const climaxMove = parsedMoves[plotStructure.climaxMove];
+    if (climaxMove && climaxMove.categorization) {
+        const climaxKey = climaxMove.categorization.type === 'tactic' 
+            ? climaxMove.categorization.tactic 
+            : climaxMove.categorization.category;
+        const climaxTropeSelect = document.getElementById('climax-trope');
+        const climaxTropes = getTropes(climaxKey);
+        scaffoldData.climax.trope = climaxTropes[parseInt(climaxTropeSelect?.value || 0)]?.name || '';
+    }
+
+    // Build output HTML
+    let outputHtml = `
+        <div class="scaffold-header">
+            <h2>📖 Your Story Scaffold</h2>
+            <p><strong>${genre.label}</strong> • ${parsedMoves.length} Moves</p>
+        </div>
+    `;
+
+    // Story Elements Summary
+    if (storyElements.conflict || storyElements.stakes || storyElements.climax) {
+        outputHtml += `<div class="scaffold-section elements">
+            <h3>📋 Story Elements</h3>
+            ${storyElements.conflict ? `<div class="element-item"><strong>Central Conflict:</strong> ${storyElements.conflict}</div>` : ''}
+            ${storyElements.stakes ? `<div class="element-item"><strong>Stakes:</strong> ${storyElements.stakes}</div>` : ''}
+            ${storyElements.climax ? `<div class="element-item"><strong>Climax Moment:</strong> ${storyElements.climax}</div>` : ''}
+            ${storyElements.motifs.length > 0 ? `<div class="element-item"><strong>Recurring Motifs:</strong> ${storyElements.motifs.join(' • ')}</div>` : ''}
+        </div>`;
+    }
+
+    // Introduction
+    outputHtml += `<div class="scaffold-section intro">
+        <h3>📖 Introduction</h3>
+        <p class="move-range">Moves 1–${plotStructure.introEnd + 1}</p>
+        ${scaffoldData.intro.who ? `<div class="scaffold-field"><strong>Characters:</strong> ${scaffoldData.intro.who}</div>` : ''}
+        ${scaffoldData.intro.what ? `<div class="scaffold-field"><strong>Situation:</strong> ${scaffoldData.intro.what}</div>` : ''}
+        ${scaffoldData.intro.where ? `<div class="scaffold-field"><strong>Setting:</strong> ${scaffoldData.intro.where}</div>` : ''}
+        ${scaffoldData.intro.when ? `<div class="scaffold-field"><strong>Time:</strong> ${scaffoldData.intro.when}</div>` : ''}
+        <div class="write-space">Write your introduction here...</div>
+    </div>`;
+
+    // Conflict
+    outputHtml += `<div class="scaffold-section conflict">
+        <h3>⚡ Conflict Begins</h3>
+        <p class="move-range">Move ${plotStructure.conflictMove + 1}</p>
+        ${scaffoldData.conflict.why ? `<div class="scaffold-field"><strong>Trigger:</strong> ${scaffoldData.conflict.why}</div>` : ''}
+        <div class="write-space">Write the moment conflict begins...</div>
+    </div>`;
+
+    // Rising Action
+    outputHtml += `<div class="scaffold-section rising">
+        <h3>📈 Rising Action</h3>
+        <p class="move-range">Moves ${plotStructure.conflictMove + 2}–${plotStructure.climaxMove}</p>`;
+    
+    if (scaffoldData.rising.length > 0) {
+        outputHtml += `<table class="scaffold-table">
+            <thead><tr><th>Move</th><th>Character</th><th>Trope</th><th>Event</th></tr></thead>
+            <tbody>`;
+        scaffoldData.rising.forEach(r => {
+            outputHtml += `<tr>
+                <td>${r.move}</td>
+                <td>${r.character}</td>
+                <td><strong>${r.trope}</strong><br><small>${r.tropeDesc}</small></td>
+                <td>${r.event || '<em>—</em>'}</td>
+            </tr>`;
+        });
+        outputHtml += `</tbody></table>`;
+    }
+    outputHtml += `<div class="write-space">Write the escalating events...</div>
+    </div>`;
+
+    // Climax
+    outputHtml += `<div class="scaffold-section climax">
+        <h3>💥 Climax</h3>
+        <p class="move-range">Move ${plotStructure.climaxMove + 1}</p>
+        ${scaffoldData.climax.trope ? `<div class="scaffold-field"><strong>Trope:</strong> ${scaffoldData.climax.trope}</div>` : ''}
+        ${scaffoldData.climax.moment ? `<div class="scaffold-field"><strong>The Moment:</strong> ${scaffoldData.climax.moment}</div>` : ''}
+        <div class="write-space">Write the climactic moment...</div>
+    </div>`;
+
+    // Conclusion
+    const result = parsedMoves[parsedMoves.length - 1]?.isMate ? 'checkmate' : 'end of game';
+    const winner = parsedMoves[parsedMoves.length - 1]?.turn === 'white' ? 'White' : 'Black';
+    outputHtml += `<div class="scaffold-section conclusion">
+        <h3>🏁 Conclusion</h3>
+        <p class="move-range">Move ${parsedMoves.length} — ${winner} wins by ${result}</p>
+        ${scaffoldData.conclusion.settle ? `<div class="scaffold-field"><strong>Resolution:</strong> ${scaffoldData.conclusion.settle}</div>` : ''}
+        ${scaffoldData.conclusion.outcome ? `<div class="scaffold-field"><strong>Outcome:</strong> ${scaffoldData.conclusion.outcome}</div>` : ''}
+        <div class="write-space">Write your conclusion...</div>
+    </div>`;
+
+    document.getElementById('output-container').innerHTML = outputHtml;
+    document.getElementById('scaffold-output').style.display = 'block';
+    document.getElementById('plot-container').style.display = 'none';
+}
+
+function closeScaffold() {
+    document.getElementById('scaffold-output').style.display = 'none';
+    document.getElementById('plot-container').style.display = 'block';
+}
+
+function printScaffold() {
+    const content = document.getElementById('output-container').innerHTML;
+    const genre = genres[config.genre];
+    
+    const printWindow = window.open('', '_blank');
+    const html = '<!DOCTYPE html><html><head>' +
+        '<title>Story Scaffold - ' + genre.label + '</title>' +
+        '<style>' +
+        'body { font-family: "Segoe UI", Tahoma, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; line-height: 1.6; }' +
+        'h2 { text-align: center; color: #2c3e50; }' +
+        'h3 { color: #2c3e50; border-bottom: 2px solid #8e44ad; padding-bottom: 5px; }' +
+        '.scaffold-section { margin-bottom: 25px; padding: 15px; border-radius: 8px; background: #f9f9f9; }' +
+        '.scaffold-section.intro { border-left: 4px solid #3498db; }' +
+        '.scaffold-section.conflict { border-left: 4px solid #e67e22; }' +
+        '.scaffold-section.rising { border-left: 4px solid #f39c12; }' +
+        '.scaffold-section.climax { border-left: 4px solid #e74c3c; }' +
+        '.scaffold-section.conclusion { border-left: 4px solid #27ae60; }' +
+        '.scaffold-section.elements { border-left: 4px solid #8e44ad; }' +
+        '.move-range { color: #666; font-size: 0.9em; }' +
+        '.scaffold-field { margin: 8px 0; }' +
+        '.element-item { margin: 5px 0; }' +
+        '.write-space { border: 2px dashed #ccc; padding: 15px; margin-top: 10px; min-height: 60px; color: #999; font-style: italic; }' +
+        'table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 0.9em; }' +
+        'th { background: #f39c12; color: white; padding: 8px; text-align: left; }' +
+        'td { padding: 8px; border-bottom: 1px solid #ddd; vertical-align: top; }' +
+        'tr:nth-child(even) { background: #f5f5f5; }' +
+        '</style></head><body>' + content + '</body></html>';
+    
+    printWindow.document.write(html);
+    printWindow.document.close();
+    printWindow.onload = function() { printWindow.print(); };
+}
+</script>
+
+</body>
+</html>

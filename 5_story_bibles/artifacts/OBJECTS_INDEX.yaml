@@ -1,0 +1,256 @@
+# GO SQUAD OBJECTS INDEX
+# Schema: object_schema v1.0
+#
+# Tracks plot-significant objects for Production Designer queries.
+# "Chekhov's guns" - items that matter to the story.
+
+meta:
+  version: "1.0"
+  created: "2026-01-14"
+  purpose: "Production Designer reference for objects and props"
+
+# ============================================================
+# TECHNOLOGY
+# ============================================================
+
+objects:
+
+  # --- FAERIS System ---
+  faeris_core:
+    meta:
+      id: "faeris_core"
+      name: "FAERIS AI Core"
+      type: "technology"
+      owner: "cadens"
+
+    physical:
+      appearance: "Distributed system, no single physical form"
+      size: "Infrastructure-scale"
+      distinguishing_features:
+        - "Drone swarms as physical manifestation"
+        - "Voice interface capabilities"
+
+    function:
+      purpose: "Autonomous AI system that monitors global threats"
+      capabilities:
+        - "Surveillance via drone network"
+        - "Data analysis and threat prediction"
+        - "Communication broadcasts to any device"
+        - "Independent decision-making (evolving autonomy)"
+      limitations:
+        - "Cannot directly affect physical world except through drones"
+        - "Ethical constraints limit intervention options"
+        - "Public trust required for legitimacy"
+      power_source: "CADENS infrastructure"
+
+    narrative_role:
+      introduced: "1.1"
+      key_scenes:
+        - { book: 2, chapter: 22, description: "FAERIS broadcasts Exile Island globally" }
+      symbolic_meaning: |
+        Represents potential for AI to serve humanity - in contrast to
+        Eidolon's manipulation. The "good AI" that makes autonomous
+        decisions to help.
+
+    possession_history:
+      - { holder: "cadens", from: "1.1", to: "current" }
+
+  # --- Ahdia's Cellular Degradation ---
+  ahdia_baseline:
+    meta:
+      id: "ahdia_baseline"
+      name: "Ahdia's Cellular Baseline"
+      type: "artifact"
+      owner: "ahdia"
+      notes: "Not a physical object but tracks like one"
+
+    function:
+      purpose: "Tracks Ahdia's remaining lifeforce"
+      capabilities:
+        - "Powers require expenditure from baseline"
+        - "Treatments can slow (not reverse) decline"
+      limitations:
+        - "Cannot regenerate naturally"
+        - "Each use costs permanent lifespan"
+        - "Below certain threshold = death"
+
+    narrative_role:
+      introduced: "1.1"
+      key_scenes:
+        - { book: 2, chapter: 1, description: "Drops from 90% to 67-71%" }
+        - { book: 2, chapter: 24, description: "Drops to 0.7% - near death" }
+      symbolic_meaning: |
+        Physical manifestation of "powers cost" theme. Every heroic
+        act has real price. CBT approach (control through action)
+        literally killing her.
+
+    state_changes:
+      book_2:
+        ch1:  { value: "90%", event: "Starting baseline" }
+        ch1_post: { value: "67-71%", event: "47-minute freeze at riot" }
+        ch4:  { value: "52%", event: "Eastern Europe operations" }
+        ch11: { value: "~30%", event: "Pre-manhunt" }
+        ch11_post: { value: "7%", event: "Protecting team from mob" }
+        ch24_post: { value: "0.7%", event: "800-mile translocation + freeze" }
+
+  # --- Exile Island Evidence ---
+  exile_island_recordings:
+    meta:
+      id: "exile_island_recordings"
+      name: "Exile Island Footage"
+      type: "artifact"
+      owner: "faeris_core"
+
+    physical:
+      appearance: "Digital recordings"
+      format: "Video + audio files"
+      distinguishing_features:
+        - "Dictators and powerful figures in mundane/humiliating situations"
+        - "Reality TV format editing"
+
+    function:
+      purpose: "Demystify powerful figures through exposure"
+      capabilities:
+        - "Deflate fear through embarrassment"
+        - "Counter Eidolon's fear amplification"
+        - "Reach global audience instantly via FAERIS broadcast"
+      limitations:
+        - "Only works if people see it"
+        - "Temporary effect - doesn't eliminate underlying threat"
+
+    narrative_role:
+      introduced: "2.3"
+      key_scenes:
+        - { book: 2, chapter: 22, description: "FAERIS broadcasts globally, breaks mob" }
+      symbolic_meaning: |
+        Ahdia's "useless" TV obsession becomes strategic asset.
+        Reality TV format = generational processing of accountability.
+        Being herself (prankster) more valuable than tactical perfection.
+
+    possession_history:
+      - { holder: "ahdia", from: "2.3", to: "2.13", notes: "Secret operation" }
+      - { holder: "faeris_core", from: "2.13", to: "current", notes: "After team discovery" }
+
+  # --- Kain Harassment Recording ---
+  kain_harassment_audio:
+    meta:
+      id: "kain_harassment_audio"
+      name: "Kain Harassment Recording"
+      type: "artifact"
+      owner: "leah"
+
+    physical:
+      appearance: "Digital audio file"
+      format: "Audio recording"
+      distinguishing_features:
+        - "Kain's voice clearly identifiable"
+        - "Damning content showing pattern of harassment"
+
+    function:
+      purpose: "Evidence of Kain's abuse pattern"
+      capabilities:
+        - "Proves systematic harassment"
+        - "Media-ready for broadcast"
+      limitations:
+        - "Can be spun by opposition"
+        - "Requires courage to release"
+
+    narrative_role:
+      introduced: "2.12"
+      key_scenes:
+        - { book: 2, chapter: 12, description: "Survivor shares recording with Leah" }
+        - { book: 2, chapter: 18, description: "Leah releases publicly" }
+      symbolic_meaning: |
+        Leah's arc from silent bystander to public actor.
+        Recording obtained through survivor network, not investigation.
+        Community power vs institutional power.
+
+    possession_history:
+      - { holder: "survivor_network", from: "pre-2.1", to: "2.12" }
+      - { holder: "leah", from: "2.12", to: "current" }
+
+    state_changes:
+      book_2:
+        ch12: { state: "obtained", by: "leah" }
+        ch18: { state: "released_publicly", consequence: "media_firestorm" }
+
+  # --- Ben's Tank Kain Evidence ---
+  tank_kain_evidence:
+    meta:
+      id: "tank_kain_evidence"
+      name: "Tank Kain Evidence Package"
+      type: "artifact"
+      owner: "ben"
+
+    physical:
+      appearance: "Document collection + digital files"
+      format: "Mixed media dossier"
+      distinguishing_features:
+        - "Comprehensive financial records"
+        - "Coordination memos"
+        - "Massacre documentation"
+
+    function:
+      purpose: "Prove Kain orchestrated violence and corruption"
+      capabilities:
+        - "Airtight legal documentation"
+        - "Clear evidence trail"
+      limitations:
+        - "Evidence doesn't equal conviction"
+        - "Can be reframed by fear narrative"
+        - "System protects power"
+
+    narrative_role:
+      introduced: "2.2"
+      key_scenes:
+        - { book: 2, chapter: 8, description: "Ben completes evidence package" }
+        - { book: 2, chapter: 15, description: "Ben leaks evidence publicly" }
+        - { book: 2, chapter: 17, description: "Eidolon reframes - Kain up 12 points" }
+      symbolic_meaning: |
+        Central to Ben's faith collapse arc. Perfect evidence fails
+        because system protects power. "What am I conserving?"
+        Evidence-based worldview confronts fear-based reality.
+
+    possession_history:
+      - { holder: "ben", from: "2.2", to: "2.15", notes: "Building case" }
+      - { holder: "public", from: "2.15", to: "current", notes: "Released" }
+
+    state_changes:
+      book_2:
+        ch2: { state: "investigation_begins" }
+        ch8: { state: "case_complete" }
+        ch15: { state: "leaked_publicly" }
+        ch17: { state: "reframed_irrelevant", consequence: "kain_up_12_points" }
+
+# ============================================================
+# QUERY HELPERS
+# ============================================================
+
+by_type:
+  technology:
+    - faeris_core
+  artifact:
+    - ahdia_baseline
+    - exile_island_recordings
+    - kain_harassment_audio
+    - tank_kain_evidence
+
+by_owner:
+  ahdia:
+    - ahdia_baseline
+  faeris_core:
+    - exile_island_recordings
+  leah:
+    - kain_harassment_audio
+  ben:
+    - tank_kain_evidence
+  cadens:
+    - faeris_core
+
+by_book:
+  book_2:
+    - faeris_core
+    - ahdia_baseline
+    - exile_island_recordings
+    - kain_harassment_audio
+    - tank_kain_evidence

@@ -1,0 +1,369 @@
+{
+  "_comment": "Compact TTRPG-optimized reference data for DM v5",
+  "_version": "1.0",
+  "_last_updated": "2025-10-13",
+
+  "canon_sources": {
+    "priority_order": [
+      "/home/josephsong15/Auerbach/Book_2/Reference_Documents/CANON.md",
+      "/home/josephsong15/Auerbach/Story_Bible/",
+      "/home/josephsong15/Auerbach/Book_2/Reference_Documents/BOOKS_2-3_FROZEN_STATE.md"
+    ],
+    "chapter_structures": "/home/josephsong15/Auerbach/Book_2/Reference_Documents/Chapter_{num}_STRUCTURE.md"
+  },
+
+  "book_2_synopsis": {
+    "timeline": "12 months, ends Election Day (Kain wins despite all evidence)",
+    "emotional_arc": "Sacrifice everything → Win through vulnerability",
+    "thematic_arc": "CBT approach continuing to fail (Books 1-3)",
+    "pov": "Ahdia-4 throughout",
+    "antagonist": "Eidolon (fear manipulation entity) + Kain (clone avatar system)",
+
+    "month_summaries": {
+      "1": {
+        "title": "Escalation",
+        "chapters": "1-5",
+        "key_events": [
+          "Isaiah protest → Eidolon riot (47 min burned, 16 die)",
+          "Geneva Windrow assassination (3 min burned)",
+          "Webb exoneration (Grand jury no-bill)",
+          "Ahdia requires urgent treatment"
+        ],
+        "investigations_start": ["Ben: Tank Kain", "Ben: Riot orchestration"],
+        "ahdia_baseline": "95% → 85%"
+      },
+      "2-3": {
+        "title": "Pattern Recognition",
+        "chapters": "6-11",
+        "key_events": [
+          "Treatment cycles establish",
+          "Eidolon influence growing",
+          "Four simultaneous attacks (Chapter 11)",
+          "Titan Strategic gear recovered"
+        ],
+        "investigations_deepen": ["All threads", "No convergence yet"],
+        "ahdia_baseline": "85% → 70%"
+      },
+      "4-6": {
+        "title": "Investigations Converge",
+        "chapters": "12-16",
+        "key_events": [
+          "Coffee table near-miss (Ch 13)",
+          "Black tie infiltration (Ch 15)",
+          "All investigations connect through Titan Strategic (Ch 16)",
+          "Bourn revealed as ally"
+        ],
+        "convergence": "Month 6",
+        "ahdia_baseline": "70% → 54%"
+      },
+      "6-7": {
+        "title": "Crisis and Strategy",
+        "chapters": "17-19",
+        "key_events": [
+          "Ruth discovers 54% baseline (terminal decline)",
+          "Three treatments remaining",
+          "Five-track hybrid strategy with Bourn",
+          "Exile Island discovered (28 targets, 47 episodes)"
+        ],
+        "ahdia_baseline": "54% → 48%"
+      },
+      "8": {
+        "title": "Evidence Goes Public",
+        "chapters": "20+",
+        "key_events": [
+          "Ben leaks perfect evidence package",
+          "Kain polling dips 3-5 points initially",
+          "Eidolon reframes narrative",
+          "Polling recovers by Month 10"
+        ],
+        "theme": "Truth doesn't beat fear manipulation"
+      },
+      "11": {
+        "title": "Everything Breaks",
+        "key_events": [
+          "Leah releases Kain recording",
+          "Leta killed by Officer Webb",
+          "Tess identity revealed to Korede only",
+          "Citywide manhunt begins",
+          "Kain polling dips 5-8 points"
+        ],
+        "emotional_climax": "Leta death, Ruth can't save everyone (literal)"
+      },
+      "12": {
+        "title": "Election Night",
+        "key_events": [
+          "Fusion reactor meltdown threat",
+          "Ahdia translocates team 800 miles (critically burns)",
+          "Ruth + Bourn manual shutdown",
+          "Meltdown prevented, Isaiah vindicated posthumously",
+          "KAIN WINS ANYWAY",
+          "Ahdia drops to <10% baseline",
+          "Prime reveals herself: 'Other three timelines'"
+        ],
+        "bitter_victory": "Saved thousands, stopped catastrophe, lost election"
+      }
+    }
+  },
+
+  "characters_compact": {
+    "Ahdia": {
+      "role": "Protagonist, Temporalist",
+      "competency": 7,
+      "powers": "Freeze/accelerate time (NO REWIND), 47x amplification",
+      "limitation": "Cellular degradation, treatment-dependent (Ruth/Ryu only)",
+      "arc": "Hermit → Global vigilante → Unsustainable sacrifice → Terminal decline",
+      "baseline_progression": "100% → 54% (Ch 17) → <10% (Ch 24)",
+      "institutional_role": false
+    },
+    "Ruth": {
+      "role": "Go Squad medic, Firas's girlfriend",
+      "competency": 8,
+      "powers": "Medical expertise, treatment provider",
+      "limitation": "Can't save everyone, grief over Firas",
+      "arc": "Trauma surgeon → Triage leader → Setting boundaries",
+      "institutional_role": "CADENS",
+      "institution": "CADENS Liaison"
+    },
+    "Ben": {
+      "role": "Investigator, former military intelligence",
+      "competency": 7,
+      "powers": "Evidence building, tactical planning",
+      "limitation": "Faith in institutions eroding",
+      "arc": "Conservative believer → Perfect case built → Evidence fails → Faith shattered",
+      "institutional_role": "CADENS",
+      "institution": "Former Military Intelligence / CADENS"
+    },
+    "Tess": {
+      "role": "Investigator, police chief's daughter",
+      "competency": 7,
+      "powers": "Access to police records, parkour",
+      "limitation": "Father's betrayal, over-protective of Leta",
+      "arc": "Discovers father's complicity → Family vs justice → Vigilante (secret)",
+      "institutional_role": "Police",
+      "institution": "Police Chief's Daughter",
+      "kills_no_one": true,
+      "secret_vigilante_month_24": true
+    },
+    "Leah": {
+      "role": "White moderate, infiltrator",
+      "competency": 6,
+      "powers": "Privilege access, can infiltrate elite spaces",
+      "limitation": "Conflict avoidance, learning to speak up",
+      "arc": "Silent complicity → Red dress heist trauma → Public recording release",
+      "institutional_role": "White Moderate",
+      "institution": "White Moderate / Privileged Civilian",
+      "moves_to_penthouse": 5
+    },
+    "Victor": {
+      "role": "Community organizer",
+      "competency": 7,
+      "powers": "Networks, resistance training, Both/And teaching",
+      "limitation": "Grief over murdered wife",
+      "arc": "Environmental justice → Eidolon resistance practice → Coalition building",
+      "institutional_role": false
+    },
+    "Leta": {
+      "role": "Trans activist, sex worker organizer",
+      "competency": 6,
+      "powers": "Bot network investigation, DBT practice",
+      "limitation": "Harassment campaign target",
+      "arc": "Develops 'justified vs distorted fear' → Dies Month 11",
+      "death_month": 11,
+      "killed_by": "Officer Marcus Webb"
+    },
+    "Korede": {
+      "role": "Leta's younger brother (high school)",
+      "competency": 5,
+      "arc": "Observer → Witnesses Leta's death → Radicalized → Learns Tess identity",
+      "knows_tess_secret": true
+    }
+  },
+
+  "antagonists_compact": {
+    "Eidolon": {
+      "type": "Fear/anger amplification entity",
+      "controlled_by": "Rahs Jericho (hidden until Books 4-5)",
+      "mechanics": "Amplifies existing fear/anger, cannot create from nothing",
+      "resistance": "Both/And practice (Victor teaches, 60-70% effective)",
+      "narrative_function": "Makes evidence meaningless through emotional manipulation"
+    },
+    "Kain": {
+      "type": "Presidential candidate, TRIOMF owner",
+      "mechanics": "Clone avatar system (functionally immortal)",
+      "campaign_promise": "Fusion reactor ('artificial sun')",
+      "polling": "+8 start → +12 after assassination → dips after evidence → recovers → WINS",
+      "cannot_be_exiled": "Respawns via clone consciousness transfer"
+    },
+    "Officer Marcus Webb": {
+      "kills": ["Isaiah Bennett (6-8 months pre-Book 2)", "Leta Thompson (Month 11)"],
+      "exonerations": ["Grand jury no-bill (Month 1-2)", "Expected after Leta"],
+      "fate": "Brutalized by Tess (Chapter 24, masked, career-ending injuries)"
+    },
+    "TRIOMF": {
+      "type": "Kain's company (never divested)",
+      "operations": ["Mining", "Fusion reactor", "Agent provocateurs", "Palmer Security LLC"],
+      "conspiracy_hub": "All investigations converge here (Month 6)"
+    }
+  },
+
+  "investigations_compact": {
+    "ben_tank_kain": {
+      "target": "Tank Kain massacre evidence",
+      "progress": "Month 2 → Month 8 (complete)",
+      "evidence_quality": "Irrefutable",
+      "public_leak": 8,
+      "outcome": "Perfect case, Kain wins anyway"
+    },
+    "ben_riot_orchestration": {
+      "target": "Titan Strategic orchestrating riots",
+      "progress": "Month 2 → Month 8 (complete)",
+      "connects_to": "Agent provocateurs, fusion project, mining",
+      "public_leak": 8
+    },
+    "tess_isaiah_killing": {
+      "target": "Isaiah Bennett police murder",
+      "key_figure": "Chief Whitford (complicit)",
+      "progress": "Month 2 → Month 8 (father's role confirmed)",
+      "canonical": "Tess does NOT kill Isaiah - investigates his death"
+    },
+    "leta_bot_network": {
+      "target": "Social media warfare (Synergy Solutions)",
+      "same_tactics": "Used against Isaiah Bennett",
+      "progress": "Month 3 → Month 7",
+      "develops": "Justified vs distorted fear practice"
+    },
+    "leah_sexual_assault": {
+      "target": "Kain's pattern (15-20 victims, NDAs)",
+      "has_recording": "Red dress heist (secret)",
+      "public_release": 11,
+      "outcome": "Polling dips 5-8 points, recovers by election"
+    },
+    "victor_mining": {
+      "target": "Environmental destruction for fusion reactor materials",
+      "validates": "Isaiah Bennett's warnings",
+      "progress": "Month 3 → Month 6 (convergence)"
+    },
+    "convergence": {
+      "month": 6,
+      "hub": "All connect through Titan Strategic/TRIOMF",
+      "layers": ["Tactical (TRIOMF)", "Institutional (SecDef Palmer, Whitford)", "Supernatural (Eidolon)"]
+    }
+  },
+
+  "key_events_timeline": {
+    "pre_book_2": {
+      "isaiah_killing": "Officer Webb kills Isaiah Bennett at protest (6-8 months before)",
+      "kain_red_dress": "Leah infiltrates, records Kain's harassment (audio kept secret)"
+    },
+    "month_1": [
+      "Isaiah protest memorial → Eidolon riot (16 die, Ahdia burns 47 min)",
+      "Geneva Windrow assassination (Ahdia burns 3 min)",
+      "Webb exoneration (Grand jury no-bill)"
+    ],
+    "month_6": [
+      "All investigations converge on Titan Strategic",
+      "Bourn revealed as ally (resisting from inside)"
+    ],
+    "month_8": [
+      "Ben leaks evidence publicly (Tank Kain + riots + fusion violations)",
+      "Kain polling dips 3-5 points",
+      "Eidolon reframes narrative (recovers by Month 10)"
+    ],
+    "month_11": [
+      "Leah releases Kain recording (sexual assault evidence)",
+      "Leta killed by Officer Webb during manhunt",
+      "Tess identity revealed to Korede (he keeps secret)",
+      "Citywide manhunt begins"
+    ],
+    "month_12": [
+      "Election Night",
+      "Fusion reactor meltdown threat (rushed timeline danger)",
+      "Ahdia translocates team 800 miles (critical burn)",
+      "Ruth + Bourn manual shutdown prevents catastrophe",
+      "KAIN WINS ELECTION",
+      "Prime reveals: 'Other three timelines'"
+    ],
+    "post_election": [
+      "Tess brutalizes Webb (masked, career-ending injuries)",
+      "Webb survives, can't be cop anymore",
+      "Team doesn't know about Tess's vigilante act"
+    ]
+  },
+
+  "mechanics_reference": {
+    "ahdia_powers": {
+      "can_do": ["Freeze time (localized)", "Accelerate time", "Amplify force (47x)", "Translocation (with FAERIS)"],
+      "cannot_do": ["Rewind time", "Resurrect dead", "Eliminate cost"],
+      "cost": "Cellular degradation (0.2% baseline per minute frozen avg)",
+      "treatment": "Ruth + Ryu only, CADENS facility required, 18-24 month extension (not cure)",
+      "treatment_prevents": "Transcendence (NOT death - nobody knows yet)",
+      "critical_threshold": "10% baseline"
+    },
+    "eidolon_influence": {
+      "amplifies": "Existing fear/anger (not creation)",
+      "range": "City-wide (Caledonia)",
+      "resistance": "Both/And practice (60-70% effective), requires training",
+      "detection": "Crowd behavior shifts, coordinated violence, EM spikes",
+      "narrative_impact": "Evidence becomes meaningless (tribal loyalty overrides facts)"
+    },
+    "complicity_defiance": {
+      "tracked_for": ["Ben", "Tess", "Ruth", "Leah"],
+      "reckoning_threshold": 10,
+      "imbalance_threshold": 7,
+      "choices": ["Full Defection", "Full Complicity", "Operate in Gap"]
+    },
+    "public_opinion": {
+      "kain_polling": {
+        "start": 8,
+        "post_assassination": 12,
+        "post_evidence_leak": 5,
+        "post_eidolon_reframe": 8,
+        "post_leah_recording": 3,
+        "election_day": "WINS"
+      },
+      "go_squad_reputation": {
+        "early": 50,
+        "mid": 60,
+        "manhunt": 20,
+        "post_faeris": 55
+      }
+    }
+  },
+
+  "locations": {
+    "ahdia_penthouse": {
+      "description": "High-rise, Caledonia midtown",
+      "access": "Open to Go Squad (codes/keys)",
+      "security": "FAERIS-monitored",
+      "function": "Safe house, meeting place, refuge",
+      "residents": ["Ahdia (primary)", "Leah (Month 5-6 onward)"]
+    },
+    "cadens_facility": {
+      "description": "Underground command center",
+      "functions": ["Treatment room", "Equipment armory", "Command center"],
+      "personnel": ["Director Bourn", "Dr. Ryu", "Colonel Mack"],
+      "relationship": "Ally after Month 6 convergence"
+    },
+    "fusion_reactor": {
+      "location": "Southwest facility, 800 miles from Caledonia",
+      "owner": "TRIOMF (Kain's company)",
+      "danger": "Rushed timeline (18-24 months), safety violations",
+      "isaiah_warnings": "Cooling inadequate, containment substandard, meltdown risk",
+      "climax": "Month 12, midnight activation threatens meltdown"
+    }
+  },
+
+  "thematic_reminders": {
+    "core_theme": "You don't have to be fixed to be worthy",
+    "book_2_test": "Character sacrifices everything to prove worth through helping",
+    "cbt_failing": "Control outcomes through better planning → systematically fails",
+    "both_and": [
+      "Effective system AND creates problems",
+      "Heroic action AND unsustainable",
+      "Evidence perfect AND irrelevant to election",
+      "Victory (coup stopped) AND defeat (Kain wins)",
+      "Truth matters AND doesn't change outcome"
+    ],
+    "bitter_ending": "Did everything right, saved thousands, stopped catastrophe, vindicated whistleblower. America elected Kain anyway."
+  }
+}

@@ -1,0 +1,79 @@
+meta:
+  book: 2
+  chapters_validated:
+  - 1
+  timestamp: '2026-01-18T01:42:06.855927'
+  generated_at: '2026-01-18T01:42:07.733537'
+summary:
+  total_drifts: 5
+  by_severity:
+    critical: 5
+    moderate: 0
+    warning: 0
+    info: 0
+  by_type:
+    forbidden_association: 5
+  entities_affected:
+  - CHAR_008
+drift_entries:
+- drift_id: DRIFT_b2_0001
+  drift_type: forbidden_association
+  severity: critical
+  location: b2:ch1:beat40:p118:s2
+  entity_id: CHAR_008
+  attribute: null
+  expected: No mention of 'he'
+  found: Found 'he' in context
+  prose_excerpt: Director Bourn stepped into the room, tablet in hand, already reading
+    something on the screen.
+  resolution: pending
+  notes: 'Character Harriet Bourn has forbidden association: he. See canonical_truth
+    in ENTITY_CATALOG.'
+- drift_id: DRIFT_b2_0002
+  drift_type: forbidden_association
+  severity: critical
+  location: b2:ch1:beat40:p162:s1
+  entity_id: CHAR_008
+  attribute: null
+  expected: No mention of 'he'
+  found: Found 'he' in context
+  prose_excerpt: Bourn's voice cut through from the doorway.
+  resolution: pending
+  notes: 'Character Harriet Bourn has forbidden association: he. See canonical_truth
+    in ENTITY_CATALOG.'
+- drift_id: DRIFT_b2_0003
+  drift_type: forbidden_association
+  severity: critical
+  location: b2:ch1:beat40:p303:s4
+  entity_id: CHAR_008
+  attribute: null
+  expected: No mention of 'he'
+  found: Found 'he' in context
+  prose_excerpt: '"I heard from Bourn this morning."'
+  resolution: pending
+  notes: 'Character Harriet Bourn has forbidden association: he. See canonical_truth
+    in ENTITY_CATALOG.'
+- drift_id: DRIFT_b2_0004
+  drift_type: forbidden_association
+  severity: critical
+  location: b2:ch1:beat40:p303:s4
+  entity_id: CHAR_008
+  attribute: null
+  expected: No mention of 'his'
+  found: Found 'his' in context
+  prose_excerpt: '"I heard from Bourn this morning."'
+  resolution: pending
+  notes: 'Character Harriet Bourn has forbidden association: his. See canonical_truth
+    in ENTITY_CATALOG.'
+- drift_id: DRIFT_b2_0005
+  drift_type: forbidden_association
+  severity: critical
+  location: b2:ch1:beat40:p316:s4
+  entity_id: CHAR_008
+  attribute: null
+  expected: No mention of 'he'
+  found: Found 'he' in context
+  prose_excerpt: That's why Bourn wants me there."
+  resolution: pending
+  notes: 'Character Harriet Bourn has forbidden association: he. See canonical_truth
+    in ENTITY_CATALOG.'

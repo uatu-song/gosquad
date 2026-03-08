@@ -1,0 +1,409 @@
+# GO SQUAD STATE ARCHITECTURE
+# Schema Definitions v1.0
+#
+# These schemas define the structure for external state
+# that agents query via the Archivist.
+#
+# Design Principle: Extend CHARACTER_STATE_INDEX.yaml patterns
+# rather than replacing them.
+
+meta:
+  version: "1.0"
+  created: "2026-01-14"
+  purpose: "RLM-based multi-agent state architecture"
+  foundation: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+
+# ============================================================
+# SCHEMA 1: CHARACTER STATE (Formalized from existing)
+# ============================================================
+
+character_schema:
+  description: "Character state at any point in the story"
+  source_file: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+
+  required_fields:
+    meta:
+      arc_tracker: "string - path to detailed tracker"
+      codename: "string|null"
+      full_name: "string"
+      book2_role: "string - role in this book"
+
+    arc:
+      summary: "string - A -> B transformation"
+      type: "enum from tag_definitions.arc_types"
+
+    motives:
+      stable: "array of {id, priority}"
+      evolving: "array of {id, chapters[], note}"
+
+    emotional_progression:
+      - stage: "string - stage name"
+        chapters: "array of chapter numbers"
+        description: "string"
+
+    threads:
+      # Named arcs within the character
+      thread_name:
+        type: "string - thread category"
+        description: "string"
+        chapters: "array of chapter numbers"
+        gates:
+          ch_N:
+            state: "string - current state"
+            trigger: "string - what caused transition"
+            knows: "array of knowledge items"
+            believes: "array|null"
+            consequence: "string|null"
+
+    chapter_states:
+      # Per-chapter snapshots
+      ch_N:
+        location: "string"
+        emotional: "string"
+        physical:
+          baseline: "{start, end} for Ahdia"
+          injuries: "string|null"
+          fatigue: "string|null"
+        knows: "array of knowledge items"
+        learns: "array of new knowledge"
+        doesnt_know: "array of hidden info"
+        believes: "array of beliefs"
+        relationships:
+          character_name: "{state, notes}"
+        key_actions: "array of actions"
+
+  query_patterns:
+    - pattern: "character_state(character_id, chapter)"
+      returns: "chapter_states.ch_N"
+    - pattern: "character_knows(character_id, knowledge_item, chapter)"
+      returns: "boolean"
+    - pattern: "character_arc_stage(character_id, chapter)"
+      returns: "emotional_progression stage"
+    - pattern: "thread_state(character_id, thread_name, chapter)"
+      returns: "threads.thread_name.gates.ch_N"
+
+# ============================================================
+# SCHEMA 2: LOCATION (New - GAP_001)
+# ============================================================
+
+location_schema:
+  description: "Physical locations for Set Designer and Choreographer"
+  storage_path: "5_story_bibles/locations/"
+
+  required_fields:
+    meta:
+      id: "string - unique identifier"
+      name: "string - display name"
+      type: "enum: facility, residence, public_space, transit, landmark"
+      first_appearance: "book.chapter"
+      significance: "enum: major, minor, transitional"
+
+    physical:
+      layout_type: "enum: open, enclosed, multi_room, outdoor, mixed"
+      size: "enum: intimate, medium, large, vast"
+      accessibility: "array of access_points"
+      hazards: "array|null"
+      visibility: "string - sightline notes"
+
+    atmosphere:
+      lighting: "string"
+      sound: "string"
+      smell: "string|null"
+      temperature: "string|null"
+      mood: "string - emotional register"
+
+    narrative_function:
+      scenes: "array of {book, chapter, scene_num}"
+      character_associations: "array of character_ids"
+      thematic_weight: "string|null"
+
+    spatial_relationships:
+      contains: "array of sub_location_ids"
+      contained_by: "location_id|null"
+      adjacent_to: "array of location_ids"
+      travel_time_to: "map of {location_id: duration}"
+
+    choreography_notes:
+      entry_points: "array of {name, description}"
+      cover_positions: "array|null - for action scenes"
+      crowd_capacity: "number|null"
+      movement_constraints: "array|null"
+
+  query_patterns:
+    - pattern: "location(location_id)"
+      returns: "full location object"
+    - pattern: "scenes_at_location(location_id)"
+      returns: "narrative_function.scenes"
+    - pattern: "location_layout(location_id)"
+      returns: "physical + choreography_notes"
+
+# ============================================================
+# SCHEMA 3: TIMELINE/EVENT
+# ============================================================
+
+event_schema:
+  description: "Story events for Timeline Keeper"
+  source_file: "CHARACTER_STATE_INDEX.yaml timeline section"
+  extension_path: "5_story_bibles/book_X/events/"
+
+  required_fields:
+    meta:
+      id: "string - unique event identifier"
+      name: "string - display name"
+      book: "number"
+      chapter: "number"
+      month: "number"
+      date_approx: "string|null - early/mid/late_month"
+
+    participants:
+      primary: "array of character_ids"
+      secondary: "array of character_ids"
+      witnesses: "array of character_ids"
+      unaware: "array of character_ids - characters not present"
+
+    consequences:
+      immediate: "array of {character_id, effect}"
+      delayed: "array of {character_id, effect, manifest_chapter}"
+      seeds_planted: "array of callback_ids"
+
+    knowledge_changes:
+      reveals: "array of {knowledge_id, to: [character_ids]}"
+      hides: "array of {knowledge_id, from: [character_ids]}"
+
+    location: "location_id"
+
+    canon_locks:
+      - "array of facts this event establishes as immutable"
+
+    reader_knowledge:
+      shown: "boolean - did reader witness this?"
+      dramatic_irony: "array of character_ids who don't know"
+
+  query_patterns:
+    - pattern: "event(event_id)"
+      returns: "full event object"
+    - pattern: "events_in_chapter(book, chapter)"
+      returns: "array of events"
+    - pattern: "events_involving(character_id)"
+      returns: "array of events"
+    - pattern: "knowledge_at_event(event_id, character_id)"
+      returns: "{knows, learns, still_hidden}"
+
+# ============================================================
+# SCHEMA 4: OBJECT/PROP (Production Designer)
+# ============================================================
+
+object_schema:
+  description: "Physical objects and technology"
+  storage_path: "5_story_bibles/artifacts/"
+
+  required_fields:
+    meta:
+      id: "string"
+      name: "string"
+      type: "enum: technology, weapon, vehicle, artifact, personal_item"
+      owner: "character_id|organization_id|null"
+
+    physical:
+      appearance: "string"
+      size: "string"
+      weight: "string|null"
+      distinguishing_features: "array"
+
+    function:
+      purpose: "string"
+      capabilities: "array"
+      limitations: "array"
+      power_source: "string|null"
+
+    narrative_role:
+      introduced: "book.chapter"
+      key_scenes: "array of {book, chapter}"
+      symbolic_meaning: "string|null"
+
+    possession_history:
+      - { holder: "character_id", from: "book.chapter", to: "book.chapter|current" }
+
+  query_patterns:
+    - pattern: "object(object_id)"
+      returns: "full object"
+    - pattern: "objects_owned_by(character_id, chapter)"
+      returns: "array of objects"
+    - pattern: "object_location(object_id, chapter)"
+      returns: "location_id or holder character_id"
+
+# ============================================================
+# SCHEMA 5: PROCESS LOG (Go Squad Protocol)
+# ============================================================
+
+process_log_schema:
+  description: "Required output format for all agent operations"
+  purpose: "Lane enforcement, audit trail, validation gate"
+
+  required_fields:
+    meta:
+      agent_role: "enum from GO_SQUAD_DEVELOPMENT_PLAN.role_mappings"
+      timestamp: "ISO datetime"
+      task_id: "string - unique operation identifier"
+      mode: "enum: exploration, performance (Character Stewards only)"
+
+    query_log:
+      description: "What information was requested and from whom"
+      entries:
+        - { query: "string", target_agent: "string", response_summary: "string" }
+
+    domain_declaration:
+      description: "What is my lane?"
+      my_domain: "string - role description"
+      task_within_domain: "boolean"
+      justification: "string - why this task is in my lane"
+
+    source_attribution:
+      description: "Where did each output element come from?"
+      entries:
+        - { claim: "string", source_file: "string", source_line: "number|null" }
+
+    deferred_items:
+      description: "What was passed to specialists instead of self-solved?"
+      entries:
+        - { item: "string", deferred_to: "agent_role", reason: "string" }
+
+    state_changes_proposed:
+      description: "What state modifications does this operation suggest?"
+      entries:
+        - { state_type: "string", entity_id: "string", change: "string", requires_confirmation: "boolean" }
+
+    output:
+      description: "The actual work product"
+      content: "string|object"
+      confidence: "enum: high, medium, low"
+      caveats: "array|null"
+
+  validation_rules:
+    rejection_criteria:
+      - "query_log empty when queries clearly needed"
+      - "task_within_domain is false"
+      - "source_attribution missing for factual claims"
+      - "deferred_items empty when complexity warranted delegation"
+      - "mode not declared (Character Stewards)"
+
+    suspicious_flags:
+      - "All queries answered by self"
+      - "No deferred items in complex operation"
+      - "Source attribution only from memory, not files"
+
+# ============================================================
+# SCHEMA 6: KNOWLEDGE ITEM (Status Tracker)
+# ============================================================
+
+knowledge_schema:
+  description: "Trackable pieces of information"
+  source: "CHARACTER_STATE_INDEX.yaml knowledge_tracking section"
+
+  required_fields:
+    meta:
+      id: "string - unique identifier"
+      description: "string"
+      type: "enum: secret, fact, belief, revelation"
+      severity: "enum: critical, moderate, minor"
+
+    secret_holder: "character_id|null - who keeps this secret"
+    enablers: "array of character_ids who help keep secret"
+
+    awareness_by_chapter:
+      ch_N: "array of character_ids who know"
+
+    reveal_mechanics:
+      chapter: "number|null - when revealed"
+      revealed_by: "character_id|event_id"
+      revealed_to: "array of character_ids"
+      dramatic_weight: "string"
+
+    canon_warning_id: "string|null - links to canon_warnings"
+
+  query_patterns:
+    - pattern: "who_knows(knowledge_id, chapter)"
+      returns: "array of character_ids"
+    - pattern: "what_knows(character_id, chapter)"
+      returns: "array of knowledge_ids"
+    - pattern: "is_revealed(knowledge_id, chapter)"
+      returns: "boolean"
+
+# ============================================================
+# TYPE ENUMS (Shared Vocabulary)
+# ============================================================
+
+enums:
+  arc_types:
+    - cbt_failing
+    - institutional_betrayal
+    - institutional_faith_collapse
+    - caretaker_limits
+    - white_moderate_awakening
+    - ethical_erosion
+    - observer_radicalized
+    - fear_amplification
+    - mentor
+    - martyrdom
+
+  relationship_types:
+    - best_friends
+    - romantic_partners
+    - family_betrayal
+    - professional_boundary_crossed
+    - mentor_student
+    - investigation_allies
+    - antagonist
+    - connected_through_third_party
+
+  location_types:
+    - facility
+    - residence
+    - public_space
+    - transit
+    - landmark
+    - virtual
+
+  severity_levels:
+    - critical
+    - moderate
+    - minor
+
+  agent_roles:
+    - archivist
+    - status_tracker
+    - theme_guardian
+    - timeline_keeper
+    - scene_choreographer
+    - reader_proxy
+    - pacing_monitor
+    - technical_consultant
+    - intimacy_coordinator
+    - outline_assistant
+    - production_designer
+    - character_steward
+
+# ============================================================
+# EXTENSION PATTERNS
+# ============================================================
+
+extension_notes:
+  character_extension:
+    description: "Adding new character follows CHARACTER_STATE_INDEX.yaml pattern"
+    required_sections:
+      - meta
+      - arc
+      - motives
+      - emotional_progression
+      - threads (minimum 1)
+      - chapter_states (minimum first and last appearance)
+
+  location_extension:
+    description: "New locations go to 5_story_bibles/locations/[location_id].yaml"
+    naming: "lowercase_with_underscores"
+
+  event_extension:
+    description: "New events go to 5_story_bibles/book_X/events/[event_id].yaml"
+    naming: "book[N]_ch[M]_[event_name].yaml"
+
+# End of Schemas

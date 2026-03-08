@@ -1,0 +1,605 @@
+# CODEX_SCHEMA.yaml
+# Prose Indexing System - Schema Definition v1.0
+#
+# Design Principle: Parallel index to prose, not a replacement.
+# Prose stays prose. The codex tracks where entities appear and what their canonical values are.
+#
+# Integrates with:
+#   - entity_catalog/ENTITY_CATALOG.yaml (canonical definitions)
+#   - _tools/state_architecture/SCHEMAS.yaml (state queries)
+#   - 7_characters/arcs/CHARACTER_STATE_INDEX.yaml (character state)
+
+meta:
+  version: "1.0"
+  created: "2026-01-18"
+  schema_purpose: "Index entity appearances in prose with location coordinates"
+
+  companion_schemas:
+    - path: "entity_catalog/ENTITY_CATALOG.yaml"
+      purpose: "Canonical entity definitions"
+    - path: "_tools/state_architecture/SCHEMAS.yaml"
+      purpose: "State query patterns"
+    - path: "7_characters/arcs/CHARACTER_STATE_INDEX.yaml"
+      purpose: "Character state tracking"
+
+  # Coordinate format preserves beat structure for queryability
+  # "Show me all Ahdia appearances in beat 11" is meaningful
+  coordinate_format: "b{book}:ch{chapter}:beat{beat}:p{paragraph}:s{sentence}"
+  coordinate_examples:
+    - "b2:ch1:beat11:p2:s1"      # Full coordinate
+    - "b2:ch1:beat11:p2"         # Paragraph level
+    - "b2:ch1:beat11"            # Beat level
+    - "b2:ch1"                   # Chapter level
+
+# ============================================================
+# ENTITY TYPES
+# ============================================================
+
+entity_types:
+
+  # ----------------------------------------------------------
+  # CHARACTER
+  # ----------------------------------------------------------
+  character:
+    description: "Named characters appearing in prose"
+
+    fields:
+      entity_id:
+        type: "string"
+        description: "Matches ENTITY_CATALOG (e.g., CHAR_001)"
+        pattern: "CHAR_[0-9]{3}"
+
+      status:
+        type: "enum"
+        values: ["canonical", "proposed"]
+        description: "proposed = flagged for Director review, not yet in ENTITY_CATALOG"
+
+      canonical_name:
+        type: "string"
+        description: "Authoritative name from ENTITY_CATALOG"
+
+      aliases_in_prose:
+        type: "array of string"
+        description: "All names/references used in prose (excluding pronouns)"
+        examples: ["Ahdia", "Auerbach", "Sade"]
+
+      appearances:
+        type: "array"
+        items:
+          location:
+            type: "coordinate"
+            description: "Where this reference occurs"
+          context:
+            type: "string"
+            description: "Brief context (1-2 sentences)"
+          reference_form:
+            type: "string"
+            description: "Exact text used"
+          reference_type:
+            type: "enum"
+            values: ["name", "alias", "pronoun", "descriptor"]
+          pronoun_resolution:
+            type: "object | null"
+            description: "Only present for pronouns"
+            fields:
+              resolved_to: "entity_id"
+              confidence: "enum: high | medium | low | ambiguous"
+              candidates: "array of entity_id (if ambiguous)"
+              reason: "string - why this confidence level"
+
+      attributes:
+        type: "map"
+        description: "Attribute name -> attribute tracking"
+        value_schema:
+          canonical_value:
+            type: "string"
+            description: "Authoritative value"
+          established_at:
+            type: "coordinate"
+            description: "Where this value was first established"
+          source:
+            type: "enum"
+            values: ["prose", "entity_catalog", "director_override"]
+          mentions:
+            type: "array"
+            items:
+              location: "coordinate"
+              value_in_prose: "string - what the prose says"
+              status:
+                type: "enum"
+                values: ["canonical", "drift", "unset"]
+                description: "canonical=matches, drift=contradicts, unset=no value established"
+
+  # ----------------------------------------------------------
+  # LOCATION
+  # ----------------------------------------------------------
+  location:
+    description: "Named places appearing in prose"
+
+    fields:
+      entity_id:
+        type: "string"
+        pattern: "LOC_[0-9]{3}"
+
+      status:
+        type: "enum"
+        values: ["canonical", "proposed"]
+
+      canonical_name:
+        type: "string"
+
+      aliases_in_prose:
+        type: "array of string"
+
+      appearances:
+        type: "array"
+        items:
+          location: "coordinate"
+          context: "string"
+          scene_function:
+            type: "enum"
+            values: ["primary_setting", "mentioned", "transitional", "flashback"]
+
+      attributes:
+        # Same structure as character attributes
+
+  # ----------------------------------------------------------
+  # OBJECT
+  # ----------------------------------------------------------
+  object:
+    description: "Significant items, technology, artifacts"
+
+    fields:
+      entity_id:
+        type: "string"
+        pattern: "OBJ_[0-9]{3}"
+
+      status:
+        type: "enum"
+        values: ["canonical", "proposed"]
+
+      canonical_name:
+        type: "string"
+
+      aliases_in_prose:
+        type: "array of string"
+
+      appearances:
+        type: "array"
+        items:
+          location: "coordinate"
+          context: "string"
+          owner_at_time:
+            type: "entity_id | null"
+            description: "Who possesses this object at this moment"
+          action:
+            type: "enum"
+            values: ["introduced", "used", "transferred", "destroyed", "mentioned"]
+
+      attributes:
+        # Same structure as character attributes
+
+  # ----------------------------------------------------------
+  # TIME MARKER
+  # ----------------------------------------------------------
+  time_marker:
+    description: "Explicit time references in prose"
+
+    fields:
+      marker_id:
+        type: "string"
+        pattern: "b{N}_ch{M}_tm{NNN}"
+        description: "Auto-generated"
+
+      location:
+        type: "coordinate"
+
+      raw_text:
+        type: "string"
+        description: "Exact text (e.g., '6:47 PM', 'three days later')"
+
+      marker_type:
+        type: "enum"
+        values: ["absolute", "relative", "duration", "vague"]
+
+      normalized:
+        type: "string | null"
+        description: "ISO datetime for absolute, duration string for relative, null for vague"
+
+      chapter_timeline_position:
+        type: "number"
+        description: "Sequence order within chapter (1, 2, 3...)"
+
+      anchors_to:
+        type: "marker_id | null"
+        description: "For relative markers, which marker this is relative to"
+
+  # ----------------------------------------------------------
+  # RELATIONSHIP
+  # ----------------------------------------------------------
+  relationship:
+    description: "Stated relationships between entities"
+
+    fields:
+      relationship_id:
+        type: "string"
+        pattern: "REL_[0-9]{3}"
+
+      entity_a:
+        type: "entity_id"
+
+      entity_b:
+        type: "entity_id"
+
+      relationship_type:
+        type: "enum"
+        values:
+          # From SCHEMAS.yaml relationship_types
+          - "best_friends"
+          - "romantic_partners"
+          - "family"
+          - "family_betrayal"
+          - "professional"
+          - "professional_boundary_crossed"
+          - "mentor_student"
+          - "investigation_allies"
+          - "antagonist"
+          - "connected_through_third_party"
+
+      direction:
+        type: "enum"
+        values: ["symmetric", "a_to_b", "b_to_a"]
+        description: "mentor_student is a_to_b (a mentors b), best_friends is symmetric"
+
+      established_at:
+        type: "coordinate"
+
+      mentions:
+        type: "array"
+        items:
+          location: "coordinate"
+          characterization: "string - how described in prose"
+          speaker:
+            type: "entity_id | narrator"
+            description: "Who characterizes this relationship"
+
+  # ----------------------------------------------------------
+  # THEME
+  # ----------------------------------------------------------
+  theme:
+    description: "Thematic markers and motifs"
+
+    fields:
+      theme_id:
+        type: "string"
+        pattern: "THM_[0-9]{3}"
+
+      theme_name:
+        type: "string"
+        examples: ["institutional_betrayal", "cost_of_power", "found_family"]
+
+      linked_arc_types:
+        type: "array of string"
+        description: "Arc types from SCHEMAS.yaml this theme connects to"
+
+      appearances:
+        type: "array"
+        items:
+          location: "coordinate"
+          manifestation: "string - how it appears in this moment"
+          intensity:
+            type: "enum"
+            values: ["subtle", "moderate", "overt"]
+          characters_involved: "array of entity_id"
+
+  # ----------------------------------------------------------
+  # SETUP / PAYOFF (Callbacks)
+  # ----------------------------------------------------------
+  setup_payoff:
+    description: "Narrative setups and their payoffs"
+
+    fields:
+      callback_id:
+        type: "string"
+        pattern: "CB_b{N}_ch{M}_{NNN}"
+
+      description:
+        type: "string"
+        description: "What this callback is about"
+
+      category:
+        type: "enum"
+        values: ["character", "plot", "object", "dialogue", "worldbuilding"]
+
+      setup:
+        type: "object"
+        fields:
+          location: "coordinate"
+          text_excerpt: "string - relevant prose"
+          planted_by:
+            type: "enum"
+            values: ["narrator", "character_action", "dialogue", "description"]
+
+      payoff:
+        type: "object | null"
+        description: "null = not yet paid"
+        fields:
+          location: "coordinate"
+          text_excerpt: "string"
+          payoff_type:
+            type: "enum"
+            values: ["direct", "subverted", "escalated", "partial"]
+
+      status:
+        type: "enum"
+        values: ["planted", "paid", "abandoned", "deferred_to_later_book"]
+
+      expected_payoff_window:
+        type: "string | null"
+        description: "e.g., 'book2', 'ch5-ch10', 'series_finale'"
+
+# ============================================================
+# CODEX FILE STRUCTURE
+# ============================================================
+
+codex_structure:
+  description: "How a codex.yaml file is organized"
+  output_path: "8_codex/book_{N}/codex.yaml"
+
+  sections:
+    meta:
+      book: "number"
+      chapters_indexed: "array of chapter numbers"
+      last_indexed: "ISO datetime"
+      indexer_version: "string"
+      prose_sources:
+        type: "array"
+        items:
+          path: "string - relative path to prose file"
+          hash: "string - SHA256"
+          indexed_at: "ISO datetime"
+
+    # Entity collections
+    characters:
+      type: "map"
+      key: "entity_id"
+      value: "character entity"
+
+    locations:
+      type: "map"
+      key: "entity_id"
+      value: "location entity"
+
+    objects:
+      type: "map"
+      key: "entity_id"
+      value: "object entity"
+
+    time_markers:
+      type: "array"
+      items: "time_marker entity"
+      sort_by: "chapter_timeline_position"
+
+    relationships:
+      type: "array"
+      items: "relationship entity"
+
+    themes:
+      type: "map"
+      key: "theme_id"
+      value: "theme entity"
+
+    setups_payoffs:
+      type: "array"
+      items: "setup_payoff entity"
+
+    # Quick reference section
+    canonical_values:
+      description: "Flat lookup for established facts"
+      format: "entity_id.attribute: {value, established_at}"
+      example:
+        CHAR_001.baseline_ch1_start:
+          value: "90%"
+          established_at: "b2:ch1:beat1:p10:s1"
+        CHAR_001.penthouse_temperature:
+          value: "cold"
+          established_at: "b2:ch1:beat1:p1:s4"
+
+    # Proposed entities awaiting Director approval
+    proposed_entities:
+      description: "New entities detected but not yet canonical"
+      characters: "array of proposed character entries"
+      locations: "array of proposed location entries"
+      objects: "array of proposed object entries"
+
+# ============================================================
+# MASTER CODEX (Cross-Book)
+# ============================================================
+
+master_codex_structure:
+  description: "8_codex/CODEX_MASTER.yaml - canonical values spanning all books"
+  output_path: "8_codex/CODEX_MASTER.yaml"
+
+  sections:
+    meta:
+      last_updated: "ISO datetime"
+      books_indexed: "array of book numbers"
+
+    canonical_values:
+      description: "Authoritative values for attributes that must remain consistent"
+      format: "entity_id.attribute: {value, established_at, locked}"
+      locked_note: "locked=true means this value cannot be overwritten by later prose"
+
+    entity_first_appearances:
+      description: "When each entity first appears in the series"
+      format: "entity_id: coordinate"
+
+    cross_book_callbacks:
+      description: "Setups in one book paid in another"
+      type: "array of setup_payoff with book-spanning coordinates"
+
+# ============================================================
+# DRIFT DETECTION
+# ============================================================
+
+drift_detection:
+  description: "How drift is identified and flagged"
+  output_path: "_tools/prose_indexer/logs/{timestamp}_drift_report.yaml"
+
+  drift_types:
+    value_mismatch:
+      description: "Prose contradicts established canonical value"
+      example: "Ahdia's eyes described as blue, but canonical is brown"
+      severity: "critical"
+      auto_action: "flag_for_review"
+
+    alias_unknown:
+      description: "Name used that doesn't match known aliases"
+      example: "'Dee' used but not in Ahdia's aliases_in_prose"
+      severity: "warning"
+      auto_action: "propose_alias_addition"
+
+    timeline_inconsistency:
+      description: "Time marker conflicts with established timeline"
+      example: "Scene says '3 PM' but previous marker was '6 PM' same day"
+      severity: "critical"
+      auto_action: "flag_for_review"
+
+    relationship_contradiction:
+      description: "Relationship described differently than established"
+      example: "Ruth called Ahdia's 'sister' but relationship is best_friends"
+      severity: "moderate"
+      auto_action: "flag_for_review"
+
+    knowledge_violation:
+      description: "Character references knowledge before reveal point"
+      source: "ENTITY_CATALOG.yaml forbidden_knowledge_before"
+      example: "Ahdia mentions Geneva is Bellatrix before ch2 reveal"
+      severity: "critical"
+      auto_action: "block_and_alert"
+
+    pronoun_ambiguity:
+      description: "Pronoun could not be confidently resolved"
+      severity: "info"
+      auto_action: "log_for_review"
+
+  drift_entry_format:
+    drift_id: "string - auto-generated"
+    type: "drift_type enum"
+    location: "coordinate"
+    entity_id: "string | null"
+    attribute: "string | null"
+    expected: "string - canonical value or 'unset'"
+    found: "string - prose value"
+    severity: "enum: critical | moderate | warning | info"
+    prose_excerpt: "string - surrounding context"
+    resolution:
+      type: "enum"
+      values: ["pending", "fixed_in_prose", "accepted_as_new_canon", "false_positive"]
+    resolved_at: "ISO datetime | null"
+    resolved_by: "string | null"
+    notes: "string | null"
+
+# ============================================================
+# PROCESS LOG
+# ============================================================
+
+process_log:
+  description: "All indexer actions logged (verbose mode)"
+  output_path: "_tools/prose_indexer/logs/{timestamp}_{operation}.yaml"
+  summary_flag: "--summary reduces to operation-level logging"
+
+  operations:
+    ingest:
+      description: "Parse prose file into entities"
+      log_level_verbose:
+        - "file_opened"
+        - "chapter_detected"
+        - "beat_detected"
+        - "entity_match_attempted"
+        - "entity_match_success"
+        - "entity_match_failed"
+        - "pronoun_resolution_attempted"
+        - "pronoun_resolution_result"
+        - "attribute_extracted"
+        - "time_marker_found"
+        - "relationship_detected"
+        - "setup_detected"
+      log_level_summary:
+        - "file_processed"
+        - "entities_found_count"
+        - "proposed_entities_count"
+        - "warnings_count"
+
+    validate:
+      description: "Check prose against canonical values"
+      outputs: "drift_report.yaml"
+
+    approve_proposed:
+      description: "Director approves proposed entity"
+      requires: "explicit confirmation"
+      updates: ["codex.yaml", "ENTITY_CATALOG.yaml (optional)"]
+
+    update_canon:
+      description: "Promote prose value to canonical"
+      requires: "explicit user approval"
+      creates_lock: "optional"
+
+    reindex:
+      description: "Full re-parse of prose file(s)"
+      clears: "existing entries for reindexed chapters"
+
+  log_entry_format:
+    timestamp: "ISO datetime with milliseconds"
+    operation: "string"
+    level: "enum: debug | info | warning | error"
+    message: "string"
+    context:
+      file: "string | null"
+      location: "coordinate | null"
+      entity_id: "string | null"
+      details: "object | null"
+
+# ============================================================
+# QUERY PATTERNS
+# ============================================================
+
+query_patterns:
+  description: "Common queries the codex supports"
+
+  entity_queries:
+    - pattern: "appearances(entity_id, book, chapter?)"
+      returns: "array of appearances"
+      example: "appearances(CHAR_001, 2, 1) -> all Ahdia appearances in B2C1"
+
+    - pattern: "appearances_in_beat(entity_id, book, chapter, beat)"
+      returns: "array of appearances"
+      example: "appearances_in_beat(CHAR_001, 2, 1, 11)"
+
+    - pattern: "attribute_value(entity_id, attribute, at_coordinate?)"
+      returns: "canonical value or value at specific point"
+
+    - pattern: "attribute_history(entity_id, attribute)"
+      returns: "array of all mentions with values"
+
+  cross_entity_queries:
+    - pattern: "entities_at_location(coordinate)"
+      returns: "array of entity_ids present at that point"
+
+    - pattern: "relationship_between(entity_a, entity_b)"
+      returns: "relationship object or null"
+
+    - pattern: "callbacks_involving(entity_id)"
+      returns: "array of setup_payoff where entity is involved"
+
+  validation_queries:
+    - pattern: "drift_for_entity(entity_id)"
+      returns: "array of drift entries"
+
+    - pattern: "unpaid_callbacks(book?, chapter_range?)"
+      returns: "array of setup_payoff with status=planted"
+
+    - pattern: "proposed_entities()"
+      returns: "all entities awaiting Director approval"
+
+# End of Schema

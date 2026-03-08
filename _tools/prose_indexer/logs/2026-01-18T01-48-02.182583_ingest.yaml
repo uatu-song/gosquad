@@ -1,0 +1,13 @@
+meta:
+  operation: ingest
+  started_at: '2026-01-18T01:48:02.182583'
+  completed_at: '2026-01-18T01:48:03.298973'
+  verbose_mode: false
+summary:
+  files_processed: 1
+  entities_found: 9
+  proposed_entities: 12
+  appearances_logged: 93
+  time_markers_found: 1
+  warnings: 0
+  errors: 0
