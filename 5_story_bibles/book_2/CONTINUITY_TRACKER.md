@@ -13,7 +13,7 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 
 | Thread | Seeds Planted | Blooms | Payoff |
 |--------|---------------|--------|--------|
-| **Ahdia's baseline** | Ch 1 (95%) | Continuous | Ch 17 (54%), Ch 19 (~50%) |
+| **Ahdia's baseline** | Ch 1 (95%) | Continuous | Ch 17 (54%), Ch 19 (53.1%) |
 | **Benevolent dictator arc** | Ch 3 (news ticker seeds) | Background (reader fooled) | Ch 19 (Ruth discovers—reader learns) |
 | **Ruth's institutional capture** | Ch 4 (Bourn meeting) | Ch 10-16 | Ch 17-18 (boundaries) |
 | **Eidolon phases** | Ch 4-5 (Subtle) | Ch 10-16 (Escalation) | Ch 17+ (Critical) |
@@ -31,8 +31,10 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 
 ### Key Numbers
 
-- Ahdia baseline: 95% → 54% (Ch 17) → ~50% (Ch 19) → <10% (Book 2B end)
-- Treatment gap: 11 days = death
+- Ahdia baseline: 95% → 54% (Ch 17) → 53.1% (Ch 19) → <10% (Book 2B end)
+- Treatment gap: 11 days = death at functional baseline; **36 hours at 54%**
+- Treatment spacing: **72-hour minimum** (Ruth's boundary condition, Ch17)
+- Treatment efficacy: **declining** — CR-7 gained only 2 points at Ch17 (should be more)
 - Eidolon resistance: 60-70% effective (insufficient)
 - Kain polling: +8 → +12 → dips → recovers → **wins**
 
@@ -48,7 +50,7 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | Mystery | What Team Thinks | What's Actually True | Resolved? |
 |---------|------------------|----------------------|-----------|
 | **Geneva's shooter** | Kain's operation (follows bot network trail) | Unknown—NOT Bellatrix, NOT necessarily Kain | No |
-| **Bot network** | Connected to shooter | Separate operation—Kain's infrastructure, exploited the assassination | Partially (Titan Strategic in Month 6) |
+| **Bot network** | Connected to shooter | Separate operation—Kain's infrastructure, exploited the assassination | Partially (Titan Holdings in Month 6) |
 | **Translocation tech** | CADENS-level, points to insider | Unknown source | No |
 
 **Key distinction:** The bot network and the assassination are NOT the same operation. Bots = Kain's infrastructure (always running, exploits any crisis). Shooter = unknown (military precision, translocation tech, motive unclear).
@@ -72,10 +74,12 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | Ch 11 | ~60% | Absent | "She'll catch up" | Global ops | Coordinated attacks, team alone |
 | Ch 12 | ~58% | Absent | Concern growing | Jakarta, Cartagena, etc. | Parallel investigations |
 | Ch 13 | ~55% | Absent | "Where IS she?" | — | Near miss convergence |
-| Ch 14-16 | ~54% | Secret missions | Ruth suspicious | Full benevolent dictator | Investigations converge |
-| Ch 17 | 54% | Penthouse | Ruth discovers 54% | Ruth confronts | Confrontation scene |
-| Ch 18 | 54% | Constrained | Team knows coordination | Boundaries set | Limited to Track 4 |
-| Ch 19 | ~50% | Global/Home | **EXILE ISLAND REVEALED** | Full scope visible | Ruth/Ryu discover show |
+| Ch 14 | ~54% | Secret missions | Ruth suspicious | Full benevolent dictator | Harassment escalates |
+| Ch 15A/B | ~54% | Secret missions | — (Tess focus) | — | Tess gala infiltration |
+| Ch 16 | ~54% | Absent | Team maps conspiracy | — | Five-track strategy assigned |
+| Ch 17 | 54.2%→56.2% | Penthouse | Ruth discovers 54%, confronts | Ruth sets boundary | CR-7 treatment, 72h spacing, "I'm scared" |
+| Ch 18 | 56.2% | Constrained | Team knows coordination | Boundaries set | Limited to Track 4 |
+| Ch 19 | 53.1% | Global/Home | **EXILE ISLAND REVEALED** | Full scope visible | Ruth/Ryu discover show |
 
 **Baseline Burn Rate:** ~2-3% per chapter average when doing secret ops
 
@@ -92,8 +96,10 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | Ch 6 | — | — | — | — |
 | Ch 7-9 | Suspicious | Bourn relationship growing | Bourn (deepening) | Work as coping |
 | Ch 10-13 | Rationalizing | CADENS liaison forming | Team + Bourn | Buried |
-| Ch 14-16 | Can't ignore | Full CADENS liaison | Bourn (dependent) | — |
-| Ch 17 | Confrontation | Sets boundary | Ahdia (finally) | — |
+| Ch 14 | Can't ignore | Full CADENS liaison | Bourn (dependent) | — |
+| Ch 15A/B | — | — | — (Tess focus) | — |
+| Ch 16 | Defending Bourn | Reframes Bourn as coerced | Team (Bourn debate) | Firas parallel surfacing |
+| Ch 17 | Confrontation | Sets boundary with Ahdia | Ahdia (54.2%, ring receipt, "I'm scared") | Firas grief (receipt dated 3 days before explosion) |
 | Ch 18 | Boundary holding | Coordinates with Bourn | Team + Bourn | — |
 | Ch 19 | **Horror + complexity** | — | Ryu (discovery together) | — |
 
@@ -122,7 +128,7 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | Ch 5 | Isaiah exoneration (system protects Webb) | Suppressed | First crack |
 | Ch 6 | Working to avoid feeling | Breaking through | Cracking |
 | Ch 8-12 | Building perfect case | Buried in work | "Evidence will matter" |
-| Ch 16 | Case complete | — | About to test faith |
+| Ch 16 | Connects Defense budget to TRIOMF — "One conspiracy, three layers" | — | Assigned Track 1: Evidence |
 | Month 8 | **Evidence leaks, Kain polls UP** | — | **SHATTERED** |
 
 **Arc:** Conservative believer → perfect case → evidence meaningless → faith destroyed
@@ -136,6 +142,8 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | Ch 5 | Watches him protect Webb | Warns Leta | Planted |
 | Ch 6 | Processing complicity | Domestic intimacy, early harassment | Growing |
 | Ch 11+ | Investigating his department | Harassment escalating | Building |
+| Ch 15A/B | Discovers father coordinated Bennett cover-up | — | **Patterson warns her directly** |
+| Ch 16 | Presents intel, writes WHITFORD on whiteboard | — | Refuses to exculpate Bourn |
 | Month 11 | — | **LETA DIES** | Activated |
 | Post-election | — | Gone | **Brutalizes Webb** |
 
@@ -163,6 +171,7 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | Ch 5 | Target of fear | — | — |
 | Ch 10 | — | But/And to Leah | Lovers established |
 | Ch 11 | Coordinated attacks | — | — |
+| Ch 16 | — | Both/And on Bourn debate | Assigned Track 4: Resistance (scale to thousands) |
 
 ---
 
@@ -173,6 +182,7 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | Ch 5 | Silent | — | — |
 | Ch 6 | — | — | — |
 | Ch 10 | Learning but/and | — | Seeds |
+| Ch 16 | Cost-benefit on Bourn approach | **Reveals Kain recording** (held for months) | Assigned Track 5: Support |
 | Month 5-7 | **Silent on harassment** | Watching, not speaking | Failing |
 | Month 9 | Finally speaks (too late, clumsy) | Backlash | Learning cost |
 | Month 11 | — | — | Releases Kain recording |
@@ -187,7 +197,8 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 |---------|---------------------|-------------------|----------------|
 | Ch 4 | Vulnerable to Kain takeover | First meeting | Resisting from inside |
 | Ch 5+ | Under pressure | Deepening | Ally (hidden) |
-| Ch 16 | Revealed as ally | Full coordination | — |
+| Ch 15B | Named by Patterson as cover-up orderer | — | Quid pro quo revealed (budget for falsified forensics) |
+| Ch 16 | Reframed as coerced-not-committed (Ruth's read) | Ruth defends; Tess refuses exculpation | NOT exonerated — still ordered falsification |
 | Ch 17-18 | Open coordination | Partners | — |
 
 ---
@@ -223,6 +234,18 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | Korede observes | Ch 5, 6 | Book 4 | Partners with Tess |
 | "Degradation ≠ death" | Ch 3 | Book 4 | Transcendence reveal |
 | CADENS tracks Ahdia | Ch 3 | Ch 19 | She's been trackable the whole time |
+| **Kain dual-location (Tess)** | Ch 2 | Ch 20 | Clone/avatar system reveal |
+| **Kain dual-location (Ben)** | Ch 9 | Ch 20 | Clone/avatar system reveal |
+| **Eidolon amplifies only** | Ch 11 | Ch 23 | Laughter removes raw material, breaks grip |
+| **Fusion facility shipments** | Ch 9, 12 | Ch 23 | Coup through fusion reactor |
+| **Patterson warns Tess** | Ch 15B | Ch 16+ | Tess operates knowing she's flagged |
+| **Korede active participant** | Ch 15A/B | Book 4 | Observer → active → radicalized |
+| **Five-track strategy** | Ch 16 | Ch 18+ | All tracks need visible outcomes |
+| **Leah's Kain recording** | Ch 16 (revealed) | Month 8 (part of Ben's package) | Held for months, connected to Leta |
+| **One conspiracy, three layers** | Ch 16 (Ben) | Ch 23 | Titan tactical + institutional + Eidolon |
+| **Ruth's boundary** | Ch 17 | Ch 18+ | Won't treat without honesty; 72h spacing |
+| **Treatment declining efficacy** | Ch 17 (2 points gained) | Ch 19 | Cells too damaged to integrate fully |
+| **Firas ring receipt** | Ch 17 | — | "Three days before the explosion" — Ruth's parallel to Ahdia |
 
 ---
 
@@ -235,8 +258,10 @@ This is a tragedy engine with many moving parts. Here's the inventory:
 | 2-3 | 11 | 63% → 60% | Coordinated attacks |
 | 3-4 | 12 | 60% → 58% | Parallel investigations |
 | 5 | 13 | 58% → 55% | Near miss |
-| 5-6 | 14-16 | 55% → 54% | Convergence, black tie, Titan Strategic |
-| 6-7 | 17-19 | 54% → 50% | Confrontation, Exile Island reveal |
+| 5-6 | 14-15A/B | 55% → 54% | Harassment escalates, gala infiltration, Patterson warns Tess |
+| 6 | 16 | ~54% | Team convergence, five-track strategy, one conspiracy mapped |
+| 6 | 17 | 54.2%→56.2% | Ruth confrontation (chronologically BEFORE Ch16), boundary set |
+| 6-7 | 18-19 | 56.2% → 53.1% | Constrained ops, Exile Island reveal |
 
 ---
 
@@ -318,7 +343,9 @@ The question no one asks aloud. The undercurrent.
 
 ### Numbers to Track
 - Ahdia's baseline (decreasing ~2-3% per chapter during ops)
-- Days without treatment = 11 (death threshold)
+- Days without treatment = 11 at functional baseline; **36 hours at 54%** (baseline-dependent)
+- Treatment spacing: **72-hour minimum** (Ruth's boundary, Ch17)
+- Treatment efficacy: **declining** — only 2 points gained at Ch17
 - Treatment extends 18-24 months (not cure)
 - Eidolon resistance: 60-70% effective (insufficient)
 - Kain polling: +8 → +12 (assassination) → dips → recovers → wins
@@ -351,4 +378,4 @@ The question no one asks aloud. The undercurrent.
 
 ---
 
-*Last Updated: 2025-12-09*
+*Last Updated: 2026-03-09 (Ch15A–17 state changes logged)*

@@ -1,0 +1,367 @@
+# Chapter 2D: The Machine
+
+---
+
+Tess's apartment looked like a conspiracy theorist's fever dream, which was either appropriate or deeply ironic given the circumstances.
+
+Three monitors. Energy drink cans forming a small fortress around her keyboard—Red Bull, Monster, something Korean that Korede had recommended and tasted like liquid regret. Timestamp spreadsheets covered every available surface.
+
+"Okay, you little bot bastards," she muttered, fingers flying. "Where'd you come from?"
+
+The bot network was sophisticated. Not the usual Russian troll farm garbage—this was domestic, well-funded, and *fast*. Thousands of accounts pushing the same talking points within minutes of each other. "Domestic terrorism." "Radical elements." "Law and order." Kain's phrases, amplified across every platform simultaneously.
+
+She'd been at this for hours. Since the team scattered. Since Geneva Windrow's hand stopped reaching.
+
+The sound of a key in the lock made her flinch. The door opened.
+
+"...Tess?"
+
+Leta stood in the doorway, bag over her shoulder, taking in the scene—girlfriend at computer, energy drink graveyard, the particular chaos of someone who hadn't moved in hours.
+
+"You're *home*."
+
+The way she said it. Like finding water in a desert.
+
+"Hey! Yeah, I'm—" Tess spun her chair around, trying for casual. "Work thing got canceled. Last minute."
+
+Leta dropped her bag by the door, moving toward her. The kind of smile that made secrets feel heavier.
+
+"I can't remember the last time you were here when I got home. This is—"
+
+She stopped. Looking at the monitors. The energy drink civilization.
+
+"Baby, have you slept?"
+
+"Sleep is for people who aren't fueled by spite and artificial taurine."
+
+Tess stood, moving to intercept before Leta got a good look at the screens. "How was the meeting?"
+
+Leta let herself be redirected. Tired. Leaning into Tess slightly, and god, she smelled like coffee and cold air and the specific exhaustion of people who cared too much about a world that kept breaking.
+
+"Heavy. Everyone's processing Geneva. Korede's a mess—he was at the riot, you know? And now this." She shook her head. "He keeps saying he should've done more. Should've helped more people get out."
+
+*Korede ran toward tear gas like an idiot and almost got himself killed. Ahdia dragged him out. He's alive because of us. He'll never know that.*
+
+"That's... yeah. That's a lot." Tess kept her voice level. "Is he okay?"
+
+"Physically? Fine. But he's been beating himself up since the riot. Survivor's guilt, I think."
+
+Leta moved toward the bedroom, then stopped. Turned back.
+
+"The community's organizing a vigil. Tomorrow night. Geneva deserves—" She paused. "You should come. I know you're not usually... but it would mean a lot."
+
+*Tomorrow night I might be on a rooftop watching for threats at whatever event Ruth calls. Tomorrow night I might be tracing these bots to whoever killed Geneva. Tomorrow night I might be anywhere except where my girlfriend needs me to be.*
+
+"I'll try," Tess said. Soft. Honest, for once. "I really will."
+
+Leta searched her face. Deciding to believe it.
+
+"Come to bed? It's late."
+
+"I just need to finish something. Work stuff. Ten minutes."
+
+The sigh of someone who'd heard "ten minutes" before. "Ten minutes."
+
+She moved to the bedroom. Paused at the door.
+
+"I'm glad you're home, Tess."
+
+"Me too."
+
+*Liar. Liar liar liar.*
+
+The door closed. Tess turned back to the screens.
+
+Right. Bot bastards.
+
+She traced them back. VPNs, proxy servers, shell accounts—someone had spent real money on obfuscation.
+
+But money couldn't hide everything.
+
+The activation timestamps. That was the key. When did these accounts start pushing the narrative?
+
+She pulled the data. Sorted by time.
+
+First wave: 6:47 PM. "Radical elements gathering." "Potential violence." "Law and order at risk."
+
+She checked her notes. Geneva was shot at 7:23 PM.
+
+The bots were pushing fear narratives about the memorial *before* anyone died. Priming the audience. Setting the frame.
+
+Then, at 7:24 PM—one minute after the shot—the pivot. Thousands of accounts, simultaneously: "Domestic terrorism." "Geneva died because of radical elements." "This is what happens when we don't support law and order."
+
+One minute.
+
+"What the hell..."
+
+She stared at the screen. The numbers didn't change no matter how long she looked.
+
+One minute to pivot thousands of accounts to a coordinated message about a death that just happened. That wasn't reactive. That was *infrastructure*. A machine built to exploit any crisis, sitting ready, waiting for something to weaponize.
+
+"Someone built this," she whispered. "Someone's been building this for a long time."
+
+The assassination and the narrative machine weren't necessarily the same operation. But someone had spent serious money making sure that when violence happened—any violence—Kain's message would be first and loudest.
+
+She glanced toward the bedroom door. Leta asleep by now. Normal girlfriend. Normal life. Warm bed waiting for her.
+
+She turned back to the monitors.
+
+She kept digging.
+
+---
+
+The private office was dark except for a single lamp. Harding Kain had dismissed his staff an hour ago—told them he needed time to process, to grieve, to prepare for the days ahead. They'd believed him. They always believed him.
+
+He wasn't grieving.
+
+He was pacing. Twelve steps to the window, twelve steps back to the desk. The city lights spread out below like scattered embers, and somewhere out there Geneva Windrow's body was being photographed, catalogued, reduced to evidence.
+
+His phone buzzed. Private line. The one only three people had the number for.
+
+He answered.
+
+"Report."
+
+The voice came from everywhere and nowhere—not through the phone's speaker exactly, but *around* it. Like reality had folded slightly to let the sound through. Kain had stopped questioning the mechanics months ago. Some questions were better left unasked.
+
+"Geneva Windrow is dead."
+
+Silence. The kind of silence that had weight to it.
+
+"I am aware." No grief in the voice. No surprise. Nothing human at all. "The Temporalist's position during the speech."
+
+Kain stopped pacing. That wasn't the response he'd expected. Geneva was dead—the woman who'd been polling twelve points ahead, the obstacle they'd spent six months maneuvering around—and all she wanted to know about was the girl with the purple lightning?
+
+"We had eyes on the balcony. The one with the Hyper Seed. She was there when the shot was fired."
+
+"And she did nothing."
+
+"Nothing. Stood in the wings. Watched her die."
+
+The silence stretched longer this time. Long enough that Kain checked his phone to make sure the connection hadn't dropped.
+
+"This is what you wanted," he said carefully. "Geneva was your obstacle. Now she's—"
+
+"You misunderstand." The temperature in the room seemed to drop. "Geneva was never an obstacle."
+
+"Then why did we spend six months positioning for—"
+
+"The Temporalist was supposed to save her."
+
+Kain's pacing stopped entirely. "What?"
+
+"Every iteration. Every cycle." The voice was flat, reciting facts. "The shooter fires. The Temporalist intervenes. Geneva survives. The pattern holds."
+
+"You *wanted* Geneva to survive?"
+
+"The assassination attempt is a constant. It happens every time—different shooter, different weapon, same result. The Temporalist preventing it is supposed to be a constant as well. The shooter's identity is irrelevant. I do not know it. I do not care. What matters is that my piece performs its function."
+
+"Your piece."
+
+"The girl. Ahdia. She exists to protect Geneva. That is why the Hyper Seed bonded with her. That is why she has those powers." A pause. Something almost like emotion bleeding through the flatness. "She is my hands in a dimension I cannot reach."
+
+Kain moved to the window. His reflection stared back at him—composed, controlled, the face he showed the cameras. But underneath, something cold was spreading through his chest.
+
+"And she just... didn't?"
+
+"No."
+
+"Why?"
+
+The silence this time was different. Heavier. Like the voice on the other end was holding something back—or holding something *in*.
+
+"That is what you will determine."
+
+"Me?"
+
+"You have assets. Use them. I need to know why the Temporalist deviated from the pattern. Where she was positioned. What she was doing. What she *chose* not to do."
+
+Kain turned from the window. "If she didn't save Geneva, maybe she's not under anyone's control. Maybe she made her own choice."
+
+"She is a tool I created." Flat. Final. "Tools do not make choices."
+
+"This one did."
+
+The silence stretched. Somewhere in it, Kain thought he heard something—a breath, maybe. Or the ghost of one.
+
+"What happens now?" he asked. "Without Geneva—"
+
+"You have an election to win. Your opponent is dead." The voice had recovered its cold precision. "I expect you will find that... convenient."
+
+"And the Temporalist?"
+
+"Continue monitoring. I will handle the deviation."
+
+"Handle it how?"
+
+"That is not your concern."
+
+Kain pushed. He shouldn't—he knew he shouldn't—but the question was there and it wouldn't stay down. "She has the Hyper Seed. She can freeze time. If she's gone off-script, she's dangerous. To both of us."
+
+"The Seed was my insurance policy for four iterations. If the policy has... lapsed, I will need to find an alternative."
+
+"An alternative Temporalist?"
+
+"An alternative solution." Something shifted in the voice. Not warmer—colder, if anything. The cold of deep space. "The shooter will return. They always do. Without Geneva to protect, without the pattern to maintain..."
+
+"What?"
+
+"The game has changed." The finality in those words could have frozen oceans. "Report when you have information on the Temporalist's actions."
+
+"And if I can't get that information?"
+
+"Then you are less useful than I believed."
+
+The connection ended. Not a click—more like the sound had simply stopped existing, leaving Kain alone in his dark office with the city lights and the weight of what he'd just learned.
+
+Four iterations. The voice had said *four iterations*. Like this had all happened before. Like Geneva's death was supposed to be prevented, every time, by a girl who could stop time.
+
+And this time, the girl had chosen not to.
+
+Kain looked out at the city. Somewhere out there, Ahdia Bacchus was probably staring at a ceiling, or a window, or the inside of her own head. Probably had no idea that her inaction had broken something much larger than one politician's life.
+
+Or maybe she did know. Maybe that was the point.
+
+He reached for his phone. Started making calls.
+
+The game had changed. Time to learn the new rules.
+
+---
+
+She existed between dimensions now. Had for years—since Montana, since the avatar's destruction, since she'd been torn from the third dimension and locked out permanently. The space she inhabited wasn't physical. It was something else. A fold in reality where a being like her could persist without a body.
+
+It was cold. Not temperature-cold—concept-cold. The absence of warmth as a fundamental property of existence.
+
+The upload was still happening.
+
+Geneva's consciousness bleeding in. Not data. Not memory in the clinical sense. *Experience*. The full weight of a life flowing back to its source.
+
+*Stop*, she thought. *This is residue. This is—*
+
+Geneva's last moment hit her like a wave.
+
+Hand reaching. Mouth open. The word "believed" half-formed on lips that would never finish it. The audience a blur of faces—some crying, some stone-faced, all of them *listening*, actually listening, and she'd felt it, Geneva had felt it, the moment when a room full of strangers becomes something else, something unified, something that might actually—
+
+Bellatrix forced the experience down. Compartmentalized. She'd done this before. Three times before. She knew how to wall off the uploads, how to file them away where they couldn't touch her.
+
+But they always touched her.
+
+*You were supposed to live.*
+
+The thought came unbidden. Not her thought—or was it? After four uploads, after four Genevas absorbed into her consciousness, she couldn't always tell anymore whose grief was whose.
+
+*Four times. Four times I built you. Four times I watched you become... this.*
+
+Another wave. Geneva in Gloria Farah's living room. The model trains going around the track. The old woman's hand in hers—papery and warm and trembling. And Geneva had felt it, actually *felt* it, the weight of a mother's loss, and it hadn't been performance, it hadn't been calculated—
+
+*That wasn't the script. You weren't supposed to feel it. You were supposed to use it.*
+
+But Geneva always felt it. That was the flaw in the design—or the feature, depending on how you looked at it. Consciousness copies diverged. They became their own people. They developed the capacity to genuinely care about the things they were supposed to only strategically care about.
+
+Naima's template, reshaped by experience, became something Naima never was: a true believer.
+
+*I know.*
+
+She did know. She'd watched it happen four times. Four Genevas, each one starting from the same template, each one becoming someone who actually believed in the world they were trying to build. Someone who reached for nowhere like it was a real place. Like it could be touched.
+
+The final upload hit.
+
+Geneva's last second. Not fear—confusion. *Why am I falling? Why is the light—*
+
+And then nothing. The abrupt termination of a consciousness that had been mid-thought, mid-reach, mid-hope.
+
+Bellatrix absorbed it. Added it to the others. Another layer of scar tissue on her cosmic form.
+
+*The Temporalist was there.*
+
+The thought crystallized, cold and sharp.
+
+*She was right there. I felt her. The Seed was active. She could have—*
+
+The realization settled in slowly. Like frost forming on glass.
+
+*She chose not to.*
+
+Bellatrix existed in the space between dimensions and felt something she hadn't felt in 3.7 billion years of cosmic existence: genuine surprise.
+
+Her own creation. Her own hands in the third dimension. The tool she'd engineered specifically to solve this unsolvable problem—the one variable she'd thought she controlled—
+
+Had made a choice.
+
+*You were not supposed to have choices. You were supposed to be a function. A variable I controlled.*
+
+But consciousness copies diverged. She knew that. She'd built the Genevas knowing that. Had she thought Ahdia would be different? That the Seed would keep her aligned? That twenty years of human neurodevelopment wouldn't reshape a cosmic consciousness into something that could say *no*?
+
+Geneva's voice, still echoing in the upload: *I'd rather spend my life reaching for nowhere than accept that this is the best we can do.*
+
+*You reached for nowhere and you almost made me believe it.*
+
+The thought surprised her. She tried to wall it off, but it slipped through—
+
+*Again. Four times you've made me believe it. Four times I've watched you reach and fall and—*
+
+She stopped.
+
+The cold of between-dimensions pressed in. The absence of warmth. The absence of anything except her own consciousness and the four dead Genevas she carried inside it.
+
+*And I keep doing this.*
+
+The thought was quiet. Dangerous.
+
+*I keep building you. I keep watching you become someone who hopes. And then I watch you die with your hand still reaching.*
+
+The grief wasn't hers. It was Geneva's grief, uploaded and absorbed. It was Naima's grief, from before—from Montana, from the children, from the life she'd lost when she tried to end it. It was four lifetimes of accumulated loss layered over a cosmic consciousness that had eliminated emotions eons ago.
+
+And she couldn't separate them anymore.
+
+*This was supposed to fix it. The perfect version. The one who succeeds. The one who proves that—*
+
+That what? What had she been trying to prove?
+
+*That I wasn't wrong. That the infection can become strength. That love can build instead of break.*
+
+Geneva's upload completed. Her consciousness fully absorbed. Another incomplete life. Another interrupted arc. Another hand reaching for nowhere that would never get there.
+
+Bellatrix existed in the cold between dimensions and did not move.
+
+Then, slowly, the stoicism returned. The armor she'd built across eons. The control that had allowed her to watch worlds die without flinching.
+
+*The Temporalist will be dealt with.*
+
+The thought was cold. Precise. The voice she used with Kain.
+
+*The shooter will return. They always return. And I will find another way.*
+
+She always found another way. That was what she did. That was what she was. A being of infinite patience and infinite determination, engineering solutions across cosmic timescales.
+
+*I always find another way.*
+
+But underneath the cold, something Geneva had left behind:
+
+A hand. Still reaching.
+
+For nowhere. For something that couldn't exist. For a world where everyone had enough and everyone was free and a quiet man could build model trains in his spare bedroom without dying at thirty-one.
+
+Bellatrix felt it. The reach. The hope.
+
+She couldn't stop feeling it.
+
+*He believed—*
+
+She cut the thought off. Walled it away. Added it to the others.
+
+The space between dimensions was cold. The absence of warmth as a fundamental property.
+
+She existed there alone, carrying four deaths, four hopes, four reaches toward nowhere that never got there.
+
+And somewhere, in a dimension she couldn't touch, a girl who was supposed to be her hands had decided to stop reaching.
+
+The pattern was broken.
+
+Bellatrix would have to build a new one.
+
+She always did.
+
+---
+
+*End of Chapter 2D*

@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go Squad · Perspective Engine</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1117;--surface:#161b22;--surface2:#1c2333;--border:#2a3040;--text:#e2e6ed;--text-muted:#7d8590;--text-dim:#484f58;--gosquad:#58a6ff;--gosquad-light:rgba(88,166,255,0.1);--triomf:#f0883e;--triomf-light:rgba(240,136,62,0.1);--cadens:#d2a8ff;--cadens-light:rgba(210,168,255,0.1);--cosmic:#f0e050;--cosmic-light:rgba(240,224,80,0.12);--kill:#f85149;--kill-light:rgba(248,81,73,0.1);--death:#8b949e;--check:#d2a8ff;--promote:#3fb950;--white-accent:#58a6ff;--white-light:rgba(88,166,255,0.1);--black-accent:#f0883e;--black-light:rgba(240,136,62,0.1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+header{text-align:center;padding:40px 20px 10px;border-bottom:1px solid var(--border)}
+header h1{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900;letter-spacing:-0.5px;background:linear-gradient(135deg,var(--gosquad),var(--triomf));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header .sub{color:var(--text-muted);font-size:.9rem;margin-top:4px}
+.container{max-width:1200px;margin:0 auto;padding:0 20px 60px}
+.step{margin:24px 0;padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:8px}
+.step h2{font-family:'Playfair Display',serif;font-size:1.15rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.step-num{display:inline-flex;width:28px;height:28px;border-radius:50%;align-items:center;justify-content:center;font-size:.8rem;font-weight:700;background:var(--gosquad);color:var(--bg)}
+.step p.desc{font-size:.85rem;color:var(--text-muted);margin-bottom:12px}
+textarea,input[type=text],select{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;background:var(--surface2);color:var(--text);font-family:'Source Sans 3',sans-serif;font-size:.9rem;resize:vertical}
+textarea:focus,input:focus,select:focus{outline:none;border-color:var(--gosquad)}
+.btn{padding:9px 20px;border:none;border-radius:6px;font-family:'Source Sans 3',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:background .2s,transform .1s}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--gosquad);color:var(--bg)}
+.btn-primary:hover{background:#79b8ff}
+.btn-secondary{background:var(--surface2);color:var(--text-muted);border:1px solid var(--border)}
+.btn-secondary:hover{border-color:var(--text-muted);color:var(--text)}
+.btn-export{background:var(--promote);color:var(--bg);font-size:1rem;padding:14px 32px}
+.btn-export:hover{background:#4dc960}
+.btn-sm{padding:5px 12px;font-size:.8rem}
+.game-info{display:flex;justify-content:center;gap:24px;padding:12px;margin:12px 0;background:var(--surface2);border-radius:6px;font-size:.85rem;flex-wrap:wrap;color:var(--text-muted)}
+.game-info strong{color:var(--text)}
+
+/* Phase 1: Journey cards */
+.journey-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+@media(max-width:800px){.journey-grid{grid-template-columns:1fr}}
+.side-header{font-family:'Playfair Display',serif;font-size:1rem;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+.journey-card{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:14px;margin-bottom:10px;transition:all .2s}
+.journey-card:hover{border-color:var(--text-muted)}
+.journey-card.locked{border-color:var(--promote);background:rgba(63,185,80,0.05)}
+.jc-header{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.jc-icon{font-size:1.6rem}
+.jc-info{flex:1}
+.jc-piece-name{font-weight:700;font-size:.95rem}
+.jc-stats{font-size:.75rem;color:var(--text-dim)}
+.jc-badge{font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;text-transform:uppercase}
+.badge-alive{background:rgba(63,185,80,.15);color:var(--promote)}
+.badge-dead{background:rgba(139,148,158,.15);color:var(--death)}
+.badge-mate{background:rgba(248,81,73,.2);color:var(--kill)}
+.badge-promo{background:rgba(63,185,80,.2);color:var(--promote)}
+.jc-arc{font-size:.85rem;color:var(--text-muted);margin:8px 0;line-height:1.5}
+.jc-arc strong{color:var(--text)}
+.jc-journey-svg{text-align:center;margin:8px 0}
+.jc-assign{margin-top:10px;display:flex;gap:8px;align-items:center}
+.jc-assign select{flex:1;padding:7px 10px;font-size:.85rem}
+.jc-assign .locked-name{font-weight:700;color:var(--promote);font-size:.9rem}
+.jc-pawn-section{margin-top:8px;padding-top:8px;border-top:1px solid var(--border)}
+.jc-pawn-section label{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text-muted);display:block;margin-bottom:4px}
+.pawn-chips{display:flex;flex-wrap:wrap;gap:4px}
+.pawn-chip{padding:3px 10px;border-radius:14px;font-size:.75rem;cursor:pointer;border:1px solid var(--border);background:var(--surface);color:var(--text-dim);transition:all .15s}
+.pawn-chip:hover{border-color:var(--text-muted)}
+.pawn-chip.active{border-color:var(--gosquad);background:var(--gosquad-light);color:var(--text)}
+
+/* Phase 2: Scaffold output */
+#output{display:none}
+#output.vis{display:block}
+.scaffold-section{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:16px}
+.scaffold-section h3{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sf{margin-bottom:12px;font-size:.9rem}
+.sf-label{font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text-muted);margin-bottom:2px}
+.sf-val{color:var(--text)}
+.sf-prompt{border:1.5px dashed var(--border);border-radius:6px;padding:12px 16px;margin-top:6px;color:var(--text-dim);font-style:italic;font-size:.85rem;min-height:40px}
+.sf-prompt strong{color:var(--text-muted);font-style:normal}
+.faction-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.faction-gosquad{background:var(--gosquad-light);color:var(--gosquad)}
+.faction-triomf{background:var(--triomf-light);color:var(--triomf)}
+.faction-cadens{background:var(--cadens-light);color:var(--cadens)}
+.faction-cosmic{background:var(--cosmic-light);color:var(--cosmic)}
+.faction-civilian{background:rgba(139,148,158,.15);color:var(--death)}
+
+/* Timeline */
+.tl-move{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(42,48,64,.5)}
+.tl-move:last-child{border-bottom:none}
+.tl-mn{width:50px;flex-shrink:0;font-family:monospace;font-size:.8rem;color:var(--text-dim);padding-top:3px;text-align:right}
+.tl-mb{flex:1}
+.tl-ev{display:flex;align-items:flex-start;gap:10px;padding:6px 10px;border-radius:6px;margin-bottom:4px;font-size:.9rem;line-height:1.5}
+.tl-ev .ti{font-size:.85rem;flex-shrink:0;margin-top:2px}
+.tl-ev .pn{font-weight:700}
+.tl-ev .nt{font-family:monospace;color:var(--text-dim);font-size:.8rem}
+.tl-ev .dt{color:var(--text-muted)}
+.ev-w{background:var(--white-light)}.ev-w .pn{color:var(--white-accent)}
+.ev-b{background:var(--black-light)}.ev-b .pn{color:var(--black-accent)}
+.ev-k{background:var(--kill-light)}
+.ev-o{background:var(--cosmic-light);border:1px solid rgba(240,224,80,.25)}
+.ev-d{background:rgba(139,148,158,.08);border-left:3px solid var(--death)}
+.ph-mark{padding:10px 16px;margin:20px 0 10px;font-family:'Playfair Display',serif;font-weight:700;font-size:.95rem;border-radius:6px;border-left:4px solid}
+.ph-expo{border-color:var(--white-accent);color:var(--white-accent);background:rgba(88,166,255,.06)}
+.ph-conflict{border-color:var(--black-accent);color:var(--black-accent);background:rgba(240,136,62,.06)}
+.ph-rising{border-color:var(--check);color:var(--check);background:rgba(210,168,255,.06)}
+.ph-climax{border-color:var(--kill);color:var(--kill);background:rgba(248,81,73,.06)}
+.ph-conclusion{border-color:var(--promote);color:var(--promote);background:rgba(63,185,80,.06)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:16px;font-size:.8rem;color:var(--text-muted)}
+.legend-item{display:flex;align-items:center;gap:5px}
+.legend-dot{width:10px;height:10px;border-radius:3px}
+.board-tog{font-size:.75rem;color:var(--text-dim);cursor:pointer;margin-top:4px;display:inline-block;padding:2px 8px;border-radius:4px;border:1px solid var(--border)}
+.board-tog:hover{color:var(--text-muted);border-color:var(--text-muted)}
+.board-box{margin-top:8px;display:none}
+.board-box.open{display:block}
+
+/* Tabs */
+.tab-bar{display:flex;gap:4px;margin-bottom:16px}
+.tab-btn{flex:1;padding:10px;text-align:center;font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:1px;border-radius:6px 6px 0 0;cursor:pointer;border:1px solid var(--border);border-bottom:none;transition:background .2s;background:var(--surface);color:var(--text-muted)}
+.tab-btn.active{background:var(--gosquad-light);border-color:var(--gosquad);color:var(--gosquad)}
+
+/* Preloaded game selector */
+.game-selector{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.game-btn{padding:8px 16px;border:1px solid var(--border);border-radius:6px;background:var(--surface2);color:var(--text-muted);cursor:pointer;font-size:.85rem;transition:all .15s}
+.game-btn:hover{border-color:var(--gosquad);color:var(--text)}
+.game-btn.active{border-color:var(--gosquad);background:var(--gosquad-light);color:var(--gosquad)}
+
+@media print{body{background:#fff;color:#222}header{border-color:#ccc}.step,.scaffold-section{border-color:#ccc;background:#fafafa}.tl-ev{background:#f5f5f5!important;border:1px solid #ddd;color:#222}.btn,.tab-bar,.game-selector{display:none!important}#output{display:block!important}.board-box{display:block!important}}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Go Squad · Perspective Engine</h1>
+    <div class="sub">Chess-to-narrative scaffolding for the Auerbach Series</div>
+</header>
+
+<div class="container">
+
+    <!-- STEP 1: PGN Input -->
+    <div class="step" id="step-pgn">
+        <h2><span class="step-num">1</span> Load Chess Game</h2>
+        <p class="desc">Select a pre-loaded game or paste custom PGN. The engine will analyze every piece's journey.</p>
+        <div class="game-selector" id="game-selector"></div>
+        <textarea id="pgn-input" rows="4" placeholder="Paste PGN here or select a pre-loaded game above..."></textarea>
+        <div style="margin-top:8px"><button class="btn btn-primary" onclick="analyzeGame()">Analyze Game</button></div>
+        <div class="game-info" id="game-info" style="display:none"></div>
+    </div>
+
+    <!-- STEP 2: Raw Journeys (Phase 1) -->
+    <div class="step" id="step-journeys" style="display:none">
+        <h2><span class="step-num">2</span> Piece Journeys</h2>
+        <p class="desc">Study each piece's arc — moves, kills, death, witnesses. Then assign Go Squad characters based on which journey fits which person. <strong>Ahdia</strong> is auto-locked to the checkmate piece. <strong>Bellatrix</strong> is auto-locked to the Black Queen.</p>
+        <div class="tab-bar">
+            <div class="tab-btn active" onclick="showJourneySide('white')">White Side</div>
+            <div class="tab-btn" onclick="showJourneySide('black')">Black Side</div>
+        </div>
+        <div id="journeys-white" class="journey-grid"></div>
+        <div id="journeys-black" class="journey-grid" style="display:none"></div>
+    </div>
+
+    <!-- STEP 3: Build Scaffold -->
+    <div class="step" id="step-build" style="display:none;text-align:center">
+        <h2 style="justify-content:center"><span class="step-num">3</span> Build Scaffold</h2>
+        <p class="desc">Generate per-character narrative scaffolding with Go Squad context, themes, and writing prompts.</p>
+        <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+            <button class="btn btn-primary" onclick="buildScaffold()">Build Scaffold</button>
+            <button class="btn btn-export" onclick="exportHTML()">Export Standalone HTML</button>
+        </div>
+    </div>
+
+    <!-- Output -->
+    <div id="output"></div>
+</div>
+
+<script>
+// ═══════════════════════════════════════
+// GO SQUAD UNIVERSE DATA
+// ═══════════════════════════════════════
+const GO_SQUAD_CHARACTERS = [
+    { id: 'ahdia', name: 'Ahdia Bacchus', faction: 'gosquad', role: 'Temporalist / Strategic Coordinator',
+      summary: 'Depressed hermit, early 20s. Time manipulation via Hyper Seed. Powers are killing her (18-24 months). Watches TV 12+ hrs/day — pop culture is her frame of reference. Secret power source for Go Squad.',
+      arc: 'Avoidance → forced action → sacrifice', themes: ['worthiness', 'procrastination as signal', 'both/and'],
+      relationships: { 'firas': 'brother', 'ruth': 'co-conspirator/medical', 'ryu': 'handler/romance', 'bellatrix': 'consciousness source' },
+      powers: 'Selective Time Bubbles, force amplification, selective slowing. Each use = cellular degradation.',
+      locked: false },
+    { id: 'bellatrix', name: 'Bellatrix / Naima Bacchus', faction: 'cosmic', role: 'Conclave Designate / Rogue Operative',
+      summary: 'Type IV civilization being. Ahdia and Firas\'s mother AND their consciousness source. Locked in higher dimension. Tragic perfectionalist across 3.7 billion years of attempts.',
+      arc: 'Perfection → accumulated grief → attempted reclamation', themes: ['perfection as destruction', 'love as infection', 'cosmic loneliness'],
+      relationships: { 'ahdia': 'consciousness source/mother', 'firas': 'consciousness source/mother', 'intermediary': 'conclave colleague', 'geneva': 'avatar identity' },
+      powers: 'Omega-level consciousness, clone avatars, dimensional manipulation.',
+      locked: false },
+    { id: 'firas', name: 'Firas Bacchus', faction: 'gosquad', role: 'Go Squad Founder/Leader',
+      summary: 'Ahdia\'s younger brother, early 20s. Parkour instructor, Go Squad founder. Consciousness copy of The Imperator. Dies in Book 1 Ch.29 consumed by singularity.',
+      arc: 'Leadership → sacrifice → legacy ("no better place, no better time")', themes: ['sacrifice', 'legacy', 'chosen family'],
+      relationships: { 'ahdia': 'sister', 'ruth': 'partner (grieved)', 'gosquad': 'founder/leader' },
+      powers: 'None innate. Enhanced by Ahdia\'s time bubbles without knowing.',
+      locked: false },
+    { id: 'ruth', name: 'Ruth Carter', faction: 'gosquad', role: 'ER Surgeon / Go Squad Medic / CADENS Researcher',
+      summary: 'Late 20s/early 30s. Expert trauma surgery. Develops CR-7 treatment that saves Ahdia but secretly prevents transcendence. Co-conspirator with Ahdia. Grieving Firas.',
+      arc: 'Reluctant support → field leader → knowledge burden', themes: ['healing as control', 'grief as fuel', 'complicity in care'],
+      relationships: { 'ahdia': 'co-conspirator/medical provider', 'firas': 'deceased partner', 'gosquad': 'new leader' },
+      powers: 'CR-7 Temporal Variant development. Medical expertise.',
+      locked: false },
+    { id: 'tess', name: 'Tess Whitford', faction: 'gosquad', role: 'Go Squad Member / "Gloom Girl"',
+      summary: 'Early-mid 20s. Exotic dancer. Police chief\'s daughter (estranged). On Sertraline for depression. "Teleports" via middle finger trigger. Most vulnerable to identity crisis.',
+      arc: 'Rebellion → father conflict → political consciousness', themes: ['systemic complicity', 'inherited shame', 'depression as shared experience'],
+      relationships: { 'whitford': 'father (estranged/enemy)', 'gosquad': 'team/family', 'ahdia': 'shared depression bond' },
+      powers: 'Apparent teleportation (actually Ahdia moving her in frozen time).',
+      locked: false },
+    { id: 'leah', name: 'Leah Turner', faction: 'gosquad', role: 'Go Squad Member / "Battlea"',
+      summary: 'Mid-late 20s. Barista, roller derby jammer. Anger issues channeled productively. MMA purple belt. Emotional heart of team.',
+      arc: 'Strength identity → powers revelation crisis → rebuilds self', themes: ['earned vs given strength', 'anger as love', 'privilege weaponized'],
+      relationships: { 'gosquad': 'team/emotional center' },
+      powers: 'MMA combat, speed, durability (enhanced by Ahdia unknowingly).',
+      locked: false },
+    { id: 'victor', name: 'Victor Hernandez', faction: 'gosquad', role: 'Go Squad Member / "Crimson Sable"',
+      summary: '30s. Community center director. Wife murdered by gang. Strategic thinker, systems analyst. Applies organizing principles to vigilante work.',
+      arc: 'Grief → intellectual partnership → systemic understanding', themes: ['systems thinking', 'grief channeled', 'community as resistance'],
+      relationships: { 'ruth': 'intellectual partner', 'gosquad': 'strategist' },
+      powers: 'Bo staff combat, strategic/tactical thinking.',
+      locked: false },
+    { id: 'ben', name: 'Ben Bukowski', faction: 'gosquad', role: 'Go Squad Member / "Night Knight"',
+      summary: 'Late 20s-early 30s. Ex-Marine, PTSD. Personal trainer ("Semper Fit" gym). Military discipline. Adapts to truth without major crisis — training prepared him.',
+      arc: 'Discipline → adaptation → faith in system shattered (Book 2)', themes: ['institutional faith', 'military identity', 'evidence vs power'],
+      relationships: { 'gosquad': 'tactical/discipline core' },
+      powers: 'Military tactics, weapons expertise, discipline.',
+      locked: false },
+    { id: 'kain', name: 'Harding Kain', faction: 'triomf', role: 'Presidential Candidate / TRIOMF Leader',
+      summary: 'Clone body consciousness transfer. Political power + criminal empire. Transforms into kaiju via Tamois Heart in Book 1. Survives via clone backup. Wins election in Book 2 despite everything.',
+      arc: 'Power accumulation → exposure → wins anyway', themes: ['truth vs power', 'institutional immunity', 'authoritarianism'],
+      relationships: { 'whitford': 'lieutenant', 'bellatrix': 'guided by (unknowingly)', 'gosquad': 'primary antagonist' },
+      powers: 'Clone immortality, political machinery, TRIOMF resources.',
+      locked: false },
+    { id: 'whitford', name: 'Chief John Whitford', faction: 'triomf', role: 'Police Chief / TRIOMF Lieutenant',
+      summary: 'Tess\'s father. Running police as private army for TRIOMF. May be clone replacement. Complicit in Firas\'s death and Isaiah Bennett\'s murder.',
+      arc: 'Authority → corruption exposed → institutional protection', themes: ['police as weapon', 'father as oppressor', 'clone ambiguity'],
+      relationships: { 'tess': 'daughter (estranged)', 'kain': 'serves', 'gosquad': 'antagonist' },
+      powers: 'Institutional power, police force.',
+      locked: false },
+    { id: 'bourn', name: 'Director Harriet Bourn', faction: 'cadens', role: 'CADENS Director / "Overseer"',
+      summary: 'Late 50s-60s. Decades of service. Pragmatist willing to sacrifice pawns. Grows to respect Ahdia. Potential redemption arc.',
+      arc: 'Pragmatic control → questioning methods → possible redemption', themes: ['necessary evil', 'institutional burden', 'mentorship'],
+      relationships: { 'ahdia': 'recruiter/overseer', 'mack': 'closest friend', 'ryu': 'subordinate' },
+      powers: 'CADENS institutional authority, intelligence network.',
+      locked: false },
+    { id: 'ryu', name: 'Dr. Shiba Ryu', faction: 'cadens', role: 'FAERIS Specialist / Ahdia\'s Handler',
+      summary: 'Mid-late 20s. Nervous rambler, genuinely kind, neurodivergent. AR-Ryu cybernetic consciousness copy in HUD. Romance with Ahdia exists only in frozen time.',
+      arc: 'Handler → impossible love → consciousness copy tragedy', themes: ['love across impossible forms', 'consciousness questions', 'kindness as strength'],
+      relationships: { 'ahdia': 'handler/love interest', 'bourn': 'subordinate' },
+      powers: 'FAERIS drone operation, AR-Ryu HUD system.',
+      locked: false },
+    { id: 'geneva', name: 'Geneva Windrow', faction: 'civilian', role: 'Congresswoman / Presidential Candidate',
+      summary: 'Early-mid 30s. Working-class, grassroots organizer. "Not me, us" mentality. Symbol of democratic hope. Actually Bellatrix avatar (revealed Book 2 Act 3).',
+      arc: 'Hope incarnate → utopia builder → revealed as cosmic puppet', themes: ['democracy vs authoritarianism', 'authentic vs manufactured hope', 'avatar identity'],
+      relationships: { 'bellatrix': 'avatar identity', 'kain': 'political opponent', 'gosquad': 'covert ally' },
+      powers: 'Political organizing, public trust. (Actually Bellatrix in disguise.)',
+      locked: false },
+    { id: 'intermediary', name: 'The Intermediary', faction: 'cosmic', role: 'Conclave Agent / Dimensional Being',
+      summary: 'Androgynous figure in white. Visual glitch made flesh. Herald/observer monitoring Hyper Seed. Complicit in genocide through inaction. Slow turn toward reluctant ally.',
+      arc: 'Observer → complicity exposed → reluctant defiance', themes: ['inaction as violence', 'bureaucratic evil', 'slow rebellion'],
+      relationships: { 'ahdia': 'monitor/eventual ally', 'bellatrix': 'conclave colleague', 'conclave': 'agent' },
+      powers: 'Dimensional traversal, observation, herald abilities.',
+      locked: false },
+    { id: 'jericho', name: 'Rahs Jericho', faction: 'cadens', role: 'CADENS Chief Science Officer (Hidden Antagonist)',
+      summary: 'Controls Eidolon via equipment disguised as detection. Zero empathy, ego-driven. Orchestrates mass violence for research. Revealed Books 4-5.',
+      arc: 'Trusted expert → hidden controller → exposed', themes: ['science without ethics', 'institutional trust exploited', 'ego as evil'],
+      relationships: { 'bourn': 'trusted subordinate', 'eidolon': 'controller' },
+      powers: 'Eidolon control, scientific expertise, institutional cover.',
+      locked: false },
+    { id: 'mack', name: 'Colonel Bentley Mack', faction: 'cadens', role: 'CADENS Operations / "Howitzer"',
+      summary: 'Bourn\'s closest colleague. Only person who speaks freely to Overseer. Shared burden of decades of command.',
+      arc: 'Loyal second → witness to institutional compromise', themes: ['loyalty', 'shared burden', 'military honor'],
+      relationships: { 'bourn': 'closest friend/colleague' },
+      powers: 'Military operations, institutional authority.',
+      locked: false },
+    { id: 'isaiah', name: 'Isaiah Bennett', faction: 'civilian', role: 'Environmental Engineer / Whistleblower (Deceased)',
+      summary: 'Killed by police at peaceful protest before Book 2. Discovered CADENS Southwest fusion project violations. Subject of coordinated smear campaign.',
+      arc: 'Truth-teller → silenced → legacy drives investigation', themes: ['environmental racism', 'whistleblower martyrdom', 'systemic suppression'],
+      relationships: { 'whitford': 'killed by his police', 'tess': 'investigation catalyst', 'kain': 'threatened his operations' },
+      powers: 'None. Engineering expertise, moral courage.',
+      locked: false },
+    { id: 'prime', name: 'Ahdia-Prime', faction: 'cosmic', role: 'Burned-out Time-Hopper / Mysterious Figure',
+      summary: '~40s. Older Ahdia from future, traveled through three failed utopia iterations. Appears throughout Book 2 as mysterious presence. Refuses to enable more time-hopping.',
+      arc: 'Mysterious observer → revealed as future self → transcends', themes: ['breaking cycles', 'wisdom vs control', 'letting go'],
+      relationships: { 'ahdia': 'future self', 'bellatrix': 'understands her grief' },
+      powers: 'Time travel (refuses to use). Transcendence (stops treatment).',
+      locked: false }
+];
+
+const SERIES_THEMES = [
+    { id: 'worthiness', label: 'You don\'t have to be fixed to be worthy', phases: ['expo','rising','conclusion'] },
+    { id: 'procrastination', label: 'Procrastination as cry for help, not laziness', phases: ['expo','conflict'] },
+    { id: 'bothand', label: 'Both/And thinking (DBT over CBT)', phases: ['rising','climax','conclusion'] },
+    { id: 'sacrifice', label: 'Sacrifice and what it costs', phases: ['climax','conclusion'] },
+    { id: 'collective', label: 'Collective power over individual heroism', phases: ['rising','climax'] },
+    { id: 'truth_vs_power', label: 'Truth doesn\'t defeat power automatically', phases: ['rising','climax','conclusion'] },
+    { id: 'systemic', label: 'Systemic evil vs personal evil', phases: ['conflict','rising'] },
+    { id: 'love_infection', label: 'Love as infection (Conclave perspective)', phases: ['rising','climax'] },
+    { id: 'perfection_destruction', label: 'Perfection as destruction', phases: ['climax','conclusion'] },
+    { id: 'help_strength', label: 'Asking for help is strength', phases: ['expo','rising'] },
+    { id: 'progress_nonlinear', label: 'Progress isn\'t linear', phases: ['expo','rising','conclusion'] }
+];
+
+const FACTION_COLORS = {
+    gosquad: { label: 'Go Squad', css: 'faction-gosquad' },
+    triomf: { label: 'TRIOMF', css: 'faction-triomf' },
+    cadens: { label: 'CADENS', css: 'faction-cadens' },
+    cosmic: { label: 'Cosmic', css: 'faction-cosmic' },
+    civilian: { label: 'Civilian', css: 'faction-civilian' }
+};
+
+const PRELOADED_GAMES = [
+    { id: 'book2', label: 'Book 2', pgn: '1. e4 e6 2. Bc4 c6 3. Nc3 b5 4. d3 bxc4 5. Nf3 cxd3 6. cxd3 d5 7. Ne5 dxe4 8. d4 Nd7 9. f3 f6 10. Nxc6 Qc7 11. Qa4 e5 12. Nd5 Qd6 13. Qb5 exf3 14. gxf3 a6 15. Qc4 Bb7 16. Ndb4 a5 17. Nd3 Bxc6 18. dxe5 fxe5 19. Qc3 Bxf3 20. Nf2 Bxh1 21. Nxh1 Qd4 22. Be3 Qh4+ 23. Ng3 Qxh2 24. O-O-O Qxg3 25. Qc6 Rb8 26. Qxd7# 1-0',
+      desc: 'Black accumulates +19 material advantage, White delivers devastating checkmate. Sacrifice everything → devastation despite advantage.' }
+];
+
+// ═══════════════════════════════════════
+// CHESS ENGINE (from Perspective Engine v2)
+// ═══════════════════════════════════════
+const PIECE_ICONS={K:{white:'♔',black:'♚'},Q:{white:'♕',black:'♛'},R:{white:'♖',black:'♜'},B:{white:'♗',black:'♝'},N:{white:'♘',black:'♞'},P:{white:'♙',black:'♟'}};
+const PIECE_NAMES={K:'King',Q:'Queen',R:'Rook',B:'Bishop',N:'Knight',P:'Pawn'};
+
+class Board{
+    constructor(){this.board=Array.from({length:8},()=>Array(8).fill(null));const br=['R','N','B','Q','K','B','N','R'];for(let f=0;f<8;f++){this.board[0][f]={type:br[f],color:'white'};this.board[1][f]={type:'P',color:'white'};this.board[6][f]={type:'P',color:'black'};this.board[7][f]={type:br[f],color:'black'};}}
+    sq2i(sq){return[sq.charCodeAt(0)-97,parseInt(sq[1])-1]}
+    i2sq(f,r){return String.fromCharCode(97+f)+(r+1)}
+    get(sq){const[f,r]=this.sq2i(sq);return(r>=0&&r<8&&f>=0&&f<8)?this.board[r][f]:null}
+    set(sq,v){const[f,r]=this.sq2i(sq);this.board[r][f]=v}
+    snapshot(){return this.board.map(row=>row.map(c=>c?{...c}:null))}
+    pathClear(ff,fr,tf,tr){const sf=Math.sign(tf-ff),sr=Math.sign(tr-fr);let f=ff+sf,r=fr+sr;while(f!==tf||r!==tr){if(this.board[r][f])return false;f+=sf;r+=sr}return true}
+    canReach(from,to,pt,color,cap){const[ff,fr]=this.sq2i(from),[tf,tr]=this.sq2i(to),df=tf-ff,dr=tr-fr;if(pt==='P'){const dir=color==='white'?1:-1;if(cap)return Math.abs(df)===1&&dr===dir;if(df!==0)return false;if(dr===dir&&!this.board[tr][tf])return true;const sr=color==='white'?1:6;return fr===sr&&dr===2*dir&&!this.board[fr+dir][ff]&&!this.board[tr][tf]}if(pt==='N')return(Math.abs(df)===1&&Math.abs(dr)===2)||(Math.abs(df)===2&&Math.abs(dr)===1);if(pt==='K')return Math.abs(df)<=1&&Math.abs(dr)<=1;if(pt==='B'||pt==='Q'){if(Math.abs(df)===Math.abs(dr)&&df!==0&&this.pathClear(ff,fr,tf,tr))return true;if(pt==='B')return false}if(pt==='R'||pt==='Q'){if((df===0||dr===0)&&(df!==0||dr!==0)&&this.pathClear(ff,fr,tf,tr))return true}return false}
+    findSource(move,color){for(let r=0;r<8;r++)for(let f=0;f<8;f++){const p=this.board[r][f];if(!p||p.type!==move.piece||p.color!==color)continue;const sq=this.i2sq(f,r);if(move.srcF&&sq[0]!==move.srcF)continue;if(move.srcR&&sq[1]!==move.srcR)continue;if(this.canReach(sq,move.dest,move.piece,color,move.cap))return sq}return null}
+    getAttacked(sq){const p=this.get(sq);if(!p)return[];const[f,r]=this.sq2i(sq),res=[];if(p.type==='P'){const d=p.color==='white'?1:-1;if(f>0&&r+d>=0&&r+d<8)res.push(this.i2sq(f-1,r+d));if(f<7&&r+d>=0&&r+d<8)res.push(this.i2sq(f+1,r+d));return res}const dirs={N:[[-2,-1],[-2,1],[-1,-2],[-1,2],[1,-2],[1,2],[2,-1],[2,1]],K:[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]],B:[[-1,-1],[-1,1],[1,-1],[1,1]],R:[[-1,0],[1,0],[0,-1],[0,1]],Q:[[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]]};const slider=['B','R','Q'].includes(p.type);for(const[df,dr]of(dirs[p.type]||[])){let nf=f+df,nr=r+dr;if(!slider){if(nf>=0&&nf<8&&nr>=0&&nr<8)res.push(this.i2sq(nf,nr))}else{while(nf>=0&&nf<8&&nr>=0&&nr<8){res.push(this.i2sq(nf,nr));if(this.board[nr][nf])break;nf+=df;nr+=dr}}}return res}
+    allAttacked(color){const s=new Set();for(let r=0;r<8;r++)for(let f=0;f<8;f++){const p=this.board[r][f];if(p&&p.color===color)for(const sq of this.getAttacked(this.i2sq(f,r)))s.add(sq)}return s}
+    adjacentSquares(sq){const[f,r]=this.sq2i(sq),res=[];for(let df=-1;df<=1;df++)for(let dr=-1;dr<=1;dr++){if(df===0&&dr===0)continue;const nf=f+df,nr=r+dr;if(nf>=0&&nf<8&&nr>=0&&nr<8)res.push(this.i2sq(nf,nr))}return res}
+}
+function parseMove(s){let m=s.trim().replace(/[!?]/g,'');const r={raw:s,piece:'P',dest:null,srcF:null,srcR:null,cap:false,check:false,mate:false,castle:null,promo:null};if(m.includes('#')){r.mate=true;r.check=true;m=m.replace('#','')}else if(m.includes('+')){r.check=true;m=m.replace(/\+/g,'')}if(m==='O-O'||m==='0-0'){r.castle='K';r.piece='K';return r}if(m==='O-O-O'||m==='0-0-0'){r.castle='Q';r.piece='K';return r}const pm=m.match(/=([QRBN])/);if(pm){r.promo=pm[1];m=m.replace(/=[QRBN]/,'')}if(m.includes('x')){r.cap=true;m=m.replace('x','')}if('KQRBN'.includes(m[0])){r.piece=m[0];m=m.slice(1)}const dm=m.match(/([a-h][1-8])$/);if(dm){r.dest=dm[1];m=m.replace(/[a-h][1-8]$/,'')}if(m.length>0){if(/[a-h]/.test(m))r.srcF=m.match(/[a-h]/)[0];if(/[1-8]/.test(m))r.srcR=m.match(/[1-8]/)[0]}return r}
+
+// ═══════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════
+let pieces = {};
+let timeline = [];
+let boardSnapshots = [];
+let plotStructure = {};
+let gameResult = '';
+let totalMoves = 0;
+let totalCaptures = 0;
+let assignments = {}; // pieceId -> characterId
+let pawnAssignments = {}; // pieceId -> [pawnId, ...]
+
+// ═══════════════════════════════════════
+// PRELOADED GAME SELECTOR
+// ═══════════════════════════════════════
+function initGameSelector(){
+    const container = document.getElementById('game-selector');
+    PRELOADED_GAMES.forEach(g => {
+        const btn = document.createElement('div');
+        btn.className = 'game-btn';
+        btn.dataset.id = g.id;
+        btn.innerHTML = `<strong>${g.label}</strong><br><span style="font-size:.75rem;color:var(--text-dim)">${g.desc.slice(0,80)}...</span>`;
+        btn.onclick = () => {
+            document.querySelectorAll('.game-btn').forEach(b=>b.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('pgn-input').value = g.pgn;
+        };
+        container.appendChild(btn);
+    });
+}
+initGameSelector();
+
+// ═══════════════════════════════════════
+// ANALYSIS
+// ═══════════════════════════════════════
+function analyzeGame() {
+    const PGN = document.getElementById('pgn-input').value;
+    if (!PGN.trim()) return;
+    pieces = {}; timeline = []; boardSnapshots = [];
+
+    const files='abcdefgh';const back=['R','N','B','Q','K','B','N','R'];
+    for(let f=0;f<8;f++){const t=back[f],sq=files[f]+'1',suffix=(t==='R'||t==='N'||t==='B')?files[f]:'',id=`w_${t}${suffix}`;
+        pieces[id]={id,color:'white',type:t,origType:t,startSq:sq,sq,alive:true,isPawn:false,label:`White ${PIECE_NAMES[t]}`,shortLabel:`${PIECE_NAMES[t]} (${sq})`,moves:[],captures:[],capturedBy:null,capturedOnMove:null,capturedByLabel:'',threats:[],witnesses:[],checksGiven:[],promoted:false,deliversMate:false};}
+    for(let f=0;f<8;f++){const sq=files[f]+'2',id=`w_P${files[f]}`;
+        pieces[id]={id,color:'white',type:'P',origType:'P',startSq:sq,sq,alive:true,isPawn:true,label:`White Pawn (${files[f]})`,shortLabel:`Pawn ${files[f]}2`,moves:[],captures:[],capturedBy:null,capturedOnMove:null,capturedByLabel:'',threats:[],witnesses:[],checksGiven:[],promoted:false,deliversMate:false};}
+    for(let f=0;f<8;f++){const t=back[f],sq=files[f]+'8',suffix=(t==='R'||t==='N'||t==='B')?files[f]:'',id=`b_${t}${suffix}`;
+        pieces[id]={id,color:'black',type:t,origType:t,startSq:sq,sq,alive:true,isPawn:false,label:`Black ${PIECE_NAMES[t]}`,shortLabel:`${PIECE_NAMES[t]} (${sq})`,moves:[],captures:[],capturedBy:null,capturedOnMove:null,capturedByLabel:'',threats:[],witnesses:[],checksGiven:[],promoted:false,deliversMate:false};}
+    for(let f=0;f<8;f++){const sq=files[f]+'7',id=`b_P${files[f]}`;
+        pieces[id]={id,color:'black',type:'P',origType:'P',startSq:sq,sq,alive:true,isPawn:true,label:`Black Pawn (${files[f]})`,shortLabel:`Pawn ${files[f]}7`,moves:[],captures:[],capturedBy:null,capturedOnMove:null,capturedByLabel:'',threats:[],witnesses:[],checksGiven:[],promoted:false,deliversMate:false};}
+
+    function findPieceIdAt(sq){for(const[id,p]of Object.entries(pieces)){if(p.alive&&p.sq===sq)return id}return null}
+
+    const clean=PGN.replace(/\{[^}]*\}/g,'').replace(/\([^)]*\)/g,'').replace(/\[[^\]]*\]/g,'').replace(/\n/g,' ');
+    const tokens=clean.split(/\s+/).filter(t=>t&&!t.match(/^\d+\./)&&!['1-0','0-1','1/2-1/2','*'].includes(t));
+
+    if(PGN.includes('1-0'))gameResult='White wins';
+    else if(PGN.includes('0-1'))gameResult='Black wins';
+    else if(PGN.includes('1/2'))gameResult='Draw';
+    else gameResult='';
+    if(tokens.length>0&&tokens[tokens.length-1].includes('#')){
+        const lastColor=tokens.length%2===1?'White':'Black';
+        gameResult=lastColor+' wins by checkmate';
+    }
+
+    const board=new Board();
+    for(const[id,p]of Object.entries(pieces)){const cell=board.get(p.startSq);if(cell)cell.id=id}
+    boardSnapshots.push(board.snapshot());
+
+    const parsedForPlot=[];
+    totalCaptures=0;
+
+    tokens.forEach((str,index)=>{
+        const color=index%2===0?'white':'black';const moveNum=Math.floor(index/2)+1;const halfMove=index+1;
+        const move=parseMove(str);const events=[];let moverId=null,capturedId=null,fromSq=null,toSq=move.dest;
+
+        if(move.castle){
+            const rank=color==='white'?'1':'8';const kSq='e'+rank;moverId=findPieceIdAt(kSq);
+            if(move.castle==='K'){const rSq='h'+rank,rId=findPieceIdAt(rSq);board.set('g'+rank,board.get(kSq));board.set('f'+rank,board.get(rSq));board.set(kSq,null);board.set(rSq,null);if(moverId){pieces[moverId].sq='g'+rank;pieces[moverId].moves.push({halfMove,moveNum,from:kSq,to:'g'+rank,raw:str})}if(rId){pieces[rId].sq='f'+rank;pieces[rId].moves.push({halfMove,moveNum,from:rSq,to:'f'+rank,raw:str})}fromSq=kSq;toSq='g'+rank}
+            else{const rSq='a'+rank,rId=findPieceIdAt(rSq);board.set('c'+rank,board.get(kSq));board.set('d'+rank,board.get(rSq));board.set(kSq,null);board.set(rSq,null);if(moverId){pieces[moverId].sq='c'+rank;pieces[moverId].moves.push({halfMove,moveNum,from:kSq,to:'c'+rank,raw:str})}if(rId){pieces[rId].sq='d'+rank;pieces[rId].moves.push({halfMove,moveNum,from:rSq,to:'d'+rank,raw:str})}fromSq=kSq;toSq='c'+rank}
+        }else{
+            fromSq=board.findSource(move,color);
+            if(fromSq){moverId=findPieceIdAt(fromSq);
+                if(move.cap){capturedId=findPieceIdAt(move.dest);if(!capturedId&&move.piece==='P'){const epSq=move.dest[0]+fromSq[1];capturedId=findPieceIdAt(epSq);if(capturedId)board.set(epSq,null)}}
+                const mover=board.get(fromSq);board.set(fromSq,null);
+                if(move.promo){board.set(move.dest,{type:move.promo,color,id:moverId});if(moverId){pieces[moverId].promoted=true;pieces[moverId].type=move.promo}}
+                else board.set(move.dest,mover);
+                if(moverId){pieces[moverId].sq=move.dest;pieces[moverId].moves.push({halfMove,moveNum,from:fromSq,to:move.dest,raw:str})}
+            }
+        }
+
+        if(capturedId&&moverId){totalCaptures++;
+            pieces[moverId].captures.push({halfMove,moveNum,victimId:capturedId,victimLabel:pieces[capturedId].label});
+            pieces[capturedId].alive=false;pieces[capturedId].sq=null;pieces[capturedId].capturedBy=moverId;pieces[capturedId].capturedOnMove=moveNum;pieces[capturedId].capturedByLabel=pieces[moverId].label;
+            events.push({type:'capture',moveNum,halfMove,raw:str,moverId,capturedId,moverLabel:pieces[moverId].label,victimLabel:pieces[capturedId].label,moverColor:pieces[moverId].color});
+        }else if(moverId){events.push({type:'move',moveNum,halfMove,raw:str,moverId,moverLabel:pieces[moverId].label,moverColor:pieces[moverId].color,from:fromSq,to:toSq})}
+
+        if(move.check&&moverId){pieces[moverId].checksGiven.push({halfMove,moveNum});events.push({type:move.mate?'checkmate':'check',moveNum,halfMove,moverId,moverLabel:pieces[moverId].label,moverColor:pieces[moverId].color});if(move.mate)pieces[moverId].deliversMate=true}
+        if(move.promo&&moverId)events.push({type:'promotion',moveNum,halfMove,moverId,moverLabel:pieces[moverId].label,moverColor:pieces[moverId].color,promotedTo:move.promo});
+
+        const enemyColor=color==='white'?'black':'white';const attacked=board.allAttacked(color);
+        for(const[id,p]of Object.entries(pieces)){if(p.alive&&p.color===enemyColor&&p.sq&&attacked.has(p.sq)&&p.type!=='K')p.threats.push({halfMove,moveNum,byColor:color})}
+        if(capturedId){const adjSqs=board.adjacentSquares(toSq||move.dest);for(const[id,p]of Object.entries(pieces)){if(p.alive&&p.sq&&id!==moverId&&id!==capturedId&&adjSqs.includes(p.sq))p.witnesses.push({halfMove,moveNum,event:`${pieces[capturedId].label} captured`})}}
+
+        boardSnapshots.push(board.snapshot());
+        timeline.push({moveNum,halfMove,color,raw:str,events});
+        parsedForPlot.push({dest:toSq,color,check:move.check,mate:move.mate});
+    });
+
+    totalMoves=Math.ceil(tokens.length/2);
+
+    // Plot structure detection
+    let conflictIdx=0;
+    for(let i=0;i<parsedForPlot.length;i++){const m=parsedForPlot[i];if(!m.dest)continue;const rank=parseInt(m.dest[1]);if(m.color==='white'&&rank>=5){conflictIdx=i;break}if(m.color==='black'&&rank<=4){conflictIdx=i;break}}
+    const mateIdx=parsedForPlot.findIndex(m=>m.mate);let climaxIdx;
+    if(mateIdx>0){climaxIdx=mateIdx-1;for(let i=mateIdx-1;i>=0;i--){if(parsedForPlot[i].check){climaxIdx=i;break}}}
+    else{climaxIdx=parsedForPlot.length-2;for(let i=parsedForPlot.length-2;i>=0;i--){if(parsedForPlot[i].check){climaxIdx=i;break}}}
+    const conclusionIdx=mateIdx>=0?mateIdx:parsedForPlot.length-1;
+    if(climaxIdx<=conflictIdx){if(climaxIdx>=2)conflictIdx=Math.max(1,climaxIdx-Math.floor(climaxIdx/2));else{conflictIdx=0;climaxIdx=Math.max(1,climaxIdx)}}
+    plotStructure={conflictIdx,climaxIdx,conclusionIdx,conflictMove:Math.floor(conflictIdx/2)+1,climaxMove:Math.floor(climaxIdx/2)+1,conclusionMove:Math.floor(conclusionIdx/2)+1};
+
+    // Auto-assign locked characters
+    autoAssignLocked();
+
+    showSteps();
+}
+
+// ═══════════════════════════════════════
+// AUTO-ASSIGNMENT
+// ═══════════════════════════════════════
+function autoAssignLocked() {
+    assignments = {};
+    pawnAssignments = {};
+
+    // Ahdia = piece that delivers checkmate
+    const matePiece = Object.values(pieces).find(p => p.deliversMate);
+    if (matePiece) {
+        assignments[matePiece.id] = 'ahdia';
+        GO_SQUAD_CHARACTERS.find(c => c.id === 'ahdia').locked = true;
+    }
+
+    // Bellatrix = black queen
+    const blackQueen = pieces['b_Q'];
+    if (blackQueen) {
+        assignments[blackQueen.id] = 'bellatrix';
+        GO_SQUAD_CHARACTERS.find(c => c.id === 'bellatrix').locked = true;
+    }
+}
+
+// ═══════════════════════════════════════
+// UI: SHOW STEPS
+// ═══════════════════════════════════════
+function showSteps(){
+    document.getElementById('game-info').style.display='flex';
+    document.getElementById('game-info').innerHTML=`<strong>${totalMoves}</strong> moves &nbsp;|&nbsp; <strong>${totalCaptures}</strong> captures &nbsp;|&nbsp; <strong>${gameResult||'In progress'}</strong> &nbsp;|&nbsp; Conflict: <strong>M${plotStructure.conflictMove}</strong> &nbsp;|&nbsp; Climax: <strong>M${plotStructure.climaxMove}</strong>`;
+    document.getElementById('step-journeys').style.display='';
+    document.getElementById('step-build').style.display='';
+    renderJourneys();
+}
+
+function showJourneySide(side){
+    document.querySelectorAll('.tab-btn').forEach(t=>t.classList.remove('active'));
+    event.target.classList.add('active');
+    document.getElementById('journeys-white').style.display=side==='white'?'grid':'none';
+    document.getElementById('journeys-black').style.display=side==='black'?'grid':'none';
+}
+
+// ═══════════════════════════════════════
+// RENDER JOURNEYS (Phase 1)
+// ═══════════════════════════════════════
+function renderJourneys(){
+    ['white','black'].forEach(color => {
+        const container = document.getElementById('journeys-'+color);
+        container.innerHTML = '';
+
+        // Major pieces
+        const majorPieces = Object.values(pieces).filter(p=>p.color===color&&!p.isPawn&&p.origType!=='K');
+        const pawns = Object.values(pieces).filter(p=>p.color===color&&p.isPawn);
+
+        // Create a side for major pieces
+        const majorDiv = document.createElement('div');
+        majorDiv.innerHTML = `<div class="side-header" style="color:${color==='white'?'var(--gosquad)':'var(--triomf)'}">Major Pieces</div>`;
+
+        majorPieces.forEach(p => {
+            majorDiv.appendChild(createJourneyCard(p, pawns));
+        });
+        container.appendChild(majorDiv);
+
+        // Pawns column
+        const pawnDiv = document.createElement('div');
+        pawnDiv.innerHTML = `<div class="side-header" style="color:${color==='white'?'var(--gosquad)':'var(--triomf)'}">Pawns</div>`;
+        pawns.forEach(p => {
+            pawnDiv.appendChild(createJourneyCard(p, []));
+        });
+        container.appendChild(pawnDiv);
+    });
+}
+
+function createJourneyCard(p, availablePawns){
+    const card = document.createElement('div');
+    const isLocked = assignments[p.id] && (assignments[p.id] === 'ahdia' || assignments[p.id] === 'bellatrix');
+    card.className = 'journey-card' + (isLocked ? ' locked' : '');
+    card.id = 'jcard-' + p.id;
+
+    const icon = PIECE_ICONS[p.origType]?.[p.color] || '?';
+    const status = p.deliversMate ? 'CHECKMATE' : p.promoted ? 'Promoted' : p.alive ? 'Survives' : `Dies M${p.capturedOnMove}`;
+    const badgeClass = p.deliversMate ? 'badge-mate' : p.promoted ? 'badge-promo' : p.alive ? 'badge-alive' : 'badge-dead';
+
+    // Arc summary
+    const fm = p.moves.length > 0 ? p.moves[0].moveNum : null;
+    const lm = p.moves.length > 0 ? p.moves[p.moves.length - 1].moveNum : null;
+    const phases = new Set();
+    p.moves.forEach(m => phases.add(getPhase(m.halfMove - 1)));
+    const phaseLabels = [...phases].map(ph => ({expo:'Exposition',conflict:'Inciting',rising:'Rising',climax:'Climax',conclusion:'Conclusion'}[ph]||ph));
+
+    // Key moments
+    const moments = [];
+    p.captures.forEach(c => moments.push(`M${c.moveNum}: Kills ${pieces[c.victimId]?.label||'?'}`));
+    p.checksGiven.forEach(c => moments.push(`M${c.moveNum}: Check`));
+    if(p.promoted) moments.push('Promotes to ' + PIECE_NAMES[p.type]);
+    if(p.deliversMate) moments.push('Delivers CHECKMATE');
+    if(!p.alive) moments.push(`M${p.capturedOnMove}: Killed by ${p.capturedByLabel}`);
+
+    // Trail SVG
+    const trail = renderTrail(p, 160);
+
+    // Character assignment dropdown
+    let assignHTML = '';
+    if (isLocked) {
+        const char = GO_SQUAD_CHARACTERS.find(c => c.id === assignments[p.id]);
+        assignHTML = `<div class="jc-assign"><span style="font-size:.75rem;color:var(--text-dim)">Character:</span> <span class="locked-name">${char.name} (locked)</span></div>`;
+    } else {
+        const assignedChar = assignments[p.id] || '';
+        const usedChars = new Set(Object.values(assignments));
+        let opts = `<option value="">— Unassigned —</option>`;
+        GO_SQUAD_CHARACTERS.forEach(c => {
+            const used = usedChars.has(c.id) && assignedChar !== c.id;
+            const sel = assignedChar === c.id ? ' selected' : '';
+            const dis = used ? ' disabled' : '';
+            const faction = FACTION_COLORS[c.faction]?.label || '';
+            opts += `<option value="${c.id}"${sel}${dis}>${c.name} [${faction}]${used?' (assigned)':''}</option>`;
+        });
+        assignHTML = `<div class="jc-assign"><select onchange="assignCharacter('${p.id}',this.value)">${opts}</select></div>`;
+    }
+
+    // Pawn companion section (only for non-pawn pieces)
+    let pawnHTML = '';
+    if (!p.isPawn && availablePawns.length > 0) {
+        const currentPawns = pawnAssignments[p.id] || [];
+        const chips = availablePawns.map(pw => {
+            const active = currentPawns.includes(pw.id) ? 'active' : '';
+            const ps = pw.alive ? 'survives' : `dies M${pw.capturedOnMove}`;
+            return `<div class="pawn-chip ${active}" onclick="togglePawn('${p.id}','${pw.id}')">${PIECE_ICONS.P[p.color]} ${pw.shortLabel} (${pw.moves.length}mv, ${ps})</div>`;
+        }).join('');
+        pawnHTML = `<div class="jc-pawn-section"><label>Pawn Companions</label><div class="pawn-chips">${chips}</div></div>`;
+    }
+
+    card.innerHTML = `
+        <div class="jc-header">
+            <div class="jc-icon">${icon}</div>
+            <div class="jc-info">
+                <div class="jc-piece-name">${PIECE_NAMES[p.origType]} (${p.startSq})</div>
+                <div class="jc-stats">${p.moves.length} moves · ${p.captures.length} kills · ${p.threats.length} threats · ${p.witnesses.length} witnessed</div>
+            </div>
+            <span class="jc-badge ${badgeClass}">${status}</span>
+        </div>
+        <div class="jc-journey-svg">${trail}</div>
+        <div class="jc-arc">
+            <strong>Entry:</strong> ${fm ? 'Move '+fm : 'Never moves'} &nbsp;
+            <strong>Exit:</strong> ${p.alive ? (p.deliversMate ? 'Delivers checkmate' : 'Survives') : 'Captured M'+p.capturedOnMove} &nbsp;
+            <strong>Active:</strong> ${p.moves.length} moves ${p.moves.length>0?'(M'+fm+'–M'+lm+')':''}<br>
+            <strong>Phases:</strong> ${phaseLabels.join(', ') || 'None'}<br>
+            ${moments.length ? '<strong>Key:</strong> ' + moments.join(' · ') : ''}
+        </div>
+        ${assignHTML}
+        ${pawnHTML}
+    `;
+
+    return card;
+}
+
+function assignCharacter(pieceId, charId){
+    // Remove previous assignment of this character
+    for(const[pid,cid] of Object.entries(assignments)){
+        if(cid === charId && pid !== pieceId) delete assignments[pid];
+    }
+    if(charId) assignments[pieceId] = charId;
+    else delete assignments[pieceId];
+    renderJourneys();
+}
+
+function togglePawn(pieceId, pawnId){
+    if(!pawnAssignments[pieceId]) pawnAssignments[pieceId] = [];
+    const idx = pawnAssignments[pieceId].indexOf(pawnId);
+    if(idx >= 0) pawnAssignments[pieceId].splice(idx, 1);
+    else pawnAssignments[pieceId].push(pawnId);
+    renderJourneys();
+}
+
+// ═══════════════════════════════════════
+// UTILITY
+// ═══════════════════════════════════════
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+
+function getPhase(halfMoveIdx){
+    if(halfMoveIdx<=plotStructure.conflictIdx)return'expo';
+    if(halfMoveIdx===plotStructure.conflictIdx+1||halfMoveIdx===plotStructure.conflictIdx+2)return'conflict';
+    if(halfMoveIdx<plotStructure.climaxIdx)return'rising';
+    if(halfMoveIdx>=plotStructure.climaxIdx&&halfMoveIdx<=plotStructure.climaxIdx+1)return'climax';
+    return'conclusion';
+}
+
+function charName(pieceId){
+    const cid = assignments[pieceId];
+    if(cid){
+        const char = GO_SQUAD_CHARACTERS.find(c=>c.id===cid);
+        if(char) return char.name;
+    }
+    return pieces[pieceId]?.label||pieceId;
+}
+
+function getCharData(pieceId){
+    const cid = assignments[pieceId];
+    if(cid) return GO_SQUAD_CHARACTERS.find(c=>c.id===cid);
+    return null;
+}
+
+function renderTrail(p,sz){
+    const sq=sz/8;const ac=p.color==='white'?'#58a6ff':'#f0883e';const ad=p.color==='white'?'rgba(88,166,255,.3)':'rgba(240,136,62,.3)';
+    let s=`<svg xmlns="http://www.w3.org/2000/svg" width="${sz}" height="${sz}" viewBox="0 0 ${sz} ${sz}" style="border-radius:6px;border:1px solid #2a3040">`;
+    for(let r=7;r>=0;r--)for(let f=0;f<8;f++){const x=f*sq,y=(7-r)*sq;s+=`<rect x="${x}" y="${y}" width="${sq}" height="${sq}" fill="${(f+r)%2===0?'#1a2230':'#222d3a'}"/>`;}
+    const path=[{sq:p.startSq,type:'start'}];
+    p.moves.forEach(m=>{if(m.to){const isCap=p.captures.some(c=>c.halfMove===m.halfMove);path.push({sq:m.to,type:isCap?'capture':'move'})}});
+    if(!p.alive&&p.moves.length>0)path.push({sq:p.moves[p.moves.length-1].to,type:'death'});
+    for(let i=1;i<path.length;i++){const[f1,r1]=[path[i-1].sq.charCodeAt(0)-97,parseInt(path[i-1].sq[1])-1];const[f2,r2]=[path[i].sq.charCodeAt(0)-97,parseInt(path[i].sq[1])-1];s+=`<line x1="${f1*sq+sq/2}" y1="${(7-r1)*sq+sq/2}" x2="${f2*sq+sq/2}" y2="${(7-r2)*sq+sq/2}" stroke="${ad}" stroke-width="2" stroke-dasharray="4,3"/>`;}
+    path.forEach((pt,i)=>{const[f,r]=[pt.sq.charCodeAt(0)-97,parseInt(pt.sq[1])-1];const x=f*sq+sq/2,y=(7-r)*sq+sq/2;
+        if(pt.type==='start')s+=`<circle cx="${x}" cy="${y}" r="${sq*.3}" fill="${ac}" opacity=".9"/><text x="${x}" y="${y+1}" text-anchor="middle" dominant-baseline="middle" font-size="${sq*.35}" fill="#0e1117" font-weight="bold">S</text>`;
+        else if(pt.type==='capture')s+=`<circle cx="${x}" cy="${y}" r="${sq*.25}" fill="#f85149" opacity=".8"/><text x="${x}" y="${y+1}" text-anchor="middle" dominant-baseline="middle" font-size="${sq*.3}" fill="white" font-weight="bold">${i}</text>`;
+        else if(pt.type==='death'){s+=`<line x1="${x-sq*.2}" y1="${y-sq*.2}" x2="${x+sq*.2}" y2="${y+sq*.2}" stroke="#f85149" stroke-width="2.5"/>`;s+=`<line x1="${x+sq*.2}" y1="${y-sq*.2}" x2="${x-sq*.2}" y2="${y+sq*.2}" stroke="#f85149" stroke-width="2.5"/>`;}
+        else s+=`<circle cx="${x}" cy="${y}" r="${sq*.2}" fill="${ac}" opacity=".6"/><text x="${x}" y="${y+1}" text-anchor="middle" dominant-baseline="middle" font-size="${sq*.28}" fill="white">${i}</text>`;
+    });
+    for(let f=0;f<8;f++)s+=`<text x="${f*sq+sq/2}" y="${sz-2}" text-anchor="middle" font-size="${sq*.28}" fill="#484f58">${String.fromCharCode(97+f)}</text>`;
+    for(let r=0;r<8;r++)s+=`<text x="3" y="${(7-r)*sq+sq/2+sq*.08}" font-size="${sq*.28}" fill="#484f58">${r+1}</text>`;
+    s+='</svg>';return s;
+}
+
+function renderSVG(bs,hl,sz){
+    const sq=sz/8;const pc={white:{K:'♔',Q:'♕',R:'♖',B:'♗',N:'♘',P:'♙'},black:{K:'♚',Q:'♛',R:'♜',B:'♝',N:'♞',P:'♟'}};
+    let s=`<svg xmlns="http://www.w3.org/2000/svg" width="${sz}" height="${sz}" viewBox="0 0 ${sz} ${sz}" style="border-radius:4px;border:1px solid #2a3040">`;
+    for(let r=7;r>=0;r--)for(let f=0;f<8;f++){const x=f*sq,y=(7-r)*sq;const sn=String.fromCharCode(97+f)+(r+1);const dk=(f+r)%2===0;let fl=dk?'#1a2230':'#2a3444';if(hl[sn])fl=hl[sn];s+=`<rect x="${x}" y="${y}" width="${sq}" height="${sq}" fill="${fl}"/>`;const p=bs[r][f];if(p){const ch=pc[p.color]?.[p.type]||'?';const tc=hl[sn]?(p.color==='white'?'#fff':'#ffd0a0'):(p.color==='white'?'#e2e6ed':'#a0a8b4');s+=`<text x="${x+sq/2}" y="${y+sq/2+sq*.12}" text-anchor="middle" dominant-baseline="middle" font-size="${sq*.7}" fill="${tc}" style="text-shadow:0 1px 2px rgba(0,0,0,.6)">${ch}</text>`}}
+    for(let f=0;f<8;f++)s+=`<text x="${f*sq+sq/2}" y="${sz-2}" text-anchor="middle" font-size="${sq*.3}" fill="#484f58">${String.fromCharCode(97+f)}</text>`;
+    for(let r=0;r<8;r++)s+=`<text x="3" y="${(7-r)*sq+sq/2+sq*.1}" font-size="${sq*.3}" fill="#484f58">${r+1}</text>`;
+    s+='</svg>';return s;
+}
+
+// ═══════════════════════════════════════
+// BUILD SCAFFOLD (Phase 2)
+// ═══════════════════════════════════════
+function buildScaffold(){
+    const out = document.getElementById('output');
+    out.classList.add('vis');
+    let h = '';
+
+    // Shared plot structure
+    h += `<div class="scaffold-section" style="border-left:3px solid var(--kill)">
+        <h3>Shared Plot Structure</h3>
+        <div class="sf"><div class="sf-label">Game Result</div><div class="sf-val">${esc(gameResult)} — ${totalMoves} moves, ${totalCaptures} captures</div></div>
+        <div class="sf"><div class="sf-label">Inciting Incident (Move ${plotStructure.conflictMove})</div>
+            <div class="sf-prompt"><strong>Auerbach:</strong> What systemic crack first becomes visible? What does Ahdia notice from her rooftop that she can't un-see?</div></div>
+        <div class="sf"><div class="sf-label">Climax (Move ${plotStructure.climaxMove})</div>
+            <div class="sf-prompt"><strong>Auerbach:</strong> What does this cost? Not just tactically — what does each character lose that they can't get back? How does the time bubble degrade Ahdia?</div></div>
+        <div class="sf"><div class="sf-label">Resolution (Move ${plotStructure.conclusionMove})</div>
+            <div class="sf-prompt"><strong>Auerbach:</strong> Who survived? Who changed? What's the both/and — what was won AND lost simultaneously?</div></div>
+    </div>`;
+
+    // Theme resonance map
+    h += `<div class="scaffold-section">
+        <h3>Theme Resonance by Phase</h3>
+        <div style="display:grid;gap:8px">`;
+    const phaseNames = {expo:'Exposition',conflict:'Inciting Incident',rising:'Rising Action',climax:'Climax',conclusion:'Resolution'};
+    ['expo','conflict','rising','climax','conclusion'].forEach(ph => {
+        const matching = SERIES_THEMES.filter(t => t.phases.includes(ph));
+        if(matching.length){
+            h += `<div class="sf"><div class="sf-label">${phaseNames[ph]}</div><div class="sf-val">${matching.map(t=>'• '+t.label).join('<br>')}</div></div>`;
+        }
+    });
+    h += `</div></div>`;
+
+    // Per-character scaffolds
+    const assignedPieces = Object.entries(assignments).filter(([pid,cid]) => cid);
+    const unassignedMajor = Object.values(pieces).filter(p => !p.isPawn && p.origType !== 'K' && !assignments[p.id]);
+
+    assignedPieces.forEach(([pieceId, charId]) => {
+        h += buildCharacterScaffold(pieceId, charId);
+    });
+
+    // Unassigned pieces get generic scaffold
+    if(unassignedMajor.length > 0){
+        h += `<div class="scaffold-section" style="border-left:3px solid var(--death)">
+            <h3>Unassigned Pieces</h3>
+            <p style="font-size:.85rem;color:var(--text-muted)">These pieces have no character assigned. Their journeys are available for mapping.</p>`;
+        unassignedMajor.forEach(p => {
+            const fm = p.moves.length > 0 ? p.moves[0].moveNum : null;
+            const status = p.deliversMate ? 'CHECKMATE' : p.alive ? 'Survives' : `Dies M${p.capturedOnMove}`;
+            h += `<div class="sf"><div class="sf-label">${PIECE_ICONS[p.origType]?.[p.color]||'?'} ${p.label}</div>
+                <div class="sf-val">${p.moves.length} moves, ${p.captures.length} kills, ${p.threats.length} threats — ${status}${fm?' (M'+fm+'–M'+(p.moves[p.moves.length-1]?.moveNum||fm)+')':''}</div></div>`;
+        });
+        h += `</div>`;
+    }
+
+    // Move-by-move timeline
+    h += buildTimeline();
+
+    out.innerHTML = h;
+    out.scrollIntoView({behavior:'smooth'});
+}
+
+function buildCharacterScaffold(pieceId, charId){
+    const p = pieces[pieceId];
+    const char = GO_SQUAD_CHARACTERS.find(c => c.id === charId);
+    if(!p || !char) return '';
+
+    const icon = PIECE_ICONS[p.origType]?.[p.color] || '?';
+    const ac = p.color === 'white' ? 'var(--gosquad)' : 'var(--triomf)';
+    const factionInfo = FACTION_COLORS[char.faction] || {};
+
+    const fm = p.moves.length > 0 ? p.moves[0].moveNum : null;
+    const lm = p.moves.length > 0 ? p.moves[p.moves.length - 1].moveNum : null;
+    const entry = fm ? 'Move ' + fm : 'Never moves';
+    const exit = p.alive ? (p.deliversMate ? 'Delivers checkmate' : 'Survives') : 'Captured M' + p.capturedOnMove + ' by ' + p.capturedByLabel;
+
+    const phases = new Set();
+    p.moves.forEach(m => phases.add(getPhase(m.halfMove - 1)));
+
+    // Key moments
+    const km = [];
+    p.captures.forEach(c => km.push(`M${c.moveNum}: Captures ${charName(c.victimId)}`));
+    p.checksGiven.forEach(c => km.push(`M${c.moveNum}: Gives check`));
+    if(p.promoted) km.push('Promotes to ' + PIECE_NAMES[p.type]);
+    if(p.deliversMate) km.push('Delivers CHECKMATE');
+    if(!p.alive) km.push(`M${p.capturedOnMove}: Killed by ${charName(p.capturedBy)}`);
+
+    // Relationships in play
+    const relsInPlay = [];
+    if(char.relationships){
+        for(const[rid,rel] of Object.entries(char.relationships)){
+            // Check if this related character is assigned to a piece
+            const relPieceEntry = Object.entries(assignments).find(([pid,cid])=>cid===rid);
+            if(relPieceEntry){
+                const relPiece = pieces[relPieceEntry[0]];
+                const relChar = GO_SQUAD_CHARACTERS.find(c=>c.id===rid);
+                if(relPiece && relChar){
+                    const sameSide = relPiece.color === p.color;
+                    relsInPlay.push(`${relChar.name} (${rel}) — ${sameSide?'allied':'opposed'} side, ${relPiece.alive?'survives':'dies M'+relPiece.capturedOnMove}`);
+                }
+            }
+        }
+    }
+
+    // Pawn companions
+    const pawnIds = pawnAssignments[pieceId] || [];
+    const pawnInfo = pawnIds.map(pid => pieces[pid]).filter(Boolean);
+
+    // Trail
+    const trail = renderTrail(p, 220);
+
+    // Power implications (Ahdia-specific)
+    let powerNote = '';
+    if(charId === 'ahdia'){
+        const moveCount = p.moves.length;
+        const captureCount = p.captures.length;
+        powerNote = `<div class="sf"><div class="sf-label">Temporal Cost Tracking</div>
+            <div class="sf-val">${moveCount} time-bubble activations implied by piece movement. ${captureCount} high-intensity temporal events (captures = force amplification).
+            <br>Each activation degrades cellular baseline. Map degradation symptoms to move intensity:
+            <br>• Early moves (exposition): minor nosebleeds, manageable
+            <br>• Mid-game (rising): bleeding ears, muscle weakness, vision blurring
+            <br>• Climax: critical threshold, potential transcendence risk</div></div>`;
+    }
+
+    // Theme resonance for this character
+    const charThemes = char.themes || [];
+    const activePhases = [...phases];
+    const resonantThemes = SERIES_THEMES.filter(t =>
+        charThemes.some(ct => t.id.includes(ct) || ct.includes(t.id)) ||
+        t.phases.some(tp => activePhases.includes(tp))
+    );
+
+    let h = `<div class="scaffold-section" style="border-left:3px solid ${ac}">
+        <h3>${icon} <span style="color:${ac}">${char.name}</span>
+            <span class="faction-tag ${factionInfo.css||''}">${factionInfo.label||''}</span>
+            <span style="color:var(--text-dim);font-weight:400;font-size:.85rem;margin-left:8px">${PIECE_NAMES[p.origType]} (${p.startSq})</span>
+        </h3>`;
+
+    // Character identity
+    h += `<div class="sf"><div class="sf-label">Identity</div><div class="sf-val">${esc(char.role)}<br>${esc(char.summary)}</div></div>`;
+    h += `<div class="sf"><div class="sf-label">Series Arc</div><div class="sf-val">${esc(char.arc)}</div></div>`;
+
+    // Journey visualization
+    h += `<div style="text-align:center;margin:12px 0">${trail}
+        <div style="font-size:.75rem;color:var(--text-dim);margin-top:6px"><span style="color:${ac}">● S</span> = Start <span style="color:${ac}">●</span> = Move <span style="color:var(--kill)">●</span> = Capture <span style="color:var(--kill)">✕</span> = Death</div></div>`;
+
+    // Chess arc
+    h += `<div class="sf"><div class="sf-label">Chess Arc</div>
+        <div class="sf-val">Entry: ${entry}<br>Active: ${p.moves.length} moves ${p.moves.length>0?'(M'+fm+'–M'+lm+')':''}<br>Exit: ${exit}<br>Kills: ${p.captures.length}${p.captures.length>0?' — '+p.captures.map(c=>charName(c.victimId)).join(', '):''}<br>Threatened: ${p.threats.length} times<br>Witnessed: ${p.witnesses.length} events</div></div>`;
+
+    if(km.length) h += `<div class="sf"><div class="sf-label">Key Moments</div><div class="sf-val">${km.join('<br>')}</div></div>`;
+    if(p.witnesses.length) h += `<div class="sf"><div class="sf-label">Witnessed Events</div><div class="sf-val">${p.witnesses.map(w=>'M'+w.moveNum+': '+w.event).join('<br>')}</div></div>`;
+    if(relsInPlay.length) h += `<div class="sf"><div class="sf-label">Relationships In Play</div><div class="sf-val">${relsInPlay.join('<br>')}</div></div>`;
+    if(pawnInfo.length) h += `<div class="sf"><div class="sf-label">Companion Characters (Pawns)</div><div class="sf-val">${pawnInfo.map(pw=>pw.shortLabel+' — '+(pw.alive?'survives':'dies M'+pw.capturedOnMove)+', '+pw.moves.length+' moves').join('<br>')}</div></div>`;
+
+    // Power implications
+    h += powerNote;
+
+    // Theme resonance
+    if(resonantThemes.length){
+        h += `<div class="sf"><div class="sf-label">Theme Resonance</div><div class="sf-val">${resonantThemes.map(t=>'• '+t.label).join('<br>')}</div></div>`;
+    }
+
+    // Go Squad-native writing prompts
+    h += `<div class="sf"><div class="sf-label">Exposition Prompt</div>`;
+    if(fm && fm <= plotStructure.conflictMove){
+        h += `<div class="sf-prompt"><strong>${char.name}</strong> is active before the central conflict. Where are they when the crack appears? What's their normal — the version of their life that's about to break?`;
+        if(charId === 'ahdia') h += `<br><br><strong>Voice check:</strong> What show is she watching? What's the TV-reference frame she'd use to describe what she sees?`;
+        h += `</div>`;
+    } else if(fm){
+        h += `<div class="sf-prompt"><strong>${char.name}</strong> enters at M${fm} — after the conflict has begun. They arrive to a fight already in progress. What pulled them in? What did they miss that everyone else already knows?</div>`;
+    } else {
+        h += `<div class="sf-prompt"><strong>${char.name}</strong> never moves. They exist in stasis. What are they watching? What do they know that no one asks them?</div>`;
+    }
+    h += `</div>`;
+
+    h += `<div class="sf"><div class="sf-label">Climax Prompt</div>`;
+    if(p.capturedOnMove && p.capturedOnMove < plotStructure.climaxMove){
+        h += `<div class="sf-prompt"><strong>${char.name}</strong> dies on M${p.capturedOnMove} — before the climax. They never see how it ends. What do they leave behind that the survivors carry? What would they think of the resolution they'll never witness?</div>`;
+    } else if(phases.has('climax')){
+        h += `<div class="sf-prompt"><strong>${char.name}</strong> is in the decisive moment. What do they sacrifice? What's the both/and — what do they gain AND lose simultaneously?`;
+        if(p.deliversMate) h += `<br><br><strong>Checkmate weight:</strong> This character ends it. The final blow. What does it cost them to deliver it? Not just physically — what part of themselves do they burn?`;
+        h += `</div>`;
+    } else {
+        h += `<div class="sf-prompt"><strong>${char.name}</strong> is alive during the climax but not at the center. How do they experience the shockwave? What do they see from the edges that the central players can't?</div>`;
+    }
+    h += `</div>`;
+
+    // Capture prompt
+    if(p.captures.length){
+        h += `<div class="sf"><div class="sf-label">Violence Prompt</div>
+            <div class="sf-prompt"><strong>${char.name}</strong> takes ${p.captures.length} ${p.captures.length===1?'life':'lives'}. In the Auerbach universe, violence has weight. How does ${char.name} carry this? Does it change them or confirm what they already knew about themselves?</div></div>`;
+    }
+
+    // Threat/danger prompt
+    if(p.threats.length >= 3){
+        h += `<div class="sf"><div class="sf-label">Danger Prompt</div>
+            <div class="sf-prompt">Threatened ${p.threats.length} times — constant danger. For ${char.name}: is this familiar (confirming their worldview) or transformative (shattering assumptions)? How does sustained threat interact with their arc of "${esc(char.arc)}"?</div></div>`;
+    }
+
+    h += `</div>`;
+    return h;
+}
+
+// ═══════════════════════════════════════
+// TIMELINE
+// ═══════════════════════════════════════
+function buildTimeline(){
+    const assignedIds = new Set(Object.keys(assignments));
+    if(assignedIds.size === 0) return '';
+
+    let h = `<h2 style="font-family:'Playfair Display',serif;margin:30px 0 16px">Move-by-Move Timeline</h2>`;
+    h += `<div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--gosquad)"></div> White</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--triomf)"></div> Black</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--kill)"></div> Capture</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--cosmic)"></div> Overlap</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--death)"></div> Death</div>
+    </div>`;
+
+    const rel = [];
+    timeline.forEach(tm => {
+        const re = tm.events.filter(ev =>
+            (ev.moverId && assignedIds.has(ev.moverId)) ||
+            (ev.capturedId && assignedIds.has(ev.capturedId))
+        );
+        const ex = [];
+        for(const id of assignedIds){
+            const p = pieces[id];
+            if(!p) continue;
+            const th = p.threats.find(t => t.halfMove === tm.halfMove);
+            if(th) ex.push({type:'threatened',moveNum:tm.moveNum,halfMove:tm.halfMove,targetId:id,targetLabel:charName(id),targetColor:p.color});
+            const wi = p.witnesses.find(w => w.halfMove === tm.halfMove);
+            if(wi) ex.push({type:'witness',moveNum:tm.moveNum,halfMove:tm.halfMove,witnessId:id,witnessLabel:charName(id),event:wi.event});
+        }
+        const all = [...re, ...ex];
+        if(all.length) rel.push({...tm, events: all});
+    });
+
+    const grp = {};
+    rel.forEach(tm => {
+        if(!grp[tm.moveNum]) grp[tm.moveNum] = [];
+        grp[tm.moveNum].push(tm);
+    });
+
+    let curPh = '';
+    const phLbl = ph => ({expo:'Exposition',conflict:'Inciting Incident',rising:'Rising Action',climax:'Climax',conclusion:'Resolution'}[ph]||'');
+
+    Object.keys(grp).sort((a,b)=>a-b).forEach(mn => {
+        const g = grp[mn];
+        const fh = g[0].halfMove;
+        const ph = getPhase(fh-1);
+
+        if(ph !== curPh){
+            curPh = ph;
+            const mr = ph==='expo'?'M1–'+plotStructure.conflictMove:ph==='conflict'?'M'+plotStructure.conflictMove:ph==='rising'?'M'+(plotStructure.conflictMove+1)+'–'+(plotStructure.climaxMove-1):ph==='climax'?'M'+plotStructure.climaxMove:'M'+(plotStructure.climaxMove+1)+'–'+plotStructure.conclusionMove;
+            h += `<div class="ph-mark ph-${ph}">${phLbl(ph)} <span style="font-weight:400;font-size:.8rem;opacity:.7;margin-left:8px">${mr}</span></div>`;
+        }
+
+        const lh = g[g.length-1].halfMove;
+        const bs = boardSnapshots[lh];
+        const hl = {};
+        for(const id of assignedIds){
+            const p = pieces[id];
+            if(!p || (p.capturedOnMove && parseInt(mn) > p.capturedOnMove)) continue;
+            let psq = p.startSq;
+            for(const m of p.moves){if(m.halfMove<=lh)psq=m.to;else break}
+            if(psq) hl[psq] = p.color==='white'?'rgba(88,166,255,.4)':'rgba(240,136,62,.4)';
+        }
+        const bsvg = renderSVG(bs, hl, 180);
+        const bid = 'b' + mn;
+
+        h += `<div class="tl-move"><div class="tl-mn">M${mn}</div><div class="tl-mb">`;
+        g.forEach(tm => {
+            tm.events.forEach(ev => {
+                let ec = ev.moverColor==='white'?'ev-w':'ev-b';
+                if(ev.type==='capture') ec='ev-k';
+                if(ev.type==='threatened') ec=ev.targetColor==='white'?'ev-w':'ev-b';
+                if(ev.type==='witness') ec='ev-w';
+                if(ev.capturedId&&assignedIds.has(ev.capturedId)) ec+=' ev-d';
+
+                const inv = new Set();
+                if(ev.moverId&&assignedIds.has(ev.moverId)) inv.add(ev.moverId);
+                if(ev.capturedId&&assignedIds.has(ev.capturedId)) inv.add(ev.capturedId);
+                if(ev.targetId&&assignedIds.has(ev.targetId)) inv.add(ev.targetId);
+                if(ev.witnessId&&assignedIds.has(ev.witnessId)) inv.add(ev.witnessId);
+                if(inv.size>=2) ec='ev-o';
+
+                let ic='→', tx='';
+                if(ev.type==='move'){ic='→';tx=`<span class="pn">${charName(ev.moverId)}</span> moves <span class="nt">${ev.raw}</span>`}
+                else if(ev.type==='capture'){ic='⚔️';tx=assignedIds.has(ev.capturedId)?`<span class="pn" style="color:var(--kill)">${charName(ev.capturedId)}</span> is captured by ${charName(ev.moverId)}`:`<span class="pn">${charName(ev.moverId)}</span> captures <span style="color:var(--kill)">${charName(ev.capturedId)}</span>`}
+                else if(ev.type==='check'){ic='⚡';tx=`<span class="pn" style="color:var(--check)">${charName(ev.moverId)}</span> gives check`}
+                else if(ev.type==='checkmate'){ic='👑';tx=`<span class="pn" style="color:var(--promote)">${charName(ev.moverId)}</span> delivers <strong>CHECKMATE</strong>`}
+                else if(ev.type==='promotion'){ic='⭐';tx=`<span class="pn" style="color:var(--promote)">${charName(ev.moverId)}</span> promotes to <strong>${PIECE_NAMES[ev.promotedTo]}</strong>`}
+                else if(ev.type==='threatened'){ic='⚠️';tx=`<span class="pn">${ev.targetLabel}</span> is <span class="dt">threatened</span>`}
+                else if(ev.type==='witness'){ic='👁';tx=`<span class="pn">${ev.witnessLabel}</span> <span class="dt">witnesses: ${ev.event}</span>`}
+
+                h += `<div class="tl-ev ${ec}"><span class="ti">${ic}</span><span>${tx}</span></div>`;
+            });
+        });
+        h += `<div class="board-tog" onclick="toggleBoard('${bid}')">▸ Show board</div><div class="board-box" id="${bid}">${bsvg}</div>`;
+        h += `</div></div>`;
+    });
+
+    return h;
+}
+
+function toggleBoard(id){
+    const el = document.getElementById(id);
+    if(!el) return;
+    const o = el.classList.toggle('open');
+    el.previousElementSibling.textContent = o ? '▾ Hide board' : '▸ Show board';
+}
+
+// ═══════════════════════════════════════
+// EXPORT STANDALONE HTML
+// ═══════════════════════════════════════
+function exportHTML(){
+    // First build scaffold if not already built
+    buildScaffold();
+
+    const outputContent = document.getElementById('output').innerHTML;
+
+    const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Go Squad · Narrative Scaffold</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1117;--surface:#161b22;--surface2:#1c2333;--border:#2a3040;--text:#e2e6ed;--text-muted:#7d8590;--text-dim:#484f58;--gosquad:#58a6ff;--gosquad-light:rgba(88,166,255,0.1);--triomf:#f0883e;--triomf-light:rgba(240,136,62,0.1);--cadens:#d2a8ff;--cadens-light:rgba(210,168,255,0.1);--cosmic:#f0e050;--cosmic-light:rgba(240,224,80,0.12);--kill:#f85149;--kill-light:rgba(248,81,73,0.1);--death:#8b949e;--check:#d2a8ff;--promote:#3fb950;--white-accent:#58a6ff;--white-light:rgba(88,166,255,0.1);--black-accent:#f0883e;--black-light:rgba(240,136,62,0.1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{text-align:center;padding:30px 20px 10px;border-bottom:1px solid var(--border)}
+header h1{font-family:'Playfair Display',serif;font-size:clamp(1.4rem,3.5vw,2rem);font-weight:900;background:linear-gradient(135deg,var(--gosquad),var(--triomf));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.container{max-width:1100px;margin:0 auto;padding:0 20px 60px}
+.scaffold-section{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:20px;margin-bottom:16px}
+.scaffold-section h3{font-family:'Playfair Display',serif;font-size:1.05rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sf{margin-bottom:12px;font-size:.9rem}
+.sf-label{font-weight:700;font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text-muted);margin-bottom:2px}
+.sf-val{color:var(--text)}
+.sf-prompt{border:1.5px dashed var(--border);border-radius:6px;padding:12px 16px;margin-top:6px;color:var(--text-dim);font-style:italic;font-size:.85rem;min-height:40px}
+.sf-prompt strong{color:var(--text-muted);font-style:normal}
+.faction-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.faction-gosquad{background:var(--gosquad-light);color:var(--gosquad)}
+.faction-triomf{background:var(--triomf-light);color:var(--triomf)}
+.faction-cadens{background:var(--cadens-light);color:var(--cadens)}
+.faction-cosmic{background:var(--cosmic-light);color:var(--cosmic)}
+.faction-civilian{background:rgba(139,148,158,.15);color:var(--death)}
+.tl-move{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid rgba(42,48,64,.5)}.tl-move:last-child{border-bottom:none}
+.tl-mn{width:50px;flex-shrink:0;font-family:monospace;font-size:.8rem;color:var(--text-dim);padding-top:3px;text-align:right}.tl-mb{flex:1}
+.tl-ev{display:flex;align-items:flex-start;gap:10px;padding:6px 10px;border-radius:6px;margin-bottom:4px;font-size:.9rem;line-height:1.5}
+.tl-ev .ti{font-size:.85rem;flex-shrink:0;margin-top:2px}.tl-ev .pn{font-weight:700}.tl-ev .nt{font-family:monospace;color:var(--text-dim);font-size:.8rem}.tl-ev .dt{color:var(--text-muted)}
+.ev-w{background:var(--white-light)}.ev-w .pn{color:var(--white-accent)}.ev-b{background:var(--black-light)}.ev-b .pn{color:var(--black-accent)}
+.ev-k{background:var(--kill-light)}.ev-o{background:var(--cosmic-light);border:1px solid rgba(240,224,80,.25)}.ev-d{background:rgba(139,148,158,.08);border-left:3px solid var(--death)}
+.ph-mark{padding:10px 16px;margin:20px 0 10px;font-family:'Playfair Display',serif;font-weight:700;font-size:.95rem;border-radius:6px;border-left:4px solid}
+.ph-expo{border-color:var(--white-accent);color:var(--white-accent);background:rgba(88,166,255,.06)}.ph-conflict{border-color:var(--black-accent);color:var(--black-accent);background:rgba(240,136,62,.06)}.ph-rising{border-color:var(--check);color:var(--check);background:rgba(210,168,255,.06)}.ph-climax{border-color:var(--kill);color:var(--kill);background:rgba(248,81,73,.06)}.ph-conclusion{border-color:var(--promote);color:var(--promote);background:rgba(63,185,80,.06)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:16px;font-size:.8rem;color:var(--text-muted)}.legend-item{display:flex;align-items:center;gap:5px}.legend-dot{width:10px;height:10px;border-radius:3px}
+.board-tog{font-size:.75rem;color:var(--text-dim);cursor:pointer;margin-top:4px;display:inline-block;padding:2px 8px;border-radius:4px;border:1px solid var(--border)}.board-tog:hover{color:var(--text-muted);border-color:var(--text-muted)}
+.board-box{margin-top:8px;display:none}.board-box.open{display:block}
+@media print{body{background:#fff;color:#222}header{border-color:#ccc}.scaffold-section{border-color:#ccc;background:#fafafa}.tl-ev{background:#f5f5f5!important;border:1px solid #ddd;color:#222}.board-box{display:block!important}}
+</style>
+</head>
+<body>
+<header><h1>Go Squad · Narrative Scaffold</h1><div style="color:#7d8590;font-size:.9rem;margin-top:4px">Generated ${new Date().toLocaleDateString()} · ${totalMoves} moves · ${gameResult}</div></header>
+<div class="container" style="margin-top:20px">
+${outputContent}
+</div>
+<`+`script>
+function toggleBoard(id){const el=document.getElementById(id);if(!el)return;const o=el.classList.toggle('open');el.previousElementSibling.textContent=o?'▾ Hide board':'▸ Show board'}
+<`+`/script>
+</body>
+</html>`;
+
+    const blob = new Blob([html], {type:'text/html'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'gosquad_scaffold_' + new Date().toISOString().slice(0,10) + '.html';
+    a.click();
+    URL.revokeObjectURL(url);
+}
+</script>
+</body>
+</html>

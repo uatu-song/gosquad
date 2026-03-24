@@ -1,0 +1,129 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Steward: Ahdia Bacchus",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: AHDIA BACCHUS ═══' && echo 'Moves: M1,M5,M9*,M13*,M17,M21,M25*' && echo 'Triplet: King / e-pawn / g-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Ruth Carter",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: RUTH CARTER ═══' && echo 'Moves: M2,M7,M12,M17,M22,M27' && echo 'Triplet: Ra1 / Queen / a-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Tess Whitford",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: TESS WHITFORD ═══' && echo 'Moves: M3,M8,M14,M19,M25*' && echo 'Triplet: Nh3 / Bf1 / f-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Ben Bukowski",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: BEN BUKOWSKI ═══' && echo 'Moves: M6,M12,M18,M25*' && echo 'Triplet: Nf3 / d-pawn / b-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Ryu Matsuda",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: RYU MATSUDA ═══' && echo 'Moves: M6,M13*,M20,M26' && echo 'Triplet: e-pawn / Nf3 / Ra1' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Victor Hernandez",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: VICTOR HERNANDEZ ═══' && echo 'Moves: M10,M23' && echo 'Triplet: Bc1 / a-pawn / d-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Leah Turner",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: LEAH TURNER ═══' && echo 'Moves: M11,M24' && echo 'Triplet: Rg1 / Bc1 / b-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Korede/Leta Owolowo",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: KOREDE / LETA OWOLOWO ═══' && echo 'Moves: M13*,M26' && echo 'Triplet: g-pawn / f-pawn / Rg1' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Harriet Bourn",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: HARRIET BOURN ═══' && echo 'Moves: M15' && echo 'Triplet: Queen / Bc1 / b-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Bellatrix/Geneva",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: BELLATRIX / GENEVA ═══' && echo 'Moves: M9*,M18,M27' && echo 'Triplet: Black Queen / Bf8 / Rh8' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Harding Kain",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: HARDING KAIN ═══' && echo 'Moves: M4,M9*,M15,M21,M26' && echo 'Triplet: Black King / Nb8 / c-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Eidolon",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: EIDOLON ═══' && echo 'Moves: M7,M16,M24' && echo 'Triplet: Ng8 / e-pawn / d-pawn' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Steward: Prime",
+      "type": "shell",
+      "command": "echo '═══ STEWARD: PRIME ═══' && echo 'Moves: TBD' && echo 'Triplet: TBD' && echo '───────────────────────────────' && exec bash",
+      "presentation": { "reveal": "always", "panel": "dedicated", "group": "stewards" },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Launch All Steward Terminals",
+      "dependsOn": [
+        "Steward: Ahdia Bacchus",
+        "Steward: Ruth Carter",
+        "Steward: Tess Whitford",
+        "Steward: Ben Bukowski",
+        "Steward: Ryu Matsuda",
+        "Steward: Victor Hernandez",
+        "Steward: Leah Turner",
+        "Steward: Korede/Leta Owolowo",
+        "Steward: Harriet Bourn",
+        "Steward: Bellatrix/Geneva",
+        "Steward: Harding Kain",
+        "Steward: Eidolon",
+        "Steward: Prime"
+      ],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    }
+  ]
+}

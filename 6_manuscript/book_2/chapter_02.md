@@ -888,6 +888,12 @@ She turned back to the monitors.
 
 She kept digging.
 
+Something else, minor. Two network feeds from tonight—WCAL's live coverage and the Caledonia Herald stream—both showed Kain making statements. Different backdrops, different lighting. Timestamps four minutes apart. WCAL had him at campaign headquarters at 7:31. The Herald had him at a donor event across town at 7:35. Forty-minute drive between those two locations on a good night.
+
+Pre-recorded B-roll, probably. Campaign teams banked that stuff constantly. Not worth the headspace tonight.
+
+She moved on.
+
 ---
 
 ### Kain

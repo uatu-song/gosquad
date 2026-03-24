@@ -9,90 +9,34 @@
 
 | Status | Count |
 |--------|-------|
-| Complete | 2 (Infrastructure + Ch 1-2) |
-| Pending | 14 |
-| **Total** | 16 |
+| Complete | 16 (Infrastructure + Ch 1-19) |
+| Pending | 1 (Continuity review) |
+| **Total** | 17 |
+
+**Book 2A prose is COMPLETE.** All chapters 1-19 have prose. DOCX compiled.
 
 ---
 
 ## Completed
 
 - [x] **Infrastructure** - Continuity tracker + CLAUDE.md protocols
-- [x] **Ch 1-2 prose** - Exists in `/book2_manuscript/` (~115K chars)
+- [x] **Ch 1-2 prose** - Complete (~19,400 words combined). Split files: 01a-01d, 02a-02d
+- [x] **Ch 3-6 prose** - Complete (had Method Actor scaffolds)
+- [x] **Ch 7-9 prose** - Complete (structure only)
+- [x] **Ch 10 prose** - Complete (Victor teaches but/and)
+- [x] **Ch 11-14 prose** - Complete
+- [x] **Ch 15A-15B prose** - Complete (Gala + Solo Operation, Tess POV)
+- [x] **Ch 16 prose** - Complete (Team Convergence)
+- [x] **Ch 17 prose** - Complete (Treatment, Ruth POV)
+- [x] **Ch 18 prose** - Complete (Breaking Pattern)
+- [x] **Ch 19 prose** - Complete (Exile Island reveal, Scene 1)
 
 ---
 
-## Pending - Has Method Actor Scaffold
+## Remaining
 
-These chapters have `[NARRATOR]`/`[AS CHARACTER]` scaffolds ready:
-
-- [ ] **Ch 3** - Team debrief, Ryu treatment (cage + first line), Ruth grief
-  - File: `Chapter_3_METHOD_ACTOR.md`
-  - Follows directly from Ch 2 assassination
-
-- [ ] **Ch 4** - Bourn/Patterson, Victor attacked, Ruth/Bourn meeting
-  - File: `Chapter_4_METHOD_ACTOR.md`
-  - Institutional + action + relationship scenes
-
-- [ ] **Ch 5** - Eidolon mob attack, entity named, Isaiah exoneration
-  - File: `Chapter_5_METHOD_ACTOR.md`
-  - Webb walks free, Leta death countdown begins
-
-- [ ] **Ch 6** - Tess/Leta domestic, Ben grief
-  - File: `Chapter_6_METHOD_ACTOR.md`
-  - Early harassment seeds, Sarah backstory
-
----
-
-## Pending - Structure Only (No Method Actor)
-
-These have beat-by-beat structures but no dialogue scaffolds:
-
-- [ ] **Ch 7-9** - Enablement cycle, Eidolon subtle phase
-  - Ahdia's secret ops begin
-  - Reference: `Chapter_7/8/9_STRUCTURE.md`
-
-- [ ] **Ch 11** - Coordinated attacks (4 sites)
-  - Ruth splits team, mixed results
-  - Reference: `Chapter_11_STRUCTURE.md`
-
-- [ ] **Ch 12** - Parallel investigations
-  - All threads touching Titan Strategic
-  - Reference: `Chapter_12_STRUCTURE.md`
-
-- [ ] **Ch 13** - Near miss convergence
-  - All pieces present, not connected
-  - Reference: `Chapter_13_STRUCTURE.md`
-
-- [ ] **Ch 14-16** - Black tie infiltration, convergence, Eidolon escalation
-  - Investigations connect, Bourn revealed as ally
-  - Reference: `Chapter_14/15/16_STRUCTURE.md`
-
-- [ ] **Ch 18** - Breaking pattern, hybrid strategy
-  - Ruth refuses to enable, five-track plan
-  - Reference: `Chapter_18_STRUCTURE.md`
-
----
-
-## Pending - Needs Method Actor Scaffold
-
-Voice-critical scenes that need dialogue calibration before prose:
-
-- [ ] **Ch 10** - Victor teaches but/and to Leah
-  - Dialogue-heavy teaching scene
-  - Reference: `Chapter_10_STRUCTURE.md`
-  - **Action:** Create Method Actor scaffold first
-
-- [ ] **Ch 17** - Ruth confronts Ahdia (54% baseline)
-  - Emotional climax, boundary-setting
-  - Reference: `Chapter_17_STRUCTURE.md`
-  - **Action:** Create Method Actor scaffold first
-
-- [ ] **Ch 19** - Exile Island reveal (BOOK 2A ENDPOINT)
-  - Ruth/Ryu discover AR-Ryu system
-  - Both/And complexity scene
-  - Reference: `Chapter_19_STRUCTURE.md`
-  - **Action:** Create Method Actor scaffold first
+- [ ] **Continuity review pass** — see below
+- [ ] **Book 2B prose** — Chapters 20+ (not yet started)
 
 ---
 
@@ -107,27 +51,36 @@ Voice-critical scenes that need dialogue calibration before prose:
 
 ---
 
-## Recommended Order
+## Next Steps
 
-1. **Ch 3-6** (have Method Actor scaffolds)
-2. **Ch 7-9** (structure only, but flows from Ch 6)
-3. **Ch 10** (create scaffold first, then prose)
-4. **Ch 11-13** (structure only)
-5. **Ch 14-16** (structure only)
-6. **Ch 17** (create scaffold first—emotional climax)
-7. **Ch 18** (structure only)
-8. **Ch 19** (create scaffold first—Book 2A endpoint)
-9. **Continuity review pass**
+1. **Continuity review pass** on completed Ch 1-19
+2. **Book 2B planning** — Chapters 20+ structure and prose
+3. **Rebuild DOCX** after any edits: `python3 build_docx.py` (in `6_manuscript/book_2/`)
 
 ---
 
 ## Quick Reference
 
-**Continuity Tracker:** `BOOK2A_CONTINUITY_TRACKER.md`
+**Continuity Tracker:** `CONTINUITY_TRACKER.md`
 **Protocols:** `CLAUDE.md` (updated with prose workflow)
 **Method Actor Briefing:** `METHOD_ACTOR_BRIEFING_DRAFT.md`
-**Existing Manuscripts:** `/book2_manuscript/chapter_01.md`, `chapter_02.md`
+**Manuscript files:** `6_manuscript/book_2/chapter_*.txt`
+**DOCX output:** `6_manuscript/book_2/Book2_Manuscript.docx`
+**Build script:** `6_manuscript/book_2/build_docx.py`
 
 ---
 
-*Last Updated: 2025-12-09*
+## Breadcrumb Insertions (2026-03-09)
+
+Retroactive beats inserted into completed chapters for plot integrity:
+
+| Chapter | File | Insertion | Purpose |
+|---------|------|-----------|---------|
+| Ch 2 | `chapter_02.md` | Kain on two news feeds, 4 min apart, 40-min drive (Tess dismisses as B-roll) | Clone/avatar breadcrumb #1 |
+| Ch 9 | `chapter_09.txt` | Kain signature notarized same day Phoenix + DC, 90 min apart (Ben logs as forgery) | Clone/avatar breadcrumb #2 |
+| Ch 11 | `chapter_11.txt` | Victor: Eidolon turns volume up on real anger, doesn't create it | Eidolon limitation mechanic |
+| Ch 12 | `chapter_12.txt` | Ben: TRIOMF international shipments routing to southwest facility, wrong scale | Fusion/coup scaffolding |
+
+---
+
+*Last Updated: 2026-03-09*

@@ -156,6 +156,18 @@ with open('templates/production_crew/status_tracker.yaml') as f:
 "
 ```
 
+## Manuscript Build Tool
+
+```bash
+# Generate DOCX from chapter .txt files (renumbered, formatted for Dabblewriter)
+cd 6_manuscript/book_2/
+python3 build_docx.py
+```
+
+Output: `Book2_Manuscript.docx` — 20 chapters, renumbered sequentially, italics converted, scene breaks as `*   *   *`, STRUCT comments stripped, Times New Roman 12pt.
+
+Rebuild after any prose edits to keep DOCX current.
+
 ## Next Steps
 
 1. **API Orchestrator** - `orchestrator.py` to load templates, inject state, call API

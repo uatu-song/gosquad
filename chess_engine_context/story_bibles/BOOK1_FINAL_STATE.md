@@ -193,7 +193,7 @@
 
 **Victor (Crimson Sable):**
 - Community center director
-- Lost wife to gang violence
+- Romantic partner is Leah (NO dead wife — this was a hallucination from earlier LLM sessions)
 - Community connections become crucial
 - Knows Ahdia has powers
 

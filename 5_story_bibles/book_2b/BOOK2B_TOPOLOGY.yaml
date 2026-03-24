@@ -1,0 +1,850 @@
+# ============================================================================
+# BOOK 2B TOPOLOGY — Planning Reference (Progressive Disclosure)
+# Go Squad (Auerbach Series) by J. S. Vaughn
+# ============================================================================
+# STATUS: PHASE 2-3 (Thread architecture + chapter topology from steward Run 1)
+# Prose: NONE. Beats: 28 moves mapped. 12 editorial issues pending.
+# This file is a PLANNING TOOL, not a post-prose record.
+# ============================================================================
+#
+# PROGRESSIVE DISCLOSURE PHASES:
+#   Phase 1: Concept lock ✓ (meta, characters, canon warnings)
+#   Phase 2: Thread architecture ✓ (plot threads, dramatic irony, cross-link)
+#   Phase 3: Chapter topology ✓ (28 moves, scenes, convergences)
+#   Phase 4: Post-prose (voice samples, word counts, ending state) — PENDING
+# ============================================================================
+
+# ============================================================================
+# PHASE 1 — CONCEPT LOCK
+# ============================================================================
+
+meta:
+  series: "Auerbach Series"
+  book: "2B"
+  title: "Go Squad: Book 2B (new Book 3 in renumbered series)"
+  author: "J. S. Vaughn"
+  status: "PLANNING — Steward Run 1 complete, 5-agent evaluation next"
+  word_count: null  # Phase 4
+  prose_status: "NONE"
+  emotional_arc: "Evidence vs fear → Fear wins → 'We saved the world and lost our country'"
+  thematic_focus: "CBT definitively fails. Truth is necessary but insufficient. Individual heroics create vulnerabilities."
+  core_thesis: "You don't have to be fixed to be worthy"
+  series_position: "Book 2B of 8. Completes the Book 2 arc (2A + 2B). CBT approach fails conclusively. Sets up Book 4 turning point."
+  timeline: "Picks up Sunday after Book 2A Ch19. Runs through Election Night (~2-3 months)."
+  chess_game:
+    white: "jcksng"
+    black: "jssong3"
+    opening: "Scandinavian Defense (B01)"
+    moves: 28
+    result: "0-1 (Black wins)"
+    final_move: "Qe3#"
+    source: "lichess.org/study/pvV0wlWr/jvvRGVM2"
+    structural_mapping: "White = Go Squad (loses). Black = TRIOMF (wins)."
+  phases:
+    opening: { moves: "M1-M8", label: "Sunday → Fractures" }
+    middlegame: { moves: "M9-M18", label: "Overreach → Evidence inverted" }
+    crisis: { moves: "M19-M24", label: "Rook rampage → Eidolon cracks" }
+    endgame: { moves: "M25-M28", label: "Election Night → Checkmate" }
+  convergence_points:
+    M9: { title: "THE OVERREACH", eval: "-0.50 → -0.44", move: "f4?! exf4" }
+    M13: { title: "THE WRONG DIRECTION / FIRST PIECE TAKEN", eval: "-2.36 → -1.36", move: "a4?? Bxh3?!" }
+    M25: { title: "THE MATING NET BEGINS", eval: "+8.24 → +8.83", move: "Kd2 Nf2" }
+  locked_endpoints:
+    - "Kain wins presidency (312 electoral votes, opponent +2.5% popular vote)"
+    - "Ahdia drops to 0.7% baseline (next activation = death)"
+    - "Prime reveals herself as Ahdia-1 ('We need to talk about the other three timelines')"
+    - "Go Squad labeled terrorists"
+    - "Bellatrix wins (Qe3#)"
+    - "Leta dies (killed by Webb during manhunt, Ch23 old numbering)"
+    - "Coup prevented (28 quantum nodes offline) but Kain won anyway"
+    - "FAERIS achieves autonomy, pushes Exile Island broadcast independently"
+    - "'We saved the world and lost our country'"
+
+# ============================================================================
+# CHARACTERS
+# ============================================================================
+
+characters:
+  # === WHITE (Go Squad — loses) ===
+
+  ahdia_bacchus:
+    role: protagonist
+    side: White
+    triplet: [White King, White e-pawn, White g-pawn]
+    moves_owned: [M1, M5, M9, M13, M17, M21, M25]
+    note: "Writes FIRST at every convergence point."
+    entering_baseline: "53.1% (from Book 2A Ch19)"
+    baseline_trajectory:
+      M1: "53% — privacy lost (secret becomes team knowledge)"
+      M5: "~50% — autonomy lost (agrees to constraints)"
+      M9: "~42% — cover lost (secret becomes public weapon)"
+      M13: "~35% — protection lost (someone harmed while she's elsewhere)"
+      M17: "~22% — choice lost (forced to pick who to save)"
+      M21: "~12% — reserve lost (spends baseline she can't afford)"
+      M25: "~7% — everything lost (commits to final burn)"
+      M28: "0.7% — the game lost (alive, stripped, king on d2)"
+    arc: "Benevolent dictator exposed → tries to stop → can't stop → burns to nothing → Prime appears"
+    pov_note: "POV restored in 2B (was withheld in 2A). Reader now sees her perspective."
+
+  ruth_carter:
+    role: field_leader
+    side: White
+    triplet: [White Ra1, White Queen, White a-pawn]
+    moves_owned: [M2, M7, M12, M17, M22, M27]
+    arc: "Confrontation → consolidation → wrong patient → CR-7 extension → rook rampage → too late"
+    key_beat: "M27: Leta dies in Ruth's hands. One move. Everything she brought. Too late."
+    queen_note: "Ruth and Bourn both claim White Queen in their triplets (editorial issue #12). Ruth reads it as herself deploying too late. Bourn reads it as institutional defense she refused to be."
+
+  tess_whitford:
+    role: investigator
+    side: White
+    triplet: [White Nh3, White Bf1, White f-pawn]
+    moves_owned: [M3, M8, M14, M19, M25]
+    arc: "Last morning → shelves investigation → goes to father (gets marked) → warning → mask off over Leta"
+    key_beat: "M14: Goes to father for intel. Gets marked. Bxf1 — captures dead piece at fatal cost."
+
+  ben_bukowski:
+    role: evidence_builder
+    side: White
+    triplet: [White Nf3, White d-pawn, White b-pawn]
+    moves_owned: [M6, M12, M18, M25]
+    arc: "Institutional faith → evidence leaked → faith destroyed → geometry not faith"
+    key_beat: "M25: 'Tell me the layout of the facility.' The Marine, not the believer."
+    faith_collapse: "M16 (Eidolon reframes evidence, +12 points) → M18 ('What the hell am I conserving?') → M25 (operates without belief system)"
+
+  ryu_matsuda:
+    role: handler_enabler
+    side: White
+    triplet: [White e-pawn, White Nf3, White Ra1]
+    moves_owned: [M6, M13, M20, M26]
+    arc: "Confession → compound decay silence → CADENS espionage → commits as mole"
+    key_beat: "M26: Commits as long-term CADENS mole. Gives Ruth the compound decay model."
+    e_pawn_note: "Both Ahdia and Ryu claim e-pawn (editorial issue #11). Ryu reads it as dormant data — three moves too late."
+
+  victor_hernandez:
+    role: community_organizer
+    side: White
+    triplet: [White Bc1, White a-pawn, White d-pawn]
+    moves_owned: [M10, M23]
+    arc: "Community weaponized → community destroyed → scope shrinks to one hand"
+    key_beat: "M23: Calls Korede about Leta. 'I need you to sit down.'"
+    canon_warning: "NO dead wife. Romantic partner is Leah."
+
+  leah_turner:
+    role: witness
+    side: White
+    triplet: [White Rg1, White Bc1, White b-pawn]
+    moves_owned: [M11, M24]
+    arc: "Steps between threat and civilian → coma (M11-M24) → wakes into wreckage"
+    key_beat: "M24: Wakes from 13-move coma. Everything changed."
+    canon_warning: "Leah is a BARISTA (not investigator)."
+
+  korede_and_leta:
+    role: targeted_pair
+    side: White
+    triplet: [White g-pawn (Korede), White f-pawn (Leta), White Rg1 (documentation)]
+    moves_owned: [M13, M26]
+    leta_arc: "Harassment escalation → physical threat → killed by Webb"
+    korede_arc: "Observer → radicalized → closes laptop after sister's murder"
+    key_beat: "M26: 'Webb does not innovate.' The closed laptop."
+    canon_warnings:
+      - "Korede is 17 (NOT 15)"
+      - "Leta dies in Book 2B (killed by Webb)"
+
+  harriet_bourn:
+    role: institutional_defector
+    side: White
+    triplet: [White Queen, White Bc1, White b-pawn]
+    moves_owned: [M15]
+    arc: "Hands CADENS files to Ben. Complete arc in one move."
+    key_beat: "M15: 'Fair exchanges don't win games.'"
+    canon_warning: "Bourn is a WOMAN (she/her pronouns)."
+
+  # === BLACK (TRIOMF — wins) ===
+
+  bellatrix:
+    role: hidden_orchestrator
+    side: Black
+    triplet: [Black Queen, Black light-sq Bishop (f8), Black Rh8]
+    moves_owned: [M9, M18, M27]
+    arc: "Architecture enables capture → grabs wrong material → removes last defender"
+    key_beat: "M27: 'You do not push the mountain down. You wait for the mountain to become sand.'"
+    canon: "Four dead Genevas across timelines. Current Ahdia = Ahdia-5. Five total iterations."
+
+  harding_kain:
+    role: political_weapon
+    side: Black
+    triplet: [Black King, Black Nb8, Black c-pawn]
+    moves_owned: [M4, M9, M15, M21, M26]
+    arc: "Pre-positions terrorism framework → captures → exchanges → deploys Eidolon → takes bait"
+    key_beat: "M4: Pre-positions domestic terrorism classification. Framework before the act."
+    endpoint: "President-elect, 312 electoral votes. Clone system intact. Unkillable individually."
+
+  eidolon:
+    role: fear_amplifier
+    side: Black
+    triplet: [Black Ng8, Black e-pawn, Black d-pawn]
+    moves_owned: [M7, M16, M24]
+    arc: "Catalogs trust-fear → reframes evidence → grief crack"
+    key_beat: "M24: Three-phase structure. Manhunt peak → FAERIS broadcast/laughter breaks grip → encounters grief from Leta's death it can't metabolize. 'Why didn't the grief become fear?'"
+    canon_warning: "AMPLIFIES existing fear only. Cannot CREATE new fears."
+    seeds_book3: "Grief crack at M24 is the seed for Eidolon's Book 3/4 arc (tragic victim, not predator)."
+
+# ============================================================================
+# PHASE 2 — THREAD ARCHITECTURE
+# ============================================================================
+
+plot_threads:
+  exile_island_fallout:
+    description: "Team learns truth about Ahdia's secret ops. Becomes weapon against Go Squad."
+    phases:
+      reveal: { moves: [M1, M2], summary: "Sunday confrontation. Powers weren't real. Exile Island exposed to team." }
+      weaponized: { moves: [M9], summary: "Secret becomes public. Terrorist label seeds planted." }
+      broadcast: { moves: [M24], summary: "FAERIS pushes footage globally. Dictators doing dishes. Laughter breaks manhunt." }
+    endpoint: "28 subjects globally known. Reality TV format."
+
+  bens_evidence:
+    description: "Institutional channels → public leak → Eidolon inverts it."
+    phases:
+      building: { moves: [M6, M12], summary: "Files through channels, then leaks publicly. 48 hours of success." }
+      destroyed: { moves: [M16], summary: "Eidolon reframes evidence. Kain +12 points. Faith destroyed." }
+      geometry: { moves: [M25], summary: "'Tell me the layout of the facility.' Marine, not believer." }
+    endpoint: "Evidence irrelevant. Individual heroics create vulnerabilities."
+
+  leta_harassment:
+    description: "Coordinated escalation: online → physical → murder."
+    phases:
+      online: { moves: [M7, M13], summary: "Bot networks traced to TRIOMF. Goes physical inside community center." }
+      manhunt: { moves: [M19, M24], summary: "Citywide manhunt. FAERIS broadcast temporarily breaks it." }
+      murder: { moves: [M26, M27], summary: "Webb kills Leta. Dies in Ruth's hands. Korede closes laptop." }
+    endpoint: "Leta dead. 'Webb does not innovate.'"
+
+  ahdias_burn:
+    description: "53.1% → 0.7%. Each activation costs more than the last (compound decay)."
+    phases:
+      constrained: { moves: [M1, M5], summary: "Secret exposed, agrees to constraints." }
+      breaking_constraints: { moves: [M9, M13, M17], summary: "Overreaches repeatedly. Fork forces impossible choice." }
+      terminal: { moves: [M21, M25, M28], summary: "Spends what she can't afford. Final burn. 0.7%." }
+    endpoint: "Alive but stripped. Next activation = death. Prime appears."
+
+  kains_rise:
+    description: "Framework → capture → exchange → election victory."
+    phases:
+      positioning: { moves: [M4, M9], summary: "Pre-positions terrorism classification. Captures Go Squad narrative." }
+      consolidation: { moves: [M15, M16, M21], summary: "Exchange with Bourn. Eidolon reframes. Deploys fear directly." }
+      victory: { moves: [M26, M28], summary: "Takes bait (f-pawn = Leta). Wins 312 EV despite coup prevention." }
+    endpoint: "President-elect. Fear beats truth."
+
+  five_track_strategy:
+    description: "Go Squad's coordinated plan. Every track fails or arrives too late."
+    tracks:
+      - { name: "Ben's evidence", fate: "Eidolon inverts at M16" }
+      - { name: "Bourn's institutional pressure", fate: "Exchanged at M15, insufficient" }
+      - { name: "Leah's recording/community outreach", fate: "Coma at M11" }
+      - { name: "Witness protection", fate: "Overwhelmed" }
+      - { name: "Victor's community organizing", fate: "Weaponized against them at M10" }
+
+  ryu_enablement_to_mole:
+    description: "Enabler → confessor → spy → double agent."
+    phases:
+      enabling: { moves: [M1, M5], summary: "Falsified records exposed. Confrontation." }
+      confession: { moves: [M6], summary: "Confesses complicity to team." }
+      silence: { moves: [M13], summary: "Hides compound decay model (exponential decline)." }
+      espionage: { moves: [M20], summary: "Goes inside CADENS. Extracts TRIOMF connections, FAERIS exploitation records." }
+      commitment: { moves: [M26], summary: "Commits as long-term mole. Gives Ruth the model." }
+
+  bourns_defection:
+    description: "Institutional authority → one-move complete arc → intel provider."
+    key_move: M15
+    beat: "Hands CADENS files to Ben. 'Fair exchanges don't win games.' axb6 cxb6."
+    context: "M18-M28 she operates as intel provider in background."
+
+# ============================================================================
+# DRAMATIC IRONY
+# ============================================================================
+
+dramatic_irony:
+  ahdia_secret_ops:
+    truth: "Ahdia ran Exile Island for 4+ months. 28 dictators exiled."
+    team_learns: "M1 (Sunday confrontation)"
+    public_learns: "M24 (FAERIS autonomous broadcast)"
+    reader_knew_since: "Book 2A Ch19"
+
+  compound_decay:
+    truth: "Baseline decline is exponential, not linear. Each activation costs more."
+    ryu_knows: "M13 (hides it)"
+    ruth_learns: "M26 (Ryu gives her the model)"
+    ahdia_learns: "Unknown — may never know"
+    reader_learns: "M13 (when Ryu hides it)"
+
+  eidolons_nature:
+    truth: "Fear fragment torn from unified being by Bellatrix. Victim, not predator."
+    team_believes: "Natural entity, pure threat"
+    reader_suspects: "M24 (grief crack — 'Why didn't the grief become fear?')"
+    confirmed: "Book 3/4"
+
+  bellatrix_identity:
+    truth: "Has watched 4 Genevas die. Current Ahdia = 5th iteration."
+    team_knows: "Nothing (mystery figure)"
+    reader_knows: "Four dead Genevas (from steward output). Full context Book 3/4."
+
+  primes_existence:
+    truth: "Ahdia-1. Has been helping from shadows (anonymous tips, documents 'too easy' to find)."
+    team_knows: "Nothing until M28 reveal"
+    reader_suspects: "Book 2A seeds (anonymous tips, 'too easy' documents)"
+    confirmed: "M28 (Prime appears after checkmate)"
+
+  treatment_truth:
+    truth: "CR-7 prevents transcendence, not death. Cellular death = dimensional shift."
+    everyone_believes: "Treatment keeps Ahdia alive"
+    reader_learns: "TBD (later book)"
+
+# ============================================================================
+# PHASE 3 — MOVE-BY-MOVE TOPOLOGY
+# ============================================================================
+# Each "move" maps to one White + one Black half-move in the chess game.
+# Chapter structure TBD — moves may combine or split into chapters during blocking.
+# ============================================================================
+
+moves:
+
+  - number: 1
+    chess: "e4 d5"
+    eval: "0.18 → 0.54"
+    title: "PROLOGUE / THE OPENING"
+    phase: opening
+    white_steward: Ahdia
+    black_response: "d5 — Scandinavian. Direct challenge."
+    beat: "Sunday confrontation. Exile Island revealed to team. Secret becomes shared knowledge."
+    characters_present: [Ahdia, Ruth, Ryu, Ben, Tess, Victor, Leah]
+    ahdia_baseline: "53%"
+    what_is_lost: "Privacy"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 2
+    chess: "f3?? d4?!"
+    eval: "White blunder"
+    title: "THE INCITING INCIDENT"
+    phase: opening
+    white_steward: Ruth
+    beat: "Ruth forces confrontation. Team learns powers weren't real — Ahdia was slowing time around them."
+    key_event: "'Powers aren't real' claim (editorial issue #5 — needs Director confirmation)"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 3
+    chess: "g3?! e5"
+    eval: "Inaccuracy"
+    title: "LAST MORNING"
+    phase: opening
+    white_steward: Tess
+    beat: "Last morning before everything changes. Tess on rooftop."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 4
+    chess: "Nh3 Bb4"
+    title: "THE PLACEMENT"
+    phase: opening
+    white_steward: null
+    black_steward: Kain
+    beat: "Kain pre-positions domestic terrorism classification framework. Framework before the act."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 5
+    chess: "a3 Ba5"
+    title: "BOUNDARY NEGOTIATION"
+    phase: opening
+    white_steward: Ahdia
+    beat: "Ahdia agrees to constraints. Team imposes limits on her operations."
+    ahdia_baseline: "~50%"
+    what_is_lost: "Autonomy"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 6
+    chess: "b4 Bb6"
+    title: "THE PUSH / CONFESSION"
+    phase: opening
+    white_steward: [Ben, Ryu]
+    beat: "Ben files evidence through institutional channels. Ryu confesses complicity to team."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 7
+    chess: "d3 Nc6?!"
+    title: "CONSOLIDATION / THE INVENTORY"
+    phase: opening
+    white_steward: Ruth
+    black_steward: Eidolon
+    beat: "Ruth consolidates team. Eidolon catalogs trust-fear across community. Hidden threats grow."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 8
+    chess: "Nd2 Nf6"
+    title: "THE SHELF"
+    phase: opening
+    white_steward: Tess
+    beat: "Tess shelves her investigation to support team. Blocks own development. Self-sacrifice framed as loyalty."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 9
+    chess: "f4?! exf4"
+    eval: "-0.50 → -0.44"
+    title: "THE OVERREACH"
+    phase: middlegame
+    convergence: true
+    convergence_stewards: [Ahdia, Kain, Bellatrix]
+    ahdia_writes_first: true
+    beat: "Ahdia breaks agreement, acts unilaterally. Secret weaponized. Terrorist label seeds."
+    ahdia_baseline: "~42%"
+    what_is_lost: "Cover"
+    editorial_issue: "#8 — Bellatrix/Kain both claim architecture credit"
+    prose_status: null
+    words: null
+
+  - number: 10
+    chess: "gxf4? Bg4?"
+    eval: "Mutual blunders"
+    title: "THE PIN"
+    phase: middlegame
+    white_steward: Victor
+    beat: "Victor's community networks weaponized against them. Surveillance tools turned inward."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 11
+    chess: "Nf3 Qd7?"
+    title: "THE RIGHT THING"
+    phase: middlegame
+    white_steward: Leah
+    beat: "Leah steps between threat and civilian. Walks into pin. Enters coma (M11-M24)."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 12
+    chess: "Rg1?? O-O-O??"
+    eval: "-3.23 — mutual blunders"
+    title: "THE DOUBLE BLUNDER"
+    phase: middlegame
+    white_steward: [Ruth, Ben]
+    beat: "Ruth prioritizes Ahdia over window. Ben leaks evidence publicly — 48 hours of success, then Eidolon inverts it."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 13
+    chess: "a4?? Bxh3?!"
+    eval: "-2.36 → -1.36"
+    title: "THE WRONG DIRECTION / FIRST PIECE TAKEN"
+    phase: middlegame
+    convergence: true
+    convergence_stewards: [Ahdia, Ryu, "Korede/Leta", Tess, Victor, Eidolon]
+    ahdia_writes_first: true
+    beat: "Ahdia looking wrong way. Leta harassment goes physical (inside community center). Ryu hides compound decay model. First piece taken."
+    ahdia_baseline: "~35%"
+    what_is_lost: "Protection"
+    editorial_issues:
+      - "#6 — Compound decay model (exponential vs linear) needs Director decision"
+      - "#11 — e-pawn ownership overlap (Ahdia and Ryu)"
+    prose_status: null
+    words: null
+
+  - number: 14
+    chess: "a5 Bxf1??"
+    eval: "Black blunder"
+    title: "THE TRAP"
+    phase: middlegame
+    white_steward: Tess
+    beat: "Tess goes to father for intel. Gets marked. Bxf1 — captures dead piece at fatal cost."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 15
+    chess: "axb6 cxb6"
+    title: "THE EXCHANGE"
+    phase: middlegame
+    white_steward: Bourn
+    black_steward: Kain
+    beat: "Bourn hands CADENS files to Ben. 'Fair exchanges don't win games.' Complete arc in one move."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 16
+    chess: "Kxf1 Qh3+"
+    title: "THE REFRAME"
+    phase: middlegame
+    black_steward: Eidolon
+    beat: "Eidolon reframes all evidence. Kain +12 points in polls. Ben's institutional faith destroyed."
+    editorial_issue: "#7 — Eidolon/Kain both claim the reframe timing"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 17
+    chess: "Kf2?? Ng4+"
+    eval: "White blunder (-1.19)"
+    title: "THE FORK"
+    phase: middlegame
+    white_steward: [Ahdia, Ruth]
+    beat: "Ahdia forked — forced to pick who to save. Ruth gives CR-7 extension (months instead of weeks). Stops enabling, starts witnessing."
+    ahdia_baseline: "~22%"
+    what_is_lost: "Choice"
+    editorial_issue: "#4 — CR-7 extension is new lore, needs Director decision"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 18
+    chess: "Ke2 Nxb4?"
+    title: "THE WRONG GAME / FAITH COLLAPSE"
+    phase: middlegame
+    white_steward: Ben
+    black_steward: Bellatrix
+    beat: "System clears officers in Isaiah killing. Ben: 'What the hell am I conserving?' Kain grabs wrong material (Bellatrix lets him)."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 19
+    chess: "Rxa7 Kd7??"
+    eval: "Black blunder"
+    title: "ROOK RAMPAGE BEGINS"
+    phase: crisis
+    white_steward: Tess
+    beat: "Team has momentum. Rxa7 — first rook capture. Tess sees manhunt coming, warning not absorbed."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 20
+    chess: "Rxb7+ Ke6??"
+    eval: "Black blunder"
+    title: "THE ESPIONAGE"
+    phase: crisis
+    white_steward: Ryu
+    beat: "Ryu goes inside CADENS. Espionage rampage (Rxb7+). Extracts TRIOMF connections, FAERIS exploitation records."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 21
+    chess: "Rxb6+?! Rd6?!"
+    eval: "Mutual inaccuracies"
+    title: "THE BLOCK"
+    phase: crisis
+    white_steward: Ahdia
+    black_steward: Kain
+    beat: "Go Squad lands best blow but it doesn't matter. Kain deploys Eidolon directly. Desperate block."
+    ahdia_baseline: "~12%"
+    what_is_lost: "Reserve"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 22
+    chess: "Rxb4 Kf6"
+    title: "WINNING EVERYTHING, CHANGING NOTHING"
+    phase: crisis
+    white_steward: Ruth
+    beat: "Ruth wins everything, changes nothing. Four consecutive captures. Kain's king keeps marching."
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 23
+    chess: "e5+ Kf5"
+    title: "THE CHECK THAT DIDN'T MATTER"
+    phase: crisis
+    white_steward: Victor
+    beat: "e5+ check. Victor at Leah's hospital bedside learns Leta is dead. Calls Korede. 'I need you to sit down.'"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 24
+    chess: "exd6 Re8+"
+    title: "WAKING INTO WRECKAGE / THE FIRST CRACK"
+    phase: crisis
+    white_steward: Leah
+    black_steward: Eidolon
+    beat: >
+      Leah wakes from 13-move coma. Eidolon THREE-PHASE BEAT:
+      (1) Manhunt peak — fear amplification at maximum
+      (2) FAERIS autonomous broadcast — dictators doing dishes, laughter breaks grip
+      (3) Encounters compound grief from Leta's death it can't metabolize.
+      "Why didn't the grief become fear?"
+    seeds_forward: "Eidolon grief crack → Book 3/4 arc (victim, not predator)"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 25
+    chess: "Kd2 Nf2"
+    eval: "+8.24 → +8.83"
+    title: "THE MATING NET BEGINS"
+    phase: endgame
+    convergence: true
+    convergence_stewards: [Ahdia, Ruth, Tess, Ben, Bourn, Bellatrix]
+    ahdia_writes_first: true
+    beat: >
+      Election Night. 28 quantum fusion reactor nodes — midnight activation = global coup.
+      Ahdia commits to final burn. Ben: "Tell me the layout of the facility."
+      Tess: mask off, Leta gone. King retreats. Fork lands.
+    ahdia_baseline: "~7%"
+    what_is_lost: "Everything"
+    convergence: true
+    prose_status: null
+    words: null
+
+  - number: 26
+    chess: "Rb5+ Kxf4"
+    title: "THE BAIT / THE CLOSED LAPTOP"
+    phase: endgame
+    white_steward: Ryu
+    black_steward: Kain
+    korede_leta: true
+    beat: >
+      Deflection — king takes bait. Ryu commits as long-term CADENS mole.
+      Gives Ruth compound decay model. Leta murdered by Webb.
+      Korede closes laptop. "Webb does not innovate."
+      Kxf4 — the g-pawn (Korede's piece) dies.
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 27
+    chess: "Qf1 Qxf3"
+    title: "THE REMOVAL"
+    phase: endgame
+    white_steward: Ruth
+    black_steward: Bellatrix
+    beat: >
+      Ruth brings everything. One move. Too late. Leta dies in her hands.
+      Bellatrix removes last defender. Qxf3.
+      "You do not push the mountain down. You wait for the mountain to become sand."
+    editorial_issue: "#12 — White Queen: Ruth reads as herself (too late), Bourn reads as institutional defense she refused"
+    convergence: false
+    prose_status: null
+    words: null
+
+  - number: 28
+    chess: "d7?? Qe3#"
+    eval: "Checkmate"
+    title: "LAST PRAYER / CHECKMATE"
+    phase: endgame
+    beat: >
+      d7 — last prayer (passed pawn, desperate). Qe3# — checkmate.
+      Ahdia at 0.7%. Kain wins 312 EV (opponent +2.5% popular vote).
+      Coup prevented. 28 quantum nodes offline. But Kain won anyway.
+      Prime appears. "We need to talk about the other three timelines."
+      "We saved the world and lost our country."
+    ahdia_baseline: "0.7%"
+    convergence: false
+    prose_status: null
+    words: null
+
+# ============================================================================
+# CANON WARNINGS
+# ============================================================================
+
+canon_warnings:
+  critical:
+    - "Ahdia's POV is RESTORED in Book 2B (was withheld in 2A)."
+    - "Leta dies — killed by Webb during manhunt. Not negotiable."
+    - "Kain wins the election. Fear beats truth. Not negotiable."
+    - "Go Squad labeled terrorists. Qe3# is the locked endpoint."
+    - "Prime reveals as Ahdia-1 at M28. Five total iterations (NOT 43/47)."
+    - "FAERIS achieves autonomy — pushes Exile Island broadcast WITHOUT human authorization."
+
+  character:
+    - "Tess does NOT kill Webb (brutalizes, leaves alive)"
+    - "Victor has NO dead wife (romantic partner is Leah)"
+    - "Ryu NEVER confesses love to Ahdia"
+    - "Bourn is a WOMAN (she/her pronouns)"
+    - "Eidolon AMPLIFIES fear (cannot create new fears)"
+    - "Leah is a BARISTA (not investigator)"
+    - "Korede is 17 (NOT 15)"
+    - "Isaiah Bennett is an ADULT environmental engineer (NOT seventeen)"
+    - "Daniel Farah (NOT Daniel Okonkwo)"
+    - "Baseline cost from Seed activation (freezes), NOT translocation. Translocation = Tess's power."
+    - "Leah in coma M11-M24. Cannot appear in scenes during this window."
+
+  structural:
+    - "28 moves = 28 structural units. NOT necessarily 28 chapters."
+    - "Moves may combine or split during cinematic blocking phase."
+    - "Convergence points (M9, M13, M25): Ahdia writes FIRST, then other stewards."
+    - "Chess annotations (blunders, inaccuracies) inform narrative quality — blunder = character mistake."
+
+# ============================================================================
+# EDITORIAL ISSUES (12 — Pending Director Decisions)
+# ============================================================================
+
+editorial_issues:
+  - id: 1
+    issue: "28 vs 37 dictators on Exile Island"
+    detail: "Stewards used both. Ch19 prose = 28, planning docs = 37."
+    recommendation: "Use 28 (matches manuscript)"
+
+  - id: 2
+    issue: "Korede's age"
+    detail: "Stewards say 15 AND 17."
+    recommendation: "Canon = 17"
+
+  - id: 3
+    issue: "Translocation mechanics"
+    detail: "Some stewards confused Seed activation (has cost) vs translocation (Tess's power, no cost)."
+    recommendation: "Enforce: Seed activation = baseline cost. Translocation = Tess, free."
+
+  - id: 4
+    issue: "CR-7 extension at M17"
+    detail: "New lore — Ruth gives Ahdia months instead of weeks via CADENS resources."
+    recommendation: "Director decides if canon."
+
+  - id: 5
+    issue: "'Powers aren't real' claim at M2"
+    detail: "Team learns enhanced abilities were Ahdia slowing time. Significant retcon if confirmed."
+    recommendation: "Director confirms scope — all powers, or specific ones?"
+
+  - id: 6
+    issue: "Compound decay model"
+    detail: "Ryu discovers baseline decline is exponential, not linear. Powerful new lore."
+    recommendation: "Director decides if canon."
+
+  - id: 7
+    issue: "Eidolon/Kain timing at M16"
+    detail: "Both stewards claim the evidence reframe."
+    recommendation: "Choreograph: Eidolon provides mechanism, Kain provides platform."
+
+  - id: 8
+    issue: "Bellatrix/Kain M9 overlap"
+    detail: "Both claim architecture credit for weaponizing Go Squad's secret."
+    recommendation: "Bellatrix designs, Kain executes."
+
+  - id: 9
+    issue: "Bourn's baseline numbers timing"
+    detail: "When does she get actual vs falsified data?"
+    recommendation: "Director decides timeline."
+
+  - id: 10
+    issue: "Korede's location at Leta's death"
+    detail: "Korede steward has him present. Tess steward also present."
+    recommendation: "Compatible — choreograph both. Need blocking."
+
+  - id: 11
+    issue: "e-pawn ownership"
+    detail: "Ahdia and Ryu both claim it as triplet piece."
+    recommendation: "Intentional overlap? Both readings valid. Director decides."
+
+  - id: 12
+    issue: "White Queen at M27"
+    detail: "Ruth reads it as herself (deploying too late). Bourn reads it as institutional defense she refused."
+    recommendation: "Both readings enrich. Director decides primary."
+
+# ============================================================================
+# TRIPLET OVERLAPS (shared chess pieces across stewards)
+# ============================================================================
+
+triplet_overlaps:
+  e_pawn:
+    claimed_by: [Ahdia, Ryu]
+    ahdia_reads: "Power held in reserve, three desperate moves at the end"
+    ryu_reads: "Dormant data (compound decay model), three moves too late"
+
+  white_bc1:
+    claimed_by: [Victor, Leah, Bourn]
+    victor_reads: "Blocked by own team, never enters game"
+    leah_reads: "The life she was trying to escape, returned to by coma"
+    bourn_reads: "Imprisoned by own bureaucracy"
+
+  white_queen:
+    claimed_by: [Ruth, Bourn]
+    ruth_reads: "Deploys too late (M27), one desperate move"
+    bourn_reads: "Refuses to BE the queen, acts 13 moves earlier"
+
+# ============================================================================
+# CROSS-LINK: Book 2A ending → Book 2B opening
+# ============================================================================
+
+cross_link_from_book2a:
+  topology_file: "5_story_bibles/book_2/BOOK2A_TOPOLOGY.yaml"
+  handoff_moment: "Book 2A ends Ch19 — Ruth and Ryu discover Exile Island. 'Deal with it Sunday.'"
+  ahdia_entering: "53.1% baseline. 28 Exile Island subjects. 4 months of secret ops. Exhausted."
+  ruth_entering: "Just discovered the truth. Processing shock. 'Deal with it Sunday' = M1."
+  ryu_entering: "Complicit enabler. Medical records falsified. Discovered alongside Ruth."
+  team_entering: "Don't know about Exile Island yet. Still believe Ahdia is depressed/withdrawn."
+  kain_entering: "Rising politically. TRIOMF active. Running for president."
+  unresolved_from_2a:
+    - "Team doesn't know Exile Island truth (learns M1)"
+    - "Team doesn't know powers were Ahdia (learns M2)"
+    - "Compound decay hidden (Ryu discovers M13, shares M26)"
+    - "Prime operating in shadows (anonymous tips, documents)"
+    - "Eidolon fear amplification ongoing"
+    - "28 vs 37 dictator count unresolved"
+
+# ============================================================================
+# PHASE 4 — POST-PROSE (all null until prose exists)
+# ============================================================================
+
+voice_samples: null  # Extract from manuscript after prose is written
+prose_rules:
+  source: "1_writing_guides/GOSQUAD_PROSE_VOICE.md + 1_writing_guides/Ahdia_Voice.md"
+  key_rules:
+    - "66% dialogue. 12-word average sentences. Fragments for impact."
+    - "Density is a feature — every scene is load-bearing."
+    - "Embody, don't articulate — characters live the theme, don't explain it."
+    - "Voice trumps technical polish. When grammar and ear conflict, trust the ear."
+    - "Ahdia's pop culture references are coping, not decoration. Max 2 simile-format per scene."
+    - "Period-separated lists for staccato inventory. Not comma-separated."
+    - "Em-dashes for mid-thought pivots. Commas for pauses."
+    - "No thesis statements explaining what the scene showed."
+    - "No softened dark statements ('dead parents' not 'parents who passed away')."
+
+book2b_ending_state: null  # Confirm from prose. Locked endpoints above are structural targets.
+
+cross_link_to_book3: null  # Build after Book 2B prose complete.
+
+# ============================================================================
+# STANDOUT BEATS (Director-flagged from Run 1)
+# ============================================================================
+
+standout_beats:
+  - { move: M24, steward: Eidolon, label: "THE FIRST CRACK", quote: "Why didn't the grief become fear?" }
+  - { move: M25, steward: Ben, label: "GEOMETRY NOT FAITH", quote: "Tell me the layout of the facility." }
+  - { move: M23, steward: Victor, label: "THE CHECK THAT DIDN'T MATTER", note: "Scope shrinks from community to one hand. 'I need you to sit down.'" }
+  - { move: M15, steward: Bourn, label: "NOT THE QUEEN", quote: "Fair exchanges don't win games." }
+  - { move: M26, steward: "Korede/Leta", label: "THE CLOSED LAPTOP", quote: "Webb does not innovate." }
+  - { move: M27, steward: Bellatrix, label: "THE REMOVAL", quote: "You do not push the mountain down. You wait for the mountain to become sand." }
+
+# ============================================================================
+# NEXT STEPS
+# ============================================================================
+
+next_steps:
+  immediate:
+    - "5-agent parallel evaluation (Timeline Keeper, Status Tracker, Theme Guardian, Reader Proxy, Pacing Monitor)"
+    - "Enforcer validates all 5 reports"
+    - "Director resolves 12 editorial issues"
+  then:
+    - "Director-led cinematic blocking (Scene Choreographer + Pacing Monitor)"
+    - "Convert 28 moves into chapter structure (moves may combine/split)"
+    - "Run 2-3 of steward experiment (different triplet variants)"
+  finally:
+    - "Prose generation"
+    - "Phase 4 of this topology (voice samples, word counts, ending state confirmed)"

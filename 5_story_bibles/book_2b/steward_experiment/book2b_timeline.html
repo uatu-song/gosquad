@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book 2B Steward Timeline — Run 1</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card-bg: #161b22;
+    --border: #30363d;
+    --text: #c9d1d9;
+    --text-dim: #8b949e;
+    --white-accent: #e6edf3;
+    --black-accent: #f0883e;
+    --convergence: #da3633;
+    --white-side: #388bfd;
+    --black-side: #f0883e;
+    --tag-white: #1f3a5f;
+    --tag-black: #5a2d0c;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem;
+    line-height: 1.6;
+  }
+  h1 {
+    font-size: 1.8rem;
+    color: var(--white-accent);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+  }
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+  }
+  .legend {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .legend-dot.white { background: var(--white-side); }
+  .legend-dot.black { background: var(--black-side); }
+  .legend-dot.convergence { background: var(--convergence); }
+  .legend-dot.collective { background: #a371f7; }
+
+  .timeline {
+    position: relative;
+    padding-left: 3rem;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 1.2rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+  }
+
+  .move-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .move-marker {
+    position: absolute;
+    left: -2.6rem;
+    top: 0.3rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+  }
+  .move-marker.white { background: var(--white-side); }
+  .move-marker.black { background: var(--black-side); }
+  .move-marker.convergence { background: var(--convergence); box-shadow: 0 0 8px rgba(218,54,51,0.5); }
+  .move-marker.collective { background: #a371f7; box-shadow: 0 0 8px rgba(163,113,247,0.5); }
+
+  .move-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .move-number {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--white-accent);
+    min-width: 2.5rem;
+  }
+  .chess-notation {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    background: rgba(110,118,129,0.1);
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    border: 1px solid var(--border);
+  }
+  .move-desc {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+  .convergence-badge {
+    font-size: 0.7rem;
+    background: var(--convergence);
+    color: #fff;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .beat-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .beat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.8rem 1rem;
+    border-left: 3px solid var(--white-side);
+  }
+  .beat-card.black-side {
+    border-left-color: var(--black-side);
+  }
+  .beat-card.convergence-card {
+    border-left-color: var(--convergence);
+  }
+  .beat-card.collective-card {
+    border-left-color: #a371f7;
+  }
+
+  .beat-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.3rem;
+    flex-wrap: wrap;
+  }
+  .steward-name {
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: var(--white-accent);
+  }
+  .faction-tag {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .faction-tag.white { background: var(--tag-white); color: var(--white-side); }
+  .faction-tag.black { background: var(--tag-black); color: var(--black-side); }
+
+  .beat-title {
+    font-size: 0.9rem;
+    color: #e6edf3;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  .beat-summary {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    line-height: 1.5;
+  }
+  .triplet-ref {
+    font-size: 0.7rem;
+    color: #484f58;
+    margin-top: 0.3rem;
+    font-style: italic;
+  }
+
+  /* Notes system */
+  .note-area {
+    margin-top: 0.6rem;
+  }
+  .note-toggle {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    background: none;
+    border: 1px dashed var(--border);
+    border-radius: 4px;
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+  }
+  .note-toggle:hover {
+    border-color: var(--white-side);
+    color: var(--white-side);
+  }
+  .note-toggle.has-note {
+    border-color: #3fb950;
+    color: #3fb950;
+    border-style: solid;
+  }
+  .note-textarea {
+    display: none;
+    width: 100%;
+    min-height: 60px;
+    margin-top: 0.4rem;
+    padding: 0.5rem;
+    background: #0d1117;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    resize: vertical;
+  }
+  .note-textarea:focus {
+    outline: none;
+    border-color: var(--white-side);
+  }
+  .note-textarea.visible {
+    display: block;
+  }
+  .note-status {
+    font-size: 0.65rem;
+    color: #3fb950;
+    margin-top: 0.2rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .note-status.show {
+    opacity: 1;
+  }
+
+  /* Download bar */
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 0.6rem 0;
+    margin: -2rem -2rem 1.5rem -2rem;
+    padding: 0.6rem 2rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .toolbar-btn {
+    font-family: inherit;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .toolbar-btn:hover {
+    border-color: var(--white-side);
+    color: var(--white-accent);
+  }
+  .toolbar-btn.primary {
+    background: var(--white-side);
+    border-color: var(--white-side);
+    color: #fff;
+  }
+  .toolbar-btn.primary:hover {
+    background: #58a6ff;
+  }
+  .toolbar-spacer { flex: 1; }
+  .toolbar-info {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+  }
+
+  .eval-bar {
+    height: 4px;
+    border-radius: 2px;
+    margin-top: 0.4rem;
+    background: linear-gradient(to right, var(--white-side), var(--black-side));
+    position: relative;
+  }
+  .eval-bar .marker {
+    position: absolute;
+    top: -3px;
+    width: 10px;
+    height: 10px;
+    background: var(--white-accent);
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  .phase-divider {
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  .phase-divider::before, .phase-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background: var(--border);
+  }
+  .phase-divider::before { left: 5%; }
+  .phase-divider::after { right: 5%; }
+
+  .stats-bar {
+    display: flex;
+    gap: 2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+  }
+  .stat { display: flex; flex-direction: column; }
+  .stat-value { font-size: 1.2rem; font-weight: bold; color: var(--white-accent); }
+  .stat-label { color: var(--text-dim); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .baseline-tracker {
+    font-size: 0.7rem;
+    color: var(--convergence);
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    body { padding: 1rem; }
+    .timeline { padding-left: 2.5rem; }
+    .move-marker { left: -2.2rem; width: 1.4rem; height: 1.4rem; font-size: 0.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button class="toolbar-btn primary" onclick="downloadReport()">Download Report (.md)</button>
+  <button class="toolbar-btn" onclick="expandAllNotes()">Show All Notes</button>
+  <button class="toolbar-btn" onclick="collapseAllNotes()">Hide All Notes</button>
+  <button class="toolbar-btn" onclick="clearAllNotes()">Clear All Notes</button>
+  <span class="toolbar-spacer"></span>
+  <span class="toolbar-info" id="noteCount">0 notes</span>
+</div>
+
+<h1>Book 2B — Steward Experiment Timeline</h1>
+<div class="subtitle">
+  Run 1 &middot; 13 Stewards &middot; 28 Moves &middot; Scandinavian Defense (B01) &middot; jcksng vs jssong3 &middot; 0-1<br>
+  White = Go Squad (loses) &middot; Black = TRIOMF (wins) &middot; Qe3# checkmate
+</div>
+
+<div class="stats-bar">
+  <div class="stat"><span class="stat-value">28</span><span class="stat-label">Moves</span></div>
+  <div class="stat"><span class="stat-value">13</span><span class="stat-label">Stewards</span></div>
+  <div class="stat"><span class="stat-value">3</span><span class="stat-label">Convergences</span></div>
+  <div class="stat"><span class="stat-value">9</span><span class="stat-label">White Stewards</span></div>
+  <div class="stat"><span class="stat-value">4</span><span class="stat-label">Black Stewards</span></div>
+  <div class="stat"><span class="stat-value">53%→0.7%</span><span class="stat-label">Ahdia Baseline</span></div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><span class="legend-dot white"></span> Go Squad (White)</div>
+  <div class="legend-item"><span class="legend-dot black"></span> TRIOMF (Black)</div>
+  <div class="legend-item"><span class="legend-dot convergence"></span> Convergence Point</div>
+  <div class="legend-item"><span class="legend-dot collective"></span> Collective / Checkmate</div>
+</div>
+
+<div class="timeline">
+
+<!-- PHASE: OPENING -->
+<div class="phase-divider">— Opening (M1–M8) —</div>
+
+<!-- M1 -->
+<div class="move-group" data-move="M1">
+  <div class="move-marker white">1</div>
+  <div class="move-header">
+    <span class="move-number">M1</span>
+    <span class="chess-notation">e4 d5</span>
+    <span class="move-desc">Both sides declare simultaneously</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ahdia Bacchus</span>
+        <span class="faction-tag white">White</span>
+        <span class="baseline-tracker">Baseline: 53%</span>
+      </div>
+      <div class="beat-title">PROLOGUE — THE BOARD</div>
+      <div class="beat-summary">Sunday morning. The team gathers on neutral ground. Ahdia arrives knowing what's coming, having rehearsed all night. She settles on something close enough to truth. The team knows about Exile Island, the baseline burn, Ryu's involvement. What they don't know is the scope — 37 operations, 4 months, everything. Both positions stated simultaneously. Neither side retreating.</div>
+      <div class="triplet-ref">♔ White King / e-pawn / g-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M2 -->
+<div class="move-group" data-move="M2">
+  <div class="move-marker white">2</div>
+  <div class="move-header">
+    <span class="move-number">M2</span>
+    <span class="chess-notation">f3? d4?!</span>
+    <span class="move-desc">White weakens to protect; Black locks center</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ruth Carter</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">INCITING INCIDENT — The Confrontation</div>
+      <div class="beat-summary">Ruth calls the meeting. She tells the team what she found. She weakens her strongest alliance to protect the team's integrity — f3 weakens the kingside. The team learns their powers aren't real, that every "enhanced reflex" was Ahdia slowing time around them. Black locks the center: the confrontation changes nothing strategically. Kain is still running. Ahdia is still dying.</div>
+      <div class="triplet-ref">♖ Ra1 / ♕ White Queen / a-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M3 -->
+<div class="move-group" data-move="M3">
+  <div class="move-marker white">3</div>
+  <div class="move-header">
+    <span class="move-number">M3</span>
+    <span class="chess-notation">g3?! e5</span>
+    <span class="move-desc">Quiet setup; Black stakes a claim</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Tess Whitford</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">LAST MORNING OF COHERENCE</div>
+      <div class="beat-summary">Dawn. Rooftop parkour warm-up. Coffee in a ventilation grate. Tess is thinking about Leta — the harassment plateau, the officers cleared. Something is wrong with the team — Ruth brittle, Ryu avoiding Ahdia's eyes. The fianchetto that never completes: Tess is preparing, strengthening edges while the center is about to blow open. Last morning where Tess's life makes sense.</div>
+      <div class="triplet-ref">♘ Nh3 / ♗ Bf1 / f-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M4 -->
+<div class="move-group" data-move="M4">
+  <div class="move-marker black">4</div>
+  <div class="move-header">
+    <span class="move-number">M4</span>
+    <span class="chess-notation">Nh3 Bb4</span>
+    <span class="move-desc">Wrong square; invisible threat placed</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Harding Kain</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE PLACEMENT</div>
+      <div class="beat-summary">Kain pre-positions a domestic terrorism classification pathway before anyone overreaches. A memo in the right office. A briefing to the right committee. Language defining "unauthorized paramilitary operations by enhanced individuals" as a national security threat. It doesn't mention Ahdia. It describes a category. And Ahdia's Exile Island operation fits perfectly inside it. He's not reacting — he's pre-positioning.</div>
+      <div class="triplet-ref">♚ Black King / ♞ Nb8 / c-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M5 -->
+<div class="move-group" data-move="M5">
+  <div class="move-marker white">5</div>
+  <div class="move-header">
+    <span class="move-number">M5</span>
+    <span class="chess-notation">a3 Ba5</span>
+    <span class="move-desc">Small resistance; threat retreats but holds</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ahdia Bacchus</span>
+        <span class="faction-tag white">White</span>
+        <span class="baseline-tracker">Baseline: ~50%</span>
+      </div>
+      <div class="beat-title">THE BOUNDARY NEGOTIATION</div>
+      <div class="beat-summary">Ruth sets terms: no solo ops, 72-hour treatment spacing, Ahdia as asset not lone operator, full baseline disclosure. Ahdia agrees to all four. She means it. But the threat retreats without disappearing — her agreement is conditional on a world she can't control. Victor sees it: "She agreed to everything. That's the part that worries me." The five-track strategy launches.</div>
+      <div class="triplet-ref">♔ White King / e-pawn / g-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M6 -->
+<div class="move-group" data-move="M6">
+  <div class="move-marker white">6</div>
+  <div class="move-header">
+    <span class="move-number">M6</span>
+    <span class="chess-notation">b4 Bb6</span>
+    <span class="move-desc">Aggression with cost; threat survives</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ben Bukowski</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE PUSH — Evidence Through Channels</div>
+      <div class="beat-summary">Ben launches the full five-track evidence package through institutional channels — Congressional oversight, DOJ, IG, FBI. Cross-referenced. Triple-sourced. Every chain of custody clean for federal court. The referrals go to offices with TRIOMF consultants on retainer. The FBI contact goes quiet. The system is already captured. The pawn pushed. The threat survives.</div>
+      <div class="triplet-ref">♘ Nf3 / d-pawn / b-pawn</div>
+    </div>
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ryu Matsuda</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE CONFESSION</div>
+      <div class="beat-summary">Sunday confrontation. Ryu tells the truth — he provided coordinates, falsified cellular degradation reports, enabled operations he knew would accelerate Ahdia's decline. But not the compound decay model. Not the number. He loses Ben's trust — the quiet Marine assessment: "you were the failsafe, and you failed." The confession displaced the secret. It didn't eliminate the trajectory.</div>
+      <div class="triplet-ref">e-pawn / ♘ Nf3 / ♖ Ra1</div>
+    </div>
+  </div>
+</div>
+
+<!-- M7 -->
+<div class="move-group" data-move="M7">
+  <div class="move-marker white">7</div>
+  <div class="move-header">
+    <span class="move-number">M7</span>
+    <span class="chess-notation">d3 Nc6?!</span>
+    <span class="move-desc">Consolidation; hidden development</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ruth Carter</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">CONSOLIDATION</div>
+      <div class="beat-summary">Three weeks post-confrontation. Ruth has reorganized operations — no more secret time bubbles, no manufactured powers. Honest baselines. The team is functioning, bruised but operational. But something is building underneath. Ahdia hasn't stopped. The exposure risk is growing. Ruth is looking at the people in front of her. The threat that kills you is the one in the next room.</div>
+      <div class="triplet-ref">♖ Ra1 / ♕ White Queen / a-pawn</div>
+    </div>
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Eidolon</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE INVENTORY</div>
+      <div class="beat-summary">Eidolon observes the team's internal crisis from the dimensional periphery. Trust-fear — the fear of betrayal by loved ones — is richer material than any rally or riot. Ruth's fear: she enabled this. Ryu's fear: complicity. The d-pawn is already on d4. The fear of betrayal is the center of the board and it will not move. Eidolon notes that White is doing Black's work for it.</div>
+      <div class="triplet-ref">♞ Ng8 / e-pawn / d-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M8 -->
+<div class="move-group" data-move="M8">
+  <div class="move-marker white">8</div>
+  <div class="move-header">
+    <span class="move-number">M8</span>
+    <span class="chess-notation">Nd2 Nf6</span>
+    <span class="move-desc">Retreat to advance; equal footing</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Tess Whitford</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE ENTOMBMENT</div>
+      <div class="beat-summary">Tess processes Ahdia's betrayal faster than the others — she already knows institutional betrayal from her father. But she jumps to operational mode while the team is still metabolizing. She shelves her investigation, pauses Gloom Girl, refocuses on team stability and Leta's safety. Nd2 blocks the bishop — by pulling back to support, she blocks her own development. The investigation she shelves would have provided intel they needed later.</div>
+      <div class="triplet-ref">♘ Nh3 / ♗ Bf1 / f-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE: MIDDLEGAME -->
+<div class="phase-divider">— Middlegame (M9–M18) —</div>
+
+<!-- M9 CONVERGENCE -->
+<div class="move-group" data-move="M9">
+  <div class="move-marker convergence">9</div>
+  <div class="move-header">
+    <span class="move-number">M9</span>
+    <span class="chess-notation">f4?! exf4</span>
+    <span class="move-desc">Overreach punished immediately</span>
+    <span class="convergence-badge">Convergence</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card convergence-card">
+      <div class="beat-header">
+        <span class="steward-name">Ahdia Bacchus</span>
+        <span class="faction-tag white">White</span>
+        <span class="baseline-tracker">Baseline: ~42%</span>
+      </div>
+      <div class="beat-title">THE OVERREACH</div>
+      <div class="beat-summary">Something happens the five-track strategy can't address. Ahdia breaks the boundary — acts unilaterally using FAERIS, Exile Island infrastructure. The operation succeeds tactically. Within hours, Kain's media apparatus has footage. Evidence of heroism reframed as villainy. The "terrorist" label seeds itself. Ahdia's baseline numbers become public knowledge. Ruth's reaction: silence. Which is worse.</div>
+      <div class="triplet-ref">♔ White King / e-pawn / g-pawn</div>
+    </div>
+    <div class="beat-card convergence-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Harding Kain</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE CAPTURE</div>
+      <div class="beat-summary">Kain doesn't engineer the crisis. The system flags the operation, matches it to the M4 classification framework. Controlled distribution — right journalists, right committee staffers. The footage enters the ecosystem like dye in water. By the time the public sees it, the interpretation framework is already in place. Deploys expendable surrogate to say what Kain is too disciplined to say. The overreach is punished automatically.</div>
+      <div class="triplet-ref">♚ Black King / ♞ Nb8 / c-pawn</div>
+    </div>
+    <div class="beat-card convergence-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Bellatrix</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE CHANNEL</div>
+      <div class="beat-summary">Bellatrix didn't manufacture the crisis. She ensured the channels existed — surveillance architecture, classification framework, media ecosystem. Built across iterations, maintained as infrastructure. The glacier does not push the water downhill. It shapes the valley. Ahdia overreached because she's Bellatrix's consciousness fragment, carrying the compulsion to act that Bellatrix "optimized away" 3.7 billion years ago. She watches from the dimensional periphery with grief-infected attention.</div>
+      <div class="triplet-ref">♛ Black Queen / ♝ Bf8 (grief) / ♜ Rh8</div>
+    </div>
+  </div>
+</div>
+
+<!-- M10 -->
+<div class="move-group" data-move="M10">
+  <div class="move-marker white">10</div>
+  <div class="move-header">
+    <span class="move-number">M10</span>
+    <span class="chess-notation">gxf4? Bg4?</span>
+    <span class="move-desc">King exposed; weapon quietly placed</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Victor Hernandez</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE PIN</div>
+      <div class="beat-summary">After M9 fallout, Victor's community meeting continues — mutual aid coordination, the work that doesn't make news. Someone shows him the neighborhood watch app repurposed as surveillance: Go Squad associates' addresses, license plates, photos from meetings. The infrastructure he built for protection has been turned into a surveillance tool. His proximity is the danger. He can't organize without exposing the people he organizes. He calls Leah: <em>"How do you protect people when your protection is the thing that's hurting them?"</em></div>
+      <div class="triplet-ref">♗ Bc1 / a-pawn / d-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M11 -->
+<div class="move-group" data-move="M11">
+  <div class="move-marker white">11</div>
+  <div class="move-header">
+    <span class="move-number">M11</span>
+    <span class="chess-notation">Nf3 Qd7?</span>
+    <span class="move-desc">Walks into the pin; queen activates</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Leah Turner</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE RIGHT THING</div>
+      <div class="beat-summary">Leah is running community outreach — Victor's framework, her execution. Barista skills translate: reading rooms, managing energy. She's building a network of ordinary people willing to speak publicly against Kain. With her name attached. Her face visible. Her voice on the recording. Victor texts: "You are. Be careful." She reads the second sentence as affection. It's a warning. The knight walks into the pin. The queen activates.</div>
+      <div class="triplet-ref">♖ Rg1 / ♗ Bc1 / b-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M12 -->
+<div class="move-group" data-move="M12">
+  <div class="move-marker white">12</div>
+  <div class="move-header">
+    <span class="move-number">M12</span>
+    <span class="chess-notation">Rg1?? O-O-O??</span>
+    <span class="move-desc">Simultaneous blunders; both sides wrong</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ruth Carter</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE WRONG PATIENT</div>
+      <div class="beat-summary">Ruth prioritizes Ahdia — pulls resources toward managing the M9 exposure crisis and stabilizing Ahdia's medical situation. She's treating the wound she can see while the opportunity window bleeds out. TRIOMF simultaneously consolidates — the campaign infrastructure hardens, the narrative calcifies from accusation to consensus. Both sides wrong. Both sides confident they made the right call.</div>
+      <div class="triplet-ref">♖ Ra1 / ♕ White Queen / a-pawn</div>
+    </div>
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ben Bukowski</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE LEAK — Evidence Goes Public</div>
+      <div class="beat-summary">Ben goes around the system — gives everything to three journalists simultaneously with a dead man's switch. Front pages. Lead stories. For 48 hours, it works. Polling dips. The word "indictment" appears. Then Eidolon reframes it. Not with counter-evidence — with fear. Kain gains 12 points in 72 hours. The evidence became the fuel. Ben built the bonfire and Eidolon lit it backward. <em>"The evidence was perfect. The evidence was the problem."</em></div>
+      <div class="triplet-ref">♘ Nf3 / d-pawn / b-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M13 CONVERGENCE -->
+<div class="move-group" data-move="M13">
+  <div class="move-marker convergence">13</div>
+  <div class="move-header">
+    <span class="move-number">M13</span>
+    <span class="chess-notation">a4?? Bxh3?!</span>
+    <span class="move-desc">Missed opportunity; first piece taken</span>
+    <span class="convergence-badge">Convergence</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card convergence-card">
+      <div class="beat-header">
+        <span class="steward-name">Ahdia Bacchus</span>
+        <span class="faction-tag white">White</span>
+        <span class="baseline-tracker">Baseline: ~35%</span>
+      </div>
+      <div class="beat-title">THE WRONG DIRECTION</div>
+      <div class="beat-summary">Ahdia is consumed by the information war — fighting the terrorist label, trying to get ahead of the story. Focused on a4, the wrong side of the board. Meanwhile, the harassment campaign against Leta escalates past anything the team has seen. Coordinated. Specific. Ahdia doesn't see it — not because she doesn't care, but because she's consumed by the fire she started. This is the "Why didn't you save her?" moment for Book 2B.</div>
+      <div class="triplet-ref">♔ White King / e-pawn / g-pawn</div>
+    </div>
+    <div class="beat-card convergence-card">
+      <div class="beat-header">
+        <span class="steward-name">Ryu Matsuda</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE PIN CRYSTALLIZES</div>
+      <div class="beat-summary">Compound decay model confirmed — 11 times verified. Ahdia hides the nosebleed, Ryu hides the model. Two people protecting each other from truths that could save them. He pushes a4 — makes himself useful with TRIOMF intelligence instead of sharing the number. While he's looking at the queenside, the kingside bleeds. First piece falls. He was looking at the wrong part of the board.</div>
+      <div class="triplet-ref">e-pawn / ♘ Nf3 / ♖ Ra1</div>
+    </div>
+    <div class="beat-card convergence-card">
+      <div class="beat-header">
+        <span class="steward-name">Korede &amp; Leta Owolowo</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE FILE THAT ISN'T ENOUGH</div>
+      <div class="beat-summary">The harassment goes physical. Someone was inside Victor's community center during Leta's resistance practice session — inside the room with five trans women breathing with their eyes closed. Korede turns the laptop: green → yellow → red entries. Trend line projects red outnumbering yellow within two weeks. Leta closes the laptop gently: "The numbers are never wrong and they never help." Korede adds a new column: "IF POLICE WON'T." He doesn't fill it in yet.</div>
+      <div class="triplet-ref">g-pawn (Korede) / f-pawn (Leta) / ♖ Rg1 (documentation)</div>
+    </div>
+  </div>
+</div>
+
+<!-- M14 -->
+<div class="move-group" data-move="M14">
+  <div class="move-marker white">14</div>
+  <div class="move-header">
+    <span class="move-number">M14</span>
+    <span class="chess-notation">a5 Bxf1??</span>
+    <span class="move-desc">Deflection lands; Black makes fatal mistake</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Tess Whitford</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE FATAL MISTAKE</div>
+      <div class="beat-summary">Tess discovers a connection through Leta — something linking Exile Island to her father's department. She doesn't bring it to the team. She goes to her father. Not to reconcile — to use. She captures the dead bishop: spends her most painful asset for information that feels urgent but isn't the real threat. Chief Whitford reports the contact. Tess's visit tells the enemy exactly where to aim.</div>
+      <div class="triplet-ref">♘ Nh3 / ♗ Bf1 / f-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M15 -->
+<div class="move-group" data-move="M15">
+  <div class="move-marker white">15</div>
+  <div class="move-header">
+    <span class="move-number">M15</span>
+    <span class="chess-notation">axb6 cxb6</span>
+    <span class="move-desc">Exchange of costs</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Harriet Bourn</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE EXCHANGE — Institutional Defection</div>
+      <div class="beat-summary">Bourn gives up CADENS — not by resigning, by burning it. She walks out the real TRIOMF file, classified threat assessments, satellite coordination logs. Evidence that implicates her as deeply as anyone. She contacts Ben directly: "I have something for you. It will end my career. It will probably end my freedom." She's not the Queen (too late) or Bc1 (blocked). She's the a-pawn — completes its mission and dies in the same move. Fair exchanges don't win games. They just make the loss honest.</div>
+      <div class="triplet-ref">♕ White Queen / ♗ Bc1 / b-pawn</div>
+    </div>
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Harding Kain</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE EXCHANGE — Absorbing Damage</div>
+      <div class="beat-summary">Go Squad exposes a piece of Kain's infrastructure. His response is not denial — it's exchange. He sacrifices the exposed asset, lets a subordinate take the fall. The exchange costs Go Squad too: scrutiny of their methods, Bourn's unauthorized access, Ahdia's surveillance network. Equal in material. But Kain can absorb structural damage. Go Squad cannot. The c-pawn restores order on b6. It won't survive — it gets taken at M21. It doesn't need to survive. It needs to buy time.</div>
+      <div class="triplet-ref">♚ Black King / ♞ Nb8 / c-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M16 -->
+<div class="move-group" data-move="M16">
+  <div class="move-marker black">16</div>
+  <div class="move-header">
+    <span class="move-number">M16</span>
+    <span class="chess-notation">Kxf1 Qh3+</span>
+    <span class="move-desc">King forced to act; check arrives</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Eidolon</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE REFRAME</div>
+      <div class="beat-summary">Ben's evidence drops — Tank Kain massacre, TRIOMF shells, Isaiah Bennett vindication. For 48 hours it works. Polling dips. Then Eidolon delivers check. Not by denying evidence — by reframing what it means. War crimes become "tough choices." Kain goes up 12 points. The truth is public and it doesn't matter. Ben's conservative faith shatters: <em>"What the hell am I conserving?"</em> Fear doesn't compete with truth. Fear makes truth irrelevant. And total success is what makes M24 incomprehensible.</div>
+      <div class="triplet-ref">♞ Ng8 / e-pawn / d-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M17 -->
+<div class="move-group" data-move="M17">
+  <div class="move-marker white">17</div>
+  <div class="move-header">
+    <span class="move-number">M17</span>
+    <span class="chess-notation">Kf2?? Ng4+</span>
+    <span class="move-desc">King runs into fork</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ahdia Bacchus</span>
+        <span class="faction-tag white">White</span>
+        <span class="baseline-tracker">Baseline: ~22%</span>
+      </div>
+      <div class="beat-title">THE FORK</div>
+      <div class="beat-summary">The terrorist label is public. The citywide manhunt begins. Ahdia has two choices: use remaining baseline to shield the team, or stop the larger threat. She cannot do both — maybe 8 activations left before critical threshold. She moves to f2. Ng4+ — fork. Check and double attack. The choice she made saves someone. The choice she didn't make costs someone. No safe square.</div>
+      <div class="triplet-ref">♔ White King / e-pawn / g-pawn</div>
+    </div>
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ruth Carter</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE BOUNDARY</div>
+      <div class="beat-summary">Ruth faces the triage question she's been avoiding: Is Ahdia a patient or a colleague? She chooses colleague. She gives Ahdia the CR-7 extension — months instead of weeks — and says: "I'm giving you time. What you do with it is yours. But I need you to know: I'm counting." This is the moment Ruth stops enabling and starts witnessing. It looks like giving up. It is the opposite of giving up.</div>
+      <div class="triplet-ref">♖ Ra1 / ♕ White Queen / a-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M18 -->
+<div class="move-group" data-move="M18">
+  <div class="move-marker white">18</div>
+  <div class="move-header">
+    <span class="move-number">M18</span>
+    <span class="chess-notation">Ke2 Nxb4?</span>
+    <span class="move-desc">Survival; wrong material grabbed</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ben Bukowski</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE CLEARING — Wrong Material</div>
+      <div class="beat-summary">The officers who killed Isaiah Bennett are cleared publicly. Ben watches the press conference on his phone, turns it face-down, stands there. He survives — Ke2, not good but everything else is worse. He reaches for the institution again: RICO charges, new filing structure. The b-pawn. Wrong material — already off the board. <em>"What the hell am I conserving?"</em> arrives not as declaration but as thought at 3 AM while alphabetizing tabs. He keeps alphabetizing.</div>
+      <div class="triplet-ref">♘ Nf3 / d-pawn / b-pawn</div>
+    </div>
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Bellatrix</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE WRONG GAME</div>
+      <div class="beat-summary">Kain grabs electoral material — the terrorist label sticking, polling recovering, new surrogates replacing the spent ones. And he is grabbing the wrong material. Kain thinks he's playing an election. Bellatrix is playing a cosmic game. The election is one move in a sequence constructed across universe cycles. The knight on b4 is Kain at his most visible — it will be captured at M22. Puppets are for spending. The queen does not move.</div>
+      <div class="triplet-ref">♛ Black Queen / ♝ Bf8 (grief) / ♜ Rh8</div>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE: CRISIS -->
+<div class="phase-divider">— Crisis / Rook Rampage (M19–M24) —</div>
+
+<!-- M19 -->
+<div class="move-group" data-move="M19">
+  <div class="move-marker white">19</div>
+  <div class="move-header">
+    <span class="move-number">M19</span>
+    <span class="chess-notation">Rxa7 Kd7??</span>
+    <span class="move-desc">Rampage begins; enemy king steps forward blindly</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Tess Whitford</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE RAMPAGE BEGINS</div>
+      <div class="beat-summary">The team has momentum — evidence moving, things working. Tess runs point on logistics, Gloom Girl network for real-time intelligence. But the rampage has a cost: every public move paints targets. Webb is active again. Tess can see the manhunt infrastructure being assembled. She tries to warn the team. The warning is heard but not absorbed — because they're winning. She tells Leta to stay close. Leta agrees. Leta also keeps working.</div>
+      <div class="triplet-ref">♘ Nh3 / ♗ Bf1 / f-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M20 -->
+<div class="move-group" data-move="M20">
+  <div class="move-marker white">20</div>
+  <div class="move-header">
+    <span class="move-number">M20</span>
+    <span class="chess-notation">Rxb7+ Ke6??</span>
+    <span class="move-desc">Relentless; enemy king deeper into danger</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ryu Matsuda</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE MOLE — Inside CADENS</div>
+      <div class="beat-summary">Ryu goes inside CADENS. Credentials active, falsification unreported. Methodical rampage: treatment records, operational logs, FAERIS deployment histories, TRIOMF connections, Eidolon funding channels. Each file accessed leaves a footprint. The nervous-rambler persona as camouflage. AR-Ryu processing at picosecond framerate. He's disturbingly good at espionage — authentic awkwardness better than trained cover. Relentless action building the geometry of his own exposure. The e-pawn (compound decay model) is still untouched.</div>
+      <div class="triplet-ref">e-pawn / ♘ Nf3 / ♖ Ra1</div>
+    </div>
+  </div>
+</div>
+
+<!-- M21 -->
+<div class="move-group" data-move="M21">
+  <div class="move-marker white">21</div>
+  <div class="move-header">
+    <span class="move-number">M21</span>
+    <span class="chess-notation">Rxb6+?! Rd6?!</span>
+    <span class="move-desc">Pressure; desperate block</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ahdia Bacchus</span>
+        <span class="faction-tag white">White</span>
+        <span class="baseline-tracker">Baseline: ~12%</span>
+      </div>
+      <div class="beat-title">THE BLOCK</div>
+      <div class="beat-summary">Leta is dead. Ahdia was not there. The team is in survival mode — hunted by civilians, police, Kain's security. They cannot go home. Ahdia blocks — burns baseline she can't afford — to create a freeze. Long enough to move, regroup, breathe. Not long enough to change anything. Baseline drops. Ruth can see it in the way she stands up after. The e-pawn is still on e4 — she's been spending everything except the big reserves. Running out of things to sacrifice that aren't herself.</div>
+      <div class="triplet-ref">♔ White King / e-pawn / g-pawn</div>
+    </div>
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Harding Kain</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE SHIELD</div>
+      <div class="beat-summary">Go Squad lands its best blow — evidence public, polling shifts, Kain's math doesn't work for the first time. Kain deploys Eidolon as a direct weapon. Targets the electorate's deepest anxiety: the people trying to save you are more dangerous than the people trying to rule you. Ahdia's footage, the terrorist classification, the baseline numbers — all true, all amplified. Fear is louder than hope. The rook on d6 is passive. Not winning. Surviving.</div>
+      <div class="triplet-ref">♚ Black King / ♞ Nb8 / c-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M22 -->
+<div class="move-group" data-move="M22">
+  <div class="move-marker white">22</div>
+  <div class="move-header">
+    <span class="move-number">M22</span>
+    <span class="chess-notation">Rxb4 Kf6</span>
+    <span class="move-desc">Material dominance; king keeps marching</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ruth Carter</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE RAMPAGE — Winning Everything, Changing Nothing</div>
+      <div class="beat-summary">Fourth consecutive capture. Ruth extracts Bourn, coordinates the scattered team through back channels, treats injuries with improvised equipment, runs logistics for fugitives. Four captures. The rook takes everything it can reach. Material dominance: on paper, she's winning. Every extraction succeeds. Every call is right. And Kf6 — the enemy king keeps marching. Kain's election night approaches. The polls haven't moved. The math is changing. She feels the gap between winning battles and winning.</div>
+      <div class="triplet-ref">♖ Ra1 / ♕ White Queen / a-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M23 -->
+<div class="move-group" data-move="M23">
+  <div class="move-marker white">23</div>
+  <div class="move-header">
+    <span class="move-number">M23</span>
+    <span class="chess-notation">e5+ Kf5</span>
+    <span class="move-desc">Check; king refuses to stop</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Victor Hernandez</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE CHECK THAT DIDN'T MATTER</div>
+      <div class="beat-summary">Leta is dead. Victor is at Leah's bedside in the hospital. The phone call — heavy, the way phones get when they carry weight they weren't designed for. The e-pawn advances: truth deployed, evidence out, reactor exposed, five-track executed. e5+ — check. Kf5. Kain absorbs it. The voters know what he is and chose him anyway. Victor puts the phone down. Holds Leah's hand. Dials Korede: <em>"It's Victor. I need you to sit down."</em> The bishop on c1 never moves. It is still there at the end.</div>
+      <div class="triplet-ref">♗ Bc1 / a-pawn / d-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M24 -->
+<div class="move-group" data-move="M24">
+  <div class="move-marker white">24</div>
+  <div class="move-header">
+    <span class="move-number">M24</span>
+    <span class="chess-notation">exd6 Re8+</span>
+    <span class="move-desc">Exchange; tempo seized back</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Leah Turner</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">WAKING INTO WRECKAGE</div>
+      <div class="beat-summary">Leah's eyes open. Victor's hand. The ceiling. Her own breathing — too mechanical, too monitored. The room is wrong because of what's missing. Go Squad is never quiet. "Did we win?" Victor's face does the thing where he's deciding how to be honest without being cruel. He says: "You're back." Re8+ — check. Not checkmate. Not salvation. Just: I'm here. I'm back on the board. One move. The piece that sat dormant the whole game does the one thing that matters at the one moment it matters.</div>
+      <div class="triplet-ref">♖ Rg1 / ♗ Bc1 / b-pawn</div>
+    </div>
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Eidolon</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE FIRST CRACK</div>
+      <div class="beat-summary">Three phases: (1) Peak — manhunt, civilians weaponized, fear at its ceiling, Eidolon performing flawlessly. (2) Interruption — FAERIS pushes Exile Island globally, dictators doing dishes, laughter breaks the grip. Raw material disappears. (3) The crack — Leta dies. Grief should be perfect material. But the people mourning her practiced her resistance technique. Grief braided with laughter, love, memory — a compound Eidolon cannot decompose. The first question it's never had: <em>"Why didn't the grief become fear?"</em></div>
+      <div class="triplet-ref">♞ Ng8 / e-pawn / d-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- PHASE: ENDGAME -->
+<div class="phase-divider">— Endgame (M25–M28) —</div>
+
+<!-- M25 CONVERGENCE -->
+<div class="move-group" data-move="M25">
+  <div class="move-marker convergence">25</div>
+  <div class="move-header">
+    <span class="move-number">M25</span>
+    <span class="chess-notation">Kd2 Nf2</span>
+    <span class="move-desc">King retreats; fork lands</span>
+    <span class="convergence-badge">Convergence</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card convergence-card">
+      <div class="beat-header">
+        <span class="steward-name">Ahdia Bacchus</span>
+        <span class="faction-tag white">White</span>
+        <span class="baseline-tracker">Baseline: ~7%</span>
+      </div>
+      <div class="beat-title">THE MATING NET BEGINS</div>
+      <div class="beat-summary">Election Night. The five-track strategy has failed. Ahdia gathers what's left of the team — battered, grieving, hunted. She tells them the reactor math: 28 fusion positions, midnight activation, permanent seizure of global energy infrastructure. The fork: save the world or save herself. Three activations at this intensity → 0.7%. One activation from transcendence. One from death. She chooses. She always chooses.</div>
+      <div class="triplet-ref">♔ White King / e-pawn / g-pawn</div>
+    </div>
+    <div class="beat-card convergence-card">
+      <div class="beat-header">
+        <span class="steward-name">Tess Whitford</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE MASK COMES OFF</div>
+      <div class="beat-summary">Leta is dead. Webb killed her. Tess is holding Leta. The mask is still on. The fork: stay with Leta (grief) or go after Webb (hunt). She cannot grieve and hunt simultaneously. She removes the mask — not a decision, a collapse. Korede sees her face. They are the only two people who loved Leta enough to be here. She will go after Webb. She will brutalize him. She will not kill him. She doesn't know the last part yet. Hard cut.</div>
+      <div class="triplet-ref">♘ Nh3 / ♗ Bf1 / f-pawn</div>
+    </div>
+    <div class="beat-card convergence-card">
+      <div class="beat-header">
+        <span class="steward-name">Ben Bukowski</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">GEOMETRY, NOT FAITH</div>
+      <div class="beat-summary">Ahdia tells the team the world ends tonight. Ben feels nothing. Not numbness — the absence of the thing that used to make him act. The reactor math is just more evidence. Evidence doesn't matter. He proved that. But the fork isn't evidence. It's geometry. The knight is there. The queen is there. The lines are not a matter of opinion. He stands up: <em>"Tell me the layout of the facility."</em> Not faith. Not hope. Just: the body defaults to what it knows. The Marine.</div>
+      <div class="triplet-ref">♘ Nf3 / d-pawn / b-pawn</div>
+    </div>
+  </div>
+</div>
+
+<!-- M26 -->
+<div class="move-group" data-move="M26">
+  <div class="move-marker white">26</div>
+  <div class="move-header">
+    <span class="move-number">M26</span>
+    <span class="chess-notation">Rb5+ Kxf4</span>
+    <span class="move-desc">Deflection; king takes bait</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ryu Matsuda</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE COMMITMENT — Permanent Mole</div>
+      <div class="beat-summary">Ryu commits to long-term CADENS insertion — the returning loyalist. He gives them true intelligence about Go Squad's fracturing. CADENS takes the bait. The deflection works — and it's a structural element in the defeat he's trying to prevent. Finally gives Ruth the compound decay model: "The 0.7% isn't a floor. It's the endpoint. I've verified it eleven times." Ruth asks why he didn't share it sooner. He says methodology. It was cowardice.</div>
+      <div class="triplet-ref">e-pawn / ♘ Nf3 / ♖ Ra1</div>
+    </div>
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Harding Kain</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE BAIT</div>
+      <div class="beat-summary">Go Squad's final pre-election play — Rb5+ forces a response. Kain doesn't dodge. He moves toward the threat and takes something from it. Whatever their play is, he absorbs it into his narrative. "The terrorists are trying to overthrow a democratic election." Kxf4 — the king captures the overreach pawn from M9. Standing in the middle of their evidence, surrounded by truth, winning anyway. Two moves from Qe3#. Winning was the trap.</div>
+      <div class="triplet-ref">♚ Black King / ♞ Nb8 / c-pawn</div>
+    </div>
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Korede &amp; Leta Owolowo</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">"Kxf4" — THE MURDER</div>
+      <div class="beat-summary">Ninth Ward during the manhunt. Leta got a call — Destiny is trapped, cops outside. Korede argues loudly for the first time. "They're not looking for Destiny. They're looking for you." She goes anyway. He follows. Webb's unit, three blocks away. Rb5+ — something looks like protection. The king walks through it. Webb does not innovate. Tess arrives as Gloom Girl. Too late to prevent, in time to hold. She removes the mask. Korede stands with a closed laptop and an open future that has exactly one shape.</div>
+      <div class="triplet-ref">g-pawn (Korede) / f-pawn (Leta) / ♖ Rg1 (documentation)</div>
+    </div>
+  </div>
+</div>
+
+<!-- M27 -->
+<div class="move-group" data-move="M27">
+  <div class="move-marker white">27</div>
+  <div class="move-header">
+    <span class="move-number">M27</span>
+    <span class="chess-notation">Qf1 Qxf3</span>
+    <span class="move-desc">Last defense; defender removed</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card">
+      <div class="beat-header">
+        <span class="steward-name">Ruth Carter</span>
+        <span class="faction-tag white">White</span>
+      </div>
+      <div class="beat-title">THE QUEEN'S ONE MOVE — Too Late</div>
+      <div class="beat-summary">Qf1. Move 27 of 28. The most powerful piece enters the game. Every year of medical school. Every residency rotation. Every 3 AM trauma. Three years of CR-7 research. Ruth brings everything to bear on one patient — Leta — with hands that do not shake. And Qxf3. The defender is removed. Leta dies in Ruth's hands. For the first time, Ruth cannot write a triage assessment. The compartmentalization breaks. The Queen had one move. Perfectly executed. Not enough.</div>
+      <div class="triplet-ref">♖ Ra1 / ♕ White Queen / a-pawn</div>
+    </div>
+    <div class="beat-card black-side">
+      <div class="beat-header">
+        <span class="steward-name">Bellatrix</span>
+        <span class="faction-tag black">Black</span>
+      </div>
+      <div class="beat-title">THE REMOVAL</div>
+      <div class="beat-summary">The institutional defense activates — Qf1. Every legal precedent, every oath, every safeguard. Bellatrix removes it. Not personally, not through Kain — through erosion. The institutions were already hollowed: TRIOMF clones in key positions, artifacts in critical systems. The system tries to help and discovers it is not the system anymore. A facade over a void. The queen strikes — second action in 17 moves. One move from checkmate. The bishop on f8 witnesses Geneva's idealism's final collapse from inside the being who caused it.</div>
+      <div class="triplet-ref">♛ Black Queen / ♝ Bf8 (grief) / ♜ Rh8</div>
+    </div>
+  </div>
+</div>
+
+<!-- M28 CHECKMATE -->
+<div class="move-group" data-move="M28">
+  <div class="move-marker collective">28</div>
+  <div class="move-header">
+    <span class="move-number">M28</span>
+    <span class="chess-notation">d7?? Qe3#</span>
+    <span class="move-desc">Last prayer; Checkmate</span>
+  </div>
+  <div class="beat-cards">
+    <div class="beat-card collective-card">
+      <div class="beat-header">
+        <span class="steward-name">COLLECTIVE — All Stewards</span>
+      </div>
+      <div class="beat-title">Qe3# — CHECKMATE</div>
+      <div class="beat-summary">
+        d7 — the last prayer. The e-pawn that waited 22 moves makes its final push. One square short of promotion. One activation short of transcendence. White was at +8.83 at M25. Then d7?? instead of c3. Overreach instead of consolidation. You don't have to promote to win — you just have to stop reaching.<br><br>
+        <strong>Locked Endpoints:</strong><br>
+        &bull; Kain wins the presidency (312 electoral votes)<br>
+        &bull; Ahdia at 0.7% baseline — alive, stripped, the king on d2<br>
+        &bull; Go Squad labeled terrorists<br>
+        &bull; Leta dead (Webb, M26)<br>
+        &bull; Bellatrix wins — and it feels like ash<br>
+        &bull; Prime appears on the balcony: <em>"We need to talk about the other three timelines."</em><br>
+        &bull; The d-pawn (fear) is still on d4 at checkmate<br>
+        &bull; The Rg1 (documentation) is still on g1 at checkmate<br>
+        &bull; The Bc1 (Victor) is still on c1 at checkmate<br>
+        &bull; The Bf8 (Geneva's grief) is still on f8 at checkmate
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end timeline -->
+
+<div style="margin-top: 3rem; padding: 1rem; border: 1px solid var(--border); border-radius: 6px; background: var(--card-bg); font-size: 0.75rem; color: var(--text-dim);">
+  <strong style="color: var(--white-accent);">Steward Experiment — Run 1 of 3</strong><br>
+  13 stewards. 28 moves. 3 convergence points (M9, M13, M25). Ahdia writes first at every convergence.<br>
+  White stewards: Ahdia (7), Ruth (6), Tess (5), Ben (4), Ryu (4), Victor (2), Leah (2), Korede/Leta (2), Bourn (1).<br>
+  Black stewards: Kain (5), Bellatrix (3), Eidolon (3).<br>
+  Unowned moves: M3(Black e5), M4(White Nh3), many half-moves written from opponent's perspective.<br>
+  <br>
+  Generated from steward outputs in <code>5_story_bibles/book_2b/steward_experiment/</code>
+</div>
+
+<script>
+const STORAGE_KEY = 'book2b_timeline_notes';
+
+function loadNotes() {
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+  } catch { return {}; }
+}
+
+function saveNotes(notes) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(notes));
+  updateNoteCount();
+}
+
+function updateNoteCount() {
+  const notes = loadNotes();
+  const count = Object.values(notes).filter(n => n.trim()).length;
+  document.getElementById('noteCount').textContent = count + ' note' + (count !== 1 ? 's' : '');
+}
+
+function initNotes() {
+  const notes = loadNotes();
+  document.querySelectorAll('.move-group[data-move]').forEach(group => {
+    const move = group.dataset.move;
+    const noteArea = document.createElement('div');
+    noteArea.className = 'note-area';
+
+    const hasNote = notes[move] && notes[move].trim();
+
+    noteArea.innerHTML = `
+      <button class="note-toggle ${hasNote ? 'has-note' : ''}" onclick="toggleNote(this, '${move}')">
+        ${hasNote ? 'Edit note' : '+ Add note'}
+      </button>
+      <textarea class="note-textarea ${hasNote ? 'visible' : ''}"
+        data-move="${move}"
+        placeholder="Director notes for ${move}..."
+        oninput="onNoteInput(this, '${move}')">${notes[move] || ''}</textarea>
+      <div class="note-status" id="status-${move}">Saved</div>
+    `;
+    group.appendChild(noteArea);
+  });
+  updateNoteCount();
+}
+
+function toggleNote(btn, move) {
+  const textarea = btn.parentElement.querySelector('.note-textarea');
+  textarea.classList.toggle('visible');
+  if (textarea.classList.contains('visible')) {
+    textarea.focus();
+  }
+}
+
+let saveTimers = {};
+function onNoteInput(textarea, move) {
+  clearTimeout(saveTimers[move]);
+  saveTimers[move] = setTimeout(() => {
+    const notes = loadNotes();
+    notes[move] = textarea.value;
+    saveNotes(notes);
+
+    const btn = textarea.parentElement.querySelector('.note-toggle');
+    const hasNote = textarea.value.trim();
+    btn.classList.toggle('has-note', !!hasNote);
+    btn.textContent = hasNote ? 'Edit note' : '+ Add note';
+
+    const status = document.getElementById('status-' + move);
+    status.classList.add('show');
+    setTimeout(() => status.classList.remove('show'), 1500);
+  }, 300);
+}
+
+function expandAllNotes() {
+  document.querySelectorAll('.note-textarea').forEach(t => t.classList.add('visible'));
+}
+
+function collapseAllNotes() {
+  document.querySelectorAll('.note-textarea').forEach(t => t.classList.remove('visible'));
+}
+
+function clearAllNotes() {
+  if (!confirm('Clear ALL notes? This cannot be undone.')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  document.querySelectorAll('.note-textarea').forEach(t => {
+    t.value = '';
+    t.classList.remove('visible');
+  });
+  document.querySelectorAll('.note-toggle').forEach(b => {
+    b.classList.remove('has-note');
+    b.textContent = '+ Add note';
+  });
+  updateNoteCount();
+}
+
+function downloadReport() {
+  const notes = loadNotes();
+  const groups = document.querySelectorAll('.move-group[data-move]');
+  let md = '# Book 2B Steward Timeline — Director Notes\n';
+  md += '## Run 1 | Scandinavian Defense (B01) | 0-1\n\n';
+  md += '---\n\n';
+
+  let notesFound = 0;
+
+  groups.forEach(group => {
+    const move = group.dataset.move;
+    const notation = group.querySelector('.chess-notation')?.textContent || '';
+    const desc = group.querySelector('.move-desc')?.textContent || '';
+    const convergence = group.querySelector('.convergence-badge') ? ' [CONVERGENCE]' : '';
+
+    // Gather steward beats
+    const beats = [];
+    group.querySelectorAll('.beat-card').forEach(card => {
+      const steward = card.querySelector('.steward-name')?.textContent || '';
+      const faction = card.querySelector('.faction-tag')?.textContent || '';
+      const title = card.querySelector('.beat-title')?.textContent || '';
+      beats.push({ steward, faction, title });
+    });
+
+    const note = notes[move]?.trim() || '';
+    const hasNote = !!note;
+    if (hasNote) notesFound++;
+
+    md += `### ${move} — ${notation}${convergence}\n`;
+    md += `*${desc}*\n\n`;
+
+    beats.forEach(b => {
+      md += `- **${b.steward}** (${b.faction}): ${b.title}\n`;
+    });
+
+    if (hasNote) {
+      md += `\n**DIRECTOR NOTE:**\n${note}\n`;
+    }
+
+    md += '\n---\n\n';
+  });
+
+  // Summary section
+  md += '## SUMMARY\n\n';
+  md += `Total notes: ${notesFound} / 28 moves\n\n`;
+
+  const movesWithNotes = [];
+  const movesWithoutNotes = [];
+  groups.forEach(group => {
+    const move = group.dataset.move;
+    if (notes[move]?.trim()) movesWithNotes.push(move);
+    else movesWithoutNotes.push(move);
+  });
+
+  if (movesWithNotes.length) {
+    md += `Moves with notes: ${movesWithNotes.join(', ')}\n`;
+  }
+  if (movesWithoutNotes.length) {
+    md += `Moves without notes: ${movesWithoutNotes.join(', ')}\n`;
+  }
+
+  md += `\n---\n*Generated ${new Date().toISOString().split('T')[0]}*\n`;
+
+  // Download
+  const blob = new Blob([md], { type: 'text/markdown' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'book2b_timeline_notes.md';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// Init on load
+document.addEventListener('DOMContentLoaded', initNotes);
+</script>
+
+</body>
+</html>

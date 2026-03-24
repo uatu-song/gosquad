@@ -1,0 +1,1005 @@
+# ============================================================================
+# BOOK 1 TOPOLOGY — Complete Structural Reference
+# Go Squad (Auerbach Series) by J. S. Vaughn
+# ============================================================================
+# This file contains everything an LLM needs to understand Book 1's
+# architecture, characters, threads, and canon WITHOUT reading the prose.
+# Word count: ~74,000 across 30 chapters + epilogue.
+# ============================================================================
+
+meta:
+  series: "Auerbach Series"
+  book: 1
+  title: "Go Squad"
+  author: "J. S. Vaughn"
+  status: "COMPLETE — published, EPUB available"
+  word_count: 74049
+  chapter_count: 30  # includes epilogue within Ch30
+  emotional_arc: "Avoidance → Forced action"
+  thematic_focus: "Finding worth beyond usefulness; chosen family over isolation"
+  core_thesis: "You're worth saving. Not because you're useful. Because you're a person who deserves to live."
+  series_position: "Book 1 of 8. Books 1-3: CBT approach failing. Book 4: turning point. Books 5-8: DBT succeeding."
+  timeline: "~2-3 weeks of present-day action + childhood flashback"
+  setting: "Caledonia — third biggest city in the US. A vigilante team patrols at night."
+  structural_acts:
+    act_1: { chapters: "1-8", label: "Origin", summary: "Go Squad introduced. Warehouse incident. Ahdia bonds with Hyper Seed, saves everyone. Presumed dead." }
+    act_2a: { chapters: "9-16", label: "Rising", summary: "Powers manifest. Ahdia secretly enables Go Squad from CADENS. Training montage. Rising hope." }
+    act_2b: { chapters: "17-22", label: "Reversal", summary: "Kain sets trap. EMP ambush strips powers. Jericho heist. Kain transforms with Tamois Heart." }
+    act_3: { chapters: "23-30", label: "Climax", summary: "Ahdia revealed. Kain becomes kaiju. Singularity. Firas sacrifices himself. Team rebuilds." }
+
+# ============================================================================
+# CHARACTERS
+# ============================================================================
+
+characters:
+
+  ahdia_bacchus:
+    role: protagonist
+    age: 21
+    background: "Depressed recluse living off inheritance. Parents (Faraz and Naima) disappeared in Montana when she was 7. Brother Firas is her only family."
+    book1_arc: "Isolation → reluctant involvement → secret hero → revealed → accepted"
+    powers:
+      type: "Temporal manipulation (freeze, slow, selective bubbles, acceleration)"
+      source: "Hyper Seed — 4D cosmic object, bonded during warehouse explosion (Ch7)"
+      cost: "Every use burns cellular integrity. 6 hours in one night = 23% depletion."
+      range: "~30-40 feet optimal"
+      discovery: "Blue = freeze/decelerate. Red = accelerate/push forward (discovered Ch24 vision)."
+    baseline_trajectory:
+      ch7: "100% (bonding moment)"
+      ch14: "77% (after 6 hours of temporal manipulation saving Go Squad)"
+      ch19: "18% (critically depleted after saving Ruth from Tank)"
+      ch24: "~30% (partial recovery via CR-7, deploys anyway)"
+      ch29: "Near-zero (opposing temporal forces, begins transcending — Firas injects final CR-7)"
+      ch30: "Stabilized at ~30% after CR-7 takes effect. 18-24 months projected with ongoing treatment."
+    voice:
+      casual_contemporary: '"What the actual hell?"'
+      tv_processing: "Frames real events through TV/movie references"
+      deadpan_absurdity: "Accepts impossible situations flatly"
+      self_deprecating: "Doesn't believe she has inherent worth (beginning to challenge by end)"
+    codename: "Auerbach (assigned by CADENS, parents' legacy)"
+    key_relationships:
+      firas: "Brother. Only family. His 'already dead inside' comment is her deepest wound."
+      ruth: "Best friend, co-conspirator, life-saver"
+      ryu: "Handler, friend. He's in love with her (unspoken). She doesn't know."
+    end_state: >
+      Penthouse with stolen CADENS mobile command center on roof.
+      Tactical support, not field leader. Declined CADENS membership.
+      Grieving Firas. Beginning to believe in inherent worth.
+      18-24 months to live with treatment.
+
+  firas_bacchus:
+    role: "Ahdia's brother, Go Squad co-founder"
+    codename: "Rogue Leader"
+    background: "Vigilante freerunner. Suicidal ideation kept at bay only by Go Squad work."
+    book1_arc: "Protector → wounded → sidelined → sacrifices himself"
+    key_beats:
+      - "Ch1: Patrols Caledonia rooftops, stops mugging"
+      - "Ch3: Found shot on Ahdia's bathroom floor"
+      - "Ch5: Reveals warehouse discovery, Kain, 4D object"
+      - "Ch12: 'Was already dead inside anyway' — Ahdia overhears (deepest wound)"
+      - "Ch26: Crashes car into Kain, reconciles with Ahdia in frozen time"
+      - "Ch29: Channels opposing temporal forces, injects Ahdia with final treatment, pulled into singularity"
+    status: "DISPLACED into dimensional space (NOT dead). Returns Book 7."
+    last_words: '"Oh hey. I knew you were in there somewhere."'
+
+  ruth_carter:
+    role: "Go Squad field leader, medic, Ahdia's best friend"
+    codename: "Nightingale"
+    background: "Emergency medicine background. Developed CR-7 experimental healing treatment."
+    book1_arc: "Team medic → discovers truth → co-conspirator → field leader"
+    key_beats:
+      - "Ch3: Emergency surgery on Firas using CR-7"
+      - "Ch5: Tells Go Squad origin story"
+      - "Ch19: Watches Ahdia work in frozen time — discovers the truth"
+      - "Ch20: Develops CR-7 Temporal Variant, saves Ahdia's life"
+      - "Ch23: Reveals partial truth to team (powers were never real)"
+      - "Ch30: 'We start over' — agrees to continue"
+    end_state: >
+      Recruited by CADENS. Leads field operations. Co-conspirator with Ahdia
+      managing truth. Only she and Ryu can administer treatment.
+    key_phrase: '"You''re worth saving. Not because you''re useful. Because you''re a person who deserves to live."'
+
+  ryu_matsuda:
+    role: "CADENS FAERIS Operations Specialist, Ahdia's handler"
+    book1_arc: "Professional handler → genuine friend → secretly in love"
+    key_beats:
+      - "Ch13: Introduced as Ahdia's handler at CADENS"
+      - "Ch15: Manages AR-Ryu system, monitors cellular integrity"
+      - "Ch16: Co-designs fake power triggers with Ahdia"
+      - "Ch20: Works with Ruth on CR-7 Temporal Variant"
+    systems:
+      ar_ryu: "HIS system from before Ahdia. Receives uploads of frozen time experiences. Works in frozen time via HUD."
+      faeris: "Operates FAERIS drone fleet. Drones learning to replicate Ahdia's powers (~10% effective Book 1 end)."
+    hidden: "In love with Ahdia (unspoken, telegraphed to reader). Watches her when she isn't looking. Never confesses in Book 1."
+
+  harriet_bourn:
+    role: "CADENS Director / Chief Overseer"
+    pronouns: "SHE/HER (Bourn is a WOMAN)"
+    book1_arc: "Institutional authority → recruiter → uneasy ally"
+    key_beats:
+      - "Ch13: First meeting with Ahdia on Parkour Academy rooftop"
+      - "Ch14: Full briefing — powers, cost, parents' legacy"
+      - "Ch28: Authorizes cruise missile strike on Kain"
+      - "Ch30: Offers Ahdia CADENS badge (declined)"
+    end_state: "Compartmentalized ethics. Knows about Mother FAERIS exploitation. Doesn't yet know about TRIOMF infiltration."
+
+  harding_kain:
+    role: "Primary antagonist"
+    book1_arc: "Crime lord → kaiju → 'destroyed' → survived via clone"
+    key_beats:
+      - "Ch7: Interrogates Ruth, fires RPG at Go Squad"
+      - "Ch17: Plans to steal CR-7, has 23 artifacts including Tamois Heart"
+      - "Ch18: Sets EMP trap for Go Squad"
+      - "Ch22: Tamois Heart activates during heist — begins transformation"
+      - "Ch25-28: Grows to 40+ feet, becomes kaiju, absorbs Tank cops"
+      - "Ch28: Missile strike. Collapses into singularity."
+      - "Ch30/Epilogue: Revealed alive via clone body consciousness transfer"
+    clone_system: "Dozens of clone bodies in tanks. When primary dies, consciousness transfers. Team doesn't know."
+    tamois_heart: "Organic artifact, 4.7 billion years old. Causes temporal distortions. Integrated with Kain."
+    end_state: "Alive. Planning political rise (becomes Senator → runs for President in Book 2)."
+
+  ben:
+    role: "Go Squad member"
+    codename: "Night Knight"
+    background: "Ex-Marine, tactical mind. Most suspicious/analytical team member."
+    book1_arc: "Disciplined soldier → discovers powers → skeptical of truth"
+    fake_power: "Crouch + jump (actually Ahdia's temporal bubble)"
+    end_state: "Knows Ahdia has powers. Doesn't know full CADENS involvement or that she's dying."
+
+  tess_whitford:
+    role: "Go Squad member"
+    codename: "Gloom Girl"
+    background: "Police Chief Whitford's daughter (estranged). Depressed, on medication."
+    book1_arc: "Anxious fighter → viral moment → social media confessor"
+    key_beats:
+      - "Ch10: Disobeys Ruth, intervenes against cops arresting a child"
+      - "Ch10: Jumps from Frederick Douglass Bridge — teleports (FAERIS-based)"
+      - "Ch12: Confesses she's been posting Go Squad content on social media"
+      - "Ch22: Chain-teleports team out of Kain's mansion during heist"
+    fake_power: "Middle finger + eye focus → teleportation (FAERIS-based, actually works independently)"
+    end_state: "Dating Leta in Book 2. Knows Ahdia has powers."
+
+  leah_turner:
+    role: "Go Squad member"
+    codename: "Battlea"
+    background: "Roller derby jammer. Barista. Fastest on team."
+    book1_arc: "Angry fighter → reluctant infiltrator → team player"
+    key_beats:
+      - "Ch11: Ambushed in construction site, fights cops, discovers super-strength"
+      - "Ch21-22: Infiltrates Kain's gala as 'Sophie Clement' in red dress"
+    fake_power: "Battle cry + charge (actually Ahdia's temporal/force amplification)"
+    end_state: "Knows Ahdia has powers. Protective of Tess."
+
+  victor_hernandez:
+    role: "Go Squad member"
+    codename: "Crimson Sable"
+    background: "Community center director. Community connections become crucial."
+    book1_arc: "Community anchor → discovers powers → team moral compass"
+    key_beats:
+      - "Ch11: Rescues Battlea with smoke grenades and rebar staff"
+      - "Ch11: Discovers superhuman abilities (kicks cop impossibly far)"
+    fake_power: "Hand gesture + grasp (actually Ahdia's force amplification)"
+    canon_warning: "Victor has NO dead wife. Romantic partner is Leah. The BOOK1_FINAL_STATE.md reference to 'lost wife to gang violence' is OUTDATED and WRONG."
+    end_state: "Knows Ahdia has powers. Community connections expand in Book 2."
+
+  chief_john_whitford:
+    role: "Tess's father, Caledonia Police Chief"
+    note: "Complicit in Isaiah Bennett cover-up. Full betrayal explored in Book 2."
+
+  colonel_bentley_mack:
+    role: "CADENS military liaison"
+    book1_beat: "Present at Ahdia's CADENS briefing (Ch13-14)"
+
+  dr_jericho:
+    role: "Scientist held captive by Kain"
+    book1_beat: "Pressured to unlock Tamois Heart. Rescued during mansion heist (Ch21-22)."
+
+  mystery_woman:
+    role: "Bellatrix (identity hidden in Book 1)"
+    book1_beats:
+      - "Ch17: Calls Kain on impossible phone, feeds intel for 6 months"
+      - "Ch29: Ahdia briefly contacts her in 'hallway with infinite doors' during transcendence"
+      - "Epilogue: Instructs Kain to focus on election; she'll handle Ahdia"
+    note: "True identity revealed Book 2 (Geneva Windrow cover) and Book 3."
+
+  the_tank:
+    role: "Enhanced cop, Kain's weapon"
+    book1_beat: "Seven feet tall, impossibly strong. Nearly kills Ruth at docks (Ch18-19). Defeated by Ahdia in frozen time."
+
+  carl_tucker:
+    role: "News commentator"
+    book1_function: "Intercut commentary providing political/media context"
+
+  selfie_civilian:
+    role: "Minor recurring character"
+    book1_beat: "Asks Go Squad for selfie (Ch22). Returns in Book 2 Ch5 terrified of them (Eidolon fear amplification)."
+
+# ============================================================================
+# PLOT THREADS
+# ============================================================================
+
+threads:
+
+  the_big_lie:
+    description: "Go Squad's powers are fake — actually Ahdia's temporal manipulation + FAERIS amplification"
+    planted: "Ch12 (Ahdia alive, watching frozen), Ch14 (Bourn explains), Ch16 (fake triggers designed)"
+    payoff: "Ch19 (Ruth discovers), Ch23 (partial reveal to team), Ch25 (Ahdia tells all)"
+    mechanism: >
+      Each team member assigned a physical trigger (crouch+jump, battle cry, etc.)
+      that 'activates' their power. Actually Ahdia creating temporal bubbles + FAERIS
+      force amplification. Ruth's 'power' is that she doesn't have one — her tactical
+      leadership amplifies everyone.
+
+  ahdia_dying:
+    description: "Hyper Seed bonding is converting Ahdia's biology. Every power use accelerates death."
+    planted: "Ch14 (Bourn reveals 18 months), Ch15 (Ryu confirms)"
+    known_by: "Ahdia, Ryu, Bourn, Ruth (from Ch19)"
+    not_known_by: "Go Squad team (don't know she's dying through end of Book 1)"
+    hidden_truth: "Cellular death = transcendence, not death. Treatment prevents transcendence. Ahdia doesn't know this."
+
+  kain_conspiracy:
+    description: "Kain's criminal empire, TRIOMF, political ambitions, and cosmic artifact collection"
+    key_elements:
+      - "23 artifacts in vault including Tamois Heart"
+      - "TRIOMF shell company"
+      - "Tank cops (enhanced officers)"
+      - "Clone body consciousness transfer system"
+      - "Mystery woman (Bellatrix) feeding him intel"
+    payoff: "Kain transforms with Tamois Heart (Ch22-28), survives via clone (epilogue)"
+
+  cadens:
+    description: "Secretive government organization monitoring Ahdia and cosmic threats"
+    key_elements:
+      - "FAERIS drone fleet (learning to replicate Ahdia's powers)"
+      - "Mother FAERIS exploitation (forced drone production, Bourn knows)"
+      - "Surveillance of everything since warehouse"
+      - "Medical treatment dependency"
+    hidden: "TRIOMF has infiltrated CADENS (discovered Book 2)"
+
+  firas_displacement:
+    description: "Firas pulled into singularity during climax"
+    status: "Displaced into dimensional space, NOT dead"
+    everyone_believes: "He's dead"
+    truth: "Returns Book 7"
+    last_words: '"Oh hey. I knew you were in there somewhere."'
+
+  bellatrix_shadow:
+    description: "Mystery woman manipulating events from behind the scenes"
+    appearances:
+      - "Ch17: Phone call to Kain, feeding intel 6 months"
+      - "Ch29: Ahdia contacts her briefly in the hallway during transcendence"
+      - "Epilogue: Instructs Kain on next moves, reveals she's the real power"
+    payoff: "Becomes major antagonist Books 2-4"
+
+  go_squad_formation:
+    description: "Team of vigilantes becomes something more"
+    origin: "Ruth and Firas met through ER visits → fell in love → built team"
+    members_revealed: "Ch12 (real identities shared for first time)"
+    roster:
+      night_knight: "Ben — ex-Marine"
+      gloom_girl: "Tess — Chief's daughter"
+      battlea: "Leah — roller derby"
+      crimson_sable: "Victor — community center"
+      nightingale: "Ruth — medic"
+      rogue_leader: "Firas — freerunner"
+    rules: "No guns, no real names (until Ch12), stay secret"
+
+  hyper_seed:
+    description: "4D cosmic object that bonds with Ahdia"
+    bonding: "Ch7 — Ahdia shot through TRIOMF crate, has vision of dead mother, Seed bonds"
+    properties:
+      - "Converts host biology over time"
+      - "Enables temporal manipulation"
+      - "Connected to cardiovascular, nervous, skeletal systems"
+      - "Dormant after singularity exposure but still integrated"
+    vision: "Ch24 — hallway with blue doors (past/freeze) and red doors (future/accelerate). Something vast observes."
+
+  cr7_treatment:
+    description: "Ruth's experimental healing treatment adapted for temporal stress"
+    original: "CR-7 — heals at 1.8x rate (used on Firas Ch3)"
+    adapted: "CR-7 Temporal Variant — extends Ahdia's timeline from weeks to 18-24 months"
+    dependency: "Only Ruth and Ryu can administer. Requires CADENS facilities."
+    hidden: "Prevents transcendence, not death (Ahdia doesn't know)"
+
+# ============================================================================
+# CHAPTER TOPOLOGY
+# ============================================================================
+
+chapters:
+
+  - number: 1
+    words: 2417
+    timing: "Night (present day)"
+    pov: Firas
+    locations: ["Caledonia rooftops", "Little Poland alley"]
+    characters_present: [Firas]
+    characters_remote: [Ruth]
+    key_events:
+      - "Firas patrols Caledonia as 'Rogue Leader,' freerunning across rooftops"
+      - "Stops mugging in Little Poland (three men accosting a woman)"
+      - "Awkward one-liner: 'This ain't Burger King'"
+      - "Ruth signs off from her own patrol (helped old lady's cat)"
+    emotional_arc: "Restless excitement → quiet satisfaction — a man who needs to feel useful"
+
+  - number: 2
+    words: 3358
+    timing: "Flashback (14 years before present)"
+    pov: "Ahdia (child) / Firas (child)"
+    locations: ["Bacchus family home", "Truck to Montana", "Glacial National Park campsite"]
+    characters_present: ["Young Ahdia (age 7)", "Young Firas (age 5)", "Faraz Bacchus (father)", "Naima Bacchus (mother)"]
+    key_events:
+      - "Parents are art/antiques collectors with military connections"
+      - "Faraz tells children about black holes, cosmic 'chosen ones,' time-freezing powers"
+      - "Naima teaches Ahdia not to always fix things for others ('let them struggle')"
+      - "Parents disappear — children return to find campsite empty"
+    emotional_arc: "Warmth and wonder sharpen into foundational trauma of parental loss"
+    seeds_planted:
+      - "Parents worked with CADENS, died protecting the Seed (revealed Ch14)"
+      - "Naima's 'let them struggle' echoes through entire series"
+      - "Montana camping as recurring memory/dreamscape"
+
+  - number: 3
+    words: 2823
+    timing: "Evening to next afternoon (present day)"
+    pov: Ahdia
+    locations: ["Ahdia's penthouse", "Restaurant (stood up)", "Penthouse bathroom"]
+    characters_present: [Ahdia, Ruth, Firas]
+    key_events:
+      - "Present-day Ahdia introduced: depressed recluse, barely functional"
+      - "Ruth and Firas arranged dinner; Firas is no-show"
+      - "Blood on elevator button — Firas bleeding on bathroom floor in tactical gear"
+      - "Ruth arrives with medical bag, performs emergency surgery using CR-7"
+    emotional_arc: "Numb isolation fractures into panic and desperate helplessness"
+
+  - number: 4
+    words: 2261
+    timing: "Afternoon (next day)"
+    pov: Ahdia
+    locations: ["Ahdia's penthouse guest bedroom"]
+    characters_present: [Ahdia, Firas, Ruth]
+    key_events:
+      - "Firas wakes; CR-7 working (1.8x healing but plateauing)"
+      - "Ruth needs proper lab resources for better results"
+      - "Ahdia argues about insanity of vigilante work"
+      - "Firas reveals Go Squad was only thing keeping him from suicide"
+    emotional_arc: "Relief at survival collides with anger, betrayal, and buried grief"
+
+  - number: 5
+    words: 2306
+    timing: "Same evening"
+    pov: "Ahdia (listener) / Ruth (narrator)"
+    locations: ["Ahdia's penthouse"]
+    characters_present: [Ahdia, Firas, Ruth]
+    key_events:
+      - "Ruth tells Go Squad origin: how she and Firas met (ER visits), fell in love, built team"
+      - "Team codenames introduced: Night Knight, Gloom Girl, Crimson Sable, Battlea, Nightingale"
+      - "Rules: no guns, no real names, stay secret"
+      - "Firas describes following Kain's men, seeing 4D object at docks, getting shot"
+    emotional_arc: "Growing awe at scope of the secret → reluctant understanding"
+
+  - number: 6
+    words: 1894
+    timing: Night
+    pov: Ahdia
+    locations: ["Caledonia docks", "Warehouse exterior/roof"]
+    characters_present: [Ahdia, Ruth]
+    key_events:
+      - "Ahdia walks to docks to disprove Firas's story"
+      - "Ruth follows; demonstrates parkour getting to warehouse roof"
+      - "Ahdia makes terrifying leap across shipping containers"
+      - "Enter warehouse, find TRIOMF crate — confronted by guard"
+    emotional_arc: "Stubborn skepticism → fear → thrill of competence"
+
+  - number: 7
+    words: 1889
+    timing: Night
+    pov: "Ahdia / Ruth"
+    locations: ["Warehouse interior"]
+    characters_present: [Ahdia, Ruth, Kain, TRIOMF guard, Go Squad]
+    key_events:
+      - "Ruth disarms guard with jiu-jitsu takedown"
+      - "Ahdia shot through the crate (bullet passes through)"
+      - "Vision of dead mother before losing consciousness"
+      - "HYPER SEED BONDS WITH AHDIA during near-death"
+      - "Ruth captured; Kain interrogates, prepares lead pipe"
+      - "Go Squad arrives (smoke grenades, IR goggles); Kain fires RPG"
+    emotional_arc: "Violence escalates to mortal crisis; supernatural triggered"
+    canon_critical: "Hyper Seed bonding moment. Origin of all temporal powers."
+
+  - number: 8
+    words: 570
+    timing: Night
+    pov: "Ruth / ensemble"
+    locations: ["Docks, outside warehouse"]
+    characters_present: [Ruth, "Night Knight", "Gloom Girl", "Battlea", "Crimson Sable"]
+    characters_bound: [Kain]
+    key_events:
+      - "RPG fires but everyone teleported outside, unharmed"
+      - "Kain and men inexplicably bound"
+      - "Warehouse on fire; Ahdia missing, presumed dead"
+      - "Ruth devastated; team evacuates"
+    emotional_arc: "Disorientation and miraculous survival cut short by loss"
+    note: "Shortest chapter — intentionally punchy climax beat ending on 'Ahdia's pyre'"
+
+  - number: 9
+    words: 2725
+    timing: "Two nights later"
+    pov: "Ruth, intercut with Carl Tucker news"
+    locations: ["Caledonia rooftops", "Streets"]
+    characters_present: [Ruth, "Battlea (Leah)", "Gloom Girl (Tess)"]
+    key_events:
+      - "Kain spins warehouse incident to media"
+      - "Ruth distracted on patrol, preoccupied with impossible survival"
+      - "Battlea and Gloom Girl confront Ruth about operational sloppiness"
+      - "Gloom Girl upped medication due to anxiety"
+      - "Police pull over minivan with mother and child; officers escalate violently"
+    emotional_arc: "Unresolved trauma manifests as operational deterioration"
+
+  - number: 10
+    words: 2002
+    timing: "Same night as Ch9"
+    pov: "Ruth (coordinating) / Gloom Girl / Battlea"
+    locations: ["Caledonia streets", "Frederick Douglass Bridge"]
+    characters_present: [Ruth, Battlea, "Gloom Girl", police officers]
+    key_events:
+      - "Gloom Girl disobeys Ruth — intervenes against cops arresting a child"
+      - "Battlea joins fight; two officers taken down"
+      - "Police helicopter pursues; team scatters"
+      - "Gloom Girl cornered on bridge — she jumps"
+    emotional_arc: "Righteous fury at injustice → desperate, seemingly suicidal act"
+
+  - number: 11
+    words: 2015
+    timing: "Same night"
+    pov: "Battlea (Leah) / Crimson Sable (Victor)"
+    locations: ["Caledonia streets", "Construction site", "Rooftop"]
+    characters_present: [Battlea, "Crimson Sable", CCPD SWAT]
+    key_events:
+      - "Battlea chased, cornered in construction site, shot in body armor"
+      - "Crimson Sable arrives with smoke grenades and rebar staff"
+      - "Impossible things happen: Sable kicks cop impossibly far, Battlea sends someone through ledge"
+      - "They realize they have superhuman abilities"
+    emotional_arc: "Desperation transforms into bewildered exhilaration at newfound power"
+    note: "First 'power' manifestation — actually Ahdia's temporal manipulation from hiding"
+
+  - number: 12
+    words: 2281
+    timing: "Day after ambush"
+    pov: Ensemble
+    locations: ["Parkour Academy"]
+    characters_present: [Firas, Ruth, Tess, Leah, Victor, Ben]
+    characters_hidden: [Ahdia]
+    key_events:
+      - "Team shares impossible stories: super-jump, teleportation on camera"
+      - "News footage shows Gloom Girl vanishing mid-fall from bridge"
+      - "Firas suggests disbanding; team refuses"
+      - "REAL IDENTITIES REVEALED to each other for first time"
+      - "Tess confesses she's been posting Go Squad content on social media"
+      - "Firas: 'Was already dead inside anyway' (about Ahdia)"
+      - "TIME FREEZES — Ahdia revealed alive, sticks tongue out at frozen Firas"
+      - "FAERIS drone appears, translocates Ahdia away"
+    emotional_arc: "Bonding → Firas's cruel grief → reframe: Ahdia is alive"
+    canon_critical: "'Already dead inside' — Ahdia overhears. Her deepest wound for the entire series."
+
+  - number: 13
+    words: 2653
+    timing: Night
+    pov: Ahdia
+    locations: ["Parkour Academy rooftop"]
+    characters_present: [Ahdia, Bourn, "Colonel Mack"]
+    key_events:
+      - "CADENS introduction — Director Bourn and Colonel Bentley Mack"
+      - "They've been monitoring Kain and the Hyper Seed"
+      - "FAERIS drone has tracked Ahdia since warehouse"
+      - "Surveillance footage of her activities shown"
+      - "Confirmed: Ahdia bonded with Hyper Seed while dying"
+    emotional_arc: "Vulnerability facing an organization that knows everything about her"
+
+  - number: 14
+    words: 5460
+    timing: "Continuous from Ch13"
+    pov: Ahdia
+    locations: ["Parkour Academy rooftop", "CADENS facility (command center, conference room)"]
+    characters_present: [Ahdia, Bourn, Mack, FAERIS drone]
+    key_events:
+      - "Full surveillance playback of warehouse night"
+      - "Ahdia's 2-day secret training montage revealed: freeze/unfreeze cycles, force amplification (47x), breaking into teammates' homes"
+      - "Figured out selective biological manipulation in under an hour"
+      - "Saved all three teams single-handedly during police ambush (caught Tess mid-fall, helped Leah/Victor, redirected Ben)"
+      - "6 hours of temporal manipulation = 23% life force depletion"
+      - "Parents worked with CADENS, died protecting the Seed in Montana"
+      - "Hyper Seed converting her body; ~18 months to live"
+      - "Ahdia agrees to work with CADENS"
+    emotional_arc: "Devastating scope of sacrifice laid bare; worth found in being useful while dying"
+    note: "Longest chapter. Full CADENS briefing. Heaviest exposition."
+
+  - number: 15
+    words: 4045
+    timing: "Continuous"
+    pov: Ahdia
+    locations: ["CADENS facility (research, medical, equipment, training, quarters)"]
+    characters_present: [Ahdia, Bourn, Mack, Ryu]
+    key_events:
+      - "Ahdia negotiates: CADENS must support Go Squad's illusion of powers"
+      - "Introduced to Dr. Ryu — handler, FAERIS operator, 'guy in the chair'"
+      - "Baseline scans: Seed replacing biology (cardiovascular, nervous, skeletal)"
+      - "Power usage wildly inefficient ('max RPM at 30mph')"
+      - "Equipped: bulletproof temporal suit, HUD headset, AR-Ryu system"
+      - "Training: field control refinement cuts energy in half, buys another year"
+      - "Codename assigned: 'Auerbach' (parents' legacy)"
+    emotional_arc: "Finding purpose and belonging for the first time"
+
+  - number: 16
+    words: 2625
+    timing: "Multiple nights (montage)"
+    pov: "Ahdia (monitoring) / Go Squad"
+    locations: ["CADENS surveillance room", "Parkour Academy", "Caledonia streets"]
+    characters_present: [Ahdia, Ryu, Go Squad, CCPD]
+    key_events:
+      - "Ahdia watches Go Squad train to replicate 'powers'"
+      - "Fake power triggers designed: Ben=crouch+jump, Leah=cry+charge, Victor=gesture+grasp, Tess=finger+focus"
+      - "Each 'power' is Ahdia's temporal bubble + FAERIS amplification"
+      - "Go Squad stops CCPD raid on community center — 30-second perfect op"
+      - "Ahdia's nose starts bleeding; accelerating degradation"
+      - "#GoSquad trends on social media"
+      - "Ruth doesn't have a 'power' — her leadership amplifies everyone"
+      - "Firas watches from sidelines, being left behind"
+    emotional_arc: "Bittersweet engine of the lie — others flourish while Ahdia deteriorates"
+
+  - number: 17
+    words: 3576
+    timing: Night
+    pov: "Kain / Chief Whitford / Reed"
+    locations: ["Kain's office (TRIOMF HQ)", "Artifact vault"]
+    characters_present: [Kain, "Chief Whitford", Reed, "Dr. Jericho (captive)", "Mystery woman (Bellatrix, phone)"]
+    key_events:
+      - "Kain analyzes Go Squad footage; knows someone is helping them"
+      - "Whitford reveals CADENS existence (learned from SecDef on golf course)"
+      - "Reed IDs Ruth Carter via facial recognition"
+      - "Kain orders Whitford to trap Ruth: force her to choose team or herself"
+      - "Vault: 23 artifacts including Tamois Heart (4.7 billion years old, temporal distortions)"
+      - "Dr. Jericho pressured to unlock Heart in 48 hours"
+      - "MYSTERY WOMAN calls impossible phone — feeding Kain intel 6 months"
+      - "Offers Heart activation protocols in exchange for Go Squad elimination"
+    emotional_arc: "Villain's cold calculus meets deeper, more terrifying intelligence"
+    note: "Only Kain-POV chapter. Establishes Bellatrix as the real power."
+
+  - number: 18
+    words: 2034
+    timing: Night
+    pov: "Ruth / ensemble"
+    locations: ["Warehouse district (District 7, docks)"]
+    characters_present: [Ruth, Ben, Tess, Victor, Leah, "The Tank"]
+    key_events:
+      - "Go Squad walks into Kain's trap — false intel, empty warehouse"
+      - "CCPD ambush: floodlights, SWAT, 15+ units"
+      - "EMP kills all equipment and FAERIS — powers gone"
+      - "The Tank: 7 feet, enhanced, custom armor, impossibly strong"
+      - "Go Squad beaten badly without powers"
+      - "Ruth drawn to docks, cornered; Tank wants her research"
+    emotional_arc: "Confidence stripped; naked vulnerability against overwhelming force"
+
+  - number: 19
+    words: 2230
+    timing: "Same night"
+    pov: "Ruth → Ahdia"
+    locations: ["Caledonia docks"]
+    characters_present: [Ruth, Ahdia, "The Tank", Ryu]
+    key_events:
+      - "Ahdia freezes time just before Tank's punch connects"
+      - "Precise strikes on Tank in frozen time; unfreezes — he collapses"
+      - "Gentle push launches Tank through shipping container"
+      - "Ahdia collapses; Ruth catches her"
+      - "RUTH DISCOVERS THE TRUTH: all Go Squad 'powers' were Ahdia"
+      - "Ahdia critically compromised: 18 months at best, weeks at current usage"
+      - "CADENS extraction; Ruth translocated to CADENS, meets Bourn"
+    emotional_arc: "The secret revealed in extremis; cost of selflessness made viscerally real"
+    canon_critical: "The Docks Reveal — Ruth becomes co-conspirator from this point"
+
+  - number: 20
+    words: 2959
+    timing: "Hours after Ch19"
+    pov: Ruth
+    locations: ["CADENS facility (research lab, medical bay, test chamber)"]
+    characters_present: [Ruth, Ryu, Bourn, "Ahdia (unconscious)"]
+    key_events:
+      - "Ruth examines cellular degradation data"
+      - "Adapts CR-7 for temporal stress → CR-7 Temporal Variant"
+      - "Synthesizes treatment in 4 hours: pale blue liquid, extends timeline from weeks to 18 months"
+      - "FAERIS test chamber: drones learning to replicate Ahdia's powers (10% effective, projected 50% in 6 months)"
+      - "FAERIS drones developing environmental awareness — potentially becoming sentient"
+      - "Bourn offers Ruth a role: keep Ahdia alive, manage transition to truth"
+      - "Ruth agrees"
+    emotional_arc: "Scientific brilliance finding true purpose; weight of managing the lie"
+
+  - number: 21
+    words: 3279
+    timing: "One day after docks"
+    pov: "Tess / ensemble"
+    locations: ["Parkour Academy", "Battlea's room", "Surveillance van", "Kain's mansion exterior"]
+    characters_present: [Tess, Firas, Ben, Victor, Leah]
+    key_events:
+      - "Tess vlogs about losing powers; hers (teleportation) still works (FAERIS-based)"
+      - "Firas suggests rescuing Dr. Jericho from Kain's gala"
+      - "Leah chosen to infiltrate as 'Sophie Clement,' wealthy French donor"
+      - "Team reviews @GoSquadWatch fan account — codenames public"
+      - "Tess drives surveillance van; Leah enters gala in red dress"
+      - "Ben and Victor enter as catering staff"
+    emotional_arc: "Loss of power forces resourcefulness; reluctant heroism"
+
+  - number: 22
+    words: 1775
+    timing: "Same night (gala heist)"
+    pov: Ensemble
+    locations: ["Kain's mansion (office, garden, alley)"]
+    characters_present: [Leah, Ben, Victor, Tess, Firas, Kain, "Dr. Jericho"]
+    key_events:
+      - "Leah finds Jericho in Kain's office with Tamois Heart"
+      - "Ben and Victor capture Kain; Ben downloads research and financial evidence"
+      - "Kain hits panic button — dozen TRIOMF guards"
+      - "Massive fight; Tess chain-teleports team out through window into fountain"
+      - "Old woman asks for selfie (recurring character)"
+      - "TAMOIS HEART ACTIVATES in Kain — walks through walls, eyes flickering, transformed"
+    emotional_arc: "Heist exhilaration crashes into cosmic horror"
+    selfie_civilian: "Returns in Book 2 Ch5, now terrified of Go Squad (Eidolon)"
+
+  - number: 23
+    words: 2288
+    timing: "Hours after heist"
+    pov: Ruth
+    locations: ["CADENS transport aircraft", "Van"]
+    characters_present: [Ruth, Tess, Ben, Victor, Leah, Firas, "Dr. Jericho"]
+    key_events:
+      - "Ruth arrives in CADENS VTOL; picks up team"
+      - "REVEALS PARTIAL TRUTH: powers were never real — distributed temporal manipulation from someone dying"
+      - "Refuses to name Ahdia despite team pressure"
+      - "Jericho explains Tamois Heart: organic, integrating Kain, 60% completion chance"
+      - "Kain growing (15+ feet), razing Caledonia"
+      - "Only a Temporalist can stop him — at significant cost"
+    emotional_arc: "Trust fractures as lie partially revealed; dread toward impossible odds"
+
+  - number: 24
+    words: 1812
+    timing: "Same night"
+    pov: "Ahdia (dream/vision) → Ahdia (medical)"
+    locations: ["Dream hallway (blue and red doors)", "CADENS medical bay"]
+    characters_present: [Ahdia, Ryu]
+    key_events:
+      - "Seed-driven vision: time running backward, hallway of doors"
+      - "Child-Ahdia tells her to stop looking back"
+      - "DISCOVERS RED DOORS = pushing time forward (acceleration)"
+      - "Something vast observes her in the hallway"
+      - "Wakes in CADENS; Kain destroying downtown"
+      - "Takes all 8 remaining CR-7 autoinjectors at once, using Seed to accelerate between doses"
+      - "Only achieves ~30% recovery; deploys anyway"
+    emotional_arc: "Transcendent vision meets reckless self-sacrifice"
+    canon_critical: "Red acceleration power discovered. Blue (freeze) + Red (accelerate) = full temporal toolkit."
+
+  - number: 25
+    words: 1020
+    timing: "Same night"
+    pov: "Ahdia / ensemble"
+    locations: ["Downtown Caledonia intersection"]
+    characters_present: [Ahdia, "Kain (23ft kaiju)", Ruth, Tess, Leah, Victor, Ben, "Four Tank cops"]
+    key_events:
+      - "Ahdia arrives via FAERIS translocation; freezes Kain and all four Tanks"
+      - "Go Squad sees her for first time — 'first-time caller, long-time fan'"
+      - "Reveals she's been SPEEDING THEM UP, not freezing enemies (acceleration)"
+      - "Team processes betrayal; Tess/Victor confront Ruth"
+      - "Ahdia barely holding; nosebleed worsens"
+      - "Ruth: 'Let's run' — formulates plan"
+    emotional_arc: "Identity exposed under maximum duress; trust rebuilt in real time"
+
+  - number: 26
+    words: 3117
+    timing: "Same night"
+    pov: Ahdia
+    locations: ["Downtown Caledonia, Main Street intersection"]
+    characters_present: [Ahdia, Kain, "Four Tank cops", Firas, Go Squad]
+    key_events:
+      - "Ahdia faces Kain alone, banters while stalling"
+      - "Uses freeze to redirect Tanks into colliding (Rube Goldberg)"
+      - "Dodges Kain's fist by freezing and walking away"
+      - "Kain grabs and crushes her; too exhausted to freeze"
+      - "Firas arrives in car at full speed; Ahdia times red acceleration pulse perfectly"
+      - "SIBLING RECONCILIATION in frozen time"
+      - "Firas gives her his tactical suit"
+      - "'No better place than here!' — team descends from rooftops"
+    emotional_arc: "Wit and grit against impossible odds; sibling reunion in the eye of the storm"
+    recurring_motif: "'No better place than here/now' — presence vs avoidance"
+
+  - number: 27
+    words: 1079
+    timing: "Same night"
+    pov: Ensemble
+    locations: ["Downtown intersection"]
+    characters_present: [Ahdia, Go Squad, Kain, "Four Tank cops"]
+    key_events:
+      - "Go Squad drops from buildings with acceleration boost; each takes down a Tank"
+      - "Gloom Girl teleports Firas to safety"
+      - "Coordinated combat eliminates all four Tanks"
+      - "HORROR: defeated Tanks' essence drains back into Kain"
+      - "Kain absorbs all four fragments; grows to 35→40+ feet"
+      - "Four Tank cops die — bodies become empty husks"
+    emotional_arc: "Triumphant teamwork curdles into horror; victory was the trap"
+
+  - number: 28
+    words: 1489
+    timing: "Same night"
+    pov: "Ahdia / ensemble"
+    locations: ["Downtown intersection"]
+    characters_present: [Ahdia, Go Squad, "Kain (40+ ft)", "Bourn/CADENS strike team"]
+    key_events:
+      - "Ahdia depleted; cannot freeze time"
+      - "Go Squad fights without powers — Sable thrown through building"
+      - "Ahdia tries one last freeze; Seed flickers — not enough"
+      - "CADENS cruise missile hits Kain dead center — he goes down"
+      - "Confirmed dead — then body collapses inward"
+      - "SINGULARITY FORMS — everything pulled toward the point"
+    emotional_arc: "False relief destroyed by escalation beyond anything prepared for"
+
+  - number: 29
+    words: 2307
+    timing: "Same night"
+    pov: Ahdia
+    locations: ["Downtown intersection (singularity)"]
+    characters_present: [Ahdia, Ruth, Go Squad, Firas, CADENS operatives]
+    key_events:
+      - "Singularity pulls everything; bank building leans"
+      - "Ahdia pushes Ruth away, walks toward singularity alone"
+      - "Uses both hands: RED (burn out Tamois essence) + BLUE (contain it)"
+      - "Opposing forces tear her body apart; fissures of light crack through skin"
+      - "Begins transcending — sees hallway, infinite doors, contacts Bellatrix briefly"
+      - "Firas grabs her hands, channels forces through himself (no Seed protection)"
+      - "Team forms human chain: Ruth-Victor-Leah-Ben-Tess"
+      - "Firas injects Ahdia with final treatment, pulls her back to humanity"
+      - "Firas smiles, dissolves into light, pulled into singularity"
+      - "Singularity collapses. Firas is gone."
+    emotional_arc: "Ultimate sacrifice — Firas gives his life to save Ahdia"
+    canon_critical: "Firas displaced (not dead). Contacts Bellatrix in hallway. Human chain saves Ahdia."
+
+  - number: 30
+    words: 3760
+    timing: "24 hours later + epilogue"
+    pov: "Ahdia → Ryu/Bourn → ensemble → Kain (epilogue)"
+    locations: ["CADENS facility", "Ahdia's penthouse", "Caledonia rooftops", "Kain's hidden facility (epilogue)"]
+    characters_present: [Ahdia, Ryu, Bourn, Ruth, Tess, Leah, Victor, Ben]
+    characters_epilogue: [Kain, "Mystery woman (Bellatrix)"]
+    key_events:
+      - "Team checked clean. Ahdia debriefed."
+      - "Bourn reveals Ahdia lied about 8th treatment — went in at 1/3 recovery"
+      - "Kain alive — press conference spins everything (claims lookalike, bioweapon)"
+      - "CADENS authorization came 14 hours too late (political deniability)"
+      - "Bourn offers CADENS badge; Ahdia declines — wants to go home"
+      - "Go Squad gathers at penthouse; Ruth argues team should disband"
+      - "Ahdia gives speech about what team means to her"
+      - "Ruth: 'We start over' — agrees to continue"
+      - "Final: team patrols from penthouse rooftop; Ahdia runs stolen CADENS MCC"
+      - "'Go get 'em. I got your back.'"
+    epilogue:
+      - "Kain alive — Tank 47 was clone that died downtown; dozens of clones in tanks"
+      - "Mystery woman: Ahdia contacted Bellatrix during singularity"
+      - "Three more Tamois Hearts in storage"
+      - "Kain instructed to focus on election; she'll handle Ahdia"
+    emotional_arc: "Grief and rebuilding; team forged by fire chooses to continue"
+
+# ============================================================================
+# DRAMATIC IRONY LAYERS
+# ============================================================================
+
+dramatic_irony:
+  reader_vs_team:
+    - layer: "Go Squad powers are Ahdia"
+      reader_learns: "Ch12-14 (Ahdia alive, CADENS briefing)"
+      team_learns: "Ch23 (partial — Ruth reveals 'someone dying'), Ch25 (full — Ahdia tells them)"
+      duration: "11-13 chapters of dramatic irony"
+
+    - layer: "Ahdia is dying"
+      reader_learns: "Ch14 (18 months revealed)"
+      ruth_learns: "Ch19 (docks reveal)"
+      team_learns: "They DON'T know at end of Book 1"
+
+    - layer: "Kain survived"
+      reader_learns: "Ch30 epilogue"
+      team_learns: "Ch30 (press conference spin, but they suspect)"
+
+    - layer: "Bellatrix pulling strings"
+      reader_learns: "Ch17 (mystery woman phone call)"
+      no_one_knows: "Ahdia contacts her briefly during transcendence (Ch29) without understanding"
+
+    - layer: "Firas is alive (displaced)"
+      reader_suspects: "Ch30 (narrative framing suggests displacement)"
+      everyone_believes: "He's dead"
+      payoff: "Book 7 return"
+
+    - layer: "Treatment prevents transcendence, not death"
+      no_one_knows: true
+      note: "Hidden from reader and all characters"
+
+# ============================================================================
+# CANON WARNINGS (check before any work referencing Book 1)
+# ============================================================================
+
+canon_warnings:
+  critical:
+    - "Firas is DISPLACED, not dead. Returns Book 7."
+    - "Go Squad 'powers' were NEVER real — always Ahdia's temporal manipulation + FAERIS."
+    - "Ahdia is dying (18-24 months with treatment)."
+    - "Treatment prevents transcendence (secret from everyone including reader)."
+    - "Kain survived via clone consciousness transfer (epilogue)."
+    - "Bellatrix is the real power behind Kain (mystery woman)."
+
+  character:
+    - "Victor has NO dead wife. Romantic partner is Leah. BOOK1_FINAL_STATE.md is WRONG on this."
+    - "Bourn is a WOMAN (she/her)."
+    - "AR-Ryu is Ryu's system (Ahdia did NOT build or name it)."
+    - "Isaiah Bennett is an ADULT environmental engineer killed by police (NOT seventeen — that's Korede's age). His death drives the cover-up investigation thread in Book 2."
+    - "Ruth and Firas were romantic partners (he was planning to propose — Book 2 reveal)."
+    - "Firas's last words: 'Oh hey. I knew you were in there somewhere.' (exact quote)"
+    - "Ahdia's codename is 'Auerbach' (parents' legacy, assigned by CADENS)."
+    - "Tess's teleportation is FAERIS-based (works independently of Ahdia)."
+
+# ============================================================================
+# LOCATIONS
+# ============================================================================
+
+locations:
+  ahdia_penthouse:
+    description: "Luxury apartment, inherited wealth. Stolen CADENS MCC on roof by end."
+    chapters: [3, 4, 5, 30]
+  parkour_academy:
+    description: "Go Squad's base of operations. Training, meetings, identity reveals."
+    chapters: [12, 13, 21]
+  cadens_facility:
+    description: "Government facility. Research, medical, equipment, FAERIS test chamber."
+    chapters: [13, 14, 15, 16, 20, 24, 30]
+  caledonia_docks:
+    description: "Warehouse district. TRIOMF operations. Multiple key confrontations."
+    chapters: [6, 7, 8, 18, 19]
+  downtown_intersection:
+    description: "Final battle arena. Kain kaiju fight, singularity."
+    chapters: [25, 26, 27, 28, 29]
+  kain_mansion:
+    description: "TRIOMF HQ. Artifact vault (23 pieces). Gala heist location."
+    chapters: [17, 21, 22]
+  montana_campsite:
+    description: "Childhood flashback. Parents disappeared. Recurring dreamscape."
+    chapters: [2, 24]
+
+# ============================================================================
+# SEEDS PLANTED FOR BOOK 2+
+# ============================================================================
+
+seeds_for_later:
+  book_2:
+    - { seed: "Firas 'already dead inside' comment (Ch12)", payoff: "Ahdia's deepest wound, drives isolation" }
+    - { seed: "Selfie civilian at gala (Ch22)", payoff: "Returns Ch5 terrified (Eidolon fear)" }
+    - { seed: "Ruth enabling Ahdia's secrets (Ch19-30)", payoff: "Ruth inverts pattern, sets boundaries (B2.17-18)" }
+    - { seed: "FAERIS drone independence (~10%)", payoff: "Evolves to 50%, autonomous broadcast B2.23" }
+    - { seed: "Chief Whitford complicity", payoff: "Tess investigates father (B2.15)" }
+    - { seed: "Isaiah Bennett killing", payoff: "Ongoing trauma, cover-up investigation" }
+    - { seed: "Kain clone system (epilogue)", payoff: "Ahdia exiles him B2 Ch4 — he respawns" }
+    - { seed: "CADENS institutional vulnerability", payoff: "SecDef leverage, TRIOMF infiltration" }
+  book_3_plus:
+    - { seed: "Bellatrix contact during transcendence (Ch29)", payoff: "Recognition in B3/4" }
+    - { seed: "Hallway with infinite doors", payoff: "'The Between' dimension (B3/4)" }
+    - { seed: "Mother FAERIS exploitation", payoff: "Freed in B3/4 climax" }
+    - { seed: "Treatment prevents transcendence (hidden)", payoff: "Revelation TBD" }
+    - { seed: "Firas displacement", payoff: "Return Book 7" }
+    - { seed: "Tamois Hearts (3 more in storage)", payoff: "Kain's continued threat" }
+    - { seed: "AR-Ryu developing awareness", payoff: "Evolves into tragedy (HUD destruction)" }
+
+# ============================================================================
+# BOOK 1 ENDING STATE (handoff to Book 2)
+# ============================================================================
+
+book1_ending_state:
+  ahdia: "Penthouse with stolen CADENS MCC. 18-24 months to live. Grieving Firas. Beginning to find worth. Declined CADENS badge. Tactical support role."
+  ruth: "CADENS-recruited. Field leader. Co-conspirator. Developed CR-7 Temporal Variant. Managing the lie."
+  ryu: "Ahdia's handler. In love with her (unspoken). Manages AR-Ryu, FAERIS, treatment."
+  bourn: "CADENS Director. Recruited Ahdia. Compartmentalized ethics. Doesn't know about TRIOMF infiltration."
+  firas: "DISPLACED into dimensional space. Everyone believes dead. Returns Book 7."
+  ben: "Knows Ahdia has powers. Doesn't know she's dying or full CADENS involvement."
+  tess: "Knows Ahdia has powers. Teleportation works (FAERIS-based). On medication for anxiety."
+  leah: "Knows Ahdia has powers. Red dress heist alias 'Sophie Clement.' Roller derby skills."
+  victor: "Knows Ahdia has powers. Community connections growing. Partner is Leah."
+  kain: "Survived via clone. Planning political rise. Has 3 more Tamois Hearts. Bellatrix pulling strings."
+  faeris: "Drones at ~10% independent effectiveness. Learning. Potentially becoming sentient."
+  team_knowledge: "Know Ahdia has powers. Know she secretly helped them. DON'T know she's dying. DON'T know full CADENS involvement."
+  emotional_state: "Grief (Firas), rebuilding, chosen family. 'We start over.'"
+  go_squad_status: "Operational. Ahdia on comms, Ruth in field. Stolen CADENS equipment. Public knowledge via @GoSquadWatch."
+
+# ============================================================================
+# VOICE SAMPLES (from prose — demonstrate, don't just describe)
+# ============================================================================
+
+voice_samples:
+  ahdia_book1:
+    description: "Pop culture coping, self-deprecating, deadpan in absurdity. Run-ons when stressed."
+    samples:
+      - source: "ch5"
+        quote: >
+          "If I end up with a yacht, I swear to God…"
+      - source: "ch6"
+        quote: >
+          "Like being the Wizard of Oz but Toto already pulled back the curtain
+          and you're just hoping Dorothy doesn't notice."
+  ruth_book1:
+    description: "Clinical precision, field commander clarity, caretaker mode."
+    samples:
+      - source: "ch6"
+        quote: >
+          "Bail, bail, bail. Helo inbound, could be for us. Scatter!"
+      - source: "ch13"
+        quote: >
+          "Get some rest. I'll be back to check on you in an hour."
+  firas_book1:
+    description: "Protective warmth, rallying language, casual leadership."
+    samples:
+      - source: "ch21"
+        quote: >
+          "We work with what we have. Right now what we have is Knight's planning,
+          Sable's muscle, Gloom Girl's teleportation, and your ability to make Kain
+          forget we exist. That's the play."
+      - source: "ch29"
+        quote: >
+          "Oh hey. I knew you were in there somewhere."
+  ben_book1:
+    description: "Military precision, analytical, evidence-driven."
+    samples:
+      - source: "ch21"
+        quote: >
+          "Ninety percent chance. If there's biometric locks too, you'll need to improvise."
+  tess_book1:
+    description: "Anxious control, institutional distrust, darkly self-aware."
+    samples:
+      - source: "ch21"
+        quote: >
+          "That's what's breaking everyone. Not that we lost our powers. That we
+          maybe never had them to begin with."
+      - source: "ch21"
+        quote: >
+          "I look like I'm auditioning for a spy movie."
+  prose_rules:
+    source: "1_writing_guides/GOSQUAD_PROSE_VOICE.md + 1_writing_guides/Ahdia_Voice.md"
+    key_rules:
+      - "66% dialogue. 12-word average sentences. Fragments for impact."
+      - "Density is a feature — every scene is load-bearing."
+      - "Embody, don't articulate — characters live the theme, don't explain it."
+      - "Voice trumps technical polish. When grammar and ear conflict, trust the ear."
+      - "Ahdia's pop culture references are coping, not decoration. Max 2 simile-format per scene."
+      - "Period-separated lists for staccato inventory. Not comma-separated."
+      - "Em-dashes for mid-thought pivots. Commas for pauses."
+      - "No thesis statements explaining what the scene showed."
+      - "No softened dark statements ('dead parents' not 'parents who passed away')."
+
+# ============================================================================
+# CROSS-LINK: Book 1 ending → Book 2A opening
+# ============================================================================
+
+cross_link_to_book2:
+  baseline_bridge: >
+    Book 1 ends with Ahdia stabilized at ~30% via CR-7, projected 18-24 months.
+    Several months pass between books. Book 2 Ch1 opens with baseline at 73%
+    (treatments working, she's been careful). The jump from 30% to 73% represents
+    months of regular treatment between books.
+  team_knowledge_entering_book2:
+    - "Know Ahdia has temporal powers"
+    - "Know she secretly provided their 'powers' all along"
+    - "Do NOT know she's dying (18-24 months)"
+    - "Do NOT know full CADENS involvement"
+    - "Accepted her as part of the team"
+  ruth_entering_book2: >
+    Co-conspirator. CADENS-recruited. Developed CR-7 Temporal Variant.
+    Managing the lie about Ahdia's mortality. Field leader.
+  kain_entering_book2: >
+    Survived via clone (team suspects but can't confirm). Rising politically.
+    Running for Senate → President. TRIOMF active. Bellatrix pulling strings.
+  faeris_entering_book2: "~10% independent effectiveness. Learning. Growing toward autonomy."
+  unresolved_threads_carried_forward:
+    - "Firas displaced (everyone believes dead)"
+    - "Bellatrix identity unknown (mystery woman)"
+    - "Treatment prevents transcendence, not death (hidden from everyone)"
+    - "Mother FAERIS exploitation"
+    - "Kain's 3 remaining Tamois Hearts"
+  topology_file: "5_story_bibles/book_2/BOOK2A_TOPOLOGY.yaml"

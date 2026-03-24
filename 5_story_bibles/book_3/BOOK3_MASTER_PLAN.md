@@ -29,9 +29,9 @@ Book 3 follows powerless Ahdia learning to be human and "enough" without tempora
   - Timeline 3 (6 years): Slow implementation → Still draws attention → Catastrophe
   - **Pattern confirmed:** Geneva winning ALWAYS leads to catastrophe
 - **Ahdia-Prime's Intervention:**
-  - Ahdia-4 about to discover time travel
+  - Ahdia-5 about to discover time travel
   - Prime appears, prevents her from completing it
-  - Burns out Ahdia-4's powers BEFORE she can create iteration 5
+  - Burns out Ahdia-5's powers BEFORE she can create iteration 5
   - "This is iteration 47. I've tried everything. Don't time travel. Let it happen."
   - "Learn to be powerless. Learn to be helped. Learn to be enough."
 - **Present:** FAERIS hovering in Ahdia's apartment, silent witness to everything
@@ -243,7 +243,7 @@ AHDIA: [knowing it's Diana, not correcting]
 - Biological mother (through clone avatar)
 - Created her as consciousness copy
 - "I made you to understand me"
-- But Ahdia-4 represents path Bellatrix never tried: Acceptance instead of solution
+- But Ahdia-5 represents path Bellatrix never tried: Acceptance instead of solution
 
 ### Eidolon - REVISED CONCEPT
 **Original:** Essence/presence without body, pure fear
@@ -313,7 +313,7 @@ EIDOLON: [quietly] "I don't know.
 
 ## CHARACTER ARCS
 
-### Ahdia Bacchus (Ahdia-4)
+### Ahdia Bacchus (Ahdia-5)
 **Starting Point:**
 - Powers completely gone (burned out by Prime)
 - Hazy memories of intervention
@@ -781,7 +781,7 @@ AHDIA: "No one can. Not even someone with
 - Ahdia-Prime is iteration 47 (actually from iteration 47)
 - Three failed utopias witnessed by FAERIS
 - Geneva winning ALWAYS leads to catastrophe
-- Prime burned out Ahdia-4's powers to break loop
+- Prime burned out Ahdia-5's powers to break loop
 
 ### Mother FAERIS
 - Exists underground at CADENS HQ
@@ -871,7 +871,7 @@ AHDIA: "No one can. Not even someone with
 - Exhaustion from 43 iterations
 - Nostalgia seeing "new" versions of people she knows
 - Guilt over keeping secrets
-- Protectiveness over Ahdia-4
+- Protectiveness over Ahdia-5
 - Hope that this iteration can learn faster
 - Loneliness of being only one who knows
 - Quiet pride when Ahdia succeeds

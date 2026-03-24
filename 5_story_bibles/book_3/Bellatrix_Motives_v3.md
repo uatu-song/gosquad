@@ -14,7 +14,7 @@ Based on my analysis of the planning documents, here's the most character-driven
 
   Why She's in Iteration 5 Specifically
 
-  She's not here to sabotage a utopia (there isn't one—Ahdia-4 gave up after Iteration 4's betrayal).
+  She's not here to sabotage a utopia (there isn't one—Ahdia-5 gave up after Iteration 4's betrayal).
 
   She's here to observe Ahdia-5 as a way to understand her own transformation:
 

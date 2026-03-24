@@ -410,8 +410,8 @@
 - Secret revealed to team ✓
 - Consequences of time travel personified (Rivets) ✓
 - Guilt acknowledged and shared ✓
-- Stopped Ahdia-4 from repeating mistakes ✓
-- Helps rescue Ahdia-4 (closure) ✓
+- Stopped Ahdia-5 from repeating mistakes ✓
+- Helps rescue Ahdia-5 (closure) ✓
 
 **Ryu:**
 - Confessed feelings to Ahdia ✓

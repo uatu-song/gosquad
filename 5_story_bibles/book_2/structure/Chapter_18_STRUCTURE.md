@@ -11,7 +11,7 @@
 
 ## Summary
 
-Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly references Book 1 mistake, refuses to repeat it. Reveals Ahdia's coordination with Bourn to team. Team decides to meet Bourn directly. Meeting arranged at decommissioned CADENS facility. Bourn explains leverage situation, confirms resistance from inside. Team develops five-track hybrid strategy: media leak (omit CADENS), DOJ pressure (Bourn leads), Leah's recording release, witness protection (Ahdia assists), community organizing. Launch Monday (3 days out). Ruth and Bourn confront Ahdia at penthouse, enforce boundaries: Track 4 only, rest until Monday, or lose treatment access.
+Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly references Book 1 mistake, refuses to repeat it. Reveals Ahdia's coordination with Bourn to team. Team decides to meet Bourn directly. Meeting arranged at decommissioned CADENS facility. Bourn explains leverage situation, confirms resistance from inside. Team develops five-track hybrid strategy: media leak (omit CADENS), DOJ pressure (Bourn leads), Leah's recording release, witness protection (Ahdia assists), community organizing. Launch Monday (the weekend to prepare). Ruth and Bourn confront Ahdia at penthouse, enforce boundaries: Track 4 only, rest until Monday, or lose treatment access.
 
 ---
 
@@ -26,7 +26,7 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 **Team Strategy:**
 - Five-track hybrid approach across multiple fronts
 - Coordination with institutional ally (Director Bourn)
-- Launch timeline: Monday (3 days preparation)
+- Launch timeline: Monday (the weekend to prepare)
 - Roles assigned, contingencies planned
 
 **Bourn Integration:**
@@ -54,7 +54,7 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 5. Ruth remembering: Aftermath (team fractured, trust damaged)
 6. Ruth's decision crystallizing: Won't do it again, will tell truth
 7. Ruth entering safe house
-8. Team assembled (Ben, Leta, Victor, Leah, Tess, Korede, Firas)
+8. Team assembled (Ben, Leta, Victor, Leah, Tess, Korede)
 9. Ahdia absent (everyone noticed)
 10. Ben at laptop (evidence package ready, media contacts lined up)
 11. Team mood: unified, determined, ready to leak today
@@ -106,7 +106,7 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 54. Team grappling with complexity
 55. Ben pivoting: What do we do now?
 56. Ruth clear: Don't know solution, but not covering for Ahdia anymore
-57. Firas asking: Where is Ahdia?
+57. Victor asking: Where is Ahdia?
 58. Ruth: Penthouse, recovering from treatment, baseline 54%
 59. Team alarm (didn't know severity)
 60. Ruth: Days to live, maybe week if stops missions
@@ -197,7 +197,7 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 121. Ruth: Team knows (54% baseline, days left)
 122. Bourn visible guilt: Didn't realize severity this week
 123. Bourn: Ryu reports to her, but Ahdia lies to Ryu about mission extent
-124. Firas: Why not stop Ahdia?
+124. Tess: Why not stop Ahdia?
 125. Bourn: Tried repeatedly, Ahdia won't listen
 126. Bourn: Ahdia thinks she's only one who can save people
 127. Victor: She's not wrong (literally has unique powers)
@@ -247,15 +247,15 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 168. Track 2 (DOJ): Bourn executes, Ruth provides medical evidence support
 169. Track 3 (Recording): Leah releases, Victor provides legal protection
 170. Track 4 (Witnesses): Bourn coordinates institutional resources, Ahdia executes field work
-171. Track 5 (Community): Victor leads, Firas/Tess assist
-172. Timeline finalized: Launch Monday (3 days preparation time)
+171. Track 5 (Community): Victor leads, Tess assists
+172. Timeline finalized: Launch Monday (the weekend to prepare)
 173. Bourn: Weekend to prepare DOJ documentation
 174. Ben: Time to finalize media package, establish secure channels
 175. Leah: Time to process emotional weight of releasing recording
 176. Victor: Community organizing already underway (Month 6 protests foundation)
-177. Firas question: What about Ahdia's role?
+177. Victor question: What about Ahdia's role?
 178. Team silence (elephant in room)
-179. Ruth: Next treatment Sunday (72 hours from last)
+179. Ruth: Next treatment Tuesday (72 hours from Saturday morning)
 180. Bourn: Need Ahdia for Track 4 witness protection
 181. Bourn: But can't tell her full plan (will try to take over or sacrifice herself)
 182. Ben: Will try to do all five tracks alone
@@ -327,7 +327,7 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 245. Ruth: This is sustainable pace (agreed this morning Chapter 17)
 246. Ahdia: One track isn't sustainable, barely trying
 247. Ruth: One track keeps Ahdia alive to help other tracks indirectly
-248. Bourn: Plan launches Monday (3 days), job is stay alive until then, rest, prepare
+248. Bourn: Plan launches Monday (the weekend), job is stay alive until then, rest, prepare
 249. Bourn: Nothing else (no secret missions, no continental translocations)
 250. Ahdia: If refuses?
 251. Bourn: Execute Track 4 without her (less effective but proceed)
@@ -338,7 +338,7 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 256. Ruth: Only if cooperates
 257. Ahdia sitting (exhausted, defeated, accepting)
 258. Ahdia agreement: Track 4 only, rest until Monday
-259. Ruth: Including next treatment Sunday (exactly 72 hours from last)
+259. Ruth: Including next treatment Tuesday (exactly 72 hours from Saturday morning)
 260. **CHAPTER END**
 
 ---
@@ -407,7 +407,7 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 
 ### Track 5: Community Organizing
 - **What:** Resistance training against Eidolon emotional manipulation
-- **Who:** Victor leads, Firas/Tess assist
+- **Who:** Victor leads, Tess assists
 - **When:** Already underway (Month 6 protest foundation)
 - **Purpose:** Build grassroots resistance, counter Eidolon's electoral manipulation
 - **Risk:** Slow build, might not impact election timing
@@ -423,10 +423,10 @@ Ruth arrives at team meeting having decided not to cover for Ahdia - explicitly 
 - 72-hour spacing agreement tested
 
 ### Sets up Chapters 19-20
-- Three-day preparation period (Friday-Sunday)
+- Weekend preparation period (Saturday evening through Sunday)
 - Team executing preparation (media packages, DOJ documentation, community organizing)
 - Ahdia's compliance test (will she stay limited to Track 4?)
-- Sunday treatment session (Chapter 17 + 72 hours)
+- Tuesday treatment session (Chapter 17 Saturday morning + 72 hours)
 - Monday launch (all five tracks execute)
 
 ### Character Arcs

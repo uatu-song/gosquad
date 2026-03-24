@@ -188,6 +188,7 @@ Dictators vanishing throughout Book 2 — team dismisses as "world going crazy":
 | Production timeline (HTML) | `6_manuscript/book_2/visualizations/book2_production_timeline.html` |
 | Continuity tracker | `5_story_bibles/book_2/CONTINUITY_TRACKER.md` |
 | Prose TODO | `5_story_bibles/book_2/BOOK2A_PROSE_TODO.md` |
+| Book 2B timeline (interactive) | `5_story_bibles/book_2b/steward_experiment/book2b_timeline.html` |
 
 ## Series Overview
 
@@ -196,6 +197,96 @@ Dictators vanishing throughout Book 2 — team dismisses as "world going crazy":
 **Book 2 emotional arc:** Sacrifice everything → Win through vulnerability. Ahdia tries to control/fix everything, burns herself out. Evidence proves irrelevant. Individual heroics create vulnerabilities. Kain wins the election anyway.
 
 **Core theme:** You don't have to be fixed to be worthy.
+
+## Book 2B — The Steward Experiment
+
+**Status:** Run 1 COMPLETE. 13/13 steward outlines generated. Editorial massage pass next.
+
+Book 2B picks up where 2A ended (Ruth/Ryu discover Exile Island, "deal with it Sunday"). Uses a 28-move chess game (jcksng vs jssong3) as structural scaffold. White = Go Squad (loses). Black = TRIOMF (wins). Qe3# is the locked endpoint.
+
+**13 stewards**, each owning specific moves, each with a triplet of chess pieces as interpretive lens. Three convergence points (M9, M13, M25) force stories to touch. Ahdia writes first at every convergence point.
+
+**Run 1 Results:** ~75-80% usable material (exceeded 60% prediction). 12 editorial issues identified requiring Director decisions. All 28 moves have at least one steward beat.
+
+**Key files:**
+- Steward outputs: `5_story_bibles/book_2b/steward_experiment/*_run1.md` (13 files)
+- Convergence extracts: `5_story_bibles/book_2b/steward_experiment/convergence_M*.md`
+- Timeline visualization: `5_story_bibles/book_2b/steward_experiment/book2b_timeline.html` (interactive, with Director notes + downloadable report)
+- Bellatrix prompt: `5_story_bibles/book_2b/steward_experiment/prompt_bellatrix.md`
+- Steward prompt files: Director-built (not from existing `2_method_actor/stewards/`)
+- Briefing doc: provided by Director per-session (not stored in repo)
+
+**Locked endpoints:** Kain wins presidency. Ahdia at 0.7% baseline. Prime reveals herself. Go Squad labeled terrorists. Bellatrix wins. Leta dies. Qe3#.
+
+**Process:** ~~Run stewards~~ → ~~generate outlines~~ → **5-agent evaluation pass** → cinematic blocking → coherent book structure → prose generation. Run 1 of 3 planned.
+
+**Next Session: 5-Agent Parallel Evaluation + Enforcer**
+
+Run these 5 agents in parallel against all 13 steward outputs + PGN:
+
+1. **Timeline Keeper** — reconcile 28 moves into single linear sequence, flag steward timing contradictions (especially M24/M25/M27 endgame traffic jam)
+2. **Status Tracker** — map Ahdia's baseline math (53.1% → 0.7%), track character availability windows (Leah's coma M11-M24, Ben's faith collapse at M25), flag hallucinated presences
+3. **Theme Guardian** — verify Both/And philosophy and triage themes survive the climax, check thematic anchors aren't buried by kinetic action
+4. **Reader Proxy** — map dramatic irony layers (audience vs. character knowledge), especially Bellatrix's four dead Genevas and Eidolon's grief crack at M24
+5. **Pacing Monitor** — assess tension curve across 4 phases (Opening M1-8, Middlegame M9-18, Crisis M19-24, Endgame M25-28), flag M19-22 rook rampage pacing risk, check endgame compression
+
+**Then: Enforcer validates all 5 reports** (rejects out-of-domain claims, flags missing source attribution, catches hallucinated facts).
+
+**Then: Director directs cinematic blocking** (Scene Choreographer + Pacing Monitor) with evaluated footage in hand.
+
+**12 Editorial Issues (from Run 1 evaluation):**
+1. 28 vs 37 dictators (Exile Island count — stewards used both)
+2. Korede's age (stewards say 15 and 17 — canon is 17)
+3. Translocation mechanics (some stewards confused Seed activation vs translocation)
+4. CR-7 extension at M17 (new lore — Ruth gives Ahdia months instead of weeks)
+5. "Powers aren't real" claim at M2 (stewards interpreted this differently)
+6. Compound decay model (Ryu's new lore — exponential vs linear decline)
+7. Eidolon/Kain timing overlap at M16 (both claim the reframe)
+8. Bellatrix/Kain M9 overlap (both claim architecture credit)
+9. Bourn's baseline numbers timing (when does she get the data?)
+10. Korede's location at Leta's death (Korede steward has him present; Tess steward also present)
+11. e-pawn ownership (Ahdia and Ryu both claim it as triplet piece)
+12. White Queen at M27 (Ruth and Bourn both read it differently)
+
+## Book 3 — Planning Status
+
+**Status:** Pre-production. Extensive planning complete (40 files in `5_story_bibles/book_3/`). Prologue + Chapter 1 have prose. Chapters 2-11 have beat sheets.
+
+**Emotional Arc:** Confidence → Incomprehensible challenge → Psychological collapse → Redemption
+
+**Central premise:** Ahdia-5 is powerless (Prime burned out her temporal abilities). Must survive Bellatrix's war — clone avatar armies + embodied Eidolon — while learning to be "enough" without powers. Prime poses as "Aunt Diana" and secretly enhances the team.
+
+**Key structural decision:** Book 3 will split A/B at the rift moment (currently Ch19 — Bellatrix forces Ahdia into The Between). Act 1 needs compression (7 confidence chapters → 4-5) so the rift lands at true midpoint. 3A = confidence through devastating cliffhanger. 3B = scattered survival, guerrilla resistance, rescue, climax.
+
+**Canon (locked):**
+- Prime = Ahdia-1. Current Ahdia = Ahdia-5. 5 total iterations (NOT 43/47 from early planning).
+- Mother FAERIS: sentient AI buried under CADENS HQ, exploited for decades while dormant
+- Eidolon: not a natural predator — Fear fragment torn from unified being by Bellatrix
+- Captain Suzie Rivets: mech pilot from erased Iteration 3, found in The Between
+- Two-part climax: clone army defeated (Mother FAERIS freed) → Ahdia rescued from The Between
+
+**Key files:**
+- `5_story_bibles/book_3/BOOK3_MASTER_PLAN.md` — Definitive planning doc
+- `5_story_bibles/book_3/BOOK3_BRAIDED_STRUCTURE.md` — Three-timeline structure
+- `5_story_bibles/book_3/CLIMAX_STRUCTURE_FINAL.md` — Two-part sequential climax
+- `5_story_bibles/book_3/EIDOLON_CANON.md` — Eidolon as tragic victim
+- `5_story_bibles/book_3/Bellatrix_Motives_v3.md` — Bellatrix motivation
+- `5_story_bibles/book_3/CHARACTER_TROUBLEMAKER_FINAL.md` — Captain Rivets
+
+## Series Renumbering
+
+The original 7-book series became 8 books when Book 2 split into 2A and 2B due to 120K+ word count:
+
+| New # | Old # | Content |
+|-------|-------|---------|
+| Book 1 | Book 1 | Avoidance → Forced action |
+| Book 2 (2A) | Book 2 (first half) | Sacrifice → Vulnerability |
+| Book 3 (2B) | Book 2 (second half) | Go Squad vs TRIOMF, Qe3# |
+| Book 4 | Book 3 | Confidence → Psychological collapse |
+| Book 5 | Book 4 | Turning point (stalemate, DBT) |
+| Books 6-8 | Books 5-7 | DBT approach succeeding |
+
+**Note:** Repository directories still use old numbering (`book_2b/` for new Book 3, `book_3/` for new Book 4). Book 4 (old Book 3) will also likely split A/B.
 
 ## Git Discipline
 

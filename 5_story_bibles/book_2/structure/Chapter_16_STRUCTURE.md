@@ -57,7 +57,7 @@
 - Sustained casual racism from officers (Tess describes what he endured)
 - Officers discussing Isaiah as "thug" who "resisted arrest"
 - Murderers comfortable, laughing, celebrating, zero guilt
-- Tess: "They were drinking champagne and talking about killing a seventeen-year-old like it was justified."
+- Tess: "They were drinking champagne and talking about killing an innocent man like it was justified."
 - Team processing: Not individual bad cops, systemic culture
 
 ### Personal Cost Visible
