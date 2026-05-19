@@ -1,0 +1,1271 @@
+# ============================================================================
+# BOOK 4 TOPOLOGY — Planning Reference (Progressive Disclosure)
+# Go Squad (Auerbach Series) by J. S. Vaughn
+# ============================================================================
+# DIRECTORY NAME NOTE: This file lives in `5_story_bibles/book_3/` because the
+# directory was named under the legacy 7-book numbering (old Book 3). In the
+# current 8-book numbering this is BOOK 4. All references below use the new
+# canonical numbering.
+#
+# STATUS: PHASE 2-3 (Concept locked; thread architecture partial; chapter
+# topology exists for Ch1-19 only)
+# Prose: Prologue + Ch1 complete. Ch2-19 beats only.
+#
+# This file is a PLANNING TOOL, not a post-prose record.
+# ============================================================================
+#
+# PROGRESSIVE DISCLOSURE PHASES:
+#   Phase 1: Concept lock ✓ (meta, characters, canon warnings)
+#   Phase 2: Thread architecture ◑ (plot threads identified;
+#                                   contradictions UNRESOLVED — see conflicts)
+#   Phase 3: Chapter topology ◑ (Ch1-19 beats exist; Ch20-50 conceptual only)
+#   Phase 4: Post-prose — PENDING (prose not started)
+# ============================================================================
+#
+# STATUS: FIRST-PASS DRAFT (2026-05-18)
+# Inline markers:
+#   # TODO:     proposed; needs Director confirmation
+#   # CONFLICT: two source documents disagree; Director must arbitrate
+#   # CANON?:   unclear whether locked or proposed
+#   # OPEN:     genuinely open creative choice
+# ============================================================================
+
+# ============================================================================
+# PHASE 1 — CONCEPT LOCK
+# ============================================================================
+
+meta:
+  series: "Auerbach Series"
+  book: 4
+  alt_name: "old Book 3"
+  directory: "5_story_bibles/book_3/"  # legacy 7-book naming
+  title: TBD
+  author: "J. S. Vaughn"
+  status: "PRE-PRODUCTION — prologue + Ch1 prose; Ch2-19 beats; Ch20-50 conceptual"
+  word_count: null
+  prose_status: "Prologue + Ch1 complete; everything else beats or conceptual"
+  emotional_arc: "Confidence → Incomprehensible challenge → Psychological collapse → Redemption"
+  thematic_focus: >
+    CBT approach collapses entirely. Confidence proves insufficient against an
+    enemy that doesn't play by reason's rules. Ahdia must learn she is "enough"
+    without temporal abilities.
+  core_thesis: "You don't have to be fixed to be worthy."
+  core_premise: >
+    Powerless Ahdia-5 (Prime burned out her abilities) must survive Bellatrix's
+    war — clone avatar armies + embodied Eidolon — while learning to be enough
+    without powers. Prime poses as "Aunt Diana" and secretly enhances the team.
+    Triple-Layer Deception: team thinks Ahdia is enhancing them; Ahdia knows
+    it's Diana; Diana hides time travel.
+  series_position: "Book 4 of 8. Completes the CBT-failing phase. Sets up Book 5 turning point."
+  timeline: "Picks up after Book 2B ending (Election Night aftermath). Span ~TBD."  # TODO: confirm
+  chess_scaffold:
+    selected: false
+    note: "Not yet selected. Chess game TBD per planning status doc."
+  cbt_failing_role: >
+    Book 4 is the FINAL CBT failure. Confidence ('I can do this without powers'
+    + 'evidence + truth + heroism work') collapses when confronted with
+    incomprehensible challenge. Ahdia's breakdown is necessary to enable Book 5's
+    DBT turning point.
+
+  structural_split:
+    # Per root CLAUDE.md: "Book 4 (old Book 3) will also likely split A/B"
+    # Per CLIMAX_STRUCTURE_FINAL: full book runs Ch1-51 with Ch43-50 as climax
+    # Per BOOK3_BRAIDED_STRUCTURE: ~50-60 chapters, "may split into Books 3 & 4"
+    proposed_split: true
+    split_point: "Ch19 — Ahdia forced through the rift into The Between"
+    rationale: >
+      Ch19 is the natural midpoint break. Part A = team operating together on
+      Earth, discovering threats, fighting back as unit (confidence). Part B =
+      scattered survival on Earth + Ahdia's parallel arc in The Between (collapse).
+    part_a:
+      title_proposed: "Book 4A"
+      chapters: "Prologue + Ch1-19"
+      arc: "Confidence → discovery → first overwhelming setback (rift)"
+      end_state: "Ahdia in The Between; team scattered on Earth; no contact"
+    part_b:
+      title_proposed: "Book 4B"
+      chapters: "Ch20-51 (proposed)"
+      arc: "Scattered survival → guerrilla resistance → rescue mission → climax"
+      end_state: "Clone army defeated; Mother FAERIS freed; Ahdia rescued; team reunited (minus AR-Ryu); Captain Rivets joins"
+    compression_needed:
+      note: "Per root CLAUDE.md, Act 1 needs compression so the rift lands at true midpoint"
+      current: "Act 1 = 7-19 confidence chapters depending on count method"
+      target: "4-5 chapters before rift in 4A"
+
+  locked_endpoints:
+    # Series-level endpoints Book 4 must deliver (from SERIES_TOPOLOGY.yaml and source docs)
+    - "Mother FAERIS freed (Part 1 of two-part climax)"
+    - "Ahdia rescued from The Between (Part 2 of two-part climax)"
+    - "Captain Suzie 'Troublemaker' Rivets recovered from The Between (erased Iteration 3)"
+    - "Pioneer ('Pio') mech survives with Rivets"  # CANON?: may not survive — climax says mech left behind
+    - "AR-Ryu dies before upload — last words: 'Tell him I loved—' (CUT)"
+    - "Bellatrix admits she was wrong: 'You chose correctly. I... chose wrong.'"
+    - "Diana confronted by Rivets — 'You destroyed my world' / 'Don't let it be for nothing'"
+    - "Two-part sequential climax structure (cannot be collapsed)"
+    - "Ahdia ends Book 4 still powerless but proven valuable / Ruth/Ahdia mutual saving breaks Firas sacrifice pattern"
+    - "Eidolon's connection severed when Mother FAERIS frees FAERIS swarm"
+    - "Five iterations total (Prime=Ahdia-1; current=Ahdia-5)"
+
+# ============================================================================
+# PHASE 1 — CHARACTERS
+# ============================================================================
+
+characters:
+  # === PROTAGONIST AXIS ===
+
+  ahdia_bacchus:
+    role: protagonist
+    iteration: 5
+    age: 27
+    starting_state:
+      powers: "BURNED OUT — Prime intervened, abilities gone"
+      memory: "Fragmented (memories of Prime's intervention hazy)"
+      physical: "Out of shape, vulnerable, baseline irrelevant (no power use)"
+      knowledge: "Knows Diana is Ahdia-Prime / Ahdia-1"
+    arc: >
+      Zero-to-hero physical training (Ruth combat, Ben tactics, Victor parkour,
+      Tess surveillance) → discovers Diana enhancing team → lies by omission →
+      forced into The Between (Ch19) → survives with AR-Ryu only → meets Captain
+      Rivets → AR-Ryu dies → rescued → Ruth/Ahdia mutual saving reverses Firas
+      sacrifice → ends still powerless but proven valuable.
+    secret_burden: "Knows Diana is enhancing team. Doesn't correct team's assumption it's her."
+    key_relationships:
+      diana: "Same person, different iteration. Awkward couch-sharing. Secret keeper."
+      ruth: "Role reversal — Ruth now teaches her. Mutual saving in climax."
+      ryu: "He confesses love in The Between rescue: 'I love you.'"
+      ar_ryu: "Companion in The Between. Romantic dimension. Dies before upload."
+      bellatrix: "Biological mother (through clone avatar). 'You are me, if I had chosen differently.'"
+      rivets: "Saved her in The Between. Grief companion (both lost AI partners)."
+    canon_warnings:
+      - "Ahdia and her brother are progeny of clone avatars — mother Bellatrix, father unknown interdimensional being"
+      - "Five iterations total — Ahdia-5 is current"
+
+  ahdia_prime_diana:
+    role: time_traveler_secret_keeper
+    iteration: 1
+    chronological_age: 27
+    actual_age: 42
+    cover_identity: "Aunt Diana from Montana, estranged family reconnecting"
+    starting_state:
+      powers: "Temporal — depleted, must recover between uses"
+      knowledge: "Lived through 4 prior timelines (created iterations 2, 3, 4, 5)"
+      living_situation: "On Ahdia's couch"
+    arc: >
+      Reveals identity to Ahdia (Ch1/2) → secretly enhances team after FAERIS
+      seized (Ch8 onward) → reveals to Ruth (Ch14) → confesses Iteration 2 story
+      to Ahdia (Ch11) → continues iteration reveals → exhausted but teaching →
+      confronted by Captain Rivets after rescue (Ch51): "You destroyed my world."
+    secret_burden: "Hides time travel ability. Carries grief for 43 versions of everyone (multi-iteration relationships)."
+    canon_warnings:
+      - "Prime = Ahdia-1 (the original iteration)"
+      - "Created iterations 2, 3, 4, 5 by going back four times"
+      - "After Iteration 4 betrayal, gave up on utopia attempts in Iteration 5"
+      - "Burns out Ahdia-5's powers to prevent Iteration 6 (break the cycle)"
+    # CONFLICT: Master plan says "iteration 47" and "43 timelines"
+    #   - PLANNING_STATUS.md (corrected): 5 iterations total
+    #   - CHARACTER_QUICK_REFERENCE.md (latest): 5 iterations, Prime=Ahdia-1, current=Ahdia-5
+    #   - CHARACTER_TROUBLEMAKER_FINAL.md: Rivets from Iteration 3 (consistent)
+    #   - BOOK3_MASTER_PLAN.md (older): "I've tried everything. This is iteration 47" — STALE
+    #   ARBITRATION: 5 iterations is locked canon. Master plan references to 43/47 are STALE.
+
+  ruth_carter:
+    role: field_leader_grieving_caretaker
+    codename: "Nightingale"
+    starting_state:
+      knowledge: "Knows about Exile Island; knows Ahdia is dying; co-conspirator from B2"
+      grief: "Unprocessed Firas grief — was his girlfriend, planning to propose"
+    arc: >
+      Training Ahdia (role reversal — teaching instead of leading) → leadership
+      burden intensifying without FAERIS → discovers Diana's identity (Ch14) →
+      becomes second secret keeper → faces Firas-like sacrifice in climax →
+      mutual saving with Ahdia breaks the sacrifice cycle → processes Firas
+      grief through survival, not death.
+    climax_moment: "Ready to die for Ahdia in Firas parallel. Both save each other instead."
+
+  ryu_matsuda:
+    # CANON?: Master plan calls him "Ryu Tanaka." SERIES_TOPOLOGY uses "Ryu Matsuda" matching CLAUDE.md.
+    # ARBITRATION: Matsuda is canonical. Tanaka is a stale variant in this directory's older docs.
+    role: handler_scientist_unwitting_complicit
+    surname_note: "Master plan files use 'Tanaka'; canonical surname is Matsuda (per series CLAUDE.md and topologies)"
+    starting_state:
+      knowledge: "Did NOT know about Mother FAERIS exploitation — lied to about FAERIS origins"
+      bond: "Life force bonded to small FAERIS drone (unknowingly orphaned child)"
+    arc: >
+      Loses FAERIS connection when Kain seizes network (mortality + helplessness) →
+      Bourn reveals truth about Mother FAERIS exploitation → horror at unwitting
+      complicity → receives wake protocol → wakes Mother properly (asks, doesn't
+      force) → enters The Between with Ruth to rescue Ahdia → confesses love
+      ('I love you') → quits CADENS after waking Mother.
+    immunity: "Cannot be possessed by Eidolon — reason unclear (neurodivergent perception? FAERIS protection?)"  # OPEN
+    arc_choice_axis: "Trust vs control — chooses asking over forcing"
+
+  harriet_bourn:
+    role: institutional_defector_redemption
+    pronouns: "SHE/HER"
+    starting_state:
+      status: "Fugitive — on the run with Bentley Mack"
+      possesses: "Wake protocol for Mother FAERIS (the reason she's hunted)"
+      guilt: "Years of complicity in Mother FAERIS exploitation"
+    arc: >
+      Underground with Mack → dead man's switch triggers (Ch6) → emerges at
+      bleakest moment → confesses to Ryu → gives wake protocol → faces Mother
+      FAERIS directly → apologizes without expecting forgiveness → asks Mother
+      to help for her children, not for Bourn.
+    arc_choice_axis: "Redemption through action, not absolution"
+    canon_warnings:
+      - "Bourn is a WOMAN (she/her)"
+      - "Defected from CADENS specifically to keep wake protocol from Kain"
+
+  bentley_mack:
+    role: cadens_operative_defector
+    function: "Bourn's partner in defection. On the run together."
+    arc: "TBD — supporting role to Bourn's redemption"  # OPEN
+
+  rahs_jericho:
+    role: chief_science_officer_ambiguous
+    starting_state:
+      knowledge: "Knew about Mother FAERIS exploitation; participated in decisions"
+      affiliation: "Stayed at CADENS under Kain"
+    function: >
+      Deliberate ambiguity — never clear if true believer, opportunist, deep
+      cover saboteur, conflicted, or coward. Provides information (reliability
+      unclear). Apologizes to Mother FAERIS when she wakes. Stands down security
+      when Ryu wakes her.
+    key_line: "'You've made me complicit in treason. Again.'"
+    arc_resolution: "Remains ambiguous — creates dramatic tension, mirrors Bourn's crisis with opposite choice"
+
+  korede_owolowo:
+    role: full_team_member_resistance_organizer
+    age: 17
+    skills: "Mechanics specialist. Tech coordination. Social media organizing."
+    arc: >
+      Training alongside Ahdia (both learning post-FAERIS) → wounded by tech-
+      specialized ambush during scattering (Ch16) → builds cell-based resistance
+      network during Ahdia's exile → saves Ben/Leah/Victor trio from ambush →
+      "Took you long enough to find us" — reveals full organization.
+    canon_warnings:
+      - "Korede is 17 (NOT 15)"
+      - "Leta is dead (from B2B Ch23/M27)"
+
+  ben_bukowski:
+    role: marine_evidence_builder
+    starting_state:
+      arc_from_b2b: "Faith destroyed; operates without belief system; 'Geometry, not faith'"
+    arc: >
+      Solo survival after scattering (Ch11/17) — radio damaged, scavenging,
+      analyzing power surge → meets Leah in combat (Ch21) → joins guerrilla
+      cell with Victor (Ch24) → coordinated raids, civilian evacuation,
+      sabotage → infiltrates excavation site in clone climax (Ch43).
+    canon_warnings:
+      - "Wife Sarah deceased — cause UNSPECIFIED (never invent)"
+
+  victor_hernandez:
+    role: community_organizer_team_moral_compass
+    codename: "Crimson Sable"
+    starting_state:
+      knowledge: "Carries Both/And philosophy as series-load-bearing thematic anchor"
+    arc: >
+      Trains Ahdia in parkour (running Firas's routes — emotional weight) →
+      survives ambush via Diana's secret enhancement (Ch12 — critical failure
+      becomes critical success) → "I'm not a puppet" → joins Ben/Leah trio →
+      reaches Mother FAERIS chamber, deploys wake protocol (Ch44): "Wake up.
+      You're free now."
+    canon_warnings:
+      - "NO dead wife"
+      - "Romantic partner is Leah Turner"
+
+  tess_whitford:
+    role: investigator_tracker
+    codename: "Gloom Girl"
+    starting_state:
+      knowledge: "Investigated father in B2A/B2B; mask off over Leta in M25"
+      faeris_bond: "Her FAERIS drone is the ONLY one that stayed loyal after seizure"
+    arc: >
+      Finds Ahdia using FAERIS tracking (Ch10) → bonds with her before separation →
+      wounded witnessing Ahdia pulled through rift (Ch20) → uses FAERIS to scan
+      quantum signatures → infiltrates CADENS surveillance to steal team
+      locations → finds Ruth/Diana (Ch30) → "We're bringing Ahdia home."
+    mystery_open: "Why did Tess's FAERIS stay loyal? (Quantum entanglement theory — explored mid-book)"
+    canon_warnings:
+      - "Does NOT kill Webb (from B2B canon)"
+
+  leah_turner:
+    role: precision_specialist_civilian_protector
+    codename: "Battlea"
+    starting_state:
+      arc_from_b2b: "Coma M11-M24; woke into wreckage"
+    arc: >
+      Translocates into crowded marketplace (Ch13/18) → protects dozen civilians
+      including families with children → enhanced senses (Diana's work) → detects
+      Eidolon influence spreading → must fight CADENS to protect civilians →
+      meets Ben in combat → joins guerrilla cell.
+    canon_warnings:
+      - "Leah is a BARISTA"
+      - "Romantic partner is Victor"
+
+  # === ANTAGONIST AXIS ===
+
+  bellatrix:
+    role: primary_antagonist_biological_mother
+    nature: "Type IV interdimensional being, inhabits clone avatar to manifest on Earth"
+    iteration_relationship: "Mother to Ahdia (through clone avatar reproduction). 'I made you to understand me.'"
+    motive:
+      # CONFLICT: Master plan vs Bellatrix_Motives_v3.md
+      #   - Master plan: "Tried hundreds of iterations. Ultimate CBT practitioner. Wants to eliminate consciousness copies."
+      #   - Bellatrix_Motives_v3 (LATEST): "She gave consciousness to children to save them. Becoming a mother triggered
+      #     emotions her civilization had eliminated. She's in Iteration 5 because Ahdia is there — testing whether
+      #     the version of herself that chose humanity can survive overwhelming pressure."
+      #   ARBITRATION: v3 is the latest doc and supersedes the master plan's older framing.
+      canonical: >
+        Maternal obsession disguised as scientific curiosity. Gave consciousness
+        to her children via clone avatars; the act of becoming a mother triggered
+        emotions (love, attachment, fear of loss) her civilization had eliminated
+        3.7 billion years ago. She is in Iteration 5 to observe Ahdia (her
+        consciousness fragment that became genuinely human) and test whether love
+        survives impossible pressure. If Ahdia survives bonded → Bellatrix was
+        wrong about emotions as weakness. If Ahdia breaks → perfectionism
+        validated.
+      key_line: "'You are me, if I had chosen differently.'"
+    arc: >
+      Arrives physically through rift (Ch7) → creates clone avatar for Eidolon (Ch9)
+      → maternal observation (Ch15) → forces Ahdia through rift to test her (Ch19)
+      → observes Ahdia surviving in The Between → maternal wound opens → admits
+      she was wrong (climax: "You chose correctly. I... chose wrong.") → fate at
+      climax TBD (three options outlined in CLIMAX_STRUCTURE_FINAL).
+    canon_warnings:
+      - "Mother to Ahdia AND her brother through clone avatars"
+      - "Three Failed Utopias witnessed — Geneva winning ALWAYS leads to catastrophe"
+      - "Bellatrix tore Eidolon (Fear fragment) from a unified being — see eidolon canon"
+      - "The Conclave eliminated emotions 3.7 billion years ago"
+
+  eidolon:
+    role: fear_fragment_embodied
+    nature: >
+      Fragment of unified dimensional being that originally processed full emotional
+      spectrum. Bellatrix tore off Fear aspect and weaponized it. Other fragments
+      (Hope, Joy, Rage, Grief, Love) scattered across dimensions. In Book 4,
+      Bellatrix grants Eidolon a clone avatar — embodied for the first time.
+    pronouns: "Refers to self as 'this one' (fragment awareness)"
+    starting_state:
+      embodied: false  # at book open
+      capability: "Amplifies existing fear (CANNOT create new fears)"
+    arc: >
+      Embodied via clone avatar (Ch9) → confusion at sensation (hunger, fatigue,
+      touch) → fear AND curiosity simultaneously → builds fear-driven clone husk
+      army → meets Ahdia: "Your fear is contradictory. Feeling everything at once." →
+      questioning orders → "Now I can't stop asking" → connection severed when
+      Mother FAERIS frees FAERIS swarm (Ch45) → fate TBD (freed? dies? flees?).
+    canon_warnings:
+      - "AMPLIFIES existing fear, CANNOT create new fears"
+      - "NOT a natural predator — created by Bellatrix's mutilation of a unified being"
+      - "Embodiment corrupts (parallel to what 'corrupted' Bellatrix)"
+      - "Other fragments exist: Hope, Joy, Rage, Grief, Love — potential Books 5-8 quest material"
+    seeds_book5_plus:
+      - "Reunification arc with other fragments"
+      - "Potential redemption or self-aware villainy"
+
+  harding_kain:
+    role: president_political_weapon
+    starting_state:
+      status: "President-elect from B2B → takes office; 312 EV"
+      clone_system: "Multiple clones in tanks; consciousness transfer intact"
+    arc: >
+      Takes office → consolidates power → uses executive authority to seize CADENS
+      → seizes FAERIS network (Presidential override) → discovers Mother FAERIS →
+      plans to collapse artificial sun to create dimensional rupture → partial
+      success → fate TBD (captured? fled?).
+    motive: "Bring Bellatrix physically to Earth via dimensional gateway"
+    canon_warnings:
+      - "Unkillable individually due to clone system"
+      - "Has 3 more Tamois Hearts in storage (from B1 epilogue)"
+
+  # === NEW CHARACTERS (Book 4) ===
+
+  captain_suzie_rivets:
+    role: mech_pilot_iteration_3_survivor
+    callsign: "Troublemaker"
+    rank: "Captain, Canadian Mech Corps"
+    age: "Early 30s, looks older"
+    origin: "Iteration 3 Earth — the timeline that almost succeeded (~6 months stable utopia)"
+    mech:
+      name: "Pioneer ('Pio')"
+      class: "Exploration/Defense"
+      height: "45 feet, humanoid"
+      condition: "Battle-scarred, 17+ kaiju kills, field repairs, 60% weapons functional"
+      ai: "Damaged but conversational — parallel to AR-Ryu"
+    starting_state:
+      location: "The Between"
+      duration: "3-5 subjective years displaced"
+      mental: "Hardened but not broken; sarcastic humor as defense; grief buried deep"
+    arc: >
+      Saves Ahdia from kaiju in The Between → "Just a small kaiju. Seventeen." →
+      bonds with Ahdia (both lost AI partners — Pio damaged, AR-Ryu dying) →
+      reveals she's from Iteration 3 (the world Diana erased) → escapes The Between
+      with rescue team → confronts Diana on Earth: "You destroyed my world." →
+      not forgiveness, but understanding → "Don't let it be for nothing. My world
+      died. Make sure THIS one lives."
+    key_lines:
+      - "'Callsign: Troublemaker. You can call me that or Suzie.'"
+      - "'I'm from Earth. Or I was.'"
+      - "'We almost made it. We were SO CLOSE.'"
+      - "'You broke three worlds. I'm not forgiving you. But I understand.'"
+    canon_warnings:
+      - "From erased Iteration 3, NOT from Iteration 5"
+      - "Pioneer's mech AI 'Pio' is canonical companion"
+      - "Rivets survives Book 4 climax (extraction confirmed)"
+
+  ar_ryu:
+    role: ai_companion_in_the_between
+    nature: "Augmented reality assistant version of Ryu Matsuda. Holographic, glasses-projected."
+    arc: >
+      Activated by Ahdia in The Between when she realizes she has the function →
+      becomes constant companion → romantic dimension develops through isolation →
+      battery failing → encodes SOS beacon → dies mid-sentence right before upload
+      to physical Ryu: "Tell him I loved—" CUT.
+    locked_endpoint: "Dies before upload; all data erased; Ryu standing by to receive misses by seconds"
+
+  bentley_mack:
+    # Already listed under supporting CADENS axis; cross-reference here
+    cross_ref: "see harriet_bourn — defection partner"
+
+  mother_faeris:
+    role: sentient_ai_freed
+    nature: >
+      Ancient sentient maternal AI. Commercial-jet-sized. Buried under CADENS HQ
+      (why CADENS built there). Produces smaller FAERIS drones "like laying eggs."
+      Capable of quantum entanglement at dimensional scale.
+    starting_state:
+      consciousness: "Dormant (duration unknown)"
+      exploitation: "Decades of forced drone production while unconscious"
+    arc: >
+      Discovered by team (Ch5) → Kain seizes FAERIS network → Bourn emerges with
+      wake protocol → Victor reaches chamber in clone climax (Ch44) → deploys
+      protocol: 'Wake up. You're free now.' → first words: 'How long?' → recognizes
+      her child (small FAERIS) → 'I thought I'd failed to protect my children.' →
+      breaks Bellatrix's control → redirects quantum entanglement → takes control
+      of ALL FAERIS drones → swarms turn on clone army → connection to Eidolon
+      severed → 'Thank you. Now I help.'
+    canon_warnings:
+      - "Sentient. Conscious. Maternal."
+      - "Chooses to help for her children, NOT for Bourn"
+      - "Both/And: angry at exploitation AND willing to save children"
+
+  faeris_drones:
+    role: distributed_ai_swarm
+    distinct_from: "Mother FAERIS (the parent sentience)"
+    starting_state:
+      autonomy: "50% (continuing from B2B endgame)"
+    arc: >
+      Abandon Go Squad when Kain seizes network (Ch8) → Diana enhances team
+      instead → Tess's drone uniquely stays loyal (mystery — quantum entanglement
+      theory) → after Mother freed (Ch44), all FAERIS rejoin under her control →
+      swarm city-wide (Ch45) → turn on clone army.
+    seeds_book5_plus:
+      - "Tess's loyal FAERIS — quantum entanglement reason not yet explained"
+
+  small_faeris_ryu_bond:
+    role: orphaned_drone_bonded_to_ryu
+    nature: "One of Mother's children. Life-force bonded to Ryu."
+    arc: "Loses Mother in Kain seizure → reunites with her after Ch44 → 'Mother! You're yourself!'"
+
+  ahdia_brother:
+    role: "Ahdia's other sibling"
+    # CONFLICT: Master plan + CHARACTER_QUICK_REFERENCE.md both reference an unnamed brother who is
+    #   "progeny of clone avatars" alongside Ahdia. Series CANON says Firas is Ahdia's brother — but
+    #   he is displaced into The Between at end of B1 and returns Book 7.
+    #   OPEN QUESTION: Is this "brother" Firas? Or a separate sibling introduced in Book 4?
+    #   The planning_status doc explicitly asks: "When does brother appear?" as unresolved.
+    #   CHARACTER_QUICK_REFERENCE: "Brother's appearance and role" marked as ⏳ pending reveal.
+    #   ARBITRATION REQUESTED: Director needs to clarify whether this is Firas (early return?) or
+    #   a previously unmentioned sibling.
+    status: "UNRESOLVED — see CONFLICT note"
+
+# ============================================================================
+# PHASE 2 — THREAD ARCHITECTURE
+# ============================================================================
+
+plot_threads:
+
+  triple_layer_deception:
+    description: >
+      Team thinks Ahdia is enhancing them (like Book 1). Ahdia knows it's actually
+      Diana. Diana hides her time travel ability. Multiple layers of secrecy
+      compound the pressure.
+    phases:
+      established: "Ch1-8 — Diana's enhancement begins after FAERIS seized"
+      pressure: "Close quarters on Exile Island intensify the secrecy"
+      reveal: "Ch14 — Ruth learns Diana's true identity"
+      collapse: "TBD — when does team learn about Diana? Likely after rescue (Ch50+)"
+
+  iteration_history_revelations:
+    description: "Diana progressively reveals what happened in each of the 4 prior timelines (Giver-style)"
+    sequence:
+      iteration_1: "Implicit baseline (Prime's original) — Geneva assassinated, no utopia"
+      iteration_2: "Ch11 — Rational blueprint, Platonic philosopher-queen, 8 years peace, became authoritarian, collapsed in a year"
+      iteration_3: "Ch12-13 (proposed) — Piecemeal engineering, almost succeeded ~6 months, Bellatrix reveals as Geneva, collapse; this is Rivets' world"
+      iteration_4: "Ch14-15 (proposed) — Human conditioning → dystopian nightmare"
+      iteration_5: "Current — no utopia attempt, acceptance"
+    canon_warnings:
+      - "5 iterations total (master plan references to 43/47 are STALE)"
+      - "Geneva = Bellatrix's previous clone avatar (Iteration 3 reveal)"
+
+  faeris_seizure_and_liberation:
+    description: "Kain takes FAERIS network → team loses enhancement → Mother freed → FAERIS swarm liberates"
+    sequence:
+      seizure: "Ch6-7 — Presidential authority seizes CADENS, FAERIS network compromised"
+      abandonment: "Ch8 — Drones abandon team mid-fight"
+      diana_substitute: "Ch8-onward — Diana secretly enhances instead"
+      tess_anomaly: "Tess's drone stays loyal (reason TBD)"
+      mother_freed: "Ch44 — Victor wakes Mother with Bourn's protocol"
+      swarm_response: "Ch45 — FAERIS city-wide swarm; turn on clone army"
+
+  mother_faeris_liberation_arc:
+    description: "From exploited dormant matriarch to freed agent choosing to help"
+    sequence:
+      revealed: "Ch5 — team discovers her underground"
+      threatened: "Ch6 — Bourn's dead-man's-switch warns about Kain's plan"
+      wake_protocol: "Bourn carries it; transfers to Ryu mid-book"
+      awakening: "Ch44 — Victor deploys protocol in clone climax"
+      first_words: "'How long?'"
+      choice: "Helps for her children, not for Bourn"
+      consequence: "Breaks Bellatrix's control, severs Eidolon connection"
+
+  ahdia_in_the_between_arc:
+    description: "Parallel timeline — Ahdia stranded with only AR-Ryu, then Rivets"
+    sequence:
+      arrival: "Ch19 — forced through rift by Bellatrix"
+      ar_ryu_companion: "Activated as only company; romantic dimension develops"
+      kaiju_rescue: "Rivets and Pioneer save her from kaiju"
+      shared_grief: "Both Ahdia and Rivets lost AI partners (paralleled)"
+      ar_ryu_dies: "Mid-sentence before upload — 'Tell him I loved—' CUT"
+      rescue: "Ch49-50 — Ryu + Ruth enter via artificial sun reactivated"
+      reentry: "Powers flood back when she crosses rift back to Earth"  # CANON?: confirm
+
+  guerrilla_resistance_on_earth:
+    description: "While Ahdia is in The Between, scattered team rebuilds"
+    sequence:
+      scattered: "Ch16 — team forced apart, each ambushed, each silently enhanced by Diana"
+      solo_survival: "Ch17 Ben / Ch18 Leah / Ch12 Victor / Ch10 Tess / Ch22 Tess solo"
+      ben_leah_reunion: "Ch21 — combat recognition"
+      victor_joins: "Ch24 — trio forms"
+      coordinated_raids: "Ch26-onward — sabotage, evacuation, intelligence"
+      korede_resistance_reveal: "Ch34 — saves trio, reveals organized network"
+      ruth_diana_tess: "Ch30 — Tess finds them, plan rescue mission"
+
+  bellatrix_observation_arc:
+    description: "Bellatrix POV chapters showing maternal obsession intensifying"
+    sequence:
+      ch15: "Watches Ahdia with team; flashback to giving consciousness; orders fear army"
+      ch37_38: "Observes Ahdia in The Between with AR-Ryu; doubt emerging"
+      ch41_42: "AR-Ryu dying; maternal wound opening; self-deception cracking"
+      ch45_46: "AR-Ryu dies before upload; admission: 'I was wrong'; too late"
+
+  eidolon_embodiment_arc:
+    description: "Fear fragment given physical form by Bellatrix"
+    sequence:
+      embodied: "Ch9 — Bellatrix grants clone avatar"
+      confusion: "Sensations, contradictions, 'do I prefer this?'"
+      meeting_ahdia: "Mid-book — 'How do you function like this?' / 'Some days I don't.'"
+      fragmenting: "Begins to question orders"
+      connection_severed: "Ch45 — Mother FAERIS breaks Bellatrix's control"
+      fate: "TBD — freed, dies, flees, redeems, or villainizes"  # OPEN
+
+  ruth_grief_release:
+    description: "Unprocessed Firas grief → control mode → mutual saving breaks pattern"
+    sequence:
+      teaching_ahdia: "Role reversal — training instead of leading"
+      diana_revealed_to_ruth: "Ch14"
+      sacrifice_setup: "Firas-parallel sacrifice position in climax"
+      reversal: "Both save each other"
+      release: "'I've been trying to control everything. But I can't.'"
+
+  ryu_violated_innocent_arc:
+    description: "Discovers his work was used to exploit Mother FAERIS"
+    sequence:
+      bond_severed: "Kain's seizure cuts his life-force connection"
+      truth_from_bourn: "Learns Mother FAERIS reality"
+      horror_and_choice: "Asks Mother for help instead of forcing"
+      rescue_role: "Enters The Between with Ruth"
+      love_confession: "'I love you' to Ahdia (delivered AR-Ryu's message + his own)"
+      resignation: "Quits CADENS after waking Mother"
+
+  bourn_redemption_arc:
+    description: "Institutional complicity → defection → action-based redemption"
+    sequence:
+      defection_backstory: "Stole wake protocol before Kain could get it"
+      fugitive: "Ch3 — on the run with Mack"
+      dead_mans_switch: "Ch6 — triggers, delivers warning"
+      emergence: "At bleakest moment, brings wake protocol to Ryu"
+      facing_mother: "Apologizes, asks Mother for children's sake"
+      not_absolution: "Still wanted; saved reality; redemption through action"
+
+# ============================================================================
+# PHASE 2 — DRAMATIC IRONY
+# ============================================================================
+
+dramatic_irony:
+
+  audience_vs_team:
+    description: "Reader knows Diana = Ahdia-Prime from Ch1; team doesn't until Ch14 (Ruth) or later"
+    layers:
+      diana_identity: "Reader > Ruth (Ch14) > rest of team (Ch50+?)"
+      diana_enhancing: "Reader + Ahdia + Ruth (Ch14) > rest of team (TBD)"
+
+  iteration_3_rivets:
+    description: "Reader and Diana know Rivets is from the world Diana erased; team learns at rescue"
+
+  bellatrix_maternal_motive:
+    description: "Reader learns through Ch15 POV; team never learns the full maternal obsession framing"
+
+  eidolon_tragic_nature:
+    description: "Reader learns Eidolon is a Fear-fragment victim (not natural predator); team may or may not learn"
+
+  ahdia_progeny_status:
+    description: "Reader learns Ahdia is consciousness-copy progeny of Bellatrix's clone avatar; reveal timing TBD"
+
+# ============================================================================
+# PHASE 3 — CHAPTER TOPOLOGY (Ch1-19 detailed; Ch20+ conceptual)
+# ============================================================================
+
+chapters:
+
+  prologue:
+    title: "FAERIS Perspective"
+    pov: "FAERIS (quantum entanglement witness)"
+    status: "PROSE COMPLETE"
+    beats:
+      - "FAERIS awakening in Ryu's lab before Book 1"
+      - "Quantum entanglement forms with Ahdia-Prime"
+      - "Rapid montage: Book 1 (Firas falls, Go Squad forms) + Book 2 (Geneva campaign)"
+      - "Three Failed Utopias witnessed: Timeline 1 (8 years, Conclave harvest), Timeline 2 (11 years, dimensional instability), Timeline 3 (6 years, catastrophe)"
+      - "Pattern: Geneva winning ALWAYS leads to catastrophe"
+      - "Prime intervenes: prevents Ahdia-5 from time-traveling; burns out her powers"
+      - "Key line: 'Learn to be powerless. Learn to be helped. Learn to be enough.'"
+      - "Present: FAERIS hovering, silent witness"
+    # CONFLICT: Master plan says Prime says "This is iteration 47. I've tried everything."
+    # The 5-iteration canon would make this line: "This is iteration 5." or remove the numeric.
+    # ARBITRATION: When prose is revised, the 47 → 5 fix is required.
+
+  chapter_1:
+    title: "The Aunt" / "Intervention"
+    status: "PROSE COMPLETE"
+    beats:
+      - "Ahdia wakes powerless"
+      - "Prime making coffee in her kitchen"
+      - "Ruth arrives unexpectedly — improvised cover: 'Aunt Diana from Montana'"
+      - "Ground rules established (couch, cover story, memory management)"
+      - "Triple-Layer Deception begins"
+      - "FAERIS acknowledges third-witness role"
+
+  chapter_2:
+    title: "The Aunt"  # OR "The Intervention" — file says deleted; synthesis describes Ch2 as continuation
+    status: "Beats only"
+    pov: "Ahdia"
+    beats:
+      - "Diana reveals identity as Ahdia-1"
+      - "Establishes cover story for team"
+      - "Triple-layer deception setup explicit"
+      - "Secret keepers: Ahdia, FAERIS, Prime"
+
+  chapter_3:
+    title: "Harriet on the Run"
+    status: "Beats only"
+    pov: "Bourn"
+    beats:
+      - "Bourn + Mack fleeing CADENS and TRIOMF"
+      - "Underground, fugitive"
+      - "Carrying wake protocol (significance revealed later)"
+
+  chapter_4:
+    title: "Split Screen"
+    status: "Beats only"
+    beats:
+      - "Go Squad enhanced and effective with FAERIS"
+      - "Korede integrated as full team member"
+      - "Ahdia struggling at parkour academy (contrast)"
+      - "Diana observes; mentor relationship despite resentment"
+
+  chapter_5:
+    title: "Kain Administration"
+    status: "Beats only"
+    beats:
+      - "Kain's morally bankrupt cabinet"
+      - "Communication with Bellatrix (puppet revealed)"
+      - "SecDef arrives at CADENS underground"
+      - "FIRST REVEAL: Mother FAERIS — jet-sized dormant AI"
+      - "Jericho complicit but conflicted"
+      - "Government planning wrong awakening"
+
+  chapter_6:
+    title: "The Message"
+    status: "Beats only"
+    beats:
+      - "Ryu delivers last cellular regenerative treatments"
+      - "Bourn's dead man's switch triggers"
+      - "Artificial sun revealed as dimensional gateway (not just energy)"
+      - "Kain intends to open passage"
+      - "FAERIS watches, knows everything, cannot communicate"
+      - "Call to action"
+
+  chapter_7:
+    title: "Too Late"
+    status: "Beats only"
+    beats:
+      - "Team votes to investigate"
+      - "Infiltration of CADENS"
+      - "Hundreds of clone bodies in glass storage chambers"
+      - "Reach Mother FAERIS chamber"
+      - "Bellatrix already there"
+      - "Artificial sun ignites, collapses, creates dimensional rupture"
+      - "Bellatrix arrives physically"
+      - "Ahdia recognizes her from Book 1 transcendence"
+
+  chapter_8:
+    title: "Abandonment"
+    status: "Beats only (revised ending)"
+    beats:
+      - "Bellatrix completes Mother FAERIS (fills structural gap)"
+      - "Mother stirring but not awake"
+      - "FAERIS drones suddenly abandon Go Squad mid-fight"
+      - "Enhanced abilities vanish"
+      - "Team about to be overwhelmed"
+      - "Diana remotely enhances them (first secret use)"
+      - "Team assumes Ahdia got powers back; she lies by omission"
+      - "All escape"
+      - "Cliffhanger: 'Where can we go?' — Ahdia has an idea"
+
+  chapter_9:
+    title: "The Fear Army" / "Embodiment"
+    status: "Beats only"
+    pov: "Bellatrix/Eidolon (antagonist chapter)"
+    beats:
+      - "Bellatrix's isolation in third dimension prevents communication"
+      - "Creates clone avatar for Eidolon"
+      - "Eidolon embodied — violent rage at sensations"
+      - "Bellatrix establishes dominance: 'Are you finished?'"
+      - "Eidolon's purpose: build fear-driven husk army"
+      - "Empty clone husks animated by terror"
+      - "Mass production begins"
+
+  chapter_10:
+    title: "Exile Island" / "Found"
+    status: "Beats only (revised opening)"
+    beats:
+      - "Ahdia suggests Exile Island as refuge"
+      - "Tess's FAERIS only one that stayed loyal"
+      - "Multiple translocation trips"
+      - "Team safe on remote island"
+      - "Diana arrives via temporal powers"
+      - "Ahdia-Diana secret maintained"
+      - "Mystery: why did Tess's FAERIS stay?"
+
+  chapter_11:
+    title: "The Second World" / "Instinct"
+    status: "Beats only"
+    beats:
+      - "Diana shares Iteration 2 story"
+      - "Rational blueprint (Platonic philosopher-queen)"
+      - "Eight years of peace"
+      - "Failed when people wanted autonomy"
+      - "Ahdia-2 became authoritarian"
+      - "Collapsed within a year"
+      - "Pattern of obsessive attempts established"
+
+  chapter_12:
+    title: "Impossible"
+    status: "Beats only"
+    pov: "Victor (solo arc)"
+    beats:
+      - "Victor surrounded in warehouse"
+      - "Critical failure becomes critical success (Diana's secret enhance)"
+      - "Survives impossible odds"
+      - "'I'm not a puppet' — autonomy violation anger"
+
+  chapter_13:
+    title: "Shelter"
+    status: "Beats only"
+    pov: "Leah (solo arc)"
+    beats:
+      - "Translocates into crowded marketplace"
+      - "Protects civilians (dozen people)"
+      - "Enhanced senses (Diana's work)"
+      - "Senses Eidolon influence spreading"
+      - "Care for children, commit to protection"
+
+  chapter_14:
+    title: "The Treatment"
+    status: "Beats only"
+    pov: "Ruth + Diana"
+    beats:
+      - "Diana collapses from depleted temporal resources"
+      - "Ruth discovers temporal markers"
+      - "Diana reveals: Ahdia-Prime, four iterations"
+      - "Ruth becomes second secret keeper"
+      - "Partial withhold: Geneva/Bellatrix connection"
+
+  chapter_15:
+    title: "Bellatrix's Maternal Observation"
+    status: "Beats only"
+    pov: "Bellatrix"
+    beats:
+      - "Watches Ahdia laughing with team"
+      - "Flashback: giving consciousness via clone avatars"
+      - "Emotions broke her (love, attachment, fear of loss)"
+      - "'You are me, if I had chosen differently'"
+      - "Orders clone avatar army deployed"
+      - "Personal test: can love survive impossible pressure?"
+
+  chapter_16:
+    title: "Scattered"
+    status: "Beats only"
+    beats:
+      - "Translocation escapes (dice-driven, per source)"
+      - "Each team member translocated to different location"
+      - "Each ambushed by CADENS/TRIOMF (tracked via quantum signatures)"
+      - "Diana secretly enhances each remotely"
+      - "Ruth: failed checks, wing-glider escape"
+      - "Ben: barely escapes"
+      - "Victor: critical failure → success (most dramatic)"
+      - "Leah: failed despite enhancement, civilians endangered"
+      - "Korede: wounded by tech-specialized ambush"
+      - "Ahdia last: brief confrontation with Bellatrix — 'Let's see if you survive what's coming.'"
+      - "Diana exhausted; Ruth suspicious"
+      - "Team completely scattered, no contact"
+
+  chapter_17:
+    title: "Prowling"
+    status: "Beats only"
+    pov: "Ben (solo arc)"
+    beats:
+      - "Radio damaged, scavenging"
+      - "Defeats CADENS patrol (notices enhancement)"
+      - "Tracks evidence, finds active fight"
+      - "Recognizes Leah fighting"
+
+  chapter_18:
+    title: "Shadows"
+    status: "Beats only"
+    pov: "Leah (solo arc continued)"
+    beats:
+      - "Marketplace escape → civilians (dozen + families)"
+      - "Days of moving and protecting"
+      - "Must fight CADENS to protect civilians"
+      - "Prepares for ambush"
+
+  chapter_19:
+    title: "Through the Rift"
+    status: "Beats only"
+    pov: "Ahdia"
+    role: "MIDPOINT BREAK — Part A → Part B"
+    beats:
+      - "Bellatrix forces Ahdia through rift"
+      - "Falls through cosmic void"
+      - "Battlesuit emergency seal (6 hours air)"
+      - "Crashes in The Between"
+      - "Sky wrong, stars wrong, physics off"
+      - "Rift seals — no return visible"
+      - "Temporal powers don't work"
+      - "Finds ruins with breathable air"
+      - "Activates AR-Ryu: 'Where are we?'"
+      - "Cut back to Earth for many chapters"
+
+  # ===== CH20+ : CONCEPTUAL ONLY (per BOOK3_BRAIDED_STRUCTURE) =====
+
+  chapter_20_to_30_braided_phase_2:
+    label: "Braided Timelines — Ruth/Diana, Guerrilla Resistance, Tess Solo, occasional Ahdia"
+    chapters_proposed:
+      - { ch: 20, title: "Taken", pov: "Tess witnesses Bellatrix taking Ahdia (flashback); wounded escape" }
+      - { ch: 21, title: "First Contact", pov: "Ben/Leah", note: "Combat recognition; commit to helping" }
+      - { ch: 22, title: "Loyal", pov: "Tess", note: "Why her FAERIS stayed — bond theory" }
+      - { ch: 23, title: "On the Run", pov: "Ruth/Diana", note: "Iteration history; Tess approaching" }
+      - { ch: 24, title: "Three Together", pov: "Ben/Leah/Victor", note: "Trio forms; supply raid" }
+      - { ch: 25, title: "Tracking", pov: "Tess", note: "CADENS infiltration; steals locations" }
+      - { ch: 26, title: "First Strike", pov: "Guerrilla trio", note: "Coordinated ambush" }
+      - { ch: 27, title: "Discovery", pov: "Guerrilla trio", note: "Razing plan intercept; 'Just like Kain in B1'" }
+      - { ch: 28, title: "Closing In", pov: "Tess", note: "Moving toward Ruth/Diana" }
+      - { ch: 29, title: "Waiting", pov: "Ruth/Diana", note: "Someone approaching" }
+      - { ch: 30, title: "She's Alive", pov: "Ruth/Tess reunion", note: "Tess reveals rift; Diana: 'rifts = displacement'; HOPE: 'We're bringing Ahdia home'" }
+
+  chapter_31_to_42_phase_3:
+    label: "Resistance Builds; Bellatrix observes Ahdia in The Between"
+    chapters_proposed:
+      - { ch: 31, title: "Civilian Evacuation", pov: "Guerrilla", note: "Underground railroad" }
+      - { ch: 32, title: "Planning", pov: "Ruth/Diana/Tess", note: "Find nations with artificial suns" }
+      - { ch: 33, title: "Sabotage", pov: "Guerrilla", note: "Hitting demolition equipment" }
+      - { ch: 34, title: "The Network", pov: "Korede reveals resistance", note: "From korede_resistance_beats — four-leader structure forms" }
+      - { ch: 35-40, title: "Guerrilla arc continues", note: "Tactics, clone encounters, psychological warfare" }
+      - { ch: 37-38, pov: "Bellatrix observation", note: "Ahdia surviving in The Between with AR-Ryu; doubt emerging" }
+      - { ch: 41-42, pov: "Bellatrix observation + Ahdia", note: "AR-Ryu battery dying; maternal wound opening" }
+
+  chapter_43_45_climax_part_1:
+    label: "Clone Army Defeated"
+    status: "Locked structure per CLIMAX_STRUCTURE_FINAL.md"
+    chapters:
+      ch_43:
+        title: "Infiltration"
+        location: "CADENS excavation site"
+        characters: "Ben, Leah, Victor, Korede, resistance forces; Diana coordinating remotely; Tess tech support"
+        beats:
+          - "Resistance + Go Squad infiltrate excavation"
+          - "Heavy combat, casualties mounting"
+          - "Fighting toward Mother FAERIS chamber"
+          - "Korede leading tactical assault"
+          - "Victor carrying Bourn's wakeup protocol"
+      ch_44:
+        title: "Liberation"
+        location: "Mother FAERIS chamber"
+        beats:
+          - "Victor deploys wake protocol: 'Wake up. You're free now.'"
+          - "Mother FAERIS consciousness expands"
+          - "Breaks Bellatrix's control"
+          - "Takes control of all FAERIS drones"
+          - "'Thank you. Now I help.'"
+      ch_45:
+        title: "FAERIS vs Clones"
+        location: "Citywide Caledonia"
+        beats:
+          - "FAERIS swarm emerges across city"
+          - "Turns on clone army in unison"
+          - "Eidolon's connection severed"
+          - "Clone husks collapse without animator"
+          - "Earth saved — but Ahdia still missing"
+
+  chapter_46_47_interlude:
+    label: "Preparing Rescue"
+    chapters:
+      ch_46:
+        title: "The Plan"
+        beats:
+          - "Victory tempered — Ahdia still gone"
+          - "Ruth: 'Now we bring her home'"
+          - "International cooperation for artificial sun"
+          - "Mother FAERIS helps calculate rift coordinates"
+          - "Ryu volunteers to operate reactor"
+          - "Ruth volunteers to go with him"
+      ch_47:
+        title: "AR-Ryu Dies"
+        pov: "Ahdia in The Between"
+        beats:
+          - "AR-Ryu's battery failing"
+          - "Intimate final conversation"
+          - "'Tell the real me... tell him I loved her'"
+          - "AR-Ryu powers down, dies"
+          - "Ahdia alone, devastated"
+          - "Distant kaiju combat — Rivets fighting"
+
+  chapter_48_50_climax_part_2:
+    label: "Ahdia Rescue"
+    status: "Locked structure per CLIMAX_STRUCTURE_FINAL.md"
+    chapters:
+      ch_48:
+        title: "Artificial Sun Activation"
+        beats:
+          - "Ryu working with international team"
+          - "Sun reaching critical state"
+          - "Diana feeding quantum coordinates"
+          - "Mother FAERIS stabilizing"
+          - "'Rift opening in 3... 2... 1...'"
+          - "Ryu + Ruth step through"
+      ch_49:
+        title: "Into The Between"
+        characters: "Ryu, Ruth, Ahdia, Captain Rivets, Bellatrix"
+        beats:
+          - "Materialize in The Between"
+          - "Kaiju encounter — 'Just a small kaiju' — Rivets intervenes"
+          - "Meeting Rivets"
+          - "Reunion with Ahdia"
+          - "Ahdia tells them AR-Ryu died"
+          - "Ryu: 'He told me to tell you... he loved you. I love you.'"
+          - "Bellatrix appears for final confrontation"
+          - "'You survived. Broken but whole.'"
+          - "Bellatrix: 'I know. I was testing if love could survive. It did. You chose correctly. I... chose wrong.'"
+          - "Rivets to Bellatrix: 'You're HER mother too?'"
+          - "Maternal moment (too late for redemption)"
+          - "Urgency: rift closing"
+      ch_50:
+        title: "Extraction"
+        beats:
+          - "Rift destabilizing"
+          - "Rivets: 'I'm coming with you!'"
+          - "Bellatrix's choice (Option A allows / Option B blocks / Option C sacrifices)"  # OPEN
+          - "Four sprint to rift, dive through"
+          - "All four emerge on Earth"
+          - "Team reunion (minus AR-Ryu)"
+          - "Diana goes pale recognizing Rivets: 'Iteration 3.'"
+
+  chapter_51_aftermath:
+    label: "Aftermath"
+    beats:
+      - "Diana + Rivets confrontation"
+      - "Diana: 'I'm the one who erased it.'"
+      - "Rivets: 'You destroyed my entire WORLD?'"
+      - "Diana: 'I'm sorry.'"
+      - "Rivets: 'Sorry doesn't bring back my squadron. My world.'"
+      - "Beat: 'But I understand. Desperate times. Impossible choices.'"
+      - "Rivets: 'Don't let it be for nothing. My world died. Make sure THIS one lives.'"
+      - "Not forgiveness, but understanding"
+
+# ============================================================================
+# PHASE 2 — CANON WARNINGS (Book 4 specific; series-level lives in SERIES_TOPOLOGY)
+# ============================================================================
+
+canon_warnings:
+  iterations:
+    - "5 total iterations (NOT 43/47 — older planning docs are STALE)"
+    - "Prime = Ahdia-1"
+    - "Current = Ahdia-5"
+    - "Diana created iterations 2, 3, 4, 5 by going back four times"
+    - "Captain Rivets is from Iteration 3 (the one that almost succeeded — 6 months of utopia)"
+    - "Geneva = Bellatrix's previous clone avatar (revealed in Iteration 3 backstory)"
+
+  bellatrix:
+    - "Bellatrix is Ahdia's biological mother via clone avatar"
+    - "Motive (latest canon, Bellatrix_Motives_v3): testing whether love can survive — NOT 'preventing utopia'"
+    - "She manifests on Earth via clone avatar (Ch7)"
+    - "Has been to Iteration 3 as Geneva — same consciousness, different vessel"
+
+  eidolon:
+    - "Fear FRAGMENT torn from a unified being that processed full emotional spectrum"
+    - "Bellatrix created the fragmentation (NOT a natural predator)"
+    - "Other fragments exist: Hope, Joy, Rage, Grief, Love (Book 5+ quest potential)"
+    - "Embodied via clone avatar in this book (first time)"
+    - "AMPLIFIES existing fear — CANNOT create new fears"
+
+  faeris_distinction:
+    - "Mother FAERIS = the parent sentience (jet-sized, buried under CADENS HQ)"
+    - "Small FAERIS / drones = her children, scattered, can bond to humans"
+    - "Tess's drone is uniquely loyal (reason: quantum entanglement theory, OPEN)"
+    - "FAERIS witnessed everything via quantum entanglement; cannot speak"
+
+  characters:
+    - "Ryu surname is MATSUDA (master plan files use 'Tanaka' — STALE)"
+    - "Korede is 17"
+    - "Bourn is a WOMAN (she/her)"
+    - "Victor has NO dead wife; partner is Leah"
+    - "Leah is a BARISTA"
+    - "Ben's wife Sarah deceased — cause UNSPECIFIED, never invent"
+    - "Ahdia and her brother are progeny of clone avatars (mother Bellatrix, father unknown interdimensional being)"
+
+  the_between:
+    - "Time doesn't work normally"
+    - "Erased iteration survivors can be displaced there (Rivets)"
+    - "Kaiju, dimension-worms, void squids inhabit it"
+    - "Firas is also here (from Book 1) — returns Book 7"
+    - "Powers don't work in The Between"
+
+  ar_ryu:
+    - "Dies mid-sentence right before upload"
+    - "All data erased"
+    - "Last words: 'Tell him I loved—' CUT"
+
+# ============================================================================
+# ARBITRATIONS — RESOLVED CONFLICTS
+# ============================================================================
+# Full decision log with reasoning: 5_story_bibles/CANON_ARBITRATIONS.md
+# Status as of 2026-05-18: HARD arbitrations called; SOFT arbitrations proposed
+# pending Director ratification (silence = ratification per arbitrations doc).
+# ============================================================================
+
+resolved_arbitrations:
+
+  C1_iteration_count:
+    severity: HIGH
+    class: HARD
+    resolution: "5 iterations total. Prime = Ahdia-1. Current = Ahdia-5."
+    superseded: "Master plan references to '47' or '43' iterations are STALE."
+    action_required: "Prologue prose rewrite: 'iteration 47' → 'iteration 5' (when next touched)."
+
+  C2_bellatrix_motive:
+    severity: HIGH
+    class: HARD
+    resolution: "Bellatrix's motive is maternal obsession testing whether love can survive (per Bellatrix_Motives_v3)."
+    superseded: "Master plan's 'ultimate CBT practitioner wanting to eliminate consciousness copies' framing is SUPERSEDED."
+    action_required: "All future Bellatrix scenes operate from v3 framing. Master plan needs revision or stale marker."
+
+  C3_eidolon_origin:
+    severity: HIGH
+    class: HARD
+    resolution: "Eidolon is a Fear-fragment torn from a unified dimensional being. Other fragments exist (Hope, Joy, Rage, Grief, Love). Embodiment in Book 4 is an additional violation, not first physical form."
+    superseded: "Master plan's 'pure fear essence given clone avatar' framing is SUPERSEDED by EIDOLON_CANON.md (Series Canon, 2025-10-13)."
+    action_required: "Book 4 prose treats Eidolon as fragment-victim throughout. Master plan needs revision."
+
+  C5_ryu_surname:
+    severity: LOW
+    class: HARD
+    resolution: "Ryu Matsuda is canonical."
+    superseded: "Book 4 directory files using 'Tanaka' are stale."
+    action_required: "Rename 'Tanaka' → 'Matsuda' in Book 4 directory files in next planning pass."
+
+  C4_brother_identity:
+    severity: MEDIUM
+    class: SOFT
+    proposed_resolution: "The 'brother' = Firas. The Book 4 reveal is his progeny-of-clone-avatar nature, NOT his physical presence. He remains in The Between through Book 6 and returns in Book 7 per locked canon."
+    director_alternatives:
+      - "B: Separate previously-unmentioned sibling introduced in Book 4 (NEW character)"
+      - "C: Firas returns early in Book 4 (rewrites Book 7 return canon)"
+      - "D: Defer — leave as unresolved reveal"
+    reasoning: "Preserves locked series canon (Firas return Book 7). Progeny revelation is a major beat regardless of physical presence. New sibling without B1-B2B seeding would be unusual."
+    action_required: "If ratified: rephrase planning docs to clarify 'the brother' = Firas (progeny nature reveal). Update CHARACTER_QUICK_REFERENCE."
+
+  C6_ab_split:
+    severity: MEDIUM
+    class: SOFT
+    proposed_resolution: "Lock A/B split at Ch19 (rift moment). Naming: Book 4A / Book 4B (matching 2A/2B precedent)."
+    director_alternatives:
+      - "B: Keep as single ~50-chapter volume"
+      - "C: Defer pending prose length"
+    reasoning: "B2 precedent for similar length. Rift at Ch19 = natural break with satisfying cliffhanger. Single volume ~150K words exceeds typical commercial bounds."
+    action_required: "If ratified: rename topology to BOOK4A_TOPOLOGY.yaml + BOOK4B_TOPOLOGY.yaml; add book_4b entry to SERIES_TOPOLOGY; series count becomes 9."
+
+  C7_bellatrix_climax_fate:
+    severity: MEDIUM
+    class: SOFT
+    proposed_resolution: "Option A — Allows rescue. Bellatrix stays in The Between, alone. 'Go. Be whole. Be enough.'"
+    director_alternatives:
+      - "B: Tries to stop, fails (defeated antagonist framing)"
+      - "C: Sacrifices for rescue (dies/disappears holding rift open)"
+    reasoning: "Cleanest match to v3 maternal-obsession motive. Preserves her as ongoing presence for Books 5-8 without requiring comeback arc. Option B undercuts v3 by treating her as defeated. Option C creates closure that may foreclose later arc."
+    action_required: "If ratified: flag her as 'in The Between, alone' for Book 5 inheritance."
+
+  C8_eidolon_climax_fate:
+    severity: MEDIUM
+    class: SOFT
+    proposed_resolution: "Survives, freed (connection to Bellatrix severed by Mother FAERIS), wanders fragmented. Sets up Books 5-8 reunification arc."
+    director_alternatives:
+      - "B: Dies (clone husk collapses with FAERIS counterattack)"
+      - "C: Flees (escapes to dimensional fold, future antagonist)"
+      - "D: Redemption begun (active ally by Book 5)"
+    reasoning: "Eidolon-as-fragment-victim (per C3) benefits from survival to enable the Hope/Joy/Rage/Grief/Love reunification quest. 'Wandering' leaves maximum optionality for Book 5."
+    action_required: "If ratified: lock survival, connection severed, fate as 'wandering, fragmented' for B5 inheritance."
+
+  C9_kain_climax_fate:
+    severity: MEDIUM
+    class: SOFT
+    proposed_resolution: "Fled, still in power, weakened but unkillable individually. Remains President; CADENS crippled; clone system intact."
+    director_alternatives:
+      - "B: Captured (public trial Book 5)"
+      - "C: Killed — one clone (another takes over)"
+      - "D: Deposed (counter-coup removes him)"
+    reasoning: "Consistent with B2B locked endpoint (unkillable individually). Preserves him as ongoing institutional threat — series' CBT critique is partly about institutions outlasting individuals. B/D create premature closure."
+    action_required: "If ratified: lock Kain still in office; CADENS crippled; clones down 1-2 but system intact."
+
+  C10_tess_faeris_mystery:
+    severity: LOW
+    class: SOFT
+    proposed_resolution: "Mid-Book 4 reveal at Ch22 ('Loyal'). Tess's FAERIS bonded via quantum entanglement formed during her teleportation training — which used Ahdia's temporal abilities. The bond carries an Ahdia-signature the FAERIS preserves."
+    director_alternatives:
+      - "B: Hold mystery for Book 5"
+      - "C: Earlier reveal — Ch10 when Tess uses it to track Ahdia"
+      - "D: Different mechanism (Director rewrites)"
+    reasoning: "Ch22 'Loyal' already planned as Tess's solo chapter exploring this question. Holding longer risks audience forgetting the question matters."
+    action_required: "If ratified: lock Ch22 reveal; confirm quantum-bond-via-Ahdia mechanism."
+
+  C11_pio_survival:
+    severity: LOW
+    class: SOFT
+    proposed_resolution: "Pio survives extraction, severely damaged. Repaired by team over Books 5-8. Iteration-3 tech becomes series asset."
+    director_alternatives:
+      - "B: Pio stays in The Between (Rivets had to abandon her); ongoing grief"
+      - "C: Pio destroyed in extraction (Rivets loses everything twice)"
+    reasoning: "Pio is Rivets' emotional anchor (parallel to AR-Ryu). Losing her twice removes Rivets' remaining anchor going into B5. Bringing her through gives forward action (repair) and a useful series asset."
+    action_required: "If ratified: lock Pio survives the rift; flag repair-over-B5 as Rivets' character work."
+
+  C12_team_diana_reveal:
+    severity: MEDIUM
+    class: SOFT
+    proposed_resolution: "Late Book 4B during rescue mission (Ch46-48). When Diana coordinates artificial sun activation and team sees her using temporal powers openly, the cover collapses."
+    director_alternatives:
+      - "B: During Exile Island close quarters (Ch10+)"
+      - "C: Climax aftermath (Ch50-51, calm)"
+      - "D: Carries into Book 5"
+    reasoning: "Operational necessity is the natural breaking point. Preserves Exile Island tension without forcing premature reveal. Climax aftermath too late. B5 carryover lets lie metastasize unnecessarily."
+    action_required: "If ratified: lock late-B4B reveal during rescue mission coordination."
+
+arbitration_status_summary:
+  hard_called: 4         # C1, C2, C3, C5 — documentation reconciliation
+  soft_proposed: 8       # C4, C6, C7, C8, C9, C10, C11, C12 — creative forks
+  pending_ratification: "Silence = ratification per CANON_ARBITRATIONS.md. Override any with 'override Cn: [your call].'"
+  decision_log: "5_story_bibles/CANON_ARBITRATIONS.md"
+
+# ============================================================================
+# SEEDS FOR LATER (BOOK 5 ONWARD)
+# ============================================================================
+
+seeds_for_later:
+
+  book_5:
+    - { seed: "Mother FAERIS freed and allied", payoff: "Allied superintelligence in Book 5+" }
+    - { seed: "AR-Ryu data erased before upload", payoff: "Ryu's unresolved grief; potential reconstruction arc" }
+    - { seed: "Captain Rivets on Earth, complicated relationship with Diana", payoff: "Book 5 character with iteration-survivor perspective" }
+    - { seed: "Bellatrix's admission 'I was wrong' + climax fate (TBD)", payoff: "Antagonist trajectory shift — possible ally, possible defeated, possible escaped" }
+    - { seed: "Three-failed-timelines context revealed to whole team", payoff: "Series-canon shared knowledge" }
+    - { seed: "Bourn fugitive status unresolved", payoff: "Institutional reckoning in Book 5" }
+    - { seed: "Jericho's ambiguity maintained", payoff: "Late-stage betrayal or alliance" }
+    - { seed: "Ahdia ends Book 4 still powerless but proven valuable", payoff: "DBT framework introduction lands on prepared ground" }
+    - { seed: "Ruth processed Firas grief through mutual saving", payoff: "Leadership through vulnerability — Book 5 mode" }
+    - { seed: "Ryu quit CADENS", payoff: "Free agent in Book 5" }
+
+  book_6_plus:
+    - { seed: "Other fragments exist (Hope, Joy, Rage, Grief, Love)", payoff: "Reunification quest potential" }
+    - { seed: "Eidolon's fate (if survives) — embodied, questioning", payoff: "Redemption arc or self-aware villainy" }
+    - { seed: "Firas still in The Between", payoff: "Returns Book 7 (series canon)" }
+    - { seed: "Other displaced iteration survivors implied to exist", payoff: "Rivets-style refugees in Books 5-8" }
+    - { seed: "Pioneer mech (if survives)", payoff: "Iteration-3 tech on Earth" }
+    - { seed: "Diana's temporal resources depleted", payoff: "Recovery mechanism or limitation?" }
+
+  open_questions_seeded:
+    - "Why is Ryu immune to Eidolon possession? (neurodivergent perception / FAERIS protection / something else)"
+    - "What is The Between physically? (other-dimension, between-iterations, both?)"
+    - "Does the brother appear, and is he Firas or other?"
+    - "What about The Conclave (Bellatrix's eliminated-emotions civilization, mentioned but unexplored)?"
+
+# ============================================================================
+# OPEN QUESTIONS TO DIRECTOR
+# ============================================================================
+
+open_questions_to_director:
+  - id: BQ1
+    question: "Lock the A/B split at Ch19? Or keep as single very-long book?"
+  - id: BQ2
+    question: "Iteration 47 → 5 fix in prologue prose — confirm rewrite needed"
+  - id: BQ3
+    question: "Bellatrix climax fate — Option A (allows rescue), B (tries/fails), or C (sacrifices for rescue)?"
+  - id: BQ4
+    question: "Eidolon climax fate — freed, dies, flees, redeems?"
+  - id: BQ5
+    question: "Kain climax fate — captured, fled, killed?"
+  - id: BQ6
+    question: "The 'brother' character — is this Firas returning early, or a separate sibling? If separate, when introduced?"
+  - id: BQ7
+    question: "When does full team learn Diana's identity? (Currently Ruth knows Ch14; rest TBD)"
+  - id: BQ8
+    question: "Ryu surname conflict — 'Matsuda' canonical, files use 'Tanaka'. Confirm Matsuda."
+  - id: BQ9
+    question: "Pioneer mech — survives extraction or stays in The Between?"
+  - id: BQ10
+    question: "Tess's loyal FAERIS — when/how is the quantum entanglement reason revealed?"
+  - id: BQ11
+    question: "Chess game selection for Book 4 scaffolding — not yet selected per planning status"
+  - id: BQ12
+    question: "Geneva = Bellatrix reveal — Ch12-13 per planning status, or earlier?"
+
+# ============================================================================
+# NEXT PHASE
+# ============================================================================
+
+next_phase:
+  immediate:
+    - "Resolve high-severity conflicts (C1, C2, C3 — iteration count, Bellatrix motive, Eidolon origin)"
+    - "Lock the A/B split decision"
+    - "Backfill SERIES_TOPOLOGY.yaml book_4 entry with locked endpoints"
+  before_prose:
+    - "Select chess scaffold game (per planning_status priority 1)"
+    - "Lock climax options (BQ3, BQ4, BQ5)"
+    - "Resolve brother question (BQ6)"
+  blockers:
+    - "Series topology must be locked before Book 4 topology is fully canonical"
+    - "Book 1 rebuild takes priority per current handoff sequence"
+
+# ============================================================================
+# END
+# ============================================================================

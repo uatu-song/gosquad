@@ -74,13 +74,31 @@ This is a different design problem than Remanence faced:
 
 The triplet-as-cognitive-architecture approach works for both — but for existing characters, the triplet must be **derived from** the author's prose, not invented fresh. The author's early Go Squad chapters (pre-AI) are the source material for what each character's narrator voice actually sounds like before the AI gets involved.
 
-## Remediation Sequence
+## Sequence — Superseded by Rebuild Pivot
 
-1. **Wait for beta reader 2** (Book 1). Beta reader 1 flagged "first draft" feel but praised emotional beats, trope subversion, and action clarity. Unbiased second read provides tolerance data.
-2. **Combine beta feedback + audit data** → build remediation protocol. What readers catch tells you what matters. What they don't catch tells you about tolerance.
-3. **Build embodiment instructions per character** from combined picture — derived from the author's original prose + the audit's negative-space data (what *doesn't* work).
-4. **Revision pass on Book 1** using the embodiment instructions.
-5. **Book 2B prose generation** uses embodiment instructions from the start — never develops the disease.
+> **Update 2026-05-19:** The original sequence below was written for a *remediation* path (revise existing Book 1 prose, tuned to what readers tolerate). The Director pivoted to a *rebuild* (regenerate prose under different constraints — studs + chess + triplets + embodiment). The rebuild path does not preserve the existing prose, so the "wait for beta reader 2" gate no longer applies the same way. Beta reader 2's read, when/if it arrives, becomes a **post-rebuild validation signal** rather than a prerequisite for generation. The current sequence is captured in `6_manuscript/book_1/BOOK1_REBUILD_STUDS.md` (7-step method).
+
+### What changed
+
+- **What the rebuild needs from beta feedback:** post-hoc validation (does the rebuilt prose land differently? did it preserve what worked?). Not tuning input.
+- **Tolerance data is moot for the rebuild path:** the AI defaults (em-dashes, fragments, "the particular") aren't being preserved and tuned — they're being *prevented* by the triplet-as-cognitive-architecture mechanism.
+- **Beta reader 1's positive signals are already in hand:** emotional beats, trope subversion (protagonist fakeout specifically), action clarity. The rebuild's job is to preserve these, not rediscover them.
+
+### Original sequence (preserved for context)
+
+1. **~~Wait for beta reader 2~~ (Book 1).** Beta reader 1 flagged "first draft" feel but praised emotional beats, trope subversion, and action clarity. Unbiased second read was to provide tolerance data. **Reframed: post-rebuild validation, not prerequisite.**
+2. **~~Combine beta feedback + audit data~~ → build remediation protocol.** What readers catch tells you what matters. What they don't catch tells you about tolerance. **Moot for rebuild path.**
+3. **Build embodiment instructions per character** from author's original (pre-AI) prose + audit's negative-space data + character profiles. Beta reader 2's eventual feedback can refine.
+4. **~~Revision pass on Book 1~~.** **Replaced by rebuild from studs.**
+5. **Book 2B prose generation** uses embodiment instructions from the start — never develops the disease. *(Still applies; awaits Book 1 method validation.)*
+
+### Current rebuild sequence (canonical)
+
+See `6_manuscript/book_1/BOOK1_REBUILD_STUDS.md`:
+
+1. Series topology → 2. Move mapping (136 moves, anchor 8 studs) → 3. Triplet assignments per character → 4. Embodiment instructions (reverse-engineered from author's pre-AI chapters) → 5. Steward runs → 6. Evaluation + blocking → 7. Prose generation with embodiment active from word one.
+
+Beta reader 2's feedback, when it lands, integrates as: (a) validation against the *first version* (does the rebuild fix what she flagged?), (b) standalone assessment of the *rebuild* (does the new prose work?).
 
 ## Audit Data (Summary)
 

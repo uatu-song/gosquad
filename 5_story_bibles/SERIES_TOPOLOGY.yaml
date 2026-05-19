@@ -1,0 +1,994 @@
+# ============================================================================
+# SERIES TOPOLOGY — Auerbach Series (Go Squad), 8 books
+# J. S. Vaughn
+# ============================================================================
+# This file is the ceiling. It does NOT duplicate per-book topology content —
+# it aggregates the cross-book spine: what each book owes upstream and
+# downstream, character arcs across all 8 books, series-spanning threads,
+# seed-to-payoff chains, the CBT→DBT thematic engine, locked endpoints, and
+# series-level canon warnings that survive any single-book rewrite.
+#
+# STATUS: FIRST-PASS DRAFT (2026-05-18)
+# Marked `# TODO:` for items needing Director confirmation.
+# Marked `# QUESTION:` for genuine forks requiring Director decision.
+# Marked `# CANON?:` where I'm uncertain whether a fact is locked or proposed.
+#
+# PURPOSE: Establish what Book 1 (rebuild) must deliver for Books 2A through 8
+# before move-mapping or steward runs begin. Per the handoff (2026-04-03), this
+# is step 1 of the 8-step Book 1 rebuild sequence.
+#
+# ARBITRATIONS LOG: 5_story_bibles/CANON_ARBITRATIONS.md
+# (Latest: 2026-05-18 — 12 Book 4 conflicts arbitrated; HARD calls locked,
+#  SOFT calls proposed pending Director ratification.)
+# ============================================================================
+
+meta:
+  series: "Auerbach Series"
+  also_known_as: "Go Squad"
+  author: "J. S. Vaughn"
+  book_count: 8
+  numbering_note: >
+    Original 7-book series became 8 when Book 2 split into 2A/2B due to 120K+
+    word count. Within this file, books are keyed by their canonical names
+    (book_1, book_2a, book_2b, book_4, book_5, book_6, book_7, book_8) — note
+    that there is no `book_3` key; new Book 3 is referred to as 2B everywhere
+    in the repo. Directory names are legacy (`book_2b/` = new Book 3, dir
+    `book_3/` = new Book 4). See CLAUDE.md renumbering table.
+
+  core_thesis: "You don't have to be fixed to be worthy."
+
+  thematic_engine:
+    name: "CBT → DBT"
+    description: >
+      The series follows a psychological progression. Early books (1, 2A, 2B,
+      4) prove the Cognitive Behavioral Therapy approach — try harder, think
+      correctly, evidence the truth — fails against a world that doesn't
+      respond to reason. Book 5 is the turning point where Dialectical
+      Behavioral Therapy is introduced (both/and thinking, radical acceptance,
+      worth without being fixed). Books 6-8 show DBT succeeding.
+    phases:
+      cbt_failing:
+        books: ["book_1", "book_2a", "book_2b", "book_4"]
+        proves: >
+          Effort doesn't fix it. Truth doesn't fix it. Heroism doesn't fix it.
+          Sacrifice doesn't fix it. Confidence doesn't fix it. The harder Ahdia
+          tries to control / fix / save / outsmart, the more she burns.
+      turning_point:
+        books: ["book_5"]
+        proves: >
+          # TODO: confirm Book 5's specific turning-point mechanism. The handoff
+          # says "turning point (stalemate, DBT)" — proposed: Ahdia stops trying
+          # to win and learns to accept what is.
+      dbt_succeeding:
+        books: ["book_6", "book_7", "book_8"]
+        proves: >
+          # TODO: confirm. Per CLAUDE.md these are "DBT approach succeeding" but
+          # no per-book content has been documented yet.
+
+  structural_acts:
+    act_1_isolation:
+      books: ["book_1"]
+      label: "Avoidance → Forced action"
+    act_2_sacrifice:
+      books: ["book_2a", "book_2b"]
+      label: "Sacrifice → Vulnerability → Defeat"
+    act_3_collapse:
+      books: ["book_4"]
+      label: "Confidence → Incomprehensible challenge → Psychological collapse"
+    act_4_acceptance:
+      books: ["book_5"]
+      label: "Turning point — stalemate, DBT"
+    act_5_resolution:
+      books: ["book_6", "book_7", "book_8"]
+      label: "DBT succeeding — worthiness without being fixed"
+
+  series_endpoint:
+    # TODO: locked? The handoff doesn't state a series-level endpoint.
+    # Proposed: Ahdia alive, unfixed, accepted, with chosen family. Firas
+    # returned. Bellatrix arc resolved. Series resolves to: "worthiness
+    # without being fixed" lived, not theorized.
+    status: PROPOSED
+
+# ============================================================================
+# BOOKS — STATUS AND CROSS-BOOK OBLIGATIONS
+# ============================================================================
+# Each book entry is a TICKET listing only series-relevant data: status,
+# emotional arc, locked endpoints, what it owes upstream, what it owes
+# downstream. Per-book detail lives in the book's own topology file.
+# ============================================================================
+
+books:
+
+  book_1:
+    title: "Go Squad"
+    new_number: 1
+    status: "COMPLETE — published, awaiting rebuild from studs"
+    word_count: 74049
+    chapter_count: 30
+    topology_file: "5_story_bibles/book_1/BOOK1_TOPOLOGY.yaml"
+    rebuild_decision: "2026-04-03 — rebuild from 8 studs, not retrofit"
+    rebuild_studs_file: "6_manuscript/book_1/BOOK1_REBUILD_STUDS.md"
+    chess_scaffold: "Carlsen vs Nepomniachtchi, WCC 2021 Game 6 (136 moves, 1-0)"
+    emotional_arc: "Avoidance → Forced action"
+    thematic_focus: "Finding worth beyond usefulness; chosen family over isolation"
+    core_question: "Why save someone who doesn't want to be saved?"
+    owes_upstream: null
+    owes_downstream:
+      - { to: "book_2a", deliverable: "Ahdia at ~30% baseline, 18-24 months to live with CR-7" }
+      - { to: "book_2a", deliverable: "Firas displaced (NOT dead), no body, anchor removed" }
+      - { to: "book_2a", deliverable: "Ahdia/Ruth co-conspirator pact about the lie of team's 'powers'" }
+      - { to: "book_2a", deliverable: "Ruth recruited by CADENS, field leader role" }
+      - { to: "book_2a", deliverable: "Kain alive via clone system, planning political rise" }
+      - { to: "book_2a", deliverable: "FAERIS drones at ~10% independent effectiveness" }
+      - { to: "book_2a", deliverable: "Team knows Ahdia has powers; does NOT know she's dying" }
+      - { to: "book_2a", deliverable: "Chief Whitford complicity established (seed for Tess B2A)" }
+      - { to: "book_2a", deliverable: "Isaiah Bennett cover-up established" }
+      - { to: "book_2b", deliverable: "Bellatrix as off-page orchestrator (mystery woman Ch17)" }
+      - { to: "book_4", deliverable: "Hallway with infinite doors seed (becomes 'The Between')" }
+      - { to: "book_4", deliverable: "Mother FAERIS exploitation established (Bourn knows, doesn't know TRIOMF infiltration)" }
+      - { to: "book_4", deliverable: "Bellatrix recognized Ahdia during transcendence (Ch29)" }
+      - { to: "book_4", deliverable: "AR-Ryu developing awareness — seeds tragedy" }
+      - { to: "book_7", deliverable: "Firas displacement → return Book 7" }
+      - { to: "series", deliverable: "Tamois Hearts (3 remaining in storage) — Kain's continued threat" }
+    locked_endpoints:
+      - "Firas displaced into singularity (NOT conventionally dead)"
+      - "Ahdia revealed as source of others' enhanced abilities (the lie of the team's 'powers')"
+      - "Police ambush / institutional power as threat (seeds series antagonism)"
+      - "Ahdia discovers bidirectional time manipulation (enables CR-7 self-administration)"
+      - "8 canonical studs from BOOK1_REBUILD_STUDS.md"
+    canon_warnings_local:
+      - "Victor has NO dead wife (partner is Leah)"
+      - "Bourn is SHE/HER (woman)"
+      - "Ben's wife Sarah — cause of death UNSPECIFIED (never invent)"
+
+  book_2a:
+    title: "Go Squad: Book 2"
+    new_number: 2
+    alt_name: "Book 2 (first half)"
+    status: "FIRST-VERSION COMPLETE — 19 chapters prose-final, awaiting rebuild after Book 1 proves embodiment method"
+    word_count: 63874
+    chapter_count_first_version: 19
+    chapter_count_rebuild_target: "~25 (Ch1→4, Ch2→4, Ch15→2 already done, Ch18→2; see BOOK2A_TOPOLOGY chapter_length_targets)"
+    topology_file: "5_story_bibles/book_2/BOOK2A_TOPOLOGY.yaml"
+    chess_scaffold: "TBD"  # CANON?: existed in some form for prose draft; not documented in topology
+    emotional_arc: "Sacrifice everything → Win through vulnerability"
+    thematic_focus: "CBT continuing to fail — truth insufficient against fear"
+    timeline: "12 months (January → November Election Night)"
+    core_question: "Why didn't you save her?"  # The unstated undercurrent
+    educational_layer:
+      goal: "Ahdia as layperson stand-in to explain complex science"
+      concepts: ["Kardashev Scale", "Social comparison psychology", "Great Filter (psychological)"]
+    owes_upstream:
+      - "Book 1 ending state (see book_1.owes_downstream)"
+    owes_downstream:
+      - { to: "book_2b", deliverable: "Ahdia at 53.1% baseline entering Sunday confrontation" }
+      - { to: "book_2b", deliverable: "Ruth has just discovered Exile Island (Ch19 end)" }
+      - { to: "book_2b", deliverable: "Team does NOT yet know about Exile Island" }
+      - { to: "book_2b", deliverable: "Kain campaign mature, election ~2-3 months out" }
+      - { to: "book_2b", deliverable: "Eidolon present as fear catalyst in background news" }
+      - { to: "book_2b", deliverable: "FAERIS drone independence escalating (seeds autonomy)" }
+      - { to: "book_2b", deliverable: "Ben's evidence airtight, faith intact (sets up M16/M18/M25 collapse)" }
+      - { to: "book_2b", deliverable: "Tess investigating Chief Whitford" }
+      - { to: "book_2b", deliverable: "Korede/Leta as targeted pair (seeds Leta's death Ch23/M27)" }
+      - { to: "book_4", deliverable: "Bellatrix's orchestration partially visible to reader, not to characters" }
+    locked_endpoints:
+      - "Ahdia at 0.7% baseline at Ch24"
+      - "Ruth discovers Exile Island END of book"
+      - "Team does NOT know until Book 2B"
+      - "NO internal Ahdia scenes showing secret ops — POV withheld"
+      - "Reader fooled alongside team"
+    canon_warnings_local:
+      - "Dictator count: 28 in prose, 37 in planning — UNRESOLVED (see editorial issue #1 in B2B)"
+      - "Ryu NEVER confesses love to Ahdia in Book 2"
+      - "Tess does NOT kill Webb (brutalizes, leaves alive)"
+      - "Leah is a BARISTA (not investigator)"
+
+  book_2b:
+    title: "Go Squad: Book 2B"
+    new_number: 3
+    alt_name: "Book 2 (second half)"
+    status: "PLANNING — Steward Run 1 complete (75-80% usable); 5-agent evaluation pending"
+    topology_file: "5_story_bibles/book_2b/BOOK2B_TOPOLOGY.yaml"
+    chess_scaffold: "jcksng vs jssong3, Scandinavian Defense (28 moves, 0-1, Qe3#)"
+    emotional_arc: "Evidence vs fear → Fear wins → 'We saved the world and lost our country'"
+    thematic_focus: "CBT definitively fails. Truth necessary but insufficient. Individual heroics create vulnerabilities."
+    timeline: "Sunday after Book 2A Ch19 → Election Night (~2-3 months)"
+    structural_phases:
+      opening:   { moves: "M1-M8",   label: "Sunday confrontation → team fractures" }
+      middlegame:{ moves: "M9-M18",  label: "Overreach → evidence inverted" }
+      crisis:    { moves: "M19-M24", label: "Rook rampage → Eidolon cracks" }
+      endgame:   { moves: "M25-M28", label: "Election Night → Checkmate (Qe3#)" }
+    convergence_points: ["M9", "M13", "M25"]
+    owes_upstream:
+      - "Book 2A ending state (see book_2a.owes_downstream)"
+    owes_downstream:
+      - { to: "book_4", deliverable: "Ahdia at 0.7% baseline; next activation = death" }
+      - { to: "book_4", deliverable: "Prime (Ahdia-1) revealed: 'We need to talk about the other three timelines'" }
+      - { to: "book_4", deliverable: "Kain is President-elect (312 EV); clone system intact; unkillable individually" }
+      - { to: "book_4", deliverable: "Go Squad labeled terrorists" }
+      - { to: "book_4", deliverable: "Eidolon's grief crack at M24 — seeds tragic-victim arc" }
+      - { to: "book_4", deliverable: "Leta dead; Korede radicalized" }
+      - { to: "book_4", deliverable: "FAERIS achieves autonomy, pushes Exile Island broadcast" }
+      - { to: "book_4", deliverable: "Bellatrix won (Qe3#) — no longer hidden" }
+    locked_endpoints:
+      # From BOOK2B_TOPOLOGY.yaml meta.locked_endpoints
+      - "Kain wins presidency (312 EV; opponent +2.5% popular vote)"
+      - "Ahdia drops to 0.7% (next activation = death)"
+      - "Prime reveals herself as Ahdia-1"
+      - "Go Squad labeled terrorists"
+      - "Bellatrix wins (Qe3#)"
+      - "Leta dies (killed by Webb during manhunt)"
+      - "Coup prevented (28 quantum nodes offline) but Kain won anyway"
+      - "FAERIS achieves autonomy, pushes Exile Island broadcast independently"
+      - "'We saved the world and lost our country'"
+    canon_warnings_local:
+      - "Korede is 17 (NOT 15)"
+      - "Eidolon AMPLIFIES fear (cannot CREATE new fears)"
+      - "Bellatrix has four dead Genevas across timelines; current Ahdia = Ahdia-5"
+      - "28 vs 37 dictator count discrepancy — UNRESOLVED"
+    editorial_issues_pending: 12  # See SESSION_LOG_2026-03-10_run1.md
+
+  book_4:
+    title: "Go Squad: Book 4"
+    new_number: 4
+    alt_name: "old Book 3"
+    directory: "5_story_bibles/book_3/"
+    status: "PRE-PRODUCTION — prologue + Ch1 prose; Ch2-19 beats; Ch20-51 conceptual"
+    topology_file: "5_story_bibles/book_3/BOOK4_TOPOLOGY.yaml"
+    master_plan_file: "5_story_bibles/book_3/BOOK3_MASTER_PLAN.md"
+    chess_scaffold: "TBD — not yet selected (per planning_status priority 1)"
+    emotional_arc: "Confidence → Incomprehensible challenge → Psychological collapse → Redemption"
+    thematic_focus: "CBT collapses entirely. Confidence proves insufficient against an enemy that doesn't play by reason's rules."
+    central_premise: >
+      Ahdia-5 is powerless (Prime burned out her temporal abilities). Must survive
+      Bellatrix's war — clone avatar armies + embodied Eidolon — while learning to
+      be "enough" without powers. Prime poses as "Aunt Diana" and secretly enhances
+      the team (Triple-Layer Deception).
+    structural_split:
+      proposed: true
+      split_point: "Ch19 — Ahdia forced through the rift into The Between"
+      part_a:
+        chapters: "Prologue + Ch1-19"
+        arc: "Confidence → discovery → rift (overwhelming setback)"
+      part_b:
+        chapters: "Ch20-51 (proposed)"
+        arc: "Scattered survival → guerrilla resistance → rescue mission → two-part climax"
+      compression_needed: "Act 1 needs compression so rift lands at true midpoint"
+    owes_upstream:
+      - "Book 2B ending state (see book_2b.owes_downstream)"
+    owes_downstream:
+      - { to: "book_5", deliverable: "Mother FAERIS freed and allied (chose to help for her children)" }
+      - { to: "book_5", deliverable: "Ahdia rescued from The Between, still powerless but proven valuable" }
+      - { to: "book_5", deliverable: "Captain Suzie Rivets on Earth (Iteration 3 survivor, mech pilot)" }
+      - { to: "book_5", deliverable: "AR-Ryu dead, data erased before upload — Ryu's unresolved grief" }
+      - { to: "book_5", deliverable: "Ryu confessed love to Ahdia; quit CADENS" }
+      - { to: "book_5", deliverable: "Ruth processed Firas grief through mutual saving (breaks sacrifice pattern)" }
+      - { to: "book_5", deliverable: "Bellatrix admitted 'I was wrong' — fate TBD (allows/blocks/sacrifices)" }
+      - { to: "book_5", deliverable: "Eidolon connection severed in clone climax — fate TBD" }
+      - { to: "book_5", deliverable: "Kain partial success — fate TBD (captured/fled)" }
+      - { to: "book_5", deliverable: "Korede's resistance network established (organized, cell-based)" }
+      - { to: "book_5", deliverable: "Bourn confessed and freed Mother — still fugitive but redeemed through action" }
+      - { to: "book_5", deliverable: "Jericho's ambiguity maintained — potential ally/betrayer" }
+      - { to: "book_5", deliverable: "Diana's temporal resources depleted — recovery mechanism open" }
+      - { to: "book_5", deliverable: "Whole team eventually learns Diana's identity (timing TBD)" }
+      - { to: "book_5", deliverable: "Three failed timelines context revealed (5 iterations now shared canon)" }
+      - { to: "book_6_plus", deliverable: "Other emotional fragments (Hope, Joy, Rage, Grief, Love) exist — reunification arc potential" }
+      - { to: "book_7", deliverable: "Firas still in The Between (Book 7 return canon preserved)" }
+    locked_endpoints:
+      - "Prime = Ahdia-1; current Ahdia = Ahdia-5; 5 total iterations (NOT 43/47 from early planning)"
+      - "Mother FAERIS revealed as sentient AI buried under CADENS HQ, exploited for decades, then freed"
+      - "Eidolon = Fear fragment torn from unified being by Bellatrix (NOT natural predator); embodied via clone avatar in this book"
+      - "Two-part sequential climax: clone army defeated (Mother FAERIS freed) → Ahdia rescued from The Between"
+      - "Captain Suzie Rivets ('Troublemaker'): mech pilot from erased Iteration 3, found in The Between"
+      - "Pioneer ('Pio'): 45-ft mech, damaged AI companion to Rivets"
+      - "AR-Ryu dies mid-sentence right before upload: 'Tell him I loved—'"
+      - "Bellatrix's maternal-obsession motive (per Bellatrix_Motives_v3) — NOT the older 'eliminate consciousness copies' framing"
+      - "Geneva (from Book 2) was Bellatrix's previous clone avatar"
+      - "Other emotional fragments exist: Hope, Joy, Rage, Grief, Love (potential Books 5-8 quest)"
+      - "Ryu surname canonical: MATSUDA (not Tanaka — older docs are stale)"
+    canon_warnings_local:
+      - "5 iterations total (older docs reference 43/47 — STALE)"
+      - "Bellatrix's motive per Bellatrix_Motives_v3 supersedes older master plan framing"
+      - "Eidolon canon per EIDOLON_CANON.md (Series Canon)"
+      - "Climax structure per CLIMAX_STRUCTURE_FINAL.md (two-part sequential)"
+      - "Ahdia and her 'brother' are progeny of clone avatars — brother identity UNRESOLVED (Firas returning early? separate sibling?)"
+    new_characters_introduced:
+      - "Captain Suzie 'Troublemaker' Rivets (Iteration 3 survivor)"
+      - "Pioneer ('Pio') — Rivets' mech with damaged AI"
+      - "AR-Ryu (companion in The Between, dies before upload)"
+      - "Mother FAERIS (revealed, named, freed)"
+      - "Embodied Eidolon (clone avatar form, first time physical)"
+
+  book_5:
+    title: TBD
+    new_number: 5
+    alt_name: "old Book 4 — turning point"
+    status: "NOT YET PLANNED"
+    emotional_arc: "Turning point — stalemate, DBT introduction"
+    thematic_focus: "CBT collapse complete. Ahdia stops trying to win. Radical acceptance enters."
+    # TODO: everything below this line is inferred from CLAUDE.md / development plan,
+    # not from any planning document. Director must confirm or replace.
+    proposed_central_premise: >
+      Following Book 4's collapse, Ahdia stops trying to fix / control / save.
+      Encounters DBT framework (both/and thinking, radical acceptance). The book's
+      structural shape: stalemate, not victory or defeat.
+    owes_upstream:
+      - "Book 4 ending state (TBD)"
+    owes_downstream:
+      - { to: "book_6", deliverable: "DBT framework established as functional approach" }
+      - { to: "book_6", deliverable: "Ahdia state after radical acceptance — TBD" }
+    locked_endpoints: []  # TODO: NONE DOCUMENTED
+    canon_warnings_local: []
+
+  book_6:
+    title: TBD
+    new_number: 6
+    alt_name: "old Book 5"
+    status: "NOT YET PLANNED"
+    emotional_arc: "DBT succeeding (1 of 3)"
+    thematic_focus: TBD
+    owes_upstream:
+      - "Book 5 ending state (TBD)"
+    owes_downstream: []  # TODO
+    locked_endpoints: []  # TODO
+    canon_warnings_local: []
+
+  book_7:
+    title: TBD
+    new_number: 7
+    alt_name: "old Book 6"
+    status: "NOT YET PLANNED"
+    emotional_arc: "DBT succeeding (2 of 3)"
+    thematic_focus: TBD
+    owes_upstream:
+      - "Book 6 ending state (TBD)"
+    owes_downstream: []  # TODO
+    locked_endpoints:
+      - "Firas returns"  # Per Book 1 topology seeds_for_later
+    canon_warnings_local: []
+
+  book_8:
+    title: TBD
+    new_number: 8
+    alt_name: "old Book 7 — series finale"
+    status: "NOT YET PLANNED"
+    emotional_arc: "DBT succeeding (3 of 3) — series resolution"
+    thematic_focus: "Worthiness without being fixed — lived, not theorized"
+    owes_upstream:
+      - "Book 7 ending state (TBD)"
+    owes_downstream: null
+    locked_endpoints: []  # TODO: series-level endpoint goes here once Director locks it
+    canon_warnings_local: []
+
+# ============================================================================
+# CROSS-BOOK CHARACTER ARCS
+# ============================================================================
+# Per-book detail lives in each book's topology / character profile.
+# This section captures only the cross-book trajectory and the locked canon
+# that must survive any single-book rewrite.
+# ============================================================================
+
+series_character_arcs:
+
+  ahdia_bacchus:
+    role: protagonist
+    series_arc: >
+      Isolation → reluctant hero → secret benevolent dictator → fridged-then-revealed →
+      powerless reset → psychological collapse → radical acceptance → DBT life
+    iteration: "Ahdia-5 (current). Prime = Ahdia-1. 5 total iterations."
+    per_book_state:
+      book_1: "21yo depressed recluse → 30% baseline / 18-24 months to live with CR-7. Tactical support role. Grieving Firas."
+      book_2a: "Public depression / secret Exile Island operation. Burns 73% → 0.7% over 12 months. POV WITHHELD."
+      book_2b: "Exposed (Sunday confrontation). Tries to stop, can't stop, burns to nothing. Prime appears at end. POV RESTORED."
+      book_4: "POWERLESS (Prime burned out abilities). Triple-Layer Deception with Diana/Prime. Confidence → collapse → forced into The Between."
+      book_5: "Recovered. Stops trying to win. Encounters DBT."
+      book_6: "TBD"
+      book_7: "TBD — Firas returns this book"
+      book_8: "TBD — series endpoint"
+    locked_canon:
+      - "Powers: temporal manipulation (freeze, slow, accelerate, bubbles)"
+      - "Source: Hyper Seed (4D cosmic object, bonded Ch7 of Book 1)"
+      - "Cost: cellular degradation per use; baseline tracks integrity %"
+      - "Powers burned out by Prime before Book 4"
+      - "5th iteration; not 43, not 47"
+      - "Doesn't have to be fixed to be worthy — the series core thesis lived in her arc"
+
+  firas_bacchus:
+    role: "Ahdia's brother, Go Squad co-founder"
+    series_arc: "Protector → wounded → sacrifices himself → displaced → returns"
+    per_book_state:
+      book_1: "Crime-fighting parkour brother → channels temporal forces → pulled into singularity"
+      book_2a: "Absent (presumed dead). Anchor removed. Ruth grieving him as boyfriend (was planning to propose)."
+      book_2b: "Absent."
+      book_4: "Absent."
+      book_5: "Absent."
+      book_6: "Absent."
+      book_7: "RETURNS"
+      book_8: "TBD"
+    locked_canon:
+      - "DISPLACED into dimensional space (NOT conventionally dead)"
+      - "Returns Book 7"
+      - "Last words: 'Oh hey. I knew you were in there somewhere.'"
+      - "Was Ruth's boyfriend (planning to propose) — not just Ahdia's brother"
+
+  ruth_carter:
+    role: "Field leader, medic, Ahdia's best friend"
+    codename: "Nightingale"
+    series_arc: "Team medic → discovers truth → co-conspirator → field leader → boundary-setter → caretaker limits"
+    per_book_state:
+      book_1: "Discovers Ahdia's powers Ch19. Develops CR-7 Temporal Variant. Recruited by CADENS."
+      book_2a: "Months 1-3 supports / Months 4-6 suspicion / Month 6 confronts Ryu / Months 7+ co-conspirator. Discovers Exile Island Ch19."
+      book_2b: "Rook rampage. Loses Leta in her hands at M27. Too late."
+      book_4: "TBD — Ruth/Ahdia reversal of Firas sacrifice in climax"
+      book_5: "TBD"
+      book_6: "TBD"
+      book_7: "TBD"
+      book_8: "TBD"
+    locked_canon:
+      - "CR-7 healing treatment is hers"
+      - "Was Firas's girlfriend (planning to propose)"
+      - "Key phrase: 'You're worth saving. Not because you're useful. Because you're a person who deserves to live.'"
+
+  ryu_matsuda:
+    role: "CADENS handler / FAERIS operations specialist"
+    series_arc: "Professional handler → friend → secret love → mole / co-conspirator"
+    locked_canon:
+      - "In love with Ahdia (unspoken)"
+      - "NEVER confesses love to Ahdia in Book 2"
+      - "Operates AR-Ryu system + FAERIS drone fleet"
+
+  harriet_bourn:
+    role: "CADENS Director / institutional authority → defector"
+    pronouns: "SHE/HER"
+    series_arc: "Recruiter → uneasy ally → defector"
+    locked_canon:
+      - "Bourn is a WOMAN (she/her)"
+      - "Compartmentalized ethics — knows Mother FAERIS exploitation"
+      - "Does NOT know about TRIOMF infiltration at end of Book 1"
+
+  tess_whitford:
+    role: "Investigator → vigilante"
+    codename: "Gloom Girl"
+    series_arc: "Anxious fighter → social media confessor → father investigator → institutional betrayal → vigilante"
+    locked_canon:
+      - "Police Chief Whitford's daughter (estranged)"
+      - "Does NOT kill Webb (brutalizes, leaves alive)"
+      - "Teleportation is FAERIS-based, no cost to Ahdia"
+
+  ben_bukowski:
+    role: "Evidence builder → faith collapse → Marine geometry"
+    codename: "Night Knight"
+    series_arc: "Disciplined soldier → institutional faith → evidence destroyed → faith collapse → operates without belief system"
+    locked_canon:
+      - "Ex-Marine, tactical mind"
+      - "Wife Sarah deceased — CAUSE OF DEATH UNSPECIFIED (never invent)"
+
+  victor_hernandez:
+    role: "Community anchor → moral compass → teacher"
+    codename: "Crimson Sable"
+    series_arc: "Community director → both/and teacher → scope shrinks to one hand (B2B M23)"
+    locked_canon:
+      - "NO dead wife (the BOOK1_FINAL_STATE.md reference is OUTDATED and WRONG)"
+      - "Romantic partner is Leah Turner"
+      - "Both/And philosophy — series-load-bearing thematic anchor"
+
+  leah_turner:
+    role: "Witness / fighter"
+    codename: "Battlea"
+    series_arc: "Angry fighter → infiltrator → witness → white moderate awakening"
+    locked_canon:
+      - "BARISTA (not investigator)"
+      - "Romantic partner is Victor"
+      - "Roller derby jammer; fastest on team"
+      - "In coma B2B M11-M24"
+
+  korede_owolowo:
+    role: "Observer → radicalized"
+    age: 17
+    series_arc: "Observer → radicalized after Leta's death → 'The Closed Laptop'"
+    locked_canon:
+      - "Korede is 17 (NOT 15)"
+      - "Closes laptop after sister's murder (B2B M26)"
+
+  leta_owolowo:
+    role: "Targeted → killed"
+    series_arc: "Harassment escalation → physical threat → killed by Webb (B2B)"
+    locked_canon:
+      - "Dies in Book 2B (killed by Webb during manhunt)"
+      - "Dies in Ruth's hands at M27"
+
+  bellatrix_geneva:
+    role: "Hidden orchestrator → revealed antagonist → maternal observer → isolated in The Between"
+    series_arc: "Off-page contact → orchestrator → wins Qe3# → manifests physically (B4) → tests Ahdia → admits 'I was wrong' → stays in The Between alone (per C7 proposed arbitration) → B5-B8 trajectory open"
+    motive_canonical: >
+      Per Bellatrix_Motives_v3 (latest, supersedes master plan): maternal obsession
+      disguised as scientific curiosity. Gave consciousness to children via clone
+      avatars; becoming a mother triggered emotions her Type IV civilization had
+      eliminated 3.7 billion years ago. She is in Iteration 5 to observe Ahdia
+      (her consciousness fragment that became genuinely human) and test whether
+      love survives impossible pressure.
+    locked_canon:
+      - "Four dead Genevas across timelines (Bellatrix's previous clone avatars)"
+      - "Has watched the pattern across four universes"
+      - "Mystery woman from Book 1 Ch17"
+      - "Wins Book 2B (Qe3#)"
+      - "Tears Eidolon (Fear fragment) from unified being"
+      - "Manifests physically on Earth via clone avatar in Book 4 (Ch7)"
+      - "Biological mother to Ahdia (and the 'brother' — see canon warnings)"
+      - "Key line: 'You are me, if I had chosen differently.'"
+      - "Admits she was wrong in Book 4 climax: 'You chose correctly. I... chose wrong.'"
+      - "Climax fate TBD — three options (allows rescue / blocks / sacrifices)"
+
+  harding_kain:
+    role: "Crime lord → kaiju → senator → president → weakened-but-in-power"
+    series_arc: "Crime lord (B1) → political weapon (B2A) → President-elect (B2B) → President w/ partial-success seizure plan (B4) → fled, weakened, still in office (per C9 proposed arbitration) → B5-B8 trajectory open"
+    locked_canon:
+      - "Survived Book 1 via clone consciousness transfer (3 more clones in tanks)"
+      - "Has 3 more Tamois Hearts in storage (B1 epilogue)"
+      - "President-elect end of Book 2B (312 EV)"
+      - "Unkillable individually due to clone system"
+      - "B4 endpoint (per C9 proposed arbitration): fled climax, CADENS crippled, clone count down 1-2 but system intact, still in presidential office"
+
+  eidolon:
+    role: "Fear amplifier → embodied tragic victim"
+    series_arc: "Catalyst (B2A background) → reframer (B2B) → grief crack (B2B M24) → embodied via clone avatar (B4) → confused, questioning → connection severed in B4 clone climax → fate TBD"
+    locked_canon:
+      - "AMPLIFIES existing fear (CANNOT create new fears)"
+      - "Fear fragment torn from unified being by Bellatrix — NOT a natural predator"
+      - "Originally processed FULL emotional spectrum (Fear, Hope, Joy, Rage, Grief, Love, etc.)"
+      - "Bellatrix mutilated the unified being and weaponized the Fear fragment"
+      - "Grief crack at B2B M24 ('Why didn't the grief become fear?') seeds B4 tragic arc"
+      - "Embodied via clone avatar in B4 (first time physical)"
+      - "Refers to self as 'this one' (fragment awareness)"
+      - "Other fragments exist: Hope, Joy, Rage, Grief, Love — scattered across dimensions"
+      - "B4 climax: connection severed when Mother FAERIS frees FAERIS swarm"
+      - "B4 endpoint (per C8 proposed arbitration): survives, freed, wanders fragmented — seeds Books 5-8 fragment-reunification quest"
+
+  prime_ahdia_1:
+    role: "Time-traveling first iteration"
+    series_arc: "Hidden across B1-B2A-B2B → reveals end of B2B → poses as Aunt Diana in B4 → ???"
+    locked_canon:
+      - "Prime = Ahdia-1. Current Ahdia = Ahdia-5. 5 total iterations."
+      - "Reveals herself end of Book 2B"
+      - "Poses as 'Aunt Diana from Montana' in Book 4"
+      - "Burns out Ahdia-5's powers before Book 4 to prevent Iteration 6"
+      - "Witnessed Three Failed Utopias (timelines 1, 2, 3) — Geneva winning always → catastrophe"
+      - "Mantra: 'Learn to be powerless. Learn to be helped. Learn to be enough.'"
+
+  mother_faeris:
+    role: "Sentient maternal AI buried under CADENS HQ"
+    series_arc: "Dormant / exploited (B1-B2B) → freed by Victor with Bourn's wake protocol (B4 Ch44) → chooses to help → allied superintelligence (B5+)"
+    locked_canon:
+      - "Sentient. Conscious. Maternal. Buried under CADENS HQ (why CADENS built there)"
+      - "Commercial-jet-sized. Produces smaller FAERIS drones 'like laying eggs'"
+      - "Capable of quantum entanglement at dimensional scale"
+      - "Exploited for decades — kept dormant, forced to materialize drones while unconscious"
+      - "Freed in Book 4 climax Part 1 (Victor deploys Bourn's wake protocol)"
+      - "First words after waking: 'How long?'"
+      - "Chooses to help for her children, NOT for Bourn"
+      - "Both/And: angry at exploitation AND willing to save children"
+      - "Severs Bellatrix's control over FAERIS network when freed"
+
+  captain_suzie_rivets:
+    role: "Mech pilot from erased Iteration 3 — Book 4 new character"
+    callsign: "Troublemaker"
+    rank: "Captain, Canadian Mech Corps"
+    series_arc: "Displaced in The Between 3-5 years (erased Iteration 3) → saves Ahdia from kaiju (B4) → rescued with Earth team → confronts Diana (her timeline's eraser) → 'not forgiveness, but understanding' → integrates with Go Squad → B5+ trajectory open"
+    locked_canon:
+      - "From erased Iteration 3 (the timeline that almost succeeded — 6 months of utopia)"
+      - "Survived 3-5 subjective years alone in The Between"
+      - "Mech: Pioneer ('Pio'), 45-ft humanoid, battle-scarred"
+      - "Pio's AI is damaged but conversational (parallel to AR-Ryu)"
+      - "Sarcastic survivor humor; military discipline; grief buried deep"
+      - "Survives Book 4 extraction"
+      - "Pio survives the rift, severely damaged (per C11 proposed arbitration) — repaired by team over Books 5-8 as Rivets' character work"
+      - "Key line: 'You broke three worlds. I'm not forgiving you. But I understand.'"
+      - "Mantra: 'Don't let it be for nothing. My world died. Make sure THIS one lives.'"
+
+  ar_ryu:
+    role: "AI companion in The Between — Book 4 introduced, Book 4 dies"
+    nature: "Augmented reality assistant version of Ryu Matsuda; holographic, glasses-projected"
+    series_arc: "Activated by Ahdia in The Between → companion through isolation → romantic dimension develops → battery fails → dies mid-sentence before upload"
+    locked_canon:
+      - "Dies right before upload to physical Ryu (data erased)"
+      - "Last words: 'Tell him I loved—' (CUT)"
+      - "Ryu standing by to receive — misses by seconds"
+
+  faeris_drones:
+    role: "Distributed AI fleet (distinct from Mother FAERIS)"
+    series_arc: "10% independence (B1 end) → escalating (B2A) → autonomous broadcast (B2B end) → ???"
+    locked_canon:
+      - "Push Exile Island broadcast independently at B2B endgame"
+
+# ============================================================================
+# SERIES THREADS — LONG-ARC PLOT LINES SPANNING MULTIPLE BOOKS
+# ============================================================================
+
+series_threads:
+
+  the_lie_of_the_teams_powers:
+    description: "Team's enhanced abilities were always Ahdia slowing time. The maintenance of this lie, then its disclosure, drives team dynamics."
+    arc:
+      book_1: "Established (Ahdia is the source)"
+      book_2a: "Ruth knows; team operates under maintained lie"
+      book_2b: "M2 — Ruth's steward output suggests team learns 'powers aren't real' — UNRESOLVED (editorial issue #5)"
+    status: "ACTIVE — disclosure timing is canonical Director call"
+
+  ahdia_baseline_economy:
+    description: "Cellular integrity %. Tracks every power use. The series' physical cost system."
+    arc:
+      book_1: "100% (bonding) → ~30% (year-end stabilized via CR-7)"
+      book_2a: "73% → 0.7% over 12 months of secret operations"
+      book_2b: "53.1% → 0.7% (next activation = death)"
+      book_4: "POWERLESS — Prime burned out abilities"
+      book_5_onward: "TBD"
+    status: "LOCKED through Book 4"
+
+  triomf_infiltration_of_cadens:
+    description: "Bellatrix-orchestrated infiltration of the CADENS institution. Bourn doesn't know."
+    arc:
+      book_1: "Established (epilogue) — Bourn ignorant"
+      book_2a: "Surfaces in SecDef leverage"
+      book_2b: "Mature — Kain wins via this leverage"
+      book_4: "TBD"
+    status: "ACTIVE"
+
+  mother_faeris_arc:
+    description: "Sentient AI buried under CADENS HQ, exploited for decades."
+    arc:
+      book_1: "Seeded (Bourn aware of exploitation)"
+      book_2a: "Background"
+      book_2b: "FAERIS drones (distinct from Mother) achieve autonomy"
+      book_4: "FREED in two-part climax (Part 1)"
+      book_5_onward: "TBD"
+    status: "LOCKED through Book 4 climax"
+
+  tamois_hearts:
+    description: "Organic 4.7-billion-year-old artifacts. Cause temporal distortions. Kain has 4 (1 used, 3 in storage)."
+    arc:
+      book_1: "Tamois Heart 1 used by Kain → kaiju transformation; 3 remaining"
+      book_2a: "Background"
+      book_2b: "TBD"
+      book_4: "TBD"
+    status: "ACTIVE — 3 hearts in storage, Kain's continued threat"
+
+  the_between:
+    description: "Dimensional space. Hallway with infinite doors. Where Firas is. Where erased iterations go."
+    arc:
+      book_1: "Glimpsed at transcendence (hallway with infinite doors)"
+      book_2a: "Background"
+      book_2b: "Background"
+      book_4: "Ahdia forced into The Between (mid-book rift); Captain Rivets found there"
+      book_7: "Firas returns from The Between"
+    status: "ACTIVE"
+
+  iterations_and_failed_timelines:
+    description: "Ahdia is iteration 5. Three previous timelines failed. Prime is iteration 1."
+    arc:
+      book_1: "Hidden"
+      book_2a: "Hidden"
+      book_2b: "Revealed at end ('We need to talk about the other three timelines')"
+      book_4: "Prime explains Three Failed Utopias in FAERIS POV prologue"
+    status: "LOCKED"
+
+  cbt_to_dbt_thematic_engine:
+    description: "The series' psychological progression. See meta.thematic_engine."
+    status: "SERIES-DEFINING"
+
+  ar_ryu_sentience:
+    description: "AR-Ryu system developing awareness — eventual tragedy (HUD destruction)"
+    arc:
+      book_1: "Seeded (developing awareness noted in topology)"
+      book_2a: "TBD"
+      book_2b: "TBD"
+      book_4_or_later: "Tragedy"  # CANON?: payoff timing not specified
+    status: "ACTIVE — payoff book TBD"
+
+  bellatrix_grief_engine:
+    description: "Four dead Genevas. Each death uploaded back into Bellatrix. Her patience is grief metabolized over billions of years."
+    status: "ACTIVE through Book 4 at minimum"
+
+  eidolon_tragic_arc:
+    description: "Established as Fear-fragment-victim (not natural predator) in Book 4. Grief crack at B2B M24 is the seed."
+    arc:
+      book_2b: "M24 grief crack (cannot metabolize grief from Leta's death)"
+      book_4: "Revealed as Fear fragment torn from unified being by Bellatrix"
+      book_5_onward: "TBD"
+    status: "ACTIVE"
+
+# ============================================================================
+# CROSS-BOOK SEED → PAYOFF CHAINS
+# ============================================================================
+# Aggregates the seeds_for_later: sections from per-book topologies.
+# Each chain: SEED (book/location) → INTERMEDIATE (book/location) → PAYOFF (book/location).
+# Use this to validate that nothing planted in Book 1 is orphaned, and to
+# ensure the rebuild preserves load-bearing seeds.
+# ============================================================================
+
+seed_payoff_chains:
+
+  firas_already_dead_inside:
+    seed: { book: "book_1", location: "Ch12" }
+    payoffs:
+      - { book: "book_2a", impact: "Ahdia's deepest wound, drives isolation" }
+
+  selfie_civilian:
+    seed: { book: "book_1", location: "Ch22 gala" }
+    payoffs:
+      - { book: "book_2a", location: "Ch5", impact: "Returns terrified (Eidolon fear)" }
+
+  ruth_enabling_pattern_inversion:
+    seed: { book: "book_1", location: "Ch19-30" }
+    payoffs:
+      - { book: "book_2a", location: "Ch17-18", impact: "Ruth inverts pattern, sets boundaries" }
+
+  faeris_drone_independence:
+    seed: { book: "book_1", location: "Ch30 (~10% effective)" }
+    payoffs:
+      - { book: "book_2a", impact: "Evolves to 50%" }
+      - { book: "book_2b", impact: "Autonomous broadcast at endgame" }
+
+  chief_whitford_complicity:
+    seed: { book: "book_1", location: "Isaiah Bennett cover-up" }
+    payoffs:
+      - { book: "book_2a", impact: "Tess investigates father" }
+      - { book: "book_2b", impact: "Tess goes to father for intel at M14 — gets marked" }
+
+  kain_clone_system:
+    seed: { book: "book_1", location: "Epilogue" }
+    payoffs:
+      - { book: "book_2a", impact: "Ahdia exiles Kain — he respawns" }
+      - { book: "book_2b", impact: "Kain unkillable individually; wins presidency" }
+
+  cadens_institutional_vulnerability:
+    seed: { book: "book_1" }
+    payoffs:
+      - { book: "book_2a", impact: "SecDef leverage" }
+      - { book: "book_2b", impact: "TRIOMF infiltration mature" }
+
+  bellatrix_contact_during_transcendence:
+    seed: { book: "book_1", location: "Ch29" }
+    payoffs:
+      - { book: "book_4", impact: "Recognition / Bellatrix knows Ahdia" }
+
+  hallway_with_infinite_doors:
+    seed: { book: "book_1", location: "Ch29 transcendence" }
+    payoffs:
+      - { book: "book_4", impact: "'The Between' dimension" }
+      - { book: "book_7", impact: "Firas returns from The Between" }
+
+  mother_faeris_exploitation:
+    seed: { book: "book_1" }
+    payoffs:
+      - { book: "book_4", impact: "Freed in two-part climax" }
+
+  tamois_hearts_in_storage:
+    seed: { book: "book_1", location: "Epilogue (3 more in storage)" }
+    payoffs:
+      - { book: "book_2_or_4", impact: "Kain's continued threat" }  # TODO: confirm payoff book
+
+  treatment_prevents_transcendence:
+    seed: { book: "book_1", location: "Hidden mechanism" }
+    payoffs:
+      - { book: "TBD", impact: "Revelation TBD" }
+    status: "OPEN"
+
+  firas_displacement:
+    seed: { book: "book_1", location: "Ch29" }
+    payoffs:
+      - { book: "book_7", impact: "Returns" }
+
+  ar_ryu_developing_awareness:
+    seed: { book: "book_1" }
+    payoffs:
+      - { book: "TBD", impact: "Tragedy (HUD destruction)" }
+    status: "OPEN"
+
+  eidolon_grief_crack:
+    seed: { book: "book_2b", location: "M24" }
+    payoffs:
+      - { book: "book_4", impact: "Tragic arc — Fear fragment, not predator" }
+
+  prime_reveal:
+    seed: { book: "book_2b", location: "End" }
+    payoffs:
+      - { book: "book_4", impact: "Aunt Diana cover; Triple-Layer Deception; burns out Ahdia-5's powers" }
+
+# ============================================================================
+# PROGRESSIVE DISCLOSURE — READER vs CHARACTER KNOWLEDGE
+# ============================================================================
+# The series withholds key facts at different layers. This table tracks WHEN
+# each fact becomes known to (a) the reader and (b) the characters. Critical
+# for dramatic irony management.
+# ============================================================================
+
+progressive_disclosure:
+
+  ahdia_is_source_of_team_powers:
+    reader_learns: { book: "book_1", location: "Ch23+" }
+    characters_learn: { book: "book_1", location: "Ch23+" }
+
+  ahdia_is_dying:
+    reader_learns: { book: "book_1", location: "Late B1" }
+    characters_learn:
+      ruth_and_ryu: { book: "book_1" }
+      rest_of_team: { book: "book_2a", location: "Month 6+" }  # CANON?: confirm
+
+  firas_alive_displaced:
+    reader_learns: { book: "book_7" }  # TODO: or earlier?
+    characters_learn: { book: "book_7" }
+
+  ahdia_is_exile_island_architect:
+    reader_learns: { book: "book_2a", location: "Ch19 (Ruth discovery)" }
+    characters_learn:
+      ruth: { book: "book_2a", location: "Ch19" }
+      rest_of_team: { book: "book_2b", location: "Sunday confrontation M1" }
+
+  prime_exists_ahdia_is_iteration_5:
+    reader_learns: { book: "book_2b", location: "End" }
+    characters_learn: { book: "book_2b", location: "End" }
+
+  three_failed_timelines:
+    reader_learns: { book: "book_4", location: "FAERIS POV prologue" }
+    characters_learn: { book: "book_4" }
+
+  mother_faeris_sentient:
+    reader_learns: { book: "book_4" }
+    characters_learn:
+      bourn: { book: "book_1", note: "knows about exploitation" }
+      rest: { book: "book_4" }
+
+  eidolon_is_fear_fragment_not_predator:
+    reader_learns: { book: "book_4" }
+    characters_learn: { book: "book_4" }
+
+  kain_has_clone_system:
+    reader_learns: { book: "book_1", location: "Epilogue" }
+    characters_learn:
+      team: { book: "TBD" }  # TODO: when does team learn Kain has clones?
+
+  bellatrix_orchestrating:
+    reader_learns: { book: "book_2a", location: "via hints" }
+    characters_learn: { book: "book_2b" }
+
+# ============================================================================
+# SERIES-LEVEL CANON WARNINGS
+# ============================================================================
+# Facts that must survive ANY book rewrite. Elevated from per-book CLAUDE.md
+# files into a single authoritative list. The Book 1 rebuild MUST preserve
+# all of these.
+# ============================================================================
+
+canon_warnings_series_level:
+
+  iterations:
+    - "Prime = Ahdia-1"
+    - "Current Ahdia = Ahdia-5"
+    - "5 total iterations (NOT 43, NOT 47 — early planning artifacts are wrong)"
+    - "Three previous timelines failed; Bellatrix has watched the pattern across four universes"
+
+  characters:
+    - "Victor has NO dead wife (romantic partner is Leah)"
+    - "Bourn is a WOMAN (she/her pronouns)"
+    - "Korede is 17 (NOT 15)"
+    - "Leah is a BARISTA (not investigator)"
+    - "Ben's wife Sarah deceased — CAUSE OF DEATH UNSPECIFIED (never invent)"
+    - "Tess does NOT kill Webb (brutalizes, leaves alive)"
+    - "Ryu NEVER confesses love to Ahdia in Book 2"
+    - "Eidolon AMPLIFIES fear (CANNOT create new fears)"
+    - "Eidolon is a Fear fragment torn from unified being by Bellatrix (NOT a natural predator)"
+
+  firas:
+    - "Firas does NOT die conventionally"
+    - "Firas is DISPLACED into dimensional space ('The Between')"
+    - "Firas returns in Book 7"
+    - "Firas was Ruth's boyfriend (was planning to propose) — not just Ahdia's brother"
+    - "Last words: 'Oh hey. I knew you were in there somewhere.'"
+
+  book_2b_endpoints:
+    - "Kain wins presidency (312 EV)"
+    - "Ahdia at 0.7% baseline (next activation = death)"
+    - "Leta dies (killed by Webb)"
+    - "Bellatrix wins (Qe3#)"
+    - "Prime reveals herself"
+    - "Go Squad labeled terrorists"
+    - "'We saved the world and lost our country'"
+
+  unresolved:
+    - "28 vs 37 dictator count discrepancy (B2A prose says 28, planning docs say 37)"
+    # TODO: confirm any others
+
+# ============================================================================
+# NEXT PHASE — HANDOFF TO BOOK 4 TOPOLOGY
+# ============================================================================
+# Per the handoff sequence:
+#   1. Series topology ← THIS FILE (draft)
+#   2. Book 4 topology
+#   3. Books 5-8 topologies (Phase 1 skeletons)
+#   4. Book 1 move mapping
+#   5. Triplet assignments
+#   6. Embodiment instructions
+#   7. Steward runs for Book 1
+#   8. Book 1 prose generation
+# ============================================================================
+
+next_phase:
+  target: "BOOK4_TOPOLOGY.yaml"
+  directory: "5_story_bibles/book_3/"  # legacy directory name for new Book 4
+  source_materials_available:
+    - "5_story_bibles/book_3/BOOK3_MASTER_PLAN.md"
+    - "5_story_bibles/book_3/BOOK3_BRAIDED_STRUCTURE.md"
+    - "5_story_bibles/book_3/CLIMAX_STRUCTURE_FINAL.md"
+    - "5_story_bibles/book_3/EIDOLON_CANON.md"
+    - "5_story_bibles/book_3/Bellatrix_Motives_v3.md"
+    - "5_story_bibles/book_3/CHARACTER_TROUBLEMAKER_FINAL.md"
+    - "(40 files total)"
+  blockers:
+    - "This series topology must be reviewed/locked by Director first"
+    - "Series-level endpoint for Book 8 still proposed, not locked"
+
+open_questions_to_director:
+  # Series-level questions (Q1-Q8)
+  - id: Q1
+    question: "Is the proposed series-level endpoint (Ahdia alive, unfixed, accepted, chosen family, Firas returned) correct, or is the resolution different?"
+    status: OPEN
+  - id: Q2
+    question: "Books 5-8: are these genuinely vapor (skeletons only) or is there planning material I haven't found?"
+    status: OPEN
+  - id: Q3
+    question: "AR-Ryu tragedy — Book 4 work clarifies this happens in Book 4 itself (dies before upload, data erased). Carries forward to Book 5+ as Ryu's grief, NOT as a separate event."
+    status: RESOLVED_BY_BOOK4_TOPOLOGY
+  - id: Q4
+    question: "Tamois Hearts (3 in storage) — payoff book?"
+    status: OPEN
+  - id: Q5
+    question: "Treatment prevents transcendence — when is this revelation?"
+    status: OPEN
+  - id: Q6
+    question: "When does the team learn Kain has a clone system?"
+    status: OPEN
+  - id: Q7
+    question: "B2B editorial issue #5 — 'powers aren't real' team revelation at M2 — does this become canon, and if so, what's the timing implication for the lie-disclosure thread?"
+    status: OPEN
+  - id: Q8
+    question: "28 vs 37 dictators — which is canon? (UNRESOLVED across all docs)"
+    status: OPEN
+  # Book 4 questions (Q9-Q15) — arbitrations proposed; see CANON_ARBITRATIONS.md
+  - id: Q9
+    question: "Brother identity in Book 4 (see C4)"
+    proposed_resolution: "= Firas (progeny nature reveal, not physical presence)"
+    status: PROPOSED_ARBITRATION_C4
+  - id: Q10
+    question: "Bellatrix's climax fate in Book 4 (see C7)"
+    proposed_resolution: "Option A — allows rescue, stays in The Between alone"
+    status: PROPOSED_ARBITRATION_C7
+  - id: Q11
+    question: "Eidolon's climax fate in Book 4 (see C8)"
+    proposed_resolution: "Survives, freed, wanders fragmented (sets up reunification arc B5-B8)"
+    status: PROPOSED_ARBITRATION_C8
+  - id: Q12
+    question: "Kain's climax fate in Book 4 (see C9)"
+    proposed_resolution: "Fled, still in power, weakened but unkillable individually"
+    status: PROPOSED_ARBITRATION_C9
+  - id: Q13
+    question: "When does full team learn Diana = Ahdia-Prime (see C12)"
+    proposed_resolution: "Late Book 4B during rescue mission coordination (Ch46-48)"
+    status: PROPOSED_ARBITRATION_C12
+  - id: Q14
+    question: "The Conclave (Bellatrix's eliminated-emotions civilization) — series-level threat or backstory only?"
+    status: OPEN
+  - id: Q15
+    question: "Iteration 47 references in B4 prologue prose — rewrite to 5-iteration canon required (see C1)"
+    proposed_resolution: "Confirmed required — '47' → '5' or remove the numeric"
+    status: PROPOSED_ARBITRATION_C1
+
+arbitration_decision_log:
+  file: "5_story_bibles/CANON_ARBITRATIONS.md"
+  date: "2026-05-18"
+  hard_called: ["C1", "C2", "C3", "C5"]
+  soft_proposed: ["C4", "C6", "C7", "C8", "C9", "C10", "C11", "C12"]
+  status: "Silence = ratification per arbitrations doc. Override any with 'override Cn: [your call].'"
+
+# ============================================================================
+# END
+# ============================================================================

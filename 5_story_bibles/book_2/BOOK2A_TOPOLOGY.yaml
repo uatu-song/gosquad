@@ -13,7 +13,7 @@ meta:
   book: "2A"
   title: "Go Squad: Book 2"
   author: "J. S. Vaughn"
-  status: "COMPLETE — all 19 chapters prose-final"
+  status: "FIRST-VERSION COMPLETE — 19 chapters prose-final. Awaiting REBUILD from studs after Book 1 proves embodiment method (per 2026-04-03 handoff). Current prose is reference, not source-of-truth."
   word_count: 63874
   emotional_arc: "Sacrifice everything → Win through vulnerability"
   thematic_focus: "CBT approach continuing to fail — truth insufficient against fear"
@@ -29,6 +29,80 @@ meta:
     absent. News tickers show dictators vanishing (hidden in plain sight).
     Reader doesn't connect until Ruth discovers Exile Island at END of book.
     NO Ahdia POV showing secret operations until after Ruth discovers truth.
+
+# ============================================================================
+# CHAPTER LENGTH TARGETS (REBUILD INTENT)
+# ============================================================================
+# Director intent: in the rebuild, Book 2A's longest chapters should be split
+# into smaller chapters. Partial splitting work was started in the first-
+# version manuscript directory but never fully resolved. The intent below is
+# canon for the rebuild; the manuscript directory state below is artifact.
+# ============================================================================
+
+chapter_length_targets:
+  rationale: >
+    Two chapters in the first-version manuscript were significantly longer than
+    surrounding chapters (Ch1: 8,636 words; Ch2: 10,880 words). Director intent
+    is to split these (and other long ones) into smaller chapters in the rebuild.
+    Splitting work was started in-manuscript but left in an inconsistent state.
+  target_split_chapters:
+    ch1:
+      first_version_length: 8636
+      target_pieces: 4
+      proposed_split: "1a + 1b + 1c + 1d"
+      partial_draft_word_counts: { "1a": 2756, "1b": 1428, "1c": 2672, "1d": 1715 }
+      status: "Split files drafted in first-version manuscript; ORIGINAL also still present"
+    ch2:
+      first_version_length: 10880
+      target_pieces: 4
+      proposed_split: "2a + 2b + 2c + 2d"
+      partial_draft_word_counts: { "2a": 3454, "2b": 1976, "2c": 2557, "2d": 2823 }
+      status: "Split files drafted in first-version manuscript; ORIGINAL also still present"
+    ch15:
+      first_version_length: 5433  # combined 15a + 15b
+      target_pieces: 2
+      proposed_split: "15a + 15b"
+      committed_word_counts: { "15a": 3234, "15b": 2199 }
+      status: "Split COMMITTED in first-version manuscript (no chapter_15.txt remains)"
+    ch18:
+      first_version_length: 2872
+      target_pieces: 2
+      proposed_split: "18a + 18b"
+      partial_draft_word_counts: { "18a": 2021, "18b": 861 }
+      status: "Split files drafted in first-version manuscript; ORIGINAL also still present; 18b appears unfinished (861 words)"
+  other_long_chapters_not_split:
+    # These were over 3K words in the first-version manuscript but no split
+    # work was started. Director may want to evaluate for split in rebuild.
+    ch3: 3710
+    ch5: 3202
+    ch13: 3603
+    ch19: 3008
+  rebuild_implication: >
+    If all proposed splits land, the rebuilt Book 2A grows from 19 chapters
+    to ~25 chapters (Ch1→4, Ch2→4, Ch15→2 already done, Ch18→2). Other 3K+
+    chapters may also be split — Director call during rebuild.
+
+manuscript_directory_state:
+  # The first-version manuscript directory at 6_manuscript/book_2/ contains
+  # both original chapter files and partial split-file drafts. This is
+  # documented here so the inconsistent state isn't lost when this topology
+  # informs the rebuild.
+  path: "6_manuscript/book_2/"
+  total_chapter_files_present: "30+ files including originals, splits, .md and .txt"
+  split_state:
+    ch1: "BOTH chapter_01.txt (8636) AND chapter_01a-d.txt drafts coexist"
+    ch2: "BOTH chapter_02.txt (10880) AND chapter_02a-d.txt drafts coexist"
+    ch15: "ONLY chapter_15a.txt + chapter_15b.txt (original deleted/replaced)"
+    ch18: "BOTH chapter_18.txt (2872) AND chapter_18a-b.txt drafts coexist; 18b appears unfinished"
+  compiled_file:
+    path: "6_manuscript/book_2/BOOK2_MANUSCRIPT_COMPILED.txt"
+    word_count: 40535
+    note: "STALE — significantly less than topology's 63874 total. Either built from a partial set of chapters, or pre-final-edit. Do not trust this file as the authoritative compile."
+  authoritative_word_count: 63874  # per topology meta
+  note: >
+    For the rebuild, treat individual chapter files as references. The split
+    intent above is canon. The exact prose in any individual file is NOT
+    canon — the rebuild will regenerate prose from studs + embodiment.
 
 # ============================================================================
 # CHARACTERS
