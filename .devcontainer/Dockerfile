@@ -33,9 +33,9 @@ RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/commandhisto
   && touch /commandhistory/.bash_history \
   && chown -R node /commandhistory
 
-# Create workspace and config directories and set ownership.
-RUN mkdir -p /workspace /home/node/.claude && \
-  chown -R node:node /workspace /home/node/.claude
+# Create workspace, config, and npm-global directories and set ownership.
+RUN mkdir -p /workspace /home/node/.claude /usr/local/share/npm-global && \
+  chown -R node:node /workspace /home/node/.claude /usr/local/share/npm-global
 
 WORKDIR /workspace
 
