@@ -1475,7 +1475,7 @@ characters:
 
   dr_ryu:
     meta:
-      full_name: "Dr. Shiba Ryu"
+      full_name: "Dr. Ryu Matsuda"
       book1_role: "cadens_scientist"
       first_appearance: ch13
     background:

@@ -1,7 +1,8 @@
 # Book 1 Character Triplets
 
-**Status:** First-pass draft, pending Director ratification before Run 1 of Book 1 stewards.
-**Date:** 2026-05-19
+**Status:** ✅ Director-ratified 2026-06-14 — all 10 active triplets approved for Run 1 of Book 1 stewards. (Bellatrix, Mother FAERIS, Tamois Heart held in reserve — see Pending section.)
+**Date:** 2026-05-19 (drafted); 2026-06-14 (ratified)
+**Ratification notes:** a-pawn death corrected M53→M33; f1 bishop documented as Ruth/Leah shared lens; Firas's M80 Rook-fall read as injury-sidelining (not a Kain duel); M82 Tank capture marks Ruth's witnessing (Ahdia lands the blow); Ng7 framing softened (resignation, not on-board mate — canonical kill is Bourn's missile + singularity).
 **Method:** Triplet lens per the Steward Experiment Manual (`5_story_bibles/book_2b/steward_experiment/STEWARD_EXPERIMENT_MANUAL.md`).
 **Chess game:** Carlsen-Nepo 2021 World Championship Game 6 (PGN: `6_manuscript/book_1/book1_chess_game.pgn`, 136 moves, White wins).
 
@@ -72,7 +73,7 @@ Stewards must check character canon (`7_characters/profiles/`, `2_method_actor/s
 | Piece | Reading |
 |---|---|
 | **♔ White King (e1)** | Her passive identity — the prize the team protects. The secret center. She IS this square; every White piece's job is to defend it. |
-| **♘ White Knight (b1)** | Her active self. Active M10–M136 (survives), **51 threats survived** (cellular cost per action), 2 careful captures (surgical, not brutal — she removes obstacles, doesn't kill). **Delivers mate at M136 (Ng7#) — the act the team believes ends Kain (he clone-survives off-board; team doesn't know).** |
+| **♘ White Knight (b1)** | Her active self. Active M10–M136 (survives), **51 threats survived** (cellular cost per action), 2 careful captures (surgical, not brutal — she removes obstacles, doesn't kill). **Plays Ng7 at M136 — the final blow, the act the team believes ends Kain (he clone-survives off-board; team doesn't know).** Note: `136. Ng7 1-0` is a *resignation in a lost position*, not on-board checkmate; the canonical kill-shot is Bourn's CADENS missile + the singularity Ahdia burns out. The Knight is the *image* of Ahdia ending it, not the literal mechanism. |
 | **♟ White e-pawn** | Her smallest version. Dormant 28 moves, then e3 → e4 → e5 → e6. **Most-pressured pawn in the game (90 ply-states under threat).** Reaches the 6th rank at the climax but **does not promote** — frozen at the edge of transcendence. |
 
 **How they relate:** Three scales of Ahdia. King = what others see. Knight = what she does. Pawn = what she could become. The e-pawn's arrested transformation (reaches e6, never queens) IS the dissolution-into-higher-dimensions stud — she nearly transcends, the team pulls her back.
@@ -84,8 +85,8 @@ Stewards must check character canon (`7_characters/profiles/`, `2_method_actor/s
 | Piece | Reading |
 |---|---|
 | **♕ White Queen (d1)** | The protagonist fakeout. Highest-status piece. Removed M26 in mutual destruction (takes Black Rook same move). Reader expects Queen to be the protagonist; the King is. **This piece IS the structural fakeout — Firas-the-apparent-hero displaced from center stage, not Firas-the-person dying.** |
-| **♖ White Rook (a1)** | The crime-fighting Firas. **5 captures — most in the game** (takedowns; team MO is incapacitate-not-kill). Removed M80 **by the Black King** — a personal defeat at Kain's hands during the mid-book confrontation arc. **Not the canonical dissolution** (which is at M131–M136, Stud 8). The superhero who can't beat the boss in their first direct meeting. |
-| **♟ White f-pawn** | The autoinjector. Dormant 58 moves, then f3 → f4 → f5. Reaches f5 at M135 — **one square from queening, one move before mate.** Sacrifice that enables the win without itself transforming. |
+| **♖ White Rook (a1)** | The crime-fighting Firas. **5 captures — most in the game** (takedowns; team MO is incapacitate-not-kill). Removed M80 **by the Black King**. **Reading: NOT a personal Kain duel** — canon sidelines Firas with the Ch3 gunshot through the whole midgame. The board enacts his *removal from active duty*: the apparent-hero taken off the field by injury, not beaten in direct combat. **Not the canonical dissolution** (Stud 8, M131–M136). |
+| **♟ White f-pawn** | The autoinjector. Dormant 58 moves, then f3 → f4 → f5. Reaches f5 at M135 — **one square from queening, one move before the finish.** Sacrifice that enables the win without itself transforming. |
 
 **How they relate:** Diminishing status, increasing meaning. Queen (perception) → Rook (action) → Pawn (sacrifice). His arc is the inversion of Ahdia's: she ascends in significance as he diminishes in stature. Both arcs peak at the climax. Neither piece promotes — Firas dissolves *as* he completes the enabling move.
 
@@ -95,7 +96,7 @@ Stewards must check character canon (`7_characters/profiles/`, `2_method_actor/s
 
 | Piece | Reading |
 |---|---|
-| **♖ White Rook (h1)** | Field leader. 50 active moves, 11 late checks, survives the game. **Captures Black Bishop f8 at M82** — corresponds to the Docks scene (Ch19) where Ruth witnesses Ahdia defeat the Tank Cop in frozen time. |
+| **♖ White Rook (h1)** | Field leader. 50 active moves, 11 late checks, survives the game. **Captures Black Bishop f8 at M82** — corresponds to the Docks scene (Ch19). **The capture marks Ruth's presence and revelation, NOT her kill: Ahdia lands the blow on the Tank Cop in frozen time; Ruth's piece registers the witnessing** (her whole turning-point beat — first person besides CADENS to know the truth). |
 | **♗ White Bishop (Bg2 / f1)** | The scientist. Fianchettoed at M4 (`Bg2`), influences diagonally from corner. Dies M20 to Black Bishop — the moment pure research can't save someone; she has to step out of the lab. |
 | **♟ White d-pawn** | CR-7. The treatment itself. **Captures `dxc5` at M7 (the game's first capture) — the moment Ruth's intervention enters the game.** Recaptured same move (`Bxc5`). The pawn is the artifact she creates that costs itself to keep Ahdia alive. |
 
@@ -107,7 +108,7 @@ Stewards must check character canon (`7_characters/profiles/`, `2_method_actor/s
 
 | Piece | Reading |
 |---|---|
-| **♘ White Knight (b1)** | What he *watches*. Ahdia under AR-Ryu monitoring. Every one of her 51 threats is his vigilance. The mate at M136 is what he enabled but can't claim. **Shared with Ahdia's triplet — same piece, two readings.** |
+| **♘ White Knight (b1)** | What he *watches*. Ahdia under AR-Ryu monitoring. Every one of her 51 threats is his vigilance. The final blow at M136 (Ng7) is what he enabled but can't claim. **Shared with Ahdia's triplet — same piece, two readings.** |
 | **♟ White f-pawn** | His own slow advance. Dormant through 58 moves, then f3 → f4 → f5. The CADENS infrastructure activated late, never transforming. **Shared with Firas's triplet — Firas sees autoinjector; Ryu sees the system that built it.** |
 | **♔ White King (e1)** | His proximity. He's always near her without touching her. The square he protects but cannot occupy. **Shared with Ahdia's and Bourn's triplets.** |
 
@@ -156,7 +157,7 @@ Stewards must check character canon (`7_characters/profiles/`, `2_method_actor/s
 | Piece | Reading |
 |---|---|
 | **♗ White Bishop (c1)** | His one ethical intervention. 2 moves, 1 capture (Black Knight at M17), removed same move by a Black Pawn. The community leader who acts once, surgically, and pays. **Shared with Ben's triplet — Ben reads it as precision strike; Victor reads it as ethical action.** |
-| **♟ White a-pawn** | His community roots. a3 at M14, captured M53 by Black Queen. Long-held ground, eventually overrun by relentless antagonist approach. **Shared with Bourn's triplet — Victor reads it as community; Bourn reads it as Mother FAERIS.** |
+| **♟ White a-pawn** | His community roots. a3 at M14, captured M33 by Black Bishop (`Bxa3`). Long-held ground, eventually overrun by relentless antagonist approach. **Shared with Bourn's triplet — Victor reads it as community; Bourn reads it as Mother FAERIS.** |
 | **♞ Black Knight (b8)** | **CROSS-FACTION:** the lost youth he couldn't reach. Antagonist piece. Reads as "a kid from the center who got swallowed by the cycle" — first-mover-then-dead, like the gang violence that keeps taking the kids he tries to keep out of it. **Canon: Victor has NO dead wife. The grief he reads through this piece is community-loss, not spousal.** Interpretive only; Victor never moves this piece. |
 
 **How they relate:** What he can do (Bishop), what holds him up (Pawn), what he couldn't save (Black Knight). The cross-faction Black Knight encodes his foundational grief — every move he makes is read through the shape of a youth he lost to the other side.
@@ -169,7 +170,7 @@ Stewards must check character canon (`7_characters/profiles/`, `2_method_actor/s
 |---|---|
 | **♔ White King (e1)** | Ahdia as the asset she authorized. Bourn reads the King not as "the prize" but as "the file she signed off on" — institutional responsibility. **Shared with Ahdia and Ryu's triplets.** |
 | **♕ White Queen (d1)** | Firas as the doomed-status piece. Bourn knew he was high-value but watchable, not the actual center. Watches the Queen fall at M26 (the fakeout) — the apparent protagonist relegated to support role while the institution refocuses on the King. **Note:** the M26 Queen-fall is fakeout, not Firas's actual exit (Stud 8, ~M131-M136). |
-| **♟ White a-pawn** | **Mother FAERIS.** The exploited foundation Bourn knows about and doesn't fix. The piece that holds the entire defensive structure but is treated as institutionally expendable. Dies M53. **Shared with Victor's triplet — Victor reads community; Bourn reads buried exploitation.** |
+| **♟ White a-pawn** | **Mother FAERIS.** The exploited foundation Bourn knows about and doesn't fix. The piece that holds the entire defensive structure but is treated as institutionally expendable. Dies M33 (`Bxa3`). **Shared with Victor's triplet — Victor reads community; Bourn reads buried exploitation.** |
 
 **How they relate:** Three institutional secrets she carries — the asset (King), the loss (Queen), the buried exploitation (Pawn). Her lens is the *file cabinet*, not the field. Each piece in her triplet is a responsibility she has signed for and continues to weigh.
 
@@ -181,7 +182,7 @@ Stewards must check character canon (`7_characters/profiles/`, `2_method_actor/s
 
 | Piece | Reading |
 |---|---|
-| **♚ Black King (e8)** | His public self. Walks the back ranks, gets cornered at M136. His "death" at mate corresponds to the kaiju collapse; **clone-survival is the off-board continuation — the team believes him dead, he isn't.** |
+| **♚ Black King (e8)** | His public self. Walks the back ranks, gets cornered at M136. His "death" at the M136 finish corresponds to the kaiju collapse; **clone-survival is the off-board continuation — the team believes him dead, he isn't.** |
 | **♝ Black Bishop (f8)** | His enforcement arm. 3 captures, 19 threats, removed M82 by Ruth's Rook. **The Tank Cop** (Ch18-19 docks) — the muscle Kain sends out. Canon: nearly kills Ruth, defeated by Ahdia in frozen time (fate unspecified — the piece-removal corresponds to "defeated," not necessarily "killed"). |
 | **♟ Black g-pawn** | **First-tier expendables.** Captures White Bishop c1 at M17 (`gxf6`) — Kain spends his foot soldier to neutralize Victor's intervention; Victor survives but his ethical strike is bought at a cost. The g-pawn is then removed M79 by Ruth's Rook. The expendable that does meaningful damage. |
 
@@ -209,9 +210,10 @@ For quick reference: which pieces appear in multiple characters' triplets, and h
 | Piece | Characters | Readings |
 |---|---|---|
 | **White King (e1)** | Ahdia, Ryu, Bourn | Ahdia: passive identity. Ryu: proximity. Bourn: authorized asset. |
-| **White Knight (b1)** | Ahdia, Ryu | Ahdia: active self / mate-deliverer. Ryu: what he watches. |
-| **White Rook (a1)** | Firas, Ben | Firas: crime-fighter defeated by Kain at the M80 confrontation (not the climax). Ben: combat self. |
+| **White Knight (b1)** | Ahdia, Ryu | Ahdia: active self / deliverer of the final blow (Ng7). Ryu: what he watches. |
+| **White Rook (a1)** | Firas, Ben | Firas: apparent-hero removed from active duty at M80 (his Ch3 sidelining, not a Kain duel). Ben: combat self / Book-2 faith-collapse seed. |
 | **White Bishop (c1)** | Ben, Victor | Ben: precision strike. Victor: ethical intervention. |
+| **White Bishop (f1)** | Ruth, Leah | Ruth: the scientist forced out of the lab. Leah: quick deployment that doesn't land. (Fianchettoed `Bg2` at M4, captured M20 by `Bxg2`.) |
 | **White d-pawn** | Ruth, Leah | Ruth: CR-7 treatment. Leah: first-swing aggression. |
 | **White f-pawn** | Firas, Ryu | Firas: autoinjector. Ryu: CADENS slow advance. |
 | **White a-pawn** | Victor, Bourn | Victor: community roots. Bourn: Mother FAERIS exploitation. |
@@ -229,11 +231,11 @@ For each of the 8 studs, the best-fit move range and the triplet pieces most act
 | 1. Protagonist fakeout | M26 | Firas's Queen falls, Bourn watches |
 | 2. Ahdia/Firas strained relationship | M1–M26 | Firas's Queen (M9–M26), Ahdia's King (passive) |
 | 3. Police ambush | M14–M21 | Capture cluster — Victor's Bishop taken M17, Leah's Bishop taken M20, Ben's Bishop taken M17 (all three characters survive; pieces fall as narrative defeats) |
-| 4. Ahdia's fake death / powers reveal | M33–M53 | Victor's a-pawn taken M53, Bourn's a-pawn taken M53, Tess's h-pawn taken M53, Ahdia's Knight active |
+| 4. Ahdia's fake death / powers reveal | M33–M53 | Victor's a-pawn taken M33 (`Bxa3`), Bourn's a-pawn taken M33, Tess's h-pawn taken M53, Ahdia's Knight active |
 | 5. Bidirectional time discovery | M40–M82 | Ahdia's Knight captures, Ruth's Rook captures Black Bishop M82 (Docks) |
 | 6. Firas gives Ahdia his suit | M127–M129 | Ahdia's Knight prepares, Firas's f-pawn approaches f5 |
 | 7. Autoinjector + "Oh hey..." | M133 | **Firas's f-pawn reaches f5; Ahdia's e-pawn reaches e6** — both pawns one square from queening, neither will |
-| 8. Firas dissolves into singularity | M131–M136 | Ahdia's Knight delivers Ng7# at M136. Firas's f-pawn at f5 (never queens). Kain's Black King checkmated. |
+| 8. Firas dissolves into singularity | M131–M136 | Ahdia's Knight plays Ng7 at M136 (the finish; Black resigns in a lost position). Firas's f-pawn at f5 (never queens). Kain's Black King cornered/defeated — canonical kill is Bourn's missile + the singularity burnout. |
 
 ---
 
@@ -241,7 +243,7 @@ For each of the 8 studs, the best-fit move range and the triplet pieces most act
 
 1. ✓ Series topology (`SERIES_TOPOLOGY.yaml`, 2026-05-18)
 2. ✓ Book 4 topology (`book_3/BOOK4_TOPOLOGY.yaml`, 2026-05-18)
-3. **Triplet assignments (this file) — first draft, pending Director ratification**
+3. ✓ **Triplet assignments (this file) — Director-ratified 2026-06-14**
 4. **Pawn arc table (`BOOK1_PAWN_ARCS.md`) — supporting data**
 5. Books 5–8 topologies (not started)
 6. Move mapping — assign 136 moves to chapters/phases, anchor 8 studs to specific moves
