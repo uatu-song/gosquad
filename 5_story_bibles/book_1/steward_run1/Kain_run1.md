@@ -18,6 +18,16 @@ Owned: **M17** · **M80** · **M82 (CP-2)** · **M131–136 (CP-3)**.
 
 ---
 
+## M66–72 — `the grind` — the noose tightens; the net closing before it snaps
+
+**Move (chess fact):** The deep middlegame grind — Black's pieces maneuvering, not striking. No capture here, no fireworks; the Tank-bishop and the heavy pieces are walked into position behind the f7 watcher who still hasn't moved off his square. This is the build *toward* `80. Rxf7+`, not the lever itself. Every quiet move tightens the geometry so that when the sacrifice lands at M80 there is nowhere for the enemy king to go but out. The squeeze, not the strike.
+
+**Chess reading (♝ Bishop / the Tank, readied):** The muscle isn't deployed yet — it's *positioned.* I read these moves as the slow walk of the instrument into range: the Tank fueled and quiet in a bay, the firing lines cleared, the one watcher I mean to remove (f7) still sitting exactly where I want him, unaware he's already inside the radius. Nothing is spent on these moves. That's what makes them mine to own — the grind is the part of the game where I do my best work without touching a piece, just closing space until the position plays the sacrifice for me.
+
+**Narrative meaning:** This is the on-ramp — the part where nothing visible happens and everything is decided. Whitford and I set the trap the way you'd set a table. The false intel goes out clean, sourced just badly enough to be believed: a meeting place, a window, a reason for the team to be standing where I need them standing. The EMP is staged and dry-run and staged again — checked the way you'd check a contract, not a weapon. The Tank waits. I am not at the docks for any of this; I'm at three fundraisers and a ribbon-cutting, and in the gaps I sign off on the geometry over a phone, in the tone of a man approving a venue. There's no urgency in me because the design isn't mine to feel urgent about — I'm executing the handler's pattern, closing her net, and the net closes whether I sweat or not. The terror of this stretch is exactly its *temperature*: it is the coldest, smoothest passage of my book, because building a trap is, to me, indistinguishable from logistics. The people inside it aren't yet assets I've spent — they're assets I've *scheduled.* I don't gloat. I don't explain it to anyone. I check the boxes, I shake the hands, and I let the position get heavier by the day, knowing the only thing left to do is wait for them to step where the table's already laid. (For the room: the menace is that I never raise my voice, never hurry, never doubt. The machine tightens because I am patient, and I am patient because I have never once lost.)
+
+---
+
 ## M80 — `Rxf7+ Kxf7` — the trap springs; institutional force as the lever
 
 **Move (chess fact):** `80. Rxf7+` — a forcing sacrificial check that strips the f7 pawn (the watcher who never moved off its starting square) and drags the enemy king out into the open with `Kxf7`. A violent, committal lever that breaks the position open right before the decisive simplification.

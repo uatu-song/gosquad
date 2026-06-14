@@ -8,7 +8,7 @@
 
 ---
 
-## M27 — `Bf8` (Black retreats the dark-square bishop; quiet regroup after the queen sac) — INTRO, ~Ch13
+## M27 — `27. Rxc8 Qd5` (White's rook collects on c8, completing the queen-sac sequence; the position settles into the grind) — INTRO, ~Ch13
 
 **Chess reading (♘ — what he watches).** The board has just gone lopsided. The Queen's gone (M26); the apparent hero is off the center, and now the position settles into the long grind nobody's reading as the real story. The White Knight b1 has already woken (Nbd2/Nxc4, M10–11) and made its first careful capture — and Ryu's piece is not the Knight. It's the *eye on* the Knight. M27 is where he switches the monitoring on: not a move, a watch beginning. The first frame of the AR-Ryu feed resolves, and there she is, doing the thing he will spend the rest of the book unable to do himself — acting.
 

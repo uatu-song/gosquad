@@ -2,7 +2,7 @@
 
 **Steward:** Leah Turner (codename **Battlea**). White (Go Squad).
 **Triplet (lens):** ♗ Bishop f1 — quick deployment (shared w/ Ruth) · ♟ d-pawn — first-swing aggression (shared w/ Ruth) · ♟ c-pawn — over-extension. **All three "fast and short-lived": immediate damage, immediate cost.**
-**Owned:** M4, M7, M8, M20, reveal-aftermath (~M82+), CP-3 (M131–136).
+**Owned:** M4, M7, M8, M20, reveal-aftermath (~M110 / Ch25 team reveal), CP-3 (M131–136).
 **Canon held:** acts before analyzing; emotionally honest, cuts posturing; identity-crisis doubt turns INWARD, never cruel; real power = emotional safety not attitude; partner Victor; cries openly AND keeps swinging. Knows her strength was Ahdia's; does NOT know Ahdia is dying for it.
 **Convergence:** read `convergence_M82_ahdia.md` + `convergence_M131_ahdia.md`. Diverged — wrote her tension, not Ahdia's.
 
@@ -32,7 +32,7 @@
 
 **Narrative meaning.** The construction-site ambush (Ch11) — she charges in like always and this time it doesn't land. She's down, shot in the vest, the wind gone out of her, and the thing that's supposed to be true about her — *I'm the strong one, I hit and it works* — just... didn't. (This is also the move where the "super-strength" reads as real to her for the first time: she takes a round to the vest and gets back up, and she thinks *that's me, that's mine, I'm built for this.*) Her bishop comes off with nothing on the scoresheet — all that speed, no kill to show. She doesn't know yet how much that empty scoresheet is going to mean later. For now it just stings: she went in first and hardest and got taken out anyway, and the only thing she's sure of is that she'd go in first again. The grief here is small and seeded — a body that's supposed to be unstoppable, learning it's not. Save the big version for the reveal.
 
-## Reveal-aftermath (~M82+) — *the identity crisis*
+## Reveal-aftermath (~M110 / Ch25, the team reveal) — *the identity crisis*
 
 **Chess reading (all three pieces already spent).** Her triplet is *gone* — bishop off at M20, both pawns inside the first eight moves. Through the entire back half of the game she has no piece on the board. The fast-and-short-lived pattern finishes its sentence: she did all her damage early, paid for all of it early, and now she has to live the other hundred moves with nothing to move. Her absence from the late board IS the beat — the strength was front-loaded, and it was never hers.
 
