@@ -1,27 +1,47 @@
 # Go Squad Session Handoff
 
-**Last Updated:** 2026-04-03
-**Session:** Prose Audit, Embodiment Design, Book 1 Rebuild Decision
+**Last Updated:** 2026-06-14
+**Session:** Book 1 Rebuild — Triplet Ratification → Move Map → Embodiments → Run 1 Scaffold
 
 ---
 
 ## IMMEDIATE RESUME POINT
 
-### Series Topology — Then Book 1 Rebuild (2026-04-03)
+### Fire Book 1 Steward Run 1 (2026-06-14)
 
-**Resume at:** Build the series-wide topology. This is the agreed first step before anything else.
+**Resume at:** Run the Book 1 stewards. The full scaffold is built and ready — `5_story_bibles/book_1/BOOK1_STEWARD_RUN1.md`.
 
-**Why series topology first:** Book 1 is being rebuilt from studs (see below). The series topology identifies what Book 1 must deliver for Books 2-8 — cross-book arcs, seed-to-payoff mapping, locked endpoints per book. Without the series view, the rebuild risks preserving studs that aren't actually load-bearing downstream, or missing ones that are.
+**Sequence to run (per scaffold + STEWARD_EXPERIMENT_MANUAL):**
+1. **Run Ahdia first** (anchor) — all her moves incl. the 3 convergence points (M26, M82, M131–136). Extract `convergence_M26_ahdia.md`, `convergence_M82_ahdia.md`, `convergence_M131_ahdia.md`.
+2. **Run the other 9 in parallel** — each gets: shared preamble (in the scaffold) + their embodiment (`2_method_actor/book1_embodiment/`) + their move list + Ahdia's CP files where shared. They don't see each other's output — divergence is the goal.
+3. **Collect** as `{character}_run1.md`, then **5-agent evaluation** (Timeline Keeper, Status Tracker, Theme Guardian, Reader Proxy, Pacing Monitor) → Enforcer → Director blocking.
 
-**Sequence:**
-1. **Series topology** — the ceiling everything fits under
-2. **Book 4 topology** (old Book 3, dir `book_3/`) — direct recipient of Book 2B output, richest planning material (40 files)
-3. **Books 5-8 topologies** — Phase 1 skeletons
-4. **Book 1 move mapping** — assign 136 chess moves to chapters/phases, anchor 8 studs to specific moves
-5. **Triplet assignments** — 3 chess pieces per character as cognitive architecture
-6. **Embodiment instructions** — the missing layer between character bible and prose
-7. **Steward runs for Book 1** — characters generate beats through triplet lenses
-8. **Book 1 prose generation** — with embodiment active from word one
+**Decide before firing:** run mechanics (parallel terminals via `.vscode/tasks.json`, parallel agents, or sequential) + confirm Leah/Victor reveal-aftermath beat granularity (flagged in the scaffold's Open Items).
+
+### Rebuild sequence — status
+
+1. ✓ **Series topology** (`5_story_bibles/SERIES_TOPOLOGY.yaml`)
+2. ✓ **Book 4 topology** (`5_story_bibles/book_3/BOOK4_TOPOLOGY.yaml`)
+3. ☐ **Books 5–8 topologies** — not started (independent; can wait)
+4. ✓ **Book 1 move mapping** (`5_story_bibles/book_1/BOOK1_MOVE_MAP.md`) — 8 studs anchored to PGN moves, Director-approved
+5. ✓ **Triplet assignments** (`5_story_bibles/book_1/BOOK1_TRIPLETS.md`) — RATIFIED; validated against the PGN
+6. ✓ **Embodiment instructions** (`2_method_actor/book1_embodiment/`) — all 10 active characters, ratified
+7. ☐ **Steward run (Run 1)** ← **NEXT** — scaffold ready (`BOOK1_STEWARD_RUN1.md`)
+8. ☐ **Book 1 prose generation** — with embodiment active from word one
+
+---
+
+## What Happened This Session (2026-06-14)
+
+**Drove the Book 1 rebuild from stale-handoff state through to a fire-ready steward run.**
+
+1. **Canon-validated + ratified the triplets** (`BOOK1_TRIPLETS.md`) against the raw PGN. Fixed a hard error (a-pawn dies M33 not M53), documented the Ruth/Leah shared f1 bishop, and resolved 3 narrative tensions by Director ruling: Firas's M80 Rook-fall = his injury-sidelining (not a Kain duel); the M82 Tank kill is Ahdia's (Ruth witnesses); "Ng7" softened (resignation, not on-board mate; canonical kill = Bourn's missile + singularity). Core mappings (Ahdia's knight→Ng7, e-pawn→e6, Firas's f-pawn→f5) verified true in the game.
+2. **Built the move map** (`BOOK1_MOVE_MAP.md`) — 4-phase skeleton, 9 stud anchors (Stud 4 split into fake-death 4a + source-reveal 4b; Stud 3 spans street-seed M14→EMP-payoff M80; Stud 5 corrected late ~M108; Stud 6 = Director-framed suit beat ~M116–120). Move→chapter math lands every canon beat (Docks≈Ch19, suit≈Ch26, dissolution≈Ch29–30).
+3. **Wrote all 10 active embodiment instructions** (`2_method_actor/book1_embodiment/`) in a ratified 5-D format (cognitive architecture / negative constraints / repeatable operations / grief-stress registers / structural resistances), each fusing the triplet + move map and baking the prose-audit AI-tic guards + canon locks per character.
+4. **Built the Run-1 scaffold** (`BOOK1_STEWARD_RUN1.md`) — shared preamble, move-metaphor table, 3 convergence points (M26 / M82 / M131–136), move ownership per steward, starting states, and the prompt-assembly recipe.
+5. **Canon hygiene:** "Dr. Shiba Ryu" → "Dr. Ryu Matsuda" in the state index (Shiba-purge residue); archived 3 stale pre-restructure duplicate trees (`chess_engine_context/`, `story_bibles/`, `tools/`) to `_archive/pre_restructure_duplicates/` (kept `entity_catalog/` + `reference/` — live tooling).
+
+**Env note:** `git-lfs` is missing in the devcontainer; pushes need `git push --no-verify` (text-only commits) — see project memory.
 
 ---
 
@@ -138,9 +158,9 @@ Not started. Full spec unchanged:
 | Book 1 | `BOOK1_TOPOLOGY.yaml` | 4 (complete) | Exists — architecture reference for rebuild |
 | Book 2A | `BOOK2A_TOPOLOGY.yaml` | 4 (complete) | Exists |
 | Book 2B | `BOOK2B_TOPOLOGY.yaml` | 2-3 | Exists |
-| Book 4 | Not yet created | — | 40 planning files exist |
-| Books 5-8 | Not yet created | — | Unknown |
-| Series | Not yet created | — | **NEXT SESSION PRIORITY** |
+| Book 4 | `book_3/BOOK4_TOPOLOGY.yaml` | — | **Created 2026-05-18** |
+| Books 5-8 | Not yet created | — | Still pending (independent of Book 1 rebuild) |
+| Series | `SERIES_TOPOLOGY.yaml` | — | **Created 2026-05-18** |
 
 ---
 
