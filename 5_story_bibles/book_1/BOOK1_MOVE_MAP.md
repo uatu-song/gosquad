@@ -19,7 +19,7 @@ Two pawns reach the 6th/5th rank at the very end and **never promote** (`136. Ng
 
 | Phase | Moves | Act (topology) | Chess pivot | Narrative function | Chapters (approx) |
 |-------|-------|----------------|-------------|--------------------|-------------------|
-| **1 · Opening** | M1–M26 | Act 1 — *Origin* | Quiet Catalan → **Queen sac M26** | Protagonist fakeout; Firas shot/sidelined; center of gravity shifts Firas→Ahdia | Ch1–8 |
+| **1 · Opening** | M1–M26 | Act 1 — *Origin* | Quiet Catalan → **Queen sac M26** | Firas shot at M7 (benched); protagonist fakeout completes at M26 (warehouse fire + Queen off); center of gravity shifts Firas→Ahdia | Ch1–8 |
 | **2 · Imbalance** | M27–M66 | Act 2a — *Secret Helper* | **e-pawn wakes M29**; costs mount (M33, M53) | Ahdia activates, secretly helping; baseline depletes; CADENS | Ch9–16 |
 | **3 · The Grind** | M67–M95 | Act 2b — *Reversal* | Rook sac **M80**; **Rxa7 M82** | EMP trap springs; **Docks reveal — Ruth learns the truth (M82 ≈ Ch19)** | Ch17–22 |
 | **4 · Endgame→Climax** | M96–M136 | Act 3 — *Climax* | March to **Ng7 M136** | Sustained pressure → suit → autoinjector → dissolution | Ch23–30 |
@@ -52,7 +52,7 @@ Capture/pivot events, with the character whose triplet piece is involved. These 
 
 | Move | PGN | Event | Character lens |
 |------|-----|-------|----------------|
-| M7 | `dxc5 / Bxc5` | First capture ("first blood"), immediately recaptured | Ruth d-pawn (CR-7 enters) / Leah (first punch) |
+| M7 | `dxc5 / Bxc5` | First capture ("first blood"), immediately recaptured — **Firas's gunshot (the single canonical wounding); CR-7 saves him** | Ruth d-pawn (CR-7 enters, saves shot Firas) / Leah (first punch) |
 | M8 | `c4 / dxc4` | One-move pawn, taken instantly | Leah c-pawn (over-extension) |
 | M11 | `Nxc4` | Ahdia's knight, 1st surgical capture | Ahdia ♘ (b1) |
 | M17 | `Bxf6 / gxf6` | Bishop takes knight, recaptured by Kain's pawn | Ben/Victor ♗ (c1) ; Kain g-pawn — **Stud 3 seed** |

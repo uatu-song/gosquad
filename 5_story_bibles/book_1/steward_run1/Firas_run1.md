@@ -18,15 +18,17 @@
 
 *Read Ahdia's M26 beat — she is absent here, a fire on a feed, a closed file. This room is mine. I do not know she faked it. My grief is real and aimed at a lie.*
 
-**Chess reading (♕):** The Queen is gone — not beaten in a duel, spent in a trade that the position needed. The flashy piece comes off and the board's gravity drops onto the King, the small protected square nobody was watching. The fakeout breaks exactly here: the hero was never the hero. But he doesn't feel it as structure. He feels it as a bullet.
+*(Note: the gunshot that benches him is M7 — Ruth's CR-7 save. This beat is NOT a second wounding; it's the warehouse fire + the fakeout completing while he's still laid up.)*
 
-**Narrative meaning:** The docks job goes wrong and a round goes through him — through the side, not clean, enough. He's down before the protector reflex can fire, which is the part that scares him more than the wound: he couldn't step between anything. And in the same stretch of bad hours, the warehouse burns, and they tell him Ahdia was inside. He doesn't get to disbelieve it — he's flat on a gurney with Ruth's hands in him, unable to *go,* unable to run at it, and the one thing motion was always for (keep anyone else from falling) has failed in both directions at once. He grieves the sister he thinks he just lost without ever knowing she's the reason he ever looked enhanced. The thoughtless thing surfaces, not aimed at anyone, just the dark water rising: *she was already gone, I just kept knocking.* He'd be horrified to hear himself. The Queen is off the board. He thinks the story is over and that he's the one who failed it.
+**Chess reading (♕):** The Queen is gone — not beaten in a duel, spent in a trade that the position needed. The flashy piece comes off and the board's gravity drops onto the King, the small protected square nobody was watching. The fakeout breaks exactly here: the hero was never the hero. But he doesn't feel it as structure. He feels it as the floor giving way — he's already down from the wound that benched him, and now the one person he was protecting is, as far as he knows, gone.
+
+**Narrative meaning:** He's still laid up from the gunshot weeks back — the wound that scares him less for the pain than for what it proved: he was down before the protector reflex could fire, he couldn't step between anything. And now, while he's still too broken to move, the warehouse burns and they tell him Ahdia was inside. He doesn't get to disbelieve it — he's flat on his back, unable to *go,* unable to run at it, and the one thing motion was always for (keep anyone else from falling) has failed twice over: once in his own body, once in hers. He grieves the sister he thinks he just lost without ever knowing she's the reason he ever looked enhanced. The thoughtless thing surfaces, not aimed at anyone, just the dark water rising: *she was already gone, I just kept knocking.* He'd be horrified to hear himself. The Queen is off the board. He thinks the story is over and that he's the one who failed it.
 
 ---
 
 ## M80 — `80. Rxf7+ Kxf7` (♖ ROOK REMOVED) (the White Rook is captured by the Black King and leaves the board)
 
-*Canon: this is the sidelining, NOT a Kain duel. The injury takes him off the field. The board enacts his removal from active duty — not a defeat in combat.*
+*Canon: this is the SAME M7 gunshot wound still keeping him down — the recovery dragging on through the midgame, NOT a new injury and NOT a Kain duel. The board enacts his continued removal from active duty — not a defeat in combat.*
 
 **Chess reading (♖):** The Rook — the direct, charging, linear self, the most-captures piece in the game — comes off the board. Not in a brave exchange he chose. It's simply *removed,* taken out of the action while the rest of the side keeps grinding. The crime-fighting Firas is gone from the field and the game goes on without him for fifty more moves. That's the cruelty of it: the board doesn't even need him to win.
 

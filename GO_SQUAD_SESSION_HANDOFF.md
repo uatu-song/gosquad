@@ -1,22 +1,25 @@
 # Go Squad Session Handoff
 
-**Last Updated:** 2026-06-14
-**Session:** Book 1 Rebuild — Triplet Ratification → Move Map → Embodiments → Run 1 Scaffold
+**Last Updated:** 2026-06-14 (late — Run 1 complete + evaluated + fixed)
+**Session:** Book 1 Rebuild — Triplets → Move Map → Embodiments → Run 1 → 5-Agent Eval → Fixes
 
 ---
 
 ## IMMEDIATE RESUME POINT
 
-### Fire Book 1 Steward Run 1 (2026-06-14)
+### Book 1 Steward Run 1 is COMPLETE, evaluated, and fixed → next is Cinematic Blocking (2026-06-14)
 
-**Resume at:** Run the Book 1 stewards. The full scaffold is built and ready — `5_story_bibles/book_1/BOOK1_STEWARD_RUN1.md`.
+**Resume at:** Two Director decisions, then cinematic blocking (rebuild step 9).
 
-**Sequence to run (per scaffold + STEWARD_EXPERIMENT_MANUAL):**
-1. **Run Ahdia first** (anchor) — all her moves incl. the 3 convergence points (M26, M82, M131–136). Extract `convergence_M26_ahdia.md`, `convergence_M82_ahdia.md`, `convergence_M131_ahdia.md`.
-2. **Run the other 9 in parallel** — each gets: shared preamble (in the scaffold) + their embodiment (`2_method_actor/book1_embodiment/`) + their move list + Ahdia's CP files where shared. They don't see each other's output — divergence is the goal.
-3. **Collect** as `{character}_run1.md`, then **5-agent evaluation** (Timeline Keeper, Status Tracker, Theme Guardian, Reader Proxy, Pacing Monitor) → Enforcer → Director blocking.
+**Run 1 status:** DONE. 10 stewards ran (Ahdia anchor + 9 parallel agents), ~21K words of beats in `5_story_bibles/book_1/steward_run1/`. Evaluated by the 5-agent pass + Enforcer (`steward_run1/eval/`, zero rejections, 10/10 fact spot-checks). The 1 BLOCKER + consensus FIXes + the missing M110 team-reveal are all resolved (mechanical fixes + a 4-steward gap-fill pass). See the session log below for the full issue ledger.
 
-**Decide before firing:** run mechanics (parallel terminals via `.vscode/tasks.json`, parallel agents, or sequential) + confirm Leah/Victor reveal-aftermath beat granularity (flagged in the scaffold's Open Items).
+**Before blocking — two Director calls still open:**
+1. **Reader-irony canon rulings** (Reader Proxy recommendation): treat *transcendence-not-death* and *Firas-displaced-not-dead* as Book-7 RETROACTIVE irony (the Book-1 reader shares the characters' grief, doesn't hold the secret); reveal *Bellatrix-watching* + *Kain-clone-survival* only at Kain's epilogue. Confirm or adjust.
+2. **Firas's one canonical sidelining move** — the injury is currently spread across M7/M20/M26/M80. Move map implies M26 = the bullet, M80 = the EMP trap. Pick the single sidelining anchor.
+
+**Then: Cinematic Blocking (rebuild step 9)** — Scene Choreographer + Pacing Monitor stage the Run-1 beats into scenes/chapters. This absorbs the two remaining staging items: CP-3 (M131–136) sequential staging (quad-consensus) and "the rescue must out-weigh the Kain-kill in foreground" (Theme F2). Output = the scene/chapter scaffold (the layer Book 1 does NOT have yet) → then prose (step 10).
+
+**Full session detail + validated 15-issue ledger:** `5_story_bibles/book_1/steward_run1/SESSION_LOG_2026-06-14.md`.
 
 ### Rebuild sequence — status
 
@@ -26,8 +29,9 @@
 4. ✓ **Book 1 move mapping** (`5_story_bibles/book_1/BOOK1_MOVE_MAP.md`) — 8 studs anchored to PGN moves, Director-approved
 5. ✓ **Triplet assignments** (`5_story_bibles/book_1/BOOK1_TRIPLETS.md`) — RATIFIED; validated against the PGN
 6. ✓ **Embodiment instructions** (`2_method_actor/book1_embodiment/`) — all 10 active characters, ratified
-7. ☐ **Steward run (Run 1)** ← **NEXT** — scaffold ready (`BOOK1_STEWARD_RUN1.md`)
-8. ☐ **Book 1 prose generation** — with embodiment active from word one
+7. ✓ **Steward run (Run 1)** — 10 stewards, evaluated (5-agent + Enforcer), fixes + gap-fill applied (`steward_run1/`)
+8. ☐ **Cinematic blocking** ← **NEXT** — Scene Choreographer + Pacing Monitor → scene/chapter scaffold (after the 2 Director calls above)
+9. ☐ **Book 1 prose generation** — with embodiment active from word one
 
 ---
 
