@@ -28,6 +28,23 @@ books:
     data_dir: canon/book_1
     prose_expected: false
 
+  book_1_ed1:
+    title: "Book 1 — FIRST EDITION (quarry, measurement-grade)"
+    status: quarry
+    # The published first edition, extracted from GoSquad_Book1.epub (the only
+    # chapter-segmented copy) and MECHANICALLY cleaned: PDF-extraction running
+    # headers and broken-word spacing removed, content untouched. The epub was
+    # itself built from the polluted book1_manuscript.txt, so content-level
+    # artifacts (e.g. a duplicated half-revised paragraph in Ch1) remain — they
+    # are first-edition reality, and polish work must see them.
+    # Registered so the style-constraint layer can MEASURE the disease per
+    # chapter. NOT edit-of-record; the rebuild (book_1) replaces it.
+    manuscript_dir: 6_manuscript/book_1/first_edition
+    chapter_glob: "chapter_*.txt"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_1_ed1
+    prose_expected: true
+
   book_2:
     title: "Book 2 — Sacrifice → Vulnerability"   # legacy label: "2A"
     status: quarry            # old prose exists but is NOT edit-of-record;

@@ -1,0 +1,72 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# SERIES-WIDE RULES — apply to EVERY registered book's prose.
+# Book-local canon/book_N/RULES.yaml overrides a series rule with the same id.
+#
+# FRESH-CUT 2026-07-26 from the repo's own measured tic inventory. Sources:
+#   - PROSE_VOICE_DESIGN_PROBLEM.md audit tables (2026-04-03 cross-book audit)
+#   - 1_writing_guides/Ahdia_Voice.md Part 4B "Generation Artifacts to Avoid"
+#   - 4_constraints/NEGATIVE_CONSTRAINTS.md (scent-opener ban → census tool,
+#     since "first line of chapter" is positional and lives there instead)
+#
+# ALL SEVERITIES ARE `warning` BY DESIGN: this layer MEASURES the disease and
+# surfaces it — it does not block commits of quarry text that predates the
+# rules. When the rebuild prose starts, the Director may promote specific rules
+# to `blocking` for the new prose (book-local override in canon/book_1/RULES.yaml).
+#
+# Rate-based tics (fragments, "still"/"already"/"just" frequency, em-dash
+# density) cannot be line-regex rules — they live in tools/tic_census.py.
+# ─────────────────────────────────────────────────────────────────────────────
+
+codex_meta:
+  scope: series
+  codex_version: 1
+
+rules:
+
+  R100_the_particular:
+    statement: >
+      "The particular [noun] of" — Book 2's signature AI mutation (48 instances
+      measured, across every POV). The amplification mechanism's clearest
+      fingerprint; near-zero in the author's pre-AI prose.
+    severity: warning
+    owner: Director
+    source_doc: PROSE_VOICE_DESIGN_PROBLEM.md
+    forbidden_in_prose:
+      - pattern: '\bthe particular\b'
+        note: "AI-default construction — Book 2's signature tic"
+
+  R101_not_construction:
+    statement: >
+      Not-constructions ("not X, but Y" / "It wasn't X. It was Y." / "so much
+      as") — 113 in Book 1 (Ch1-11: only 4; Ch29 alone: 10), 119 in Book 2.
+      Escalates under pressure; the rhetorical tic of an AI reaching for
+      profundity. Patterns below are proxies for the shapes the audit counted.
+    severity: warning
+    owner: Director
+    source_doc: PROSE_VOICE_DESIGN_PROBLEM.md
+    forbidden_in_prose:
+      - pattern: '\b[Nn]ot [^.!?;]{1,36}, but\b'
+        note: "not X, but Y"
+      - pattern: "\\b(?:was|is|are|did)n't [^.!?;]{1,32}\\. It was\\b"
+        note: "It wasn't X. It was Y."
+      - pattern: '\bso much as\b'
+        note: "didn't X so much as Y"
+
+  R102_hedge_construction:
+    statement: >
+      Hedge constructions — "a kind of", "a sort of", "something like",
+      "almost as if". Named in Ahdia_Voice.md Part 4B (Generation Artifacts to
+      Avoid): vagueness performing precision.
+    severity: warning
+    owner: Director
+    source_doc: 1_writing_guides/Ahdia_Voice.md
+    dialogue_exempt: true          # people hedge when they talk; narrators shouldn't
+    forbidden_in_prose:
+      - pattern: '\b[Aa] kind of\b'
+        note: "hedge (Ahdia_Voice 4B)"
+      - pattern: '\b[Aa] sort of\b'
+        note: "hedge (Ahdia_Voice 4B)"
+      - pattern: '\b[Ss]omething like\b'
+        note: "hedge (Ahdia_Voice 4B)"
+      - pattern: '\b[Aa]lmost as if\b'
+        note: "hedge (Ahdia_Voice 4B)"

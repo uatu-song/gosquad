@@ -1,0 +1,7 @@
+# Book 1 first edition — book-local rules. The style constraints live in
+# canon/series/RULES.yaml (they apply to every book's prose); this file is for
+# rules specific to THIS text. Empty until a Director ruling needs one.
+codex_meta:
+  book: book_1_ed1
+  codex_version: 1
+rules: {}

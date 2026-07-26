@@ -112,7 +112,10 @@ def build(book):
                 owner=book.rel(book.constraints_f) + " > constraints",
                 name=it.get("name", ""), note=it.get("rule", ""), aliases=[], raw=it)
 
-    for rid, r in (load_yaml(book.rules_f).get("rules") or {}).items():
+    # Rules: series-wide first, book-local layered over (same id = book wins).
+    merged = dict(load_yaml(book.series_rules_f).get("rules") or {})
+    merged.update(load_yaml(book.rules_f).get("rules") or {})
+    for rid, r in merged.items():
         short = rid.split("_")[0]                 # R001_no_ahdia_pov -> R001
         codes[short] = dict(
             kind="RUL", code=short, derived=True, full_id=rid,

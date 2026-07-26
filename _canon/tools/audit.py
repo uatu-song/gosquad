@@ -63,7 +63,11 @@ def main():
     cfg.add_book_arg(ap)
     ap.add_argument("--quiet", action="store_true")
     ap.add_argument("--rule", help="run one rule id (prefix match)")
+    ap.add_argument("--stats", action="store_true",
+                    help="per-rule × per-chapter hit counts (disease map) instead of line-by-line output")
     args = ap.parse_args()
+    if args.stats:
+        args.quiet = True          # stats mode aggregates; line spam defeats it
 
     book = cfg.load(args.book)
     blocking, warning = [], []
@@ -83,11 +87,15 @@ def main():
     if not os.path.isdir(book.data_dir):
         blocking.append(("R000_wiring", book.rel(book.data_dir), 0, "canon data_dir does not exist"))
 
+    # Series rules first, book rules layered over them (same id = book wins).
+    series_rules = (load_yaml(book.series_rules_f).get("rules") or {})
     rules = (load_yaml(book.rules_f).get("rules") or {})
-    if isinstance(rules, list):
+    if isinstance(rules, list) or isinstance(series_rules, list):
         blocking.append(("R000_wiring", book.rel(book.rules_f), 0,
                          "rules must be a MAPPING (rules: {}), not a list"))
-        rules = {}
+        rules = {} if isinstance(rules, list) else rules
+        series_rules = {} if isinstance(series_rules, list) else series_rules
+    rules = {**series_rules, **rules}
     if args.rule:
         rules = {k: v for k, v in rules.items() if k.startswith(args.rule)}
         if not rules:
@@ -142,6 +150,7 @@ def main():
         print(f"   {len(cfiles)} codex files scanned — no fossils" + c("  ✓", "grn"))
 
     # ── 3. PROSE ─────────────────────────────────────────────────────────────
+    stats = {}          # rid -> {chapter_short: hits}   (feeds --stats)
     if not args.quiet:
         print(c("\n3. PROSE  (manuscript vs. the rules, POV-scoped)", "bold"))
     POV = {str(k): str((v or {}).get("pov", ""))
@@ -184,6 +193,8 @@ def main():
                     if any(norm(cl) in norm(raw) for cl in cleared):
                         continue     # ruled a non-defect; do not re-litigate
                     n_prose += 1
+                    stats.setdefault(rid, {}).setdefault(book.short(f), 0)
+                    stats[rid][book.short(f)] += 1
                     entry = (rid, book.rel(f), i, f"'{mt.group(0)}' — {spec.get('note','')}")
                     (blocking if fsev == "blocking" else warning).append(entry)
                     if not args.quiet:
@@ -219,6 +230,25 @@ def main():
                     print(f"       {c(rid, 'dim')}  edit touched ruled material — ruling or RULES update required")
     if not args.quiet and not n_gone:
         print(f"   {n_dev} ruled spans anchored — all present" + c("  ✓", "grn"))
+
+    # ── STATS MODE — the disease map ─────────────────────────────────────────
+    if args.stats:
+        print(c(f"\nSTATS — {book.key}: rule hits per chapter (warnings included)", "bold"))
+        if not stats:
+            print("  no rule hits anywhere.")
+        else:
+            chs = [book.short(f) for f in pfiles]
+            for rid in sorted(stats):
+                row = stats[rid]
+                tot = sum(row.values())
+                print(f"\n  {c(rid, 'yel')}  total {tot}")
+                # compact sparkline-ish row: only chapters with hits
+                line = "   "
+                for ch in chs:
+                    if row.get(ch):
+                        line += f" {ch}:{row[ch]}"
+                print(line)
+        print()
 
     # ── SUMMARY ──────────────────────────────────────────────────────────────
     print(c("\n" + "─" * 62, "dim"))

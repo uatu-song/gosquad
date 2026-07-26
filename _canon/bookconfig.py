@@ -53,6 +53,14 @@ class Book:
         return self.data_dir / "RULES.yaml"
 
     @property
+    def series_rules_f(self):
+        """Series-wide rules (style tics, cross-book bans) — apply to EVERY
+        book's prose. One file, so a rule fix lands everywhere at once instead
+        of drifting across per-book copies. Book-local RULES.yaml overrides a
+        series rule with the same id."""
+        return PROJECT_ROOT / "canon" / "series" / "RULES.yaml"
+
+    @property
     def chapter_index_f(self):
         return self.data_dir / "CHAPTER_INDEX.yaml"
 
