@@ -70,6 +70,9 @@ PATTERN_TICS = {
     "kind-of": re.compile(r"\bthe kind of\b", re.I),
     "voice-was": re.compile(r"\b\w+'s voice was\b|\b[Hh](?:er|is) voice was\b|\bvoice came out\b"),
     "looked-at": re.compile(r"\b(?:looked|stared|glanced) at\b", re.I),
+    # the epigram template ("Alone, then." / "Triage, then.") — one shape of
+    # the closing-aphorism tic flagged by the Director on CH18 v2 (2026-07-26)
+    "epigram-then": re.compile(r"\b[A-Z]\w*, then\."),
 }
 SCENT = re.compile(r"\b(smell|smelled|smelt|scent|odor|odour|stank|stunk|aroma)\b", re.I)
 

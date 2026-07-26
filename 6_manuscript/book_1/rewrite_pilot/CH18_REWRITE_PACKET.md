@@ -49,7 +49,50 @@ are secretly Ahdia.** Do not hint.
   School / "the Academy". Drafts are gated by check_nouns.py — any name not
   in the Book 1 corpus kills the draft.
 
+## Craft constraints (added after v2 Director review, 2026-07-26)
+
+- **EPIGRAM BUDGET.** The closing aphorism — a short sententious clause that
+  lands a paragraph's meaning ("...and she wrote the way out first", "which
+  was medicine, most days", "Alone, then.") — is the AI's most reliable tic.
+  v2 ran it ~8 times, twice on the identical template ("Alone, then." /
+  "Triage, then."). HARD BUDGET: **at most 5 landed closers in the chapter,
+  never the same syntactic shape twice.** Default: end paragraphs on the
+  concrete image with nothing appended. The un-landed ones hit harder for the
+  contrast; give the reader somewhere to put their own weight.
+- **VILLAIN SPEECH = SUBTRACTION.** The Tank Cop is a hired human — smug,
+  employed, enjoying the work — NOT a mission statement and NOT a void. (The
+  void is reserved: a later book has a silent clone whose signature must not
+  be pre-empted; the Tank stays a *person*.) He knows her name — "Dr. Carter"
+  — and that alone lands the horror. He does NOT explain his employer's
+  plans, does NOT flag her research as an asset, does NOT telegraph arcs.
+  The pulse, if he mentions it at all, is offhand shop-talk, said while the
+  ordinary face stays ordinary. NO stock lines ("Brave. Stupid, but brave"
+  is retired — it was first-edition quarry, not canon).
+- **VARY THE TAKEDOWN SHAPE.** Beat 7 must not run attack→dispatched three
+  times in the same paragraph shape. Route at least one through Ruth's
+  expertise (v2's Leah worked: "each placed exactly where Ruth would have
+  marked a body for damage" + he *lets* them land — keep that
+  characterization); give the others different structures — one can happen
+  at the edge of her attention, one can be over before she parses it.
+- **THE DRAIN IS A PHYSICAL EVENT.** This chapter's core is a body stripped
+  of borrowed capacity — narrate it IN Ruth's body, not past it. The
+  residency-wall register (v2's "stairwells taken at a sprint with a code
+  called overhead") is the right mode; more of it, especially during the
+  drain itself and on the docks (cold, wet air, smell are all available
+  MID-scene — only chapter-openers ban scent).
+
 ## Canon locks (violating any = dead draft)
+
+- **Ben's background is MILITARY, not police.** He has a *contact* at the
+  precinct; he was never a cop ("old cop habit" in v2 was drift).
+- **The enhancement mechanism (author-level knowledge — Ruth doesn't know
+  this):** the team's abilities were NEVER in their bodies; they are
+  distributed through external infrastructure the pulse CAN kill. So the EMP
+  kills equipment and the relay; the team *feels* stripped. Never write the
+  enhancement as in-body tech, an implant, or something a pulse could reach
+  inside them to remove. The Tank believes his pulse turned off their
+  augmentation — he is wrong about his own weapon, and the prose must not
+  editorialize that he's wrong.
 
 - Codenames (public fan-assigned thread is a beat): BATTLEA (Leah), NIGHT
   KNIGHT (Ben), CRIMSON SABLE (Tess), GLOOM GIRL (Ahdia), NIGHTINGALE (Ruth)
@@ -103,11 +146,14 @@ are secretly Ahdia.** Do not hint.
    off. Orders the team clear over protest ("That's an order"). Runs the
    quarter-mile to the docks; container maze; dead end at the water. Her
    medical eye prices the water: forty degrees, ten minutes to hypothermia.
-9. **Face to face.** Radio static — alone. He unmasks: the normal face.
-   "Dr. Carter. You should have stayed in the ER." Kain's regards; her
-   research "valuable — once you're out of the way." The EMP explanation.
-10. **Hard cut.** She sprints for the edge; caught by the jacket; cornered.
-    "Brave. Stupid, but brave." The windup. End.
+9. **Face to face.** Radio static — alone. He unmasks: the normal face
+   (keep the v2 quality: a face that offers nothing to remember). He knows
+   her: "Dr. Carter." That is the payload — her name out of that armor.
+   Speech per the VILLAIN SPEECH constraint: small talk from a hired man,
+   not a briefing. The reader may infer who sent him; he delivers no memo.
+10. **Hard cut.** She reads her options (water vs. man), moves, is caught;
+    cornered at the edge, water at her back, the windup. End mid-threat.
+    No stock lines.
 
 ## Register targets (the draft is MEASURED against these before the Director sees it)
 
