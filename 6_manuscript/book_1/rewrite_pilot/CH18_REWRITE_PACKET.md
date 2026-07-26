@@ -91,6 +91,16 @@ are secretly Ahdia.** Do not hint.
   a second shift, a vehicle) must either pay off, be dismissed, or explain its
   own silence. An asset that watches the whole op and never registers the
   ambush is a hole, not set dressing.
+- **A PATCH IS NOT LOCAL.** After any line-level fix, re-read the whole for
+  the sentence it just made redundant. The v4 courtesy patch was correct and
+  created a triple ("he isn't winded" three times) plus a new tic
+  ("unhurried" ×4) because the downstream lines weren't re-checked. Patch,
+  then sweep.
+- **PRESERVE TEXT, NOT DESCRIPTIONS OF TEXT.** A good line reconstructed from
+  a note about it comes back duller — "the only address grief could find:"
+  became "because grief with nowhere to send itself goes to..." when
+  paraphrased. Keeper lines go into RULES.yaml `protected_sites` as EXACT
+  quotes so audit §4 screams if they vanish; never re-derive them from memory.
 - **ENDINGS STAY IN REGISTER.** The final gesture must belong to the character
   who makes it. A tradesman does not wind up for a haymaker; he adjusts his
   grip. Reach for the procedural, unhurried version of any closing beat.
