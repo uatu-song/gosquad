@@ -108,7 +108,7 @@ def census_chapter(path):
 
 MEASURES = ["em-dash", "still", "already", "just", "short-burst",
             "the-particular", "not-constr", "hedge",
-            "in-chest", "kind-of", "voice-was", "looked-at"]
+            "in-chest", "kind-of", "voice-was", "looked-at", "epigram-then"]
 
 
 def main():
