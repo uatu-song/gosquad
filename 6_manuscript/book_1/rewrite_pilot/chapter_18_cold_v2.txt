@@ -1,0 +1,131 @@
+# Chapter 18 — COLD REWRITE v2 (first draft, NOT manuscript)
+
+<!-- PROVENANCE: fresh cold agent, 2026-07-26. Inputs: CH18_REWRITE_PACKET.md (v2, with world constraints + name table) + Ruth embodiment + GOSQUAD_PROSE_VOICE. Never saw first-edition prose or draft v1. Awaiting Director review. -->
+
+Ruth squared the last printout against the others, the same motion she'd used on charts at the nurses' station for years, order imposed before the shift could impose itself on her.
+
+"Warehouse district 7," she said. "Near the docks. Ben's contact at the precinct says weapons cache, minimal security, tight window. We go in at 2100."
+
+"Twelfth op this month," Victor said from the arm of the couch. "We should get a punch card."
+
+"Eleventh. The pawnshop never happened." She tapped the floor plan. "Victor and Ben take the loading dock on the east face. Tess and Leah go over the roof. Maintenance hatch here, eight-foot drop to a catwalk. I hold the perimeter and run comms."
+
+Ben turned the schematic to read it upside down, old cop habit. "My guy says the stock moves at midnight, so the window's real. Kain's been scrambling since the warehouse raid. He's exposed, and CCPD can't cover for him in the open anymore, so his people are consolidating everything they can reach. This is what falls off the truck when a man starts running."
+
+"Then we catch it before it lands." Two hours out. Enough time to prep the med kit twice, and she would, because doing it once left her hands empty. She'd already marked the exits on the floor plan in red, one per pair. A plan was only as good as its way out, and she wrote the way out first.
+
+Across the room, Tess made a sound Ruth's ear filed under guilt, minor.
+
+"Okay," Tess said. "Before tonight. You all need to see this, and you need to remember that you love me."
+
+She held her phone up. A thread, hundreds of posts deep. A kid asking whether the Go Squad signed autographs, because somebody had pulled his sister out of a carjacking two weeks ago and she hadn't stopped talking about it since. A photo making the rounds: flowers laid on a sidewalk where a rescue had happened, a card in a stranger's marker. "Thank you for my daughter."
+
+"And there's a roster now," Tess said. "A fan account assigned us official codenames. Leah is BATTLEA. Ben is NIGHT KNIGHT. I am CRIMSON SABLE, which I can absolutely live with. Ahdia's GLOOM GIRL, which she is going to pretend to hate." She turned the screen toward Ruth. "You're NIGHTINGALE."
+
+"What am I?" Victor said.
+
+"Unlisted. Be faster."
+
+"Why do you sound guilty?" Ben asked. "You sound guilty."
+
+"Because I may have been posting in these threads for months. Using those names. With commitment." Tess set the phone face-down. "Firas is going to love this."
+
+"Or kill you," Leah said.
+
+"Or kill me."
+
+Ruth let the room laugh and read the photo again while it did. Flowers on a public sidewalk, a note written to people the writer would never meet, left at the only address grief could find: the place where it happened. The secrecy had held. The city had shadows, blurry footage, and five names it had invented for itself. That was the piece she kept turning over. An anonymous risk had been hers alone to spend. A named one belonged partly to a kid who wanted autographs, and the ledger sat heavier for it. She folded the thought flat and packed it with the med kit.
+
+At 2052 she ran the comms check from the van. "Sound off."
+
+"Loading dock, set." Ben.
+
+"Copy that." Victor.
+
+"Roof team in position," Leah murmured. "Tess is judging their padlock."
+
+"It's insulting," Tess said.
+
+The enhancement sat in Ruth's body the way whole blood sat in a patient two liters down: margins widened, capacity restored, everything suddenly good for more than it had any right to be. Experimental military tech, Firas had said once, vague even for him. Someone who wanted to help. A FAERIS drone hung somewhere overhead, government provenance in miniature. She distrusted every piece of the arrangement and used it anyway, which was medicine, most days.
+
+"No better place than here," she said onto the open channel. Firas's line. His tradition, kept warm while he healed.
+
+"No better time than now," came back four strong.
+
+Entry was clean. Ben called the lock, Tess called the corners, and at 2101 all four were inside the wire. On her monitor the warehouse spread out in thermal gray, aisle after aisle of industrial shelving, and four small signatures moved through it in good order, spacing textbook, sweep pattern tight. She logged the time and let her shoulders drop half an inch.
+
+At 2103, Ben's whisper: "Ruth. The racks are empty. All of them."
+
+"Say again."
+
+"There's nothing here. Dust says there never was."
+
+Floodlights hit the building from three sides at once. Sirens rose behind them, layered, and a megaphone flattened a man's words across the whole yard: Caledonia Police, the building is surrounded, come out with your hands raised.
+
+Her monitor still had thermal. She counted heat signatures along the perimeter and stopped counting at fifteen units, SWAT profiles among them. False intel. Either somebody had bought Ben's contact or fed him, and that was a problem for a living person to solve tomorrow.
+
+"Ambush," she said. "Smoke and scatter. Formation Delta. Goggles on. Move on my count."
+
+Through infrared the yard went ghost-green and the smoke was nothing at all. Victor took the east fence at a dead run and cleared it one-handed with forty pounds of gear on his back. Tess dropped two smoke rounds under the patrol cars and turned their strobes into a bruise of gray light. Across the yard a flash-bang cracked, Ben's, buying Leah her exit, and Leah came down the fire escape like water finding a drain and was gone into the alleys off Little Poland.
+
+"Clear." "Clear." "Clear." "Clear."
+
+Ruth allowed herself one breath of satisfaction. Four for four through a fifteen-unit ambush. That was cold-morning drills, repetition until the body outvoted fear. Training, and the training was hers.
+
+Then her goggles died.
+
+Full battery at insertion; she'd checked twice. The GPS went with them, and the van's dash flickered once and settled dark. She was reaching for the hardened backup radio when the other loss arrived, the one with no readout. The borrowed capacity drained out of her all at once, pressure off a blown line, and what remained in the driver's seat was Ruth Carter, unaugmented, forty hours into a hundred-hour week.
+
+"My gear's dead." Victor, too fast. "And I feel—"
+
+"Here too." Leah, tight. "It's gone. Ruth, it's gone..."
+
+"Breathe." She kept the cadence flat, the register she used with a coding patient's family. "You were trained before you were ever enhanced. Every drill is still in your hands. Regroup at rally point two and keep moving."
+
+She was out of the dead van with the trauma bag when he came through the smoke.
+
+Seven feet of him, armored to the boots, and the smoke rolled off the plating like it had been hung for his entrance. A patrol officer broke cover to run. The armored man caught him by the vest in passing and threw him fifteen feet into the door of a patrol car, which folded around him. The officer slid down the wreck and lay still.
+
+Victor hit him from the blind side, a takedown Ruth had watched fold men twice his size. The big man shifted his weight and took Victor's arm with him, and the angle it reached carried all the way across the yard. Victor went down and stayed down. Shoulder, dislocated at minimum, out of the fight. Her diagnosis and her fear arrived in the same breath.
+
+Leah was already inside his reach. Three strikes, each placed exactly where Ruth would have marked a body for damage: knee, floating ribs, the seam at the throat. He let all three land. Then one backhand, and Leah went through a stacked pallet and lay among the pieces of it.
+
+Ben got his baton up. The man took him by the throat one-handed and lifted until his boots left the ground.
+
+Ruth broke position before she'd finished deciding to. "Put him down!"
+
+The helmet turned toward her and held. Then he opened his hand. Ben dropped and stayed down, gasping. Alive. Airway intact, the clinical part of her recorded, even now. The armored man started toward Ruth at a walk, unhurried, like she was the appointment he'd come to keep.
+
+Triage, then. Victor down with one working arm. Leah down, ribs at least, maybe worse where she couldn't see. Ben on the ground relearning how to swallow. Fifteen police units regrouping beyond the smoke, and a weapon on legs in the middle of it, tracking her and only her. The team couldn't carry each other clear with him loose among them. She could give them a direction to be away from.
+
+"Tess, take Victor. Ben, you've got Leah. Rally point two, now."
+
+"Ruth—" Ben, wrecked and furious.
+
+"That's an order."
+
+She ran.
+
+The docks were a quarter mile east and she made every yard of it burn, stripped of every borrowed gift, down to her own conditioning and the sound behind her of something big that never needed to hurry. Her legs found the old rhythm from residency, stairwells taken at a sprint with a code called overhead, and she fed it everything she had left. The container yard took her in. Steel canyons, right, then left, then right again, and the last turn opened onto black water and quit being a route.
+
+Dead end. The harbor slapped the pilings below the dock edge. Her medical eye priced the water without being asked: forty degrees, likely colder. Ten minutes to hypothermia, less before her hands stopped answering, and she'd be swimming in a jacket. A slower way to die, and possibly still the better offer on the table.
+
+She keyed the backup radio. Static. Jammed or out of range, and the difference had stopped mattering. Alone, then.
+
+He came around the last container without hurrying and filled the canyon behind her. Ten feet away he stopped, reached up, and unsealed the helmet.
+
+She had braced for a monster. She got a man of about thirty, clean-shaven, features so ordinary she could have taken coffee from his hand across any counter in Caledonia and lost the memory by closing time. The strangest thing about the face was how little it offered to remember.
+
+"Dr. Carter," he said. "You should have stayed in the ER."
+
+Her own name, out of that armor, cost her a second she couldn't spare.
+
+"Kain sends his regards. He wanted you to know your research is valuable. Once you're out of the way, it will finally be put to use." He set the helmet on a container ledge, taking his time. "The pulse killed your toys, and whatever it is the five of you have been running on besides them. Ours goes deeper than that. It can't be turned off with a magnet."
+
+Ruth ran the numbers one last time, the water against the man, and chose the water.
+
+She got two steps. A hand closed on the back of her jacket and swung her around, and then the dock edge was at her heels with the harbor loud below and seven feet of him blotting out the yard lights.
+
+"Brave," he said. "Stupid, but brave."
+
+The fist drew back.
