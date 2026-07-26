@@ -1,24 +1,166 @@
-# ─────────────────────────────────────────────────────────────────────────────
-# BOOK 2 — CHAPTER / POV INDEX
-#
-# The authoritative POV map. audit.py reads it to scope POV-specific rules, and
-# codex.py stamps every prose hit with its POV. Keys MUST be the file stem
-# (`chapter_01`), because that is what the tools match on.
-#
-# Source of truth is the prose itself — derive `pov` by reading the chapter, and
-# put the evidence line in `evidence`. Do NOT copy POV from a structure doc; a
-# beat sheet records intent, and the prose records what happened.
-#
-# Mark split-POV chapters `intercut`. audit.py automatically DOWNGRADES a
-# POV-scoped rule to a warning in an intercut chapter, because the tool cannot
-# know a given line sits in that POV's section — and a false block is how a gate
-# gets switched off.
-#
-#   chapter_01:
-#     number: 1
-#     title: "Peaceful Protest"
-#     pov: Ahdia
-#     evidence: "chapter_01.txt:12 — 'She felt the crowd shift…'"
-# ─────────────────────────────────────────────────────────────────────────────
+# book_2 — CHAPTER / POV INDEX. Derived from prose (mechanical interiority-scoring pass (pov_register.py) 2026-07-26; INTERCUT = split-POV, rules auto-downgrade).
+# 'dlg' = % of words inside quoted dialogue. POV-scoped rules downgrade to
+# warnings in chapters whose pov contains 'INTERCUT' (audit.py behavior).
 
-chapters: {}
+chapters:
+  chapter_01:
+    number: 1
+    title: 'Peaceful Protest'
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 22
+    evidence: '“On her feed, Ahdia saw her plant her back foot…”'
+  chapter_02:
+    number: 2
+    title: 'Time Freeze'
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 11
+    evidence: 'Ahdia-carried'
+  chapter_03:
+    number: 3
+    title: 'Cadens Medical'
+    pov: Ruth
+    confidence: med-INTERCUT?
+    dialogue_pct: 36
+    evidence: 'aftermath ensemble, Ruth primary'
+  chapter_04:
+    number: 4
+    title: 'Extended: Leah Pov'
+    pov: Leah
+    confidence: high
+    dialogue_pct: 32
+    evidence: 'Leah percep x2'
+  chapter_05:
+    number: 5
+    title: 'Penthouse Debrief'
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 38
+    evidence: '“That pause--Ahdia knew that pause.”'
+  chapter_06:
+    number: 6
+    title: 'Memorial Setup'
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 46
+    evidence: "“Ahdia felt something in her chest that wasn't the Seed.”"
+  chapter_07:
+    number: 7
+    title: 'Chaos'
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 21
+    evidence: 'Ahdia-carried'
+  chapter_08:
+    number: 8
+    title: 'Aftermath'
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 25
+    evidence: 'Ahdia-carried'
+  chapter_09:
+    number: 9
+    title: 'Extended: Ahdia Alone'
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 1
+    evidence: 'near-zero dialogue, Ahdia solo'
+  chapter_10:
+    number: 10
+    title: 'Extended: Tess Pov'
+    pov: Tess
+    confidence: med-INTERCUT?
+    dialogue_pct: 27
+    evidence: 'Tess primary, Leta secondary'
+  chapter_11:
+    number: 11
+    title: 'Extended: Kain Pov'
+    pov: Kain
+    confidence: high
+    dialogue_pct: 43
+    evidence: '“Somewhere in it, Kain thought he heard something…”'
+  chapter_12:
+    number: 12
+    title: 'Extended: Bellatrix Pov'
+    pov: Bellatrix
+    confidence: high
+    dialogue_pct: 0
+    evidence: '“Bellatrix felt it.” — zero dialogue'
+  chapter_13:
+    number: 13
+    title: 'The Gaps'
+    pov: Ahdia/Tess INTERCUT
+    confidence: low
+    dialogue_pct: 38
+    evidence: "“Ahdia noticed: Ryu respected Ruth's work.” + Tess secondary x24"
+  chapter_14:
+    number: 14
+    title: 'Dependencies'
+    pov: Victor/Ruth INTERCUT
+    confidence: low
+    dialogue_pct: 33
+    evidence: '“Victor knew the look--had seen it on a hundred faces…” + Ruth x32'
+  chapter_15:
+    number: 15
+    title: 'Where Is Ahdia?'
+    pov: Ruth/Leah INTERCUT
+    confidence: low
+    dialogue_pct: 43
+    evidence: '“Ruth felt the pieces clicking together.” + Leah x30'
+  chapter_16:
+    number: 16
+    title: 'Rest and Recovery'
+    pov: Tess
+    confidence: med-INTERCUT?
+    dialogue_pct: 36
+    evidence: '“Tess noticed immediately.” (Korede secondary)'
+  chapter_17:
+    number: 17
+    title: 'Concerns and Shared Trauma'
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 33
+    evidence: '“Ruth felt the conversation shifting.”'
+  chapter_18:
+    number: 18
+    title: 'Treatment'
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 40
+    evidence: 'Ahdia-carried'
+  chapter_19:
+    number: 19
+    title: 'Building the Case'
+    pov: Ben
+    confidence: high
+    dialogue_pct: 15
+    evidence: '“…Ben knew him well enough to read the subtle shift”'
+  chapter_20:
+    number: 20
+    title: 'Language Shapes Thought'
+    pov: Leah
+    confidence: high
+    dialogue_pct: 70
+    evidence: '“Leah thought about this.” — 70% dialogue'
+  chapter_21:
+    number: 21
+    title: 'Coordinated'
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 36
+    evidence: 'percep x9'
+  chapter_22:
+    number: 22
+    title: 'Triage'
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 42
+    evidence: '“Ruth felt something shift in her chest.”'
+  chapter_23:
+    number: 23
+    title: 'Family Dinner'
+    pov: Leah
+    confidence: high
+    dialogue_pct: 44
+    evidence: '“Leah felt it land in her chest--the weight of someone asking…”'

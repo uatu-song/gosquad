@@ -1,0 +1,185 @@
+# book_1_ed1 — CHAPTER / POV INDEX. Derived from prose (mechanical interiority-scoring pass (pov_register.py) 2026-07-26; ambiguous chapters verified by reading).
+# 'dlg' = % of words inside quoted dialogue. POV-scoped rules downgrade to
+# warnings in chapters whose pov contains 'INTERCUT' (audit.py behavior).
+
+chapters:
+  chapter_01:
+    number: 1
+    pov: Firas
+    confidence: high
+    dialogue_pct: 21
+    evidence: '“Firas hated it.” — ch1:3'
+  chapter_02:
+    number: 2
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 42
+    evidence: '“Before Ahdia realized Firas was playing to her paranoia…”'
+  chapter_03:
+    number: 3
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 16
+    evidence: '“Ahdia hated hugs but she was game…”'
+  chapter_04:
+    number: 4
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 19
+    evidence: '“Which, Ahdia thought, was a very science way of saying…”'
+  chapter_05:
+    number: 5
+    pov: Ahdia/Ruth INTERCUT
+    confidence: verified-by-reading
+    dialogue_pct: 62
+    evidence: 'debrief duet; “Ahdia insisted after processing everything Ruth shared” + Ruth interiority x3'
+  chapter_06:
+    number: 6
+    pov: Ruth
+    confidence: med
+    dialogue_pct: 10
+    evidence: 'Ruth-led ops chapter; name freq x29'
+  chapter_07:
+    number: 7
+    pov: Ruth
+    confidence: med-INTERCUT?
+    dialogue_pct: 10
+    evidence: '“Ruth knew since he radioed for backup…” (Ahdia secondary)'
+  chapter_08:
+    number: 8
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 14
+    evidence: 'short interstitial, Ruth-carried'
+  chapter_09:
+    number: 9
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 33
+    evidence: '“Ruth knew these supposedly routine stops…”'
+  chapter_10:
+    number: 10
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 12
+    evidence: '“Ruth knew if she followed the helicopter, it would just lead her to Gloom Girl…”'
+  chapter_11:
+    number: 11
+    pov: Leah
+    confidence: verified-by-reading
+    dialogue_pct: 5
+    evidence: 'callsign chapter: “the team-first mentality Battlea harbored knew she was faster” (Battlea=Leah per Action_Terminology)'
+  chapter_12:
+    number: 12
+    pov: Firas
+    confidence: med-ENSEMBLE?
+    dialogue_pct: 41
+    evidence: 'team-at-school scene staged around Firas; callsigns (Night Knight, Sable) used'
+  chapter_13:
+    number: 13
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 49
+    evidence: 'percep x7, freq x51'
+  chapter_14:
+    number: 14
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 26
+    evidence: '“This time Ahdia knew what was coming, which somehow made it worse.”'
+  chapter_15:
+    number: 15
+    pov: Ahdia
+    confidence: med
+    dialogue_pct: 54
+    evidence: 'percep x3'
+  chapter_16:
+    number: 16
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 11
+    evidence: '“…this time Ahdia felt time slow around him”'
+  chapter_17:
+    number: 17
+    pov: Kain
+    confidence: high
+    dialogue_pct: 39
+    evidence: '“Kain understood immediately.”'
+  chapter_18:
+    number: 18
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 21
+    evidence: '“Ruth felt something tighten in her chest.”'
+  chapter_19:
+    number: 19
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 31
+    evidence: '“Ruth knew that posture.”'
+  chapter_20:
+    number: 20
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 57
+    evidence: '“Ruth understood immediately.”'
+  chapter_21:
+    number: 21
+    pov: Tess
+    confidence: med
+    dialogue_pct: 51
+    evidence: '“Which was how Tess knew she was terrified.”'
+  chapter_22:
+    number: 22
+    pov: Tess
+    confidence: high
+    dialogue_pct: 10
+    evidence: '“The same way Tess felt teleportation but wrong.”'
+  chapter_23:
+    number: 23
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 52
+    evidence: 'percep x5, freq x44'
+  chapter_24:
+    number: 24
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 16
+    evidence: 'freq x22'
+  chapter_25:
+    number: 25
+    pov: Ruth
+    confidence: high
+    dialogue_pct: 53
+    evidence: '“Ruth felt the team fracturing around her.”'
+  chapter_26:
+    number: 26
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 15
+    evidence: '“Ahdia felt something in her chest shift.”'
+  chapter_27:
+    number: 27
+    pov: Kain
+    confidence: high
+    dialogue_pct: 3
+    evidence: 'Kain solo, near-zero dialogue'
+  chapter_28:
+    number: 28
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 10
+    evidence: '“Ahdia felt it--a tug on her body…”'
+  chapter_29:
+    number: 29
+    pov: Ahdia
+    confidence: high
+    dialogue_pct: 3
+    evidence: '“Ahdia felt it now--not just on her hair and clothes.”'
+  chapter_30:
+    number: 30
+    pov: Ahdia/Ruth INTERCUT
+    confidence: verified-by-reading
+    dialogue_pct: 54
+    evidence: "opens Ahdia (“glass was cold against Ahdia's forehead… since she'd watched her little brother dissolve”); Ruth scene later (duffel bag)"
