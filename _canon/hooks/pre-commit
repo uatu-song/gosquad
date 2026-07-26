@@ -1,0 +1,40 @@
+#!/bin/sh
+# ─────────────────────────────────────────────────────────────────────────────
+# THE WALL — canon + enforcement gate, run on every commit, for every book.
+#
+# Enforcement only works as a wall, not a note. A check that depends on an
+# operator remembering to run it is a check that gets skipped; every recurring
+# failure on the repo this system descends from violated a protocol that was
+# already written down.
+#
+# Blocks on:  a blocking audit violation
+#             a codex --enforce hard defect (a code appearing in prose that must
+#               not, or a broken cross-reference)
+#             typography drift — ONLY once books.yaml sets typography.enforce:true
+#
+# Bypass (rare, and say why in the commit message):  git commit --no-verify
+# ─────────────────────────────────────────────────────────────────────────────
+set -e
+
+ROOT=$(git rev-parse --show-toplevel)
+cd "$ROOT"
+
+BOOKS=$(python3 - <<'PY'
+import sys, yaml
+reg = yaml.safe_load(open("_canon/books.yaml", encoding="utf-8"))
+print(" ".join(sorted((reg.get("books") or {}).keys())))
+PY
+)
+
+fail() { echo ""; echo "COMMIT BLOCKED: $1"; echo "   (fix, or --no-verify with a reason)"; exit 1; }
+
+for B in $BOOKS; do
+  python3 _canon/tools/audit.py --book "$B" --quiet || fail "audit.py canon violation in $B."
+  python3 _canon/tools/check_typography.py --book "$B" >/dev/null || fail "typography drift in $B."
+  python3 _canon/tools/codex.py --book "$B" --enforce >/dev/null || {
+    python3 _canon/tools/codex.py --book "$B" --enforce || true
+    fail "codex --enforce hard defect in $B (see the ✗ lines above)."
+  }
+done
+
+echo "canon wall: $BOOKS — clean ✓"

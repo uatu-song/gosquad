@@ -1,0 +1,125 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# BOOK REGISTRY — THE CANONICAL NUMBERING AUTHORITY + path source of truth.
+#
+# Director ruling 2026-07-26: the series is 8 books, numbered 1–8, sequential
+# integers, NO LETTER SUFFIXES, EVER. "2A"/"2B"/"3A"/"3B" are dead labels. If a
+# book earns a split during generation, it takes two numbers at that point and
+# downstream books renumber. Splits are not pre-locked; they must emerge.
+# Legacy-label translation: /LEGACY_NUMBERING.md.
+#
+# Every tool in _canon/tools/ reads paths from here via bookconfig.py. No tool
+# contains a literal path. Resolution order:  --book flag  >  $BOOK  >  default_book
+# ─────────────────────────────────────────────────────────────────────────────
+default_book: book_1
+
+books:
+
+  book_1:
+    title: "Book 1 — Avoidance → Forced Action"
+    status: rebuild-preprose
+    # Rebuild at step 9 (cinematic blocking); prose is step 10 and hasn't
+    # started. No manuscript glob match is CORRECT — the codex gets tagged as
+    # prose is written (the forward case; safer than retroactive ingest).
+    # NOT canon: 6_manuscript/book_1/book1_manuscript.txt — PDF extraction of
+    # the pre-rebuild draft (318 embedded headers, 418 broken words). Quarry.
+    manuscript_dir: 6_manuscript/book_1/chapters
+    chapter_glob: "chapter_*.md"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_1
+    prose_expected: false
+
+  book_2:
+    title: "Book 2 — Sacrifice → Vulnerability"   # legacy label: "2A"
+    status: quarry            # old prose exists but is NOT edit-of-record;
+                              # the book is slated for regeneration through the
+                              # emergent pipeline after Book 1.
+    # chapters_split/ is the cleanest structured copy of the old draft (23
+    # files, `# Chapter N` headers + provenance comments). Registered so the
+    # engine can grep it as QUARRY — not so it can be treated as canon.
+    manuscript_dir: 6_manuscript/book_2/chapters_split
+    chapter_glob: "chapter_*.txt"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_2
+    prose_expected: true
+
+  book_3:
+    title: "Book 3 — Go Squad vs TRIOMF (Qe3#)"   # legacy label: "2B"
+    status: pre-prose         # steward Run 1 complete (outline beats only)
+    manuscript_dir: 6_manuscript/book_3
+    chapter_glob: "chapter_*.md"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_3
+    prose_expected: false
+
+  book_4:
+    title: "Book 4 — Confidence → Collapse"       # legacy label: old "Book 3"
+    status: pre-prose         # extensive planning; regenerable
+    manuscript_dir: 6_manuscript/book_4
+    chapter_glob: "chapter_*.md"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_4
+    prose_expected: false
+
+  book_5:
+    title: "Book 5 — Turning Point (DBT)"         # legacy label: old "Book 4"
+    status: concept
+    manuscript_dir: 6_manuscript/book_5
+    chapter_glob: "chapter_*.md"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_5
+    prose_expected: false
+
+  book_6:
+    title: "Book 6 — Radical Acceptance"          # legacy label: old "Book 5"
+    status: concept
+    manuscript_dir: 6_manuscript/book_6
+    chapter_glob: "chapter_*.md"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_6
+    prose_expected: false
+
+  book_7:
+    title: "Book 7 — Both/And Mastery"            # legacy label: old "Book 6"
+    status: concept
+    manuscript_dir: 6_manuscript/book_7
+    chapter_glob: "chapter_*.md"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_7
+    prose_expected: false
+
+  book_8:
+    title: "Book 8 — Worth Without Fixing"        # legacy label: old "Book 7"
+    status: concept
+    manuscript_dir: 6_manuscript/book_8
+    chapter_glob: "chapter_*.md"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_8
+    prose_expected: false
+
+# ─────────────────────────────────────────────────────────────────────────────
+# HOUSE TYPOGRAPHY
+# ─────────────────────────────────────────────────────────────────────────────
+# MEASURED 2026-07-26 across all 23 Book 2 quarry chapters (47,271 words) — the
+# values below DESCRIBE that prose; they are not yet a Director-ruled standard.
+# The old draft is self-consistent:
+#     4,140 straight "      vs      0 curly “”
+#     2,190 straight '      vs      0 curly ’
+#       438 closed em—dash  vs      0 spaced em — dash
+#        87 collapsed ...   vs      0 spaced . . .  and 0 … glyphs
+# Only true drift: 4 stray `**bold**` in ch21/ch23 (markdown residue).
+#
+# `enforce` stays FALSE until the Director rules the house style for the
+# rebuild era (note: em-dashes.md shows a recent authorial push AWAY from
+# em-dash overuse — the ruling may differ from the measured legacy style).
+# A noisy gate is an ignored gate; this one only becomes a wall when ruled.
+typography:
+  enforce: false
+  house:
+    double_quote: straight        # straight | curly
+    apostrophe: straight          # straight | curly
+    em_dash: closed               # closed (a—b) | spaced (a — b)
+    ellipsis: collapsed           # collapsed (...) | spaced (. . .) | char (…)
+  # Forms that are wrong under ANY house style — markdown/import residue.
+  always_banned:
+    - stray_bold
+    - underscore_italics

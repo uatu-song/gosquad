@@ -1,0 +1,1 @@
+{"_schema":{"id":"kebab-case-unique","type":"setup-awaiting-payoff|payoff-needing-setup|open-question","promise":"what the reader was promised","planted":"chapter_03.txt:88","payoff":"chapter_19.txt:41 — required before status can be 'paid'","status":"open|paid|verify|abandoned|red-herring|unimportant","notes":"only the Director assigns red-herring/unimportant"}}

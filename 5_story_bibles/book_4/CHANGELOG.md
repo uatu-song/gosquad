@@ -1,18 +1,18 @@
-# Book 4 - CHANGELOG
+# Book 3 - CHANGELOG
 
-This file tracks all planning, writing, and revision decisions for Book 4 of the Auerbach Series.
+This file tracks all planning, writing, and revision decisions for Book 3 of the Auerbach Series.
 
 ---
 
-## 2025-10-09 - Book 4 Folder Structure Created
+## 2025-10-09 - Book 3 Folder Structure Created
 
 ### Initial Setup
 
-**Goal:** Create organizational structure for Book 4 development
+**Goal:** Create organizational structure for Book 3 development
 
 **Structure Created:**
 ```
-Book_4/
+Book_3/
 ├── Reference_Documents/
 │   ├── README.md
 │   ├── CLAUDE.md
@@ -22,16 +22,16 @@ Book_4/
 │   ├── v1/ (ready for first draft)
 │   └── compiled/
 ├── Character_Profiles/
-│   └── Updated/ (ready for Book 4 character snapshots)
+│   └── Updated/ (ready for Book 3 character snapshots)
 ├── builds/ (ready for manuscript compilations)
-├── tools/ (ready for Book 4-specific scripts)
+├── tools/ (ready for Book 3-specific scripts)
 └── archive/ (ready for deprecated planning docs)
 ```
 
 **Status:** Planning / Pre-production phase
 
 **Next Steps:**
-- Select chess game for Book 4 structure
+- Select chess game for Book 3 structure
 - Develop plot outline
 - Define central conflict
 - Map character starting points

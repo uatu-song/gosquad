@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# BOOK 1 — EXECUTABLE RULES
+#
+# audit.py runs these. A rule that is not here is NOT ENFORCED, however many
+# times it appears in a handoff doc or a CLAUDE.md. That is the entire point:
+# the recurring failures on the source repo all violated protocols that were
+# already written down. The reading was never the problem; the following was.
+#
+# `rules` MUST be a MAPPING, not a list. (The kit shipped `rules: []` and
+# audit.py crashed on .items() — verified 2026-07-26.)
+#
+# ── RULE SHAPE ───────────────────────────────────────────────────────────────
+# rules:
+#   R001_short_slug:
+#     statement: plain-English what and why
+#     severity: blocking | warning          # blocking exits 1 and stops a commit
+#     owner: who rules on this              # Director, unless delegated
+#     pov_scope: Ahdia                      # optional: only chapters with this POV
+#     dialogue_exempt: true                 # rule governs narration only
+#     forbidden_in_prose:
+#       - pattern: '\bregex\b'
+#         note: why this is wrong
+#         allow: ["exact sanctioned line"]  # not violations
+#         chapters_after: 14                # only fires after this chapter
+#     forbidden_in_prose_raw:               # matched on RAW bytes, pre-norm().
+#       - pattern: '…'                      # use for TYPOGRAPHY only — norm()
+#         note: ...                         # folds curly/em-dash and would make
+#                                           # such a rule never fire, or fire
+#                                           # on every line.
+#     forbidden_in_codex:
+#       - '\bregex\b'                       # a fossil statement in the canon layer
+#     cleared:                              # ruled non-defects; never re-litigated
+#       - text: "exact quoted span"
+#         ruling: why the Director cleared it
+#     protected_sites:                      # exact spans that must NOT vanish;
+#       - "exact quoted span"               # audit §4 screams if one does
+#
+# THE FUNCTION TEST — before writing a rule that flags an irregularity, ask what
+# that irregularity DOES. It may be a deliberate device, not a defect. Devices
+# get `protected_sites`, not patterns.
+# ─────────────────────────────────────────────────────────────────────────────
+
+codex_meta:
+  book: book_1
+  codex_version: 1          # bump on EVERY rule change; log in CODEX_CHANGELOG.md
+
+rules: {}

@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# BOOK 1 — CODEX ADDRESS REGISTRY
+#
+# The hand-filed half of the codex. codex.py resolves these and greps the live
+# prose for each code's `aliases`, so a dossier reports what is TRUE NOW.
+#
+# The other half (PRM- FCT- CON- RUL-) is DERIVED at query time from
+# PROMISES.jsonl / CANON_FACTS.jsonl / CONSTRAINTS.yaml / RULES.yaml and is
+# never copied here. Copying is how fossils spread.
+#
+# POPULATE ONE NAMESPACE AT A TIME, retroactively, citing prose sites as you go.
+# After each namespace: `codex.py --list` then spot-resolve a few. Do not bulk-
+# generate canon — retroactive ingest is where errors enter.
+#
+# ── ENTRY SHAPE ──────────────────────────────────────────────────────────────
+#   CHR-EXAMPLE:
+#     name: Full Name
+#     aliases: [Name, nickname]        # what codex.py greps for. REQUIRED to
+#                                      # get prose sites; a code with no aliases
+#                                      # can never be verified against the book.
+#     note: one-line definition
+#     see: [MEC-OTHER]                 # cross-refs; a dangling one is a HARD defect
+#     governed_by: [R001]
+#     expect_in_prose: absent          # ← for BANS and PROTECTED REVEALS ONLY.
+#                                      # Flips the test: zero hits is the PASS,
+#                                      # any hit is the DEFECT. This is what stops
+#                                      # a future reader seeing "0 sites" and
+#                                      # deleting the guard as dead code.
+#     allow: ["a sanctioned line"]     # exceptions that are not violations
+# ─────────────────────────────────────────────────────────────────────────────
+
+codex_meta:
+  book: book_1
+  codex_version: 1
+  populated: false          # flip to true when retroactive ingest completes
+  note: >
+    Empty because Book 1 HAS NO PROSE YET. The rebuild is at step 8 (cinematic
+    blocking); prose is step 9. This is the FORWARD case: codes get filed as
+    chapters are written, which is far safer than retroactive ingest. Do NOT
+    seed this from 6_manuscript/book_1/book1_manuscript.txt — that file is a
+    PDF text-extraction of the PRE-REBUILD draft (318 embedded running headers,
+    418 broken words) and is not canon for the rebuild.
+
+characters: {}      # CHR-
+themes: {}          # THM-
+mechanics: {}       # MEC-  mechanics, props, tech, places
+words: {}           # WRD-  watched words — AI tics, banned constructions

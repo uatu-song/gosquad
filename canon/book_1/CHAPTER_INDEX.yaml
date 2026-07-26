@@ -1,0 +1,24 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# BOOK 1 — CHAPTER / POV INDEX
+#
+# The authoritative POV map. audit.py reads it to scope POV-specific rules, and
+# codex.py stamps every prose hit with its POV. Keys MUST be the file stem
+# (`chapter_01`), because that is what the tools match on.
+#
+# Source of truth is the prose itself — derive `pov` by reading the chapter, and
+# put the evidence line in `evidence`. Do NOT copy POV from a structure doc; a
+# beat sheet records intent, and the prose records what happened.
+#
+# Mark split-POV chapters `intercut`. audit.py automatically DOWNGRADES a
+# POV-scoped rule to a warning in an intercut chapter, because the tool cannot
+# know a given line sits in that POV's section — and a false block is how a gate
+# gets switched off.
+#
+#   chapter_01:
+#     number: 1
+#     title: "Peaceful Protest"
+#     pov: Ahdia
+#     evidence: "chapter_01.md:12 — 'She felt the crowd shift…'"
+# ─────────────────────────────────────────────────────────────────────────────
+
+chapters: {}
