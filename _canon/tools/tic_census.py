@@ -56,9 +56,20 @@ WORD_TICS = {
 }
 PATTERN_TICS = {
     "the-particular": re.compile(r"\bthe particular\b", re.I),
+    # full formulaic-negation family (mirrors series R101, ferret pass 2026-07-26)
     "not-constr": re.compile(
-        r"\b[Nn]ot [^.!?;]{1,36}, but\b|\b(?:was|is|are|did)n't [^.!?;]{1,32}\. It was\b|\bso much as\b"),
+        r"\b[Nn]ot [^.!?;]{1,36}, (?:but|just)\b"
+        r"|\b(?:was|is|are|did|does)n't [^.!?;]{1,32}\. It was\b"
+        r"|\b[Nn]ot [^.!?;]{1,30}\. Not \b"
+        r"|\b[Dd]idn't [^.!?;]{1,30}\. Didn't\b"
+        r"|\b[Nn]o [^.!?;,]{1,20}, no [^.!?;,]{1,24}[,.]"
+        r"|\b(?:was|is)n't just\b"
+        r"|\bso much as\b"),
     "hedge": re.compile(r"\b[Aa] kind of\b|\b[Aa] sort of\b|\b[Ss]omething like\b|\b[Aa]lmost as if\b"),
+    "in-chest": re.compile(r"\bin (?:her|his|their) chest\b", re.I),
+    "kind-of": re.compile(r"\bthe kind of\b", re.I),
+    "voice-was": re.compile(r"\b\w+'s voice was\b|\b[Hh](?:er|is) voice was\b|\bvoice came out\b"),
+    "looked-at": re.compile(r"\b(?:looked|stared|glanced) at\b", re.I),
 }
 SCENT = re.compile(r"\b(smell|smelled|smelt|scent|odor|odour|stank|stunk|aroma)\b", re.I)
 
@@ -93,7 +104,8 @@ def census_chapter(path):
 
 
 MEASURES = ["em-dash", "still", "already", "just", "short-burst",
-            "the-particular", "not-constr", "hedge"]
+            "the-particular", "not-constr", "hedge",
+            "in-chest", "kind-of", "voice-was", "looked-at"]
 
 
 def main():

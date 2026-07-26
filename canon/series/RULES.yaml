@@ -37,20 +37,62 @@ rules:
 
   R101_not_construction:
     statement: >
-      Not-constructions ("not X, but Y" / "It wasn't X. It was Y." / "so much
-      as") — 113 in Book 1 (Ch1-11: only 4; Ch29 alone: 10), 119 in Book 2.
-      Escalates under pressure; the rhetorical tic of an AI reaching for
-      profundity. Patterns below are proxies for the shapes the audit counted.
+      The formulaic-negation family — "not X, but Y" / "It wasn't X. It was Y."
+      / "Not X. Not Y." / "Didn't X. Didn't Y." / "no X, no Y" — the rhetorical
+      tic of an AI reaching for profundity. 113 counted in Book 1's first
+      edition by the 2026-04 audit (Ch1-11: only 4; Ch29 alone: 10); the
+      2026-07-26 ferret pass measured the full family at 58 (B1) / 65 (B2),
+      with "Didn't X. Didn't Y." a LATE-stage mutation (B1: appears only Ch23+;
+      B2 Ch08: five in one chapter).
     severity: warning
     owner: Director
-    source_doc: PROSE_VOICE_DESIGN_PROBLEM.md
+    source_doc: PROSE_VOICE_DESIGN_PROBLEM.md + ferret pass 2026-07-26
     forbidden_in_prose:
-      - pattern: '\b[Nn]ot [^.!?;]{1,36}, but\b'
-        note: "not X, but Y"
-      - pattern: "\\b(?:was|is|are|did)n't [^.!?;]{1,32}\\. It was\\b"
+      - pattern: '\b[Nn]ot [^.!?;]{1,36}, (?:but|just)\b'
+        note: "not X, but/just Y"
+      - pattern: "\\b(?:was|is|are|did|does)n't [^.!?;]{1,32}\\. It was\\b"
         note: "It wasn't X. It was Y."
+      - pattern: '\b[Nn]ot [^.!?;]{1,30}\. Not \b'
+        note: "Not X. Not Y. (anaphoric negation)"
+      - pattern: "\\b[Dd]idn't [^.!?;]{1,30}\\. Didn't\\b"
+        note: "Didn't X. Didn't Y. (late-stage mutation)"
+      - pattern: '\b[Nn]o [^.!?;,]{1,20}, no [^.!?;,]{1,24}[,.]'
+        note: "no X, no Y (list negation)"
+      - pattern: "\\b(?:was|is)n't just\\b"
+        note: "wasn't just X (implied escalation)"
       - pattern: '\bso much as\b'
         note: "didn't X so much as Y"
+
+  R103_somatic_default:
+    statement: >
+      "in her/his chest" — the AI's default somatic location for emotion.
+      Mined 2026-07-26: 23 uses in Book 1 ed1 + 18 in Book 2 (41 total, the
+      single most repeated narration construction across both books).
+    severity: warning
+    owner: Director
+    source_doc: ferret pass 2026-07-26
+    dialogue_exempt: true
+    forbidden_in_prose:
+      - pattern: '\bin (?:her|his|their) chest\b'
+        note: "default emotion-location; vary the body or cut"
+
+  R104_voice_described:
+    statement: >
+      "X's voice was [adj]" / "voice came out" — Book 2's staging mutation:
+      emotion narrated by describing voices instead of embodying them. Mined
+      2026-07-26: ~50 combined uses in Book 2 narration ("Ruth's voice" alone
+      starts 26 sentences); rare in Book 1's clean half.
+    severity: warning
+    owner: Director
+    source_doc: ferret pass 2026-07-26
+    dialogue_exempt: true
+    forbidden_in_prose:
+      - pattern: "\\b\\w+'s voice was\\b"
+        note: "voice-description formula"
+      - pattern: '\b[Hh](?:er|is) voice was\b'
+        note: "voice-description formula"
+      - pattern: '\bvoice came out\b'
+        note: "voice-description formula"
 
   R102_hedge_construction:
     statement: >
