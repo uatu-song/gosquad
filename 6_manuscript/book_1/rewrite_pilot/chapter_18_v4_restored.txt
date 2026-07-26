@@ -1,0 +1,141 @@
+# Chapter 18 — v4: v3 + DIRECTOR RESTORATIONS (first draft, NOT manuscript)
+
+<!-- PROVENANCE: v3 (cold agent) + 11 targeted line-level patches applied by crew per Director review 2026-07-26. RESTORED: way-out foreshadow, grief-address idea, anonymous-vs-named thought, Ben's dust line, one clause of pride. FIXED: casualty logistics (Ben carries Leah), FAERIS continuity (blind before, dropped by pulse), courtesy-not-seam on the quarter-mile compliment, quip cut, procedural ending. TRADED: one summarizing closer cut to hold the epigram budget at 5. v3 preserved unedited alongside. NOT manuscript. -->
+
+The schematics covered the back-room table, three printouts and Ruth's annotations in red. Warehouse district 7, the row nearest the docks. Ben's contact at the precinct had passed the tip that afternoon: a weapons cache out of Kain's supply chain, sitting in a leased unit with skeleton security until trucks arrived at midnight.
+
+"Window's tight," Ben said. "Twenty-one hundred to twenty-one forty. After that a second shift walks the fence."
+
+"Then we're out by twenty-one thirty." Ruth tapped the loading dock. "Victor, Ben, ground entry here. Tess, Leah, roof access off the crane gantry. I hold the perimeter and run comms from the van."
+
+"Twelfth this month," Victor said. "Somebody owes us a punch card."
+
+"Kain's been scrambling since the warehouse raid, and CCPD can't be seen holding his hand. He's moving inventory faster than he can hide it." She circled the fence line in red, then marked an exit for each pair before she marked anything else; a plan was only as good as its way out, and she wrote the way out first. "Skeleton security, per a man we've never met. Assume it's wrong by half."
+
+"And if it's wrong by more than half?" Leah asked.
+
+"Then we walk away. Nobody bleeds for inventory."
+
+Tess had her boots on the bench and her phone out. "Before anybody suits up, you all need to see this."
+
+She turned the screen. A forum thread, a pinned post. A kid asking whether the Go Squad did autographs; his sister had been in the car during a carjacking two weeks back, and he wanted something to put in her room. Under that, a photo making the rounds: flowers taped to a lamppost where they'd pulled a woman from a burning sedan, a card tucked in the cellophane. "Thank you for my daughter."
+
+"Scroll," Tess said. "It gets better."
+
+A fan account had posted a roster. BATTLEA. NIGHT KNIGHT. CRIMSON SABLE. GLOOM GIRL. NIGHTINGALE. Five names in block capitals over five squares of blurry footage.
+
+Leah leaned in. "BATTLEA. Is that me? Is that a typo?"
+
+"It's a portmanteau. Battle, Leah. It's beautiful and I'll hear no criticism." Tess paused. "Also I've been using these in the threads since spring. Seeding, if you want the technical term."
+
+"Firas is going to love this," Ben said.
+
+"Or kill me."
+
+Ruth read the thread once and handed the phone back. Flowers taped to a lamppost, because grief with nowhere to send itself goes to the place where it happened. Every name on that roster belonged to a shadow on traffic-camera footage; that was the whole of what anyone out there held. Still. An anonymous risk had been hers alone to spend, and this one had a kid's name on it now. She went back to the schematics and checked the dock clearances a third time, then a fourth.
+
+At 2058 the van sat dark two blocks out.
+
+"Comms check. Van's live."
+
+"Ground set." Ben.
+
+"Roof team set," Tess said. "Gantry's icy, for the record."
+
+The margin had settled over Ruth on the ride in, the way a unit of blood settles into a crashing patient: color up, numbers climbing, capacity arriving from outside her own walls. Firas had said once that someone wanted to help, and she'd left it filed there. Overhead, two FAERIS drones held station in the dark.
+
+"Firas started this," Ruth said into the mic. "We say it anyway. No better place than here."
+
+Four voices, out of sync: "No better time than now."
+
+Entry went clean. Victor called the lock in ninety seconds; Tess had the roof hatch in sixty. Both teams inside by 2103.
+
+At 2106 Ben came over the channel, low. "Ruth. Racks are here. Racks are empty. All of them. Dust on the deck says there never—"
+
+Floodlights hit the high windows from both sides at once and the night went white. Engines, many, close. Fifteen-plus units on the fence line, patrol cars and two SWAT vans, figures moving in pairs. She counted them like a rhythm strip, fast and once.
+
+The megaphone rolled across the lot. "This is the Caledonia Police. The building is surrounded. Exit the south door with your hands raised."
+
+The tip had come through Ben's contact, and the tip had been bait. Somebody had fed it upstream knowing exactly which ears it would find. Two drones on station for an hour, and nothing on that fence line until the lights came on. She filed both at speed, with everything else that would have to wait.
+
+"Formation Delta. Smoke on my mark, scatter pattern, goggles on. You've run this thirty times. Mark."
+
+Three canisters cracked and the white light became a gray wall. Through her goggles the lot resolved into heat. Victor went over the east fence off a single hand plant, gone before the nearest pair had finished turning. Tess put her second canister under the patrol cars and disappeared inside her own screen. Across the lot Ben's flash-bang went off; in the after-blindness Leah came down the fire escape and crossed the open ground low, on the exact line they'd walked in rehearsal.
+
+Four signatures moving away from the lights, all clean. Four for four through fifteen units and nobody had fired a shot. Ruth let out the breath she'd been metering and marked the time: 2109. They'd drilled that scatter in the Academy gym until Leah could run it blind, and tonight it had looked like the drill.
+
+Then her goggles died.
+
+Full charge, forty minutes of runtime showing, and the display went to black glass. The GPS followed. The van's monitor. Somewhere above the lot both drones came out of the dark and hit the asphalt like thrown stones. She was reaching for the backup radio when it reached into her—
+
+The margin left her like pressure off a cuffed artery, fast, measurable, done. Her arms took back their true weight. Her lungs shortened. The seat pressed up under her like she'd doubled overnight, and her body filed its report in a register she knew from hour thirty of a residency shift, hands slow, fuel already burned, stairwells sprinted with a code called overhead.
+
+The backup radio crackled, thin. "Ruth—" Tess, ragged. "Something's wrong. I feel—"
+
+"Gear's dead," Victor said. "All of it. And I'm slow. Why am I slow?"
+
+"It's gone," Leah said, very quiet. "It's gone."
+
+"All of you, listen." Ruth put her cadence at handoff speed, the tone she used on interns at a crashing bedside. "You were trained before you were ever enhanced, and the training is still in your hands. Regroup at rally two. Keep moving. Now."
+
+She was out of the van and running for the lot herself; dead feeds meant eyes on. She made the corner in time to see the smoke thinning under the floodlights.
+
+A shape came through it. Seven feet, matte armor, crossing the lot unhurried as a man crossing his own yard. A CCPD officer broke cover and sprinted for the fence; the armored man caught him one-handed by the vest, in stride, and threw him fifteen feet into a patrol car door. The door folded around him. Ruth's eye ran the workup on the way down: limp before impact, out cold, ribs at minimum. Her feet were already moving.
+
+Something crossed the fence line at the edge of her vision. By the time she'd turned her head Victor was down, arm pinned under him at an angle arms don't choose, rolling clear of a boot the size of a cinder block.
+
+Leah met him head on. Six strikes, and Ruth's own training graded every one, throat, brachial plexus, the nerve line above the knee, each placed where she would have marked a body for damage. He let them land. He stood in them the way a door stands in weather, then swept Leah backhand through a stacked pallet. The wood went to pieces around her.
+
+Ben got inside with the baton, military economy, short arcs. The man took the baton away, took Ben's throat in the same motion, and lifted him off the ground. Ben's boots kicked at air. His face went the color that starts a countdown.
+
+"Put him down!"
+
+The helmet turned toward the shout. He held Ben one second longer, then opened his hand. Ben hit the asphalt coughing, alive. The armored man started walking toward her.
+
+Triage ran itself. Three down, all breathing. SWAT re-forming past the smoke. If the big one stayed in this lot he'd finish what he'd started, or the police would finish what he left. The fastest way to move a threat was to be the target it wanted.
+
+"Tess, take Victor, his arm's out. Ben, you're walking, so you've got Leah. East through the gap, all four of you. Everyone's cargo now."
+
+"Ruth, he's—"
+
+"That's an order."
+
+She ran. A quarter mile to the docks, and her lungs hit their ceiling inside the first hundred yards. Whatever had carried her through eleven ops had gone out with the pulse, and what remained was a doctor who ran three mornings a week, sprinting on cold harbor air that cut going down. The footsteps behind her never changed rhythm and gained anyway.
+
+She turned in among the shipping containers, steel corridors, right, left, right, and the last corridor opened onto the dock edge and stopped.
+
+Black water, moving. The air off it hung wet and heavy with diesel and brine, cold on the sweat at her neck. Forty degrees, maybe less. Ten minutes to hypothermia in a healthy adult; she'd spent tonight's adrenaline already, so call it seven. Two hundred yards to the next pier in soaked clothes. She ran the numbers twice and they came back the same.
+
+She keyed the radio. Static.
+
+He came around the last container without hurry, ducked under the corner casting, and stopped four yards away. He reached up, released the seals, and lifted the helmet off.
+
+She'd braced for scar tissue, for hardware. The face under the helmet was maybe thirty, clean-shaven, and offered nothing to hold, the face of the man behind you in a coffee line, out of memory before the door swings shut. He rolled his neck and worked his jaw, a commuter shedding a motorcycle helmet at the end of a long ride.
+
+"Dr. Carter," he said.
+
+Her name, out of that armor, in that ordinary mouth, landed harder than watching Ben go up by the throat. She kept her face flat and put her weight on the balls of her feet.
+
+"This thing pinches at the jaw." He turned the helmet over, checked something inside it, tucked it under his arm. "Two hours in it tonight. You made me work for that last quarter mile, though."
+
+He hadn't. She'd heard his stride behind her the whole way and it never changed once. He was being polite.
+
+"Who's paying you?"
+
+"Payroll's confidential." He smiled with even, unremarkable teeth. "Professional standard. You'd want the same from your people."
+
+She watched his breathing while he talked. Even. Unhurried. He'd covered a quarter mile in plate and his shoulders moved like he'd strolled it.
+
+"Shame about your gear," he said, offhand. "The pulse is a rental. Costs more than I do, if that's any comfort." He flexed the empty gauntlet, idle. "Mine can't be turned off with a magnet."
+
+"You put three of my people through walls tonight."
+
+"Four, counting the officer. They'll all walk inside of a month." He said it the way a plumber quotes a repair. "I'm good at my job."
+
+The water at her back, seven minutes of it. The man in front of her, seconds of him. Her body had opinions; she overrode them.
+
+She feinted left, toward the gap between the container and the bollard, and went right.
+
+He caught her before the feint finished. One hand closed on her forearm and swung her around against the container at the dock's edge; the steel boomed; her heels found the lip of the concrete, black water shifting below. His grip moved to her collar and pinned her to the cold metal.
+
+The ordinary face studied her with mild professional interest. Then he adjusted his grip on her collar, unhurried, the way a man gets a better hold on something before he moves it.

@@ -74,6 +74,26 @@ are secretly Ahdia.** Do not hint.
   marked a body for damage" + he *lets* them land — keep that
   characterization); give the others different structures — one can happen
   at the edge of her attention, one can be over before she parses it.
+- **CUTTING A TIC MUST NOT CUT AN IDEA.** (v3 review.) The epigram budget is a
+  budget on the *closing-aphorism shape*, not on thought. When you decline to
+  land a paragraph, check whether an actual idea died with the cadence — if it
+  did, keep the idea and give it a different shape (a behavioral beat, a
+  concrete image, a flat statement). v3 cut the tic and lost two propositions
+  with it. Behavioral showing is better craft, but a reader cannot infer an
+  abstract proposition from a re-checked measurement alone.
+- **EARN THE DROP.** Before a reversal, the character gets to stand somewhere.
+  One clause of genuine pride/competence before the floor goes — the fall lands
+  in proportion to the height. Restraint at the summit flattens the drop.
+- **LOGISTICS MUST SURVIVE A REREAD.** Count bodies, hands, and casualties
+  before writing an evacuation order. Who carries whom, and with what arm. A
+  good line ("Everyone's cargo now") does not fix an impossible assignment.
+- **NO DROPPED NOUNS.** Anything introduced on the page (drones on station,
+  a second shift, a vehicle) must either pay off, be dismissed, or explain its
+  own silence. An asset that watches the whole op and never registers the
+  ambush is a hole, not set dressing.
+- **ENDINGS STAY IN REGISTER.** The final gesture must belong to the character
+  who makes it. A tradesman does not wind up for a haymaker; he adjusts his
+  grip. Reach for the procedural, unhurried version of any closing beat.
 - **THE DRAIN IS A PHYSICAL EVENT.** This chapter's core is a body stripped
   of borrowed capacity — narrate it IN Ruth's body, not past it. The
   residency-wall register (v2's "stairwells taken at a sprint with a code
