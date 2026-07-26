@@ -28,6 +28,27 @@ believes their enhanced abilities come from vague experimental military tech
 help"). **Truth withheld from Ruth AND reader at this point: the enhancements
 are secretly Ahdia.** Do not hint.
 
+## World constraints (added 2026-07-26 after v1 violations — see canon/book_1/CONSTRAINTS.yaml)
+
+- **CON-B1-SECRET-IDENTITIES:** the public does NOT know any member's face,
+  name, or civilian life. Go Squad are shadows/rumors/blurry footage. No
+  civilian recognizes, approaches, or visits a team member. Codenames are
+  fan-coined labels that exist online only.
+- **CON-B1-SECRET-HQ:** no publicly known base. The Academy (Firas's parkour
+  school) must NEVER be publicly linked to the Go Squad — no tributes,
+  visitors, deliveries, or fan presence there. Fan gratitude reaches the team
+  ONLINE ONLY (threads, posts, DMs). v1 violated this with a child at the
+  front gate and flowers at the door.
+- **CON-B1-NO-INVENTED-PROPER-NOUNS:** coin NO new names of any kind —
+  streets, cities, businesses, hospitals, people. Use only names in this
+  packet; otherwise stay generic ("a carjacking two weeks ago", "the
+  precinct", "the hospital"). v1 violated this with "Delancey" and "Central
+  City General". Name table: city = **Caledonia**; police = **CCPD** /
+  "Caledonia Police" (never expand CCPD to anything else); neighborhood
+  available: Little Poland; Firas's business: the Parkour Instructional
+  School / "the Academy". Drafts are gated by check_nouns.py — any name not
+  in the Book 1 corpus kills the draft.
+
 ## Canon locks (violating any = dead draft)
 
 - Codenames (public fan-assigned thread is a beat): BATTLEA (Leah), NIGHT
@@ -52,12 +73,16 @@ are secretly Ahdia.** Do not hint.
    district 7 near the docks, 2100, minimal security, tight window. Ruth
    works schematics; plan: Victor+Ben loading dock, Tess+Leah roof access,
    Ruth perimeter comms.
-2. **The fan beat.** Tess's phone: a kid wants autographs (his sister saved
-   from a carjacking); flowers left at the Academy ("Thank you for my
-   daughter"); a fan account has assigned the codenames above. Tess
-   sheepishly admits she's used those names online for months. "Firas is
-   going to love this" / "Or kill me." Ruth, privately: being *named* by the
-   people they protect changes the weight of the risk. (Do not sentimentalize.)
+2. **The fan beat — ONLINE ONLY (rewritten after v1).** Tess's phone: fan
+   posts. A kid asking online whether the Go Squad does autographs (his
+   sister was saved from a carjacking — no location named); a photo going
+   around of flowers left at the spot of a rescue with a note ("Thank you
+   for my daughter"); a fan account has assigned the codenames above. Nobody
+   contacts the team directly — the public doesn't know who or where they
+   are (CON-B1-SECRET-IDENTITIES / SECRET-HQ). Tess sheepishly admits she's
+   used those names in the fan threads for months. "Firas is going to love
+   this" / "Or kill me." Ruth, privately: being *named* by the people they
+   protect changes the weight of the risk. (Do not sentimentalize.)
 3. **Insertion.** Comms check; enhancement present (find Ruth's OWN image for
    the amplified feeling — the first edition's "weighted vest" simile may be
    kept or replaced). Rally cry. Entry goes clean.

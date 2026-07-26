@@ -1,0 +1,64 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# BOOK 1 — WORLD CONSTRAINTS (CON- codes; codex.py resolves these)
+#
+# Filed 2026-07-26 after the CH18 cold-rewrite pilot produced two violations
+# the register gates could not catch: an invented street ("Delancey"), an
+# invented city name ("Central City"), and a civilian physically visiting the
+# team's location. These constraints bind ALL Book 1 generation — rebuild
+# prose, rewrite pilots, steward output — and are pasted into every packet.
+# ─────────────────────────────────────────────────────────────────────────────
+
+constraints:
+  blocking:
+
+    - id: CON-B1-SECRET-IDENTITIES
+      name: "Public does not know who the Go Squad are"
+      rule: >
+        Book 1 era: the Go Squad are shadows, rumors, blurry footage. The
+        public does NOT know any member's face, name, or civilian life.
+        Codenames exist only as fan-invented labels on social media. No
+        civilian may recognize, approach, or address a team member as a Go
+        Squad member in their civilian identity. Ruling from the Director,
+        2026-07-26, after the CH18 pilot placed an autograph-seeking child at
+        their front gate.
+
+    - id: CON-B1-SECRET-HQ
+      name: "No publicly known HQ — the Academy link is secret"
+      rule: >
+        The public does not know the Go Squad has any base, and must never be
+        shown connecting the Parkour Instructional School (the Academy —
+        Firas's public business) to the Go Squad. NO physical tributes,
+        visitors, deliveries, or fan presence at the Academy addressed to the
+        Go Squad. Fan contact reaches the team ONLINE ONLY (posts, threads,
+        DMs to public pages). NOTE: the first edition itself flirts with this
+        leak (ch18: flowers "at the Academy", autograph request "posted on
+        the Academy's public page") — the rebuild does not inherit it; fan
+        gratitude beats stay digital or are addressed to the Go Squad
+        generally (e.g. tied where a rescue happened), never to a location
+        that identifies the team.
+
+    - id: CON-B1-NO-INVENTED-PROPER-NOUNS
+      name: "Generation may not coin proper nouns"
+      rule: >
+        A generating agent may not invent proper nouns of ANY class — streets,
+        neighborhoods, businesses, institutions, cities, product names, person
+        names. Every proper noun in generated prose must appear in the packet
+        or the canonical name table below; otherwise stay generic ("a
+        carjacking two weeks ago", "the precinct"). Violations from the CH18
+        pilot: "Delancey", "Central City", "Central City General".
+        check_nouns.py enforces this mechanically against the whitelist.
+
+  warnings:
+
+    - id: CON-B1-NAME-TABLE
+      name: "Canonical name table (Book 1 era)"
+      rule: >
+        City: Caledonia. Police: CCPD (Caledonia City Police Department; prose
+        also uses "Caledonia Police" — NEVER "Central City"). The team's
+        public label: the Go Squad (fan-coined). Firas's business: the Parkour
+        Instructional School, called "the Academy". Neighborhood in prose:
+        Little Poland. Fan codenames (fan-assigned, online): BATTLEA=Leah,
+        NIGHT KNIGHT=Ben, CRIMSON SABLE=Tess, GLOOM GIRL=Ahdia,
+        NIGHTINGALE=Ruth. CADENS codenames (institutional): Auerbach=Ahdia,
+        Overseer, Howitzer, Greyhound, Mercury (roster per Director ruling
+        2026-07-26).
