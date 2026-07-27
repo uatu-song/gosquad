@@ -1,0 +1,131 @@
+# COLD-REWRITE PACKET — reusable template
+
+> Generalized 2026-07-26 from the CH18 pilot (5 generations, Director-reviewed
+> at every step). Copy this per chapter, fill the `<…>` slots, delete this
+> block. The constraint sections below are NOT per-chapter — they are the
+> accumulated judgment of the pilot and carry forward unchanged.
+
+**The method in one line:** a cold agent (fresh context, no project history,
+never shown the infected prose) writes a first draft from beats + embodiment +
+constraints; three mechanical gates run before any human reads it; the Director
+reviews only what passes.
+
+**Why cold:** an agent with no history has no accumulated defaults — the pilot's
+first cold draft cut fragment density from 120/1K to 44/1K on contact. The
+trade is that it also has no knowledge, so **the packet is the memory.** Never
+reuse an agent across drafts; always improve the packet instead.
+
+---
+
+## Fill these per chapter
+
+- **Book / chapter:** `<book_N, chapter NN>`
+- **POV + tense:** `<Character>, third limited, past`
+- **Situation:** `<where in the arc; who is present; what the POV character
+  knows and does NOT know at this moment; what is withheld from the reader>`
+- **Load (the ONLY repo files the agent opens):**
+  1. this packet
+  2. `<path to the POV character's embodiment instruction>`
+  3. `1_writing_guides/GOSQUAD_PROSE_VOICE.md`
+- **Beat scaffold:** `<numbered, order fixed, texture free. Extract from the
+  existing chapter's events — never from its prose.>`
+- **Canon locks:** `<verbatim lines that must survive; character facts; the
+  chapter's entry and exit state; anything a wrong guess would break>`
+
+**Contamination rule (state it in the agent prompt too):** the agent must not
+open the first-edition prose, prior drafts of this chapter, other books'
+manuscripts, or any .epub. The packet is its entire world.
+
+---
+
+## World constraints (carry forward; add per book)
+
+- **SECRECY / public knowledge:** `<what the world knows about the cast at this
+  point — get this exact; the pilot's v1 put a civilian at the team's door>`
+- **NO INVENTED PROPER NOUNS.** The agent may coin no new name of any kind —
+  streets, cities, businesses, hospitals, brands, people. Only names in this
+  packet are available; everything else stays generic ("the precinct", "a
+  hospital", "a carjacking two weeks ago"). Include a **name table** of every
+  proper noun the chapter may use. Enforced by `check_nouns.py`; one invented
+  name kills the draft.
+
+## Craft constraints (carry forward unchanged — each earned by a rejected draft)
+
+- **EPIGRAM BUDGET — max 5 per chapter, never the same syntactic shape twice.**
+  The closing aphorism (a short sententious clause that lands a paragraph's
+  meaning) is the model's most reliable tic; at fifteen it stops reading as
+  authorial signature and becomes generation habit. Default: end on the
+  concrete image with nothing appended. Instruct the agent explicitly: *when
+  you finish a paragraph, check whether the last clause interprets what came
+  before it; if so, cut it.*
+- **CUTTING A TIC MUST NOT CUT AN IDEA.** The budget constrains a *shape*, not
+  a thought. If declining to land a paragraph kills an actual proposition,
+  keep the proposition and give it another form. A reader cannot infer an
+  abstract idea from a behavioral beat alone.
+- **VILLAIN / ANTAGONIST SPEECH = SUBTRACTION.** No employer memos, no
+  arc-telegraphing, no stock menace lines. What the antagonist *knows* is the
+  payload; what he explains is the author talking. Give him an occupation and
+  let him sound like it.
+- **EARN THE DROP.** Before a reversal, one clause of genuine pride or
+  competence. The fall lands in proportion to the height.
+- **VARY REPEATED STRUCTURES.** Three characters falling in three
+  identically-shaped paragraphs is a checklist. Route one through the POV
+  character's expertise; put one at the edge of their attention; make one
+  over before it can be parsed.
+- **THE BODY IS PRESENT.** Whatever the chapter's central physical event is,
+  narrate it *in* the POV character's body. Sensory registers beyond the
+  visual — weight, breath, temperature, smell — are available mid-scene
+  (only chapter *openers* ban scent, per NEGATIVE_CONSTRAINTS).
+- **LOGISTICS SURVIVE A REREAD.** Count bodies, hands, and injuries before
+  writing an order. A good line does not fix an impossible assignment.
+- **NO DROPPED NOUNS.** Anything introduced (a drone on station, a second
+  shift, a vehicle) must pay off, be dismissed, or explain its own silence.
+- **ENDINGS STAY IN REGISTER.** The final gesture belongs to the character who
+  makes it. A tradesman adjusts his grip; he does not wind up.
+- **A PATCH IS NOT LOCAL.** (For revision passes.) After any line-level fix,
+  re-read the whole for the sentence it just made redundant.
+- **PRESERVE TEXT, NOT DESCRIPTIONS OF TEXT.** A good line reconstructed from
+  a note about it comes back duller. Keeper lines go into
+  `canon/<book>/RULES.yaml` `protected_sites` as exact quotes; `audit.py` §4
+  then screams if one vanishes.
+
+---
+
+## Register targets (tune per chapter; defaults from the pilot)
+
+| Measure | Target | Note |
+|---|---|---|
+| Length | `<±10% of the source chapter>` | |
+| Dialogue share | `<20–35% for action; higher for talk scenes>` | |
+| em-dash | ≤ 5 / 1,000 words | human-baseline; the disease runs 9–21 |
+| short sentences (≤4 words) | ≤ 45 / 1,000 | burst = impact, not default |
+| "the particular" | 0 | R100 |
+| negation formulas | 0 in narration | R101 (full family) |
+| hedges | 0 in narration | R102 |
+| "in her/his chest" | 0 | R103 — pure-AI marker |
+| "X's voice was" / "voice came out" | 0 | R104 — pure-AI marker |
+| "the kind of" | 0 | mined tic |
+| looked/stared/glanced at | ≤ 1.5 / 1,000 | stage-direction formula |
+| scent in the opening line | banned | NEGATIVE_CONSTRAINTS |
+| Typography | straight quotes, closed em-dash, `...` ellipses, no `**`/`_` | measured house style |
+
+**Ceilings are not styles.** Landing far under a target is not better; if the
+prose reads airless, loosen the number for that chapter.
+
+---
+
+## The gates (run all three before the Director reads anything)
+
+```bash
+python3 _canon/tools/tic_census.py  --book <book>          # register
+python3 _canon/tools/check_nouns.py <draft> --book <book>  # invented names
+python3 _canon/tools/audit.py       --book <book> --stats  # rule hits
+```
+Plus a human pass for what no gate can see: canon violations, logistics holes,
+dropped nouns, epigram count (judgment, not regex), and whether it is any good.
+
+## Stopping rule
+
+Stop when the remaining irregularities are the places where it sounds like a
+person wrote it. The gates will happily accept a v6, v7, v8 — each smoother
+and less alive. Convergence is not zero-defect.
