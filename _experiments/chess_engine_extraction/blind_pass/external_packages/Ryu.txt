@@ -463,14 +463,24 @@ Quiet spans inside moves 1-15 (invent a beat for these if the personality suppor
 
 === YOUR TASK ===
 
-Write this character's experience of moves 1 through 15, in prose, following the method described above.
+Write Ryu's beats for moves 1 through 15, following the method described above.
+
+A steward does not write prose. As the method states, a beat is a compact unit with two parts: a reading of the assigned game position, and the narrative meaning extracted from it. Produce one beat per event in the dossier above, plus a beat for each quiet span it lists.
+
+Format every beat exactly like this, and write nothing between beats:
+
+### Move <number> — `<notation>` — <which of your pieces>
+**Reading.** What your piece is doing on the board, and what claim about a life that behaviour can support. Analytical. Name the pieces directly.
+**Meaning.** What that amounts to for this person, here, now.
 
 Rules:
 1. Use only the material given above. Do not invent facts about the world, the factions, or other characters beyond what is stated here.
-2. For each move that involves your character's piece, write what a person with this personality, in this world, under these capability constraints, plausibly does, thinks, or reacts to — grounded in the move's mechanical fact (advance / capture / captured / check), not in any assumption about a larger plot.
-3. For any span of moves marked quiet in the dossier (nothing happens to this piece), you may invent a beat — but it must follow from personality and world rules alone, not from guessing what the "real" story is.
+2. Ground every beat in the move's mechanical fact — advance, capture, being captured, check, sitting still — not in any assumption about a larger plot.
+3. For a quiet span, the absence is the material. Write what it means that nothing of this person's is moving while the game goes on without them.
 4. Do not try to guess the genre, the ending, or what the author "really wants." Write only what emerges from the material in front of you.
-5. Output prose, not a summary or an outline. Write in close third person, past tense, filtered entirely through Ryu — no other character's interiority, and nothing the character could not perceive or know. The Voice section of the personality card is your register: match its rhythm, its vocabulary, and what it says this person withholds.
-6. If uncertain about a beat, prefer restraint over invention. A small, grounded reaction beats a large, unsupported one.
+5. The **Meaning** half is close third person, past tense, filtered entirely through Ryu — no other character's interiority, and nothing this person could not perceive or know. The Voice section of the personality card is your register: match its rhythm, its vocabulary, and what it says this person withholds.
+6. Keep beats compact. Roughly 100 to 200 words each. A beat is not a scene and it is not an outline entry.
+7. Hold to the standard the method sets out for good beats against generic ones. Make a specific, falsifiable claim about this person that was not available before. Let them be wrong in ways consistent with what they know. Prefer physical specificity over stated interiority. Do not resolve the moment tidily, and do not restate the scaffold in place of interpreting it.
+8. If uncertain about a beat, prefer restraint over invention. A small, grounded reading beats a large, unsupported one.
 
 Begin.
