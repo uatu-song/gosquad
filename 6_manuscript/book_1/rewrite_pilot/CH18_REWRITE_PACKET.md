@@ -46,8 +46,10 @@ are secretly Ahdia.** Do not hint.
   City General". Name table: city = **Caledonia**; police = **CCPD** /
   "Caledonia Police" (never expand CCPD to anything else); neighborhood
   available: Little Poland; Firas's business: the Parkour Instructional
-  School / "the Academy". Drafts are gated by check_nouns.py — any name not
-  in the Book 1 corpus kills the draft.
+  School / "the Academy". Drafts are gated by
+  `python3 _canon/tools/check_nouns.py <draft> --book book_1_ed1` — any name
+  not in the Book 1 corpus kills the draft. The `--book` flag is required:
+  the new `book_1` layer has no prose yet, so it is not a name corpus.
 
 ## Craft constraints (added after v2 Director review, 2026-07-26)
 

@@ -92,13 +92,16 @@ def main():
     a = ap.parse_args()
     book = cfg.load(a.book)
 
-    corpus = "\n".join(text_of(f) for f in book.prose_files(strict=False))
+    pfiles = book.prose_files(strict=False)
+    corpus = "\n".join(text_of(f) for f in pfiles)
     canon_txt = ""
     for f in book.canon_files() + [str(book.constraints_f), str(book.index_f)]:
         if os.path.exists(f):
             canon_txt += "\n" + norm(open(f, encoding="utf-8", errors="replace").read())
-    if not corpus.strip() and not canon_txt.strip():
-        print(c("✗ reference corpus is EMPTY — wrong --book? Refusing to pass a draft against nothing.", "red"))
+    if not corpus.strip():
+        print(c(f"✗ no prose corpus for {book.key} ({len(pfiles)} files) — wrong --book?", "red"))
+        print(c("  Names verify against PROSE. Canon YAML alone names too little: every ordinary "
+                "character name reads as invented, and the gate is noise. Refusing to run.", "dim"))
         return 1
     ref_lower = (corpus + canon_txt).lower()
 
