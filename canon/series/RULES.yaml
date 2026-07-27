@@ -8,9 +8,16 @@
 #   - 4_constraints/NEGATIVE_CONSTRAINTS.md (scent-opener ban → census tool,
 #     since "first line of chapter" is positional and lives there instead)
 #
-# ALL SEVERITIES ARE `warning` BY DESIGN: this layer MEASURES the disease and
-# surfaces it — it does not block commits of quarry text that predates the
-# rules. When the rebuild prose starts, the Director may promote specific rules
+# SEVERITY IS SCOPED, NOT UNIFORM (Director, 2026-07-26). The same rule means
+# different things against quarry and against new prose:
+#   `severity: warning`      — what the audit applies to QUARRY (pre-rule text).
+#   `severity_new: blocking` — what the REWRITE GATES apply to a generated
+#                              draft. A pure-AI marker (R103/R104: measured at
+#                              INFINITE escalation, i.e. zero instances in the
+#                              author's own chapters) is an error in new prose
+#                              even though it is only a warning in the old.
+# Quarry must never block a commit; new prose must never ship with a marker the
+# author has never once used. When the rebuild prose starts, the Director may promote specific rules
 # to `blocking` for the new prose (book-local override in canon/book_1/RULES.yaml).
 #
 # Rate-based tics (fragments, "still"/"already"/"just" frequency, em-dash
@@ -29,6 +36,7 @@ rules:
       measured, across every POV). The amplification mechanism's clearest
       fingerprint; near-zero in the author's pre-AI prose.
     severity: warning
+    severity_new: blocking
     owner: Director
     source_doc: PROSE_VOICE_DESIGN_PROBLEM.md
     forbidden_in_prose:
@@ -69,6 +77,7 @@ rules:
       Mined 2026-07-26: 23 uses in Book 1 ed1 + 18 in Book 2 (41 total, the
       single most repeated narration construction across both books).
     severity: warning
+    severity_new: blocking      # infinite escalation: 0 uses in the author's own prose
     owner: Director
     source_doc: ferret pass 2026-07-26
     dialogue_exempt: true
@@ -83,6 +92,7 @@ rules:
       2026-07-26: ~50 combined uses in Book 2 narration ("Ruth's voice" alone
       starts 26 sentences); rare in Book 1's clean half.
     severity: warning
+    severity_new: blocking      # infinite escalation: 0 uses in the author's own prose
     owner: Director
     source_doc: ferret pass 2026-07-26
     dialogue_exempt: true

@@ -25,8 +25,12 @@ reuse an agent across drafts; always improve the packet instead.
   knows and does NOT know at this moment; what is withheld from the reader>`
 - **Load (the ONLY repo files the agent opens):**
   1. this packet
-  2. `<path to the POV character's embodiment instruction>`
-  3. `1_writing_guides/GOSQUAD_PROSE_VOICE.md`
+  2. **`1_writing_guides/voice_cards/<Character>_Book<N>_VOICE_CARD.md`** —
+     the register authority. If no card exists for this POV, **build it first**;
+     CH18 cost five Director rounds for a chapter whose voice layer didn't exist.
+  3. `<path to the POV character's embodiment instruction>` — for WHAT, not HOW
+  4. `1_writing_guides/GOSQUAD_PROSE_VOICE.md` — for WHAT, not HOW
+     (measured at 75 burst/1K — 3x the author; do not imitate its register)
 - **Beat scaffold:** `<numbered, order fixed, texture free. Extract from the
   existing chapter's events — never from its prose.>`
 - **Canon locks:** `<verbatim lines that must survive; character facts; the
@@ -48,6 +52,45 @@ manuscripts, or any .epub. The packet is its entire world.
   hospital", "a carjacking two weeks ago"). Include a **name table** of every
   proper noun the chapter may use. Enforced by `check_nouns.py`; one invented
   name kills the draft.
+
+
+## ⚠️ REGISTER FIREWALL (measured 2026-07-26 — state this in the agent prompt)
+
+The reference documents are analytical instruments written in an
+essayistic-aphoristic register. A cold agent absorbs rhetorical signature along
+with content. Words per 1,000, against the author's own pre-AI prose:
+
+| corpus | burst | em-dash | aphorism |
+|---|---|---|---|
+| **Author (ed1 ch1-11) = THE TARGET** | **24.9** | **1.3** | **0.68** |
+| the embodiments (loaded into every agent) | 23.2 | **23.5** | 1.20 |
+| GOSQUAD_PROSE_VOICE.md (loaded into every agent) | **75.1** | 10.4 | **3.89** |
+| steward run outlines | 40.2 | 17.7 | **5.70** |
+| chapter structure docs | **80.2** | 4.8 | 2.35 |
+| ed1 ch24-29 (the disease) | 98.4 | 16.1 | 4.55 |
+
+**Read the reference corpus for WHAT, never for HOW.** The only register
+authority is the author's own prose, the register table below, and the POV
+character's voice card.
+
+## Generative constraints — what to BUILD (not just avoid)
+
+Guardrails alone produce careful prose, not distinctive prose. Every packet
+must state, positively:
+
+- **The POV character's five sentence-DOs** (from their voice card) — the
+  operations their sentences perform, not traits they possess.
+- **Their metaphor domain.** The two or three fields they may reach into for
+  imagery (Ruth: medicine, ER logistics, drills). Outside it = not their voice.
+- **One structural discovery to attempt.** Ask the agent for at least one beat
+  where form does the work — CH18's best invention was Victor going down in
+  Ruth's *peripheral vision*, which broke a checklist rhythm AND proved she was
+  slowed, without saying so. Name this as a goal, not a hope.
+- **The chapter's one unsayable thing** — what this POV knows and cannot say
+  here. Concealment dramatized beats subject erased. (A POV with nothing to
+  think about produces hollow chapters; that is the diagnosis for Book 2's
+  nine Ahdia chapters.)
+- **What the prose should cost the reader.** The feeling the chapter is buying.
 
 ## Craft constraints (carry forward unchanged — each earned by a rejected draft)
 
@@ -97,8 +140,9 @@ manuscripts, or any .epub. The packet is its entire world.
 |---|---|---|
 | Length | `<±10% of the source chapter>` | |
 | Dialogue share | `<20–35% for action; higher for talk scenes>` | |
-| em-dash | ≤ 5 / 1,000 words | human-baseline; the disease runs 9–21 |
-| short sentences (≤4 words) | ≤ 45 / 1,000 | burst = impact, not default |
+| em-dash | **≤ 2 / 1,000** (author measures 1.3) | disease runs 9–21; ceilings were set against the DISEASE and are being rebased on the AUTHOR |
+| short sentences (≤4 words) | **≤ 30 / 1,000** (author measures 24.9) | burst = impact, not default |
+| aphorism probes | ≤ 0.7 / 1,000 (author's rate) | the reference corpus runs 4–6× this |
 | "the particular" | 0 | R100 |
 | negation formulas | 0 in narration | R101 (full family) |
 | hedges | 0 in narration | R102 |
@@ -123,6 +167,13 @@ python3 _canon/tools/audit.py       --book <book> --stats  # rule hits
 ```
 Plus a human pass for what no gate can see: canon violations, logistics holes,
 dropped nouns, epigram count (judgment, not regex), and whether it is any good.
+
+## Generalization test (falsifiable)
+
+CH18 took five rounds because the packet was being invented during it. If a
+chapter drafted from THIS template needs more than **two** Director rounds, the
+template has not generalized and the pipeline is blocked pending a redesign —
+not another round. Record the round count for every chapter.
 
 ## Stopping rule
 
