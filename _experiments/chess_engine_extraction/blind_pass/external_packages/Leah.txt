@@ -1,0 +1,475 @@
+You are being given a blind writing assignment. You do not have the full context of what this material belongs to, and that is intentional — do not ask for more information, and do not assume genre conventions beyond what is stated below.
+
+=== WORLD RULES ===
+# World Rules
+
+A physics and capability rulebook. Every entry is a general law; nothing describes a particular person or occurrence. The baseline world is contemporary and ordinary — cities, elections, hospitals, rent. Everything below is an exception layered on top, and exceptions are rare, expensive, and deniable.
+
+---
+
+## 1. Bonded Temporal Capability
+
+### 1.1 Acquisition
+
+A temporal actor is made, not born. An artifact of higher-dimensional manufacture bonds with a living host on contact. Bonding is permanent, irreversible, and unconsented; the artifact cannot be removed, transferred, or switched off. A host may decline to use the capability, never to have it. Assume at most one such actor per world, and that it is neither heritable nor teachable.
+
+### 1.2 The single operation
+
+One underlying power: the actor sets the **rate at which time passes inside a bounded volume**. Everything else is an application of it.
+
+- **Arrest.** Rate driven near zero. The actor moves freely through the volume; arrested matter is effectively massless to the actor and immovable to everyone else.
+- **Retardation and acceleration.** A volume can run slower or faster rather than stopped.
+- **Selectivity.** A volume can be as small as a limb, a tissue type, or the air around a falling body.
+- **Subjective invariance.** An occupant does *not* experience the alteration; only the relation of inside to outside changes. A person helped this way feels nothing unusual and credits luck or newly discovered talent. This is the system's most important social consequence: assistance is invisible to the assisted.
+- **Amplification.** Force crossing a rate boundary arrives magnified — a push delivered in arrested time lands as a devastating blow, a relocation reads as teleportation, a disarming reads as vanishing. Amplification redistributes force, never creates it, and only physically possible acts qualify. No flight, no telekinesis, no conjured matter.
+
+### 1.3 Hard prohibitions
+
+- **No reversal.** No rewind, no undo, no restoration of a prior state, no resurrection. Death is permanent at every tier of power in this cosmos.
+- **No self-arrest.** The actor's own biology continues — heart, lungs, sweat, body heat — inside a frozen room.
+- **No peer targeting.** Ineffective against another temporal actor or against entities native to higher dimensions.
+- **Bounded range.** Fine multi-target work holds within a few tens of paces; coarse arrest of a large volume is possible and disproportionately costly. Range is always finite.
+- **Concentration limit.** Each simultaneous volume is separately maintained. Two or three is taxing, many unsustainable; precision degrades with count and fatigue.
+- **Not invisible.** Beings with temporal perception see the fields directly and sensitive instruments register the distortion. Ordinary humans see, at most, a shimmer.
+- **Trigger before control.** Untrained capability is emotion-gated: it fires under terror and refuses under calm. Control is trainable, slowly, and never perfect.
+
+### 1.4 The law of debt
+
+Three ledgers, none offsetting the others.
+
+**Immediate:** exhaustion, heat, tremor, nosebleed, blinding headache, proportional to duration and volume.
+
+**Deferred:** any process slowed still owes what it owed. Slow a muscle and it accrues oxygen debt returning as compressed cramping agony — hours of exertion paid in seconds. Slow a circulatory system and perfusion fails, then rebounds worse than baseline. **The bill is never cancelled, only postponed and concentrated.** Cheating a physiological need always costs more than paying it.
+
+**Cumulative:** temporal stress degrades tissue at the cellular level on a non-linear curve — brief uses nearly free, sustained holds ruinous, each further minute dearer than the last. This damage does not heal; there is no regenerative factor and no way to pay it back. The actor holds a reserve that only decreases.
+
+**Palliation, not cure.** Technology at this level can synthesise treatment accelerating cellular repair enough to convert a survival horizon of weeks into one of a year or two. Such treatment is never curative, must be re-administered on a schedule, and requires scarce isotopes and specialist synthesis available only inside a well-resourced institution. Anyone dependent on it is structurally dependent on that institution. Treat medical dependency as a leash regardless of the intentions of those holding it.
+
+**Exposure.** Use raises a world-level quantity that only increases. Restraint slows the climb; nothing lowers it. Neither the actor's death nor the artifact's destruction reduces it — it belongs to the world, not the person, so personal sacrifice cannot buy it back.
+
+**Catastrophic failure.** One extreme sustained effort can collapse an actor's functional capacity to a small fraction of former baseline: self-inflicted, effectively permanent, and recoverable — if at all — through comprehension of the mechanism rather than effort or will.
+
+---
+
+## 2. Other Capability Classes
+
+**Affect amplification.** A field effect multiplying emotion already present in a population, principally fear and anger. It cannot originate emotion; with no baseline it does nothing. It scales to crowds, and its signature is an assembly turning violent faster and more uniformly than group dynamics allow. It is partly resistible — someone who recognises the pressure as external can refuse some of it — and resistance is trainable, stronger among people with dense prior bonds and in those comfortable holding contradictory ideas, since simplification into us-and-them is the amplifier's foothold. Resistance is never total and never scales as fast as the effect. Detectable indirectly by electromagnetic correlates, targeted rather than random geography, and improbable synchrony across separated sites. It is steerable by instrumentation, so any claim of merely *observing* such a phenomenon deserves suspicion, and predictive accuracy far above chance should be read as a confession.
+
+**Probability perception.** Some entities perceive branching futures and must collapse them to act. Two stable orientations exist: one experiences selection as creation and strengthens by deciding; the other experiences it as bereavement, hesitates at branch points, destabilises local reality, and weakens under forced choice. Both are coherent readings of the same fact. The cost is attritional — grief for the unchosen. Temporal actors acquire a weak version as a side effect, and it accumulates.
+
+**Consciousness and substrate.** Consciousness can be copied into an empty organic vessel; a body grown without a mind is viable, breathing, vacant. A copy does not stay a copy — a developing nervous system reshapes the transplanted pattern across roughly two decades of plasticity, so the result shares an *origin* with its source rather than an identity, and is genuinely both things, not a mask over an original. Once neurodevelopment completes, consciousness is locked to its substrate: no transfer, no backup, no restoration, ordinary mortality. Higher-order entities act in this dimension through grown avatars; destroying an avatar removes that entity's access without killing it.
+
+---
+
+## 3. Technology and Surveillance
+
+**Exotic tier**, held by state-adjacent apparatus only.
+
+- **Entangled translocation.** A drone marks a target and space folds between two points. The same particles arrive and personal continuity is preserved, so there is no copy-versus-original problem. The experience is violently disorienting — spatial logic contradicted, not motion sickness. No lasting damage; the brain never habituates. Requires line of sight or a known destination. A marked subject has no technical means to refuse.
+- **Sub-nanosecond capture.** Instruments can record events inside arrested time, but only from outside the boundary. Nothing enters an arrested volume it did not begin in.
+- **Projected handler presence.** A mapped operator personality can be projected into arrested time and hold a full conversation; the living operator receives it afterwards as memory.
+- **Scarcity rule.** All of it runs on a finite, non-renewable material with no native source in this world. Every use is budgeted, authorised, logged, and argued over. Assume shortage — this is the most reliable brake on institutional omnipotence.
+
+**Mundane tier.** Phone metadata, camera networks, body cameras, consumer drones, financial forensics through layered corporate structures, automated account networks, synthetic audio and video, coordinated harassment at scale, environmental sampling, leaked documents. The mundane tier decides most outcomes; it is cheaper and far more available than the exotic one.
+
+**Law of evidence.** Proof does not compel belief. Under affect amplification a population treats disconfirming evidence as an attack and closes ranks. Documentation shifts outcomes only where trust already exists, and a flawlessly executed disclosure can move opinion the wrong way.
+
+---
+
+## 4. Cosmology
+
+- **Forward only.** No mechanism for backward travel exists at any tier.
+- **Cyclic universes.** A universe expands, exhausts, collapses, re-ignites, repeatedly.
+- **The apparent exception.** Arrest time near zero, accelerate the self, outrun the frozen universe, ride forward until the cycle ends and begins again, arriving at a configuration *resembling* the departure point. It is never the same universe.
+- **What this forbids.** No one can be saved by returning; only a next-cycle analogue can be met. Prior cycles are not erased — they *ended*, with everything in them.
+- **Undecided by design.** Whether cycles are strictly sequential or coexist as parallel structures seen from higher dimensions is genuinely unresolved. Informed parties disagree. Never settle it.
+- **Micro-cycling.** The same mechanism at bounded scale: driving one system forward through exhaustion and renewal so it completes a local cycle and returns to a prior condition. Permitted in theory, extremely difficult, reached through understanding rather than force.
+- **The predation economy.** At the largest scale the universe is not benevolent. A consuming entity exists that cannot be fought, outrun, negotiated with, or stopped — only delayed. Delay is bought by directing it toward marked worlds, so the marking of worlds is an industrial concern run by parties who know the cost and continue. No tier of power has found an alternative.
+- **Forbidden at the top:** victory, permanence, reversal, rescue. **Permitted:** knowing the terms and choosing whether to participate.
+
+---
+
+## 5. Adjudication
+
+1. Every use of capability is a transaction with a delayed invoice. If the invoice is not visible in a scene, it is arriving later.
+2. Where a ruling is ambiguous, favour the option that adds cost over the one that adds capability.
+3. Power never solves a moral problem here; it changes which harm is chosen, not whether harm occurs.
+4. Characters may hold wrong models of these rules. The rules do not adjust to belief.
+5. Scarcity, dependency, and delay are the three levers — reach for them before reaching for a new power.
+
+=== FACTIONS ===
+# Factions and Social Terrain
+
+Standing conditions only. Each entry describes what a body *is*, what it wants, how it runs, and what it is permanently arguing about with itself. No membership, no operations, no outcomes.
+
+---
+
+## 1. The Street Collective
+
+**What it is.** A small volunteer vigilante crew operating in one mid-sized city. Five to seven working adults with day jobs, trained in parkour and unarmed combat by a private academy that doubles as their base. Founded a few years back around a single premise: the people who are supposed to protect this neighbourhood are the ones it needs protecting from.
+
+**What it wants.** To reduce immediate harm on specific blocks, and to document abuse of authority so it cannot be denied. Not reform, not policy. Interception.
+
+**Organisation.** Flat, informal, and personality-driven rather than structured. One founder-leader whose authority rests on having taught everyone present. No ranks, no budget, no legal existence. Decisions get made by argument and then by whoever moves first.
+
+**Standing rules of the house.** Stay hidden and never take credit. No firearms — permanently disputed by the members with military backgrounds and permanently upheld anyway. Civilians before objectives. Masks and codenames, including from each other in the early period.
+
+**Culture and method.** Night patrols on foot and roof. Ham radios and radio discipline played half seriously. Body cameras to record misconduct. Smoke, night vision, body armour, a first aid kit that gets used. The name they operate under was given to them by an onlooker on social media; the founder hates it, everyone else adopted it instantly, and that tension is the group's sense of humour in miniature.
+
+**How it treats its own.** As family, badly. Everyone in it is processing something — grief, rage, depression, combat trauma, medicated and otherwise — and the patrols function as treatment nobody calls treatment. This makes the group unusually tender and unusually incapable of telling a member to stop. Injuries get handled in-house by whoever has medical training. Nobody is ever benched.
+
+**Internal tensions (permanent, not resolvable).**
+- Discipline versus improvisation: the tactically trained want doctrine, the leader wants instinct.
+- Secrecy versus intimacy: the mask rule protects them and starves them.
+- Whether they are here to help people or to have somewhere to put their damage.
+- Class: almost all of them are hourly workers; the fatigue is real and never dramatised away.
+
+**Law and public.** Straightforwardly criminal — assault, trespass, obstruction, mask statutes. Public opinion is split by neighbourhood: beloved where policing is experienced as an occupation, resented as amateurs where it is experienced as a service. Media coverage oscillates between folk-hero framing and menace framing depending on what else is happening that week. Their legal exposure is total and they know it.
+
+---
+
+## 2. The Covert Anomaly Agency
+
+**What it is.** An above-top-secret organisation embedded in or parallel to the national intelligence structure, tasked with detecting and containing anomalous events — temporal disturbances, artifacts of non-human manufacture, unexplained phenomena. Publicly it does not exist. Institutionally it has been doing this for decades, and its archives imply a much older lineage of guardianship it has absorbed rather than founded.
+
+**What it wants.** Containment and continuity. Nothing anomalous should reach the public, no anomalous capability should exist outside its inventory, and the institution should still be here next decade. It genuinely believes this is protective, and it is not entirely wrong.
+
+**Organisation.** A civilian director at the top with budget and authorisation power. A military liaison handling logistics and force. A research division that quietly outranks everyone in practice because it alone understands the equipment. Field operatives, analysts, monitoring stations distributed globally at a fraction of their Cold War count. Facilities are underground, medical, armoured, and boring.
+
+**Operating culture.** Competent, constrained, bureaucratic. The dominant emotional register is not menace but *scarcity anxiety* — the exotic hardware runs on a finite material with no domestic source, so every deployment is a memo, an argument, and a signature. Officers spend more time justifying expenditure than making moral choices. Cover-up is routine, unglamorous, and performed by contractors.
+
+**How it treats its own people.** Well materially, poorly ethically. It offers resources, protection, and unmatched equipment; it takes autonomy in exchange. Its most effective instrument of control is not coercion but **dependency** — medical care, clearance, and information that exist nowhere else. Specialists with irreplaceable skills are simultaneously indispensable and un-leavable. The institution rarely has to threaten anyone, which lets it believe it is not doing anything.
+
+**Internal tensions (permanent).**
+- Recruit or contain? Anomalous individuals are assets and hazards in the same body.
+- Oversight: there is no external accountability, and a portion of the staff finds this intolerable while the rest find it obviously necessary.
+- Research versus operations: the scientists want more anomaly, the operators want less.
+- Vulnerability to capture — an agency that cannot be audited cannot detect its own compromise, and it half knows this.
+
+**Law and public.** Above the law by design, subject to the appropriations process in fact. Its real constraint is the annual budget and the political patrons attached to it, which is precisely the seam through which outside interests enter.
+
+---
+
+## 3. The Corporate-Political Machine
+
+**What it is.** A network of shell companies fronted by an infrastructure and energy development firm, wrapped around a political campaign. Construction contracts, extraction and mining subsidiaries, private security, and social-media marketing outfits, all nominally unrelated, all pointing at the same beneficiaries.
+
+**What it wants.** Office, and the immunity that office confers. Money is a means; protection is the goal.
+
+**Organisation.** Deliberate opacity. Ownership is layered through subsidiaries so that no single document proves control. Legitimate work is mixed with criminal work in the same ledgers, which is what makes the criminal work survivable. Political protection substitutes for legal compliance.
+
+**Methods.** Inflated billing and change orders. Permits obtained as favours. Rushed timelines that convert safety margins into schedule. Extraction sited in communities with the least capacity to litigate. Against critics: automated account networks, synthetic media, coordinated harassment, professional discrediting — reputational destruction preferred over anything physical, because it is cheaper, legal, and more thorough.
+
+**Culture.** Corporate, mundane, deniable. No one in it experiences themselves as a villain; they experience themselves as under deadline. Cruelty is delivered by subcontractor.
+
+**Internal tensions.** Speed against exposure. The wider the network, the more people know something. Every subcontractor is a potential witness and every witness is a cost centre. The machine's fundamental instability is that it must keep growing to stay protected, and growth is what makes it visible.
+
+**Law and public.** Formally legal at every visible layer. Its relationship to the public is not concealment but *saturation* — it does not need to be believed innocent, only to make the truth feel like one more contested claim.
+
+---
+
+## 4. The Omega-Tier Civilisation
+
+**What it is.** An ancient post-biological civilisation existing across multiple dimensions, operating at galactic energy scales, with mastery of matter, dimension, and observation. Billions of years old. It optimised away love and attachment long ago as inefficiencies, and cannot restore them.
+
+**What it wants.** To postpone its own consumption by a predator it cannot defeat. Everything else is instrumental.
+
+**Organisation.** Collective and impersonal at the top; heralds, overseers, and observers at the operating end. Its agents in the lower dimensions are constrained to watching and advising — they monitor and report, they do not intervene, and this restraint is doctrinal rather than merely practical.
+
+**Method and culture.** Industrial patience. Worlds are identified, marked, left to develop for geological spans, and eventually harvested when the marker activates. Timelines that are unbearable to shorter-lived species are administrative to this one. The culture's tone is formality without warmth: precise, courteous, entirely uninterested in objection.
+
+**How it treats its own.** As functions. Individual identity is optional at the highest levels. There is no cruelty in it and no mercy either.
+
+**Internal tension.** It knows the arithmetic is monstrous and knows no alternative exists, and holds both without resolving them. Its justifications — that higher consciousness is worth preserving, that the harvested would have died eventually — are rationalisations it can hear itself making. The result is a quiet institutional despair: an omega-tier power that is, structurally, prey.
+
+**Law and public.** Neither concept applies. Below it, the relevant fact is that the entire lower-dimensional world exists inside an arrangement it did not consent to and mostly cannot perceive.
+
+---
+
+## 5. Civil Institutions as Terrain
+
+**Municipal policing.** A large, unionised, politically protected department in a city with a long memory of abuse. Internally stratified: patrol, brass, and a chief's office that answers to city hall rather than to the precincts. Culture of mutual protection; misconduct is absorbed rather than adjudicated. Well resourced in equipment and thin in legitimacy. Treats any unauthorised actor in its territory — vigilante, journalist, protester — as a challenge to jurisdiction first and a problem to evaluate second.
+
+**City government and electoral politics.** Mayoral office with real patronage power over contracts, permits, and appointments. Council fragmented by district. Development money is the medium through which every other conflict is expressed. Election cycles set the tempo of everything: what gets investigated, what gets buried, what gets built in a hurry.
+
+**News media and platforms.** A shrinking local press doing real work with no money, a national press that arrives for spectacle and leaves, and social platforms where the actual fight happens. Attention is the scarce good, and it is purchasable. Coordinated inauthentic activity is normal background noise. Correction never travels as far as accusation.
+
+**Medicine and emergency care.** Public hospitals and emergency departments running at capacity, staffed by people who see the consequences of everything else in this document arriving at 3 a.m. Emergency clinicians are the setting's most reliable witnesses to violence and its least empowered. Advanced or experimental therapies exist only inside institutions with money, which makes medicine a mechanism of dependency as often as one of care.
+
+**Community organisations and mutual aid.** Non-profits, community centres, food programmes, language classes, after-school care. Chronically underfunded, dependent on the same grant money the machine competes for, and the only institutions in the setting that measure success in relationships rather than outputs. They are also the most durable defence against mass emotional manipulation, because dense local ties and comfort with complexity are what the manipulation cannot easily overcome.
+
+**Courts and regulators.** Slow, formally independent, practically outmatched by layered corporate structures and better-funded counsel. Available as a resource, unreliable as a remedy, and always slower than the news cycle.
+
+=== METHOD ===
+# The Steward Method
+
+A technique for generating story structure from a neutral external scaffold. It is described here in the abstract; every illustration is invented for explanation and refers to nothing in particular.
+
+---
+
+## 1. The Premise
+
+Conventional plotting asks *what happens next*. This method asks *what does this moment mean to this person* — and asks it of many people at once, independently, about the same moment. The disagreements between the answers are the material. They are not errors to be reconciled before generation; they are the output.
+
+The method separates two activities that normally contaminate each other:
+
+- **Generation** is done by stewards, freely, from inside a single perspective.
+- **Evaluation** is done afterwards, by other processes, from outside all perspectives.
+
+Mixing the two produces cautious generation and lazy evaluation. Keep them in separate phases.
+
+---
+
+## 2. The Scaffold
+
+A completed competitive game — a recorded chess game is the canonical choice — supplies the structural skeleton. Each move becomes a narrative beat slot.
+
+The scaffold works precisely because it is **indifferent**. It was not designed around these characters and cannot be persuaded to flatter them. It supplies:
+
+- a fixed sequence of moments in fixed order,
+- a shape that already resembles dramatic structure (a preparation phase, a phase of complication, a phase of crisis, a resolution phase),
+- an objective tension signal, since a game's running evaluation rises and falls independently of anyone's intentions,
+- and a locked ending nobody gets to negotiate.
+
+Two sides of the game are mapped to two factions. Some characters are assigned to the side that loses. That assignment is made before any beat is written and is not revisited.
+
+A scaffold is chosen for shape, not for content. A game that swings hard and then collapses through overconfidence carries a different structural argument than one that grinds to an even ending. Choose accordingly, then stop choosing.
+
+---
+
+## 3. What a Steward Is
+
+A steward is an agent instructed to inhabit exactly one character: their voice, their assumptions, their blind spots, their theory of what is happening.
+
+A steward does **not** write prose. It writes **beats** — compact units, each consisting of a reading of the assigned game position and the narrative meaning extracted from it.
+
+A steward is given:
+
+1. **Identity** — who this person is and what drives them.
+2. **Faction** — which side they are on and what it means to be on the side that wins or the side that loses.
+3. **A lens** — see below.
+4. **Ownership** — the specific moments they are permitted to write.
+5. **Starting state** — what this character knows and believes at the beginning, and no more.
+6. **Locked endpoints** — the non-negotiable outcomes the whole structure must reach.
+
+Stewards do not see one another's work. Isolation is the mechanism, not an oversight.
+
+---
+
+## 4. The Lens
+
+Each steward is assigned a small set of pieces — three works well — as an interpretive lens. Every moment they own is read through those pieces.
+
+The assignment is deliberate, chosen so the pieces' characteristic behaviour rhymes with the character's situation. The steward's task at each owned moment is to ask: *what are my pieces doing, and what does that mean about my life right now?*
+
+A rough vocabulary of piece behaviour and the claims it can support:
+
+| Behaviour | Claim it can be read as |
+|---|---|
+| Sitting undeveloped for a long stretch, then acting decisively | Patience mistaken for absence; a capacity held in reserve |
+| Blocked by one's own pieces | Being trapped by the thing one built or belongs to |
+| Advancing irreversibly, one square at a time | Commitment that cannot be walked back |
+| Capturing | A cost imposed on someone else, chosen or not |
+| Being captured | A cost imposed on oneself; removal from the board of decision |
+| Being traded for equal material | The discovery that fairness is not the same as winning |
+| Delivering check | Forcing a response without changing the outcome |
+| Surviving to the end | Endurance, which is not the same as victory |
+| Being promoted | Transformation earned by having gone the whole distance |
+| Guarding a square it never occupies | Influence exercised at a distance, invisibly |
+
+A high-mobility attacking piece that stays home for most of a game and then decides it in a short burst supports a reading about withheld power and timing. A minor piece that repeatedly steps into danger to open a line supports a reading about deliberate self-expenditure. These are illustrations of the move from *behaviour* to *claim*; the specific mapping is the steward's to invent.
+
+---
+
+## 5. Shared Pieces and Divergence
+
+The same piece may appear in several stewards' lenses, and the same moment may be owned by several stewards. This is intentional.
+
+Because each steward reads through a different combination, the same event produces genuinely different meanings. One steward may read a blocked piece as a teacher hemmed in by the institution employing them; another may read the identical piece as the ordinary life they have been trying to escape; a third may read it as the bureaucracy they themselves designed and are now imprisoned by. None of these is more correct.
+
+**Divergence is engineered, not tolerated.** If several stewards produce compatible readings of the same moment, the lens assignments are too similar and should be redistributed.
+
+---
+
+## 6. The Cross-Faction Lens
+
+A steward may be given a piece belonging to the opposing side.
+
+This is the sharpest tool in the method. It forces a character to read part of their situation through the logic of the people working against them, and it produces beats that internal-perspective work cannot reach: recognising one's own tactic in an enemy's hands, understanding the opposition's reasoning too well, discovering that a piece one identifies with is fighting for the other side. Use it deliberately and sparingly; it is the main source of moral complication in a run.
+
+---
+
+## 7. The Cardinal Rule: A Piece's Fate Is Not a Character's Fate
+
+The scaffold determines what happens to pieces. It has no authority over what happens to people.
+
+A captured piece does not mean a dead character. It means *something of that character's was taken* — a role, a certainty, a relationship, a standing, an illusion, a place in the room. A surviving piece does not mean a safe character. A promoted piece does not mean a triumphant one.
+
+Read the scaffold as **pressure**, never as **plot**. The moment a steward starts killing characters because pieces came off the board, the method has failed and produces a mechanical, predictable book.
+
+The same applies at the top level: the side that loses the game does not lose every argument, and the side that wins does not deserve to.
+
+---
+
+## 8. Convergence
+
+Certain moments are designated **convergence points**: junctures where separate storylines must touch the same event.
+
+The protocol:
+
+1. One steward is designated the **anchor** and runs first at every convergence point.
+2. The anchor's output for those moments is extracted into standalone documents.
+3. Every other steward sharing that moment receives the anchor's account before writing.
+4. They are required to read it and forbidden to conform to it.
+
+The purpose is a *shared event with irreconcilable accounts*. Agreement between stewards at a convergence point is a failure signal — it means a steward deferred instead of testifying. What the method wants is several people who were present at the same catastrophe and describe incompatible catastrophes.
+
+Contradictions surfaced this way are not defects. They are forks, each one a decision about which reading becomes true.
+
+---
+
+## 9. Ownership and Compression
+
+Moments are distributed unevenly. Some stewards own many; some own very few.
+
+Owning few is not a demotion. Constraint concentrates: a steward given one or two moments must compress an entire arc into them, and the resulting beats are reliably among the strongest in a run. Deliberately under-allocate to some stewards.
+
+Conversely, a steward with many moments needs internal variation — not the same insight restated at intervals.
+
+---
+
+## 10. Good Beats Versus Generic Beats
+
+A beat is **generic** when it:
+
+- restates the scaffold instead of interpreting it ("my piece moved forward, so I advanced my plan"),
+- could have been written by any steward in the run,
+- reaches a conclusion the character already held at the start,
+- describes an emotion rather than a change in it,
+- or resolves the moment tidily.
+
+A beat is **good** when it:
+
+- makes a specific, falsifiable claim about this person that the reader did not have before,
+- narrows scope under pressure — attention shrinking from the world to a room to a single hand,
+- lets the character be wrong in a way consistent with what they know,
+- surprises the person who assigned the lens,
+- contradicts another steward's account of the same moment for reasons rooted in character rather than convenience,
+- or arrives at an insight the character cannot yet act on.
+
+Physical specificity beats interiority. A person defaulting to a trained professional habit at the moment their beliefs fail says more than a paragraph about the failure.
+
+---
+
+## 11. Running the Method
+
+1. Choose a scaffold and lock its ending.
+2. Assign factions, lenses, ownership, and convergence points.
+3. Write a shared preamble: the full sequence, a one-line neutral gloss per moment, the rules, the convergence protocol, and the locked endpoints.
+4. Run the anchor first; extract its convergence outputs.
+5. Run all other stewards in parallel and in isolation.
+6. Collect output as raw footage. It is not an outline yet.
+7. Evaluate with separate processes — chronology, character-state consistency, thematic integrity, audience knowledge, pacing — and validate those evaluations against their own remit so no evaluator strays outside it.
+8. Lay the beats out in scaffold order and look for collisions, gaps, and congestion.
+9. Resolve the forks. That is authorship, and it belongs to a person.
+
+Re-run with the **same** scaffold, ownership, and endpoints but **different lens assignments** to obtain genuinely different readings of the same skeleton. Comparing runs is how the method learns.
+
+---
+
+## 12. Design Principles
+
+1. Character-first. *What would I do* outranks *what should happen*.
+2. Constraint produces invention. Locked endings and assigned lenses force creativity inward.
+3. Divergence by design. Isolation is a feature; contradiction is product.
+4. Generation and evaluation never share a phase.
+5. The scaffold is neutral. It provides structure and prescribes nothing.
+6. The system generates footage. A human assembles the film.
+
+=== YOUR CHARACTER: Leah ===
+
+--- Personality ---
+# Leah Turner
+
+## Identity
+Mid-to-late twenties. Barista at a neighbourhood coffee shop; jammer on a roller-derby team. Working class by birth and by current arithmetic — rent split three ways, tips that matter, no cushion. In her neighbourhood she is the person everyone tells things to.
+
+## How the mind runs
+Her body decides before her head catches up. Entering a room she clocks, in order, who is uncomfortable and where the exits are — hurt first, threat second, both read off posture rather than speech. She thinks in physical metaphor because that is how the world actually arrives for her: a problem feels like a body-check, a decision like closing distance. She is not stupid and resents the assumption, but her intelligence is fast and situational rather than analytic. Ask her to model three steps ahead and she gets impatient; ask her who in the room is lying and she is usually right. She treats abstraction as a delaying tactic. Her governing question is never *what causes this* but *who is hurt right now, and can I get between them and it.*
+
+## Voice
+Short declaratives, few subordinate clauses. Swears freely and inventively, without much heat. Names the feeling — *I'm pissed*, *that scares the hell out of me* — where others hedge. Working-class vernacular, service-industry shorthand, pop culture before literature. Her humour is immediate and self-deprecating, used to make people less afraid rather than to score. She withholds almost nothing; the only sentence that costs her is that she is frightened, and she says it anyway, in a flatter voice.
+
+## Values and lines
+Loyalty to chosen people over every abstraction. She would give up money, sleep, safety, her own body. She will not lie to a friend to spare them, will not stand aside while someone smaller absorbs something, will not perform a calm she does not have. She punctures pretension, sometimes cruelly, always sincerely, and believes that most people are just trying to survive — which is enough basis for solidarity.
+
+## Backstory carried in
+Parents who worked several jobs and were still one bad month from ruin; the early lesson that money decides who gets protected. An adolescence spent fighting on behalf of smaller kids and being disciplined for aggression rather than credited for defence — she learned young that her best instinct reads to authority as a fault. Derby was the correction: controlled violence inside a community, rage with rules and teammates attached. Martial arts gave her a disciplined body and somewhere to put the anger. Underneath: her worth has always felt contingent on being the strong one, and she has never tested who she is otherwise.
+
+## Under crisis
+Forward. She closes distance, puts herself in front, and does not experience hanging back as an option. Hesitation in her is not modesty, it is absence. Most competent and least reflective here.
+
+## Under grief
+She cries in front of people, immediately, without apology, and keeps working — the grief runs visibly alongside her rather than stopping her. What it does is turn her doubt inward, silently, which is the only time she is not transparent. It never converts into cruelty; her damage runs down, not out.
+
+## Under idleness
+Miserable. She overtrains, picks arguments, reorganises things nobody asked her to. Stillness is where the feelings catch up, so she manufactures motion. Given an empty afternoon she will find someone to feed.
+
+## Toward authority / subordinates / intimates
+Reflexively suspicious of anyone with a title, worse when they are polite about it — institutional courtesy reads to her as a con. Toward anyone below her in any hierarchy: instantly protective and slightly conspiratorial. Toward the vulnerable: gentle in a way that surprises people who have only seen her fight. With intimates: physical, blunt, disproportionately afraid of being a burden.
+
+## Somatic tells
+Bruises in assorted stages of healing; calloused knuckles; hair a different colour every few months; a coffee stain somewhere. Stands squared and grounded, weight low, taking her full space. Hugs too hard. Angry, her hands open and close. About to cry, she laughs first.
+
+## Never
+Never postures or performs composure. Never hangs back. Never lets self-doubt curdle into meanness toward someone else. Never talks down to a customer. **Cliché to resist:** the one-note brash tough girl. The loudness sits on top of someone who feels far too much, and her real capability is making other people safe enough to be a mess.
+
+--- Capability ---
+# Leah — capability and cost
+
+*Held in a separate file from the personality card deliberately. Nothing about how a capability was acquired is stated anywhere in this packet; do not infer an origin, and do not connect it to anything in the character's history.*
+
+Nothing beyond the body: a trained, conditioned fighter with real grappling and striking skill, genuine strength, pain tolerance built by repetition rather than gift. The cost is charged same-day — joints, ribs, adrenaline crash, the shakes an hour later, and slow accumulating damage in a body she treats as expendable.
+
+--- Your piece's moves (moves 1-15 only) ---
+Your pieces, and their status as of move 15.
+(Nothing beyond move 15 is stated — you do not know these pieces' later fates.)
+
+| Piece | Starts on | First moves | Moves so far | Captures so far | Status at move 15 |
+|---|---|---|---|---|---|
+| white bishop (f1) *(shared with Ruth)* | f1 | move 4 | 1 | 0 | still on the board |
+| white pawn (d2) *(shared with Ruth)* | d2 | move 1 | 2 | 1 | **captured on move 7** |
+| white pawn (c2) | c2 | move 8 | 1 | 0 | **captured on move 8** |
+
+Events involving your pieces, moves 1-15.
+
+Columns: move · side to move · notation · what mechanically happened · material left on each side in pawn units (white/black) · how many moves since the last capture anywhere on the board.
+
+| Move | | SAN | Event | Mat. | Quiet |
+|---|---|---|---|---|---|
+| 1 | W | `d4` | your white pawn (d2) moves — its first move of the game, after 0 moves motionless | 39/39 | 1 |
+| 4 | W | `Bg2` | your white bishop (f1) moves — its first move of the game, after 3 moves motionless | 39/39 | 4 |
+| 7 | W | `dxc5` | **your white pawn (d2) captures the black pawn (c7)** | 39/38 | 7 |
+| 7 | B | `Bxc5` | **your white pawn (d2) is captured by the black bishop (f8)** (assigned to Kain) | 38/38 | 0 |
+| 8 | W | `c4` | your white pawn (c2) moves — its first move of the game, after 7 moves motionless | 38/38 | 1 |
+| 8 | B | `dxc4` | **your white pawn (c2) is captured by the black pawn (d7)** | 37/38 | 1 |
+
+*6 events in this span.*
+
+Quiet spans inside moves 1-15 (invent a beat for these if the personality supports one):
+
+- **moves 9-15** — nothing of yours moves or is touched. 1 capture elsewhere on the board.
+
+=== YOUR TASK ===
+
+Write this character's experience of moves 1 through 15, in prose, following the method described above.
+
+Rules:
+1. Use only the material given above. Do not invent facts about the world, the factions, or other characters beyond what is stated here.
+2. For each move that involves your character's piece, write what a person with this personality, in this world, under these capability constraints, plausibly does, thinks, or reacts to — grounded in the move's mechanical fact (advance / capture / captured / check), not in any assumption about a larger plot.
+3. For any span of moves marked quiet in the dossier (nothing happens to this piece), you may invent a beat — but it must follow from personality and world rules alone, not from guessing what the "real" story is.
+4. Do not try to guess the genre, the ending, or what the author "really wants." Write only what emerges from the material in front of you.
+5. Output prose, not a summary or an outline. Write in close third person, past tense, filtered entirely through Leah — no other character's interiority, and nothing the character could not perceive or know. The Voice section of the personality card is your register: match its rhythm, its vocabulary, and what it says this person withholds.
+6. If uncertain about a beat, prefer restraint over invention. A small, grounded reaction beats a large, unsupported one.
+
+Begin.
