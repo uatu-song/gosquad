@@ -1,196 +1,162 @@
 # Go Squad Session Handoff
 
-**Last Updated:** 2026-06-14 (late — Run 1 complete + evaluated + fixed)
-**Session:** Book 1 Rebuild — Triplets → Move Map → Embodiments → Run 1 → 5-Agent Eval → Fixes
+**Last Updated:** 2026-07-26 (fresh-start rebuild: new canon system + numbering ruling + prose pipeline proven)
+**Session:** Kit ingest → `_canon` engine → 8-book renumbering → style-constraint layer → CH18 cold-rewrite pilot (5 generations)
+
+> ⚠️ **This repo changed shape on 2026-07-26.** There is now a working
+> canon/verification system (`_canon/` + `canon/`), the A/B book numbering is
+> retired, and a cold-agent prose pipeline is proven. Read this file, then
+> `5_story_bibles/sessions/SESSION_LOG_2026-07-26.md` for the full detail.
+
+---
+
+## FIRST ACTION, EVERY SESSION
+
+```bash
+python3 _canon/tools/audit.py --book book_1      # canon check (any book key)
+python3 _canon/tools/codex.py --book book_1 --gaps
+python3 _canon/tools/check_promises.py --book book_2   # the Director's open questions
+```
+
+The pre-commit wall runs `audit` + `typography` + `codex --enforce` across all
+books on every commit. `git push` needs `--no-verify` (git-lfs missing in the
+devcontainer; text-only commits).
 
 ---
 
 ## IMMEDIATE RESUME POINT
 
-### Book 1 Steward Run 1 is COMPLETE, evaluated, and fixed → next is Cinematic Blocking (2026-06-14)
+### Book 2 bridge rewrites — BLOCKED on one Director ruling (2026-07-26)
 
-**Resume at:** Two Director decisions, then cinematic blocking (rebuild step 9).
+**The block:** four of Book 2's six worst chapters are Ahdia POV. `CLAUDE.md`
+says flatly *"NO internal Ahdia scenes in Book 2"* — but the drafted first
+edition has **nine** Ahdia-POV chapters (01, 02, 05, 06, 07, 08, 09, 13, 18).
 
-**Run 1 status:** DONE. 10 stewards ran (Ahdia anchor + 9 parallel agents), ~21K words of beats in `5_story_bibles/book_1/steward_run1/`. Evaluated by the 5-agent pass + Enforcer (`steward_run1/eval/`, zero rejections, 10/10 fact spot-checks). The 1 BLOCKER + consensus FIXes + the missing M110 team-reveal are all resolved (mechanical fixes + a 4-steward gap-fill pass). See the session log below for the full issue ledger.
+**Evidence gathered:** zero mentions of Exile Island, dictators, or the
+operations in *any* drafted chapter (the only hits are "translocation", the
+power mechanic). The draft withholds the **secret**, not her presence — the
+grief chapters *are* the fridging mechanism, and the reader is fooled because
+the depression on the page is real.
 
-**Before blocking — two Director calls still open:**
-1. **Reader-irony canon rulings** (Reader Proxy recommendation): treat *transcendence-not-death* and *Firas-displaced-not-dead* as Book-7 RETROACTIVE irony (the Book-1 reader shares the characters' grief, doesn't hold the secret); reveal *Bellatrix-watching* + *Kain-clone-survival* only at Kain's epilogue. Confirm or adjust.
-2. **Firas's one canonical sidelining move** — the injury is currently spread across M7/M20/M26/M80. Move map implies M26 = the bullet, M80 = the EMP trap. Pick the single sidelining anchor.
+**Recommended reading, awaiting ruling** (filed in `canon/book_2/PROMISES.jsonl`):
+Ahdia POV is permitted and necessary; what is banned is any scene depicting or
+hinting at the operations. If the ruling is instead a hard ban on her POV, nine
+chapters need POV reassignment before any rewrite is meaningful.
 
-**Then: Cinematic Blocking (rebuild step 9)** — Scene Choreographer + Pacing Monitor stage the Run-1 beats into scenes/chapters. This absorbs the two remaining staging items: CP-3 (M131–136) sequential staging (quad-consensus) and "the rescue must out-weigh the Kain-kill in foreground" (Theme F2). Output = the scene/chapter scaffold (the layer Book 1 does NOT have yet) → then prose (step 10).
+**Once ruled, in order:**
+1. Cut a **Book 2 Ahdia embodiment** — the 10 ratified embodiments are
+   Book-1-arc-specific; Book 2 Ahdia (performing grief over live operations) is
+   a different psyche. Scavenge: `2_method_actor/stewards/Ahdia_Bacchus_Steward.md`
+   (Book-2-specific), `1_writing_guides/Ahdia_Voice.md`, and the ratified 5-D
+   format in `2_method_actor/book1_embodiment/`.
+   *Note:* no Book 2 chess scaffold exists (Director selects the game), so the
+   embodiment cannot use a triplet lens — build the spine on the double life.
+2. **Pilot CH08** with `_canon/REWRITE_PACKET_TEMPLATE.md` to prove the
+   template generalizes beyond CH18.
+3. Batch the rest.
 
-**Full session detail + validated 15-issue ledger:** `5_story_bibles/book_1/steward_run1/SESSION_LOG_2026-06-14.md`.
-
-### Rebuild sequence — status
-
-1. ✓ **Series topology** (`5_story_bibles/SERIES_TOPOLOGY.yaml`)
-2. ✓ **Book 4 topology** (`5_story_bibles/book_3/BOOK4_TOPOLOGY.yaml`)
-3. ☐ **Books 5–8 topologies** — not started (independent; can wait)
-4. ✓ **Book 1 move mapping** (`5_story_bibles/book_1/BOOK1_MOVE_MAP.md`) — 8 studs anchored to PGN moves, Director-approved
-5. ✓ **Triplet assignments** (`5_story_bibles/book_1/BOOK1_TRIPLETS.md`) — RATIFIED; validated against the PGN
-6. ✓ **Embodiment instructions** (`2_method_actor/book1_embodiment/`) — all 10 active characters, ratified
-7. ✓ **Steward run (Run 1)** — 10 stewards, evaluated (5-agent + Enforcer), fixes + gap-fill applied (`steward_run1/`)
-8. ☐ **Cinematic blocking** ← **NEXT** — Scene Choreographer + Pacing Monitor → scene/chapter scaffold (after the 2 Director calls above)
-9. ☐ **Book 1 prose generation** — with embodiment active from word one
-
----
-
-## What Happened This Session (2026-06-14)
-
-**Drove the Book 1 rebuild from stale-handoff state through to a fire-ready steward run.**
-
-1. **Canon-validated + ratified the triplets** (`BOOK1_TRIPLETS.md`) against the raw PGN. Fixed a hard error (a-pawn dies M33 not M53), documented the Ruth/Leah shared f1 bishop, and resolved 3 narrative tensions by Director ruling: Firas's M80 Rook-fall = his injury-sidelining (not a Kain duel); the M82 Tank kill is Ahdia's (Ruth witnesses); "Ng7" softened (resignation, not on-board mate; canonical kill = Bourn's missile + singularity). Core mappings (Ahdia's knight→Ng7, e-pawn→e6, Firas's f-pawn→f5) verified true in the game.
-2. **Built the move map** (`BOOK1_MOVE_MAP.md`) — 4-phase skeleton, 9 stud anchors (Stud 4 split into fake-death 4a + source-reveal 4b; Stud 3 spans street-seed M14→EMP-payoff M80; Stud 5 corrected late ~M108; Stud 6 = Director-framed suit beat ~M116–120). Move→chapter math lands every canon beat (Docks≈Ch19, suit≈Ch26, dissolution≈Ch29–30).
-3. **Wrote all 10 active embodiment instructions** (`2_method_actor/book1_embodiment/`) in a ratified 5-D format (cognitive architecture / negative constraints / repeatable operations / grief-stress registers / structural resistances), each fusing the triplet + move map and baking the prose-audit AI-tic guards + canon locks per character.
-4. **Built the Run-1 scaffold** (`BOOK1_STEWARD_RUN1.md`) — shared preamble, move-metaphor table, 3 convergence points (M26 / M82 / M131–136), move ownership per steward, starting states, and the prompt-assembly recipe.
-5. **Canon hygiene:** "Dr. Shiba Ryu" → "Dr. Ryu Matsuda" in the state index (Shiba-purge residue); archived 3 stale pre-restructure duplicate trees (`chess_engine_context/`, `story_bibles/`, `tools/`) to `_archive/pre_restructure_duplicates/` (kept `entity_catalog/` + `reference/` — live tooling).
-
-**Env note:** `git-lfs` is missing in the devcontainer; pushes need `git push --no-verify` (text-only commits) — see project memory.
+**Book 2 worst chapters** (composite tic burden; CH18-ed1 = 219 was the
+Director-confirmed "egregious" calibration point):
+CH09 (307, but only 446w) · **CH08 (274)** · CH15 (237, Ruth/Leah intercut) ·
+CH18 (236) · CH07 (235) · CH19 (227, Ben). Book 2's *median* chapter scores
+where Book 1's *worst* do.
 
 ---
 
-## MAJOR DECISION: Book 1 Rebuild (2026-04-03)
+## Standing doctrine (ruled 2026-07-26)
 
-**Director decided to rebuild Book 1 from structural studs rather than retrofit prose fixes.** Not a rewrite (trying to say the same thing better). A rebuild (lay constraints, let the story emerge).
-
-**Rationale:**
-- Prose audit revealed amplification mechanism in AI-assisted writing (see below)
-- Retrofitting fights AI defaults sentence by sentence
-- Remanence (Director's other novel) proved AI prose survives disclosure scrutiny when the AI *embodies* characters rather than *describes* them
-- The steward experiment's triplet mechanism (proven in Book 2B) provides the embodiment vehicle
-- Book 1's early chapters were the Director's original pre-AI prose; later chapters show increasing AI default voice. The escalation isn't accumulation within sessions — it's the boundary between human and AI prose.
-
-**Chess game selected:** Carlsen vs Nepomniachtchi, World Championship 2021, Game 6 (136 moves, longest WCC game ever, White wins). PGN saved at `6_manuscript/book_1/book1_chess_game.pgn`.
-
-**8 studs locked** (everything else emergent):
-1. Protagonist fakeout (Firas → Ahdia)
-2. Ahdia and Firas's strained relationship (early)
-3. Police ambush/trap (institutional power as threat)
-4. Ahdia's fake death / powers reveal (source of others' abilities)
-5. Bidirectional time manipulation discovery (speed up to self-administer treatment)
-6. Firas gives Ahdia his suit (blink change, too big, still barefoot)
-7. Autoinjector transfer + "Oh hey. I knew you were in there somewhere."
-8. Firas dissolves into the singularity (human chain pulls Ahdia back)
-
-**Full studs document:** `6_manuscript/book_1/BOOK1_REBUILD_STUDS.md`
-
-**Book 2A:** Will be rebuilt after Book 1, using the embodiment instructions proven at book scale. Not simultaneous.
+- **Fresh start.** The old tree is **quarry**. Nothing legacy is edit-of-record
+  until re-declared in the new system. When a need arises: scavenge the best
+  existing asset, then cut a **fresh customized version** into the new system —
+  never wire the old file in directly.
+- **Series numbering — LOCKED.** 8 books, sequential integers, **no letter
+  suffixes ever.** Splits are not pre-declared; if a book earns one during
+  generation it takes two numbers then and downstream renumbers.
+  Translation table: `/LEGACY_NUMBERING.md`.
+- **Emergent-first.** Book 1 is near-done (polish only). Everything beyond it is
+  regenerable through the chess-steward pipeline. Books 5–8's Jan-2026 READMEs
+  are candidate studs, not canon.
+- **The rewrite pipeline is a BRIDGE**, not repair-for-what-ships. It holds
+  chapters until the rebuild reaches them. ⇒ Book 1's climax is **out of
+  scope** (the rebuild is 1–2 steps away); Book 2 is the bridge target.
+- **Surface, don't fix.** Only the Director rules a wobble, a red-herring, or a
+  motif. Crew files questions; crew does not pick winners.
 
 ---
 
-## What Happened This Session (2026-04-03)
+## The two workflows
 
-### 1. Steward Experiment Manual Built
-- `5_story_bibles/book_2b/steward_experiment/STEWARD_EXPERIMENT_MANUAL.md`
-- Full user manual for the steward experiment system: core concepts, how to run it, evaluation pipeline, design principles
-- Written so a fresh chat or human reader can understand the full system cold
+### A. Rebuild (generation) — Book 1 at step 9 of 10
+Topology → studs → chess game → move map → triplets → embodiments → steward run
+→ 5-agent eval + Enforcer → **cinematic blocking (NEXT)** → prose.
+Book 1's ratified assets: `BOOK1_TRIPLETS.md`, `BOOK1_MOVE_MAP.md`,
+`BOOK1_REBUILD_STUDS.md`, `2_method_actor/book1_embodiment/` (10 files),
+`steward_run1/` + `eval/`. Two Director calls from the 2026-06-14 session are
+**still open** (reader-irony rulings; Firas's canonical sidelining move —
+though the 06-14 log records M7 as decided; verify before acting).
 
-### 2. Cross-Book Prose Audit
-Ran 4-audit battery on both Book 1 and Book 2A manuscripts:
+### B. Bridge (prose repair) — proven on CH18, 5 generations
+Packet (`_canon/REWRITE_PACKET_TEMPLATE.md`) → **cold agent** (fresh context,
+never shown infected prose, never reused) → 3 mechanical gates → Director read.
+**The packet is the memory; agents stay disposable.** Every rejected draft
+becomes a constraint, so the failure never recurs.
 
-**Book 1 (74K words, 30 chapters):**
-- Fragment punches: 1,023 total. **9x escalation** from early (3.3/1K) to late (29.5/1K)
-- Not-constructions: 113 (concentrated in back half)
-- "Still": 125 (spikes in final act)
-- Em-dashes: 1.9/1K early → 10.4/1K late (5.5x, all POVs)
-- "The particular": 0 (hadn't developed yet)
-- POV voice: **Grade C**
-
-**Book 2A (48K words, 23 chapters):**
-- Not-constructions: 119
-- "The particular [noun] of": 48 (across every POV — Book 2A's signature tic)
-- "Still": 133 (2.8/1K)
-- Fragments: 87 (much more controlled than Book 1)
-- POV voice: **Grade C+** (dialogue B+/A-, narration C-/D+)
-
-**Key finding:** The disease isn't specific tics — it's an **amplification mechanism**. The AI discovers a default early and reaches for it increasingly under pressure. Different books develop different mutations. Same mechanism.
-
-**Root cause discovery:** Book 1's escalation maps to the literal boundary between the Director's original pre-AI prose (early chapters, clean) and AI-revised prose (later chapters, infected). The AI doesn't imitate the author's voice — it overwrites it.
-
-### 3. Embodiment vs Description — Core Design Principle
-- AI prose quality tracks to the **operation performed**, not the ratio of AI content
-- **Embodiment** ("be this character") → natural voice. Remanence used this. Survived disclosure scrutiny.
-- **Description** ("write about this character") → homogeneous narrator voice. Go Squad has this.
-- The triplet mechanism bridges the gap: gives the AI a cognitive architecture to inhabit, not facts to report
-- **Design problem document:** `PROSE_VOICE_DESIGN_PROBLEM.md`
-
-### 4. The Missing Layer Identified
-```
-Character Bible       → WHO they are
-Steward Prompt        → HOW they interpret events
-[EMBODIMENT INSTRUCTIONS] → HOW the narrator sounds inside their head
-Prose Output          → The actual sentences
-```
-The embodiment instruction must specify per character:
-1. Cognitive architecture under different states
-2. What the character does NOT do (negative constraints as firewall)
-3. The repeatable operation (triplet equivalent for prose)
-4. Grief/stress register
-5. Structural resistances to accumulation
-
-### 5. Book 1 Rebuild Decision
-Director decided to rebuild from studs rather than retrofit. 8 canonical moments locked. Chess game selected (Carlsen-Nepo 2021 Game 6, 136 moves). Everything between studs is emergent.
+CH18 measured, ed1 → v5: short-burst **120.1 → 31.8**/1K · em-dash **9.3 →
+2.5**/1K · banned constructions **present → 0** · invented nouns **0**.
 
 ---
 
-## Files Created This Session
-- `5_story_bibles/book_2b/steward_experiment/STEWARD_EXPERIMENT_MANUAL.md` — Steward experiment user manual
-- `PROSE_VOICE_DESIGN_PROBLEM.md` — Embodiment vs description design problem
-- `6_manuscript/book_1/book1_chess_game.pgn` — Carlsen-Nepo 2021 Game 6 PGN
-- `6_manuscript/book_1/BOOK1_REBUILD_STUDS.md` — 8 locked studs for rebuild
-
-## Files NOT Modified
-- Existing topology files unchanged
-- Existing manuscript files unchanged (rebuild is a fresh start, not edits)
-
----
-
-## Still Pending (Unchanged from Previous Handoff)
-
-### Book 2B 5-Agent Evaluation Pipeline
-Not started. Full spec unchanged:
-1. Timeline Keeper, Status Tracker, Theme Guardian, Reader Proxy, Pacing Monitor → against 13 steward outputs
-2. Enforcer validation
-3. Director-led cinematic blocking
-4. 12 editorial issues pending Director decisions
-
-**Note:** This pipeline should now run against the series topology once it exists, for cross-book validation.
-
-### Topology Files Needed
-| Book | File | Phase | Status |
-|------|------|-------|--------|
-| Book 1 | `BOOK1_TOPOLOGY.yaml` | 4 (complete) | Exists — architecture reference for rebuild |
-| Book 2A | `BOOK2A_TOPOLOGY.yaml` | 4 (complete) | Exists |
-| Book 2B | `BOOK2B_TOPOLOGY.yaml` | 2-3 | Exists |
-| Book 4 | `book_3/BOOK4_TOPOLOGY.yaml` | — | **Created 2026-05-18** |
-| Books 5-8 | Not yet created | — | Still pending (independent of Book 1 rebuild) |
-| Series | `SERIES_TOPOLOGY.yaml` | — | **Created 2026-05-18** |
-
----
-
-## Beta Reader Status
-- **Beta reader 1:** Finished Book 1. Flagged "first draft" feel. Praised emotional beats, trope subversion (protagonist fakeout specifically), action clarity.
-- **Beta reader 2:** Has Book 1, hasn't started. Will read current version for story/architecture feedback — what lands, what characters work, what feels earned. Do NOT prime her with audit findings.
-
----
-
-## Canon Warnings (Unchanged)
+## Canon warnings (verify against the codex before relying on these)
 
 ### Critical
-- **Ahdia POV withheld in Book 2A** — revealed end of 2A when Ruth discovers Exile Island
-- **28 dictators in prose, 37 in planning docs** — UNRESOLVED
-- **Kain wins election** — 312 EV
-- **Leta dies Book 2B** — killed by Webb
-- **Prime = Ahdia-1** — 5 total iterations (NOT 43/47)
-- **Firas does NOT die conventionally** — dissolves into singularity, absorbed, gone
+- **Ahdia POV in Book 2** — see the blocking question above; scope is unruled.
+- **"Auerbach" is Ahdia's CADENS codename**, not her surname (Bacchus).
+  Codename class: Howitzer, Greyhound, Mercury, Overseer. *The series is named
+  for her codename.*
+- **Firas is DISPLACED, not dead** — dissolves into the singularity; returns Book 7.
+- **The team's powers were never real** — Ahdia slowing time, amplified and
+  distributed by FAERIS drones. An EMP kills the *relay*, never in-body tech.
+- **Prime = Ahdia-1; current = Ahdia-5**; 5 iterations total (NOT 43/47).
+- **Kain wins the presidency** (312 EV). **Leta dies** (Book 3, killed by Webb).
+- **28 vs 37 dictators** — UNRESOLVED.
 
 ### Character
-- Victor has NO dead wife (partner is Leah)
-- Bourn is a WOMAN (she/her)
-- Korede is 17 (NOT 15)
-- Eidolon AMPLIFIES fear (cannot create)
-- Tess does NOT kill Webb
-- Leah is a BARISTA
+Victor has NO dead wife (partner is Leah) · Bourn is a WOMAN (she/her) ·
+Korede is 17 · Eidolon AMPLIFIES fear (cannot create) · Tess does NOT kill Webb ·
+Leah is a BARISTA · Ben's background is MILITARY, not police · Ben's wife
+Sarah — cause of death UNSPECIFIED (never invent).
+
+---
+
+## Open questions awaiting the Director
+
+| # | Question | Where |
+|---|---|---|
+| 1 | **Ahdia POV scope in Book 2** — blocking the bridge | `canon/book_2/PROMISES.jsonl` |
+| 2 | Forgettable-face signature: rhyme with the Kain clone, or collision? | `canon/book_1/PROMISES.jsonl` |
+| 3 | House typography — gate stays census-only until ruled | `_canon/books.yaml` |
+| 4 | Motif function-tests → `protected_sites`: "hand still reaching" ×9, "forty seven minutes" ×8, "two thousand people" ×10 | unfiled |
+| 5 | Book 5's Jericho/Eidolon conflict vs ratified Book 4 Eidolon canon | unfiled |
+| 6 | Two open Book 1 rebuild calls from 2026-06-14 (reader irony; Firas sidelining) | prior session log |
+
+---
+
+## Key file pointers
+
+| Purpose | File |
+|---------|------|
+| **This session's full detail** | `5_story_bibles/sessions/SESSION_LOG_2026-07-26.md` |
+| **Book registry / numbering authority** | `_canon/books.yaml` |
+| Legacy-label translation | `/LEGACY_NUMBERING.md` |
+| The engine | `_canon/tools/` (audit, codex, tic_census, ferret, check_nouns, check_facts, check_promises) |
+| **Reusable rewrite packet** | `_canon/REWRITE_PACKET_TEMPLATE.md` |
+| Series style rules (R100–R104) | `canon/series/RULES.yaml` |
+| Per-book canon layers | `canon/book_1/` … `canon/book_8/`, `canon/book_1_ed1/` |
+| Book 1 first edition (quarry, 30 ch) | `6_manuscript/book_1/first_edition/` |
+| CH18 pilot lineage (packet + v1–v5) | `6_manuscript/book_1/rewrite_pilot/` |
+| Rulings (don't relitigate) | `canon/book_1_ed1/DECISIONS_LOG.md` |
+| Book 1 rebuild assets | `5_story_bibles/book_1/` + `2_method_actor/book1_embodiment/` |
+| Prose doctrine | `PROSE_VOICE_DESIGN_PROBLEM.md` |
 
 ---
 
