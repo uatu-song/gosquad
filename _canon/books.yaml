@@ -28,8 +28,25 @@ books:
     data_dir: canon/book_1
     prose_expected: false
 
+  book_1_clean:
+    title: "Book 1 — FIRST EDITION, CLEAN SOURCE (measurement ground truth)"
+    status: quarry
+    # Extracted 2026-07-26 from _archive/exports/go-squad-2025-12-07T17_10_50.txt.
+    # Same text as book_1_ed1 (32/40 verbatim sentence match) but with ZERO
+    # PDF-extraction damage: 0 broken words vs 62, 0 space-before-comma vs 417,
+    # 0 space-before-period vs 906, 0 running headers vs 318, and paragraph
+    # structure intact (3,786 lines vs whole chapters collapsed to ~20).
+    # THIS IS THE MEASUREMENT AUTHORITY. Every author-baseline figure must be
+    # taken from ch1-11 HERE, not from book_1_ed1 - the damage moved real
+    # numbers (ellipsis 6.2 -> 3.4/1K).
+    manuscript_dir: 6_manuscript/book_1/first_edition_clean
+    chapter_glob: "chapter_*.txt"
+    chapter_num_re: 'chapter_(\d+)'
+    data_dir: canon/book_1_ed1
+    prose_expected: true
+
   book_1_ed1:
-    title: "Book 1 — FIRST EDITION (quarry, measurement-grade)"
+    title: "Book 1 — FIRST EDITION, epub-derived (SUPERSEDED for measurement)"
     status: quarry
     # The published first edition, extracted from GoSquad_Book1.epub (the only
     # chapter-segmented copy) and MECHANICALLY cleaned: PDF-extraction running

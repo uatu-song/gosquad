@@ -29,8 +29,20 @@ reuse an agent across drafts; always improve the packet instead.
      the register authority. If no card exists for this POV, **build it first**;
      CH18 cost five Director rounds for a chapter whose voice layer didn't exist.
   3. `<path to the POV character's embodiment instruction>` — for WHAT, not HOW
-  4. `1_writing_guides/GOSQUAD_PROSE_VOICE.md` — for WHAT, not HOW
-     (measured at 75 burst/1K — 3x the author; do not imitate its register)
+  4. ~~`1_writing_guides/GOSQUAD_PROSE_VOICE.md`~~ — **PULLED FROM THE PACKET
+     2026-07-26 by Director ruling. Do not load it.** It is not a register
+     problem; it is a doctrine problem. It contains live instructions that
+     countermand `canon/series/RULES.yaml` inside the same context window
+     ("Fragments land as beats, not errors. Don't 'fix' them"; a section headed
+     "Em-Dashes for Pivots") and those instructions win, because they read as
+     permission and are more specific than a lint rule. Its named style
+     exemplars are ch22 (88.0 burst) and ch27 (104.3) against an author
+     baseline of 24.9 — both post-ch12 AI-era chapters. Its "66% dialogue"
+     prescription is unfounded at any level of measurement (see below). The
+     likely history: the guide was written by observing the book's most
+     distinctive-feeling chapters, which were the infected ones. It did not
+     catch the infection; it canonized it, and has transmitted it since.
+     **Rebuild required, not edits. Blocked until then.**
 - **Beat scaffold:** `<numbered, order fixed, texture free. Extract from the
   existing chapter's events — never from its prose.>`
 - **Canon locks:** `<verbatim lines that must survive; character facts; the

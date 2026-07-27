@@ -1,0 +1,202 @@
+# Chapter 23
+
+<!-- SOURCE: _archive/exports/go-squad-2025-12-07T17_10_50.txt — clean export of the first edition, paragraph structure intact, ZERO PDF-extraction artifacts. Supersedes first_edition/ (epub-derived) as the MEASUREMENT GROUND TRUTH. Content identical (32/40 verbatim sentence match); only the damage differs. Quarry, not edit-of-record. -->
+
+The CADENS transport interior looked like it cost more than Caledonia's entire police budget.
+Ruth watched the team file up the ramp. Tess first—still dripping from the fountain, thermal goggles hanging around her neck. Knight and Sable next, helping Battlea. The red dress was destroyed, torn and soaked, but she was walking.
+Firas stayed with the van. Someone had to drive Jericho to safety, get the research data secured. He gave Ruth a look—you sure about this?—before driving off.
+Ruth was not sure about this.
+But the transport doors closed anyway.
+"Sit," she said. "We need to move fast."
+The team sat. Didn't argue. When someone in tactical gear shows up in a stealth aircraft, you follow instructions first, ask questions later.
+The transport lifted. Silent. Fast. Cloaked.
+Ruth pulled off her helmet. Let them see her face.
+"Okay," Battlea said. "What the hell is happening?"
+"Long version or short version?"
+"Medium version," Knight said. "With explanations."
+Ruth nodded. Looked at each of them. "You know how your powers stopped working after the docks?"
+"Yeah," Sable said bitterly.
+"They were never yours to begin with."
+Silence.
+"Explain," Tess said quietly.
+"You've been enhanced. Temporal manipulation distributed through drone networks. Someone with actual powers was amplifying you. Making you faster, stronger, more accurate. You thought it was you. It wasn't."
+Knight's face went pale. "The whole time?"
+"Every fight. Every mission. You were being helped."
+"By who?" Battlea asked.
+Ruth hesitated. Ahdia had been clear. Don't tell them. Not yet.
+"By someone dying to keep you safe," she said carefully. "Someone who thought giving you powers was worth their life."
+"That's not an answer," Sable said.
+"It's the answer you're getting." Ruth's voice was firm. "What matters is the enhancement stopped because the person providing it nearly died. They're in treatment now. Recovering. And once they're stable, the drones will resume operations."
+"Drones," Tess repeated. "FAERIS."
+"Yes."
+"I thought those were just surveillance."
+"They were that too."
+Knight leaned forward. "Who are you people?"
+Ruth took a breath. This was the part Bourn would kill her for.
+"CADENS. Cosmic Anomaly Defense and Neutralization Service. Shadow government organization. International black budget funding. We monitor and respond to cosmic-level threats that normal governments can't handle."
+"Like Kain," Battlea said.
+"Like Kain. Like the artifacts. Like the things that left them here." Ruth pulled up a holographic display. Showed thermal imaging of Kain—growing. Massive. "He used the Tamois Heart. Integrated it. He's transforming into something else. Getting bigger. Stronger. If we don't stop him in the next few hours, he'll either die or become something worse."
+"What's worse?" Sable asked.
+"Fully transformed. Unstoppable. The kind of thing that takes armies to bring down." Ruth met his eyes. "A monster with a grudge."
+Ruth's comm crackled. "HAZARD to command. Target is mobile. Heading northeast through the city. Moving fast. Smashing through buildings, vehicles, everything. Trail of destruction."
+Ruth cursed under her breath and pulled up the tactical map. Red dots showing Kain's last known positions, moving fast and unpredictable.
+"Where's he going?" Knight asked.
+"Nowhere. Everywhere." Ruth zoomed in on the pattern. "He's razing Caledonia. Block by block."
+"So we slow him down," Battlea said.
+"If we can."
+"Who?" Knight asked.
+Ruth didn't answer directly. "First, we need intel. Jericho knows how the Heart works. How Kain's abilities function. What his limitations are." She gestured to the pilot. "Set down where Firas has the van. We're picking up our prisoner."
+#
+They set down three blocks from where Firas had parked the van.
+Jericho was awake. Sitting in the van's back, hands zip-tied, looking terrified.
+Ruth approached. Full tactical gear. Helmet back on. Intimidating.
+"Dr. Jericho," she said. "We need to talk."
+"I don't know who you are," he said. Voice shaking. "But I'm not—I didn't—Kain made me—"
+"Save it." Ruth pulled up the research files on a tablet. "Resonance calibration. Cellular integration protocols. Temporal manipulation theories. You've been helping him weaponize the Heart for six months."
+"He kidnapped me from the museum!"
+"And then you kept working. Enthusiastically." Ruth showed him his own notes. Detailed. Excited. No sign of coercion. "You wanted to understand it. Crack the code. Publish the breakthrough of the century."
+Jericho looked away.
+"Here's what's going to happen," Ruth said. "You're going to tell us everything. How the Heart works. How to stop the integration. How to prevent this from happening again. And then you're going into protective custody until we clean up this mess."
+"And if I don't?"
+Ruth leaned closer. "Then Kain wakes up. And the first person he's going to blame for his transformation is the scientist who told him it would make him a god."
+Jericho went pale.
+"Protective custody sounds great," he whispered.
+#
+Back on the transport, Jericho talked.
+The team listened. Ruth translated the science into language they could understand.
+"The Heart isn't technology," Jericho explained, hands still zip-tied. "It's organic. A seed from something vast. It integrates with biological systems, enhances them. Kain thought he was gaining power. Really he was being consumed."
+"Can it be reversed?" Ruth asked.
+"No. Once integration begins, it's irreversible. The Heart is rewriting his biology." Jericho pulled up molecular diagrams on the tablet. "Massive muscle growth. Bone density increasing exponentially. He's becoming huge. Strong. Durable."
+"So he's just... big and strong?" Knight asked.
+"Exactly. Like the enhanced officers you've fought before, but scaled up. Fifteen feet tall, maybe more. Strong enough to tear through concrete. Durable enough that conventional weapons barely scratch him." Jericho hesitated. "But there's a problem. The integration is accelerating. His body is rejecting the transformation even as it's completing. He's dying. Fast."
+"How fast?" Ruth asked.
+"Hours. Maybe twelve at most. The cellular stress is catastrophic. Eventually his biological mass will fail and the Heart will consume what's left."
+"So he dies anyway," Sable said.
+"Or completes the transformation first." Jericho met his eyes. "Becomes fully integrated. Permanently enhanced. A twenty-foot monster that won't stop."
+Ruth's stomach dropped. "What are the odds he completes before he dies?"
+"Based on his current acceleration? Sixty percent. Maybe higher if he continues using his abilities."
+The transport went quiet.
+"So we have to stop him before he completes," Battlea said. "How?"
+"You can't," Jericho said bluntly. "He's fifteen feet tall and growing. Stronger than anything you've faced. More durable. There's no conventional weapon that works on something that size."
+"Then what do we use?" Tess asked.
+Jericho looked at Ruth. "Another Temporalist. Someone who can manipulate time. Slow him down. Freeze him. Create windows where he's vulnerable."
+Knight caught on immediately. "The person who's been enhancing us."
+Ruth didn't confirm. Didn't deny.
+"They're recovering," she said carefully. "Not cleared for field operations."
+"But they could do it?" Battlea pressed. "Stop Kain?"
+"Theoretically." Ruth looked away. "At significant cost."
+The team exchanged glances.
+"The person enhancing you," Knight said carefully. "They're at your facility. Recovering. And now you're asking them to fight a temporal god."
+Ruth didn't answer.
+"Who are they?"
+Ruth met his eyes. "Someone who's been protecting you since the beginning. Someone who thinks you're worth dying for. That's all you need to know."
+"That's not enough," Battlea said.
+"It's going to have to be."
+Victor laughed. Not humor—disbelief. "This is insane. This whole time, someone's been watching us. Helping us. Like a ghost." He shook his head. "And we don't even get to know their name?"
+Ruth was quiet.
+"That doesn't help," Tess said.
+The transport banked toward CADENS facility.
+Below, the city spread out. Unaware. Sleeping. No idea how close they'd come to cosmic disaster.
+Victor caught it. "You know them."
+"Yes."
+"And you're not telling us because they asked you not to."
+"Yes."
+"Even though we have a right to know."
+Ruth looked at him. Said nothing.
+Victor turned away.
+"How long?" Battlea asked quietly.
+"How long what?"
+"How long do they have? If they fight Kain."
+Ruth didn't answer.
+"How long, Ruth?"
+"Weeks. Maybe less."
+Silence.
+"Then we need another option," Knight said. "We can't ask someone to die for us."
+"It's not your choice," Ruth said. "It's theirs."
+Ruth's comm crackled. HAZARD's voice, urgent.
+"Command, target is downtown. Main Street. He's destroying everything."
+Ruth pulled up the tactical feed. Kain tearing through the city. Twenty feet tall now. Buildings collapsing behind him.
+The transport banked toward CADENS.
+"Then what do we do?" Tess asked.
+Ruth didn't answer.
+The transport touched down. CADENS facility.
+Ruth stood. "Wait here."
+She walked down the ramp.
+Bourn was waiting. Full tactical gear. Expression grim.
+"Ryu says she's awake," he said. "Asking what happened. Saw the feeds from the mansion."
+"Does she know about Kain?"
+"She knows." Bourn met Ruth's eyes. "And she's already asking when she can deploy."
+Ruth's chest tightened. Of course she was.
+"How long does she have if she fights?"
+"Ryu estimates days. Maybe a week if we're lucky. The temporal strain of freezing something that size, that strong..." Bourn shook his head. "It'll accelerate everything."
+Ruth looked back at the transport. At the team waiting inside.
+"Bring them to the briefing room," she told Bourn. "They deserve better than sitting in a transport."
+Bourn nodded. "And you?"
+Ruth looked toward medical. Where Ahdia was recovering. Where she'd soon be asking her to deploy. To die faster.
+"Give me ten minutes," she said. "Then I'll join you."
+#
+The briefing room looked like mission control for a space program.
+Wall-sized displays showing global threat assessments. Satellite feeds. Drone networks. Real-time tactical overlays of every major city.
+Tess stood in the center, turning slowly. Taking it all in.
+"This is insane," she said.
+Knight was examining a holographic projection of enhanced individual tracking. "They've been monitoring meta-humans worldwide. Hundreds of them."
+Sable found himself on a personnel file. His photo. His real name. Every mission the Go Squad had ever run. "They know everything about us."
+Battlea sat in one of the tactical chairs. It adjusted to her automatically. "I could get used to this."
+The door opened. Bourn entered, Ruth behind him.
+"You've seen what we do. You know what's at stake."
+"And you want us to join," Battlea said.
+"I'm offering." Bourn pulled up a display. CADENS recruitment files. "You're free to walk away."
+"Just like that?" Knight asked.
+"Just like that. What you've seen here stays here."
+Tess looked at the others. "Can we think about it?"
+"Of course."
+Bourn pulled out four cases and set them on the table.
+Tess opened the nearest case. Inside was a tactical suit—black and form-fitting, with armor plating along the torso and shoulders. The material was lighter than it looked, flexible and reinforced at the joints.
+Knight examined his and found integrated comm systems in the collar, medical sensors woven into the fabric, and heads-up display contacts in a small case.
+Sable held up the gloves with their reinforced knuckles and grip padding.
+Battlea found boots with mag-lock soles for vertical surfaces.
+"Hell of a sales pitch," Sable said.
+An alarm cut through the room. Red lights. Urgent.
+Bourn's expression shifted. "What—"
+A technician's voice over the intercom: "Director Bourn, we have a situation. Downtown Caledonia. Multiple cosmic-level threat signatures."
+The wall displays shifted. Security feeds from downtown.
+And everyone stopped breathing.
+Kain stood in the middle of Main Street.
+But not Kain anymore.
+He'd grown. Fifteen feet tall. Twenty. Still growing. Bones restructuring. The Tamois Heart pulsing in his chest—visible through translucent skin.
+A kaiju in the making.
+And behind him: four others.
+Enhanced cops. Seven feet tall. Torn CCPD uniforms. Tanks.
+Buildings collapsing. Cars crushed. People running.
+"Jesus Christ," Battlea whispered.
+The feeds showed CADENS Strike Teams deploying. Setting up perimeters. Establishing containment protocols.
+But it was slow. Methodical. By-the-book.
+And Kain was fast. Growing. Adapting.
+"Response authorization required," the technician said. "Waiting on clearance from—"
+"Override that," Bourn snapped. "Deploy all available units. NOW."
+"Sir, protocol requires—"
+"I said NOW!"
+The team watched. CADENS personnel scrambling. Suiting up. Loading into transports.
+But they were minutes away. Maybe more.
+And on the feeds: civilians dying. Right now.
+Tess looked at Knight. Knight looked at Sable. Sable looked at Battlea.
+Battlea stood. "We're not waiting."
+"The suits aren't calibrated—" Bourn started.
+"Don't care." She grabbed hers from the case.
+The others did the same.
+"You can't," Ruth said. "Without powers, you're—"
+"We've been without powers before," Knight said, pulling on his suit. "We'll manage."
+"This isn't street gangs," Bourn said. "This is—"
+"Our city," Tess interrupted. "Our people. Our fight."
+They moved toward the door.
+Bourn stepped forward. "You're making a mistake. You'll die out there."
+Tess turned back.
+"Probably," she said. "But at least we'll die doing something. Not waiting for authorization."
+Ruth grabbed her tactical gear and started suiting up.
+"Dr. Carter—" Bourn started.
+"I'm going with them."
+"Ahdia—"
+"Ryu can handle it."
+She moved toward the door.
+Bourn didn't stop her.
+Bourn stood alone in the briefing room. Watching the feeds. Tess, Knight, Sable, Battlea, Ruth—five people running toward certain death.

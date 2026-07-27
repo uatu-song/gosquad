@@ -1,0 +1,346 @@
+# Chapter 18 — v6 REGISTER PASS (marked diff)
+
+<!-- PROVENANCE: v5 (development-final, Director-accepted 2026-07-26) + register pass.
+     Scope: em-dash/ellipsis sort + fragment→complete-short-sentence conversion.
+     NO content changes. No beat added, cut, or reordered. Every touch listed below.
+     NOT manuscript. -->
+
+**Targets (clean-source ground truth, corrected census):**
+author overall 13.0 burst / 1.3 em / 3.3 ellipsis · author **action** 10.2 / 0.9 / 1.6 ·
+ellipsis in dialogue 11.4 per 1K-of-dialogue · **v5 measured 20.9 / 2.5 / 0.0**
+
+---
+
+## PART 1 — Em-dash sort (5 instances, 2 converted, 3 kept)
+
+The author marks **external interruption** with the dash and **the speaker
+failing** with the ellipsis. v5 used the dash for both. Sorting by cause moves
+em-dash down and ellipsis off zero in the same edit, without adding a beat.
+
+### KEPT — genuine external cuts
+
+| # | line | why it stays |
+|---|------|--------------|
+| 1 | `Dust on the deck says there never—` | Ben is cut off by the floodlights. External. |
+| 2 | `when it reached into her—` | Narration cut by the pulse. External, and the strongest dash in the chapter. |
+| 3 | `"Ruth, he's—"` | Ben is talked over by *"That's an order."* External. |
+
+### CONVERTED — the speaker failing, not being cut
+
+**Change 1**
+```diff
+- The backup radio crackled, thin. "Ruth—" Tess, ragged. "Something's wrong. I feel—"
++ The backup radio crackled, thin. "Ruth…" Tess, ragged. "Something's wrong. I feel…"
+```
+Nobody interrupts Tess. She stops because she can't finish. Two dashes → two ellipses.
+
+> **Stronger alternate, if you want the fumble mid-sentence** (the author's
+> "Burger King because… nevermind" pattern — start again, abandon):
+> `"Something's wrong. I feel… I can't…"`
+
+**Result:** em-dash 5 → 3 = **1.49/1K** (author overall 1.3, action 0.9).
+
+---
+
+## PART 2 — Ellipsis restoration (0 → 3, +1 optional)
+
+The chapter's most machine-sounding passage is the one where three people's
+bodies just failed and all three speak in well-formed sentences. Ruth is
+deliberately excluded — her command register is clipped and certain, and that
+is characterization, not a gap.
+
+**Change 2** *(also removes one sentence → burst −1)*
+```diff
+- "Gear's dead," Victor said. "All of it. And I'm slow. Why am I slow?"
++ "Gear's dead," Victor said. "All of it. And I'm… why am I slow?"
+```
+He starts to describe it, can't, and asks instead.
+
+**Change 3 — OPTIONAL, your call**
+```diff
+- "It's gone," Leah said, very quiet. "It's gone."
++ "It's gone," Leah said, very quiet. "It's… it's gone."
+```
+Declining is defensible: the flat repetition reads as numbness where a stutter
+reads as panic, and those are different characters in that moment. Three
+stumbles in four lines may also be one too many.
+
+**Result:** 3 ellipses (4 with Leah) across ~420 words of dialogue =
+**7.1/1K-of-dialogue** (9.5 with Leah). Author runs 11.4 — but his sample
+includes no Ruth-dominant chapter, and Ruth never fumbles. Under-target here
+is probably correct.
+
+---
+
+## PART 3 — Fragment → complete short sentence (9 conversions)
+
+The counterintuitive finding from the scene-type work: the author does **not**
+compress action with fragments. His action prose is *less* fragmented than his
+domestic prose (10.2 vs 15.2) because he compresses by writing complete short
+sentences. Every conversion below keeps the pace and the beat.
+
+**Change 4**
+```diff
+- She turned the screen. A forum thread, a pinned post.
++ She turned the screen. It was a forum thread with a pinned post.
+```
+
+**Change 5**
+```diff
+- Under that, a photo making the rounds: flowers taped to a lamppost
++ Under that was a photo making the rounds: flowers taped to a lamppost
+```
+
+**Change 6**
+```diff
+- Five names in block capitals over five squares of blurry footage.
++ Five names sat in block capitals over five squares of blurry footage.
+```
+
+**Change 7**
+```diff
+- "Ground set." Ben.
++ "Ground set," Ben said.
+```
+Also retires the bare-name attribution mannerism flagged back in v1.
+
+**Change 8**
+```diff
+- Both teams inside by 2103.
++ Both teams were inside by 2103.
+```
+
+**Change 9**
+```diff
+- Fifteen-plus units on the fence line, patrol cars and two SWAT vans, figures moving in pairs.
++ Fifteen-plus units sat on the fence line, patrol cars and two SWAT vans, figures moving in pairs.
+```
+
+**Change 10**
+```diff
+- Two drones on station for an hour, and nothing on that fence line until the lights came on.
++ Two drones had been on station for an hour, and nothing had shown on that fence line until the lights came on.
+```
+
+**Change 11**
+```diff
+- Four signatures moving away from the lights, all clean.
++ Four signatures moved away from the lights, all clean.
+```
+
+**Change 12**
+```diff
+- The GPS followed. The van's monitor.
++ The GPS followed. So did the van's monitor.
+```
+
+**Change 13**
+```diff
+- A shape came through it. Seven feet, matte armor, crossing the lot unhurried as a man crossing his own yard.
++ A shape came through it, seven feet of matte armor, crossing the lot unhurried as a man crossing his own yard.
+```
+
+---
+
+## PART 4 — DECLINED (reported, not silently kept)
+
+Nine fragments were left standing. Six are protected by the voice card; three
+are craft calls.
+
+**Protected by the card — Ruth's cognition IS fragmentation:**
+
+- `Triage ran itself. Three down, all breathing. SWAT re-forming past the smoke.`
+  — card §1.1, *the sorting IS the sentence structure*. Converting this would
+  cost the single clearest instance of her characterizing habit.
+- `Forty degrees, maybe less.` — card §1.2, clinical pricing.
+- `She keyed the radio. Static.` — the flat report is the triage register.
+
+**Craft calls:**
+
+- `Black water, moving.` — earns it.
+- `Engines, many, close.` — mimics rapid perception; every rewrite I tried was worse.
+- `Every name on that roster belonged to a shadow on traffic-camera footage. Still.`
+  — the one-word pivot carries the whole thought. Available if you need the
+  number down, but it costs more than it saves.
+- `Flowers taped to a lamppost, a note written to people the writer would never
+  meet, left at the only address grief could find: the place where it happened.`
+  — verbless, and the best sentence in the chapter. Not touching it.
+- `The water at her back, seven minutes of it. The man in front of her, seconds
+  of him.` — deliberate parallel. Flagging only because the construction is
+  epigram-adjacent; declining by default.
+- `Warehouse district 7, the row nearest the docks.` — reads as a map label,
+  which is what she's looking at.
+
+---
+
+## PART 5 — Where the number actually lands, honestly
+
+| | burst/1K | em/1K | ellipsis |
+|---|---|---|---|
+| v5 | 20.9 | 2.5 | 0.0 |
+| **v6 (this pass)** | **~15.4** | **~1.5** | **3 (7.1 per 1K dialogue)** |
+| v6 minus roster artifact | **~12.9** | | |
+| author action band | 10.2 | 0.9 | 1.6 |
+
+**A surgical pass closes about half the gap, not all of it.** Forcing the rest
+would require converting the six declined fragments above, and four of those
+are the voice card's own §1 rules rendered as prose. The metric and the card
+are in direct conflict for Ruth specifically, and the card should win.
+
+**Two things about the remaining gap, both measurement rather than prose:**
+
+**The codename roster is a census artifact inside the prose.** `BATTLEA. NIGHT
+KNIGHT. CRIMSON SABLE. GLOOM GIRL. NIGHTINGALE.` scores as five sentence
+fragments. It is a rendered screen list — the same class as the numbered beat
+lines that produced the false 80.2 on the structure docs. That's ~2.5/1K of
+pure artifact. The splitter should exclude it the same way.
+
+**The band itself is the wrong comparison class — fifth instance.** The 10.2
+action figure was measured across all of ch1–11, every POV. This is a Ruth-POV
+action chapter, and if Ruth's fragmentation is characterizing (which the card
+asserts and the ed1 samples support), her chapters should legitimately sit above
+a mixed-POV mean. ed1's clean-window Ruth chapters are **05–10**. Measuring
+*Ruth-POV action prose specifically* would give the correct target, and my guess
+is v6 lands much closer to it than 12.9-vs-10.2 suggests. That's a
+`tic_census.py` run, not a line edit — and it should happen before anyone
+sands another fragment off this chapter.
+
+---
+
+# PART 6 — Clean v6 text
+
+The schematics covered the back-room table, three printouts and Ruth's annotations in red. Warehouse district 7, the row nearest the docks. Ben's contact at the precinct had passed the tip that afternoon: a weapons cache out of Kain's supply chain, sitting in a leased unit with skeleton security until trucks arrived at midnight.
+
+"Window's tight," Ben said. "Twenty-one hundred to twenty-one forty. After that a second shift walks the fence."
+
+"Then we're out by twenty-one thirty." Ruth tapped the loading dock. "Victor, Ben, ground entry here. Tess, Leah, roof access off the crane gantry. I hold the perimeter and run comms from the van."
+
+"Twelfth this month," Victor said. "Somebody owes us a punch card."
+
+"Kain's been scrambling since the warehouse raid, and CCPD can't be seen holding his hand. He's moving inventory faster than he can hide it." She circled the fence line in red, then marked an exit for each pair. A plan was only as good as its way out, and she wrote the way out first. "Skeleton security, per a man we've never met. Assume it's wrong by half."
+
+"And if it's wrong by more than half?" Leah asked.
+
+"Then we walk away. Nobody bleeds for inventory."
+
+Tess had her boots on the bench and her phone out. "Before anybody suits up, you all need to see this."
+
+She turned the screen. It was a forum thread with a pinned post. A kid asking whether the Go Squad did autographs; his sister had been in the car during a carjacking two weeks back, and he wanted something to put in her room. Under that was a photo making the rounds: flowers taped to a lamppost where they'd pulled a woman from a burning sedan, a card tucked in the cellophane. "Thank you for my daughter."
+
+"Scroll," Tess said. "It gets better."
+
+A fan account had posted a roster. BATTLEA. NIGHT KNIGHT. CRIMSON SABLE. GLOOM GIRL. NIGHTINGALE. Five names sat in block capitals over five squares of blurry footage.
+
+Leah leaned in. "BATTLEA. Is that me? Is that a typo?"
+
+"It's a portmanteau. Battle, Leah. It's beautiful and I'll hear no criticism." Tess paused. "Also I've been using these in the threads since spring. Seeding, if you want the technical term."
+
+"Firas is going to love this," Ben said.
+
+"Or kill me."
+
+Ruth read the thread once and handed the phone back. Flowers taped to a lamppost, a note written to people the writer would never meet, left at the only address grief could find: the place where it happened. Every name on that roster belonged to a shadow on traffic-camera footage. Still. An anonymous risk had been hers alone to spend, and this one had a kid's name on it now. She went back to the schematics and checked the dock clearances a third time, then a fourth.
+
+At 2058 the van sat dark two blocks out.
+
+"Comms check. Van's live."
+
+"Ground set," Ben said.
+
+"Roof team set," Tess said. "Gantry's icy, for the record."
+
+The margin had settled over Ruth on the ride in, the way a unit of blood settles into a crashing patient: color up, numbers climbing, capacity arriving from outside her own walls. Firas had said once that someone wanted to help, and she'd left it filed there. Overhead, two FAERIS drones held station in the dark.
+
+"Firas started this," Ruth said into the mic. "We say it anyway. No better place than here."
+
+Four voices, out of sync: "No better time than now."
+
+Entry went clean. Victor called the lock in ninety seconds; Tess had the roof hatch in sixty. Both teams were inside by 2103.
+
+At 2106 Ben came over the channel, low. "Ruth. Racks are here. Racks are empty. All of them. Dust on the deck says there never—"
+
+Floodlights hit the high windows from both sides at once and the night went white. Engines, many, close. Fifteen-plus units sat on the fence line, patrol cars and two SWAT vans, figures moving in pairs. She counted them like a rhythm strip, fast and once.
+
+The megaphone rolled across the lot. "This is the Caledonia Police. The building is surrounded. Exit the south door with your hands raised."
+
+The tip had come through Ben's contact, and the tip had been bait. Somebody had fed it upstream knowing exactly which ears it would find. Two drones had been on station for an hour, and nothing had shown on that fence line until the lights came on. She filed both at speed, with everything else that would have to wait.
+
+"Formation Delta. Smoke on my mark, scatter pattern, goggles on. You've run this thirty times. Mark."
+
+Three canisters cracked and the white light became a gray wall. Through her goggles the lot resolved into heat. Victor went over the east fence off a single hand plant, gone before the nearest pair had finished turning. Tess put her second canister under the patrol cars and disappeared inside her own screen. Across the lot Ben's flash-bang went off; in the after-blindness Leah came down the fire escape and crossed the open ground low, on the exact line they'd walked in rehearsal.
+
+Four signatures moved away from the lights, all clean. Four for four through fifteen units and nobody had fired a shot. Ruth let out the breath she'd been metering and marked the time: 2109. They'd drilled that scatter in the Academy gym until Leah could run it blind, and tonight it had looked like the drill.
+
+Then her goggles died.
+
+Full charge, forty minutes of runtime showing, and the display went to black glass. The GPS followed. So did the van's monitor. Somewhere above the lot both drones came out of the dark and hit the asphalt like thrown stones. She was reaching for the backup radio when it reached into her—
+
+The margin left her like pressure off a cuffed artery, fast, measurable, done. Her arms took back their true weight. Her lungs shortened. The seat pressed up under her like she'd doubled overnight, and her body filed its report in a register she knew from hour thirty of a residency shift, hands slow, fuel already burned, stairwells sprinted with a code called overhead.
+
+The backup radio crackled, thin. "Ruth…" Tess, ragged. "Something's wrong. I feel…"
+
+"Gear's dead," Victor said. "All of it. And I'm… why am I slow?"
+
+"It's gone," Leah said, very quiet. "It's gone."
+
+"All of you, listen." Ruth put her cadence at handoff speed, the tone she used on interns at a crashing bedside. "You were trained before you were ever enhanced, and the training is still in your hands. Regroup at rally two. Keep moving. Now."
+
+She was out of the van and running for the lot herself; dead feeds meant eyes on. She made the corner in time to see the smoke thinning under the floodlights.
+
+A shape came through it, seven feet of matte armor, crossing the lot unhurried as a man crossing his own yard. A CCPD officer broke cover and sprinted for the fence; the armored man caught him one-handed by the vest, in stride, and threw him fifteen feet into a patrol car door. The door folded around him. Ruth's eye ran the workup on the way down: limp before impact, out cold, ribs at minimum. Her feet were already moving.
+
+Something crossed the fence line at the edge of her vision. By the time she'd turned her head Victor was down, arm pinned under him at an angle arms don't choose, rolling clear of a boot the size of a cinder block.
+
+Leah met him head on. Six strikes, and Ruth's own training graded every one, throat, brachial plexus, the nerve line above the knee, each placed where she would have marked a body for damage. He let them land. He stood in them the way a door stands in weather, then swept Leah backhand through a stacked pallet. The wood went to pieces around her.
+
+Ben got inside with the baton, military economy, short arcs. The man took the baton away, took Ben's throat in the same motion, and lifted him off the ground. Ben's boots kicked at air. His face went the color that starts a countdown.
+
+"Put him down!"
+
+The helmet turned toward the shout. He held Ben one second longer, then opened his hand. Ben hit the asphalt coughing, alive. The armored man started walking toward her.
+
+Triage ran itself. Three down, all breathing. SWAT re-forming past the smoke. If the big one stayed in this lot he'd finish what he'd started, or the police would finish what he left. The fastest way to move a threat was to be the target it wanted.
+
+"Tess, take Victor, his arm's out. Ben, you're walking, so you've got Leah. East through the gap, all four of you. Everyone's cargo now."
+
+"Ruth, he's—"
+
+"That's an order."
+
+She ran. A quarter mile to the docks, and her lungs hit their ceiling inside the first hundred yards. Whatever had carried her through eleven ops had gone out with the pulse, and what remained was a doctor who ran three mornings a week, sprinting on cold harbor air that cut going down. The footsteps behind her never changed rhythm and gained anyway.
+
+She turned in among the shipping containers, steel corridors, right, left, right, and the last corridor opened onto the dock edge and stopped.
+
+Black water, moving. The air off it hung wet and heavy with diesel and brine, cold on the sweat at her neck. Forty degrees, maybe less. Ten minutes to hypothermia in a healthy adult; she'd spent tonight's adrenaline already, so call it seven. Two hundred yards to the next pier in soaked clothes. She ran the numbers twice and they came back the same.
+
+She keyed the radio. Static.
+
+He came around the last container without hurry, ducked under the corner casting, and stopped four yards away. He reached up, released the seals, and lifted the helmet off.
+
+She'd braced for scar tissue, for hardware. The face under the helmet was maybe thirty, clean-shaven, and offered nothing to hold, the face of the man behind you in a coffee line, out of memory before the door swings shut. He rolled his neck and worked his jaw, a commuter shedding a motorcycle helmet at the end of a long ride.
+
+"Dr. Carter," he said.
+
+Her name, out of that armor, in that ordinary mouth, landed harder than watching Ben go up by the throat. She kept her face flat and put her weight on the balls of her feet.
+
+"This thing pinches at the jaw." He turned the helmet over, checked something inside it, tucked it under his arm. "Two hours in it tonight. You made me work for that last quarter mile, though."
+
+He hadn't. She'd heard his stride behind her the whole way and it never changed once. He was being polite.
+
+"Who's paying you?"
+
+"Payroll's confidential." He smiled with even, unremarkable teeth. "Professional standard. You'd want the same from your people."
+
+"Shame about your gear," he said, offhand. "The pulse is a rental. Costs more than I do, if that's any comfort." He flexed the empty gauntlet, idle. "Mine can't be turned off with a magnet."
+
+"You put three of my people through walls tonight."
+
+"Four, counting the officer. They'll all walk inside of a month." He said it the way a plumber quotes a repair. "I'm good at my job."
+
+The water at her back, seven minutes of it. The man in front of her, seconds of him. Her body had opinions; she overrode them.
+
+She feinted left, toward the gap between the container and the bollard, and went right.
+
+He caught her before the feint finished. One hand closed on her forearm and swung her around against the container at the dock's edge; the steel boomed; her heels found the lip of the concrete, black water shifting below. His grip moved to her collar and pinned her to the cold metal.
+
+The ordinary face studied her with mild professional interest. Then he adjusted his grip on her collar, the way a man gets a better hold on something before he moves it.

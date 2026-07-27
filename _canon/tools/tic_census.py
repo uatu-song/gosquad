@@ -84,9 +84,15 @@ def chapter_text(path):
 
 
 def sentences(text):
-    # crude but consistent: split on ., !, ? — consistency across books is
-    # what makes the escalation ratio meaningful.
-    return [s.strip() for s in re.split(r"[.!?]+", text) if s.strip()]
+    """Boundary-aware split. FIXED 2026-07-26: the old splitter used
+    re.split(r"[.!?]+"), which fragments every ellipsis ("..." -> empty
+    pieces) and every abbreviation into spurious 1-word "sentences". It
+    inflated short-burst by ~1.7x on the author's prose and ~1.25x on the
+    infected chapters. Ratios between corpora were preserved (all corpora were
+    measured with the same bug), but every ABSOLUTE burst figure reported
+    before this date is high. Requires a following space, so mid-ellipsis
+    splits no longer occur."""
+    return [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if s.strip()]
 
 
 def census_chapter(path):
@@ -101,6 +107,10 @@ def census_chapter(path):
         row[k] = len(pat.findall(ntext))
     sents = sentences(ntext)
     row["short-burst"] = sum(1 for s in sents if len(s.split()) <= 4)
+    # dialogue share — CH18 v5 shipped at 21% against a guide demanding 66%
+    # and no gate measured it either way (Director, 2026-07-26).
+    dq = re.findall(r'"([^"]*)"', ntext)
+    row["dialogue%"] = round(100 * sum(len(d.split()) for d in dq) / max(words, 1), 1)
     first = next((l for l in raw.split("\n") if l.strip()), "")
     row["scent-open"] = 1 if SCENT.search(first) else 0
     return row
@@ -109,6 +119,8 @@ def census_chapter(path):
 MEASURES = ["em-dash", "still", "already", "just", "short-burst",
             "the-particular", "not-constr", "hedge",
             "in-chest", "kind-of", "voice-was", "looked-at", "epigram-then"]
+# dialogue% is a SHARE not a rate — reported separately, never divided by words.
+SHARES = ["dialogue%"]
 
 
 def main():
@@ -134,7 +146,7 @@ def main():
 
     print(c(f"\nTIC CENSUS — {book.key}", "bold") +
           c(f"   {len(rows)} chapters, {total_w:,} words. Rates are per 1K words.", "dim"))
-    hdr = f"  {'ch':6}{'words':>7} " + "".join(f"{m:>10}" for m in MEASURES)
+    hdr = f"  {'ch':6}{'words':>7} " + "".join(f"{m:>10}" for m in MEASURES + SHARES)
     print(c(hdr, "dim"))
     for ch, r in rows:
         kw = r["words"] / 1000 or 1
@@ -142,6 +154,7 @@ def main():
         for m in MEASURES:
             rate = r[m] / kw
             cells += f"{rate:>10.1f}"
+        cells += f"{r['dialogue%']:>10.1f}"
         flag = c("  ← scent-open", "red") if r["scent-open"] else ""
         print(f"  {ch:6}{r['words']:>7} {cells}{flag}")
 
@@ -149,6 +162,8 @@ def main():
     print(c("  " + "─" * (14 + 10 * len(MEASURES)), "dim"))
     kw_tot = total_w / 1000 or 1
     tot_cells = "".join(f"{sum(r[m] for _, r in rows) / kw_tot:>10.1f}" for m in MEASURES)
+    _dw = sum(r["dialogue%"] * r["words"] for _, r in rows) / max(total_w, 1)
+    tot_cells += f"{_dw:>10.1f}"
     print(c(f"  {'BOOK':6}{total_w:>7} {tot_cells}", "bold"))
 
     if len(rows) >= 10:
