@@ -1,0 +1,483 @@
+<title>The Chess-Narrative Engine — Book 1</title>
+
+<style>
+  :root{
+    --paper:#ECEEE7; --card:#F5F6F1; --sunk:#E3E6DC;
+    --ink:#15181A; --ink-2:#525A57; --ink-3:#7C8480;
+    --rule:#CBD0C4; --rule-2:#DDE1D6;
+    --brass:#8A6D1F; --brass-bg:#E7DFC4;
+    --plum:#7B4E68; --plum-bg:#E8DCE3;
+    --blue:#24408E; --blue-bg:#D9DFF0;
+    --sq-l:#DEE2D4; --sq-d:#8FA083;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,"Liberation Mono",monospace;
+    --serif:"Charter","Bitstream Charter","Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#131719; --card:#1B2124; --sunk:#0F1315;
+      --ink:#E7EAE3; --ink-2:#A2ABA6; --ink-3:#77817C;
+      --rule:#2D3639; --rule-2:#232B2E;
+      --brass:#D6B45E; --brass-bg:#312C18;
+      --plum:#C295B0; --plum-bg:#2C1F28;
+      --blue:#8AA6EE; --blue-bg:#1B2440;
+      --sq-l:#39423C; --sq-d:#5E6E58;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#131719; --card:#1B2124; --sunk:#0F1315;
+    --ink:#E7EAE3; --ink-2:#A2ABA6; --ink-3:#77817C;
+    --rule:#2D3639; --rule-2:#232B2E;
+    --brass:#D6B45E; --brass-bg:#312C18;
+    --plum:#C295B0; --plum-bg:#2C1F28;
+    --blue:#8AA6EE; --blue-bg:#1B2440;
+    --sq-l:#39423C; --sq-d:#5E6E58;
+  }
+  :root[data-theme="light"]{
+    --paper:#ECEEE7; --card:#F5F6F1; --sunk:#E3E6DC;
+    --ink:#15181A; --ink-2:#525A57; --ink-3:#7C8480;
+    --rule:#CBD0C4; --rule-2:#DDE1D6;
+    --brass:#8A6D1F; --brass-bg:#E7DFC4;
+    --plum:#7B4E68; --plum-bg:#E8DCE3;
+    --blue:#24408E; --blue-bg:#D9DFF0;
+    --sq-l:#DEE2D4; --sq-d:#8FA083;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--serif); font-size:17px; line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px}
+  .prose{max-width:64ch}
+  h1,h2,h3{text-wrap:balance; margin:0}
+  .mono{font-family:var(--mono); font-variant-numeric:tabular-nums}
+
+  /* ---- masthead ---- */
+  header.mast{border-bottom:2px solid var(--ink); padding:56px 0 0}
+  .eyebrow{
+    font-family:var(--mono); font-size:11px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--ink-3);
+  }
+  h1{
+    font-family:var(--mono); font-weight:600; letter-spacing:-.02em;
+    font-size:clamp(30px,5.2vw,52px); line-height:1.06; margin:14px 0 0;
+  }
+  h1 em{font-style:normal; color:var(--ink-3)}
+  .standfirst{margin:20px 0 34px; font-size:19px; color:var(--ink-2); max-width:60ch}
+
+  .scoreline{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(128px,1fr));
+    border-top:1px solid var(--rule); font-family:var(--mono);
+  }
+  .scoreline div{padding:14px 16px 16px; border-right:1px solid var(--rule-2)}
+  .scoreline div:last-child{border-right:0}
+  .scoreline dt{font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3)}
+  .scoreline dd{margin:5px 0 0; font-size:22px; font-variant-numeric:tabular-nums; letter-spacing:-.01em}
+  .scoreline dd small{font-size:12px; color:var(--ink-2); display:block; letter-spacing:0; margin-top:2px}
+
+  section{padding:60px 0; border-bottom:1px solid var(--rule)}
+  h2{
+    font-family:var(--mono); font-size:13px; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--ink-3); font-weight:600;
+    padding-bottom:10px; border-bottom:1px solid var(--rule); margin-bottom:26px;
+  }
+  h2 b{color:var(--ink); font-weight:600}
+  h3{font-family:var(--mono); font-size:16px; font-weight:600; margin:30px 0 8px; letter-spacing:-.01em}
+  p{margin:0 0 16px}
+  a{color:var(--blue)}
+  strong{font-weight:600}
+
+  .lede{font-size:19px}
+  .note{font-size:15px; color:var(--ink-2)}
+
+  /* ---- tables ---- */
+  .scroll{overflow-x:auto; margin:22px 0; border:1px solid var(--rule); background:var(--card)}
+  table{border-collapse:collapse; width:100%; font-size:14px}
+  th,td{padding:9px 13px; text-align:left; border-bottom:1px solid var(--rule-2); vertical-align:top}
+  thead th{
+    font-family:var(--mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--ink-3); font-weight:600; background:var(--sunk); position:sticky; top:0;
+    border-bottom:1px solid var(--rule); white-space:nowrap;
+  }
+  tbody tr:last-child td{border-bottom:0}
+  td.n{font-family:var(--mono); font-variant-numeric:tabular-nums; white-space:nowrap}
+  .sq{
+    font-family:var(--mono); font-weight:600; font-size:13px; padding:2px 6px;
+    border:1px solid var(--rule); background:var(--paper); border-radius:2px;
+  }
+  .w-side{color:var(--brass)} .b-side{color:var(--plum)}
+  .survives{color:var(--brass); font-weight:600}
+
+  /* ---- filter bar ---- */
+  .controls{
+    display:flex; flex-wrap:wrap; gap:7px; align-items:center;
+    padding:14px 0 22px; position:sticky; top:0; background:var(--paper);
+    z-index:5; border-bottom:1px solid var(--rule-2);
+  }
+  .chip{
+    font-family:var(--mono); font-size:12px; letter-spacing:.03em;
+    padding:5px 11px; border:1px solid var(--rule); background:var(--card);
+    color:var(--ink-2); cursor:pointer; border-radius:2px;
+  }
+  .chip:hover{border-color:var(--ink-3); color:var(--ink)}
+  .chip[aria-pressed="true"]{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+  .chip.w[aria-pressed="true"]{background:var(--brass); border-color:var(--brass); color:var(--paper)}
+  .chip.b[aria-pressed="true"]{background:var(--plum); border-color:var(--plum); color:var(--paper)}
+  .chip:focus-visible,button:focus-visible{outline:2px solid var(--blue); outline-offset:2px}
+  .spacer{flex:1}
+
+  /* ---- the spine ---- */
+  .spine{margin-top:8px}
+  .mv{
+    display:grid; grid-template-columns:132px 1fr; gap:24px;
+    padding:22px 0; border-bottom:1px solid var(--rule-2);
+  }
+  .mv.cp{background:linear-gradient(90deg,var(--blue-bg),transparent 62%); border-bottom:1px solid var(--rule)}
+  .rail{position:sticky; top:64px; align-self:start}
+  .mno{font-family:var(--mono); font-size:23px; font-weight:600; letter-spacing:-.02em; line-height:1}
+  .msan{font-family:var(--mono); font-size:12px; color:var(--ink-2); margin-top:5px; word-break:break-word}
+  .cpflag{
+    display:inline-block; margin-top:9px; font-family:var(--mono); font-size:10px;
+    letter-spacing:.13em; text-transform:uppercase; color:var(--blue);
+    border:1px solid var(--blue); padding:2px 6px; border-radius:2px;
+  }
+  .beats{display:flex; flex-direction:column; gap:16px}
+  .beat{border-left:2px solid var(--rule); padding-left:16px}
+  .beat.w{border-left-color:var(--brass)}
+  .beat.b{border-left-color:var(--plum)}
+  .who{
+    font-family:var(--mono); font-size:13px; font-weight:600; letter-spacing:.02em;
+    display:flex; flex-wrap:wrap; gap:9px; align-items:baseline;
+  }
+  .who .pc{font-weight:400; font-size:11px; color:var(--ink-3); letter-spacing:.04em}
+  .kind{
+    font-family:var(--mono); font-size:9px; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--ink-3); border:1px solid var(--rule); padding:1px 5px; border-radius:2px;
+  }
+  .chess{font-size:14px; color:var(--ink-2); margin:7px 0 0; font-style:italic}
+  .story{margin:8px 0 0; font-size:16px}
+  .qt{
+    font-family:var(--mono); font-size:12px; color:var(--ink-2);
+    margin:9px 0 0; padding-left:11px; border-left:1px solid var(--rule);
+  }
+
+  .silence{
+    display:grid; grid-template-columns:132px 1fr; gap:24px; padding:13px 0;
+    border-bottom:1px solid var(--rule-2); color:var(--ink-3);
+    font-family:var(--mono); font-size:12px; letter-spacing:.03em; align-items:center;
+  }
+  .silence .bar{height:1px; background:repeating-linear-gradient(90deg,var(--rule) 0 5px,transparent 5px 11px)}
+
+  /* ---- board ---- */
+  .board{
+    width:152px; display:grid; grid-template-columns:repeat(8,1fr);
+    border:1px solid var(--rule); margin-top:12px;
+  }
+  .board div{
+    aspect-ratio:1; display:grid; place-items:center;
+    font-size:15px; line-height:1; color:#101314;
+  }
+  .board div.d{background:var(--sq-d)} .board div.l{background:var(--sq-l)}
+  .board div.wp{color:#FBFBF6; text-shadow:0 0 1px #23282A,0 1px 1px rgba(0,0,0,.5)}
+  .board div.bp{color:#16191B; text-shadow:0 0 1px rgba(255,255,255,.25)}
+
+  /* ---- callouts ---- */
+  .defect{border:1px solid var(--rule); background:var(--card); padding:20px 22px; margin:18px 0}
+  .defect h3{margin-top:0}
+  .tag{
+    font-family:var(--mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase;
+    padding:2px 7px; border-radius:2px; white-space:nowrap;
+  }
+  .tag.err{background:var(--plum-bg); color:var(--plum); border:1px solid var(--plum)}
+  .tag.rule{background:var(--blue-bg); color:var(--blue); border:1px solid var(--blue)}
+  .tag.ok{background:var(--brass-bg); color:var(--brass); border:1px solid var(--brass)}
+  ol.rules{padding-left:22px; max-width:64ch}
+  ol.rules li{margin-bottom:9px}
+  footer{padding:44px 0 68px; font-family:var(--mono); font-size:12px; color:var(--ink-3)}
+  @media (max-width:720px){
+    .mv,.silence{grid-template-columns:1fr; gap:10px}
+    .rail{position:static}
+    body{font-size:16px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}
+</style>
+
+<div class="wrap">
+<header class="mast">
+  <div class="eyebrow">Prototype · reverse-engineering pass · 2026-07-27</div>
+  <h1>The Chess-Narrative Engine<br><em>Book 1, extracted and verified</em></h1>
+  <p class="standfirst">
+    A historical chess game is the structural scaffold for Book 1: every piece belongs to a
+    character, every move can carry a beat. This page reconstructs that engine as a standalone
+    object — the game, the mapping, the rules, and the move-by-move beat matrix — and checks
+    every chess claim against the actual game.
+  </p>
+  <dl class="scoreline" id="scoreline"></dl>
+</header>
+
+<section>
+  <h2><b>1.</b> &nbsp;The game</h2>
+  <div class="prose">
+    <p class="lede">
+      <strong>Carlsen–Nepomniachtchi, FIDE World Championship 2021, Dubai, Round 6.</strong>
+      A quiet symmetrical Queen's Pawn opening; a queen trade at move 26 that reshapes
+      everything; then roughly 110 moves of grinding attrition to a quiet knight finish.
+      136 moves — the longest game in World Championship history.
+    </p>
+    <p>
+      The fit is structural rather than decorative. The decisive material event is front-loaded
+      and the rest is outlasting, which is the book's thesis: <em>win by endurance, not
+      fireworks.</em> Two White pawns reach the sixth and fifth ranks at the very end and
+      neither promotes — the image of arrested transcendence that the climax is built on.
+    </p>
+    <p class="note">
+      White is the Go Squad. Black is the antagonist side. Black loses the game and wins the
+      war, and that inversion is legible in the move data: Black resigns rather than being
+      mated, so the Black King is never actually captured.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2><b>2.</b> &nbsp;Piece-to-character mapping</h2>
+  <div class="prose">
+    <p>
+      Each character reads the game through three pieces — what others see, what they do, what
+      they could become. Pieces recur across characters on purpose: the same square carries two
+      incompatible meanings, and the characters never know they share it. Every row below was
+      verified by tracking each piece's identity from its starting square across all 271 plies.
+    </p>
+  </div>
+  <div class="scroll">
+    <table id="pieces">
+      <thead><tr>
+        <th>Sq</th><th>Owner</th><th>Reading</th>
+        <th>First</th><th>Moves</th><th>Caps</th><th>Fate</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="prose">
+    <p class="note">
+      <strong>The Black Queen never comes off the board.</strong> She plays 68 moves — more than
+      any other piece — takes three of the Go Squad's pieces, and survives. She belongs to
+      Bellatrix, who has no steward in this run, so no one voices her. The faction's real
+      command node is never defeated and never speaks.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2><b>3.</b> &nbsp;The beat matrix</h2>
+  <div class="prose">
+    <p>
+      57 anchored beats across ten characters. Filter by character to read one arc as a spine,
+      or leave it open to see where arcs collide. Dashed bands mark stretches where nobody wrote
+      anything — annotated with how many captures the game itself contains there.
+    </p>
+  </div>
+  <div class="controls" id="controls"></div>
+  <div class="spine" id="spine"></div>
+</section>
+
+<section>
+  <h2><b>4.</b> &nbsp;The interpretive rules</h2>
+  <div class="prose">
+    <p>
+      Recovered by two agents reading the steward outlines blind — forbidden from opening the
+      game, the mapping, or the move map — then confirmed against the ratified files. This is
+      the grammar that turns a chess event into a scene.
+    </p>
+    <ol class="rules">
+      <li><strong>Piece-fate is not character-fate.</strong> A captured piece is the defeat of a facet, not a death. Leah loses her entire triplet by move 20 and survives the book.</li>
+      <li><strong>Dormancy is latency.</strong> A piece's first move is character activation — the e-pawn asleep 28 moves is Ahdia before she starts.</li>
+      <li><strong>Promotion is transcendence; failing to promote is arrested transformation.</strong> The two pawns frozen at e6 and f5 are the book's two near-transformations.</li>
+      <li><strong>Capture count and lifespan are characterization.</strong> "Removed with zero captures to its name" is Leah's whole arc; a one-move lifespan is over-extension as a born trait.</li>
+      <li><strong>Shared pieces must be read divergently</strong> — and the characters are not permitted to know they share them.</li>
+      <li><strong>Cross-faction pieces are interpretive only.</strong> Victor never moves the black knight he reads his grief through.</li>
+      <li><strong>The board image and the canonical mechanism can come apart.</strong> At move 82 the board says Ruth's rook captures; canon says Ahdia lands the blow in frozen time and Ruth's piece marks the witnessing.</li>
+      <li><strong>Resignation is not mate, and the gap is plot.</strong> The Black King is never captured, which is exactly why Kain survives off-board.</li>
+      <li><strong>Quiet moves are mandatory beats.</strong> Non-forcing stretches get assigned as endurance scenes where the drama is that there is no drama.</li>
+      <li><strong>When every piece is spent, the character participates as hands.</strong> Four stewards reached the climax with nothing on the board and independently wrote the same move.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2><b>5.</b> &nbsp;Errors found</h2>
+  <div class="prose">
+    <p>Verifying the mapping against the real game turned up three defects. All are in the upstream scaffold, not introduced by the stewards.</p>
+  </div>
+  <div class="defect">
+    <h3><span class="tag err">Wrong piece</span> &nbsp;Victor's cross-faction knight</h3>
+    <div class="prose">
+      <p>The triplet file assigns him <span class="sq">Black Knight b8</span> as the lost youth and points it at the move-17 capture. But the knight captured at move 17 started on <strong>g8</strong> — it played <span class="mono">1…Nf6</span>. The actual b8 knight went <span class="mono">Nc6 / Nb4 / Nc6 / Nd4</span> and was captured at <strong>move 19 by Tess's knight</strong>. Victor's grief lens and Tess's one strike are pointed at swapped pieces. The reading survives; the label should become <span class="sq">Black Knight g8</span>.</p>
+    </div>
+  </div>
+  <div class="defect">
+    <h3><span class="tag err">Off by one ply</span> &nbsp;The bishop's fall at move 20</h3>
+    <div class="prose">
+      <p>The move map and four steward files write it as <span class="mono">M20 Bxg2 / Kxg2</span>. In the game White's twentieth move is <span class="mono">Qa2</span>; <span class="mono">Bxg2</span> is Black's twentieth ply and <span class="mono">Kxg2</span> is White's <strong>twenty-first</strong>. Harmless narratively, but the compressed notation is not legal PGN and any tool parsing these strings will fail on them.</p>
+    </div>
+  </div>
+  <div class="defect">
+    <h3><span class="tag rule">Needs a ruling</span> &nbsp;Move 80 has two ratified readings</h3>
+    <div class="prose">
+      <p>The triplet file gives the a1 rook to both Firas — "removal from active duty by injury, explicitly <strong>not</strong> a personal Kain duel" — and Ben — "a personal defeat <strong>at Kain's hands</strong>." Same piece, same move, mutually exclusive. Both stewards noticed and worked around it. This is the only finding here that is an editorial question rather than a mechanical error.</p>
+      <p class="note">Two smaller wobbles: Ruth's rook is credited with 11 late checks and actually delivers 10. Ben's move-6 beat describes <span class="mono">b3</span> as opening the long diagonal for the fianchetto, but no bishop ever occupies that diagonal in this game.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><b>6.</b> &nbsp;Is the engine extractable?</h2>
+  <div class="prose">
+    <p class="lede">
+      This was the actual experiment. Two agents attempted it blind. The answer splits cleanly
+      by layer: <strong>the interpretation survives, the scaffold does not.</strong>
+    </p>
+  </div>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Layer</th><th>Recoverable</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>Game identity</td><td><span class="tag ok">Yes — by leak</span></td><td>Ahdia's steward header names it outright: <em>"Carlsen–Nepo 2021 G6 — 136 moves, White wins."</em> No inference needed. Redacted, the fingerprint alone would still identify it.</td></tr>
+        <tr><td>Interpretive rules</td><td><span class="tag ok">Yes, strongly</span></td><td>Both blind agents independently recovered the full rule set. The stewards restate the grammar from so many angles that it survives intact.</td></tr>
+        <tr><td>Piece→character map</td><td><span class="tag ok">Yes</span></td><td>All sixteen White pieces have owners recoverable from the outlines; shared and cross-faction mechanics are stated explicitly enough to rebuild as rules.</td></tr>
+        <tr><td>Move sequence</td><td><span class="tag err">About one third</span></td><td>Only 45 of 136 moves carry any notation anywhere in the ten outlines — roughly 28% of plies.</td></tr>
+        <tr><td>Board positions</td><td><span class="tag err">No</span></td><td>Nothing after about move 8 is reconstructable. Non-contiguous notation, no castling record, no disambiguation for repeated rook moves.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="prose">
+    <p>
+      The steward outputs are lossy in a predictable direction: a steward records the moves it
+      personally owns and nothing else, so coverage collapses exactly where no character was
+      assigned. For the practical goal — driving new writing assignments — that is workable,
+      because the upstream artifacts exist. What this establishes is that
+      <strong>the move map, the triplets, the pawn arcs and the PGN together are the engine,</strong>
+      and the beats are not a substitute for them. Losing the move map would cost two thirds of
+      the game.
+    </p>
+    <h3>What the coverage shows</h3>
+    <p>
+      Beats cluster at both ends and thin out in the middle — and that tracks the game itself,
+      which contains only two captures between moves 41 and 78 and none at all between 83 and
+      99. The scaffold under-serves the Grind because the game under-serves the Grind. Two
+      stewards noticed unprompted: Tess wrote a beat at move 88 and Victor at move 72, neither
+      assigned, both inventing the same kind of scene — endurance without event. That is the
+      strongest signal in the run that the Grind needs assigned beats rather than silence.
+    </p>
+  </div>
+</section>
+
+<footer>
+  Prototype / experiment · not canon, not manuscript, no editorial decisions.<br>
+  Sources: <span class="mono">book1_chess_game.pgn</span> ·
+  <span class="mono">BOOK1_TRIPLETS.md</span> ·
+  <span class="mono">BOOK1_MOVE_MAP.md</span> ·
+  <span class="mono">steward_run1/</span> (10 outlines).
+  Board data regenerable via <span class="mono">data/build_engine_data.py</span>.
+</footer>
+</div>
+
+<script>
+const D = {"rows": [{"kind": "move", "move_no": 1, "san": "d4 Nf6", "fen": null, "beats": [{"move_no": 1, "move_label": "M1", "san": "1. d4", "character": "Firas", "piece": "White Queen d1", "chess_reading": "The Queen's-pawn game opens and the board arranges itself around the highest-status piece. The reader's eye goes to d1 - the protagonist fakeout being set.", "narrative_beat": "Already in motion before the scene starts. Puts himself between a mugging and the kid getting mugged as pure reflex, reaches for a cool line and lands it sideways. Then texts Ahdia 'you up?' - knocking on a door he doesn't understand is locked from the inside.", "beat_type": "advance", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "He reads the whole city and misreads only her."}, {"move_no": 1, "move_label": "M1-M17", "san": "1... Nf6 -> 17. Bxf6", "character": "Victor", "piece": "Black Knight g8 (cross-faction; canon mislabels as b8)", "chess_reading": "First Black piece to move and among the first taken - first-mover-then-dead. An enemy piece, because the lost youth was swallowed by the other side. Victor never controls it; he reads through it.", "narrative_beat": "He reads every casualty and every 'win' through the face of one kid from the community center who got pulled into the cycle. The cruelest turn is that his own bishop captures this knight at M17 - his one clean action and his deepest grief are the same move.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "The grief is a person, not a position paper."}]}, {"kind": "move", "move_no": 3, "san": "g3 e6", "fen": null, "beats": [{"move_no": 3, "move_label": "M3", "san": "3. g3", "character": "Tess", "piece": "White g-pawn", "chess_reading": "The fianchetto - a quiet structural move that captures nothing and takes its place in the kingside shape. She is the line, not the spear.", "narrative_beat": "Tess decides to stand somewhere. A kid showing up and putting her body in the formation, joining the Go Squad when every inch toward Firas's people is an inch away from her father's department.", "beat_type": "advance", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "she didn't run away from home, she ran toward the thing her father would hate most"}]}, {"kind": "move", "move_no": 4, "san": "Bg2 Be7", "fen": null, "beats": [{"move_no": 4, "move_label": "M4", "san": "4. Bg2", "character": "Leah", "piece": "White Bishop f1", "chess_reading": "One fast move out of the corner, committed to the long diagonal in a single breath. It will fall at M20 with zero captures: deployment is not the same as landing.", "narrative_beat": "Already moving while the team is still talking strategy. She doesn't wait to be deployed; she deploys herself the second she smells injustice. The room reads it as confidence. It isn't, exactly - hesitation simply isn't in her.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "She doesn't wait to be deployed; she deploys herself the second she smells injustice."}]}, {"kind": "move", "move_no": 6, "san": "b3 c5", "fen": null, "beats": [{"move_no": 6, "move_label": "M6", "san": "6. b3", "character": "Ben", "piece": "White b-pawn", "chess_reading": "A quiet structural move in a quiet symmetrical opening - the frame going up before the fight. Load-bearing precisely because it's modest.", "narrative_beat": "Before anyone throws a punch, Ben sets the perimeter - walks the building, counts exits, puts the new people where their backs aren't to the door. Right now it holds, and he mistakes 'enough so far' for 'enough.'", "beat_type": "advance", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "He doesn't call it fear; he calls it frame."}]}, {"kind": "move", "move_no": 7, "san": "dxc5 Bxc5", "fen": "rnbq1rk1/pp3ppp/4pn2/2bp4/8/1P3NP1/P1P1PPBP/RNBQ1RK1", "beats": [{"move_no": 7, "move_label": "M7", "san": "7. dxc5 Bxc5", "character": "Ruth", "piece": "White d-pawn (CR-7)", "chess_reading": "The game's first capture is hers, and it is taken back on the same move. The treatment enters the board and pays for itself in the same breath.", "narrative_beat": "Firas on the table with a gunshot wound that should already be killing him, and Ruth pushes CR-7 - the compound the establishment said wasn't ready, wasn't hers to push. The one calibrated vial is spent on the one body she can't be objective about.", "beat_type": "capture_made", "convergence": false, "convergence_partners": ["Leah", "Firas"], "chapter": null, "quote": "First blood is hers and it costs her the proof in the act of giving it."}, {"move_no": 7, "move_label": "M7", "san": "7. dxc5 Bxc5", "character": "Leah", "piece": "White d-pawn", "chess_reading": "First blood before anyone else has touched anything - and taken back inside the same move. Decisive damage and immediate punishment in two half-moves.", "narrative_beat": "She throws the first punch, lands it clean, drops the guy - anger with somewhere to go at last. And she's hit back the same instant because she over-committed to land it. The team will remember she drew first blood; they won't clock that she got opened up to do it.", "beat_type": "capture_made", "convergence": true, "convergence_partners": ["Ruth"], "chapter": null, "quote": "They never know they're the same pawn."}]}, {"kind": "move", "move_no": 8, "san": "c4 dxc4", "fen": null, "beats": [{"move_no": 8, "move_label": "M8", "san": "8. c4 dxc4", "character": "Leah", "piece": "White c-pawn", "chess_reading": "The c-pawn steps to c4 and is captured the same move. A one-move lifespan - over-extension as a born trait, not a mistake.", "narrative_beat": "Right after first blood she pushes too far, chases the next one, gets caught out. The cost lands a beat after the body has already decided. She'd do it again, because the alternative is standing safe while Tess or Victor takes the hit.", "beat_type": "capture_suffered", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "The c-pawn lives one move on purpose. So does this part of Leah."}]}, {"kind": "move", "move_no": 11, "san": "Nxc4 b5", "fen": null, "beats": [{"move_no": 11, "move_label": "M11", "san": "11. Nxc4", "character": "Ahdia", "piece": "White Knight b1", "chess_reading": "The b1-knight, dormant since the start, makes its first capture - surgical, one pawn, no fireworks. The active self debuts while the identity stays furniture.", "narrative_beat": "First save. She slows time for the first time - not on purpose, a reflex when the math demands it. CELLULAR INTEGRITY 97%. The save feels like the only real thing she's done in years, which she clocks and immediately distrusts.", "beat_type": "capture_made", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "She didn't volunteer; she just couldn't not. She tells herself it's a one-time thing."}]}, {"kind": "move", "move_no": 14, "san": "a3 Nc6", "fen": null, "beats": [{"move_no": 14, "move_label": "M14", "san": "14. a3 Nc6", "character": "Victor", "piece": "White a-pawn", "chess_reading": "The modest a-pawn one square - not a strike, a foundation. It will stand untouched for nineteen moves. The quietest piece on the board.", "narrative_beat": "His first real beat is not a fight - it's refusing to let the community center become a war room. He runs the after-school program, knows which kids didn't show this week and why. To the team this looks passive.", "beat_type": "advance", "convergence": false, "convergence_partners": ["Bourn"], "chapter": null, "quote": "To Victor, holding the ground is the action."}]}, {"kind": "move", "move_no": 17, "san": "Bxf6 gxf6", "fen": null, "beats": [{"move_no": 17, "move_label": "M17", "san": "17. Bxf6 gxf6", "character": "Ben", "piece": "White Bishop c1", "chess_reading": "One capture, exactly placed, technically sound - and undone by something that didn't have to be good, only willing.", "narrative_beat": "Ben spots the seam first: the cop whose route doesn't match his post, the call that came in thirty seconds early. He walks the team's one clean counter-move into the gap. It works for a heartbeat. Then the machine spends a body to close it.", "beat_type": "capture_made", "convergence": true, "convergence_partners": ["Victor"], "chapter": "Ch9-11", "quote": "His good move gets bought out by a cheap one."}, {"move_no": 17, "move_label": "M17", "san": "17. Bxf6 gxf6", "character": "Victor", "piece": "White Bishop c1", "chess_reading": "Where Ben reads the precision strike, Victor reads the whole exchange: he acts once cleanly and a pawn - the most expendable thing the other side owns - takes him off the board for it.", "narrative_beat": "His single act of direct intervention in the front half. The answer is institutional and faceless - a uniform, a cuff, a procedure that costs him without any individual choosing to. The horror that lands isn't pain, it's economy.", "beat_type": "capture_suffered", "convergence": true, "convergence_partners": ["Ben"], "chapter": "Ch9-11", "quote": "doing the right thing once does not exempt you from the cost"}, {"move_no": 17, "move_label": "M17", "san": "17. Bxf6 gxf6", "character": "Kain", "piece": "Black g-pawn", "chess_reading": "A foot soldier answering a piece worth more than itself, then sitting doubled and ugly. Kain's preferred arithmetic: lose the cheapest thing you own to neutralize an intervention worth more.", "narrative_beat": "He answers Victor with a uniform and a story rather than the Tank - a precinct's worth of men whose names he will never learn, and one of them is enough. Afterward he is on the morning broadcast looking grieved about street violence.", "beat_type": "capture_made", "convergence": false, "convergence_partners": [], "chapter": "Ch9-11", "quote": "I never feel the foot soldier come off the board. That's the horror of M17 - there's no funeral on my side."}]}, {"kind": "move", "move_no": 19, "san": "Nxd4 Bxd4", "fen": null, "beats": [{"move_no": 19, "move_label": "M19", "san": "19. Nxd4 Bxd4", "character": "Tess", "piece": "White Knight g1", "chess_reading": "Her one strike. The knight waits on g1, lashes out at move 19, and the position immediately trades it away. One decisive capture, gone the same beat.", "narrative_beat": "The powers manifest and she doesn't understand them yet - the bridge, the kid in danger, the order she disobeys. She doesn't decide to strike; she's already moving when the thought arrives. The cost is instant: spent, exposed, hands shaking after.", "beat_type": "capture_made", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "She moves first and pays first. No calculation, only instinct and consequence."}]}, {"kind": "move", "move_no": 20, "san": "Qa2 Bxg2", "fen": null, "beats": [{"move_no": 20, "move_label": "M20", "san": "20... Bxg2 21. Kxg2 (canon writes 'M20 Bxg2/Kxg2')", "character": "Ruth", "piece": "White Bishop f1/Bg2", "chess_reading": "The bishop fianchettoed at M4 - influence at a diagonal, the scientist working precisely from the edge - is taken off the board. The lab piece dies; what remains of her on the field is the Rook.", "narrative_beat": "The move where research stops being enough. She steps out of the lab not because she wants to lead but because no one else is standing where the decisions get made. First time she gives an order without flinching.", "beat_type": "capture_suffered", "convergence": false, "convergence_partners": ["Leah"], "chapter": "Ch11", "quote": "This is the move where research stops being enough."}, {"move_no": 20, "move_label": "M20", "san": "20... Bxg2 21. Kxg2", "character": "Leah", "piece": "White Bishop f1", "chess_reading": "Removed with zero captures to its name. The charge-in-doesn't-land-taken-out pattern completes: deployed fast and hard at M4, off the board having scored nothing.", "narrative_beat": "The construction-site ambush. She charges in like always and this time it doesn't land - down, shot in the vest, the thing that's supposed to be true about her just didn't happen. It's also where the strength reads as real to her for the first time.", "beat_type": "capture_suffered", "convergence": false, "convergence_partners": ["Ruth"], "chapter": "Ch11", "quote": "all that speed, no kill to show"}]}, {"kind": "move", "move_no": 26, "san": "Qxc8 Rxc8", "fen": "2r5/5pkp/4pp2/pp6/3bq3/PP1N2P1/3RPP1P/2R3K1", "beats": [{"move_no": 26, "move_label": "M26 (CP-1)", "san": "26. Qxc8 Rxc8", "character": "Ahdia", "piece": "White King e1", "chess_reading": "The White Queen - the apparent hero - is traded off and the board's centre of gravity drops onto the King. The fakeout breaks: the protagonist was never the flashy piece.", "narrative_beat": "The warehouse fire. The team believes she died in it, and she lets them, because a dead hermit is a closed file and a closed file is safe. She watches the building burn on a feed and counts the floors. Nobody comes looking, which is the point.", "beat_type": "convergence", "convergence": true, "convergence_partners": ["Firas", "Bourn", "Kain"], "chapter": "Ch8", "quote": "they'll mourn the version of me that was already dead inside, so really I'm just making it official."}, {"move_no": 26, "move_label": "M26 (CP-1)", "san": "26. Qxc8 Rxc8", "character": "Firas", "piece": "White Queen d1", "chess_reading": "The Queen is gone - not beaten in a duel, spent in a trade the position needed. He doesn't feel it as structure; he feels it as the floor giving way.", "narrative_beat": "Still laid up from the M7 gunshot. While he's too broken to move, the warehouse burns and they tell him Ahdia was inside. He grieves the sister he thinks he just lost, never knowing she is the reason he ever looked enhanced.", "beat_type": "convergence", "convergence": true, "convergence_partners": ["Ahdia", "Bourn", "Kain"], "chapter": "Ch8", "quote": "she was already gone, I just kept knocking."}, {"move_no": 26, "move_label": "M26 (CP-1)", "san": "26. Qxc8 Rxc8", "character": "Bourn", "piece": "White Queen d1", "chess_reading": "The board only does what her ledger did weeks ago - clearing the flashy piece and leaving the King she signed for. She does not flinch, because the Queen was never the file she was protecting.", "narrative_beat": "She reads the after-action with the dispassion of someone who has seen too many pyres staged - the fire is clean, too clean. She says nothing, and makes a private note not to list the asset deceased. Her response to suspecting the dead girl is alive is not rescue but acquisition.", "beat_type": "capture_suffered", "convergence": true, "convergence_partners": ["Ahdia", "Firas", "Kain"], "chapter": "Ch8", "quote": "A dead hermit is not a dead asset. Not until Bourn signs the line."}]}, {"kind": "move", "move_no": 27, "san": "Rxc8 Qd5", "fen": null, "beats": [{"move_no": 27, "move_label": "M27", "san": "27. Rxc8 Qd5", "character": "Ryu", "piece": "White Knight b1 (what he watches)", "chess_reading": "The Queen is gone and the position settles into the long grind nobody reads as the real story. Ryu's piece is not the Knight - it's the eye on the Knight. M27 is a watch beginning, not a move.", "narrative_beat": "He enters not as a player but as a screen. CADENS hands him the file - the dead girl who isn't dead, the integrity number that drops every time she does the impossible - and he reads it the way other men read a face.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": "Ch13", "quote": "He never meets her as a person first. He meets her as data."}]}, {"kind": "move", "move_no": 29, "san": "e3 Be5", "fen": null, "beats": [{"move_no": 29, "move_label": "M29", "san": "29. e3", "character": "Ahdia", "piece": "White e-pawn", "chess_reading": "The e-pawn moves for the first time after 28 dormant moves. The smallest self takes its first conscious step and commits to the march that ends at e6, frozen one square short of everything.", "narrative_beat": "She activates fully and deliberately. The fake death freed her: no name, no past, no one to disappoint. She starts secretly helping in earnest, and the cost ledger opens for real.", "beat_type": "advance", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "She frames it as freedom; it reads as volunteering for a slow death."}]}, {"kind": "move", "move_no": 30, "san": "h4 h5", "fen": null, "beats": [{"move_no": 30, "move_label": "M30", "san": "30. h4", "character": "Tess", "piece": "White h-pawn", "chess_reading": "The unglamorous structural move that lets the whole formation keep functioning. It captures nothing. It just holds: the least visible piece on the board and the reason the visible ones can do anything.", "narrative_beat": "The Sertraline on the sink. The maintenance beat - the quiet daily thing she does so she can keep doing everything else. The way she holds the line is boring and invisible. This is also the chapter she confesses online.", "beat_type": "advance", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "Not 'I'm sad.' Weather she's dressed for."}]}, {"kind": "move", "move_no": 33, "san": "Rd1 Bxa3", "fen": null, "beats": [{"move_no": 33, "move_label": "M33", "san": "33. Rd1 Bxa3", "character": "Victor", "piece": "White a-pawn", "chess_reading": "Nineteen moves of holding, ended by a piece that simply kept advancing along its diagonal until it arrived. The roots are overrun not in a clash but by approach: not an event, a process.", "narrative_beat": "The centre loses ground - funding pulled, a kid taken, the space repurposed. The cruelty is that it isn't dramatic; there's no villain at the door. He held anyway and it still arrived.", "beat_type": "capture_suffered", "convergence": true, "convergence_partners": ["Bourn"], "chapter": null, "quote": "There's no villain at the door; there's a slow diagonal that was coming the whole time."}, {"move_no": 33, "move_label": "M33", "san": "33. Rd1 Bxa3", "character": "Bourn", "piece": "White a-pawn (Mother FAERIS)", "chess_reading": "She signed the trade that let it fall, so the a-pawn coming off the board is not a defeat she suffers but a compromise she renews.", "narrative_beat": "The central rot arrives as a routine authorization - the same exploitation she has known about since before Ahdia was a file. She runs the cost-benefit she can defend on paper and signs. The tell is procedural: she stops using the entity's name and starts using its designation.", "beat_type": "capture_suffered", "convergence": true, "convergence_partners": ["Victor"], "chapter": null, "quote": "Bourn does not lose this pawn. She spends it."}]}, {"kind": "move", "move_no": 39, "san": "Nc5 Qxb4", "fen": null, "beats": [{"move_no": 39, "move_label": "M39", "san": "39. Nc5 Qxb4", "character": "Ben", "piece": "White b-pawn", "chess_reading": "Not a clean tactical trade - attrition. Walls don't fall to a brilliant blow; they fall to sustained load, and what she takes isn't material so much as the frame.", "narrative_beat": "He loses the perimeter and doesn't get to lose it loudly - no firefight, just the slow realization over weeks that the wall he built at M6 is being disassembled one tired brick at a time. To the team he reads as the steady one holding the line, which is exactly what it costs him.", "beat_type": "capture_suffered", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "The b-pawn falls. The wall is down. He builds a smaller one, further back, and says nothing."}]}, {"kind": "move", "move_no": 40, "san": "Nxe4 Qb3", "fen": null, "beats": [{"move_no": 40, "move_label": "M40", "san": "40. Nxe4", "character": "Ahdia", "piece": "White Knight b1", "chess_reading": "The knight's second capture - two careful captures in 136 moves. She is not a piece that thrashes; she removes exactly what needs removing and pays exactly what it costs.", "narrative_beat": "A harder save than M11. The cost is visible now - the nosebleed, the half-second of math before she moves. She has saved enough people to keep a count. Twenty-something. She tells herself the number proves the trade is worth it.", "beat_type": "capture_made", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "I'm helping people AND I'm spending myself like I can't wait to be done."}]}, {"kind": "silence", "from": 41, "to": 52, "moves": 12, "captures": 0}, {"kind": "move", "move_no": 53, "san": "Rxa3 Qxh4+", "fen": null, "beats": [{"move_no": 53, "move_label": "M53", "san": "53. Rxa3 Qxh4+", "character": "Tess", "piece": "White h-pawn", "chess_reading": "Pressure finally breaks the baseline - and it is taken WITH CHECK: the loss isn't quiet, it lands as an immediate threat to the king.", "narrative_beat": "The day the managing stops working. Not a relapse announced with a flag - the floor giving under her in the middle of everything else going wrong. A missed day, a flattened affect, the work getting harder to lift.", "beat_type": "capture_suffered", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "her cracking doesn't just hurt her, it puts the team a notch more exposed"}]}, {"kind": "move", "move_no": 59, "san": "f3 Qd1", "fen": null, "beats": [{"move_no": 59, "move_label": "M59", "san": "59. f3", "character": "Ryu", "piece": "White f-pawn (what he is)", "chess_reading": "The f-pawn, dormant the entire game, advances for the first time - late, slow, and it will never transform. The CADENS apparatus comes online not when it's needed but when the position finally allows it.", "narrative_beat": "The full monitoring stack comes up: HUD synced, telemetry live, dose-modeling in real time. He should feel like the cavalry; he feels like a man who built a perfect window and can only ever stand at it.", "beat_type": "advance", "convergence": false, "convergence_partners": ["Firas"], "chapter": null, "quote": "He is the apparatus coming online. He will never be the agent."}]}, {"kind": "move", "move_no": 66, "san": "Rac8 Ba5", "fen": null, "beats": [{"move_no": 66, "move_label": "M66-72", "san": "66. Rac8 Ba5 ... 72. Rb1 Ba7", "character": "Kain", "piece": "Black Bishop f8 (the Tank, readied)", "chess_reading": "The deep middlegame grind: no captures, only the Tank-bishop and the heavy pieces walked into position behind the f7 watcher who still hasn't moved. Every quiet move tightens the geometry.", "narrative_beat": "The on-ramp to the docks trap - false intel sourced just badly enough to be believed, the EMP staged and dry-run. He is not at the docks for any of it; he is at three fundraisers and a ribbon-cutting, signing off on the geometry in the tone of a man approving a venue.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": "Ch17-18", "quote": "The people inside it aren't yet assets I've spent - they're assets I've scheduled."}]}, {"kind": "move", "move_no": 70, "san": "Rcc8 Qh1", "fen": null, "beats": [{"move_no": 70, "move_label": "~M70", "san": "70. Rcc8 Qh1", "character": "Ahdia", "piece": "White e-pawn (holding on e3)", "chess_reading": "No capture, no breakthrough. The rooks shuffle the eighth rank while the e-pawn just sits on e3, load-bearing. The triplet at its quietest: the drama is that there's no drama.", "narrative_beat": "The grind. Weeks of it, no single save big enough to name. CELLULAR INTEGRITY 41% - not from one catastrophe but from the slow arithmetic of always being the one who pays. She keeps the penthouse cold to stay awake.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "this is what winning looks like - not a moment, a depletion."}]}, {"kind": "move", "move_no": 72, "san": "Rb1 Ba7", "fen": null, "beats": [{"move_no": 72, "move_label": "~M72", "san": "72. Rb1 Ba7", "character": "Victor", "piece": "no piece on the board - reads the Grind by absence", "chess_reading": "Two pieces moving without resolving anything. Victor has no piece left, so the Grind reaches him as presence: this is what holding the line actually is.", "narrative_beat": "A quiet attrition beat. The program runs shorter hours; a regular stopped coming and he knows where he's going instead; a chair is empty two weeks running. Nothing happened, and that's the cruelty. NOT in his assigned move list - steward-invented.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "it's a beat where he stays, and the staying is the whole point"}]}, {"kind": "silence", "from": 73, "to": 79, "moves": 7, "captures": 1}, {"kind": "move", "move_no": 80, "san": "Rxf7+ Kxf7", "fen": "8/b4k2/8/1R5p/5P2/3qP1P1/4NK2/8", "beats": [{"move_no": 80, "move_label": "M80", "san": "80. Rxf7+ Kxf7", "character": "Ben", "piece": "White Rook a1", "chess_reading": "The rook captures the f7 pawn - the watcher that never moved the entire game - with check, and the Black King takes the rook in the same exchange. He removes the immobile observer, and the act of removing it exposes him.", "narrative_beat": "The EMP trap springs and Ben is exactly where the M17 seam told him it would be. He moves on the one piece he can still reach, and taking it is the very move that drops the shutter. There's no boss to beat, no duel to lose with honour. It's the machine.", "beat_type": "capture_suffered", "convergence": true, "convergence_partners": ["Firas"], "chapter": "Ch18", "quote": "He wins his small private fight and loses the field in the same breath."}, {"move_no": 80, "move_label": "M80", "san": "80. Rxf7+ Kxf7", "character": "Firas", "piece": "White Rook a1", "chess_reading": "The most-captures piece comes off the board, not in a brave exchange he chose but simply removed while the rest of the side keeps grinding. The cruelty is that the board doesn't even need him to win.", "narrative_beat": "The midgame is the wound healing wrong and the stillness it forces on him. He watches the team operate on a comms feed from a couch, and the team is fine - winning without him. NOT a Kain duel: this is the same M7 gunshot still keeping him down.", "beat_type": "capture_suffered", "convergence": true, "convergence_partners": ["Ben"], "chapter": "Ch18", "quote": "stillness equals helplessness equals the thing he's been outrunning since his parents died."}, {"move_no": 80, "move_label": "M80", "san": "80. Rxf7+ Kxf7", "character": "Kain", "piece": "Black Bishop f8 (deployed) / Black King", "chess_reading": "A forcing sacrificial check that strips the f7 watcher and drags the Black King into the open. A violent, committal lever that breaks the position open right before the decisive simplification.", "narrative_beat": "Where Kain stops using uniforms and starts using the machine: the EMP springs, the team is cut down without powers, and the Tank goes to the docks. Ruth a breath from dead reads to him as housekeeping. He commits the apparatus fully because he reads the position as already won - having miscounted exactly one variable.", "beat_type": "capture_made", "convergence": false, "convergence_partners": [], "chapter": "Ch18", "quote": "I am not raging. I am authorizing."}]}, {"kind": "move", "move_no": 82, "san": "Rxa7 Qd5", "fen": "8/R7/6k1/7p/5P2/3qP1P1/4NK2/8", "beats": [{"move_no": 82, "move_label": "M82 (CP-2)", "san": "82. Rxa7", "character": "Ahdia", "piece": "White King e1 (exposed) / Knight b1 (acts)", "chess_reading": "Ruth's Rook takes on a7, but the capture marks the witnessing, not the kill - Ahdia's Knight delivers the act in frozen time. This is where the King is exposed: the cover every White piece existed to protect dies here.", "narrative_beat": "The Docks. The Tank has Ruth a breath from dead; Ahdia freezes time and removes exactly the obstacle that would have killed her. CELLULAR INTEGRITY 18%. She did it without the half-second of math, which terrifies her more than the cost. Then she collapses.", "beat_type": "convergence", "convergence": true, "convergence_partners": ["Ruth", "Ryu", "Kain"], "chapter": "Ch19", "quote": "She experiences exposure as defeat. It's the beginning of being chosen."}, {"move_no": 82, "move_label": "M82 (CP-2)", "san": "82. Rxa7", "character": "Ruth", "piece": "White Rook h1", "chess_reading": "On the board it is Ruth's Rook that captures, but the capture is a lie about who acted. The Rook here is a witness mark; what it actually captures is the truth.", "narrative_beat": "A breath from dead, and then the world stops - dust hung in the air - and the obstacle is removed by the dead girl from the closed file. Her understanding inverts: every save was Ahdia, dying by inches. Then Ahdia collapses and Ruth's medic reflex fires. She covers, and tells the team she 'got separated.'", "beat_type": "convergence", "convergence": true, "convergence_partners": ["Ahdia", "Ryu", "Kain"], "chapter": "Ch19", "quote": "She experiences it as a patient hitting the floor."}, {"move_no": 82, "move_label": "M82 (CP-2)", "san": "82. Rxa7", "character": "Ryu", "piece": "White King e1 / Knight b1", "chess_reading": "His two live pieces are exactly the wrong two for this moment - the King-adjacent square and the eye on the Knight. His pieces register and abstain.", "narrative_beat": "He is not at the Docks. He is at the chair, watching through the feed, and that one remove is the whole point of him. The telemetry craters in real time and he reads in the numbers that she did it for Ruth without calculating the cost. Then he covers for the access that put her there.", "beat_type": "convergence", "convergence": true, "convergence_partners": ["Ahdia", "Ruth"], "chapter": "Ch19", "quote": "He watches her drop. He cannot catch her."}, {"move_no": 82, "move_label": "M82 (CP-2)", "san": "82. Rxa7", "character": "Kain", "piece": "Black Bishop f8 (removed)", "chess_reading": "His second-most-valuable asset leaves the board to an opponent he cannot see make the capture. He will read it as 'Ruth's Rook took my Bishop' - a clean institutional fact. The actual mechanism is invisible from his side.", "narrative_beat": "The report that reaches him will not close - a hole in the account exactly the size of something he has no category for. His instinct is to flatten it into a malfunction; the handler will not let him. His true rank becomes visible for the first time.", "beat_type": "capture_suffered", "convergence": true, "convergence_partners": ["Ahdia", "Ruth", "Ryu"], "chapter": "Ch19", "quote": "The handler asks one question I can't answer: who was actually there."}]}, {"kind": "move", "move_no": 88, "san": "Nf3 Qb1", "fen": null, "beats": [{"move_no": 88, "move_label": "M88", "san": "88. Nf3 Qb1", "character": "Tess", "piece": "White Knight g1 (holding a quiet square)", "chess_reading": "No captures, no fireworks: a square that does nothing flashy and everything necessary. The Black Queen drifts loose and untouchable - the same force that punched through her h-pawn at M53 and never went away.", "narrative_beat": "The long flat middle of a crisis, the stretch where the baseline that fell at M53 hasn't come back and she runs on grit and habit. A day she answers comms a half-beat slow. And the youngest is still here. That's the beat. NOT in her assigned move list - steward-invented.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "This is the move where nothing happens and that's the point. Endurance, not event."}]}, {"kind": "silence", "from": 89, "to": 99, "moves": 11, "captures": 0}, {"kind": "move", "move_no": 100, "san": "Nd4 Qh1", "fen": null, "beats": [{"move_no": 100, "move_label": "~M100-104", "san": "100. Nd4 Qh1 ... 104. Rd2 Qb1", "character": "Ahdia", "piece": "White e-pawn (coiled on e3)", "chess_reading": "The position circles while the e-pawn is still on e3, six moves from breaking into the open. Not the boredom of M70 - the held breath before the dive.", "narrative_beat": "The calm before. CELLULAR INTEGRITY 26%, past the place where she still pretends the trade is sustainable. Under the dread is something almost like relief: if the number keeps falling, the math resolves and she doesn't have to keep choosing.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "part of me has been waiting for a reason to stop."}]}, {"kind": "silence", "from": 101, "to": 107, "moves": 7, "captures": 0}, {"kind": "move", "move_no": 108, "san": "Rd4 Qb2+", "fen": null, "beats": [{"move_no": 108, "move_label": "~M108", "san": "108. Rd4", "character": "Ahdia", "piece": "White e-pawn", "chess_reading": "The slow machinery of the win turns over and the long-held e-pawn prepares to resume its advance. A pawn-discovery: the smallest self learning the march has a direction she never read on the board.", "narrative_beat": "The dream-vision. She finds the red direction - time speeding up, not just slowing - and for one half-second it is pure 'Oh shit' and 'Yes,' neither cancelling the other. She doesn't finish the math; she files it as a new tool.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "She thinks she's getting stronger. She's getting closer to the edge."}]}, {"kind": "move", "move_no": 110, "san": "e4 Qh1", "fen": "8/6k1/8/7p/3RPP2/6P1/4NK2/1q6", "beats": [{"move_no": 110, "move_label": "M110", "san": "110. e4", "character": "Ahdia", "piece": "White e-pawn", "chess_reading": "The e-pawn, held on e3 since M29, finally advances into the open centre. After eighty-one moves of standing still, the hidden spine of White's position becomes a visible piece everyone is looking at.", "narrative_beat": "She tells the team. All of them. The truth she faked her own death to keep: your powers were never yours, they were me. She narrates their hands, not her own chest, and she does not say the number.", "beat_type": "advance", "convergence": true, "convergence_partners": ["Leah", "Victor"], "chapter": "Ch25", "quote": "your powers were never yours. They were me. All of it, the whole time - me."}, {"move_no": 110, "move_label": "~M110", "san": "110. e4 Qh1", "character": "Leah", "piece": "all three pieces already spent - read through absence", "chess_reading": "Her triplet is gone: bishop off at M20, both pawns inside the first eight moves. Through the entire back half she has no piece on the board. Her absence from the late board IS the beat.", "narrative_beat": "The reveal lands: the strength was Ahdia's. The vest she walked away from, the door she went through first - all of it was Ahdia bending time around her. She can't punch this one, so she cries openly in front of the team and says the true ugly thing nobody else will.", "beat_type": "convergence", "convergence": true, "convergence_partners": ["Ahdia"], "chapter": "Ch25", "quote": "was I ever actually strong? Or was I just standing where the strong thing happened?"}, {"move_no": 110, "move_label": "~M110", "san": "110. e4 Qh1", "character": "Victor", "piece": "the empty squares - no piece-move", "chess_reading": "Victor has no piece on the board and that IS the reading. The clarity wasn't his - the squares he thought he was reading were being held still for him.", "narrative_beat": "He learns his 'tactical precognition' was Ahdia slowing time for him. The question is whether he was protected or manipulated, a gift or a leash. He turns the reveal into a troubled interrogation, not a betrayal-and-storm-out. Both/and refuses a verdict; he stays.", "beat_type": "convergence", "convergence": true, "convergence_partners": ["Ahdia", "Ruth"], "chapter": "Ch25", "quote": "if you slowed time so I'd survive, that's protection; if you did it without telling me, that's manipulation"}]}, {"kind": "move", "move_no": 114, "san": "gxh4 Qh3+", "fen": null, "beats": [{"move_no": 114, "move_label": "M114-115", "san": "114. gxh4 ... 115... Qxh4", "character": "Tess", "piece": "White g-pawn", "chess_reading": "The defender whose whole identity since M3 has been holding its place does something it has never done: it captures. One move later the Black Queen takes it. The piece that existed to hold the line dies the move after it finally lands a blow.", "narrative_beat": "She crosses a line, and the line is inside her, not on anyone's body. A foe is down and helpless and she keeps going, past the team's incapacitate-not-kill MO. She feels the cold clean want of it, then the flinch. She leaves them brutalized and alive.", "beat_type": "capture_made", "convergence": false, "convergence_partners": [], "chapter": null, "quote": "She does not kill. She leaves them brutalized and alive."}]}, {"kind": "move", "move_no": 116, "san": "Rd3 Kf8", "fen": null, "beats": [{"move_no": 116, "move_label": "~M116-120", "san": "116. Rd3 Kf8 ... 120. Re3", "character": "Firas", "piece": "White Rook a1 -> f-pawn (handoff)", "chess_reading": "Slow, patient repositioning - the Rook self stepping back and making room for the f-pawn that will matter. He hands over the part of himself that charges and takes hits.", "narrative_beat": "He gives her the suit. Not powers - he doesn't know about powers and never will - it's his armour and the closest thing he has to a name. He does the one thing his psyche resists: takes the shell off his own body and holds it out, fumbling it into a joke about the shoulders.", "beat_type": "positional", "convergence": false, "convergence_partners": ["Ahdia"], "chapter": "Ch26", "quote": "Built it for me. Fits you better."}]}, {"kind": "silence", "from": 117, "to": 127, "moves": 11, "captures": 0}, {"kind": "move", "move_no": 128, "san": "Rf5+ Ke8", "fen": null, "beats": [{"move_no": 128, "move_label": "~M128", "san": "127. Re5+ Kf7 128. Rf5+ Ke8", "character": "Bourn", "piece": "White King e1 (the authorized asset)", "chess_reading": "White's rook drives the Black King across the back ranks with checks - the mechanical herding of a cornered piece toward the finish. She is not the field piece doing the herding; she is the seat that authorized it.", "narrative_beat": "A windowless room, a strike package, a release authorization that needs one signature and the signature is hers - the kill-shot the whole climax is built to credit to a girl with a knight, and it is actually a procurement decision. What shows is restraint: the pause before the signature one beat too long, then exactly on time.", "beat_type": "positional", "convergence": false, "convergence_partners": [], "chapter": "Ch28", "quote": "She signs the cleanest kill of her career against a man who doesn't stay dead."}]}, {"kind": "move", "move_no": 131, "san": "Kh4 Qh6+", "fen": null, "beats": [{"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "131. Kh4 Qh6+ ... 136. Ng7 1-0", "character": "Ahdia", "piece": "King e1 + Knight b1 + e-pawn (all three converge)", "chess_reading": "All three of her pieces converge: the pawn frozen at e6, the Knight playing Ng7, the King remaining on the board alive. Ng7 is a resignation, not a mate - the Knight is the picture of her ending it, not the mechanism.", "narrative_beat": "Barely in her own body for the finish. Firas puts the autoinjector into her, not himself; the human chain drags her back down a rope she didn't think she was worth. She is saved over her objection and does not get to consent. Then Firas dissolves, and she lands at ~30% and starts counting.", "beat_type": "finish", "convergence": true, "convergence_partners": ["all"], "chapter": "Ch29-30", "quote": "She got chosen, and she's furious about the price."}, {"move_no": 131, "move_label": "M133-135", "san": "133. e6 / 134. Rf7 / 135. f5", "character": "Firas", "piece": "White f-pawn", "chess_reading": "The f-pawn - dormant fifty-eight moves, the smallest and truest piece - advances to f5, one square from queening, and will never queen. Beside it her e-pawn sits at e6, also frozen at the brink.", "narrative_beat": "He finds the last dose. For half a second the old arithmetic runs - use it, get back up - and then he looks at her, going somewhere he can't follow, and for the first time in the book he actually sees her. He puts the needle in her arm, not his. No speech, no swelling music.", "beat_type": "finish", "convergence": true, "convergence_partners": ["Ahdia"], "chapter": "Ch29", "quote": "Oh hey. I knew you were in there somewhere."}, {"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "131. Kh4 ... 136. Ng7 1-0", "character": "Ruth", "piece": "White Rook h1", "chess_reading": "Her Rook is still on the board at the end - the one piece that held position from M20 through the whole grind, never traded. While the pawns freeze at the brink, the Rook does the unglamorous endgame work.", "narrative_beat": "She organizes the human chain - hands on hands, shouting the order, assigning positions. She wrenches her shoulder and does not stop. Then she watches the man she was going to marry dissolve. To Ruth: simply, conventionally, gone. She does not break. The grief goes into the next task.", "beat_type": "finish", "convergence": true, "convergence_partners": ["Ahdia", "Firas"], "chapter": "Ch29-30", "quote": "Ahdia is the rope's burden; Ruth builds the rope."}, {"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "131. Kh4 ... 136. Ng7 1-0", "character": "Ryu", "piece": "Knight b1 + f-pawn + King e1 (all three, all wrong-for-the-moment)", "chess_reading": "All three of his shared pieces are present at the biggest moment and not one is his to play. The King-adjacent square is the final truth of him - present at her victory, beside it, never on it.", "narrative_beat": "He runs the climax from the chair while the others run the rope - the voice in everyone's ear calling the timing, the half-second window that lets the chain catch her. When Ng7 lands and the room erupts over a win he handed them, his face does the spare clipped nothing it does under load. He is the one team member who does NOT pull the rope.", "beat_type": "finish", "convergence": true, "convergence_partners": ["Ahdia", "Firas"], "chapter": "Ch29-30", "quote": "He watches her transcend and cannot follow."}, {"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "131. Kh4 ... 136. Ng7 1-0", "character": "Ben", "piece": "all three pieces in absentia", "chess_reading": "He arrives at the finish already off the board in every register - combat self taken at M80, discipline broken at M39, precision spent at M17. The warrior has nothing left to do.", "narrative_beat": "Fully conscious for the whole rescue and that's worse. He read the truth around Ch25 and came anyway, so when the chain forms he isn't saving a hero or a weapon but the person the heroics were done to. He runs it like a casualty evac: grip strength, angle, anchor, counting because feeling it would mean Sarah.", "beat_type": "finish", "convergence": true, "convergence_partners": ["Ahdia", "Firas"], "chapter": "Ch29-30", "quote": "Everyone else is pulling on a meaning. Ben is pulling on a weight."}, {"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "133. e6 ... 136. Ng7 1-0", "character": "Tess", "piece": "all three kingside pieces in absence", "chess_reading": "Tess has no piece left; her whole formation is spent. She reads the convergence through the holes her pieces left - the kid whose every contribution has been used up, standing in the climax with empty hands.", "narrative_beat": "The youngest hand on the chain, and she doesn't understand what she's pulling Ahdia back from, only that leaving is not allowed. Where Ahdia is dissolving, Tess is painfully in her body - anxiety screaming, hands shaking the way they shook after the bridge - and she pulls anyway.", "beat_type": "finish", "convergence": true, "convergence_partners": ["Ahdia", "Firas"], "chapter": "Ch29-30", "quote": "The formation can't save Ahdia. The girl who WAS the formation can."}, {"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "133. e6 ... 136. Ng7 1-0", "character": "Leah", "piece": "no piece - only hands", "chess_reading": "Two pawns at the brink, neither queening. Leah has nothing on the board, so she is not a piece in this position - she is one of the hands. The triplet spent itself early precisely so this is all that's left of her.", "narrative_beat": "Her whole book pays off in a way she'd never have scripted: no door to go through first, no punch to land, just a grip and the refusal to let go. She's crying openly and pulling at the same time. Then Firas dissolves, and the win they cheer she can barely feel.", "beat_type": "finish", "convergence": true, "convergence_partners": ["Ahdia", "Firas"], "chapter": "Ch29-30", "quote": "the strongest she is all book is the moment she has no strength to use"}, {"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "131. Kh4 ... 136. Ng7 1-0", "character": "Victor", "piece": "the hands, not the pieces", "chess_reading": "Bishop and a-pawn are long gone; the lens he carries into the climax is the one he couldn't hold. The pieces that already fell are the ones forming the chain that saves the king. Spent pieces, still pulling.", "narrative_beat": "Under maximum pressure his scope shrinks from community-as-system down to one person he couldn't hold. In the human chain there is no system: one woman at the edge of the world, his own grip, and the memory in his palms of the kid the cycle already took.", "beat_type": "finish", "convergence": true, "convergence_partners": ["Ahdia", "Firas"], "chapter": "Ch29-30", "quote": "He grabs the rope for Ahdia with the hands that couldn't keep the lost youth."}, {"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "131. Kh4 ... 136. Ng7 1-0", "character": "Bourn", "piece": "King e1 + Queen d1 + a-pawn (all three files come due)", "chess_reading": "Black resigns in a lost position; neither pawn promotes. All her files close at once: the King survives (the outcome she authorized everything to reach), the Queen's file finally closes, the a-pawn was already spent at M33.", "narrative_beat": "The only one in the climax doing arithmetic. She logs it as successful recovery of a high-value asset at acceptable cost, and the acceptable-loss line is where the weight finally shows. In Ch30 she offers Ahdia the CADENS badge, takes the refusal dryer than the moment warrants, and closes the file as active, unrecruited, monitored.", "beat_type": "finish", "convergence": true, "convergence_partners": ["all"], "chapter": "Ch29-30", "quote": "the asset comes back alive, which means the asset comes back hers."}, {"move_no": 131, "move_label": "M131-136 (CP-3)", "san": "131. Kh4 ... 136. Ng7 1-0", "character": "Kain", "piece": "Black King e8 (cornered; resigns, never captured)", "chess_reading": "The Black King has been herded across his own back ranks under check the whole endgame until there is no square left. But this is a resignation, not an on-board mate - the king is never actually taken. That gap is the entire epilogue.", "narrative_beat": "Cornered, he escalates to overwhelming force - integrates the Tamois Heart, becomes the thing that grows. The team forms its chain, Bourn's missile flies, Tank 47 dies. He wakes in a new body, spins a terrorist-impersonation story before the rubble cools, is presidential in grief.", "beat_type": "finish", "convergence": true, "convergence_partners": ["all"], "chapter": "Ch28-30 + epilogue", "quote": "you cannot punch fascism unconscious. It gets up, puts on a new face, and thanks the first responders."}]}], "pieces": [{"sq": "b1", "owner": "Ahdia · Ryu", "reading": "active self / what he watches", "piece": "N", "color": "white", "moves": 25, "captures": 2, "first": 10, "fate": "survives on g7"}, {"sq": "e1", "owner": "Ahdia · Ryu · Bourn", "reading": "passive identity / proximity / the authorized asset", "piece": "K", "color": "white", "moves": 17, "captures": 1, "first": 5, "fate": "survives on h4"}, {"sq": "e2", "owner": "Ahdia", "reading": "what she could become", "piece": "P", "color": "white", "moves": 4, "captures": 0, "first": 29, "fate": "survives on e6"}, {"sq": "d1", "owner": "Firas · Bourn", "reading": "the protagonist fakeout / the doomed-status file", "piece": "Q", "color": "white", "moves": 5, "captures": 1, "first": 9, "fate": "captured M26"}, {"sq": "a1", "owner": "Firas · Ben", "reading": "removal from duty / the combat self", "piece": "R", "color": "white", "moves": 19, "captures": 5, "first": 18, "fate": "captured M80"}, {"sq": "f2", "owner": "Firas · Ryu", "reading": "the autoinjector / the CADENS system", "piece": "P", "color": "white", "moves": 3, "captures": 0, "first": 59, "fate": "survives on f5"}, {"sq": "h1", "owner": "Ruth", "reading": "field leader", "piece": "R", "color": "white", "moves": 50, "captures": 1, "first": 5, "fate": "survives on f7"}, {"sq": "f1", "owner": "Ruth · Leah", "reading": "the scientist / quick deployment", "piece": "B", "color": "white", "moves": 1, "captures": 0, "first": 4, "fate": "captured M20"}, {"sq": "d2", "owner": "Ruth · Leah", "reading": "CR-7 the treatment / the first punch", "piece": "P", "color": "white", "moves": 2, "captures": 1, "first": 1, "fate": "captured M7"}, {"sq": "c1", "owner": "Ben · Victor", "reading": "precision / the one ethical strike", "piece": "B", "color": "white", "moves": 2, "captures": 1, "first": 16, "fate": "captured M17"}, {"sq": "b2", "owner": "Ben", "reading": "structural discipline", "piece": "P", "color": "white", "moves": 2, "captures": 0, "first": 6, "fate": "captured M39"}, {"sq": "g1", "owner": "Tess", "reading": "the strike that costs itself", "piece": "N", "color": "white", "moves": 2, "captures": 1, "first": 2, "fate": "captured M19"}, {"sq": "g2", "owner": "Tess", "reading": "defender turned aggressor", "piece": "P", "color": "white", "moves": 2, "captures": 1, "first": 3, "fate": "captured M115"}, {"sq": "h2", "owner": "Tess", "reading": "the medication baseline", "piece": "P", "color": "white", "moves": 1, "captures": 0, "first": 30, "fate": "captured M53"}, {"sq": "c2", "owner": "Leah", "reading": "over-extension", "piece": "P", "color": "white", "moves": 1, "captures": 0, "first": 8, "fate": "captured M8"}, {"sq": "a2", "owner": "Victor · Bourn", "reading": "community roots / Mother FAERIS", "piece": "P", "color": "white", "moves": 1, "captures": 0, "first": 14, "fate": "captured M33"}, {"sq": "e8", "owner": "Kain", "reading": "the public face", "piece": "k", "color": "black", "moves": 23, "captures": 1, "first": 5, "fate": "survives on d8"}, {"sq": "f8", "owner": "Kain", "reading": "the Tank Cop", "piece": "b", "color": "black", "moves": 20, "captures": 3, "first": 4, "fate": "captured M82"}, {"sq": "g7", "owner": "Kain", "reading": "first-tier expendables", "piece": "p", "color": "black", "moves": 2, "captures": 1, "first": 17, "fate": "captured M79"}, {"sq": "d8", "owner": "Bellatrix — no steward", "reading": "the orchestrator", "piece": "q", "color": "black", "moves": 68, "captures": 3, "first": 9, "fate": "survives on g1"}, {"sq": "f7", "owner": "unassigned", "reading": "the watcher who never moved", "piece": "p", "color": "black", "moves": 0, "captures": 0, "first": null, "fate": "captured M80"}], "stats": {"moves": 136, "plies": 271, "captures": 25, "checks": 28, "beats": 57, "quiet_83_99": 0, "caps_41_78": 2, "moves_with_beats": 33}, "chars": ["Ahdia", "Firas", "Ruth", "Ryu", "Ben", "Tess", "Leah", "Victor", "Bourn", "Kain"], "side": {"Ahdia": "white", "Firas": "white", "Ruth": "white", "Ryu": "white", "Ben": "white", "Tess": "white", "Leah": "white", "Victor": "white", "Bourn": "white", "Kain": "black"}};
+const GLYPH = {K:"♔",Q:"♕",R:"♖",B:"♗",N:"♘",P:"♙",
+               k:"♚",q:"♛",r:"♜",b:"♝",n:"♞",p:"♟"};
+const esc = s => String(s).replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+
+/* scoreline */
+const S = D.stats;
+document.getElementById("scoreline").innerHTML = [
+  ["Moves", S.moves, "271 plies"],
+  ["Result", "1&ndash;0", "Black resigns"],
+  ["Captures", S.captures, S.checks + " checks"],
+  ["Beats", S.beats, S.moves_with_beats + " moves carry one"],
+  ["Silent", "M83&ndash;99", "zero captures"],
+].map(([t,v,s]) => `<div><dt>${t}</dt><dd>${v}<small>${s}</small></dd></div>`).join("");
+
+/* piece table */
+document.querySelector("#pieces tbody").innerHTML = D.pieces.map(p => `
+  <tr>
+    <td class="n"><span class="sq ${p.color==="white"?"w-side":"b-side"}">${p.sq}</span></td>
+    <td class="n">${esc(p.owner)}</td>
+    <td>${esc(p.reading)}</td>
+    <td class="n">${p.first ? "M"+p.first : "&mdash;"}</td>
+    <td class="n">${p.moves}</td>
+    <td class="n">${p.captures}</td>
+    <td class="n ${/survives/.test(p.fate)?"survives":""}">${esc(p.fate)}</td>
+  </tr>`).join("");
+
+/* board from FEN placement field */
+function board(fen){
+  let out = "", idx = 0;
+  for (const ch of fen){
+    if (ch === "/") continue;
+    if (/\d/.test(ch)){
+      for (let i=0;i<+ch;i++,idx++)
+        out += `<div class="${((idx>>3)+(idx&7))%2 ? "d":"l"}"></div>`;
+    } else {
+      const dark = ((idx>>3)+(idx&7))%2;
+      const white = ch === ch.toUpperCase();
+      out += `<div class="${dark?"d":"l"} ${white?"wp":"bp"}">${GLYPH[ch]}</div>`;
+      idx++;
+    }
+  }
+  return `<div class="board" role="img" aria-label="Board position">${out}</div>`;
+}
+
+/* spine */
+const spine = document.getElementById("spine");
+function render(active){
+  spine.innerHTML = D.rows.map(r => {
+    if (r.kind === "silence"){
+      if (active) return "";
+      return `<div class="silence">
+        <div>M${r.from}&ndash;${r.to}</div>
+        <div><div class="bar"></div>
+          <div style="margin-top:7px">${r.moves} moves, no beats &middot; ${r.captures} capture${r.captures===1?"":"s"} in the game here</div>
+        </div></div>`;
+    }
+    const bs = r.beats.filter(b => !active || b.character === active);
+    if (!bs.length) return "";
+    const cp = bs.some(b => b.convergence && /CP-/.test(b.move_label));
+    return `<div class="mv${cp?" cp":""}">
+      <div class="rail">
+        <div class="mno">M${r.move_no}</div>
+        <div class="msan">${esc(r.san)}</div>
+        ${cp ? `<span class="cpflag">${esc((bs.find(b=>/CP-/.test(b.move_label))||{}).move_label.match(/CP-\d/)[0])}</span>` : ""}
+        ${r.fen ? board(r.fen) : ""}
+      </div>
+      <div class="beats">${bs.map(b => `
+        <div class="beat ${D.side[b.character]==="white"?"w":"b"}">
+          <div class="who">
+            <span>${esc(b.character)}</span>
+            <span class="pc">${esc(b.piece)}</span>
+            <span class="kind">${esc(b.beat_type.replace(/_/g," "))}</span>
+          </div>
+          <p class="chess">${esc(b.chess_reading)}</p>
+          <p class="story">${esc(b.narrative_beat)}</p>
+          <p class="qt">&ldquo;${esc(b.quote)}&rdquo;</p>
+        </div>`).join("")}</div>
+    </div>`;
+  }).join("");
+}
+
+/* controls */
+let active = null;
+const controls = document.getElementById("controls");
+controls.innerHTML =
+  `<button class="chip" data-c="" aria-pressed="true">All arcs</button>` +
+  D.chars.map(c => `<button class="chip ${D.side[c]==="white"?"w":"b"}" data-c="${c}" aria-pressed="false">${c}</button>`).join("");
+controls.addEventListener("click", e => {
+  const btn = e.target.closest(".chip");
+  if (!btn) return;
+  active = btn.dataset.c || null;
+  controls.querySelectorAll(".chip").forEach(b =>
+    b.setAttribute("aria-pressed", String((b.dataset.c || "") === (active || ""))));
+  render(active);
+});
+render(null);
+</script>
