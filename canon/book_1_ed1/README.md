@@ -14,6 +14,7 @@ This directory doubles as the operation's ledger. See the mapping table at the t
 | `DECISIONS_LOG.md` | live — house style + destination ruled 2026-08-29 |
 | `CHAPTER_INDEX.yaml` | populated — POV determined for all 30 chapters |
 | `STYLE_PROFILE.md` | populated — baseline measurements, descriptive only |
+| `CH01-11_TOPOGRAPHY.md` | populated — vetted world-map for cold agents (reads at ~1.6k words instead of the 23.5k-word corpus) |
 | `CANON_FACTS.jsonl` | **stub** — Pass 7 harvest populates it |
 | `PROMISES.jsonl` | **empty** — Pass 7 harvest populates it |
 | `CHRONOLOGY.jsonl` | **empty** — Pass 7 harvest populates it |
