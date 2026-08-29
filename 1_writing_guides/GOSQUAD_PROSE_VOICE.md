@@ -4,6 +4,17 @@
 
 **Philosophy:** Voice trumps technical polish. When grammar and ear conflict, trust the ear.
 
+> **CORRECTED AND PARTLY SUPERSEDED — 2026-08-29.** Two things changed. (1) The
+> dialogue figure below was wrong: this guide asserted 66%; the measured value
+> across the clean first edition is **30.7%**. Corrected in place. (2) The
+> Director ruled the ch12 seam: **"The second half should align with the first."**
+> ch12–30 (~42% fragments) is NOT the target texture — ch1–11 is. Fragment
+> guidance below still describes a real device, but it is now governed by a
+> per-chapter budget (that chapter's dialogue floor + 7.2 short-bursts/1K), and
+> **dialogue is not to be changed at all.** Ruling and per-chapter targets:
+> `canon/book_1_ed1/DECISIONS_LOG.md`. No prose has been revised; that is a
+> later phase.
+
 ---
 
 ## Core Voice Principles
@@ -11,7 +22,8 @@
 1. **Density is a feature** - Every scene is load-bearing. Compressed prose, nothing wasted.
 2. **Embody, don't articulate** - Characters live the theme; they don't explain it.
 3. **Trust the reader** - No over-explanation of emotional beats. Show through action.
-4. **Fast pacing is the default** - 66% dialogue, 12-word average sentences, fragments for impact.
+4. **Pacing** - dialogue is 30.7% of the book (measured); mean sentence 8.6 words,
+   median 6. Fragments for impact, within the ruled per-chapter budget.
 
 ---
 
@@ -54,7 +66,10 @@ Use fragments for:
 
 ### Dialogue-Heavy Rhythm
 
-66% of Book 1 is dialogue. This is intentional.
+Dialogue is 30.7% of Book 1 by word count (measured 2026-08-29 across the clean
+first edition; per-chapter it ranges 2.5%–61.8%). An earlier version of this guide
+claimed 66% — that figure was never measured and is wrong. **Dialogue is not to be
+altered in the current phase.**
 
 ```
 "What are you wearing?" she finally managed to ask.
@@ -232,8 +247,13 @@ Load these as style reference when drafting:
 | Chapter | Why |
 |---------|-----|
 | Book 1, Chapter 1 | Ahdia's voice established, pacing set |
-| Book 1, Chapter 22 | Best action scene, team dynamics |
-| Book 1, Chapter 27 | Emotional climax, voice under pressure |
+| Book 1, Chapter 5 | Dialogue-led scene at the ruled texture (61.8% dialogue) |
+| Book 1, Chapter 9 | Team dynamics in the front-half register |
+
+**Removed 2026-08-29:** ch22 and ch27 were listed here as exemplars. Both sit in the
+back half (72.2 and 101.7 short-bursts/1K against ch1–11's 12.9) and exemplify the
+texture the Director ruled *away* from. Citing them trained every reader of this file
+toward the seam. Restore them only if that ruling is reversed.
 
 ---
 

@@ -153,4 +153,11 @@ def norm(s):
     return (s.replace("’", "'").replace("‘", "'")
              .replace("“", '"').replace("”", '"')
              .replace("—", "--").replace("–", "-")
-             .replace("…", "..."))
+             .replace("…", "...")
+             # Chicago spaced ellipsis (ruled 2026-08-29) collapses to "..." like
+             # the … glyph does. Without this the sentence splitter, which breaks
+             # on \s+, splits INSIDE every ellipsis — NBSP is whitespace — and
+             # short-burst inflates (43.1 -> 48.2 book-wide when Book 1 converted).
+             # That is the mid-ellipsis split the April fix removed, arriving by a
+             # different door.
+             .replace(".\u00a0.\u00a0.", "...").replace(". . .", "..."))
