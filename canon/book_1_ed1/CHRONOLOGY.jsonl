@@ -6,3 +6,5 @@
 {"id": "B1C-006-warehouse-night", "event": "CH06-08: Ahdia+Ruth enter the warehouse the night after Firas wakes; Ahdia shot; RPG; fire; translocation", "when": "CH06-08", "precision": "canonical"}
 {"id": "B1C-007-ch9-night", "event": "CH09-11: 'Two nights after the warehouse' \u2014 traffic stop, chases, powers emerge", "when": "CH09-11", "precision": "canonical"}
 {"id": "B1C-008-election", "event": "Presidential election upcoming in November; Kain presumptive nominee", "when": "CH09", "precision": "canonical"}
+{"id": "B1C-009-aug14", "event": "The warehouse night is dated: 'Night of August 14th' (Bourn's playback command). Anchors the whole B1 present-day timeline; election in November = ~11 weeks later", "when": "August 14", "precision": "canonical"}
+{"id": "B1C-010-nightcount-wobble", "event": "CH13 display narration says the warehouse was 'two nights ago' but the ch9-12 chain makes it three. Off-by-one wobble, UNRULED; rewrite packets avoid day-counting", "when": "CH13", "precision": "inferred"}
