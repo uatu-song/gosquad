@@ -155,6 +155,13 @@ dagger's origin; the prose never does.
 
 ## BEATS (order fixed; texture yours)
 
+**SCALE OF STAGED ACTION (Director line note, 2026-08-29):** when a beat is a
+failed attempt or a demonstration, keep it at the source's physical scale — a
+super-jump that won't come back is a standing hop that gravity answers, not a
+runway sprint into a vault. The mime (the arm-arc, the sound effect) carries
+the spectacle; the body stays ordinary. Inflating attempt-beats into performed
+feats misreads the scene.
+
 1. **The jump that won't come back.** Night Knight attempts his quarter-mile
    super-jump in the activity area; ordinary gravity answers (1–4). The team
    compares last night's impossibilities; Ruth confirms even she can't
