@@ -4,6 +4,33 @@
 
 ---
 
+## 2026-08-29 — Canon: the team does not drive
+
+**Ruling, verbatim:** "They're parkour masters. They don't drive around. They
+have comms that they use so they're either together or they're radioing each
+other."
+
+Prompted by the CH18 metric draft staging the wait beat in a van (agent
+blocking invention). Draft re-blocked: rooftop two blocks out, scope on the
+parapet, all vehicle language removed. Constraint added to the CH18 packet's
+world constraints for every future generation: no team vehicle, ever — the
+team stages on foot and rooftops, together or on comms.
+
+**Conflict surfaced, NOT resolved by crew:** the first edition itself has a
+team van — ch22 runs an op from "the van two blocks away," Tess teleports from
+it and stashes a captive in it, and Firas DRIVES it. Under this ruling ch22's
+staging is off-canon. Quarry is not edited retroactively; the rebuild handles
+ch22 when it reaches it. Flagged so nobody re-imports the van as precedent.
+
+**Also this session:** a Director hand-edit merged span 7 with a tag,
+converting the frozen period to a comma and leaving an unclosed straight
+quote; repaired to keep the action-beat intent with the span verbatim.
+Byte-identity 71/71 green, all bands pass.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — CH18 fan-gratitude exchange EXCISED (supersedes the reword)
 
 **Sequence:** the reworded flowers line ("where we pulled that girl out")

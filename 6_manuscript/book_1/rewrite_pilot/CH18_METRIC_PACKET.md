@@ -128,6 +128,9 @@ enhancements are secretly Ahdia. Do not hint.**
   CCPD / "Caledonia Police"; the Academy; codenames BATTLEA (Leah), NIGHT
   KNIGHT (Ben), CRIMSON SABLE (Victor), GLOOM GIRL (Tess), NIGHTINGALE (Ruth);
   Kain. Everything else stays generic ("the precinct", "the hospital").
+- **The team does not drive (Director ruling 2026-08-29).** They are parkour
+  masters: they stage on foot and rooftops, and they are either together or on
+  comms. No team vehicle, ever — no van, no car, no parked staging.
 - **Ben's background is MILITARY, not police.** He has a contact at the
   precinct; he was never a cop.
 - **Enhancement mechanism (author-level; Ruth doesn't know):** the team's
