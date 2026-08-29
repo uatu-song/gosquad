@@ -4,6 +4,36 @@
 
 ---
 
+## 2026-08-29 — CH18 fan-gratitude exchange EXCISED (supersedes the reword)
+
+**Sequence:** the reworded flowers line ("where we pulled that girl out")
+raised a Director objection — flowers at a site read as a memorial before they
+read as thanks ("why would there be flowers... Did someone die?"). Offered
+rewordings; the Director ruled instead, verbatim: **"If the chapter survives by
+cutting that exchange and anything related to it out, just excise it."**
+
+**Cut verification before the cut:** the codename beat stands alone (Tess
+scrolls, stops, "Oh. Oh no."); the only downstream "flowers" in either book is
+an unrelated Book 2 memorial; no other autograph/carjacking references exist.
+The chapter survives.
+
+**Excised** from the clean source, the metric packet (77 → 71 frozen spans,
+beats renumbered), and the v2 draft: six spans ("Another one." through the
+flowers line) plus their narration. Draft interiority stitched: "Now a kid...
+wanted Gloom Girl's autograph" → "Now strangers in Caledonia knew Gloom Girl
+by name." Epub rebuilt.
+
+**Result:** dialogue byte-identity 71/71 green, and the excision also pulled
+the Director-edited draft back inside ALL style bands (the earlier commas/-ly
+flags vanished with the cut section).
+
+**Supersedes:** this morning's reword ruling. The Academy leak is closed by
+removal, not rewording.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — CH18 fan beat: the freeze rule's first exception (canon-forced)
 
 **Finding (Director, first read of a metric draft):** two frozen spans publicly

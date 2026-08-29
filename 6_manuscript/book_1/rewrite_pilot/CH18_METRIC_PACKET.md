@@ -35,76 +35,70 @@ Rules:
  5. "Good,"  — Victor
  6. "Hit them during setup. Before they're organized."  — Victor (same utterance, after the tag)
  7. "I like it when they're not organized."  — (unattributed)
- 8. "Another one."  — Tess
- 9. "Another what?"  — Leah
-10. "Kid wants an autograph. Posted it in the fan threads."  — Tess
-11. "That's the third one today,"  — Ben
-12. "Fifth,"  — Tess
-13. "And someone left flowers where we pulled that girl out. Note says 'Thank you for my daughter.' No name."  — Tess (same utterance, continues)
-14. "Oh. Oh no."  — (unattributed)
-15. "What?"  — Victor
-16. "Wait,"  — Ben
-17. "How do they know our codenames?"  — Ben (same utterance, continues)
-18. "There's like ... hundreds of posts using them. Battlea this, Night Knight that."  — Tess
-19. "Did you—"  — (unattributed — the accusation)
-20. "What? No!"  — Tess
-21. "Gloom Girl."  — (unattributed)
-22. "I didn't leak anything,"  — Tess
-23. "I just ... may have used them. In a few posts. Months ago. Hypothetically."  — Tess (same utterance, continues)
-24. "Firas is going to love this,"  — Ruth
-25. "Or kill me,"  — Tess
-26. "Everyone check in,"  — Ruth
-27. "Comms clear?"  — Ruth (same utterance, continues)
-28. "No better place than here,"  — Ruth
-29. "No better time than now."  — the team, together
-30. "Moving in,"  — Victor
-31. "Clear inside,"  — Victor
-32. "Setting up position."  — Victor (same utterance, continues)
-33. "Something's wrong,"  — Tess
-34. "There's nobody here. Warehouse is empty."  — Tess (same utterance, continues)
-35. "Abort. Everyone out. Now."  — Ruth
-36. "Too late,"  — Ben
-37. "This is CCPD. You are surrounded. Exit the building with your hands visible."  — CCPD megaphone
-38. "Shit,"  — Leah
-39. "Smoke and scatter,"  — Ruth
-40. "Formation Delta. IR goggles. Move."  — Ruth (same utterance, continues)
-41. "Anyone else losing equipment?"  — Tess
-42. "IR's down,"  — Victor
-43. "GPS too."  — Victor (same utterance, continues)
-44. "What the hell—"  — (unattributed)
-45. "Powers are down,"  — Leah
-46. "I can't—they're just gone."  — Leah (same utterance, continues)
-47. "You don't need them. You're trained. Stay focused."  — Ruth
-48. "Fall back to secondary positions,"  — Ruth
-49. "Stay in smoke. Use training. You've got this."  — Ruth (same utterance, continues)
-50. "Contact. North side. What the hell is that?"  — (unattributed — contact call)
-51. "New player,"  — Ruth
-52. "Enhanced. Real enhanced. Everyone stay clear."  — Ruth (same utterance, continues)
-53. "It's a goddamn tank!"  — Victor
-54. "Victor!"  — Tess
-55. "Put him down!"  — Ruth
-56. "Everyone fall back. Get clear. I'll draw him off."  — Ruth
-57. "Ruth, no—"  — Tess
-58. "That's an order."  — Ruth
-59. "Team, sound off. Everyone clear?"  — Ruth
-60. "Anyone copy?"  — Ruth
-61. "Dr. Carter,"  — the Tank
-62. "You should have stayed in the ER."  — the Tank (same utterance, continues)
-63. "How do you know my name?"  — Ruth
-64. "Everyone knows your name now."  — the Tank
-65. "Mr. Kain sends his regards. Says your research will be very valuable. Once you're out of the way."  — the Tank
-66. "You're enhanced,"  — Ruth
-67. "Real enhanced. Not like us."  — Ruth (same utterance, continues)
-68. "Finally figured that out?"  — the Tank
-69. "Your tricks stopped working the moment the EMP hit. Ours didn't."  — the Tank (same utterance, continues)
-70. "What did they give you?"  — Ruth
-71. "What kind of enhancement?"  — Ruth (same utterance, continues)
-72. "The kind that matters."  — the Tank
-73. "The kind that can't be turned off with a magnet."  — the Tank (same utterance, continues)
-74. "You know what happens next,"  — the Tank
-75. "Make it easy. Don't run."  — the Tank (same utterance, continues)
-76. "Brave,"  — the Tank
-77. "Stupid, but brave."  — the Tank (same utterance, continues)
+ 8. "Oh. Oh no."  — Tess (scrolling her phone)
+ 9. "What?"  — Victor
+10. "Wait,"  — Ben
+11. "How do they know our codenames?"  — Ben (same utterance, continues)
+12. "There's like . . . hundreds of posts using them. Battlea this, Night Knight that."  — (unattributed)
+13. "Did you—"  — (unattributed — the accusation)
+14. "What? No!"  — Tess
+15. "Gloom Girl."  — (unattributed)
+16. "I didn't leak anything,"  — Tess
+17. "I just . . . may have used them. In a few posts. Months ago. Hypothetically."  — (unattributed)
+18. "Firas is going to love this,"  — Ruth
+19. "Or kill me,"  — Tess
+20. "Everyone check in,"  — Ruth
+21. "Comms clear?"  — Ruth (same utterance, continues)
+22. "No better place than here,"  — Ruth
+23. "No better time than now."  — the team, together
+24. "Moving in,"  — Victor
+25. "Clear inside,"  — Victor
+26. "Setting up position."  — Victor (same utterance, continues)
+27. "Something's wrong,"  — Tess
+28. "There's nobody here. Warehouse is empty."  — Tess (same utterance, continues)
+29. "Abort. Everyone out. Now."  — Ruth
+30. "Too late,"  — Ben
+31. "This is CCPD. You are surrounded. Exit the building with your hands visible."  — CCPD megaphone
+32. "Shit,"  — Leah
+33. "Smoke and scatter,"  — Ruth
+34. "Formation Delta. IR goggles. Move."  — Ruth (same utterance, continues)
+35. "Anyone else losing equipment?"  — Tess
+36. "IR's down,"  — Victor
+37. "GPS too."  — Victor (same utterance, continues)
+38. "What the hell—"  — (unattributed)
+39. "Powers are down,"  — Leah
+40. "I can't—they're just gone."  — Leah (same utterance, continues)
+41. "You don't need them. You're trained. Stay focused."  — Ruth
+42. "Fall back to secondary positions,"  — Ruth
+43. "Stay in smoke. Use training. You've got this."  — Ruth (same utterance, continues)
+44. "Contact. North side. What the hell is that?"  — (unattributed — contact call)
+45. "New player,"  — Ruth
+46. "Enhanced. Real enhanced. Everyone stay clear."  — Ruth (same utterance, continues)
+47. "It's a goddamn tank!"  — Victor
+48. "Victor!"  — Tess
+49. "Put him down!"  — Ruth
+50. "Everyone fall back. Get clear. I'll draw him off."  — Ruth
+51. "Ruth, no—"  — Tess
+52. "That's an order."  — Ruth
+53. "Team, sound off. Everyone clear?"  — Ruth
+54. "Anyone copy?"  — Ruth
+55. "Dr. Carter,"  — the Tank
+56. "You should have stayed in the ER."  — the Tank (same utterance, continues)
+57. "How do you know my name?"  — Ruth
+58. "Everyone knows your name now."  — the Tank
+59. "Mr. Kain sends his regards. Says your research will be very valuable. Once you're out of the way."  — the Tank
+60. "You're enhanced,"  — Ruth
+61. "Real enhanced. Not like us."  — Ruth (same utterance, continues)
+62. "Finally figured that out?"  — the Tank
+63. "Your tricks stopped working the moment the EMP hit. Ours didn't."  — the Tank (same utterance, continues)
+64. "What did they give you?"  — Ruth
+65. "What kind of enhancement?"  — Ruth (same utterance, continues)
+66. "The kind that matters."  — the Tank
+67. "The kind that can't be turned off with a magnet."  — the Tank (same utterance, continues)
+68. "You know what happens next,"  — the Tank
+69. "Make it easy. Don't run."  — the Tank (same utterance, continues)
+70. "Brave,"  — the Tank
+71. "Stupid, but brave."  — the Tank (same utterance, continues)
 
 ---
 
@@ -153,35 +147,38 @@ enhancements are secretly Ahdia. Do not hint.**
 1. **Briefing.** Tip via Ben's precinct contact: weapons cache, warehouse
    district 7 near the docks, 2100, tight window. Ruth works schematics; plan:
    Victor+Ben loading dock, Tess+Leah roof, Ruth perimeter comms. (Spans 1–7.)
-2. **The fan beat — online only.** Tess's phone: fan posts, the codenames, her
-   sheepish confession. Ruth privately: being *named* by the people they
-   protect changes the weight of the risk — do not sentimentalize. (Spans 8–25.)
+2. **The codename beat — online only.** Tess's phone: a fan account has
+   assigned the team codenames, and Tess sheepishly confesses she's used them
+   in fan posts for months. Ruth privately: being *named* by the people they
+   protect changes the weight of the risk — do not sentimentalize. NO fan
+   gratitude reaches the team as objects or visits, and nothing public ever
+   touches the Academy (a Director excision removed exactly that beat). (Spans 8–19.)
 3. **Insertion.** Comms check; enhancement present — find Ruth's OWN image for
-   the amplified feeling. Rally cry (spans 28–29) is a tradition Firas
-   started. Entry clean. (Spans 26–32.)
+   the amplified feeling. Rally cry (spans 22–23) is a tradition Firas
+   started. Entry clean. (Spans 20–26.)
 4. **The trap.** Warehouse empty → floodlights, sirens, ~15 CCPD/SWAT units,
-   megaphone. False intel; ambush. (Spans 33–38.)
+   megaphone. False intel; ambush. (Spans 27–32.)
 5. **Trained escape.** All four out clean through smoke. Ruth's professional
-   satisfaction: training, not luck. (Spans 39–40.)
+   satisfaction: training, not luck. (Spans 33–34.)
 6. **EMP turn.** Her IR/GPS die on full charge; then the felt loss of
    enhancement; team reports it, edge of panic; Ruth steadies them: trained
-   people first, enhanced second. (Spans 41–49.)
+   people first, enhanced second. (Spans 35–43.)
 7. **The Tank.** Through the smoke; hurls a fleeing officer 15 feet into a
-   patrol car. Victor flanks — arm twisted, down (span 53 is his). Leah's
+   patrol car. Victor flanks — arm twisted, down (span 47 is his). Leah's
    perfect strikes — nothing; swatted through a pallet. Ben lifted by the
-   throat. Ruth breaks position (span 55) — he drops Ben and walks toward her.
+   throat. Ruth breaks position (span 49) — he drops Ben and walks toward her.
    VARY the three takedowns: different paragraph shapes; route one through
-   Ruth's medical eye; one can be over before she parses it. (Spans 50–55.)
+   Ruth's medical eye; one can be over before she parses it. (Spans 44–49.)
 8. **The draw.** Ruth's triage: team down + police closing = she draws him
    off. Orders the team clear over protest. Runs the quarter-mile to the
    docks; container maze; dead end at the water. Her medical eye prices the
-   water: forty degrees, ten minutes to hypothermia. (Spans 56–60.)
+   water: forty degrees, ten minutes to hypothermia. (Spans 50–54.)
 9. **Face to face.** Radio static — alone. He unmasks: a face that offers
    nothing to remember. "Dr. Carter" is the payload — her name out of that
    armor. He is a hired man making small talk, not delivering a memo. (Spans
-   61–75.)
+   55–69.)
 10. **Hard cut.** She reads her options (water vs. man), moves, is caught;
-    cornered at the edge, the windup. End mid-threat. (Spans 76–77 are his
+    cornered at the edge, the windup. End mid-threat. (Spans 70–71 are his
     last words; the final image is yours, in register.)
 
 ## STYLE — BAND TARGETS (machine-gated: every measure has a floor AND a ceiling)
