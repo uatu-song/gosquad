@@ -37,7 +37,7 @@
 | Character | File | Role | Key Arc |
 |-----------|------|------|---------|
 | **Bellatrix/Geneva** | `Bellatrix_Geneva_Steward.md` | Clone watcher | Hidden orchestrator |
-| **Harding Kain** | `Harding_Kain_Steward.md` | Ascending villain | Mayor → President-elect |
+| **Harding Kain** | `Harding_Kain_Steward.md` | Ascending villain | Diamond magnate → President-elect |
 | **Eidolon** | `Eidolon_Steward.md` | Fear weapon | Electoral manipulation |
 
 ---

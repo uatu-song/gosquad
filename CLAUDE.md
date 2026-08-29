@@ -98,7 +98,7 @@ Templates are in `_tools/agents/templates/production_crew/`. Each YAML contains 
 | Leta Owolowo | Targeted → killed (Ch23) |
 | Korede Owolowo | Observer → radicalized |
 | Bellatrix/Geneva | Hidden orchestrator |
-| Harding Kain | Mayor → President-elect |
+| Harding Kain | Diamond magnate → President-elect (ruled 2026-08-29; "Mayor" was drift) |
 | Eidolon | Fear amplification (AMPLIFIES only, cannot create) |
 | Ryu Matsuda | Ethical erosion |
 | Harriet Bourn | Institutional authority → defector (SHE/HER) |

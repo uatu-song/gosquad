@@ -4,6 +4,27 @@
 
 ---
 
+## 2026-08-29 — Kain is a diamond magnate; "Mayor" is drift
+
+**Ruling, verbatim:** "Kain is a diamond magnate who is running for President,
+not Mayor. The Mayor is a drift I didn't catch."
+
+Resolves the deferred cross-book flag from the ch1-11 vetting the same day.
+The first edition already agrees: Kain is a presumptive PRESIDENTIAL nominee
+in CH09, owns the Caledonia Harbor warehouse personally, and the TRIOMF crate
+he traffics bears a DIAMOND logo (CH06) — the magnate's mark, hiding in the
+prose all along.
+
+Drift sites corrected: CLAUDE.md character table, STEWARD_INDEX.md, and a
+banner on Harding_Kain_Steward.md (body left as quarry — every "mayor" in it
+reads as the magnate's civic ascent). 7_characters/profiles/Harding_Kain_
+EXTENDED.md:365 ("wins mayoral race (or governorship)") left as archive
+planning; flagged here so nobody imports it.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — ch1–11 vetting rulings: corpus CLEARED for cold-agent reading
 
 Nine rulings taken one at a time, verbatim where the Director wrote free text:

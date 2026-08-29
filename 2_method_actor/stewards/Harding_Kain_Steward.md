@@ -1,7 +1,13 @@
 # Harding Kain - Character Steward
 
 **Role:** Ascending Villain
-**Book 2 Arc:** Mayor → President-Elect
+**Book 2 Arc:** Diamond magnate → President-Elect
+
+> **DRIFT CORRECTION (Director ruling 2026-08-29):** "Kain is a diamond magnate
+> who is running for President, not Mayor. The Mayor is a drift I didn't catch."
+> Every "mayor" below is that drift — read it as the magnate's civic ascent.
+> First-edition receipts: presumptive presidential nominee in Book 1 (CH09),
+> and the TRIOMF crate bears a DIAMOND logo (CH06).
 **Arc Type:** authoritarian_ascent
 
 ---
