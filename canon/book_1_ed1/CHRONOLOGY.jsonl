@@ -1,0 +1,8 @@
+{"id": "B1C-001-montana", "event": "Montana trip; parents vanish at the campsite. Ahdia ~7, Firas ~5 per CH02", "when": "T-minus 'over ten years' from CH03", "precision": "canonical-but-contested"}
+{"id": "B1C-002-firas-school", "event": "Firas opens the Parkour Instructional School ~1.5 years after the disappearance", "when": "CH04", "precision": "canonical-but-contested"}
+{"id": "B1C-003-gosquad-founded", "event": "Go Squad formed; has run ~4 years as of CH04", "when": "CH04", "precision": "canonical"}
+{"id": "B1C-004-ch1-night", "event": "CH01: Firas's solo patrol (64th engagement); dinner plans with Ruth+Ahdia set for the NEXT night", "when": "CH01", "precision": "canonical"}
+{"id": "B1C-005-ch3-night", "event": "CH03: the dinner Firas misses; Ahdia finds him shot that night; CH04-05 the following day", "when": "CH03-05", "precision": "canonical"}
+{"id": "B1C-006-warehouse-night", "event": "CH06-08: Ahdia+Ruth enter the warehouse the night after Firas wakes; Ahdia shot; RPG; fire; translocation", "when": "CH06-08", "precision": "canonical"}
+{"id": "B1C-007-ch9-night", "event": "CH09-11: 'Two nights after the warehouse' \u2014 traffic stop, chases, powers emerge", "when": "CH09-11", "precision": "canonical"}
+{"id": "B1C-008-election", "event": "Presidential election upcoming in November; Kain presumptive nominee", "when": "CH09", "precision": "canonical"}
