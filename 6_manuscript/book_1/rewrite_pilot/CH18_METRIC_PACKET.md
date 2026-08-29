@@ -185,49 +185,53 @@ enhancements are secretly Ahdia. Do not hint.**
     cornered at the edge, the windup. End mid-threat. (Spans 76–77 are his
     last words; the final image is yours, in register.)
 
-## STYLE — MEASURED TARGETS (the draft is gated on these numbers)
+## STYLE — BAND TARGETS (machine-gated: every measure has a floor AND a ceiling)
 
-Derived from 23,488 words of the author's own prose. These are not preferences.
+Two earlier cold passes on other chapters killed the fragment disease and then
+overshot the other way — narration sentences half again the author's length,
+comma-saturated, simile-heavy. The gate now measures NARRATION ONLY (the frozen
+dialogue is not yours to control) and rejects both directions. The author's
+narration is the target, and its signature is ALTERNATION, not length.
 
 **Length: 1,800–2,200 words.**
 
-STRUCTURE — the primary signature is sentence-length SPREAD:
-- ≥ 20% of sentences run 20+ words; ≥ 7% run 30+ words. Long sentences are
-  load-bearing: accumulation, qualification, a mind running ahead of events.
-- Median sentence ≥ 10 words; mean ≥ 12.
-- Short sentences (≤4 words) ≤ 27 per 1,000 words. They exist — 18% of the
-  author's prose — but as punctuation, not as default.
-- Paragraph mean ≥ 25 words. Paragraphs carry mass; one-line paragraphs are
-  rare and earned.
+NARRATION SENTENCE RHYTHM — the binding section. Bands are hard gate limits;
+the number in parentheses is the author's own value, your actual target:
+- mean 11–20 words (15.8) · median 9–17 (13)
+- 25–50% of narration sentences UNDER 10 words (35.9) — a third of the
+  author's narration is short. Your narration must itself breathe: statement,
+  qualification, landing. Do not write wall-to-wall long sentences.
+- 20–42% at 20+ words (31.5) · 6–17% at 30+ (10.9) — the 30+ sentence is a
+  once-a-paragraph event, not the default unit.
+- short narration sentences (≤4 words): 3–12 per 1K of the whole chapter — they exist (15% of the
+  author's narration) as landings and pivots, not as default.
 
-PUNCTUATION per 1,000 words:
-- Em dash ≤ 3 TOTAL per 1,000 (the author: 1.3). Almost never reach for it.
-- Commas are the author's native connective (~60/1K) — long sentences are
-  comma-built, not dash-built.
-- Ellipses (~3/1K) and exclamation marks (~5/1K) are PERMITTED and normal.
+NARRATION PUNCTUATION per 1,000 narration words:
+- commas 40–72 (55). This is a CEILING too: the author's long sentences are
+  built from clauses joined by "and", by periods that split a thought in two,
+  and by commas — in balance. If every long sentence is a comma chain, you
+  will fail this band.
+- em dash 0–3 (1.1). Almost never.
+- SIMILE BUDGET: "like" 1.5–5.5 (3.7) — at most about one simile per 200
+  words of narration. Both earlier passes ran 6.7 and failed. When you reach
+  for "like a ...", the second reach in any scene is the one to cut; prefer
+  the literal concrete detail.
+- -ly adverbs 12–27 (19.5). This has a FLOOR: do not strip adverbs to sound
+  literary. The author uses them freely.
 
-DICTION — the author is NOT a minimalist. All of these are normal at these
-rates and you must not suppress them: -ly adverbs (~18/1K), was/were (~22/1K),
-"It was X" (~0.9/1K), "there was/were" (~0.6/1K). Do not "polish" toward
-leaner prose; that is the disease, not the cure.
+PARAGRAPHS: mean 22–45 words (32.9).
 
-TAGS: said-share ~34%, across a varied palette (asked, replied, called,
-yelled, agreed, responded, demanded...). Adverb-on-tag ("said quietly")
-≤ 1 in the whole chapter — prefer an action beat.
+TAGS: said-share ~34% across a varied palette (asked, replied, called, yelled,
+agreed, responded, demanded...). Adverb-on-tag ("said quietly") ≤ 1 total.
 
-HARD BANS (0 occurrences):
-- anaphoric "Not X. Not Y." — the author never writes it
-- "began to" / "started to" — the author never writes it
-- "in her/his chest" and chest-as-feeling-container generally (≤1 "chest" total)
-- "X's voice was..." / "voice came out..."
-- "the particular"
-- Closing epigrams: at most 3 landed aphoristic closers in the chapter, never
-  the same syntactic shape twice. Default: end paragraphs on the concrete
-  image with nothing appended.
+HARD BANS (zero occurrences): anaphoric "Not X. Not Y." · "began to"/"started
+to" · "X's voice was"/"voice came out" · "the particular" · chest as a
+feeling-container ("chest" at most 1 use).
 
-REPETITION: no 4-word phrase may appear 3+ times. Vary your structures — if
-you notice a shape working (a takedown pattern, a sensory formula), the second
-use is the last.
+REPETITION: no 4-word phrase 3+ times; no 5-word phrase 3+ times. If a shape
+works once (a takedown pattern, a freeze image, a sensory formula), the second
+use is the last. Closing epigrams: at most 3, never the same syntactic shape
+twice; default is ending on the concrete image.
 
 ## REGISTER EXEMPLARS — the author's own prose (this is the target texture)
 

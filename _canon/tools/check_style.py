@@ -96,7 +96,13 @@ def main():
     if W == 0:
         print('✗ empty draft — refusing to report clean'); return 1
     narr, dial, _ = classify(flat)
-    ntext = ' '.join(narr)
+    # Punctuation rates must count only characters the agent WROTE. A short
+    # frozen span with an attached tag ("Hey, hey--" she said, close) classifies
+    # as a narration sentence, and its frozen dashes then counted against the
+    # draft — CH24 v2 failed the em band on exactly this with zero dashes of
+    # its own narration. Mask quote interiors before counting marks; sentence
+    # LENGTHS stay unmasked (boundaries are real either way).
+    ntext = re.sub(r'"[^"]*"', ' ', ' '.join(narr))
     NW = max(len(ntext.split()), 1)
     NL = [len(s.split()) for s in narr]
     results = []

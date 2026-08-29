@@ -176,27 +176,53 @@ yet — nothing in this chapter may reveal or hint at that mechanism.
 - The vast hallway entity and the cold "Wake up" voice are left unexplained.
   Do not interpret them, name them, or connect them to anything.
 
-## STYLE — MEASURED TARGETS (machine-gated before any human reads it)
+## STYLE — BAND TARGETS (machine-gated: every measure has a floor AND a ceiling)
+
+Two earlier cold passes on other chapters killed the fragment disease and then
+overshot the other way — narration sentences half again the author's length,
+comma-saturated, simile-heavy. The gate now measures NARRATION ONLY (the frozen
+dialogue is not yours to control) and rejects both directions. The author's
+narration is the target, and its signature is ALTERNATION, not length.
 
 **Length: 1,600–2,000 words.**
 
-- Short sentences (≤4 words): ≤ 14.7 per 1,000 words — THE BINDING TARGET for
-  this chapter. The dream and the dosing will tempt staccato; resist it. The
-  author renders speed with long accelerating sentences, not chopped ones.
-- ≥ 20% of sentences 20+ words; ≥ 7% at 30+. Median ≥ 10, mean ≥ 12.
-- Em dash ≤ 3 per 1,000 words total. Commas are the native connective (~60/1K).
-- Ellipses (~3/1K) and exclamation marks are permitted and normal.
-- Do NOT suppress: -ly adverbs (~18/1K), was/were (~22/1K), "It was X",
-  "there was". Leaner is not better here; it is the disease.
-- Tags: said-share ~34% across a varied palette; adverb-on-tag ≤ 1 total.
-- HARD BANS (zero): anaphoric "Not X. Not Y."; "began to"/"started to";
-  "X's voice was"/"voice came out"; "the particular"; chest as a
-  feeling-container. "Chest" is permitted ONLY as the Seed's (or the Heart's)
-  literal anatomical seat, at most 4 uses.
-- Repetition: no 4-word phrase 3+ times. If a shape works once (a freeze
-  image, a dose beat), the second use is the last.
-- Closing epigrams: at most 3, never the same syntactic shape twice; default
-  is ending on the concrete image.
+NARRATION SENTENCE RHYTHM — the binding section. Bands are hard gate limits;
+the number in parentheses is the author's own value, your actual target:
+- mean 11–20 words (15.8) · median 9–17 (13)
+- 25–50% of narration sentences UNDER 10 words (35.9) — a third of the
+  author's narration is short. Your narration must itself breathe: statement,
+  qualification, landing. Do not write wall-to-wall long sentences.
+- 20–42% at 20+ words (31.5) · 6–17% at 30+ (10.9) — the 30+ sentence is a
+  once-a-paragraph event, not the default unit.
+- short narration sentences (≤4 words): 3–12 per 1K of the whole chapter — they exist (15% of the
+  author's narration) as landings and pivots, not as default.
+
+NARRATION PUNCTUATION per 1,000 narration words:
+- commas 40–72 (55). This is a CEILING too: the author's long sentences are
+  built from clauses joined by "and", by periods that split a thought in two,
+  and by commas — in balance. If every long sentence is a comma chain, you
+  will fail this band.
+- em dash 0–3 (1.1). Almost never.
+- SIMILE BUDGET: "like" 1.5–5.5 (3.7) — at most about one simile per 200
+  words of narration. Both earlier passes ran 6.7 and failed. When you reach
+  for "like a ...", the second reach in any scene is the one to cut; prefer
+  the literal concrete detail.
+- -ly adverbs 12–27 (19.5). This has a FLOOR: do not strip adverbs to sound
+  literary. The author uses them freely.
+
+PARAGRAPHS: mean 22–45 words (32.9).
+
+TAGS: said-share ~34% across a varied palette (asked, replied, called, yelled,
+agreed, responded, demanded...). Adverb-on-tag ("said quietly") ≤ 1 total.
+
+HARD BANS (zero occurrences): anaphoric "Not X. Not Y." · "began to"/"started
+to" · "X's voice was"/"voice came out" · "the particular" · chest as a
+feeling-container ("chest" only as the Seed's/Heart's literal anatomical seat, at most 4 uses).
+
+REPETITION: no 4-word phrase 3+ times; no 5-word phrase 3+ times. If a shape
+works once (a takedown pattern, a freeze image, a sensory formula), the second
+use is the last. Closing epigrams: at most 3, never the same syntactic shape
+twice; default is ending on the concrete image.
 
 ## REGISTER EXEMPLAR — the author's own prose (target texture)
 
