@@ -1,12 +1,37 @@
 #!/usr/bin/env python3
-"""Build Book 1 EPUB from manuscript text file."""
+"""Build Book 1 EPUB from the CLEAN first-edition chapter files.
+
+Source: 6_manuscript/book_1/first_edition_clean/ (registered as `book_1_clean`,
+the measurement ground truth) — NOT book1_manuscript.txt, which is the damaged
+PDF extraction this script used to read (318 running headers, 418 broken words,
+paragraph structure collapsed).
+
+The old GoSquad_Book1.epub is left in place: it is the stated ancestor of
+6_manuscript/book_1/first_edition/ (registered as `book_1_ed1`), and quarry
+lineage is translated on ingest, never overwritten.
+"""
 
 import re
 import html
+from pathlib import Path
+
 from ebooklib import epub
 
-INPUT = '/workspaces/gosquad/6_manuscript/book_1/book1_manuscript.txt'
-OUTPUT = '/workspaces/gosquad/6_manuscript/book_1/GoSquad_Book1.epub'
+HERE = Path(__file__).resolve().parent
+INPUT_DIR = HERE / 'first_edition_clean'
+OUTPUT = HERE / 'GoSquad_Book1_clean.epub'
+
+CHAPTER_GLOB = 'chapter_*.txt'
+CHAPTER_NUM_RE = re.compile(r'chapter_(\d+)')
+
+# Scene-break markers used in the clean source. Both forms appear; they mean
+# the same thing (30 '---' lines and a number of bare '#' lines).
+SCENE_BREAK_RE = re.compile(r'^\s*(?:-{3,}|#)\s*$')
+# The per-file title header, e.g. "# Chapter 7". Must be tested BEFORE the
+# scene-break rule, which would otherwise swallow it.
+TITLE_RE = re.compile(r'^\s*#\s*Chapter\s+(\d+)\s*$', re.IGNORECASE)
+# The provenance comment each clean chapter carries.
+COMMENT_RE = re.compile(r'<!--.*?-->', re.DOTALL)
 
 TITLE = 'Go Squad'
 AUTHOR = 'J. S. Vaughn'
@@ -23,78 +48,76 @@ p.scene-break { text-indent: 0; text-align: center; margin: 1.5em 0; }
 '''
 
 
-def load_manuscript(path):
-    with open(path, 'r', encoding='utf-8') as f:
-        return f.read()
+def load_chapters(input_dir):
+    """Read the clean per-chapter files, ordered by chapter number.
 
-
-def split_chapters(text):
-    """Split manuscript into chapters using the header pattern."""
-    # Pattern: "Vaughn / Go Squad / PAGE Chapter N"
-    pattern = r'Vaughn / Go Squad / \d+ Chapter (\d+) '
-    splits = list(re.finditer(pattern, text))
+    Each chapter is returned as (num, blocks), where blocks is a list of
+    ('p', text) and ('break', None) tuples. In the clean source ONE LINE IS ONE
+    PARAGRAPH -- there are no blank-line paragraph separators (2 blank lines per
+    file, both around the provenance comment), so splitting on double newlines
+    the way the old script did would collapse each chapter into a single <p>.
+    """
+    paths = sorted(
+        input_dir.glob(CHAPTER_GLOB),
+        key=lambda p: int(CHAPTER_NUM_RE.search(p.name).group(1)),
+    )
 
     chapters = []
-    for i, match in enumerate(splits):
-        ch_num = int(match.group(1))
-        # Content starts after the header
-        start = match.end()
-        end = splits[i + 1].start() if i + 1 < len(splits) else len(text)
-        content = text[start:end].strip()
-        # Remove trailing manuscript headers (orphan "Vaughn / Go Squad / N" lines)
-        content = re.sub(r'\s*Vaughn / Go Squad / \d+\s*$', '', content)
-        chapters.append((ch_num, content))
+    for path in paths:
+        num = int(CHAPTER_NUM_RE.search(path.name).group(1))
+        text = COMMENT_RE.sub('', path.read_text(encoding='utf-8'))
+
+        blocks = []
+        for line in text.splitlines():
+            if not line.strip():
+                continue
+            if TITLE_RE.match(line):          # the "# Chapter N" header
+                continue
+            if SCENE_BREAK_RE.match(line):
+                blocks.append(('break', None))
+            else:
+                blocks.append(('p', line.strip()))
+
+        # A scene break at either edge is an artifact, not a beat.
+        while blocks and blocks[0][0] == 'break':
+            blocks.pop(0)
+        while blocks and blocks[-1][0] == 'break':
+            blocks.pop()
+
+        chapters.append((num, blocks))
 
     return chapters
 
 
-def text_to_html(text):
-    """Convert plain text paragraphs to HTML."""
-    # The manuscript uses double-newlines or single-newlines for paragraph breaks
-    text = html.escape(text)
-
-    # Normalize line breaks - split on double newlines first
-    paragraphs = re.split(r'\n\s*\n', text)
-
-    html_parts = []
-    for para in paragraphs:
-        para = para.strip()
-        if not para:
-            continue
-        # Check for scene breaks (lines that are just whitespace or dashes/asterisks)
-        if re.match(r'^[\s\-\*#=]+$', para):
-            html_parts.append('<p class="scene-break">* * *</p>')
+def blocks_to_html(blocks):
+    parts = []
+    for kind, value in blocks:
+        if kind == 'break':
+            parts.append('<p class="scene-break">* * *</p>')
         else:
-            # Within a paragraph, replace single newlines with spaces
-            para = re.sub(r'\s*\n\s*', ' ', para)
-            # Clean up multiple spaces
-            para = re.sub(r' {2,}', ' ', para)
-            html_parts.append(f'<p>{para}</p>')
-
-    return '\n'.join(html_parts)
+            parts.append(f'<p>{html.escape(value)}</p>')
+    return '\n'.join(parts)
 
 
 def build_epub(chapters):
     book = epub.EpubBook()
 
-    # Metadata
-    book.set_identifier('gosquad-book1-arc')
+    book.set_identifier('gosquad-book1-clean')
     book.set_title(TITLE)
     book.set_language(LANG)
     book.add_author(AUTHOR)
     book.add_metadata('DC', 'description',
-                      'Advanced Reader Copy — Not for distribution')
+                      'Advanced Reader Copy — Not for distribution. '
+                      'Built from the clean first-edition source.')
 
-    # CSS
     style = epub.EpubItem(
         uid='style',
         file_name='style/default.css',
         media_type='text/css',
-        content=CSS.encode('utf-8')
+        content=CSS.encode('utf-8'),
     )
     book.add_item(style)
 
-    # Title page
     title_html = f'''<html><head><link rel="stylesheet" href="style/default.css"/></head>
 <body>
 <div class="title-page">
@@ -109,52 +132,62 @@ def build_epub(chapters):
     title_page.add_item(style)
     book.add_item(title_page)
 
-    # Chapters
     epub_chapters = [title_page]
     toc = []
 
-    for ch_num, content in chapters:
-        ch_title = f'Chapter {ch_num}'
+    for num, blocks in chapters:
+        ch_title = f'Chapter {num}'
         ch = epub.EpubHtml(
             title=ch_title,
-            file_name=f'chapter_{ch_num:02d}.xhtml',
-            lang=LANG
+            file_name=f'chapter_{num:02d}.xhtml',
+            lang=LANG,
         )
-        body_html = text_to_html(content)
         ch.content = f'''<html><head><link rel="stylesheet" href="style/default.css"/></head>
 <body>
 <h1>{ch_title}</h1>
-{body_html}
+{blocks_to_html(blocks)}
 </body></html>'''.encode('utf-8')
         ch.add_item(style)
         book.add_item(ch)
         epub_chapters.append(ch)
         toc.append(ch)
 
-    # Table of contents
     book.toc = toc
-
-    # Navigation
     book.add_item(epub.EpubNcx())
     book.add_item(epub.EpubNav())
-
-    # Spine
     book.spine = ['nav'] + epub_chapters
 
-    epub.write_epub(OUTPUT, book, {})
+    epub.write_epub(str(OUTPUT), book, {})
     return OUTPUT
 
 
 def main():
-    text = load_manuscript(INPUT)
-    chapters = split_chapters(text)
-    print(f'Found {len(chapters)} chapters')
-    for ch_num, content in chapters:
-        words = len(content.split())
-        print(f'  Chapter {ch_num}: ~{words} words')
+    if not INPUT_DIR.is_dir():
+        raise SystemExit(f'REFUSING TO BUILD: source directory missing: {INPUT_DIR}')
+
+    chapters = load_chapters(INPUT_DIR)
+
+    # Zero reads as clean is the trap this repo's gates exist to avoid.
+    if not chapters:
+        raise SystemExit(f'REFUSING TO BUILD: no chapters matched {CHAPTER_GLOB} in {INPUT_DIR}')
+    empty = [n for n, b in chapters if not b]
+    if empty:
+        raise SystemExit(f'REFUSING TO BUILD: chapters parsed with zero content: {empty}')
+
+    total_words = 0
+    total_breaks = 0
+    for num, blocks in chapters:
+        words = sum(len(v.split()) for k, v in blocks if k == 'p')
+        breaks = sum(1 for k, _ in blocks if k == 'break')
+        paras = sum(1 for k, _ in blocks if k == 'p')
+        total_words += words
+        total_breaks += breaks
+        print(f'  Chapter {num:>2}: {paras:>3} paras, {breaks} breaks, ~{words} words')
+
     output = build_epub(chapters)
-    total_words = sum(len(c.split()) for _, c in chapters)
-    print(f'\nTotal: ~{total_words} words')
+    print(f'\nChapters: {len(chapters)}')
+    print(f'Scene breaks: {total_breaks}')
+    print(f'Total: ~{total_words} words')
     print(f'EPUB written to: {output}')
 
 
