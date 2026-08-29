@@ -127,7 +127,7 @@ are secretly Ahdia.** Do not hint.
   editorialize that he's wrong.
 
 - Codenames (public fan-assigned thread is a beat): BATTLEA (Leah), NIGHT
-  KNIGHT (Ben), CRIMSON SABLE (Tess), GLOOM GIRL (Ahdia), NIGHTINGALE (Ruth)
+  KNIGHT (Ben), CRIMSON SABLE (Victor), GLOOM GIRL (Tess), NIGHTINGALE (Ruth) [corrected per Director ruling 2026-08-29; Ahdia has no Go Squad codename]
 - Rally cry, verbatim, as tradition Firas started: "No better place than
   here." → team: "No better time than now."
 - The Tank: seven-foot armored figure; superhuman strength is REAL enhancement

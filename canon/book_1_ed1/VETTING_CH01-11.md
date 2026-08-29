@@ -10,8 +10,14 @@ This file is the part that needs YOU: every finding below either contradicts
 locked canon, contradicts itself, or contradicts the canon layer. Crew fixes
 nothing here without a ruling.
 
-**Once items 1–3 are ruled, ch1–11 is cleared as cold-agent reading material.**
-Items 4–8 are wobbles a reader can survive; rule them at leisure.
+**STATUS: CLEARED 2026-08-29.** All eight findings ruled the same day, applied
+to the clean source, and logged. ch1–11 is approved cold-agent reading
+material. Rulings in brief: codenames per the prose + Ahdia=Auerbach
+(CADENS-given, no squad codename) · disappearance 15+ years ago · Sable's wife
+excised · rally cry standardized · collectors not engineers · Kain→Kain ·
+judo · exactly six members · Whitford father-link is real, explicit in B2
+prose (not lost to drift), and stays unstated in ch1–11 as dramatic irony.
+Kain's arc reconciliation deferred to the rebuild.
 
 ---
 

@@ -4,6 +4,49 @@
 
 ---
 
+## 2026-08-29 — ch1–11 vetting rulings: corpus CLEARED for cold-agent reading
+
+Nine rulings taken one at a time, verbatim where the Director wrote free text:
+
+1. **Codenames:** the prose map stands — SABLE=Victor, GLOOM GIRL=Tess,
+   BATTLEA=Leah, NIGHT KNIGHT=Ben, NIGHTINGALE=Ruth — "but for Ahdia, her
+   codename is given to her by CADENS: Auerbach." Ahdia has NO Go Squad
+   codename. CONSTRAINTS.yaml and the July packet corrected; codenames are
+   INTERNAL (CH01/CH04), leaked by Tess, repeated by the fan account.
+2. **Timeline:** "Disappearance was ~15+ years ago." CH03 → "over fifteen
+   years ago"; CH04's broken 1.5-year school anchor removed. Residue noted,
+   unforced: CH04's four-year squad age implies ~18 years; coherent.
+3. **Sable's wife:** excise — "no dead wife, ever." CH04 now: "Sable never
+   shares his reasons and that's all we know about him."
+4. **Rally cry:** "no better place than here, no better time than now" —
+   CH07's TIME/here variant fixed (Director-ruled dialogue edit).
+5. **Parents:** "Collectors only — CH03 lines are wrong." Engineer
+   attributions removed; Ahdia's own engineering ambition stands.
+6. **"Harding Kaine"** → Kain (Director-ruled dialogue edit).
+7. **Martial arts:** "Judo — CH04 is the error." Fixed.
+8. **Team size:** "Exactly six — CH04 overstates." The six wear multiple
+   hats; agents never invent a seventh member.
+9. **Kain's B1 presidential candidacy vs the Mayor→President table:**
+   "Defer — flag for the rebuild." Agents state only what ch1–11 states.
+
+**Whitford:** Director: "I wrote a scene that explicitly states it but I guess
+drift happened between versions without me knowing." Hunted; NOT lost — the
+explicit statement lives in B2 prose (ch15 "her father—Chief Whitford—";
+ch23), and B1 CH14 names "Gloom Girl. Tess Whitford." Within ch1–11 the link
+is deliberate dramatic irony; author-level knowledge agents must not surface.
+
+**Applied:** 8 prose edits across CH03/04/07/09 (two of them Director-ruled
+dialogue edits), CONSTRAINTS.yaml + July packet corrected, ledgers updated
+(45 facts), epub rebuilt, VETTING_CH01-11.md marked CLEARED.
+
+**Packet model change this enables:** cold agents writing chapter N now read
+vetted ch1..N-1 instead of writing blind — the fix for the van-class and
+Academy-class context errors.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — Canon: the team does not drive
 
 **Ruling, verbatim:** "They're parkour masters. They don't drive around. They
