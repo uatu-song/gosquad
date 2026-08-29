@@ -4,6 +4,57 @@
 
 ---
 
+## 2026-08-29 — All books curly; typography gate now ENFORCING
+
+**Ruling, verbatim:** **"No straight quotes. All curly. Fix it."**
+
+Asked whether each book should get its own quote setting so the unruled quarry
+could stay straight and quiet, the Director ruled the other way: convert
+everything. So the per-book override was NOT built — there is nothing left for
+it to do.
+
+**Converted 2026-08-29** (punctuation only; letters verified unchanged in all 83
+files by stripping every quote/ellipsis/asterisk form and comparing the rest):
+
+    book_1_clean  first_edition_clean/  30 ch   4,336 straight "
+    book_1_ed1    first_edition/        30 ch   4,394 straight "
+    book_2        chapters_split/       23 ch   4,140 straight "
+
+`typography.enforce` is now **true**. All three corpora pass.
+
+**Converter defect found and fixed mid-pass.** Per-line alternation inverts an
+entire line once the source has unbalanced quotes — which damaged
+first_edition/ch15, whose collapsed paragraphs leave quotes unpaired within a
+line (`The fabric is—“ He gestured at it. ”Here...`). Context now decides where
+it can (a quote after whitespace opens; a quote before whitespace closes) and
+alternation only breaks genuine ties. Book 1's clean corpus was unaffected
+either way, but was reconverted under the fixed rule for consistency.
+
+**Gate rule corrected, NOT the prose.** `check_typography.py`'s `(?<=\S)—“`
+flagged two sites that are correct: ch14's `“Oh shit!” But also—“Yes!”` — the
+Both/And device quoted verbatim at GOSQUAD_PROSE_VOICE.md:141 — and ch16's
+`district—“probable cause”`. A dash before an opening quote is legitimate when
+that quote closes later on the line. The rule now requires no closer before it
+fires. Guardrail 1: an irregularity with a job is a device.
+
+**Genuine residue removed:** 4 stray `**` markers on structural lines in book_2
+ch21/ch23 (`**END CHAPTER 13**`). always_banned under any house style.
+
+**16 SOURCE-DEFECT LINES surfaced, NOT fixed** — quotes do not balance in the
+ORIGINAL, so facing there is a guess:
+  - `book_2/chapter_13` lines 64, 72 — doubled quote marks (`""`) in the draft.
+  - `book_1_ed1` — 14 lines, all collapsed-paragraph damage from the PDF
+    extraction. Facing affects NO measurement: every tool except
+    check_typography normalises curly→straight before matching.
+
+**Also noticed, unruled:** book_2's `chapter_21.txt` ends "Continues in Chapter
+12" and `chapter_23.txt` ends "END CHAPTER 13" — legacy numbering inside the
+prose files, off by nine from their filenames.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — Pass 6 target: per-chapter floors, dialogue frozen
 
 **Rulings, verbatim, in the order given:**

@@ -5,71 +5,71 @@
 
 ---
 
-Tess's apartment looked like a conspiracy theorist's fever dream, which was either appropriate or deeply ironic given the circumstances.
+Tess’s apartment looked like a conspiracy theorist’s fever dream, which was either appropriate or deeply ironic given the circumstances.
 
 Three monitors. Energy drink cans forming a small fortress around her keyboard—Red Bull, Monster, something Korean that Korede had recommended and tasted like liquid regret. Timestamp spreadsheets covered every available surface.
 
-"Okay, you little bot bastards," she muttered, fingers flying. "Where'd you come from?"
+“Okay, you little bot bastards,” she muttered, fingers flying. “Where’d you come from?”
 
-The bot network was sophisticated. Not the usual Russian troll farm garbage—this was domestic, well-funded, and *fast*. Thousands of accounts pushing the same talking points within minutes of each other. "Domestic terrorism." "Radical elements." "Law and order." Kain's phrases, amplified across every platform simultaneously.
+The bot network was sophisticated. Not the usual Russian troll farm garbage—this was domestic, well-funded, and *fast*. Thousands of accounts pushing the same talking points within minutes of each other. “Domestic terrorism.” “Radical elements.” “Law and order.” Kain’s phrases, amplified across every platform simultaneously.
 
-She'd been at this for hours. Since the team scattered. Since Geneva Windrow's hand stopped reaching.
+She’d been at this for hours. Since the team scattered. Since Geneva Windrow’s hand stopped reaching.
 
 The sound of a key in the lock made her flinch. The door opened.
 
-"...Tess?"
+“. . . Tess?”
 
-Leta stood in the doorway, bag over her shoulder, taking in the scene—girlfriend at computer, energy drink graveyard, the particular chaos of someone who hadn't moved in hours.
+Leta stood in the doorway, bag over her shoulder, taking in the scene—girlfriend at computer, energy drink graveyard, the particular chaos of someone who hadn’t moved in hours.
 
-"You're *home*."
+“You’re *home*.”
 
 The way she said it. Like finding water in a desert.
 
-"Hey! Yeah, I'm—" Tess spun her chair around, trying for casual. "Work thing got canceled. Last minute."
+“Hey! Yeah, I’m—” Tess spun her chair around, trying for casual. “Work thing got canceled. Last minute.”
 
 Leta dropped her bag by the door, moving toward her. The kind of smile that made secrets feel heavier.
 
-"I can't remember the last time you were here when I got home. This is—"
+“I can’t remember the last time you were here when I got home. This is—”
 
 She stopped. Looking at the monitors. The energy drink civilization.
 
-"Baby, have you slept?"
+“Baby, have you slept?”
 
-"Sleep is for people who aren't fueled by spite and artificial taurine."
+“Sleep is for people who aren’t fueled by spite and artificial taurine.”
 
-Tess stood, moving to intercept before Leta got a good look at the screens. "How was the meeting?"
+Tess stood, moving to intercept before Leta got a good look at the screens. “How was the meeting?”
 
 Leta let herself be redirected. Tired. Leaning into Tess slightly, and god, she smelled like coffee and cold air and the specific exhaustion of people who cared too much about a world that kept breaking.
 
-"Heavy. Everyone's processing Geneva. Korede's a mess—he was at the riot, you know? And now this." She shook her head. "He keeps saying he should've done more. Should've helped more people get out."
+“Heavy. Everyone’s processing Geneva. Korede’s a mess—he was at the riot, you know? And now this.” She shook her head. “He keeps saying he should’ve done more. Should’ve helped more people get out.”
 
-*Korede ran toward tear gas like an idiot and almost got himself killed. Ahdia dragged him out. He's alive because of us. He'll never know that.*
+*Korede ran toward tear gas like an idiot and almost got himself killed. Ahdia dragged him out. He’s alive because of us. He’ll never know that.*
 
-"That's... yeah. That's a lot." Tess kept her voice level. "Is he okay?"
+“That’s . . . yeah. That’s a lot.” Tess kept her voice level. “Is he okay?”
 
-"Physically? Fine. But he's been beating himself up since the riot. Survivor's guilt, I think."
+“Physically? Fine. But he’s been beating himself up since the riot. Survivor’s guilt, I think.”
 
 Leta moved toward the bedroom, then stopped. Turned back.
 
-"The community's organizing a vigil. Tomorrow night. Geneva deserves—" She paused. "You should come. I know you're not usually... but it would mean a lot."
+“The community’s organizing a vigil. Tomorrow night. Geneva deserves—” She paused. “You should come. I know you’re not usually . . . but it would mean a lot.”
 
 *Tomorrow night I might be on a rooftop watching for threats at whatever event Ruth calls. Tomorrow night I might be tracing these bots to whoever killed Geneva. Tomorrow night I might be anywhere except where my girlfriend needs me to be.*
 
-"I'll try," Tess said. Soft. Honest, for once. "I really will."
+“I’ll try,” Tess said. Soft. Honest, for once. “I really will.”
 
 Leta searched her face. Deciding to believe it.
 
-"Come to bed? It's late."
+“Come to bed? It’s late.”
 
-"I just need to finish something. Work stuff. Ten minutes."
+“I just need to finish something. Work stuff. Ten minutes.”
 
-The sigh of someone who'd heard "ten minutes" before. "Ten minutes."
+The sigh of someone who’d heard “ten minutes” before. “Ten minutes.”
 
 She moved to the bedroom. Paused at the door.
 
-"I'm glad you're home, Tess."
+“I’m glad you’re home, Tess.”
 
-"Me too."
+“Me too.”
 
 *Liar. Liar liar liar.*
 
@@ -79,31 +79,31 @@ Right. Bot bastards.
 
 She traced them back. VPNs, proxy servers, shell accounts—someone had spent real money on obfuscation.
 
-But money couldn't hide everything.
+But money couldn’t hide everything.
 
 The activation timestamps. That was the key. When did these accounts start pushing the narrative?
 
 She pulled the data. Sorted by time.
 
-First wave: 6:47 PM. "Radical elements gathering." "Potential violence." "Law and order at risk."
+First wave: 6:47 PM. “Radical elements gathering.” “Potential violence.” “Law and order at risk.”
 
 She checked her notes. Geneva was shot at 7:23 PM.
 
 The bots were pushing fear narratives about the memorial *before* anyone died. Priming the audience. Setting the frame.
 
-Then, at 7:24 PM—one minute after the shot—the pivot. Thousands of accounts, simultaneously: "Domestic terrorism." "Geneva died because of radical elements." "This is what happens when we don't support law and order."
+Then, at 7:24 PM—one minute after the shot—the pivot. Thousands of accounts, simultaneously: “Domestic terrorism.” “Geneva died because of radical elements.” “This is what happens when we don’t support law and order.”
 
 One minute.
 
-"What the hell..."
+“What the hell . . .”
 
-She stared at the screen. The numbers didn't change no matter how long she looked.
+She stared at the screen. The numbers didn’t change no matter how long she looked.
 
-One minute to pivot thousands of accounts to a coordinated message about a death that just happened. That wasn't reactive. That was *infrastructure*. A machine built to exploit any crisis, sitting ready, waiting for something to weaponize.
+One minute to pivot thousands of accounts to a coordinated message about a death that just happened. That wasn’t reactive. That was *infrastructure*. A machine built to exploit any crisis, sitting ready, waiting for something to weaponize.
 
-"Someone built this," she whispered. "Someone's been building this for a long time."
+“Someone built this,” she whispered. “Someone’s been building this for a long time.”
 
-The assassination and the narrative machine weren't necessarily the same operation. But someone had spent serious money making sure that when violence happened—any violence—Kain's message would be first and loudest.
+The assassination and the narrative machine weren’t necessarily the same operation. But someone had spent serious money making sure that when violence happened—any violence—Kain’s message would be first and loudest.
 
 She glanced toward the bedroom door. Leta asleep by now. Normal girlfriend. Normal life. Warm bed waiting for her.
 

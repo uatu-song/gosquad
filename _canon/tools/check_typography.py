@@ -67,7 +67,12 @@ def checks_for(house, always_banned):
     elif house.get("em_dash") == "spaced":
         out.append(("closed em dash (word—word)", re.compile(r"(?<=\w)—(?=\w)"),
                     "house style is spaced word — word"))
-    out.append(("mis-faced interruption quote (—“)", re.compile(r"(?<=\S)—“"),
+    # A dash before an opening quote is only WRONG when nothing closes it on the
+    # line. It is legitimate as a pivot INTO speech or into a quoted phrase:
+    #   “Oh shit!” But also—“Yes!”        (the Both/And device, PROSE_VOICE:141)
+    #   ...the Old Caledonia district—“probable cause” for a drug operation
+    # Flagging those cost two false positives on ruled, protected prose.
+    out.append(("mis-faced interruption quote (—“)", re.compile(r"(?<=\S)—“(?![^”\n]*”)"),
                 "a dash-interrupted line CLOSES: should be —”"))
 
     ell = house.get("ellipsis")
