@@ -1,6 +1,6 @@
 # Chapter 18
 
-<!-- SOURCE: _archive/exports/go-squad-2025-12-07T17_10_50.txt — clean export of the first edition, paragraph structure intact, ZERO PDF-extraction artifacts. Supersedes first_edition/ (epub-derived) as the MEASUREMENT GROUND TRUTH. Content identical (32/40 verbatim sentence match); only the damage differs. Quarry, not edit-of-record. -->
+<!-- SOURCE: _archive/exports/go-squad-2025-12-07T17_10_50.txt — clean export of the first edition, paragraph structure intact, ZERO PDF-extraction artifacts. Supersedes first_edition/ (epub-derived) as the MEASUREMENT GROUND TRUTH. Content identical (32/40 verbatim sentence match); only the damage differs. Quarry, not edit-of-record. DIALOGUE EDIT 2026-08-29, Director-authorized (the freeze rule's first exception, canon-forced): two spans in the fan beat publicly linked the Academy to the Go Squad, violating CON-B1-SECRET-HQ — "Posted on the Academy's public page" is now "Posted it in the fan threads"; flowers "at the Academy" now "where we pulled that girl out". The first edition carried this leak; the July v1 cold agent was flagged for echoing it. Ruling: canon/book_1_ed1/DECISIONS_LOG.md. -->
 
 The tip came through Ben’s contact at the precinct. Usually reliable. Usually clean.
 “Weapons cache in warehouse district. District 7, near the docks. Kain’s people moving product tonight, 2100 hours. Minimal security. Window’s tight.”
@@ -15,9 +15,9 @@ They’d done this twelve times in the past month. Kain’s operations were gett
 Made him more dangerous.
 Tess’s phone buzzed. She glanced at it. “Another one.”
 “Another what?” Leah asked.
-“Kid wants an autograph. Posted on the Academy’s public page.” Tess showed her the message. Ten-year-old asking if the Go Squad could sign his schoolbook. His older sister had been saved from a carjacking two weeks ago.
+“Kid wants an autograph. Posted it in the fan threads.” Tess showed her the message. Ten-year-old asking if the Go Squad could sign his schoolbook. His older sister had been saved from a carjacking two weeks ago.
 “That’s the third one today,” Ben said.
-“Fifth,” Tess corrected. She scrolled. “And someone left flowers at the Academy. Note says ‘Thank you for my daughter.’ No name.”
+“Fifth,” Tess corrected. She scrolled. “And someone left flowers where we pulled that girl out. Note says ‘Thank you for my daughter.’ No name.”
 She kept scrolling. Stopped. “Oh. Oh no.”
 “What?” Victor leaned over to look.
 Tess turned her phone around. Twitter thread. Someone had made a fan account. @GoSquadWatch. They’d assigned codenames.

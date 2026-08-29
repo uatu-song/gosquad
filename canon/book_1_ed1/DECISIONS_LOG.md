@@ -4,6 +4,38 @@
 
 ---
 
+## 2026-08-29 — CH18 fan beat: the freeze rule's first exception (canon-forced)
+
+**Finding (Director, first read of a metric draft):** two frozen spans publicly
+link the Academy to the Go Squad — "Posted on the Academy's public page" and
+flowers left "at the Academy" — violating CON-B1-SECRET-HQ. Director:
+"that would be disastrous and a complete operational failure."
+
+**Provenance established before ruling:** both spans are VERBATIM first-edition
+text (clean source ch18, 2025-12-07 export) — no agent added them; the
+dialogue-freeze resurrected them. The July v1 cold agent was flagged for
+"inventing" flowers at the door; it was echoing the source. Class hunt: the
+leak is contained to these two spans (keyword sweep of all Academy mentions).
+
+**Ruling:** "make the changes" on the proposed wording, then "don't revert it
+if you already did it" (scope confirmed to source + draft + packet):
+- "Posted on the Academy's public page." → **"Posted it in the fan threads."**
+- "left flowers at the Academy" → **"left flowers where we pulled that girl out"**
+
+Applied to the clean source (provenance comment updated in-file), the CH18
+metric packet's frozen block, and the v2 draft; the draft's laundering
+paragraph (narration that existed only to excuse the leak) deleted; epub
+rebuilt. Dialogue byte-identity green again, 77/77.
+
+**Note:** the Director also made direct taste edits to the v2 draft narration;
+two style bands now read out-of-band on the edited text (commas 83.8, -ly 9.5).
+NOT defects — the bands police agents, not the author. Crew does not "fix" the
+Director's hand.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — All books curly; typography gate now ENFORCING
 
 **Ruling, verbatim:** **"No straight quotes. All curly. Fix it."**

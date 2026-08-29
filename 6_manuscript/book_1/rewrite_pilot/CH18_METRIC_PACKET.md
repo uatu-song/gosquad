@@ -37,10 +37,10 @@ Rules:
  7. "I like it when they're not organized."  — (unattributed)
  8. "Another one."  — Tess
  9. "Another what?"  — Leah
-10. "Kid wants an autograph. Posted on the Academy's public page."  — Tess
+10. "Kid wants an autograph. Posted it in the fan threads."  — Tess
 11. "That's the third one today,"  — Ben
 12. "Fifth,"  — Tess
-13. "And someone left flowers at the Academy. Note says 'Thank you for my daughter.' No name."  — Tess (same utterance, continues)
+13. "And someone left flowers where we pulled that girl out. Note says 'Thank you for my daughter.' No name."  — Tess (same utterance, continues)
 14. "Oh. Oh no."  — (unattributed)
 15. "What?"  — Victor
 16. "Wait,"  — Ben
@@ -125,11 +125,10 @@ enhancements are secretly Ahdia. Do not hint.**
   recognizes, approaches, or visits a team member. Fan gratitude exists ONLINE
   ONLY (threads, posts, public pages).
 - **Secret HQ:** the Academy (Firas's parkour school) must NEVER be publicly
-  linked to the Go Squad. NOTE: frozen span 10 says a kid "Posted on the
-  Academy's public page" and span 13 says flowers were left "at the Academy" —
-  this is the Academy's PUBLIC face as a well-known parkour school reacting to
-  city news, NOT fans finding the team's base. Your narration must keep that
-  wall intact: the fans do not know the Go Squad has any connection to it.
+  linked to the Go Squad — no fan posts about it, no tributes there, no
+  visitors. Fan gratitude reaches the team ONLINE ONLY, in fan threads that
+  have no idea where the team lives or trains. (Two first-edition spans that
+  leaked this link were dialogue-patched by Director ruling 2026-08-29.)
 - **No invented proper nouns.** Coin NO new names — streets, cities,
   businesses, hospitals, people. Names available: city = Caledonia; police =
   CCPD / "Caledonia Police"; the Academy; codenames BATTLEA (Leah), NIGHT
