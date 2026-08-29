@@ -166,21 +166,35 @@ concentrated. Do not use opener variety as a quality signal.
 
 ---
 
-## 8. The checkable target
+## 8. The checkable target — `_canon/tools/check_style.py`
 
-A ch12–30 chapter is aligned when all of these hold:
+The gate is now a TOOL, and its criteria are BANDS, not floors. The first two
+metric rewrites passed every one-sided floor while overshooting the author on
+the long side (narration mean 25–29 words vs his 15.8, commas up to 117/1K vs
+his 55) — a floor proves the disease is gone; only a band proves the
+replacement is his texture and not a third thing.
 
-1. short-burst ≤ **that chapter's dialogue floor + 7.2/1K** (per-chapter table in `DECISIONS_LOG.md`)
-2. **≥ 20%** of sentences run 20+ words; **≥ 7%** run 30+
-3. median sentence **≥ 10** words; mean **≥ 12**
-4. em dash **≤ 3.0/1K**
-5. repeated 4-grams **≤ 12 per 10k**, repeated 5-grams **≤ 2 per 10k** (motifs excluded)
-6. `chest` **≤ 0.5/1K**; zero `Not X. Not Y.`; zero `began/started to`
-7. adverb-on-tag **≤ 0.5/1K**
-8. paragraph mean **≥ 25** words
-9. dialogue unchanged — verify the quoted spans are byte-identical to the source
+    python3 _canon/tools/check_style.py DRAFT.txt \
+        --source 6_manuscript/book_1/first_edition_clean/chapter_NN.txt
 
-Criteria 1–8 are measurable by script. Criterion 9 is the ruling's hard boundary.
+Everything stylistic is measured NARRATION-ONLY, with sentences classified in
+place (>50% of characters inside quotes = dialogue): dialogue is frozen by
+ruling, so it is not a surface the draft controls — and whole-text rates
+mislead (the author's exclamation marks are 96% inside dialogue). The gate
+also verifies frozen-dialogue byte-identity against the source and length
+within ±20% of it.
+
+Bands (author narration value in parentheses): short-burst 3–12/1K-of-whole
+(7.2) · sentence mean 11–20 (15.8) · median 9–17 (13) · %<10w 25–50 (35.9) ·
+%20+ 20–42 (31.5) · %30+ 6–17 (10.9) · em 0–3/1K (1.1) · commas 40–72/1K
+(55.1) · "like" 1.5–5.5/1K (3.7) · -ly 12–27/1K (19.5) · paragraph mean 22–45
+(32.9). Plus the zero-bans, chest ≤1 (--allow-chest for Seed-content
+chapters), adverb-on-tag ≤1, repeated 4-grams ≤12/10K, repeated 5-grams 0.
+
+Status of the two existing drafts under the band gate: CH18 metric v1 fails 8
+bands, CH24 metric v1 fails 10 — both long-side overshoots ("like" 6.7 vs band
+≤5.5 in both; CH24 commas 117). They remain readable drafts; the next
+generation is gated on bands before it reaches the Director.
 
 ---
 
