@@ -2,143 +2,143 @@
 
 <!-- SOURCE: _archive/exports/go-squad-2025-12-07T17_10_50.txt — clean export of the first edition, paragraph structure intact, ZERO PDF-extraction artifacts. Supersedes first_edition/ (epub-derived) as the MEASUREMENT GROUND TRUTH. Content identical (32/40 verbatim sentence match); only the damage differs. Quarry, not edit-of-record. -->
 
-The tip came through Ben's contact at the precinct. Usually reliable. Usually clean.
-"Weapons cache in warehouse district. District 7, near the docks. Kain's people moving product tonight, 2100 hours. Minimal security. Window's tight."
+The tip came through Ben’s contact at the precinct. Usually reliable. Usually clean.
+“Weapons cache in warehouse district. District 7, near the docks. Kain’s people moving product tonight, 2100 hours. Minimal security. Window’s tight.”
 Ruth studied the building schematics on her tablet. Two floors. Loading dock access. Multiple exits. Standard layout for the area.
-"Thoughts?" she asked.
-Ben adjusted his gear. "Fits the pattern. Kain's been moving operations since the warehouse raid. Makes sense he'd use the docks."
-Tess pulled up surveillance feeds on her laptop. "Three heat signatures inside. No vehicles in the lot yet. If they're moving product, we're early."
-"Good," Victor said, checking his gloves. "Hit them during setup. Before they're organized."
-Leah cracked her knuckles. "I like it when they're not organized."
+“Thoughts?” she asked.
+Ben adjusted his gear. “Fits the pattern. Kain’s been moving operations since the warehouse raid. Makes sense he’d use the docks.”
+Tess pulled up surveillance feeds on her laptop. “Three heat signatures inside. No vehicles in the lot yet. If they’re moving product, we’re early.”
+“Good,” Victor said, checking his gloves. “Hit them during setup. Before they’re organized.”
+Leah cracked her knuckles. “I like it when they’re not organized.”
 Ruth ran through the plan one more time. Standard insertion. Victor and Ben through the loading dock. Tess and Leah from the roof access. Ruth in tactical support, coordinating from the perimeter with comms.
-They'd done this twelve times in the past month. Kain's operations were getting sloppier. Desperate. After the warehouse, CCPD couldn't openly protect him anymore. He was exposed. Scrambling.
+They’d done this twelve times in the past month. Kain’s operations were getting sloppier. Desperate. After the warehouse, CCPD couldn’t openly protect him anymore. He was exposed. Scrambling.
 Made him more dangerous.
-Tess's phone buzzed. She glanced at it. "Another one."
-"Another what?" Leah asked.
-"Kid wants an autograph. Posted on the Academy's public page." Tess showed her the message. Ten-year-old asking if the Go Squad could sign his schoolbook. His older sister had been saved from a carjacking two weeks ago.
-"That's the third one today," Ben said.
-"Fifth," Tess corrected. She scrolled. "And someone left flowers at the Academy. Note says 'Thank you for my daughter.' No name."
-She kept scrolling. Stopped. "Oh. Oh no."
-"What?" Victor leaned over to look.
-Tess turned her phone around. Twitter thread. Someone had made a fan account. @GoSquadWatch. They'd assigned codenames.
+Tess’s phone buzzed. She glanced at it. “Another one.”
+“Another what?” Leah asked.
+“Kid wants an autograph. Posted on the Academy’s public page.” Tess showed her the message. Ten-year-old asking if the Go Squad could sign his schoolbook. His older sister had been saved from a carjacking two weeks ago.
+“That’s the third one today,” Ben said.
+“Fifth,” Tess corrected. She scrolled. “And someone left flowers at the Academy. Note says ‘Thank you for my daughter.’ No name.”
+She kept scrolling. Stopped. “Oh. Oh no.”
+“What?” Victor leaned over to look.
+Tess turned her phone around. Twitter thread. Someone had made a fan account. @GoSquadWatch. They’d assigned codenames.
 BATTLEA - The Brawler
 NIGHT KNIGHT (or is it Knight Night?) - The Tactician
 CRIMSON SABLE - The Shadow
-GLOOM GIRL - The 'Porter
+GLOOM GIRL - The ’Porter
 NIGHTINGALE - The Leader
-"Wait," Ben said, frowning. "How do they know our codenames?"
-Victor read further. "There's like... hundreds of posts using them. Battlea this, Night Knight that."
-Leah looked at Tess. "Did you—"
-"What? No!" Tess said. Too quickly. Too innocent.
-Victor narrowed his eyes. "Gloom Girl."
-"I didn't leak anything," Tess said. "I just... may have used them. In a few posts. Months ago. Hypothetically."
-"Firas is going to love this," Ruth said, unable to hide her smile.
-"Or kill me," Tess muttered.
-Ruth felt something tighten in her chest. They did this because it was right. Not for recognition. But knowing people noticed—knowing they cared—knowing they'd given them names—
+“Wait,” Ben said, frowning. “How do they know our codenames?”
+Victor read further. “There’s like . . . hundreds of posts using them. Battlea this, Night Knight that.”
+Leah looked at Tess. “Did you—”
+“What? No!” Tess said. Too quickly. Too innocent.
+Victor narrowed his eyes. “Gloom Girl.”
+“I didn’t leak anything,” Tess said. “I just . . . may have used them. In a few posts. Months ago. Hypothetically.”
+“Firas is going to love this,” Ruth said, unable to hide her smile.
+“Or kill me,” Tess muttered.
+Ruth felt something tighten in her chest. They did this because it was right. Not for recognition. But knowing people noticed—knowing they cared—knowing they’d given them names—
 It made the risk feel different. More real. More worth it.
-"Everyone check in," Ruth said into her radio. "Comms clear?"
+“Everyone check in,” Ruth said into her radio. “Comms clear?”
 Four confirmations came back. Clean signals. FAERIS drones were overhead—she could feel them, that subtle hum of enhanced capability. Like wearing a weighted vest and taking it off. Everything lighter. Faster. More precise.
-She still didn't understand how it worked. Some kind of amplification technology CADENS had developed. Firas had mentioned it once, vaguely, said they'd been approached by someone who wanted to help. Military tech, experimental.
-Ruth hadn't asked too many questions. Results mattered more than process.
-"No better place than here," Ruth said into the radio.
-The team responded as one: "No better time than now."
-Their rally cry. The thing they said every time before insertion. Started as Firas's line when he founded the Squad. Now it was tradition.
-"Moving in," Victor said.
-Ruth watched from her position across the street. Loading dock rolled open. Victor and Ben slipped inside. Smooth. Professional. They'd gotten good at this.
+She still didn’t understand how it worked. Some kind of amplification technology CADENS had developed. Firas had mentioned it once, vaguely, said they’d been approached by someone who wanted to help. Military tech, experimental.
+Ruth hadn’t asked too many questions. Results mattered more than process.
+“No better place than here,” Ruth said into the radio.
+The team responded as one: “No better time than now.”
+Their rally cry. The thing they said every time before insertion. Started as Firas’s line when he founded the Squad. Now it was tradition.
+“Moving in,” Victor said.
+Ruth watched from her position across the street. Loading dock rolled open. Victor and Ben slipped inside. Smooth. Professional. They’d gotten good at this.
 Thirty seconds.
-"Clear inside," Victor reported. "Setting up position."
+“Clear inside,” Victor reported. “Setting up position.”
 Tess and Leah hit the roof access. Standard approach. Ruth tracked their progress through the building layout on her tablet.
 One minute.
-"Something's wrong," Tess said suddenly. "There's nobody here. Warehouse is empty."
-Ruth's instincts flared. "Abort. Everyone out. Now."
-"Too late," Ben said.
+“Something’s wrong,” Tess said suddenly. “There’s nobody here. Warehouse is empty.”
+Ruth’s instincts flared. “Abort. Everyone out. Now.”
+“Too late,” Ben said.
 The lights came on.
 Not warehouse lights. Floodlights. Police spotlights. Dozens of them, all focused on the building. Sirens wailed. Vehicles screeched into the lot—patrol cars, SWAT vans, at least fifteen units.
-A voice boomed through a megaphone: "This is CCPD. You are surrounded. Exit the building with your hands visible."
-"Shit," Leah breathed.
-Ruth's mind moved fast. Ambush. False intel. They'd been set up.
-"Smoke and scatter," she said into the radio. "Formation Delta. IR goggles. Move."
-No panic. They'd drilled for this. Go Squad wasn't just powers and luck—they'd trained for when things went wrong.
+A voice boomed through a megaphone: “This is CCPD. You are surrounded. Exit the building with your hands visible.”
+“Shit,” Leah breathed.
+Ruth’s mind moved fast. Ambush. False intel. They’d been set up.
+“Smoke and scatter,” she said into the radio. “Formation Delta. IR goggles. Move.”
+No panic. They’d drilled for this. Go Squad wasn’t just powers and luck—they’d trained for when things went wrong.
 Smoke grenades deployed. Four of them, filling the warehouse with thick gray cover. Ruth heard the crackle of breaking glass as her team kicked out windows, rappel lines deploying.
 CCPD moved in. Ruth could see them through her IR scope—heat signatures advancing through the smoke, slow and cautious.
 Her team was faster.
 Victor dropped from a second-floor window, hit the ground rolling, sprinted for the fence line. Two officers tried to cut him off. He vaulted the fence before they got close, disappeared into the neighboring lot.
 Tess went through a side door, smoke grenade in each hand. Threw them at the patrol cars. More cover. She ran low, fast, using vehicles as shields. Reached the perimeter and was gone.
-Ben and Leah emerged together, coordinating without words. Ben laid down a flash-bang—not to hurt, just to disorient. Leah used the chaos to scale a fire escape, reached the next building's roof, vanished.
+Ben and Leah emerged together, coordinating without words. Ben laid down a flash-bang—not to hurt, just to disorient. Leah used the chaos to scale a fire escape, reached the next building’s roof, vanished.
 They were out. Clean. No casualties.
-Ruth felt a swell of pride. They didn't need the enhancements to be good. They were good because they'd trained.
+Ruth felt a swell of pride. They didn’t need the enhancements to be good. They were good because they’d trained.
 And then her scope went dark.
 Not the optics. The IR feed. It just—died.
-She tapped it. Nothing. Pulled it off, checked the battery. Full charge. It just wasn't working.
-Her radio crackled. "Anyone else losing equipment?" Tess's voice, distant.
-"IR's down," Victor confirmed. "GPS too."
-"What the hell—"
+She tapped it. Nothing. Pulled it off, checked the battery. Full charge. It just wasn’t working.
+Her radio crackled. “Anyone else losing equipment?” Tess’s voice, distant.
+“IR’s down,” Victor confirmed. “GPS too.”
+“What the hell—”
 And then Ruth felt it. The absence. That weighted vest dropping back on her shoulders. Everything heavier. Slower. Like moving through water instead of air.
 The enhancements were gone.
-"Powers are down," Leah said, and Ruth heard the edge of panic. "I can't—they're just gone."
-Ruth forced her voice calm. Professional. "You don't need them. You're trained. Stay focused."
-But even as she said it, she understood the danger. They'd gotten used to the edge. Used to being just a little bit faster, stronger, more precise than they should be.
+“Powers are down,” Leah said, and Ruth heard the edge of panic. “I can’t—they’re just gone.”
+Ruth forced her voice calm. Professional. “You don’t need them. You’re trained. Stay focused.”
+But even as she said it, she understood the danger. They’d gotten used to the edge. Used to being just a little bit faster, stronger, more precise than they should be.
 Now they were just people.
 Against an entire police precinct.
-"Fall back to secondary positions," Ruth ordered. "Stay in smoke. Use training. You've got this."
+“Fall back to secondary positions,” Ruth ordered. “Stay in smoke. Use training. You’ve got this.”
 Movement caught her eye. Someone coming through the smoke near the warehouse. Not police. Wrong silhouette. Too big.
-Ruth raised her scope, tried the thermal. Still dead. She switched to night vision—old school, no batteries needed. The amplified starlight showed her a figure walking through the smoke like it wasn't there.
+Ruth raised her scope, tried the thermal. Still dead. She switched to night vision—old school, no batteries needed. The amplified starlight showed her a figure walking through the smoke like it wasn’t there.
 Seven feet tall. Maybe more. Armored, but not SWAT gear. Something else. Custom. The way he moved—not human. Too smooth. Too confident.
-Victor saw him first. "Contact. North side. What the hell is that?"
+Victor saw him first. “Contact. North side. What the hell is that?”
 The figure reached through the smoke, grabbed a fleeing officer by the vest, threw him. Not pushed. Threw. The officer flew fifteen feet, crashed into a patrol car. The impact dented the door.
-"New player," Ruth said into her radio, heart racing. "Enhanced. Real enhanced. Everyone stay clear."
-But Victor was already moving. Tried to flank, get position. Too fast—the figure turned, caught Victor's punch mid-swing, twisted his arm.
-Victor went down hard. "It's a goddamn tank!" he gasped through the pain.
-"Victor!" Tess's voice, sharp with fear.
+“New player,” Ruth said into her radio, heart racing. “Enhanced. Real enhanced. Everyone stay clear.”
+But Victor was already moving. Tried to flank, get position. Too fast—the figure turned, caught Victor’s punch mid-swing, twisted his arm.
+Victor went down hard. “It’s a goddamn tank!” he gasped through the pain.
+“Victor!” Tess’s voice, sharp with fear.
 Leah charged in, landed three hits to the ribs. Perfect form. The kind of strikes that should drop anyone.
-The Tank didn't even flinch. Just backhanded her like swatting a fly. She crashed through a wooden pallet, didn't get up.
+The Tank didn’t even flinch. Just backhanded her like swatting a fly. She crashed through a wooden pallet, didn’t get up.
 Ben tried next. Military training, precision strikes. Went for the joints, the weak points.
 Might as well have been hitting a statue.
 Big hands grabbed Ben by the throat, lifted him off the ground. Casual. Like picking up a child.
-Ruth ran. Abandoned her position, sprinted toward the warehouse. "Put him down!"
-The Tank turned. Looked at her. Behind the helmet's visor, she couldn't see eyes. Just darkness.
+Ruth ran. Abandoned her position, sprinted toward the warehouse. “Put him down!”
+The Tank turned. Looked at her. Behind the helmet’s visor, she couldn’t see eyes. Just darkness.
 He dropped Ben. Ben collapsed, gasping.
 And started walking toward Ruth.
 She should run. Every tactical instinct said run. Draw him away, lose him in the alleys, regroup.
 But her team was down. Her team was hurt. And police were closing in from all sides.
-If she ran, they'd be captured. Or worse.
-Ruth made the decision. "Everyone fall back. Get clear. I'll draw him off."
-"Ruth, no—" Tess started.
-"That's an order."
+If she ran, they’d be captured. Or worse.
+Ruth made the decision. “Everyone fall back. Get clear. I’ll draw him off.”
+“Ruth, no—” Tess started.
+“That’s an order.”
 Ruth ran. Not away—toward. Straight at the Tank, then past him at the last second. He turned, followed. Good. She was faster. She could lead him away, buy time for her team to escape.
-The docks weren't far. Quarter mile, maybe less. Ruth ran hard, boots pounding concrete. Behind her, heavy footfalls. Steady. Not even running. He didn't need to.
+The docks weren’t far. Quarter mile, maybe less. Ruth ran hard, boots pounding concrete. Behind her, heavy footfalls. Steady. Not even running. He didn’t need to.
 He was faster anyway.
 Ruth burst onto the docks. Shipping containers stacked three high. Narrow passages. Multiple paths.
 She tried to lose him in the maze. Ducked left, vaulted a crate, sprinted through a gap. Came out near the water.
 Dead end.
-The docks stretched out behind her, maybe thirty feet. Water beyond that. Black. Cold. Forty-degree water this time of year. She'd last maybe ten minutes before hypothermia.
+The docks stretched out behind her, maybe thirty feet. Water beyond that. Black. Cold. Forty-degree water this time of year. She’d last maybe ten minutes before hypothermia.
 The Tank emerged from between containers. Took his time. Each step methodical. He knew she was trapped.
-Ruth reached for her radio. "Team, sound off. Everyone clear?"
+Ruth reached for her radio. “Team, sound off. Everyone clear?”
 Static.
-She tried again. "Anyone copy?"
+She tried again. “Anyone copy?”
 Silence.
 She was alone.
 The Tank stopped ten feet away. Reached up, removed his helmet.
 Ruth expected scars. Modifications. Something to explain the strength.
-Instead: a face. Normal. Maybe thirty. Clean-shaven. The kind of guy you'd see at a coffee shop and never look twice.
-"Dr. Carter," he said. "You should have stayed in the ER."
-"How do you know my name?"
-"Everyone knows your name now." He rolled his neck, stretched his shoulders. "Mr. Kain sends his regards. Says your research will be very valuable. Once you're out of the way."
-Ruth's hand moved to the medical kit on her belt. Sedatives. Trauma shears. Bandages.
+Instead: a face. Normal. Maybe thirty. Clean-shaven. The kind of guy you’d see at a coffee shop and never look twice.
+“Dr. Carter,” he said. “You should have stayed in the ER.”
+“How do you know my name?”
+“Everyone knows your name now.” He rolled his neck, stretched his shoulders. “Mr. Kain sends his regards. Says your research will be very valuable. Once you’re out of the way.”
+Ruth’s hand moved to the medical kit on her belt. Sedatives. Trauma shears. Bandages.
 Nothing that would stop whatever this was.
-"You're enhanced," she said, stalling. "Real enhanced. Not like us."
-"Finally figured that out?" He smiled. "Your tricks stopped working the moment the EMP hit. Ours didn't."
-EMP. That explained the equipment failure. The absence of enhancement. They'd been set up from the start.
-"What did they give you?" Ruth asked. "What kind of enhancement?"
-"The kind that matters." He took another step forward. "The kind that can't be turned off with a magnet."
-Ruth looked past him. The maze of containers. The narrow passages. No escape that way—he'd catch her in three steps.
+“You’re enhanced,” she said, stalling. “Real enhanced. Not like us.”
+“Finally figured that out?” He smiled. “Your tricks stopped working the moment the EMP hit. Ours didn’t.”
+EMP. That explained the equipment failure. The absence of enhancement. They’d been set up from the start.
+“What did they give you?” Ruth asked. “What kind of enhancement?”
+“The kind that matters.” He took another step forward. “The kind that can’t be turned off with a magnet.”
+Ruth looked past him. The maze of containers. The narrow passages. No escape that way—he’d catch her in three steps.
 She looked behind her. The dock. The water. Bad options.
-"You know what happens next," the man said. "Make it easy. Don't run."
+“You know what happens next,” the man said. “Make it easy. Don’t run.”
 Ruth ran.
 Toward the water. Sprinting. The edge of the dock fifteen feet. Ten. Five.
 She heard him behind her. Close. Too close.
 Ruth reached the edge, tried to pivot, dive sideways into cover.
 A hand caught her jacket. Yanked her back.
 She stumbled, turned. The man stood between her and escape. Water at her back. Nowhere to go.
-"Brave," he said. "Stupid, but brave."
+“Brave,” he said. “Stupid, but brave.”
 He raised his fist. Pulled it back. The kind of windup that would cave in her skull.

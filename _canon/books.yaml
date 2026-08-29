@@ -131,28 +131,44 @@ books:
     prose_expected: false
 
 # ─────────────────────────────────────────────────────────────────────────────
-# HOUSE TYPOGRAPHY
+# HOUSE TYPOGRAPHY — RULED 2026-08-29: Chicago.
 # ─────────────────────────────────────────────────────────────────────────────
-# MEASURED 2026-07-26 across all 23 Book 2 quarry chapters (47,271 words) — the
-# values below DESCRIBE that prose; they are not yet a Director-ruled standard.
-# The old draft is self-consistent:
-#     4,140 straight "      vs      0 curly “”
-#     2,190 straight '      vs      0 curly ’
-#       438 closed em—dash  vs      0 spaced em — dash
-#        87 collapsed ...   vs      0 spaced . . .  and 0 … glyphs
-# Only true drift: 4 stray `**bold**` in ch21/ch23 (markdown residue).
+# Director ruling, verbatim: "working draft indefinitely" (destination) and, on
+# the style, "just stick to it, ellipses included" — i.e. full Chicago including
+# Chicago's spaced ellipsis, over a recommendation to deviate to the … glyph.
+# Full entry: canon/book_1_ed1/DECISIONS_LOG.md.
 #
-# `enforce` stays FALSE until the Director rules the house style for the
-# rebuild era (note: em-dashes.md shows a recent authorial push AWAY from
-# em-dash overuse — the ruling may differ from the measured legacy style).
-# A noisy gate is an ignored gate; this one only becomes a wall when ruled.
+# APPLIED to book_1_clean (6_manuscript/book_1/first_edition_clean/) 2026-08-29:
+#     4,336 straight " → curly “ ”        2,191 straight ' → curly ’
+#     200 ellipses (106 "..." + 94 "…") → ". . ."      544 em dashes already closed
+# Punctuation only — letters verified unchanged in all 30 chapters.
+#
+# IMPLEMENTATION NOTE: the spaced ellipsis is set with NONBREAKING spaces
+# (U+00A0) between the points. That is Chicago's own specification and it stops
+# a line break from orphaning a dot in a reflowable EPUB. It is NOT drift; do
+# not "normalise" it to plain spaces.
+#
+# ENFORCE STAYS FALSE — and this is a TOOLING limit, not a missing ruling.
+# bookconfig.py reads `typography` from the registry ROOT and hands the same
+# dict to every book (bookconfig.py:137); there is no per-book override. The
+# ruling covers Book 1's first edition. book_1_ed1 (first_edition/, superseded
+# epub-derived copy) and book_2 (chapters_split/, unruled quarry) still carry
+# ~8,500 straight quotes between them, so flipping enforce:true would block
+# every commit in the repo on text no one has ruled on.
+# To make this a wall: add a per-book typography override to bookconfig, then
+# set enforce:true for book_1_clean alone.
+# Declaring the house below (rather than leaving it straight) is deliberate —
+# the registry should carry the ruling — but it means the non-blocking census
+# now reports those ~8,500 as drift on every commit. If that noise is worse than
+# the record, the alternative is to revert `house` to straight and keep the
+# ruling only in DECISIONS_LOG. Director's call.
 typography:
   enforce: false
   house:
-    double_quote: straight        # straight | curly
-    apostrophe: straight          # straight | curly
-    em_dash: closed               # closed (a—b) | spaced (a — b)
-    ellipsis: collapsed           # collapsed (...) | spaced (. . .) | char (…)
+    double_quote: curly          # “ ”
+    apostrophe: curly            # ’
+    em_dash: closed              # a—b
+    ellipsis: spaced             # . . .  (NBSP-joined; see note above)
   # Forms that are wrong under ANY house style — markdown/import residue.
   always_banned:
     - stray_bold
