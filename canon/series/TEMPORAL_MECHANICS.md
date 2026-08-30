@@ -197,6 +197,26 @@ name and abandoned with the disguise — e.g. the catering van Ben and Victor
 arrive in as fake staff. It is a costume, not transport, and nobody on the
 team drives it anywhere as themselves.
 
+## 7c. THE SEASON — LATE SEPTEMBER (Director-ruled 2026-08-30)
+
+**It cannot be winter.** The chain: ch13's FAERIS playback timestamps the
+warehouse as **August 14th**; ch1 puts the election "come November" with Kain
+running; ch17 has him planning to win on it. January would place the election
+five months past with nobody mentioning it, which detonates the villain plot.
+
+August 14 plus the monitoring window lands the docks/mansion sequence in
+**late September** — campaign stakes at their hottest, and forty degrees at
+night on northern water still plausible.
+
+Consequences already applied: winter dressing stripped from ch18, ch21, ch22
+(a first cold snap, not January); the fountain running and the cold water are
+CONSISTENT and stay; and Whitford's "seventeen operations over the past six
+weeks" (ch17) is correct as written — an earlier crew edit to "two weeks" was
+WRONG and is reverted.
+
+**Packet rule:** no month is ever named except August 14th in the ch13
+playback. Cold is weather, never season.
+
 ## 8. THE CALENDAR — THE BOOK IS UNDATED (Director-ruled 2026-08-30)
 
 **No year appears in the prose. None.** The morning's "keep a year, move it to

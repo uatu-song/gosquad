@@ -4,6 +4,46 @@
 
 ---
 
+## 2026-08-30 — CH22; the season ruled; a crew error reverted
+
+**THE SEASON — the largest continuity find of the project.** Director: it
+cannot be January. Ch13 timestamps the warehouse August 14th, ch1 sets the
+election in November, ch17 has Kain planning to win it; winter would put the
+election five months past, unmentioned, destroying the villain plot. Ruled
+**late September**. Bible §7c written. Winter dressing stripped from ch18,
+ch21, ch22; the running fountain and the forty-degree water become consistent
+weather rather than contradictions.
+
+**CREW ERROR REVERTED:** this morning crew shortened Whitford's "seventeen
+operations over the past six weeks" to "two weeks," reasoning the drone era
+postdates the bonding. August 14 → late September IS six weeks; the source was
+right. Restored in source, draft, and packet. Lesson: a relative-time "fix"
+needs the season and the calendar chain checked first.
+
+**Three CH22 catches, applied:**
+1. **Kain vanished between the chair and the wall.** Now tracked as absence,
+   not action — the empty chair, the cut ties, "on the plinth the light had
+   changed color while she was not watching it." The crawl stays off-camera.
+2. **The jump count broke twice.** The tenth is now marked, so the "Eleven."
+   payoff is verifiable; and "eleven ways out / ten of them" (same number,
+   different unit, two paragraphs later) became "two ways out / one of them."
+3. **Kain phasing through stone** — ch17 sold the Heart as strictly temporal.
+   Now bridged through Tess's own physics: "space folded and let go, the same
+   trick her own body did, done to a building by a thing sold to her as a
+   clock." She is the only character who could recognize it.
+
+**DEBT LOGGED, unpaid:** Ruth's "Need a ride?" is a hero beat she has not
+earned — she stayed dark while her powerless team walked into guns, to protect
+her cover. Ch23 must make her account for it. (The Director withdrew the
+earlier characterization flag: ch21 makes the team's breakage explicit, so the
+absence is plot, not error.)
+
+CH22 final: 2,057 words, 44/44 spans, all bands, nouns clean.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — CH21 generated; the van ruling extended; four continuity catches
 
 **The van (deferred 2026-08-29, resolved here).** The rebuild reached ch22, and
