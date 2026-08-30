@@ -24,6 +24,16 @@ file licenses edits now.
    UNRULED. Until ruled, rewrite packets stay impressionistic (the licensed
    voice) and nobody retro-fits ch1–11.
 
+### Candidate mechanism on file for dimension 2 (found 2026-08-29)
+
+A superseded line-edit lane produced a CH27 calibration under the ACTION
+CARVE-OUT policy: fragments retained inside marked action blocks at reduced
+density (~50% → ~30%), full harmonization outside them, signature beats kept
+as landings, measured cost +4–7% words per chapter. See
+`CH27_CALIBRATION_FOUND.md` — the only tested mechanism either seam
+dimension has. A middle path between blow-by-blow and impressionistic,
+awaiting ruling like everything else here.
+
 ## When the phase opens
 
 Inputs to have in hand: this file, the register ruling, STYLE_PROFILE.md,
