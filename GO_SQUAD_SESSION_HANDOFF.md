@@ -26,6 +26,13 @@ you remember. That file is the real handoff.
 
 ## IMMEDIATE RESUME POINT
 
+**READ FIRST: `canon/book_1_ed1/PUNCH_LIST.md`** — the Director's 28-item
+punch list from the full ch1–16 sample review, saved 2026-08-29 with a crew
+verification block (what the current build already closes, what is open).
+Top of queue: **#1 the ch3/ch4 verbatim duplication (confirmed present)** and
+the cross-chapter duplication hunt (#2); then #5 (the ch15→ch16 ledger
+bridge, a Director dialogue call).
+
 **Next chapter in the pipeline: CH17 — Kain POV** (census lead), the first
 non-Ahdia chapter through the dialogue-frozen cold pass and the first test of
 `2_method_actor/book1_embodiment/Harding_Kain_Book1_Embodiment.md`.
