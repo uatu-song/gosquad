@@ -63,6 +63,7 @@ speech. NEVER MERGE TWO SPANS. Three kinds here, all frozen:
 21. "You're not."  — Ryu
 22. "Each use accelerates breakdown. Your body is aging microseconds faster than it should. Compounds over time."  — Ryu (continues 21, at the degradation graph)
 23. "How much time do I have?"  — Ahdia
+23b. "You bought yourself a year in the training room. This week you spent it on them."  — Ryu (Director-ruled bridge 2026-08-30, punch #5: the week's squad-support spending ate the ch15 efficiency dividend; the frozen "At this rate?" line is the re-baseline)
 24. "At this rate? Eighteen months baseline. Maybe two years if you're conservative with usage. But . . ."  — Ryu
 25. "Quality of life degrades faster than lifespan. You'll feel it before you die from it."  — Ryu (continues 24)
 26. "Can you fix it?"  — Ahdia

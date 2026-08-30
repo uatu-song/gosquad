@@ -4,6 +4,21 @@
 
 ---
 
+## 2026-08-30 — Punch #5: the ledger bridge (Director-ruled dialogue addition)
+
+The ch15→ch16 wobble (efficiency "bought another year, maybe more" vs ch16's
+unbridged "eighteen months baseline") closed with one Ryu span, Director-picked
+from drafted candidates, inserted before the frozen prognosis in draft, source,
+and packet (23b): **"You bought yourself a year in the training room. This
+week you spent it on them."** The frozen "At this rate?" line now reads as the
+re-baseline after the spend — the apparent contradiction is now the chapter's
+grimmest joke, as the punch list specified. Gate: 39/39, all bands.
+Consistent with bible §5b (ledger vs frontier).
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — Punch #6: cost physiology unified (one process, three faces)
 
 Director assignment ("do number 6"). Crew unified the three cost axes into
