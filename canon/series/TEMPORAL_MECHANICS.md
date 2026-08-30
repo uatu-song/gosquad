@@ -124,9 +124,17 @@ Corollaries the prose already obeys:
 - Heavy multi-field nights push the frontier hardest (ch16's nosebleed
   ladder); efficiency gains slow the LEDGER but the frontier still pays on
   every use.
-- **This model deliberately does NOT resolve the endpoint** — "more Seed than
-  human" vs "make the eighteen months count" (death or metamorphosis) is
-  punch #8, its own decision, and the unified model supports either door.
+- **THE ENDPOINT (Director-ruled 2026-08-30, punch #8): "They don't know
+  about metamorphosis. They assume death."** The conversion's true endpoint
+  is metamorphosis — but that is AUTHOR-LEVEL knowledge. Every character,
+  CADENS included, models the clock as terminal: Ryu frames everything as
+  dying ("make the eighteen months count"), Ahdia plans against death, no
+  one ever voices transformation as a possibility. The whispering is done
+  ONLY by the conversion language itself ("more Seed than human"; converted
+  tissue "still you, still functions, just different") — the reader's
+  breadcrumbs, never the characters'. HARD PACKET RULES: no character
+  speculates about metamorphosis; no narration editorializes the door;
+  Ryu's terminal framing is sincere, not a lie.
 
 *Crew-unified 2026-08-30 from on-page evidence under Director assignment
 ("do number 6"); contradicts no frozen line; veto open.*

@@ -4,6 +4,25 @@
 
 ---
 
+## 2026-08-30 — Punch #8: the endpoint (Director-ruled)
+
+**Ruling, verbatim: "they don't know about metamorphosis. they assume death"**
+
+Metamorphosis is the conversion's true endpoint; death is the universal
+in-world belief. The door is real AND held at author level — dramatic irony,
+not character debate. Encoded in bible §5b as hard packet rules: no character
+ever voices transformation; Ryu's terminal framing is sincere; only the
+conversion language whispers ("more Seed than human", "still you... just
+different"). Consistent with the built structure: the ch24 hallway, the
+move map's arrested-transcendence endgame, and Ahdia's survival into the
+series.
+
+Closes punch section B entirely (#4–#9 all resolved).
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — Punch #5: the ledger bridge (Director-ruled dialogue addition)
 
 The ch15→ch16 wobble (efficiency "bought another year, maybe more" vs ch16's
