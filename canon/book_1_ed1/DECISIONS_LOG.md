@@ -4,6 +4,40 @@
 
 ---
 
+## 2026-08-30 — CH17 (Kain POV): two prep rulings, three read flags, gates green
+
+**Prep rulings (Director, before generation):**
+1. **The election NEVER resolves on-page in Book 1** — presumptive
+   presidential nominee, B1 ends before November; loss/rebuild lands between
+   books; the B3 win stands. Topology's "Senator → President in B2" line was
+   the drift; fixed.
+2. **The dynasty is DIAMONDS** — grandfather broke strikes at the mines,
+   father's armored cars moved the stones, Harding made it respectable
+   (TRIOMF, security contracts). Security is the ARM, never the fortune.
+   Pays off the ch6 diamond logo and the Afrikaans name.
+
+**Read flags (Director, applied to draft + source + packet):**
+1. The "subjects." echo — frozen span 119 rendered with a lowercase
+   sentence-open; now carried in narration ("She kept calling the Go Squad
+   'subjects.' He filed the word exactly where she had set it, perfectly
+   flat."). NOTE: crew briefly deleted the span thinking it illegal new
+   speech; the gate caught it at 132/133 — the freeze policing its own crew.
+2. "Every operation flows through her decisions" — SOURCE-frozen twin (the
+   ch3/ch4 class, lines 65/80). Director: cut one. Reed's span trimmed;
+   Kain's page-first instance keeps it.
+3. The golf-whiskey channel — pardon upgraded to intent: "Or the Secretary
+   had wanted it carried, which was likelier. Men that senior did not slip.
+   They delivered." The leak is now a move on the board.
+
+First villain-POV cold pass: register modulated through Kain's processor (no
+media-brain), plain stretches at the vault and the call, no clone hints, the
+Intermediary held to her frozen diction. Texture revision under the standard
+protocol. Final: 3,384 words, 133/133 spans, all bands, nouns clean.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — Punch #8: the endpoint (Director-ruled)
 
 **Ruling, verbatim: "they don't know about metamorphosis. they assume death"**
