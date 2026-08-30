@@ -4,6 +4,54 @@
 
 ---
 
+## 2026-08-29 — Director's CH14a read: six notes applied; 14b written and gated
+
+**Verdict (Director):** "This is the best chapter in the book, and it's not
+close." The register ruling now has "a chapter-length argument for itself";
+the emotion-pulls-the-trigger / calm-releases-it reveal is "the plot's
+operating system. Every future scene where someone startles her is now armed."
+
+**Applied, all six notes:**
+1. **The structural one:** the chapter promised the ambush and delivered a
+   biography. Director-dictated fix, verbatim, now a frozen span in draft,
+   source, and packet (28b): "Before the ambush makes sense, you need to see
+   what you were doing that night." Second Director-authored addition to the
+   frozen-dialogue record.
+2. **The key line:** receipts settled it — CH03 gives Firas a KEYCARD (one of
+   two that exist), and CH05 orders his bed rest at Ahdia's penthouse. The
+   "key she'd forgotten he had" clause cut. Surfaced a real wobble filed as
+   B1V-046: CH05's weeks of bed rest vs CH14's Firas at the Academy days
+   later (CR-7 healing is the available explanation; unruled).
+3. **The elevator invoice: PAID.** Frozen electricity = dark stairwell. The
+   climb now happens in perfect dark — railing, a spoken count, a gym sign
+   she can't see "advertising regardless." The gray-tunnel vision line
+   replaced by the count in the dark.
+4. **Diagnoses:** "clinical depression and generalized anxiety disorder"
+   replaced with the Director's phrase "a nervous system already running
+   hot" — the shown-not-labeled discipline holds. (In-world treatment remains
+   implied by the source's sertraline line about Tess: "Hadn't helped her
+   either.")
+5. "...and so on reflection was gravity" — clause cut.
+6. Stray "?" after "somebody's inventory" — fixed.
+
+**Guidance logged for future packets (not yet a gate):** the frame scenes run
+at full comic ceiling — Bourn, Mack, drone, and narration share one timing,
+and three jokes share one shape (dissent-by-detail). The Firas fake-out works
+BECAUSE the narration goes plain for six paragraphs when it stops being
+funny. "Keep the contrast deliberate": future packets should name the
+quiet-stretch device — when stakes spike, narration drops the wit and goes
+plain. Also ratified: the lampshade distinction — Ahdia processing through
+her media diet is characterization; the book comparing itself to the genre is
+not.
+
+**Gates after edits:** 14a 44/44 spans, all bands pass. CH14b v1 (written
+this session against the updated model): 95/95 spans, all bands, nouns clean,
+3,738 words.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — Register ruling: the book commits to the rewrite voice
 
 **Context (Director's own analysis, reading the ch1-13 sample):** the two

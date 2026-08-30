@@ -58,7 +58,8 @@ narration, not speech. Span 32 is FAERIS's only report; span 33 continues it.
 25. "The police ambush. Three simultaneous engagements across the city. Every member of the Go Squad kettled by coordinated police response. We were monitoring their communications. They knew exactly where your brother's team would be."  — (unattributed — alternation per beats)
 26. "How?"  — (unattributed — alternation per beats)
 27. "That's what we wanted to know."  — (unattributed — alternation per beats)
-28. "Show her."  — (unattributed — alternation per beats)
+28. "Show her."  — Bourn
+28b. "Before the ambush makes sense, you need to see what you were doing that night."  — Bourn (Director-dictated 2026-08-29 — names the withhold so the ambush promise stays alive; follows 28 directly)
 29. "Wait, I was freezing time while running? I didn't even know I was doing that."  — (unattributed — alternation per beats)
 30. "FAERIS,"  — Bourn
 31. "Duration of unconscious freeze during subject's return trajectory."  — (unattributed — alternation per beats)
