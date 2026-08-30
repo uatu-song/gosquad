@@ -4,6 +4,47 @@
 
 ---
 
+## 2026-08-30 — CH23; THE CALENDAR PASS; three source-canon violations fixed
+
+**The calendar pass (Director: "the highest-value continuity job left").**
+Four competing spans were circulating for the same elapsed time — three weeks,
+six weeks, six months, and a five-month seasonal jump. All resolved against
+one chain, now bible §7d as a table: Jericho abducted the night Firas was shot
+(~Aug 12) → warehouse **Aug 14** (FAERIS timestamp) → ambush +2 nights →
+CADENS/montage → **late September** for ch17–23.
+
+Derived and fixed:
+- Warehouse → present is **six weeks**. Whitford's "six weeks" (ch17) is
+  CORRECT; crew's morning edit to "two weeks" reverted.
+- **Jericho held six weeks.** Both ch17's "three weeks" and ch23's "six
+  months" were drift — six months would predate the book's inciting incident.
+- **Ruth has been at CADENS one day.** She cannot hold weeks of her own notes
+  on Ahdia; CADENS has the data, she has had one day with it. (The Director's
+  flagged "three weeks of lab notes" was in a mid-write state and is not in
+  the finished draft.)
+- FAERIS independence: three days at ch20.
+
+**Three source-canon violations in ch23, fixed before freezing:**
+1. **CADENS expanded wrongly** — the source invented "Cosmic Anomaly Defense
+   and Neutralization Service" against ch13 and ch17's "Cataclysm Activity
+   Detection and Engagement Network Sentry."
+2. **BOURN MISGENDERED THREE TIMES** ("he said", "shook his head", "Ruth
+   behind him") against the locked she/her canon.
+3. **The van again** — Firas driving Jericho. Now holds an extraction point
+   on foot per §7b.
+
+**Ruth's debt (logged unpaid after ch22) is PAID in kind, not discharged:** she
+carries it rather than confessing, Victor's three questions land unanswered,
+and nobody forgives her on the page.
+
+CH23 final: 2,599 words, 163/163 spans, all bands, nouns clean.
+**First chapter generated from the topography digest** instead of ten draft
+chapters — the model works.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — CH23; the canonical timeline; a gate metric corrected
 
 **THE CALENDAR PASS (Director: the highest-value continuity job left).** Four

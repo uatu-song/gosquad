@@ -1,244 +1,229 @@
-# CH24 METRIC REWRITE PACKET — dialogue-frozen cold pass (2026-08-29)
+# CH24 METRIC REWRITE PACKET — dialogue-frozen cold pass (2026-08-30)
 
-**What this is:** everything needed to write Book 1 Chapter 24 FROM SCRATCH.
-You have never seen any existing draft of this chapter and must not look for
-one. The chapter's dialogue is extracted below and is FROZEN — you write all
-the narration around it. Style is defined by MEASURED TARGETS from the
-author's own prose.
+**What this is:** Chapter 24 — the dream, the eight doses, and the return.
+Written FROM SCRATCH; the dialogue below is FROZEN. Opens inside Ahdia's dream
+while the team from ch23 is already running at Kain.
 
-**Contamination rule (absolute):** read ONLY this packet and
-`2_method_actor/book1_embodiment/Ahdia_Bacchus_Book1_Embodiment.md`. Do NOT
-open anything in `6_manuscript/` or `1_writing_guides/`, do not grep the repo,
-do not search for prior drafts. If you feel you need more context, you don't.
+**Read, in this order, and NOTHING else in the repository:**
+1. This packet
+2. `canon/book_1_ed1/CH01-22_TOPOGRAPHY.md` — the world-state digest: cast,
+   codename map, institutions, and the KNOWLEDGE GATES table (who knows what)
+3. `canon/series/TEMPORAL_MECHANICS.md` — THE BIBLE (§5b unified cost, §7
+   trigger table, §7b no team vehicle, §7c the season, §7d the canonical
+   timeline, §8 undated)
+4. `6_manuscript/book_1/rewrite_pilot/chapter_23_metric_v1.txt` — the chapter
+   immediately before yours; read this ONE draft for voice and the exact
+   situation you inherit
+5. `2_method_actor/book1_embodiment/Ahdia_Bacchus_Book1_Embodiment.md`
+
+No grep, no other files.
+
+**THE CHAPTER'S REAL ASSIGNMENT.** This is the first Ahdia-POV chapter of the
+climax, and the book has been starving the reader of her for a reason. Three
+jobs: (1) the dream teaches her the thesis of her own power — she only ever
+pulls, and the red door is the direction she has never opened — WITHOUT the
+narration explaining it to the reader; (2) the dose sequence is a woman
+spending her life at a known exchange rate, on the page, in real time — §5b
+cost is the physics, and every acceleration is paid for; (3) the arrival is a
+resurrection witnessed by five people who buried her. You write the freeze
+from OUTSIDE — the # break moves the camera to the street, and Ahdia does not
+get another interior line after it.
+
+**REGISTER:** Ahdia POV to the # break, then external. The dream is concrete
+and staccato — rain, pigeons, coffee, doors; it earns its strangeness through
+ordinary objects doing wrong things, never through abstraction. The medical
+bay runs on urgency: short declaratives, procedure, count the injections. The
+street scene is a wide shot held steady.
 
 ---
 
 ## THE DIALOGUE — FROZEN, VERBATIM, IN ORDER
 
-Rules:
-- Use EVERY span below, EXACTLY ONCE, in EXACTLY this order,
-  character-for-character (a trailing comma inside a span means a tag follows).
-- "(same utterance, continues)" = one speech interrupted by a tag or beat;
-  keep the spans separate with your prose between.
-- You may NOT add any new quoted speech. The dream's "feeling" communications
-  and the tablet text (below) are rendered UNQUOTED.
-- KNOWN SOURCE CONTRADICTION, do not repair: span 9 says three hours, span 34
-  says eighteen. Both are frozen. Write around it without drawing attention.
+Every span exactly once, in order, character-for-character. NEVER MERGE TWO
+SPANS. No new quoted speech.
 
- 1. "You've been stuck here. We all have."  — little Ahdia (age 8, in the dream)
- 2. "You keep looking back. What if you looked forward instead?"  — little Ahdia
- 3. "I'm scared,"  — adult Ahdia
- 4. "Good. That means you're moving."  — little Ahdia
- 5. "Wake up."  — the cold, final voice — NOT the Seed
- 6. "Hey, hey—"  — Ryu
- 7. "You're okay. You're—"  — Ryu (same utterance, continues)
- 8. "Whoa, easy."  — Ryu
- 9. "You've been out for three hours."  — Ryu
-10. "What happened?"  — Ahdia
-11. "You passed out. Ruth said—"  — Ryu
-12. "You were in pretty bad shape when they brought you in."  — Ryu (same utterance, after he stops and adjusts his glasses)
-13. "Where's Ruth?"  — Ahdia
-14. "Where's Ruth?"  — Ahdia (repeated — he hesitated)
-15. "She left. With the others."  — Ryu
-16. "Left where?"  — Ahdia
-17. "What the hell is that?"  — Ahdia (seeing the monitor)
-18. "Kain."  — Ryu
-19. "He used the Heart. The Tamois Heart. He's been growing for the past hour."  — Ryu (same utterance, continues)
-20. "Ruth and the team went after him,"  — Ryu
-21. "About thirty minutes ago."  — Ryu (same utterance, continues)
-22. "They don't have powers,"  — Ahdia
-23. "I know."  — Ryu
-24. "They're going to die."  — Ahdia
-25. "Ahdia—"  — Ryu
-26. "I need the treatment."  — Ahdia
-27. "Now."  — Ahdia (same utterance, after she stands)
-28. "You can't. The treatment isn't stable yet."  — Ryu
-29. "Using your powers will—"  — Ryu (same utterance — he moves between her and the door)
-30. "Give me the treatment."  — Ahdia
-31. "You don't understand,"  — Bourn (entering, tactical gear)
-32. "You need eight more doses. Three weeks between each one. That's six months."  — Bourn (same utterance, continues)
-33. "I don't have six months,"  — Ahdia
-34. "You collapsed at the docks. Cellular degradation. You've been unconscious for eighteen hours."  — Ryu
-35. "Ruth developed a treatment. We administered the first dose. You're stabilized, but still severely damaged. Your cells need time to integrate each dose. If you take them too soon—"  — Ryu (same utterance — he gestures at the IV port)
-36. "We're out of time,"  — Bourn
-37. "She's accelerating!"  — Ryu (at the monitors)
-38. "She's giving herself the three weeks!"  — Ryu
-39. "Energy expenditure is exceeding regeneration. It's a net loss."  — Ryu (reading the numbers)
-40. "It's not like there's a dial I can turn!"  — Ahdia
-41. "Or a needle gauge to monitor!"  — Ahdia (same utterance, looking at her hands)
-42. "Even at perfect ratio, she's only getting fifty percent max,"  — Ryu, to Bourn
-43. "It's a zero-sum problem."  — Ryu (same utterance, continues)
-44. "Did it work?"  — Ahdia (voice hoarse, caught by them)
-45. "First few integrated. Last ones barely worked. Maybe thirty percent total regeneration."  — Ryu (checking the monitors)
-46. "Is that enough?"  — Bourn
-47. "I don't know."  — Ryu
-48. "It has to be."  — Ahdia
-49. "Is that—"  — Knight
-50. "Ahdia,"  — Ruth (whispered — her voice barely works)
-## FIXED DISPLAYED TEXT (unquoted, verbatim, in this order, during the dosing)
+  1. "You've been stuck here. We all have."
+  2. "You keep looking back. What if you looked forward instead?"
+  3. "I'm scared,"
+  4. "Good. That means you're moving."
+  5. "Wake up."
+  6. "Hey, hey—"
+  7. "You're okay. You're—"
+  8. "Whoa, easy."
+  9. "You've been out for eighteen hours."
+ 10. "What happened?"
+ 11. "You passed out. Ruth said—"
+ 12. "You were in pretty bad shape when they brought you in."
+ 13. "Where's Ruth?"
+ 14. "Where's Ruth?"
+ 15. "She left. With the others."
+ 16. "Left where?"
+ 17. "What the hell is that?"
+ 18. "Kain."
+ 19. "He used the Heart. The Tamois Heart. He's been growing for the past hour."
+ 20. "Ruth and the team went after him,"
+ 21. "About thirty minutes ago."
+ 22. "They don't have powers,"
+ 23. "I know."
+ 24. "They're going to die."
+ 25. "Ahdia—"
+ 26. "I need the treatment."
+ 27. "Now."
+ 28. "You can't. The treatment isn't stable yet."
+ 29. "Using your powers will—"
+ 30. "Give me the treatment."
+ 31. "You don't understand,"
+ 32. "You need eight more doses. Three weeks between each one. That's six months."
+ 33. "I don't have six months,"
+ 34. "You collapsed at the docks. Cellular degradation. You've been unconscious for eighteen hours."
+ 35. "Ruth developed a treatment. We administered the first dose. You're stabilized, but still severely damaged. Your cells need time to integrate each dose. If you take them too soon—"
+ 36. "We're out of time,"
+ 37. "She's accelerating!"
+ 38. "She's giving herself the three weeks!"
+ 39. "Energy expenditure is exceeding regeneration. It's a net loss."
+ 40. "It's not like there's a dial I can turn!"
+ 41. "Or a needle gauge to monitor!"
+ 42. "Even at perfect ratio, she's only getting fifty percent max,"
+ 43. "It's a zero-sum problem."
+ 44. "Did it work?"
+ 45. "First few integrated. Last ones barely worked. Maybe thirty percent total regeneration."
+ 46. "Is that enough?"
+ 47. "I don't know."
+ 48. "It has to be."
+ 49. "Is that—"
+ 50. "Ahdia,"
 
-Ryu types on a tablet and shows her:  RATIO = 1:2000
-then:  TOO FAST = CELLS BURN
-then:  TRY 1:1500
-later, waving the tablet through her red haze:  SLOW DOWN
+**Speaker key:** 1–2, 4 little Ahdia (in the dream) · 3 Ahdia · 5 a cold,
+final voice that is NOT the Seed · 6–9, 11–12 Ryu · 10, 13–14, 16–17 Ahdia ·
+15, 18–21 Ryu · 22, 24 Ahdia · 23 Ryu · 25 Ryu · 26–27 Ahdia · 28–29 Ryu ·
+30 Ahdia · 31–32 Bourn · 33 Ahdia · 34–35 Ryu · 36 Bourn · 37–39 Ryu ·
+40–41 Ahdia · 42–43 Ryu (to Bourn) · 44 Ahdia · 45 Ryu · 46 Bourn · 47 Ryu ·
+48 Ahdia · 49 Knight (on the street) · 50 Ruth, whispered — her voice barely
+works (ch23: her throat).
 
-## POV + SITUATION
+## REQUIRED VERBATIM NARRATION (not quoted, still frozen — place them where
+the beats say; do not restyle them)
 
-Ahdia Bacchus POV, third limited, past tense, through the scene break; after
-the break the camera sits with the Go Squad at street level watching her
-arrive. Late Book 1. Ahdia collapsed at the docks; she has been in the CADENS
-medical bay since. Ruth and the team have gone after Kain WITHOUT powers.
-Ruth knows Ahdia is the source of the team's abilities; the team does NOT know
-yet — nothing in this chapter may reveal or hint at that mechanism.
+- `The feeling said: Wrong direction.`
+- `You only ever pull. Slow. Stop. Backward. What if you pushed?`
+- `The feeling: You can't freeze moments. Only delay them.`
+- Ryu's tablet lines, on their own beats, caps intact:
+  `RATIO = 1:2000` · `TOO FAST = CELLS BURN` · `TRY 1:1500` · `SLOW DOWN`
 
-## THE SHAPE (beats — order fixed; texture yours)
+## BEATS (order fixed; texture yours; # between scenes)
 
-1. THE DREAM. The world runs backward around her — people in reverse, rain
-   falling upward, a car backward past her, coffee leaping from a gutter back
-   into a hand. She reaches for the Seed to stop it; nothing happens. Blue
-   light pulses through her skin with her heartbeat, each pulse rewinding
-   another second. A FEELING from the Seed, not words, rendered unquoted:
-   Wrong direction. Then: You only ever pull. Slow. Stop. Backward. What if
-   you pushed? The world inverts.
-2. THE FALL. Down through layers of frozen moments stacked like photographs —
-   the warehouse explosion mid-blast, Gloom Girl suspended above the bridge,
-   the police ambush with bullets hanging — each dissolving as she passes.
-   The feeling: You can't freeze moments. Only delay them.
-3. THE HALLWAY. She lands. Long hallway; blue doors on the left, red doors on
-   the right; she has only ever opened blue. One blue door opens on Montana —
-   the campground, herself at eight, on a log. Little Ahdia speaks (spans
-   1–2). A red door opens behind adult Ahdia — light, movement, forward
-   momentum, everything she has been avoiding. Spans 3–4.
-4. THE WITNESS. Something vast moves through the hallway — too big for it,
-   passing anyway, curious, observing, not stopping. The red door pulses. She
-   reaches. Everything CRACKS: red light, hot, forward, fast. Something
-   incomprehensible touches her mind — not hostile, not kind — and she sees
-   herself spread across infinite moments, every possible Ahdia, all moving
-   forward, all reaching for the red door. It pulls back. A voice, cold and
-   final, NOT the Seed: span 5.
-5. THE MED BAY. She jolts awake gasping — white ceiling, screaming monitors,
-   CADENS medical, the IV torn from her arm without her remembering doing it.
-   Ryu, close, sleepless, glasses crooked. Spans 6–16. He points at the wall
-   monitor rather than answer.
-6. THE SCREEN. Downtown: smoke, fire, buildings with pieces missing. Kain —
-   twenty-plus feet, still person-shaped but wrong, translucent skin, too
-   many joints, the Tamois Heart pulsing in his chest like a second sun. He
-   grabs a car, throws it through a storefront. Spans 17–24.
-7. THE DEMAND. She swings her legs off the bed, cold floor, bare feet. She
-   wants the treatment; Ryu blocks the door; Bourn enters. Eight more doses,
-   three weeks apart, six months. On the monitor Kain takes another car. The
-   team is somewhere between here and there. Spans 25–36. Bourn's phrase
-   hangs: out of time.
-8. THE COMPRESSION. Her hand goes to the Seed. She shoves past Ryu to the
-   cabinet, takes all eight autoinjectors, lines them up, sits, closes her
-   eyes — and the Seed flares RED. Not blue. The first deliberate use of the
-   other direction: she is accelerating her own time, giving herself the
-   three weeks between doses in seconds. Monitors scream. Dose by dose:
-   Ryu counting on fingers that move glacially from inside her acceleration;
-   a pen tapped as a metronome she hears as if underwater, then through a
-   wall, then an ocean; the tablet messages (fixed text above); the ratio
-   slipping away from her dose by dose; her body screaming; the Seed
-   flickering red-blue-red. Eight injections. She lets go and collapses
-   forward. Spans 37–43 land inside this sequence.
-9. THE PRICE. Ryu and Bourn catch her. Maybe thirty percent total
-   regeneration. On the feeds the team is making contact with Kain. Spans
-   44–48. She stands — hospital gown, barefoot, barely upright — reaches for
-   the Seed, red, gone. The med bay empty, monitors flatlined, cabinet empty;
-   Ryu and Bourn turn to the feeds. Waiting.
-10. (scene break) THE ARRIVAL. Street level, with the team. The light first —
-   a FAERIS drone materializing over the intersection, beam scanning down —
-   then the pull, space folding, and Ahdia appears: hospital gown, bare feet,
-   hair loose, hands spread. The Seed flares BLUE through the fabric. Kain
-   freezes mid-step, fist raised, his hand stopped around the teenagers he
-   was holding — suspended, terrified, alive. The Tank cops freeze — Edgar
-   with Sable in his grip, Ogden's fist inches from Battlea's face, Philips
-   and Orlansky mid-charge. Everything ELSE keeps moving. Three seconds of
-   nobody moving; then the civilians run. The Go Squad doesn't. Knight
-   helping Battlea up, Sable against a wall, Gloom Girl on her knees, Ruth
-   with a bruised throat. Spans 49–50. Ahdia holds five massive targets in
-   the freeze while the world moves around them; she opens her eyes and sees
-   her team — the injuries itemized through her eyes — staring at the girl
-   who should still be unconscious. End held there. No resolution.
+1. **The dream — running backward.** The street in reverse: rain climbing,
+   a pigeon flying tail-first, coffee leaping back into a hand. She reaches
+   for the Seed to stop it and nothing answers. Then the feeling from her
+   chest — not a voice, not words — and the three frozen feeling-lines,
+   spaced: wrong direction; you only ever pull; you can't freeze moments,
+   only delay them. Blue light pulsing under her hoodie in time with her
+   heart, each pulse rewinding the world another second.
+2. **The fall and the hallway.** She falls THROUGH — layers of frozen
+   moments stacked like photographs: the warehouse blast mid-explosion,
+   Gloom Girl above the bridge, the ambush with its bullets hanging. Then
+   the hallway: blue doors left, red doors right, and she has only ever
+   opened blue. A blue door opens on Montana — the campground, herself at
+   eight on a log — and the little-Ahdia exchange runs (spans 1–4). A red
+   door opens behind her: warm, alive, everything she has been avoiding.
+3. **The witness, and the crack.** Something vast moves through the hallway
+   — too big for it, patient, old, CURIOUS, not hostile and not kind. It
+   passes; it only observes. She reaches for the red door and everything
+   cracks: red light, hot, forward, fast; herself spread across every
+   possible moment, all of them moving forward. Then the other voice — cold,
+   final, NOT the Seed: "Wake up." Do not explain either presence.
+4. **(#) The medical bay.** Awake gasping: white ceiling, monitors, the IV
+   torn out and no memory of doing it. Ryu — glasses crooked, a week without
+   sleep — and the eighteen hours. The two "Where's Ruth?" spans are the same
+   question asked twice because he hesitated; make the hesitation cost him.
+   Then the wall monitor: downtown, smoke, and Kain — twenty feet and more,
+   still person-shaped but wrong, translucent, too many joints, the Heart
+   pulsing in his chest like a second sun. The team went after him thirty
+   minutes ago, powerless. "They're going to die." and Ryu does not argue.
+5. **The demand.** Bare feet on cold floor. She wants the treatment NOW; Ryu
+   blocks the door; Bourn walks in still wearing tactical gear and gives her
+   the arithmetic: eight more doses, three weeks apart, six months. On the
+   monitor Kain throws a car. "I don't have six months." Ryu lays out the
+   ledger — docks, degradation, first dose, integration time — and Bourn,
+   who came to say no, says the thing that decides it: "We're out of time."
+6. **The eight doses — PLAIN STRETCH, the chapter's engine.** She takes all
+   eight autoinjectors from the cabinet, lines them on the bed, closes her
+   eyes, and the Seed flares RED for the first time — she is accelerating
+   her own cells, giving herself the three weeks between doses in seconds.
+   Count every injection, one through eight, each with its cost: the ratio
+   on Ryu's tablet, his fingers counting too slow from inside her speed, the
+   pen tapping a metronome she hears as if underwater, the taps fading wall
+   by wall, the red haze, SLOW DOWN unread. She cannot throttle it — spans
+   40–41 are her saying so. It nets maybe thirty percent. She stands up in a
+   hospital gown and says it has to be enough, reaches for the Seed, and is
+   gone. End the scene on the empty bay: flatlined monitors, empty cabinet,
+   Ryu and Bourn turning to the feeds to wait.
+7. **(#) The intersection — EXTERNAL, wide, held.** The FAERIS drone's light
+   first, then the fold of space, then Ahdia: hospital gown, bare feet, hair
+   loose, hands spread, the Seed blue again through thin fabric. Kain
+   freezes mid-step at twenty-three feet, fist raised, his hand stopped
+   around the teenagers it had caught — they hang there alive. The four
+   Tanks freeze with him: Edgar with Sable in his grip, Ogden's fist an inch
+   from Battlea, Philips and Orlansky mid-charge. EVERYTHING ELSE KEEPS
+   MOVING — civilians run once they understand. The Go Squad does not run:
+   Knight helping Battlea up, Sable against a wall, Gloom Girl on her knees,
+   Ruth beside them with her bruised throat. Span 49, then span 50 — the
+   name, whispered, in front of four people who buried her. Close on what
+   they see: the girl who should be dead, holding five giants still, and
+   what it is costing her showing in every line of her body.
 
-## WORLD + CANON (violating any = dead draft)
+## WORLD + CANON LOCKS (violating any = dead draft)
 
-- The Hyper Seed is a physical object seated in her chest. Blue = slow /
-  stop / pull (all she has ever done). Red = accelerate / push — DISCOVERED
-  IN THIS CHAPTER, first in the dream, then used deliberately in beat 8 and
-  for the translocation. Treat red as new and costly, never routine.
-- Names available: Ahdia, Ryu, Bourn, Ruth, Kain, CADENS, FAERIS, the Tamois
-  Heart, Montana, codenames KNIGHT / BATTLEA / SABLE (Victor) / GLOOM GIRL
-  (Tess), Tank cops Edgar, Ogden, Philips, Orlansky. NO other proper nouns —
-  streets, hospitals, brands all stay generic.
-- Translocation arrives via FAERIS drone light + the pull of space folding.
-  Do not explain how it works.
-- Never editorialize where the team's powers come from or why they are gone.
-- The vast hallway entity and the cold "Wake up" voice are left unexplained.
-  Do not interpret them, name them, or connect them to anything.
+- **§7d timeline:** she has been unconscious EIGHTEEN hours (the source's
+  "three hours" was drift, already fixed; never reintroduce it). Docks
+  collapse was last night; ch23 was today; it is now early evening, late
+  September.
+- **§5b cost:** acceleration is spent flesh. The red Seed state is NEW — it
+  has always been blue (pull); red is push. Mark the difference; do not
+  explain the mechanism.
+- **BOURN IS A WOMAN — she/her, always.**
+- **NO TEAM VEHICLE** (§7b). The team reached downtown on foot; do not
+  transport anyone by car, van, or aircraft in this chapter.
+- **Ruth's voice barely works** (ch23: her throat; the bruise is visible and
+  darkening in beat 7).
+- The vast curious witness and the cold "Wake up" voice are TWO DIFFERENT
+  presences. Neither is named, explained, or attributed. The Seed is neither
+  of them.
+- Frozen figures — do not add new ones: eighteen hours, past hour, thirty
+  minutes, eight doses, three weeks, six months, first dose, fifteen
+  seconds, 1:2000, 1:1500, fifty percent, thirty percent, twenty feet,
+  twenty-three feet, eight years old.
+- Codenames in the street scene are operational: Knight, Battlea, Sable,
+  Gloom Girl. The Tank cops are Edgar, Ogden, Philips, Orlansky — named here
+  for the first time; use exactly these, invent no others. FAERIS drones
+  exist and are three days independent.
+- Montana and the campground are her childhood; add no new biography.
+- The book is undated; the season is late September. **Never "Marcus."**
+- The team believed Ahdia dead. Beat 7 is the resurrection; play the
+  recognition, not an explanation. Nobody discusses how — the chapter ends
+  before anyone can.
 
-## STYLE — BAND TARGETS (machine-gated: every measure has a floor AND a ceiling)
+## STYLE — BAND TARGETS (machine-gated; floors AND ceilings; NARRATION ONLY —
+a sentence more than half inside quotation marks is DIALOGUE and does not
+count; measure yourself that way)
 
-Two earlier cold passes on other chapters killed the fragment disease and then
-overshot the other way — narration sentences half again the author's length,
-comma-saturated, simile-heavy. The gate now measures NARRATION ONLY (the frozen
-dialogue is not yours to control) and rejects both directions. The author's
-narration is the target, and its signature is ALTERNATION, not length.
-
-**Length: 1,600–2,000 words.**
-
-NARRATION SENTENCE RHYTHM — the binding section. Bands are hard gate limits;
-the number in parentheses is the author's own value, your actual target:
-- mean 11–20 words (15.8) · median 9–17 (13)
-- 25–50% of narration sentences UNDER 10 words (35.9) — a third of the
-  author's narration is short. Your narration must itself breathe: statement,
-  qualification, landing. Do not write wall-to-wall long sentences.
-- 20–42% at 20+ words (31.5) · 6–17% at 30+ (10.9) — the 30+ sentence is a
-  once-a-paragraph event, not the default unit.
-- short narration sentences (≤4 words): 3–12 per 1K of the whole chapter — they exist (15% of the
-  author's narration) as landings and pivots, not as default.
-
-NARRATION PUNCTUATION per 1,000 narration words:
-- commas 40–72 (55). This is a CEILING too: the author's long sentences are
-  built from clauses joined by "and", by periods that split a thought in two,
-  and by commas — in balance. If every long sentence is a comma chain, you
-  will fail this band.
-- em dash 0–3 (1.1). Almost never.
-- SIMILE BUDGET: "like" 1.5–5.5 (3.7) — at most about one simile per 200
-  words of narration. Both earlier passes ran 6.7 and failed. When you reach
-  for "like a ...", the second reach in any scene is the one to cut; prefer
-  the literal concrete detail.
-- -ly adverbs 12–27 (19.5). This has a FLOOR: do not strip adverbs to sound
-  literary. The author uses them freely.
-
-PARAGRAPHS: mean 22–45 words (32.9).
-
-TAGS: said-share ~34% across a varied palette (asked, replied, called, yelled,
-agreed, responded, demanded...). Adverb-on-tag ("said quietly") ≤ 1 total.
-
-HARD BANS (zero occurrences): anaphoric "Not X. Not Y." · "began to"/"started
-to" · "X's voice was"/"voice came out" · "the particular" · chest as a
-feeling-container ("chest" only as the Seed's/Heart's literal anatomical seat, at most 4 uses).
-
-REPETITION: no 4-word phrase 3+ times; no 5-word phrase 3+ times. If a shape
-works once (a takedown pattern, a freeze image, a sensory formula), the second
-use is the last. Closing epigrams: at most 3, never the same syntactic shape
-twice; default is ending on the concrete image.
-
-## REGISTER EXEMPLAR — the author's own prose (target texture)
-
-"She moved fast. Professional fast. The kind of fast you see in TV medical
-dramas where everyone knows exactly what they're doing and nobody hesitates.
-Ahdia tried to help by staying out of the way, which was harder than it
-sounded in her own apartment."
-
-The burst buys the long line. That ratio is the style — even in a dream, even
-mid-overdose. Ahdia's interiority runs on pop-culture processing,
-self-interrupting tangents, and dark statements delivered flat; her
-embodiment file governs the voice.
+mean 11–20 (15.8) · median 9–17 (13) · <10w 25–50% (35.9) · 20+ 20–42% ·
+30+ 6–17% · commas 40–72/1K narration (CEILING) · em ≤3/1K · "like"
+1.5–5.5/1K · -ly 12–27/1K (FLOOR — the author uses adverbs freely; do not
+strip) · narration-paragraph mean 26–60 · adverb-on-tag ≤1 · zero in
+narration: Not-anaphora, began/started to, voice-was, chest-as-feeling · no
+4- or 5-gram 3+ times · ≤3 landed epigrams (the frozen feeling-lines do not
+count against the budget).
+**Length: 1,500–2,150 words** (source 1,843). "Chest" allowance: 5 — the
+Seed sits in her chest and the Heart in Kain's; those are organs, not
+feelings. Do not add chest-as-emotion on top.
+AVOID these four over-used adverbs entirely unless load-bearing: exactly,
+simply, quietly, finally. The source's "typing frantically" tic ×2 — do not
+inherit it.
 
 ## OUTPUT
 
-Write the complete chapter as plain text. Straight quotes, "..." for
-ellipses. Mark the scene break between beats 9 and 10 with a line containing
-only: #
-Begin with the chapter text directly — no title, no notes.
+Plain text, straight quotes, "..." for ellipses, scene breaks as lines
+containing only # where the beats mark them. Only the chapter prose.
+Write the finished chapter to:
+`/tmp/claude-1000/-workspace/b373d73e-7d54-49e3-97f2-4e609067fed4/scratchpad/chapter_24_metric_v1.txt`
