@@ -4,6 +4,40 @@
 
 ---
 
+## 2026-08-30 — CH19 + CH20 generated; the calendar ruled
+
+**Calendar (Director-ruled, punch-class):** ch20's "published in 2023" was the
+only hard year in the book and its arithmetic broke — three-year-old research
+put the present in a midterm year against Kain's November presidential
+campaign. Ruled: **keep a year, move it to fit.** Present is **2028**; Ruth's
+papers are **2025**. Filed as bible §8 with the derived chain checked (Montana
+~2013 at "over fifteen years", Ahdia 22–23, squad founded ~2024). Packet rule:
+this is the ONLY year that may appear in prose.
+
+**CH19 — the reveal (M82).** 2,563 words, 81/81 spans, all bands. The
+"Director Overseer Bourn" weld lands as reader-only irony: Ruth was never in
+ch17 and never makes the connection.
+
+**CH20 — the thesis chapter.** 3,320 words, 161/161 spans, all bands.
+Source repairs before freezing: fourth Shiba→Matsuda drift, and a corrupted
+sentence that had lost its subject ("and for half a second believed they moved
+her desk").
+
+**PROCESS FINDING, worth keeping:** ch20 failed EIGHT bands on first
+generation — the worst of the run — from an ambiguity crew introduced. The
+packet asked for a "plain stretch"; the agent rendered *plain* as long and
+flowing (narration mean 24.0, 30% of sentences 30+ against the author's 11%).
+Its self-report claimed 34.7% under-10 because it counted DIALOGUE sentences;
+the narration-only figure was 9.1%. Two lessons now standing:
+1. Packets must define "plain" as SHORT DECLARATIVES, not flowing prose.
+2. Revision notes must state the gate's measurement definition explicitly
+   (narration-only; a sentence >50% inside quotes is dialogue).
+Both applied; the rebuild landed every band.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — CH17/CH18 continuity review: seven fixes, three rulings
 
 **Director rulings:**

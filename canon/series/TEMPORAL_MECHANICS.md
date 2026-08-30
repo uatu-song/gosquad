@@ -172,6 +172,23 @@ Corollaries the prose already obeys:
   (5_story_bibles/artifacts/Hyper_Seed.md); appears in ch16 narration as an
   apposition. Licensed, unexplained in Book 1.
 
+## 8. THE CALENDAR (Director-ruled 2026-08-30)
+
+Book 1's present is **2028** — a presidential election year, which is what
+Kain's November campaign requires. Anchored by the one dated line in the
+book: Ruth's cellular-regeneration papers, **published 2025**, three years
+before the present (ch3, ch5, ch17, ch20 all say "three years").
+
+Derived, consistent: the parents vanish in Montana **~2013** ("over fifteen
+years ago", ruled 2026-08-29) with Ahdia ~7 and Firas ~5 — putting Ahdia at
+22–23 now, which matches her stated age. The Go Squad has run ~4 years,
+founded ~2024.
+
+**Packet rule:** this is the ONLY year that may appear in prose. Do not date
+other events, do not count toward November, and do not let a character do
+calendar arithmetic on the page. The book reads as undated everywhere else
+and stays that way.
+
 ## OPEN QUESTIONS — unruled; agents must not resolve
 
 1. **The exchange rate.** 14b's day two: "an hour inside came out to roughly

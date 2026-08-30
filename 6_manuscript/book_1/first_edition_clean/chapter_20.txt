@@ -2,15 +2,15 @@
 
 <!-- SOURCE: _archive/exports/go-squad-2025-12-07T17_10_50.txt — clean export of the first edition, paragraph structure intact, ZERO PDF-extraction artifacts. Supersedes first_edition/ (epub-derived) as the MEASUREMENT GROUND TRUTH. Content identical (32/40 verbatim sentence match); only the damage differs. Quarry, not edit-of-record. -->
 
-Dr. Shiba Ryu walked fast. Not running—just that specific pace of someone who spent twelve hours a day in a lab and forgot that other people needed time to process things like “shadow government facility” and “cosmic threats.”
+Dr. Ryu Matsuda walked fast. Not running—just that specific pace of someone who spent twelve hours a day in a lab and forgot that other people needed time to process things like “shadow government facility” and “cosmic threats.”
 Ruth followed through corridors that seemed to go on forever. Every twenty feet, another door. Another lab. Another impossibility.
-“—so the cellular regeneration protocols you published in 2023 were genuinely groundbreaking,” Ryu was saying, talking over his shoulder without slowing down. “The way you approached accelerated healing through localized metabolic manipulation—that’s exactly the kind of thinking we need. Most researchers get stuck on macro-level solutions but you went micro, which is brilliant, and I know I’m talking too much but I get excited about this stuff and—”
+“—so the cellular regeneration protocols you published in 2025 were genuinely groundbreaking,” Ryu was saying, talking over his shoulder without slowing down. “The way you approached accelerated healing through localized metabolic manipulation—that’s exactly the kind of thinking we need. Most researchers get stuck on macro-level solutions but you went micro, which is brilliant, and I know I’m talking too much but I get excited about this stuff and—”
 He stopped so suddenly Ruth almost ran into him.
 “Sorry.” He adjusted his glasses. Finger-drummed on the doorframe. “I do that. The talking thing. My brain moves faster than my mouth and then my mouth tries to catch up and it just . . .”
 “It’s fine,” Ruth said. Her brain was still processing “shadow government facility.” Everything else was just noise.
 “This is the main research lab.” Ryu scanned his palm. The door opened.
 Inside looked like every medical research facility Ruth had ever seen, if those facilities had budgets measured in billions instead of millions. Synthesis equipment that would make pharmaceutical companies weep with envy. Centrifuges. Spectrometers. Gene sequencers. Holographic displays showing molecular models she’d only seen in textbooks.
-And in the corner, a desk buried under paperwork and coffee cups and for half a second believed they moved her desk.
+And in the corner, a desk buried under paperwork and coffee cups, and for half a second she believed they had moved her own desk here ahead of her.
 “This is where you’d work,” Ryu said. “If you agree. Full access to everything. Synthesis capabilities, isotope libraries, computational modeling. Whatever you need.”
 Ruth walked to the nearest workstation. Pulled up a display. The interface was intuitive—someone had designed this for actual doctors, not just technicians.
 “The temporal degradation data,” she said. “Can I see the full workup?”

@@ -1,0 +1,295 @@
+The corridor ran a hundred yards without a window. Ruth counted the doors on both sides as she went, the way she counted them in any building she had not chosen to enter. An hour ago a woman in a boardroom suit had used the words “shadow government facility” in exactly the tone other people save for parking garage. Then, in the same flat delivery, “cosmic threats.”
+
+Ryu walked ahead of her at a pace that kept turning into a jog. He talked over his shoulder for most of it.
+
+“—so the cellular regeneration protocols you published in 2025 were genuinely groundbreaking,” he said. “The way you approached accelerated healing through localized metabolic manipulation—that’s exactly the kind of thinking we need. Most researchers get stuck on macro-level solutions but you went micro, which is brilliant, and I know I’m talking too much but I get excited about this stuff and—”
+
+He stopped walking suddenly enough that she nearly took his heels off.
+
+“Sorry.”
+
+He pushed his glasses up and squared the badge on his shirt pocket with both hands, tidying whatever happened to be nearest.
+
+“I do that. The talking thing. My brain moves faster than my mouth and then my mouth tries to catch up and it just . . .”
+
+“It’s fine,” Ruth said. It was mostly true. She had been running three words behind him since the elevator, still turning over “shadow government facility.”
+
+He badged them through a door that took two full seconds to decide about him. “This is the main research lab.”
+
+The room went sixty feet back, and it was quiet in the way that costs money: four synthesis benches down the left wall, pharmaceutical grade, the good ones. Behind leaded glass stood the isotope libraries, labeled patiently in a hand nobody had rushed, and over the center table a molecular model turned slowly, amber and white, unbuilding and rebuilding itself like weather. Ruth had written grant applications for one item on that wall. Three years of them. She never got it.
+
+A desk stood in the corner with its surface cleared and its chair squared to it, and there was no nameplate on it, no dust, nothing on the blotter at all. Somebody had been keeping it ready.
+
+“This is where you’d work,” Ryu said. He took his hands out of his pockets and put them back. “If you agree. Full access to everything. Synthesis capabilities, isotope libraries, computational modeling. Whatever you need.”
+
+“The temporal degradation data,” Ruth said, already crossing to the display. “Can I see the full workup?”
+
+He brought it up without sitting down, and Ahdia assembled herself in gray above the center table, life-size and slowly turning. Fine threads ran through the gray, gathered thick at the center of the chest, then went outward along the vessels, root-like, into both shoulders and down the long bones. Ruth walked around it once. She stopped at the hands, where the threads thinned and stopped short of the fingertips.
+
+“The Hyper Seed integration,” she said.
+
+“It’s converting her. Slowly. Every time she uses her powers, it spreads a little more. Replaces biological tissue with something else. Something that can channel temporal energy.”
+
+She asked for the panels, and he stacked every one they had beside the body while she read down the columns. Apoptosis rates, telomere lengths, mitochondrial output falling off a shelf. She had read these exact columns, in exactly this order, in men who had been on fire.
+
+“The mechanism,” Ruth said. The certainty arrived a full second before the reasoning that properly justified it. “It’s cellular stress. Just like gunshot trauma or burns. The stressor is different—temporal manipulation instead of physical damage—but the cellular response is identical. Accelerated apoptosis. Telomere degradation. Metabolic collapse.”
+
+Ryu’s fingers went still on the console edge. “Exactly.” He came quickly around to her side of it. “We’ve tried conventional interventions. Nothing works. The temporal nature of the stress makes it impossible to treat with standard medicine.”
+
+They had gone at it as a temporal problem, which was the honest mistake of people who owned the only instruments capable of measuring one. Ruth looked at the threads and saw a burn.
+
+“My CR-7 protocol,” she said. “The cellular regeneration treatment I’ve been developing. It’s designed for trauma patients. Gunshot wounds. Burns. Severe tissue damage.”
+
+“I’ve read your papers. It’s revolutionary.”
+
+“It never got institutional approval. Too experimental. Too risky.” The sentence had a groove worn into it by now, and it came out perfectly smooth. “I’ve been working on it in stolen hours between ER shifts. Testing on small samples. Never had the resources for proper trials.”
+
+“You have them now.”
+
+He said it plainly, the way a man reports a temperature, and then he stood there and waited while she priced the row of benches, one item at a time.
+
+“The principle is the same,” Ruth said. “Accelerate cellular repair. Provide metabolic support. Reduce the degradation rate. I’d need to modify the isotope ratios—temporal stress probably affects different cellular pathways than physical trauma. And the dosage would need careful calibration. Too little won’t help. Too much could accelerate the transformation.”
+
+“I can synthesize whatever formulation you need. We have isotopes you can’t get anywhere else. Computational models to predict cellular response. We can have a test batch ready in hours.”
+
+“Hours?”
+
+“This is CADENS. We don’t wait for grant approval.”
+
+She had spent her professional life waiting on committees that met quarterly, and this man had just quoted her a turnaround in hours. “It won’t be a cure,” she said. “Best case, it buys time. Extends the timeline from weeks to months. Maybe a year or two if we’re lucky.”
+
+“That’s more than she has now.”
+
+“I’ll need Ahdia’s full cellular workup. Blood samples. Tissue samples if you have them. Baseline metabolic data. I need to understand exactly how the Seed is affecting her before I can counter it.”
+
+“Already compiled.” He turned a second display toward her, and the index on it ran past the bottom of the frame and kept going. “Everything we’ve collected since the warehouse. It’s all here.”
+
+Weeks of samples, drawn and logged and kept faithfully current by people who could not read them, waiting for somebody who could. The somebody had turned out to be her. “You said you’ve been monitoring my research for two years,” Ruth said.
+
+“Since your first paper on metabolic acceleration. We knew it would be relevant eventually.”
+
+“You knew I’d be useful.”
+
+“We knew you were brilliant. The world just hadn’t figured that out yet.”
+
+She set the panel down and squared it carefully to the bench edge, and she left the compliment lying where he had put it. There was work. “Okay,” she said. “Show me the synthesis lab. We’re going to need to move fast.”
+
+#
+
+Four hours later the vial stood upright in a rack under the bench light, four milliliters of it, pale blue and faintly cloudy at the bottom until you turned it. Ruth had built it in a room where nothing had to be begged for, and the whole of it had taken less time than a single shift.
+
+“This is it,” Ruth said.
+
+“You’re sure?”
+
+“No.” She did not dress the word up. “But it’s the best shot we have. Weeks to eighteen months, if it works. Two years if we’re lucky.”
+
+“And if it doesn’t?”
+
+“Then she dies faster.”
+
+Ryu looked at the vial and not at her. “I’ll need to be present for every dose. Real-time adjustments. Clinical judgment.”
+
+“How often?”
+
+“Every three days to start. Weekly once she stabilizes.” She capped the rack and stripped her gloves. “This only works if she stops using her powers every night.”
+
+“Good luck with that.”
+
+“Yeah.”
+
+He wheeled his stool back from the bench and sat on it wrong, one leg up, the tablet forgotten against his knee. “Why couldn’t we figure this out? We tried everything. Standard protocols, gene therapy, metabolic support. Nothing worked.”
+
+“You tried what’s in the literature,” Ruth said. “I’ve been treating trauma patients off the books for three years. Keeping people alive who should have died. The papers I published were incomplete.”
+
+“On purpose?”
+
+“Hospital administrators don’t approve experiments. So I didn’t tell them everything.” She nodded at the synthesis rig behind him, four hundred pounds of machinery that had quietly done in four hours what she herself could not have done in four years of trying. “You can synthesize anything. But you don’t know which patients need which dosages. When to push. When to pull back. That’s not science. That’s art.”
+
+“That’s why we needed you.”
+
+She washed her hands at the sink and dried them thoroughly, and she did not turn around immediately. “Before we do this,” Ruth said. “Tell me the truth. Why does CADENS really need her alive?”
+
+“Cosmic threats,” Ryu said. “Dimensional breaches. Things we can’t stop. Ahdia might be the only Temporalist who can.”
+
+“And if she dies?”
+
+“We hope FAERIS learns fast enough.”
+
+Ruth lifted the vial out of the rack. She closed her hand around it. “I’m not doing this for CADENS,” she said. “I’m doing this because she’s my friend.”
+
+“I know.” He got off the stool. “That’s why you’ll succeed where we failed.”
+
+#
+
+“There’s something you should see,” Ryu said at the door. “It’s relevant to the long-term plan.”
+
+Two levels down, a window looked into a test chamber with a padded floor and a training dummy on a weighted stand, and one FAERIS unit hung at head height in the middle of it, doing nothing. Ryu called what the drones did to her team “enhancements”, and Ruth had watched that word fold a rifle barrel like foil.
+
+“Watch,” he said, and then, to the console: “Execute enhancement protocol.”
+
+The unit dropped four feet and held. Nothing in the chamber changed color or made a sound. The dummy’s arm came around on its stand at an ordinary speed. Then the air in a two-meter sleeve went thick and slow and slightly wrong to look at, and the arm inside the sleeve traveled four times as far as its own hinge permitted. The stand rocked and settled, and Ruth read the numbers along the bottom of the glass twice.
+
+“No temporal field,” Ryu said. “No Ahdia. The drone did that by itself.”
+
+“It’s replicating her powers?”
+
+“At about 10% effectiveness. But yes. The drones have been learning. Observing how Ahdia manipulates time, how she creates the enhancement effect. They’re developing the capability independently.”
+
+“How long have they been doing this?”
+
+“Three days. Started small—minor accelerations, barely measurable. But the effect is strengthening.” He put a curve up on the glass, and the line left the flat, climbed, and then kept on climbing. “At current progression, they’ll reach 50% effectiveness in six months. Full capability in a year, maybe eighteen months.”
+
+Ruth arrived at the end of it before he did. “When Ahdia dies, the team won’t lose their powers.”
+
+“Eventually. If FAERIS evolution continues at this rate. If we can keep Ahdia alive long enough for the transition.”
+
+“They’re becoming sentient,” Ruth said.
+
+“We don’t use that word. Not yet. But . . . maybe.”
+
+“What happens when they don’t need her anymore?”
+
+“I don’t know. The drones are learning from her technique, but they’re also developing beyond it. Adapting. Finding more efficient methods.” He watched the unit hold its station in the empty chamber. “In theory, they could eventually provide enhancements that are safer, more sustainable than what Ahdia does through sheer force of will.”
+
+“In theory.”
+
+“In theory.”
+
+The curve stayed up on the glass, climbing patiently over its own numbers. “Does Ahdia know?”
+
+“Bourn told her. Part of the original recruitment pitch. ‘Help us long enough for FAERIS to learn, then you can step back.’” He shrugged with one shoulder only. “But Ahdia can’t step back. Every time someone’s in danger, she intervenes. Burns through her life force like it’s infinite. The treatment you just developed? It buys her time. But only if she stops trying to save everyone every night.”
+
+“And she won’t.”
+
+“Would you?”
+
+Ruth thought about twelve-hour shifts. She thought about the nights she had stayed past them, and about the four people currently searching the docks for her body. “No,” she said. “I wouldn’t.”
+
+Below them the FAERIS unit came about on its axis, unhurried, and stopped facing the observation window. It stayed that way. “That’s new,” Ryu said.
+
+“What?”
+
+“That level of environmental awareness. The drones weren’t doing that yesterday.”
+
+He watched it a while. His fingers took up their drumming on the rail, visibly faster than before. He collected his tablet off the sill.
+
+“Come on,” he said. “Let’s get you to medical. Ahdia should be awake by now.”
+
+#
+
+The ceiling was white. It had no water stain on it, which was how she knew she was not home.
+
+Ahdia lay still and did the rest of it in order. The light came from a strip along the wall, and there was no window anywhere. Underground, then, or close to it. The equipment beside the bed belonged in a hospital. It made no sound. It had no wheels. It carried no brand name on any surface that she could see. A line ran into the back of her hand, taped down twice.
+
+Then the pieces came back. Containers, black water, a fist stopped four inches off Ruth’s jaw, four points on a man who never once felt them being marked. After that, concrete, and Ruth’s hands, and nothing else.
+
+Her mouth tasted like metal. She turned her head. Ruth stood in the doorway with a hard case under one arm.
+
+“Hey,” Ruth said.
+
+“Hey.”
+
+The word came out thin and used. She tried again on something longer.
+
+“I’m alive?”
+
+“For now.” Ruth set the case on the tray table and unlatched it. “How do you feel?”
+
+“Like I died and came back wrong.”
+
+“Close.” Ruth took out a vial of something pale blue. She stood it upright in the tray. “You almost did die. On the docks. In the translocation. Twice in medical before we stabilized you.”
+
+Ahdia looked at the ceiling for a while.
+
+“Why didn’t you let me?”
+
+“What?”
+
+“I was done. I saved you. That’s all I needed to do. Why bring me back?”
+
+Ruth stopped what her hands were doing. She left them stopped. “Because you’re my friend.”
+
+“You barely know me.”
+
+“I know enough.” She pulled the chair over and sat down. “I know you’ve been dying to give my team powers they never had. I know you’ve been burning through your life force every night because you can’t stand watching people get hurt. I know you think that makes you useful instead of worthy.”
+
+“It’s the same thing.”
+
+“It’s not.”
+
+Ahdia turned her hand over on the blanket and looked at the tape.
+
+“If I’m not useful, what am I?”
+
+She waited for Ruth to answer that. Ruth did not. The rest of it came out on its own.
+
+“I’m not . . . I don’t have anything else. No job. No life. I watch TV twelve hours a day and order gas station food and hide in my apartment because going outside means I might have to be a person and I don’t know how to do that anymore. The only thing I’m good at is stopping time. Take that away and I’m just . . .”
+
+“Just what?”
+
+“Nothing.”
+
+Ruth did not move in the chair. “You saved my life tonight. You’ve saved Victor. Ben. Tess. Leah. Firas. Every person we’ve helped for months. You’ve been dying by inches to give them hope. How is that nothing?”
+
+“Because they don’t know.” Ahdia kept her eyes on the ceiling. “They think they’re heroes. They think they have powers. They don’t know it’s me. Invisible. In the background. Fixing everything while they get to be . . . people.”
+
+“You’re a person too.”
+
+“I don’t feel like one.” The next part came out level, because it was only a description. “I feel like a tool that wears skin. Something that gets used until it breaks. And then what? Then I’m just taking up space.”
+
+The room stayed quiet. Somewhere behind the bed a machine changed its note and changed back.
+
+“I used to think that too,” Ruth said. She sat back. “Hopkins wanted me for research. Brilliant work. Groundbreaking. Then I challenged the chief of surgery and suddenly I’m in the ER. Twelve-hour shifts. Gunshot wounds. Overdoses. Watching people die because the system’s too slow or too cheap or too corrupt to save them. I thought—if I’m not doing the research, if I’m not changing medicine, what’s the point? I’m just another body in scrubs.”
+
+“What changed?”
+
+“I realized the ER was where I could actually help people. Not publish papers. Not collect accolades. Just keep someone alive who shouldn’t make it through the night.” She leaned forward with her forearms on her knees. “You think you’re nothing without your powers. I think you’re someone who’s been dying to save people who don’t even know your name. That’s not nothing. That’s everything.”
+
+Ahdia looked at the vial in the tray instead of at her.
+
+“What’s in the vial?”
+
+“Hope.” Ruth picked it up. “I developed a treatment. CR-7 Temporal Variant. It should slow your degradation. Buy you time. Eighteen months, maybe two years.”
+
+“Should?”
+
+“I’ve never treated temporal stress before. But I’ve kept fifteen trauma patients alive who hospitals wrote off. This is the same principle.” She drew the dose and held the syringe briefly up to the light. “Different mechanism. Same art.”
+
+“And if it doesn’t work?”
+
+“Then you die faster.” Ruth found the port on the line and cleaned it. “But I’m not letting you die without trying. Someone should fight for you as hard as you fight for everyone else.”
+
+“Why?”
+
+“Because you’re worth saving.” She looked up from the port. “Not because you’re useful. Because you’re a person who deserves to live. Even if you don’t believe it yet.”
+
+Ahdia had nothing to put against that. She tried for a while and found nothing.
+
+“I don’t know how to be worth anything except this,” she said.
+
+“Then I’ll teach you.” Ruth seated the syringe. “But first, let’s keep you alive long enough to learn.”
+
+“How long?”
+
+“Until it works or doesn’t.” The plunger went down slowly, in stages. Ruth watched the line and not the syringe. “We’ll know in a few hours. If your cellular markers improve, we continue treatments every three days. If they don’t . . .”
+
+“Then I had weeks anyway.”
+
+“Yeah.”
+
+It went in cold. It came up her arm as cold and stayed cold across her shoulder. She waited for it to cross over into the pain the Seed always charged, and it did not. Somewhere under the collarbone the cold turned over and came back warm, and the warmth went out along the same roads, slowed down, and settled. The cold under the old bullet wound sat exactly where it always sat, and it was not fixed, not healed, just less wrong.
+
+She breathed in. The breath went further down than it had gone in weeks. “Thank you,” she said.
+
+“Get some rest. I’ll be back to check on you in an hour.” Ruth latched the case and stood up with it.
+
+She was three steps toward the door when Ahdia spoke.
+
+“Ruth?”
+
+Ruth stopped and waited.
+
+“Don’t tell him,” Ahdia said. “Please. Not yet.”
+
+Ruth nodded once and did not ask who. The door sealed behind her, and the room was down to its machines. Ahdia lay with her hands flat on the blanket. Above her the monitors kept up their quiet arithmetic, numbers she could not read and did not try to, tracking something in her that was either turning around by now or not. In a few hours somebody would come and tell her which. She looked at the white ceiling and waited to find out.
