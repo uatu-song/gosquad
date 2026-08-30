@@ -4,6 +4,45 @@
 
 ---
 
+## 2026-08-30 — CH21 generated; the van ruling extended; four continuity catches
+
+**The van (deferred 2026-08-29, resolved here).** The rebuild reached ch22, and
+the Director ruled the no-vehicle rule reaches OPS, not just patrol: "No
+vehicle, ever — rebuild the beats." Bible §7b written. Rebuilt in ch21 and
+ch22 source and the ch21 draft: Tess's overwatch moves to a parking structure,
+Jericho is ported to an extraction point, and Firas arrives on foot. Cover
+vehicles (the hired catering van, abandoned with the disguise) remain permitted
+and are named as the sole exception.
+
+**Four Director continuity catches on ch21:**
+1. **Jericho and the Heart moved buildings unremarked.** Ch17 has both in the
+   tower vault; ch21 has them in the mansion office while the team's intel
+   still says "basement research level." Fixed in narration WITHOUT anyone
+   explaining it — Ben reads the vault door and finds rows of warm, unmoving
+   cases: "the intel had promised a research level and given them a warehouse
+   instead, which meant the work had gone somewhere else and taken the man
+   with it." The twenty-three stay below; the Heart and Jericho are upstairs.
+2. **The Heart's provenance contradicted itself** — Peru (ch17) vs Amazigh
+   (ch21). Ruled: **the Maghreb**, tying the artifact to the Bacchus family's
+   own cultural ground and ch2's Maghrebi thread. Ch17 changed.
+3. **Ben's power mislabeled** — "Knight's accuracy? Gone" → "Knight's jumps?
+   Gone" (frozen span; ch16/ch18 establish jump amplification).
+4. **Tess's surviving power** confirmed as designed, not a hole: FAERIS acting
+   alone at ~10%, planted by ch20's test chamber, and the agent had
+   independently written the matching degradation ("It used to be instant...
+   her stomach arriving late"). Made visible with one line that explains
+   nothing — a drone holding at roof height after she stops moving.
+
+**Also:** the ch21 packet omitted the no-vehicle lock, which is how the van
+survived into that draft. Packet checklists must carry every standing canon
+lock, not only the chapter-specific ones.
+
+CH21 final: 162/162 spans, all bands.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 (later) — Two continuity catches; the calendar ruling REVERSED
 
 **1. Ruth's off-books human patients: CUT. Ch3 stands.** Ch20 claimed "fifteen

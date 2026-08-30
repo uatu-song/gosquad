@@ -12,7 +12,7 @@ from pathlib import Path
 from ebooklib import epub
 
 HERE = Path(__file__).resolve().parent
-OUT = HERE / 'GoSquad_Book1_sample_ch01-16.epub'
+OUT = HERE / 'GoSquad_Book1_compilation.epub'
 TITLE, AUTHOR, LANG = 'Go Squad', 'J. S. Vaughn', 'en'
 
 CHAPTERS = [
@@ -24,6 +24,11 @@ CHAPTERS = [
                     HERE/'rewrite_pilot'/'chapter_14b_metric_v1.txt'], 'metric rewrite'),
     ('Chapter 15', HERE/'rewrite_pilot'/'chapter_15_metric_v1.txt', 'metric rewrite'),
     ('Chapter 16', HERE/'rewrite_pilot'/'chapter_16_metric_v1.txt', 'metric rewrite'),
+    ('Chapter 17', HERE/'rewrite_pilot'/'chapter_17_metric_v1.txt', 'metric rewrite'),
+    ('Chapter 18', HERE/'rewrite_pilot'/'chapter_18_metric_v3.txt', 'metric rewrite'),
+    ('Chapter 19', HERE/'rewrite_pilot'/'chapter_19_metric_v1.txt', 'metric rewrite'),
+    ('Chapter 20', HERE/'rewrite_pilot'/'chapter_20_metric_v1.txt', 'metric rewrite'),
+    ('Chapter 21', HERE/'rewrite_pilot'/'chapter_21_metric_v1.txt', 'metric rewrite'),
 ]
 
 CSS = '''body { font-family: Georgia, serif; margin: 1em; line-height: 1.6; }
@@ -60,18 +65,18 @@ def blocks(path):
 
 
 book = epub.EpubBook()
-book.set_identifier('gosquad-book1-sample-ch01-16')
+book.set_identifier('gosquad-book1-compilation')
 book.set_title(TITLE); book.set_language(LANG); book.add_author(AUTHOR)
 book.add_metadata('DC', 'description',
-                  'SAMPLE ch1-16 — vetted first edition + metric rewrites. Not for distribution.')
+                  'Latest developed compilation: vetted first edition (1-11) + metric rewrites (12-21). Not for distribution.')
 style = epub.EpubItem(uid='style', file_name='style/default.css',
                       media_type='text/css', content=CSS.encode())
 book.add_item(style)
 tp = epub.EpubHtml(title='Title Page', file_name='title.xhtml', lang=LANG)
 tp.content = f'''<html><head><link rel="stylesheet" href="style/default.css"/></head><body>
 <div class="title-page"><h1>{TITLE}</h1><h2>by {AUTHOR}</h2>
-<p style="margin-top:3em;font-style:italic;">Sample — Chapters 1–16</p>
-<p style="font-style:italic;">Vetted first edition (1–11) + metric rewrites (12–16)</p>
+<p style="margin-top:3em;font-style:italic;">Chapters 1–21</p>
+<p style="font-style:italic;">Vetted first edition (1–11) + metric rewrites (12–21)</p>
 <p style="font-style:italic;">Not for distribution</p></div></body></html>'''.encode()
 tp.add_item(style); book.add_item(tp)
 

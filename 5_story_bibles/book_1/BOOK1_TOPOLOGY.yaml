@@ -28,6 +28,37 @@ meta:
     act_3: { chapters: "23-30", label: "Climax", summary: "Ahdia revealed. Kain becomes kaiju. Singularity. Firas sacrifices himself. Team rebuilds." }
 
 # ============================================================================
+# REBUILD STATUS — metric-rewrite pipeline (updated 2026-08-30)
+# ============================================================================
+# The generation front. Chapters below are dialogue-frozen cold-pass rewrites
+# in 6_manuscript/book_1/rewrite_pilot/, each gated by _canon/tools/check_style.py
+# (bands derived from ch1-11) and check_nouns.py. ch1-11 are the VETTED first
+# edition and the style standard; they are not rewritten.
+#
+# Governing canon for all generation:
+#   canon/series/TEMPORAL_MECHANICS.md   — the bible (mechanics, cost, calendar)
+#   canon/book_1_ed1/STYLE_PROFILE.md    — the measured bands
+#   canon/book_1_ed1/DECISIONS_LOG.md    — rulings; the don't-relitigate list
+#   canon/book_1_ed1/CH01-11_TOPOGRAPHY.md — vetted world-state agents read
+
+rebuild_status:
+  vetted_standard: { chapters: "1-11", state: "vetted, cleared as agent reading corpus" }
+  rewritten:
+    ch12: { state: gated, note: "the roof; Bourn and Mack arrive" }
+    ch13: { state: gated, note: "CADENS explains; the drone reports" }
+    ch14a: { state: gated, note: "arrival + the warehouse-night playback; Director: best chapter in the book" }
+    ch14b: { state: gated, note: "practice, ghost days, the ambush, the recruitment" }
+    ch15: { state: gated, note: "Ryu; the replacement reveal; the Auerbach badge" }
+    ch16: { state: gated, note: "surveillance montage; the trigger table; the ledger bridge" }
+    ch17: { state: gated, note: "KAIN POV; the trap set; the Intermediary's call" }
+    ch18: { state: gated, note: "v3 under the read-up-to-here model; the EMP springs" }
+    ch19: { state: gated, note: "THE REVEAL (M82) — Ruth learns the truth" }
+    ch20: { state: gated, note: "the thesis chapter; CR-7 Temporal Variant" }
+    ch21: { state: in_revision, note: "the heist; ends with the team surrounded" }
+  next: ch22
+  split_note: "ch14 was split 14a/14b for generation only; it binds as one Chapter 14 for readers."
+
+# ============================================================================
 # CHARACTERS
 # ============================================================================
 

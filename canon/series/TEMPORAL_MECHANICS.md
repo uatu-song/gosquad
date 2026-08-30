@@ -164,6 +164,14 @@ Corollaries the prose already obeys:
   | Ruth / Nightingale | leadership callouts + team proximity | AMBIGUOUS — maybe FAERIS treats her commands as targeting data, maybe she is just that good. "The line was blurring." NEVER resolve. |
 - Triggers are performative, not causal — the cause is always Ahdia watching.
   A trigger she doesn't answer does nothing (Tess's early failures).
+- **FAERIS CAN NOW ACT ALONE — partially (ruled 2026-08-30).** Three days
+  before the docks the drones performed an enhancement with NO temporal field
+  and no Ahdia, at ~10% effectiveness (ch20). When Ahdia goes down, every
+  power dies EXCEPT Tess's translocation — the one that was always most
+  drone-executed. The team's theory ("mine was always tech-based") is correct,
+  for reasons nobody in the room can know. Do NOT let any character explain it
+  correctly; it is a plant, and the dread under it is that the drones are
+  learning to do her job without her.
 - Sustained multi-field load has its own cost tier: nosebleeds (microbleeds —
   capillaries can't handle the stress), hemoglobin drop, tremor, temperature
   fluctuation. "Your body is aging microseconds faster than it should.
@@ -171,6 +179,23 @@ Corollaries the prose already obeys:
 - **Power Extempore** — the Intermediary's term for the Hyper Seed
   (5_story_bibles/artifacts/Hyper_Seed.md); appears in ch16 narration as an
   apposition. Licensed, unexplained in Book 1.
+
+## 7b. NO TEAM VEHICLE — EVER (Director-ruled 2026-08-29, extended 2026-08-30)
+
+"They're parkour masters. They don't drive around. They have comms that they
+use so they're either together or they're radioing each other."
+
+Extended when the rebuild reached ch21–22, where the first edition's van was
+structural: **the ruling reaches ops too, not just patrol.** Rebuilt beats —
+Tess runs overwatch from a parking structure two blocks out (not a
+surveillance van); rescued people are ported to an extraction point, never
+into a vehicle; Firas, too wounded to walk far, arrives on foot at the alley
+mouth rather than driving. The team owns no vehicle and never has.
+
+**Sole permitted exception:** a vehicle used as COVER, hired under a false
+name and abandoned with the disguise — e.g. the catering van Ben and Victor
+arrive in as fake staff. It is a costume, not transport, and nobody on the
+team drives it anywhere as themselves.
 
 ## 8. THE CALENDAR — THE BOOK IS UNDATED (Director-ruled 2026-08-30)
 
