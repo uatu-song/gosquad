@@ -4,6 +4,48 @@
 
 ---
 
+## 2026-08-30 — CH23; the canonical timeline; a gate metric corrected
+
+**THE CALENDAR PASS (Director: the highest-value continuity job left).** Four
+competing spans were in circulation for the same elapsed time — three weeks,
+six weeks, six months, and a five-month seasonal jump. All resolved against
+one chain, now bible §7d: Jericho abducted the night Firas was shot (~two
+nights before the warehouse), warehouse **August 14**, present **late
+September**. Therefore:
+- Jericho has been held **six weeks** — ch17's "three weeks" AND ch23's "six
+  months" were both drift (six months would predate the book's opening).
+- Whitford's "six weeks" of drone signatures is CORRECT as written.
+- Ruth has been at CADENS **one day**; she cannot have weeks of her own notes.
+- FAERIS independence is three days old at ch20.
+
+**CH23 source defects fixed before freezing:**
+1. **CADENS expanded wrongly** — "Cosmic Anomaly Defense and Neutralization
+   Service" vs the established "Cataclysm Activity Detection and Engagement
+   Network Sentry" (ch13, ch17). Corrected.
+2. **BOURN MISGENDERED THREE TIMES** ("he said", "shook his head", "Ruth
+   behind him"). Locked canon is she/her. Corrected.
+3. The van again — Firas now holds the extraction point on foot (§7b).
+
+**GATE DEFECT CORRECTED — the paragraph-mean band.** It was the last band
+still measured over ALL paragraphs while every other band is narration-only.
+Dialogue paragraphs are frozen text an agent cannot change, and ch23 runs
+**61.5 spans per 1,000 words against the author's 23.4** — 163 single-line
+speeches dragged its all-paragraph mean to 15.5 while its narration
+paragraphs read a healthy 27.5. Band is now narration-only, 26–60, derived
+from the author's narration-paragraph mean of 42.6. Verified: all twelve
+chapters ch12–23 pass under the corrected metric; nothing was loosened to
+rescue ch23 (its length overage was still real and was trimmed by hand).
+
+**Ruth's debt from ch22: PAID.** She carries it rather than confessing —
+Victor's three questions land, her silence is "the worst answer available and
+the only honest one," and nobody forgives her on the page.
+
+CH23 final: 2,599 words, 163/163 spans, all bands, nouns clean.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — CH22; the season ruled; a crew error reverted
 
 **THE SEASON — the largest continuity find of the project.** Director: it

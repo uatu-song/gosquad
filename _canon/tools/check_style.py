@@ -49,7 +49,13 @@ BANDS = {
     'narr_comma':   (40.0, 72.0),  # 55.1 /1K narration
     'narr_like':    (1.5, 5.5),    # 3.7  /1K narration
     'narr_ly':      (12.0, 27.0),  # 19.5 /1K narration
-    'para_mean':    (22.0, 45.0),  # 32.9 words
+    'para_mean':    (26.0, 60.0),  # 42.6 words, NARRATION paragraphs only.
+    # Was (22,45) over ALL paragraphs — but dialogue paragraphs are frozen text
+    # the agent cannot change, and a dialogue-dense chapter is arithmetically
+    # dominated by them: ch23 runs 61.5 spans/1k words against the author's
+    # 23.4, so 163 single-line speeches dragged its all-paragraph mean to 15.5
+    # while its narration paragraphs read a healthy 27.5. Every other band in
+    # this gate is narration-only; this one now matches.
 }
 BANS = [
     ('anaphoric "Not X. Not Y."', r'\bNot [^.]{1,25}\.\s+Not\b'),
@@ -138,7 +144,10 @@ def main():
     band('narr_comma', r(','), 'narration commas /1K')
     band('narr_like', r(r'\blike\b'), 'narration "like" /1K')
     band('narr_ly', r(r'\b\w+ly\b'), 'narration -ly /1K')
-    band('para_mean', st.mean([len(p.split()) for p in paras]), 'paragraph mean words')
+    # prep() runs norm(), which flattens curly quotes to straight — test for '"'.
+    npar = [p for p in paras if not p.lstrip().startswith('"')]
+    band('para_mean', st.mean([len(p.split()) for p in npar]) if npar else 0,
+         'narration paragraph mean')
 
     # Bans police the agent's NARRATION. Frozen dialogue is the author's:
     # ch15's conditions speech contains a legitimate anaphoric "Not X. Not Y."

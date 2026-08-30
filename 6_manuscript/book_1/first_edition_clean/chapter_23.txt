@@ -4,7 +4,7 @@
 
 The CADENS transport interior looked like it cost more than Caledonia’s entire police budget.
 Ruth watched the team file up the ramp. Tess first—still dripping from the fountain, thermal goggles hanging around her neck. Knight and Sable next, helping Battlea. The red dress was destroyed, torn and soaked, but she was walking.
-Firas stayed with the van. Someone had to drive Jericho to safety, get the research data secured. He gave Ruth a look—you sure about this?—before driving off.
+Firas stayed at the extraction point with Jericho and the drives. He gave Ruth a look—you sure about this?—and stayed where he was, which was all he could do.
 Ruth was not sure about this.
 But the transport doors closed anyway.
 “Sit,” she said. “We need to move fast.”
@@ -33,7 +33,7 @@ Ruth hesitated. Ahdia had been clear. Don’t tell them. Not yet.
 “They were that too.”
 Knight leaned forward. “Who are you people?”
 Ruth took a breath. This was the part Bourn would kill her for.
-“CADENS. Cosmic Anomaly Defense and Neutralization Service. Shadow government organization. International black budget funding. We monitor and respond to cosmic-level threats that normal governments can’t handle.”
+“CADENS. Cataclysm Activity Detection and Engagement Network Sentry. Shadow government organization. International black budget funding. We monitor and respond to cosmic-level threats that normal governments can’t handle.”
 “Like Kain,” Battlea said.
 “Like Kain. Like the artifacts. Like the things that left them here.” Ruth pulled up a holographic display. Showed thermal imaging of Kain—growing. Massive. “He used the Tamois Heart. Integrated it. He’s transforming into something else. Getting bigger. Stronger. If we don’t stop him in the next few hours, he’ll either die or become something worse.”
 “What’s worse?” Sable asked.
@@ -45,14 +45,14 @@ Ruth cursed under her breath and pulled up the tactical map. Red dots showing Ka
 “So we slow him down,” Battlea said.
 “If we can.”
 “Who?” Knight asked.
-Ruth didn’t answer directly. “First, we need intel. Jericho knows how the Heart works. How Kain’s abilities function. What his limitations are.” She gestured to the pilot. “Set down where Firas has the van. We’re picking up our prisoner.”
+Ruth didn’t answer directly. “First, we need intel. Jericho knows how the Heart works. How Kain’s abilities function. What his limitations are.” She gestured to the pilot. “Set down at the extraction point. We’re picking up our prisoner.”
 #
-They set down three blocks from where Firas had parked the van.
-Jericho was awake. Sitting in the van’s back, hands zip-tied, looking terrified.
+They set down a block from the loading dock where Firas was waiting.
+Jericho was awake. Sitting against the dock wall, hands zip-tied, looking terrified.
 Ruth approached. Full tactical gear. Helmet back on. Intimidating.
 “Dr. Jericho,” she said. “We need to talk.”
 “I don’t know who you are,” he said. Voice shaking. “But I’m not—I didn’t—Kain made me—”
-“Save it.” Ruth pulled up the research files on a tablet. “Resonance calibration. Cellular integration protocols. Temporal manipulation theories. You’ve been helping him weaponize the Heart for six months.”
+“Save it.” Ruth pulled up the research files on a tablet. “Resonance calibration. Cellular integration protocols. Temporal manipulation theories. You’ve been helping him weaponize the Heart for six weeks.”
 “He kidnapped me from the museum!”
 “And then you kept working. Enthusiastically.” Ruth showed him his own notes. Detailed. Excited. No sign of coercion. “You wanted to understand it. Crack the code. Publish the breakthrough of the century.”
 Jericho looked away.
@@ -123,12 +123,12 @@ The transport touched down. CADENS facility.
 Ruth stood. “Wait here.”
 She walked down the ramp.
 Bourn was waiting. Full tactical gear. Expression grim.
-“Ryu says she’s awake,” he said. “Asking what happened. Saw the feeds from the mansion.”
+“Ryu says she’s awake,” Bourn said. “Asking what happened. Saw the feeds from the mansion.”
 “Does she know about Kain?”
 “She knows.” Bourn met Ruth’s eyes. “And she’s already asking when she can deploy.”
 Ruth’s chest tightened. Of course she was.
 “How long does she have if she fights?”
-“Ryu estimates days. Maybe a week if we’re lucky. The temporal strain of freezing something that size, that strong . . .” Bourn shook his head. “It’ll accelerate everything.”
+“Ryu estimates days. Maybe a week if we’re lucky. The temporal strain of freezing something that size, that strong . . .” Bourn shook her head. “It’ll accelerate everything.”
 Ruth looked back at the transport. At the team waiting inside.
 “Bring them to the briefing room,” she told Bourn. “They deserve better than sitting in a transport.”
 Bourn nodded. “And you?”
@@ -142,7 +142,7 @@ Tess stood in the center, turning slowly. Taking it all in.
 Knight was examining a holographic projection of enhanced individual tracking. “They’ve been monitoring meta-humans worldwide. Hundreds of them.”
 Sable found himself on a personnel file. His photo. His real name. Every mission the Go Squad had ever run. “They know everything about us.”
 Battlea sat in one of the tactical chairs. It adjusted to her automatically. “I could get used to this.”
-The door opened. Bourn entered, Ruth behind him.
+The door opened. Bourn entered, Ruth behind her.
 “You’ve seen what we do. You know what’s at stake.”
 “And you want us to join,” Battlea said.
 “I’m offering.” Bourn pulled up a display. CADENS recruitment files. “You’re free to walk away.”

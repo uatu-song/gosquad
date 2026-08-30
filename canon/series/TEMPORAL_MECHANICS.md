@@ -217,6 +217,34 @@ WRONG and is reverted.
 **Packet rule:** no month is ever named except August 14th in the ch13
 playback. Cold is weather, never season.
 
+## 7d. THE CANONICAL TIMELINE (Director-ruled 2026-08-30)
+
+Every elapsed-time statement in the book resolves against this chain. Four
+competing spans were in circulation (three weeks, six weeks, six months, and a
+five-month seasonal jump); this is the one that holds.
+
+| when | what | anchor |
+|---|---|---|
+| night A | Firas's solo patrol, his 64th engagement | ch1 |
+| night B, ~Aug 12 | The dinner he misses. **Jericho abducted from the Natural History Museum** — Firas witnesses it, follows to the docks, is shot | ch3, ch5 |
+| day C | Firas wakes; CR-7's first human use | ch4, ch5 |
+| **night C, Aug 14** | **The warehouse.** Ahdia bonds with the Seed, is presumed dead | ch6–8; FAERIS timestamp, ch13 |
+| +2 nights | The police ambush; the powers appear | ch9–11 |
+| the following days | CADENS; the trigger table; the surveillance montage | ch12–16 |
+| **late September** | The trap, the docks, the mansion, the transformation | ch17–23 |
+
+**Derived spans — use these numbers, never invent others:**
+- Warehouse → present: **six weeks.** So Whitford's "seventeen operations
+  over the past six weeks" (ch17) is CORRECT; an earlier crew edit to "two
+  weeks" was wrong and is reverted.
+- **Jericho has been held six weeks**, since the night Firas was shot. Ch17's
+  "three weeks" and ch23's "six months" were both drift and are corrected;
+  six months would put his captivity before the book begins.
+- Ruth has been at CADENS roughly **one day**. She cannot have accumulated
+  weeks of her own notes on Ahdia's condition; CADENS has the collected data
+  and she has had one day with it. CR-7 Temporal Variant took her four hours.
+- FAERIS independent capability: **three days** old at ch20.
+
 ## 8. THE CALENDAR — THE BOOK IS UNDATED (Director-ruled 2026-08-30)
 
 **No year appears in the prose. None.** The morning's "keep a year, move it to
