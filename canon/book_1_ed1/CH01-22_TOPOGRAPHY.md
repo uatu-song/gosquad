@@ -19,6 +19,23 @@ chapter's full text rather than guessing texture from this summary.
 
 ---
 
+## WHAT PEOPLE CALL EACH OTHER (ruled 2026-08-30 — bible §7g)
+
+Naming follows **whose head the narration is in**, not whether it is a fight.
+
+- **Ruth's proximity → first names** (Ben, Victor, Leah, Tess), even mid-battle.
+- **Ahdia's proximity → codenames.** She has never met them; she knows them
+  the way the city does, off drone feeds and Tess's posts.
+- **The team's own proximity →** codenames on the job, first names off it.
+- **Public / press / external cameras →** codenames, plus "the Go Squad."
+
+The gap between what Ruth calls them and what Ahdia calls them measures how
+alone Ahdia has been. Do not flatten it.
+
+**Ahdia was EIGHT at the Montana trip** (Firas six). Ch02 said seven and five
+and was corrected; ch03's "over fifteen years ago" against her present age is
+the anchor that wins.
+
 ## THE CAST (the ruled codename map — do not deviate)
 
 | Person | Codename | Sketch |

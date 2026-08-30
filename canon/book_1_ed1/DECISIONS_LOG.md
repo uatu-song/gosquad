@@ -4,6 +4,48 @@
 
 ---
 
+## 2026-08-30 — CH24 triangulation: six catches, five ruled
+
+**1. THE WAKING WINDOW (bible §7f).** Ch23's Bourn — "Ryu says she's awake . . .
+already asking when she can deploy" — collided with ch24 opening on a first
+waking after eighteen hours under. **Ruling: Bourn's report is stale.** Ahdia
+surfaced hours earlier, saw the mansion feeds, asked to deploy, and went back
+under WITHOUT KEEPING IT — which is why the torn IV has no memory attached
+and why ch24 reads as a first waking. Fixed in ch23 narration only; all 163
+frozen spans untouched. The continuity note took the place of an epigram
+("It landed like a lab result . . ."), which is the better trade. Consequence
+now canon: ch23's "She knows" about Kain = the docks transformation, NOT the
+Main Street rampage, which is one hour old. Her "What the hell is that?" is
+genuine.
+
+**2. THE DOSE INTERVAL (bible §7e).** Ch20 said every three days / weekly;
+ch24 says eight doses three weeks apart, six months. **Ch24 wins — its whole
+central mechanic depends on the interval being unsurvivably long.** Ch20
+corrected in both places to "Every three weeks to start. Monthly once she
+stabilizes." Nine doses total; dose 1 in ch20; 8 x 3 weeks = six months, so
+Bourn's arithmetic is exact and the cabinet's eight autoinjectors are right.
+
+**3. BOURN'S CLOTHES.** Ch24 had her arrive "in tactical gear with dust on it
+from somewhere real" thirty minutes after ch23 left her in an unwrinkled suit
+in a briefing room she never left. She cannot have been anywhere real.
+Rewritten to the same suit, with what standing still cost her in it.
+
+**4. AHDIA'S AGE AT MONTANA — EIGHT.** Ch02's "seven and five" against ch03's
+"over fifteen years ago" — they already disagreed with each other. Ruled
+eight (Firas six); ch02 corrected. Ch24's dream sides with ch03.
+
+**5. NAMING (bible §7g).** Ruled as a characterization device, not a
+convention: Ruth's proximity takes first names even mid-battle; Ahdia's takes
+codenames because SHE HAS NEVER MET THEM. Ch24's closing street scene is
+Ruth's and was converted to Ben/Victor/Leah/Tess; the dream keeps "Gloom Girl"
+because it is Ahdia's.
+
+**6. THE FIFTH TANK — OPEN, awaiting ruling.** See below.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — CH24: the dream, the eight doses, the return
 
 **Source defect fixed pre-freeze, derived from §7d:** Ryu said "out for three

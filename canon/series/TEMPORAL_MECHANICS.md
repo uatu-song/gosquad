@@ -245,6 +245,64 @@ five-month seasonal jump); this is the one that holds.
   and she has had one day with it. CR-7 Temporal Variant took her four hours.
 - FAERIS independent capability: **three days** old at ch20.
 
+## 7e. THE TREATMENT — DOSE INTERVAL IS THREE WEEKS (Director-ruled 2026-08-30)
+
+Ruth's serum runs on a **three-week** interval, not three days. Ch20 said
+"Every three days to start. Weekly once she stabilizes" and ch24 said "eight
+more doses, three weeks between each one — that's six months." **Ch24 wins:
+its entire central mechanic is that the interval is unsurvivably long**, so
+ch20 was corrected to "Every three weeks to start. Monthly once she
+stabilizes," and its second reference with it.
+
+- **Nine doses total.** Dose 1 is administered by Ruth in ch20. Eight remain.
+- 8 x 3 weeks = 24 weeks ~ six months. Bourn's arithmetic in ch24 is exact.
+- Intervals LENGTHEN as she stabilizes (three weeks, then monthly) — the
+  same direction the original line had, so the shape of Ruth's answer holds.
+- Ruth must be present for every dose. That is a six-month commitment she
+  makes before she knows what it will cost her.
+- In ch24 Ahdia takes all eight in roughly fifteen seconds by accelerating
+  her own cells through the intervals. She nets ~30%. This only reads as
+  desperate if the interval is long; never shorten it again.
+
+## 7f. AHDIA'S WAKING WINDOW AT CH23-24 (Director-ruled 2026-08-30)
+
+Ch23's Bourn reports "Ryu says she's awake . . . and she's already asking
+when she can deploy." Ch24 opens on Ahdia surfacing from eighteen hours under
+and not knowing what happened. **Both stand: Bourn's report is stale.**
+
+- The status line Bourn reads came in **hours earlier**. Ahdia surfaced
+  briefly, saw the mansion feeds, asked to deploy, and went back under.
+- **She does not retain it.** The brief surfacing is the kind a patient does
+  not keep, which is why ch24 is written and reads as a first waking — the
+  torn IV she has no memory of belongs to that earlier window.
+- Therefore ch23's "Does she know about Kain?" / "She knows" refers to what
+  she saw at the docks in ch22 — Kain taking the Heart and beginning to
+  transform. **She does not know about the Main Street rampage**, which is
+  one hour old at ch24. Her "What the hell is that?" is genuine.
+- Ruth hears the timestamp under Bourn's present tense. Awake is an event,
+  not a condition. Do not let any later chapter treat the ch23 report as
+  live.
+
+## 7g. WHAT PEOPLE CALL EACH OTHER (Director-ruled 2026-08-30)
+
+Naming follows **whose head the narration is standing in**, not whether a
+scene is a fight:
+
+- **Ruth's proximity — first names.** Ben, Victor, Leah, Tess. She has known
+  them for four years. This holds even mid-battle; ch24's closing street
+  scene is hers and uses first names throughout.
+- **Ahdia's proximity — codenames.** Night Knight, Crimson Sable, Battlea,
+  Gloom Girl. **She has never met them.** She knows them the way the city
+  knows them, through drone feeds and Tess's posts, which is exactly why her
+  ch24 dream remembers "Gloom Girl suspended above the bridge."
+- **The team's own proximity — codenames on the job, first names off it.**
+- **Public, press and external cameras — codenames**, plus "the Go Squad" as
+  the collective, which anybody may use.
+
+The rule is a characterization device, not a formatting convention: the gap
+between what Ruth calls them and what Ahdia calls them is the measure of how
+alone Ahdia has been.
+
 ## 8. THE CALENDAR — THE BOOK IS UNDATED (Director-ruled 2026-08-30)
 
 **No year appears in the prose. None.** The morning's "keep a year, move it to
