@@ -40,7 +40,17 @@ codenames because SHE HAS NEVER MET THEM. Ch24's closing street scene is
 Ruth's and was converted to Ben/Victor/Leah/Tess; the dream keeps "Gloom Girl"
 because it is Ahdia's.
 
-**6. THE FIFTH TANK — OPEN, awaiting ruling.** See below.
+**6. THE FIFTH TANK — RULED: a fifth, ALIVE, off the board (bible §7h).**
+The four named Tanks are solid from ch24 through ch28's "Four bodies on the
+ground," so the dock Tank Ahdia puts through a container in ch19 is a fifth.
+He survives — hospitalized or in custody, unstated — which is why exactly
+four turn out for Main Street. **Not a kill: Ahdia has no body count in Book
+1.** No text changes anywhere; canon note only. He is the articulate one who
+removes his helmet, calls Ruth "Dr. Carter," and carries the forgettable-face
+signature, so he is a planted thread rather than a loose end — filed as
+promise `fifth-tank-survivor`, payoff unassigned, and left uncollected on
+purpose: Ahdia removed an enemy permanently eighteen hours before the climax
+and nobody ever tells her.
 
 **Ruled by:** Director
 

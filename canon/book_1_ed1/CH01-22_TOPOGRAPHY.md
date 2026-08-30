@@ -19,6 +19,13 @@ chapter's full text rather than guessing texture from this summary.
 
 ---
 
+**THE TANKS ARE FIVE, NOT FOUR** (ruled 2026-08-30, bible §7h). Edgar, Ogden,
+Philips and Orlansky are the four who fight at Main Street. The fifth — the
+articulate one with the forgettable face who hunts Ruth in ch18 and goes
+through a container in ch19 — **survives, off the board, and never returns in
+Book 1.** Never add him to a Main Street scene; never name him among the four.
+Ahdia's push is not a kill and she has no body count.
+
 ## WHAT PEOPLE CALL EACH OTHER (ruled 2026-08-30 — bible §7g)
 
 Naming follows **whose head the narration is in**, not whether it is a fight.

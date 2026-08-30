@@ -303,6 +303,30 @@ The rule is a characterization device, not a formatting convention: the gap
 between what Ruth calls them and what Ahdia calls them is the measure of how
 alone Ahdia has been.
 
+## 7h. THE FIFTH TANK — ALIVE, OFF THE BOARD (Director-ruled 2026-08-30)
+
+**There are FIVE Tank cops, not four.** Four are named and accounted for from
+ch24 through ch28: Edgar, Ogden, Philips, Orlansky. The fifth is the one who
+hunts Ruth through the container yard in ch18 and whom Ahdia puts through a
+container wall in ch19 as her last act before collapsing.
+
+- **He survives. He does not return in Book 1.** Hospitalized or in custody
+  after the docks; the book never says which and does not need to.
+- **This is why exactly four turn out for Main Street.** Do not add a fifth
+  to any Main Street scene, and do not name him among the four.
+- **Ahdia does not know she did it, and nobody ever tells her.** She took an
+  enemy permanently off the board eighteen hours before the climax and gets
+  no credit for it in this book. That is the thesis in miniature; leave it
+  uncollected.
+- **He is NOT a spear-carrier.** He takes his helmet off, calls Ruth "Dr.
+  Carter" as though they had met at a conference, and delivers Kain's line
+  about the value of her research. He carries the **forgettable-face
+  signature** ("the kind of guy you'd see at a coffee shop and never look
+  twice"), which is an open promise against the Kain clone's facelessness.
+- **He remains available** — the only Tank left walking, with that face. Any
+  later use is a Director call, not an agent's.
+- Ahdia's ch19 push is therefore NOT a kill. She has no body count in Book 1.
+
 ## 8. THE CALENDAR — THE BOOK IS UNDATED (Director-ruled 2026-08-30)
 
 **No year appears in the prose. None.** The morning's "keep a year, move it to
