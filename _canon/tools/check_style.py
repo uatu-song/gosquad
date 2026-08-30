@@ -72,14 +72,30 @@ def classify(flat):
     for m in re.finditer(r'"[^"]*"', flat):
         for i in range(m.start(), m.end()):
             inq[i] = True
-    narr, dial, pos = [], [], 0
-    for s in re.split(r"(?<=[.!?])\s+", flat):
-        i = flat.find(s, pos)
-        pos = i + len(s) if i >= 0 else pos
-        if not s.strip():
+    # Offsets are ACCUMULATED, never searched: find() desyncs the moment a
+    # sentence repeats ("Oh," three times in ch14b), and the cascade classified
+    # 2,600 narration words as ~550 — every band verdict on that file was
+    # computed on a fifth of the chapter. re.split with a captured separator
+    # reconstructs exact positions.
+    narr, dial, nclean, pos = [], [], [], 0
+    parts = re.split(r"((?<=[.!?])\s+)", flat)
+    for k, s in enumerate(parts):
+        i = pos
+        pos += len(s)
+        if k % 2 == 1 or not s.strip():   # separator or blank
             continue
-        (dial if sum(inq[i:i+len(s)]) / max(len(s), 1) > 0.5 else narr).append(s)
-    return narr, dial, inq
+        if sum(inq[i:i+len(s)]) / max(len(s), 1) > 0.5:
+            dial.append(s)
+        else:
+            narr.append(s)
+            # The agent-authored characters of this sentence, masked BY OFFSET.
+            # Never re-pair quotes on joined narration: sentence splitting
+            # fragments spans at internal .!? ("Za Warudo!\"" ends a fragment
+            # with an unpaired mark), and pairing across joins once swallowed
+            # 2,000 of ch14b's 2,600 narration words — every punctuation band
+            # ran on the 546 that survived.
+            nclean.append(''.join(ch for j, ch in enumerate(s) if not inq[i+j]))
+    return narr, dial, nclean
 
 
 def main():
@@ -95,14 +111,14 @@ def main():
     W = len(flat.split())
     if W == 0:
         print('✗ empty draft — refusing to report clean'); return 1
-    narr, dial, _ = classify(flat)
+    narr, dial, nclean = classify(flat)
     # Punctuation rates must count only characters the agent WROTE. A short
     # frozen span with an attached tag ("Hey, hey--" she said, close) classifies
     # as a narration sentence, and its frozen dashes then counted against the
     # draft — CH24 v2 failed the em band on exactly this with zero dashes of
     # its own narration. Mask quote interiors before counting marks; sentence
     # LENGTHS stay unmasked (boundaries are real either way).
-    ntext = re.sub(r'"[^"]*"', ' ', ' '.join(narr))
+    ntext = ' '.join(nclean)
     NW = max(len(ntext.split()), 1)
     NL = [len(s.split()) for s in narr]
     results = []

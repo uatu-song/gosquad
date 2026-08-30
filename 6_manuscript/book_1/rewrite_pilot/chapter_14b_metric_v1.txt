@@ -62,7 +62,7 @@ The tiny studio across town had its fire-escape window cracked two inches, so sh
 
 The community center said “nonprofit” from every surface, in the dialect that translates to “we’re one grant away from closing.” She came in past a rubber doorstop wedged for the evening crowd, past a janitor frozen mid-mop, past flyers for a food drive and ESL classes taped up at heights suggesting the ladder had been optional. The donation jar by the front desk held six dollars, all of it coins. In the back office a framed wedding photo stood on the desk, and the woman’s face in it had been scratched out, gouged deep enough to mark the glass. Ahdia didn’t touch that one; she left it exactly where it lived and went back out through the propped door.
 
-The last apartment belonged to a barista, per the name tag on the dresser: the Bean Post, then LEAH, then a smiley face added in Sharpie. The helmet on the wall hook was stickered over every inch and carried a star, which meant jammer, a fact Ahdia possessed for exactly one reason: that Ellen Page roller derby movie, 3 AM, a box of Thin Mints, no witnesses. A punching bag hung in the corner, held together with duct tape and spite. On the shelf sat anger-management books, and under them workbooks with actual handwriting in the margins, page after page of somebody doing the assignment anyway.
+The last apartment belonged to a barista, per the name tag on the dresser: the Bean Post, then LEAH, then a smiley face added in Sharpie. The helmet on the wall hook was stickered over every inch and carried a star, which meant jammer, a fact Ahdia possessed for exactly one reason: that roller derby movie, 3 AM, a box of Thin Mints, no witnesses. A punching bag hung in the corner, held together with duct tape and spite. On the shelf sat anger-management books, and under them workbooks with actual handwriting in the margins, page after page of somebody doing the assignment anyway.
 
 She froze the room, set two fingers against the bag, pushed the way you’d test a door, and released from across the apartment. The bag went off. It swung like it had taken a full baseball swing, the chain snapped taut, and a ceiling bolt bent visibly out of true.
 
@@ -170,7 +170,7 @@ The display went dark. For the first time since the roof, nothing was playing an
 
 “I was processing,” Ahdia managed.
 
-“You were regressing,” Bourn corrected. There was no cruelty anywhere in it. “After everything you’d accomplished—saving your brother’s team twice, mastering abilities that should’ve taken decades, preventing multiple deaths—you heard what he really thought of you. And it broke something.”
+“You were regressing,” Bourn corrected. There was no cruelty anywhere in it. “After everything you’d accomplished—saving your brother’s team twice, mastering abilities that should’ve taken decades, preventing multiple deaths—you heard what he really thought of you.”
 
 Her hands, she noticed from a slight distance, were still shaking. She flattened them on the table and reached for the one question that outranked the rest.
 
@@ -194,17 +194,21 @@ The echo sat on the table between them, and Bourn collected it before it could c
 
 Bourn rose and crossed to the long interior window, the one that looked down into the well of the facility: levels of it descending, screens tracking storms and sinkholes and every other way a planet can go wrong, people moving between them with somewhere to be.
 
-“Our analysis suggests you’re running on a finite energy source,” she said to the glass. “The Hyper Seed bonding replaced approximately half your life force with . . . something else. Every time you use your powers, you’re draining what remains. At your current rate of expenditure—six hours of active manipulation, force amplification, multi-site intervention—you have maybe eighteen months. Less if you keep pushing yourself the way you did during the police ambush.”
+“Our analysis suggests you’re running on a finite energy source,” she said to the glass.
+
+Then she turned around, and whatever was coming had enough mass that the room felt it before she spoke. Mack went still. The drone’s light held where it was, and the only sound left was the building keeping itself alive.
+
+“The Hyper Seed bonding replaced approximately half your life force with . . . something else. Every time you use your powers, you’re draining what remains. At a survivable rate of expenditure—short freezes, small corrections, nothing heroic—you have maybe eighteen months. The ambush was not a survivable rate. That one night cost you a quarter of everything you had left. Four more like it and we are not having this conversation.”
 
 “Eighteen months,” Ahdia said. The number came out flat, from somewhere far away.
 
 “Unless we can find another way,” Mack put in. “CADENS has been studying Temporalists for decades. We have resources, research, ancient texts. Maybe there’s a way to slow the drain, or restore what’s been lost.”
 
-Bourn came back to the table and sat. “But we need your cooperation. We need you to work with us, not hide from us. We need you to trust us.”
+Bourn sat. “But we need your cooperation. We need you to work with us, not hide from us. We need you to trust us.”
 
 “Trust the shadow government that’s been spying on me?”
 
-“Trust the organization that knew you were at critical energy expenditure and intervened before you killed yourself helping people who don’t even know you exist,” Bourn shot back. Then the edge went out of her, all at once. “We extracted you from that academy because if we’d waited any longer, you would’ve spent the rest of your life—however short—watching your brother mourn you while you hid in the shadows. That’s not living. That’s dying slowly.”
+“Trust the organization that knew you were at critical energy expenditure and intervened before you killed yourself helping people who don’t even know you exist,” Bourn shot back. Then the edge went out of her, all at once. “We extracted you from that academy because if we’d waited any longer, you would’ve spent the rest of your life—however short—watching your brother mourn you while you hid in the shadows.”
 
 The drone hummed at its shelf height while Ahdia looked at her hands until she could finally ask it.
 

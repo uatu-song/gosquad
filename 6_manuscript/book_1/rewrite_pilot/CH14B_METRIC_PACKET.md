@@ -92,7 +92,7 @@ Ahdia finishes the sentence, Bourn confirms it back; both stay.
 51. "You figured out your powers were draining you. That you couldn't keep using them without consequence. And then you hid behind a foam obstacle to stick your tongue out at your brother."  — Bourn (continues 50)
 52. "I was processing,"  — Ahdia (weakly)
 53. "You were regressing,"  — Bourn (corrects, not unkindly)
-54. "After everything you'd accomplished—saving your brother's team twice, mastering abilities that should've taken decades, preventing multiple deaths—you heard what he really thought of you. And it broke something."  — Bourn (continues 53)
+54. "After everything you'd accomplished—saving your brother's team twice, mastering abilities that should've taken decades, preventing multiple deaths—you heard what he really thought of you."  — Bourn (continues 53)
 55. "My parents,"  — Ahdia
 56. "You've been monitoring this thing—the Hyper Seed. Did they . . . was their work in Montana connected to this?"  — Ahdia (continues 55)
 57. "Your parents,"  — Bourn (carefully)
@@ -107,14 +107,14 @@ Ahdia finishes the sentence, Bourn confirms it back; both stay.
 66. "We don't know how he acquired it. But we'd been tracking him for months before the warehouse. When you bonded with it—when you became it—you inherited your parents' legacy."  — Bourn (continues 65)
 67. "Lucky me."  — Ahdia
 68. "Our analysis suggests you're running on a finite energy source,"  — Bourn (not looking at her)
-69. "The Hyper Seed bonding replaced approximately half your life force with . . . something else. Every time you use your powers, you're draining what remains. At your current rate of expenditure—six hours of active manipulation, force amplification, multi-site intervention—you have maybe eighteen months. Less if you keep pushing yourself the way you did during the police ambush."  — Bourn (continues 68)
+69. "The Hyper Seed bonding replaced approximately half your life force with . . . something else. Every time you use your powers, you're draining what remains. At a survivable rate of expenditure—short freezes, small corrections, nothing heroic—you have maybe eighteen months. The ambush was not a survivable rate. That one night cost you a quarter of everything you had left. Four more like it and we are not having this conversation."  [rewritten by Director ruling 2026-08-29 — meter reconciliation: 23% stays; eighteen months is the BASELINE figure; the ambush priced as principal]  — Bourn (continues 68)
 70. "Eighteen months,"  — Ahdia (numbly)
 71. "Unless we can find another way,"  — Mack
 72. "CADENS has been studying Temporalists for decades. We have resources, research, ancient texts. Maybe there's a way to slow the drain, or restore what's been lost."  — Mack (continues 71)
 73. "But we need your cooperation. We need you to work with us, not hide from us. We need you to trust us."  — Bourn
 74. "Trust the shadow government that's been spying on me?"  — Ahdia
 75. "Trust the organization that knew you were at critical energy expenditure and intervened before you killed yourself helping people who don't even know you exist,"  — Bourn (sharply, then softer into 76)
-76. "We extracted you from that academy because if we'd waited any longer, you would've spent the rest of your life—however short—watching your brother mourn you while you hid in the shadows. That's not living. That's dying slowly."  — Bourn (continues 75)
+76. "We extracted you from that academy because if we'd waited any longer, you would've spent the rest of your life—however short—watching your brother mourn you while you hid in the shadows."  — Bourn (continues 75)
 77. "So what do you want from me?"  — Ahdia (finally)
 78. "First, we want you to stop killing yourself. Second, we want you to let us help you figure out how to survive this. Third—"  — Bourn
 79. "Kain is still out there. Chief Whitford is still hunting your brother's team. And you're the only one who can help them without exposing what they really are."  — Bourn (continues 78, after a pause)
@@ -237,8 +237,7 @@ Ahdia finishes the sentence, Bourn confirms it back; both stay.
   topography knows him as the magnate-candidate; that's the reader's frame).
 - Licensed proper nouns/references beyond the topography: Frederick Douglass
   Bridge, the Bean Post, Sertraline, The New England Journal of Medicine,
-  Za Warudo, TikTok, DC, Marvel, Thin Mints, roller derby, "that Ellen Page
-  roller derby movie" (do NOT name the film). NO other new names.
+  Za Warudo, TikTok, DC, Marvel, Thin Mints, roller derby, "that roller derby movie" (name neither the film nor the actor). NO other new names.
 - Do not day-count beyond the beats' own markers ("the next afternoon",
   "day two", "two nights after the warehouse").
 

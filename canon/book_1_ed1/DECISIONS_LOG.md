@@ -4,6 +4,54 @@
 
 ---
 
+## 2026-08-29 — CH14b read-notes: the meter reconciled; Bourn trimmed; gate bug found
+
+**The meter (Director):** FAERIS reports 23% of reserves spent in one night;
+Bourn then quotes eighteen months "at your current rate" citing that night as
+the rate — four nights of runway by the reader's own math, "and you've just
+trained them to do the math." A SOURCE defect, faithfully frozen. Ruled fix
+(the shrink-the-number option shown and rejected — 2-3% still burns out in
+weeks if nights recur, and loses the gut-punch): 23% stays; span 69 rewritten
+so eighteen months is explicitly the BASELINE figure and the ambush is priced
+as principal: "At a survivable rate of expenditure—short freezes, small
+corrections, nothing heroic—you have maybe eighteen months. The ambush was
+not a survivable rate. That one night cost you a quarter of everything you
+had left. Four more like it and we are not having this conversation." Applied
+to draft, source, packet.
+
+**Bourn trimmed to facts and terms (Director):** the frame device already
+externalizes Ahdia's interiority; Bourn editorializing is "a double coat...
+the flatness is her menace." Two frozen tails cut in draft, source, packet:
+"And it broke something." and "That's not living. That's dying slowly."
+
+**Eighteen-months staging (Director):** the book's biggest reveal arrived
+mid-speech, delivered to a window. Restaged: Bourn turns, the room stops
+(Mack still, drone light held, the building keeping itself alive), the
+prognosis lands facing her.
+
+**Elliot Page (Director):** "that Ellen Page roller derby movie" — actor is
+Elliot Page. Ruled option taken: name nothing; "that roller derby movie,
+3 AM, Thin Mints, no witnesses" carries it. Draft, source, packet license.
+
+**GATE BUG, load-bearing:** check_style's narration text was rebuilt by
+re-pairing quotes across joined narration sentences. Sentence-splitting
+fragments spans at internal punctuation ('Za Warudo!"' ends a fragment with
+an unpaired mark), so pairing across joins swallowed 2,000 of ch14b's 2,600
+narration words — every punctuation band ever reported ran on whatever
+survived. Also fixed: find()-based offsets desync on repeated sentences.
+Masking is now BY OFFSET, per sentence, no re-pairing. All six drafts
+re-verified under the honest gate: 14a, 14b, 18v2, 24v2, 13 pass all bands;
+**ch12 reads commas 72.1 vs ceiling 72.0** — a rounding-edge on a
+Director-accepted standing chapter; logged, untouched.
+
+Two adverbs added earlier to satisfy the phantom -ly floor were removed once
+the honest measure passed without them — words written for a broken meter do
+not stay in the book.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — Director's CH14a read: six notes applied; 14b written and gated
 
 **Verdict (Director):** "This is the best chapter in the book, and it's not
