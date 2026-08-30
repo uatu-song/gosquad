@@ -153,7 +153,9 @@ Ahdia finishes the sentence, Bourn confirms it back; both stay.
    wall — spans 6–7, the Both/And beat. Force amplification: gentle push in
    frozen time, massive push in real time. An hour frozen is ~three minutes
    real. By day's end ~six frozen hours; the Seed ice-cold to the point of
-   pain; she can freeze at will and hold for minutes.
+   pain; her sleeve cuffs gone soft and
+   pale, fibers furred like rope before it parts — temporal shear on ordinary
+   fabric, discovered on the page, never explained here (ch15 pays it off); she can freeze at will and hold for minutes.
 3. **The ghost days (two days).** She practices infiltration on the only
    people who matter — the team she now knows. Ruth's apartment (doorman
    lobby, frozen mid-yawn guard; the door UNLOCKED — you fight crime and

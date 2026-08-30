@@ -4,6 +4,52 @@
 
 ---
 
+## 2026-08-29 — CH15: Auerbach reaffirmed, Matsuda fixed, two mechanics catches, THE BIBLE
+
+**Auerbach (Director, verbatim):** "She's Ahdia Bacchus. Auerbach is a
+codename, like Howitzer, Greyound, Mercury, etc." CH15's badge line asserted
+"it's your last name" — drift against the July ruling, in the first edition
+itself. Line rewritten (codename of the standard class, Bourn picked it, no
+parents link); the narration beat that mourned "her parents' name" replaced
+with the ruled fact: a name she can't trace, chosen by a woman who doesn't
+explain herself.
+
+**Ryu Matsuda (Director, verbatim):** "Ryu Matsuda is the correct name." The
+first edition's HUD read DR. SHIBA RYU; fixed to DR. RYU MATSUDA. "Dr. Ryu"
+as spoken address stands — given name.
+
+**Two continuity catches (Director, reading ch15):**
+1. The 14a elevator rule (electricity dies in the field) vs the HUD working
+   on her face. Fixed with one added Ryu span, drafted by crew under the
+   Director's "one sentence fixes it": "It's also field-hardened like the
+   suit—ordinary electronics stop dead inside your bubble, which is how I
+   ended up watching you climb thirty-four floors instead of taking the
+   elevator." Applied to source, draft, packet.
+2. Fabric shear vs days of freezing in street clothes. Taken by the
+   Director's flagged retrofit: 14b now discovers the fraying on the page
+   ("cuffs gone soft and pale, fibers furred like rope just before it
+   parts"), unexplained there; ch15's Ryu line pays it off.
+
+**THE BIBLE:** canon/series/TEMPORAL_MECHANICS.md — every rule with its
+source (trigger, field, force, what stops and what doesn't, the cost ledger,
+adjacent tech) plus four OPEN QUESTIONS agents must not resolve (the
+hour-to-three-minutes exchange rate; her phone; FAERIS in-field; hunger
+accounting). Director: "Write the bible before ch16, not after." Written
+before ch16. Packets cite it from ch16 on.
+
+**Gate scoping:** the hard bans now run on narration only — ch15's frozen
+conditions speech legitimately contains an anaphoric "Not X. Not Y." in
+Ahdia's own rhetoric, and the bans exist to police agent narration, not the
+author's dialogue.
+
+**CH15 v1 status:** 187/187 spans green; three narration-texture bands
+failed honestly (short-burst 2.3 vs floor 3.0, %<10w 20.3 vs 25, paragraph
+mean 18.0 vs 22) — revision pass running with the same agent.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — CH14b read-notes: the meter reconciled; Bourn trimmed; gate bug found
 
 **The meter (Director):** FAERIS reports 23% of reserves spent in one night;

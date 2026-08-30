@@ -140,8 +140,11 @@ def main():
     band('narr_ly', r(r'\b\w+ly\b'), 'narration -ly /1K')
     band('para_mean', st.mean([len(p.split()) for p in paras]), 'paragraph mean words')
 
+    # Bans police the agent's NARRATION. Frozen dialogue is the author's:
+    # ch15's conditions speech contains a legitimate anaphoric "Not X. Not Y."
+    # in Ahdia's own rhetoric, and "began to" is normal spoken English.
     for label, pat in BANS:
-        n = len(re.findall(pat, flat))
+        n = len(re.findall(pat, ntext))
         results.append((n == 0, f'{label:44} {n:6}   must be 0'))
     nch = len(re.findall(r'\bchest\b', flat))
     results.append((nch <= a.allow_chest, f'{"chest (anatomical only)":44} {nch:6}   max {a.allow_chest}'))

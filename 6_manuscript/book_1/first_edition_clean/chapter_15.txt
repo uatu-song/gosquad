@@ -99,7 +99,8 @@ The moment it activated, her vision lit up with data.
 Heart rate markers appeared over Ryu as she looked at him: 78 bpm. A small readout in the corner showed her own vitals. Distance markers appeared when she focused on objects across the room. Zoom function activated when she concentrated on details.
 “Whoa.”
 “Right?” Ryu was grinning. “I designed the interface. Video game HUDs, like I said. You can track FAERIS-monitored individuals, see threat assessments, magnify your vision up to 20x, access tactical data during operations. It’s all gesture and eye-tracking controlled. Very intuitive.”
-Ahdia turned her head, watching the display shift and adapt. When she looked at Ryu again, additional data appeared: [DR. SHIBA RYU - CADENS PERSONNEL - CLEARANCE LEVEL 7 - HEART RATE: 82 BPM].
+“It’s also field-hardened like the suit—ordinary electronics stop dead inside your bubble, which is how I ended up watching you climb thirty-four floors instead of taking the elevator.”
+Ahdia turned her head, watching the display shift and adapt. When she looked at Ryu again, additional data appeared: [DR. RYU MATSUDA - CADENS PERSONNEL - CLEARANCE LEVEL 7 - HEART RATE: 82 BPM].
 “I can see your heart rate went up.”
 “Yeah, well, I get excited about tech.” He adjusted his glasses nervously.
 “I’m also detecting,” Ahdia said, putting a finger to the headset, “elevated levels of awkwardness. It’s over 9,000.”
@@ -169,9 +170,9 @@ Ahdia pulled off the mask. Her face was sweaty underneath, her hair matted. “W
 He led her through more corridors—she was starting to lose track of the facility’s layout. As they walked, he pulled something from his pocket.
 “Oh, almost forgot.” He held out a small badge. Silver crest—a shield with a crack down its center—with the acronym CADENS embossed across the top. Below it, a single word: AUERBACH.
 Ahdia stopped walking. “What’s this?”
-“Your codename. If you choose to accept it.” He looked uncertain. “Director Bourn thought—well, it’s your last name. Your parents worked with CADENS. It felt . . . appropriate. But if you want something else—”
+“Your codename. If you choose to accept it.” He looked uncertain. “Everyone operational gets one—Howitzer, Greyhound, Mercury. Director Bourn picked yours herself. But if you want something else—”
 “Auerbach,” she said quietly, taking the badge. It was heavier than she expected. Solid. Real.
-Her parents’ name. The name she’d been avoiding thinking about for years. The name that came with too many questions and not enough answers.
+A name that meant nothing she could trace, chosen for her by a woman who did not explain herself. Somehow that made it easier to take.
 “You don’t have to use it,” Ryu said quickly. “We can come up with something else. Chronos, Tempus, um . . . Freeze Frame? That one’s terrible, sorry—”
 “No.” Ahdia ran her thumb over the engraving. “Auerbach is fine. It’s . . . it’s good.”
 “Yeah?”
