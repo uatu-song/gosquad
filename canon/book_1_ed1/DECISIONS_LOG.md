@@ -4,6 +4,38 @@
 
 ---
 
+## 2026-08-29 — Register ruling: the book commits to the rewrite voice
+
+**Context (Director's own analysis, reading the ch1-13 sample):** the two
+metric-rewrite chapters read "noticeably better written than the eleven
+'vetted' ones — tighter, funnier, far less explaining... also more quippy,
+closer to house-style Marvel, and slightly less warm than the first-edition
+voice. If the question is which register to commit to, the rewrites win on
+line quality but cost something in earnestness."
+
+**Mechanism identified before ruling:** in the first edition the wit lives in
+DIALOGUE and the narration plays straight man; the agents matched the
+dialogue's wit level in narration, doubling quip density. Half the Director's
+cited examples were frozen first-edition dialogue (the author's own wit), the
+other half agent narration.
+
+**Ruling: "Commit to the rewrite register."** Offered a hybrid
+(narration-plays-straight with a wit budget) and a warmer option; the
+Director chose the rewrite voice as-is, accepting the earnestness cost.
+
+**Consequences:**
+- CH12-13 stand. No warmth revision. NO narration-wit ceiling is added to
+  packets or gates — the metric-rewrite narration register is now licensed.
+- The structural bands (sentence rhythm, ch1-11-derived) still govern; this
+  ruling is TONAL, the earlier alignment ruling is STRUCTURAL. They coexist.
+- The seam inverts: ch1-11 now reads PLAINER than what follows. The Director
+  named this cost knowingly. Bringing ch1-11 UP to the rewrite register is a
+  future-phase decision, NOT licensed by this ruling.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-29 — Kain is a diamond magnate; "Mayor" is drift
 
 **Ruling, verbatim:** "Kain is a diamond magnate who is running for President,

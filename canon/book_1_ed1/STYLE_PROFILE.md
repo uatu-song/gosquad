@@ -166,6 +166,15 @@ concentrated. Do not use opener variety as a quality signal.
 
 ---
 
+## 7b. Register (ruled 2026-08-29)
+
+The STRUCTURAL bands below are ch1–11-derived and still govern. TONE is ruled
+separately: the book commits to the metric-rewrite register — narration wit at
+the ch12–13 level is licensed, not a defect. Do not add wit ceilings, do not
+"warm up" agent narration toward the first edition, and note the accepted
+cost: ch1–11 currently reads plainer than what follows (a future-phase
+question, not a live task).
+
 ## 8. The checkable target — `_canon/tools/check_style.py`
 
 The gate is now a TOOL, and its criteria are BANDS, not floors. The first two
