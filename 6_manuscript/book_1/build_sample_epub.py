@@ -20,8 +20,8 @@ CHAPTERS = [
        'first edition · vetted') for n in range(1, 12)],
     ('Chapter 12', HERE/'rewrite_pilot'/'chapter_12_metric_v1.txt', 'metric rewrite'),
     ('Chapter 13', HERE/'rewrite_pilot'/'chapter_13_metric_v1.txt', 'metric rewrite'),
-    ('Chapter 14a', HERE/'rewrite_pilot'/'chapter_14a_metric_v1.txt', 'metric rewrite'),
-    ('Chapter 14b', HERE/'rewrite_pilot'/'chapter_14b_metric_v1.txt', 'metric rewrite'),
+    ('Chapter 14', [HERE/'rewrite_pilot'/'chapter_14a_metric_v1.txt',
+                    HERE/'rewrite_pilot'/'chapter_14b_metric_v1.txt'], 'metric rewrite'),
     ('Chapter 15', HERE/'rewrite_pilot'/'chapter_15_metric_v1.txt', 'metric rewrite'),
     ('Chapter 16', HERE/'rewrite_pilot'/'chapter_16_metric_v1.txt', 'metric rewrite'),
 ]
@@ -77,7 +77,11 @@ tp.add_item(style); book.add_item(tp)
 
 spine, toc, total = [tp], [], 0
 for i, (name, path, prov) in enumerate(CHAPTERS, 1):
-    bl = blocks(path)
+    paths = path if isinstance(path, list) else [path]
+    bl = []
+    for j, pp in enumerate(paths):
+        if j: bl.append(('break', None))   # the 14a/14b seam becomes a scene break
+        bl += blocks(pp)
     assert bl, f'EMPTY: {path}'
     words = sum(len(v.split()) for k, v in bl if k == 'p')
     total += words
