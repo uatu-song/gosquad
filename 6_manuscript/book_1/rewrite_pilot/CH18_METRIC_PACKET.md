@@ -1,18 +1,36 @@
-# CH18 METRIC REWRITE PACKET — dialogue-frozen cold pass (2026-08-29)
+# CH18 METRIC REWRITE PACKET — dialogue-frozen cold pass, CURRENT MODEL (2026-08-30 redo)
 
-**What this is:** everything needed to write Book 1 Chapter 18 FROM SCRATCH.
-You have never seen any existing draft of this chapter and you must not look for
-one. The chapter's dialogue is extracted below and is FROZEN — you write all the
-narration around it. Style is defined by MEASURED TARGETS from the author's own
-prose, not by adjectives.
+**What this is:** Chapter 18 — the trap springs. Ruth POV. Written FROM
+SCRATCH; the dialogue below is FROZEN. This redo supersedes the blind-era
+generation: the chapter now sits downstream of ch16 (the squad's "something
+big" op is THIS op) and ch17 (the reader has watched Kain build this trap).
 
-**Contamination rule (absolute):** read ONLY this packet and
-`2_method_actor/book1_embodiment/Ruth_Carter_Book1_Embodiment.md`. Do NOT open
-anything in `6_manuscript/` or `1_writing_guides/`, do not grep the repo, do not
-search for prior drafts of this chapter. If you feel you need more context, you
-don't — write from what is here.
+**Read, in this order, and NOTHING else in the repository:**
+1. This packet
+2. `canon/series/TEMPORAL_MECHANICS.md` — THE BIBLE
+3. `canon/book_1_ed1/CH01-11_TOPOGRAPHY.md`
+4. `6_manuscript/book_1/rewrite_pilot/chapter_12_metric_v1.txt` … through …
+   `chapter_17_metric_v1.txt` (all six, in order)
+5. `2_method_actor/book1_embodiment/Ruth_Carter_Book1_Embodiment.md`
 
----
+No grep, no other files, no prior drafts of any chapter — including any
+other chapter_18 file.
+
+**REGISTER (Director rulings):** the metric-rewrite voice, modulated through
+RUTH — clinical triage-brain, the residency-wall register, professional
+pride paid for on the page (the realism budget: ears ring, lungs bill,
+cold is cold). Contrast doctrine: the wit thins as the trap closes; from
+the EMP turn onward the narration goes progressively plainer, and the
+dock-edge final scene is a full PLAIN STRETCH.
+
+**THE IRONY ENGINE (new to this redo):** the READER knows what Ruth cannot:
+this tip is Kain's trap (ch17), the "powers" are Ahdia's bubbles riding a
+FAERIS relay (bible §7), and an EMP kills equipment and RELAY — never
+anything inside a body. Write Ruth's honest experience of inexplicable loss
+while every detail stays consistent with what the reader knows is actually
+happening. Do NOT have Ruth intuit any of it. Ahdia and CADENS are never
+shown and never named — the support blackout is the horror underneath the
+horror.
 
 ## THE DIALOGUE — FROZEN, VERBATIM, IN ORDER
 
@@ -128,6 +146,13 @@ enhancements are secretly Ahdia. Do not hint.**
   CCPD / "Caledonia Police"; the Academy; codenames BATTLEA (Leah), NIGHT
   KNIGHT (Ben), CRIMSON SABLE (Victor), GLOOM GIRL (Tess), NIGHTINGALE (Ruth);
   Kain. Everything else stays generic ("the precinct", "the hospital").
+- **Exactly six Go Squad members**; Firas benched off-page, never shown.
+- **The Tank's enhancement source is never explained beyond his frozen
+  lines.** No Tamois references, no Kain-lab speculation in Ruth's head —
+  she has no basis, and the reader's ch17 knowledge does the work.
+- **The bible governs**: dilation bubbles, the relay, the trigger table
+  (Ruth's own maybe-power stays unresolved — her callouts land, the team
+  moves well, and neither she nor the narration ever frames it as power).
 - **The team does not drive (Director ruling 2026-08-29).** They are parkour
   masters: they stage on foot and rooftops, and they are either together or on
   comms. No team vehicle, ever — no van, no car, no parked staging.
