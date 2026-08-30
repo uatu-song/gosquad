@@ -4,6 +4,32 @@
 
 ---
 
+## 2026-08-30 — CH24: the dream, the eight doses, the return
+
+**Source defect fixed pre-freeze, derived from §7d:** Ryu said "out for three
+hours" at the bedside and "unconscious for eighteen hours" ninety seconds
+later. The calendar keeps eighteen (docks collapse last night; Ruth's full
+CADENS day elapsed while Ahdia was under). "Three hours" and its narration
+echo corrected in the source before extraction.
+
+**New lock class used:** unquoted-but-frozen narration — the three
+feeling-lines and Ryu's four tablet caps (RATIO = 1:2000 etc.) were carried
+in the packet as required verbatim lines. All seven landed.
+
+**First chapter in the run to gate clean on generation one.** 50/50 spans,
+all bands, nouns clean, 1,996 words. Tank cops named on the page for the
+first time (Edgar, Ogden, Philips, Orlansky — locked, no fifth invented).
+The two dream presences (vast curious witness; cold "Wake up" voice) locked
+as two different unexplained things — Book 3 freight, no gloss permitted.
+
+**Open to Director taste (flagged, not fixed):** epigram density above the
+≤3 budget; "grieved that name for somebody else's sake"; the fifteen seconds
+re-scoped to cover the whole dose sequence; "procedure" turned twice.
+
+**Ruled by:** Director (hours fix pending confirmation)
+
+---
+
 ## 2026-08-30 — CH23; THE CALENDAR PASS; three source-canon violations fixed
 
 **The calendar pass (Director: "the highest-value continuity job left").**
