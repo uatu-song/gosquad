@@ -4,6 +4,48 @@
 
 ---
 
+## 2026-08-30 (later) — Two continuity catches; the calendar ruling REVERSED
+
+**1. Ruth's off-books human patients: CUT. Ch3 stands.** Ch20 claimed "fifteen
+trauma patients alive who hospitals wrote off" and "treating trauma patients
+off the books for three years" — both contradicting ch3's "But not on people."
+/ "Not on people," on which that scene's entire dread depends (Firas is the
+first human CR-7 ever entered, and Ruth's "I just experimented on my boyfriend
+without his consent" only lands if true). Director ruled ch3 stands. BOTH
+ch20 lines rewritten: her three years are ER trauma judgement and protocol
+development, never human administration. Firas remains the first.
+
+**2. THE BOOK IS UNDATED — this morning's calendar ruling is SUPERSEDED.**
+Sequence, for the record: "published in 2023" → ruled "keep a year, move it to
+fit" → 2025 (present 2028, presidential) → Director flagged 2025 as breaking
+the three-year references. Crew corrected the premise: "three years ago" fixes
+the GAP, not the year — 2025+3=2028 satisfies ch5/ch17/ch20 exactly, and it is
+2023 that forces the present into a 2026 midterm against Kain's November
+campaign. Given the corrected information the Director ruled the third way:
+**cut the year entirely.** Ch20 now reads "published three years ago"; bible §8
+rewritten; no year appears anywhere in the prose, and every anchor stays
+relative.
+
+**3. Grammar:** "We'll translocation you back" → "translocate" (frozen span,
+Director-ruled). NOTE: the ch19 revision agent REVERTED this fix because the
+packet still carried the source wording — packets must be updated with every
+Director dialogue edit, or the next agent restores the defect.
+
+**4. The 47 audit** (Director asked: signature or tic?): **tic, with the
+ferret's ∞-escalation profile.** Zero occurrences in ch1–11, thirteen in
+ch12–30 — the same signature as "in her chest" and "voice was." Not a numeric
+aversion: 12 appears eleven times in ch1–11 while 23, 37, and 47 appear zero.
+Most instances now sit in frozen dialogue (drone reports, the 2:47 clock,
+forty-seven slides, the variance readout), so remediation needs a Director
+dialogue pass. UNRULED — options on the table: vary the numbers, make 47
+deliberate in-world, or accept it.
+
+Both chapters re-gated clean after every change.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — CH19 + CH20 generated; the calendar ruled
 
 **Calendar (Director-ruled, punch-class):** ch20's "published in 2023" was the

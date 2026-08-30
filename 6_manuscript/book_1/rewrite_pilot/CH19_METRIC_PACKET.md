@@ -118,7 +118,7 @@ are DISPLAYED TEXT, rendered as quoted lines exactly as listed.
  77. "Deal. Dr. Ryu will give you the tour. Then we'll discuss terms."
  78. "One more thing,"
  79. "I tell my team I got separated during the fight. I tell them I'm clear. They can't know about this. Not yet."
- 80. "Agreed. We'll translocation you back near the Academy. Make it look like you escaped on your own."
+ 80. "Agreed. We'll translocate you back near the Academy. Make it look like you escaped on your own."
  81. "Had to split off. I'm clear. Meet at Academy."
 
 ## POV + SITUATION
