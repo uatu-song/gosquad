@@ -1,5 +1,10 @@
 # Book 1, ch1–11 — Topography for cold agents
 
+> **SUPERSEDED 2026-08-30 by `CH01-22_TOPOGRAPHY.md`**, which carries everything
+> here plus ch12–22 and the knowledge gates. Use that file. This one is kept
+> only as the record of what the vetting pass produced.
+
+
 **What this is:** the vetted map of everything established in chapters 1–11,
 so an agent writing a later chapter inherits the world without spending a
 context window on 23,500 words of prose. Derived from a full crew read

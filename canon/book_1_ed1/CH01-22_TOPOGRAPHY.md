@@ -8,10 +8,10 @@ also load the ch1–11 file, and where the two disagree, THIS FILE WINS.
 **What this is:** the vetted map of everything established in chapters 1–22, so
 an agent writing a later chapter inherits the world without spending a context
 window on the prose. For voice and register this file is useless: that is
-`STYLE_PROFILE.md` plus the exemplars in your packet. For how Ahdia's power
-works — trigger, field, cost, the team's distributed abilities, the calendar
-ruling — do not use this file: use `../series/TEMPORAL_MECHANICS.md`, which is
-the arbiter and is not duplicated here.
+`STYLE_PROFILE.md` plus your packet's exemplars. For how Ahdia's power works —
+trigger, field, cost, the team's distributed abilities, the calendar ruling —
+use `../series/TEMPORAL_MECHANICS.md`, which is the arbiter and is not
+duplicated here.
 
 **How to use it:** read all of it. If your chapter touches a specific earlier
 scene (a callback, a returning location, a repeated line), ask for that single
@@ -69,8 +69,8 @@ exception (a couple).
   Tonight."
 - **CR-7:** Ruth's cellular-regeneration therapy; three years of dismissed
   research; first human use on Firas. In ch20 she builds **CR-7 Temporal
-  Variant** in a CADENS lab in four hours — pale blue, 4 ml, doses every three
-  days then weekly.
+  Variant** in a CADENS lab in four hours — pale blue, doses every three days,
+  then weekly.
 
 ---
 
@@ -85,11 +85,11 @@ exception (a couple).
   (ch17). In ch19 Bourn introduces herself as "Director Overseer Bourn."
 - **Director Harriet Bourn** — silver-gray, past fifty-five, boardroom suits,
   flat affect, keeps her beliefs like spare batteries. **Colonel Bentley Mack**
-  — military bearing, dry, bad coffee. **Dr. Ryu Matsuda** — late twenties,
-  Japanese, FAERIS Operations, over-talks, Spider-Man and Dragon Ball Z
-  references; the only person who can interface with FAERIS without the drones
-  going haywire; Ahdia's handler and Ruth's guide. Other CADENS operational
-  codenames named on the page: Howitzer, Greyhound, Mercury.
+  — military bearing, dry. **Dr. Ryu Matsuda** — late twenties, Japanese,
+  FAERIS Operations, over-talks, Spider-Man and Dragon Ball Z references; the
+  only person who can interface with FAERIS without the drones going haywire;
+  Ahdia's handler and Ruth's guide. Other CADENS codenames on the page:
+  Howitzer, Greyhound, Mercury.
 - **The facility:** underground under a nondescript government office building.
   Command floor with a wall of live disaster feeds, Research Division, medical
   bay, armory, training room, quarters (Ahdia has Quarters 7), a surveillance
@@ -363,21 +363,21 @@ without her.
    the Go Squad's deaths. She promised to call again.
 5. **The Tank's fate** and whether more enhanced were made; Kain wanted the
    Heart replicated, scaled and distributed "to whoever I choose."
-6. **Jericho** is unconscious at a loading dock with all his research, and the
-   team has his drives, including proof the chief is on Kain's payroll.
-7. **FAERIS independence** — 10% and climbing, with a projected transition
-   window CADENS is betting Ahdia's remaining life on. The drone that turned to
-   the window has not been explained.
+6. **Jericho** is unconscious at a loading dock with all his research; the team
+   has his drives, including proof the chief is on Kain's payroll.
+7. **FAERIS independence** — 10% and climbing, on a projected timeline CADENS
+   is betting Ahdia's remaining life on. The drone that turned to face the
+   observation window is unexplained.
 8. **Ruth's own case** — never resolved, per the mechanics bible.
-9. **Whether the treatment holds.** CR-7-TV bought weeks-to-months at best, on
-   a three-day dosing schedule, and only if Ahdia stops spending herself.
+9. **Whether the treatment holds.** CR-7-TV buys time at best, on a three-day
+   dosing schedule, and only if Ahdia stops spending herself.
 10. **The team's powers do not come back on their own.** Any restoration is
     Ahdia deciding to pay for it.
-11. **Tess wants a new codename** and has not chosen one; and the photograph
-    folded behind her school photo in her father's desk frame has never been
-    mentioned by him.
+11. **Tess wants a new codename** and has not chosen one; the photograph folded
+    behind her school photo in her father's desk frame has never been mentioned
+    by him.
 12. **The scratched-out wedding photograph** in the nonprofit's back office
-    (ch14b) is on the page, unexplained, and touched by no one. The no-dead-wife
+    (ch14b) is on the page, unexplained, touched by no one. The no-dead-wife
     ruling stands regardless.
 13. **The dates do not reconcile.** CH13 puts the warehouse on "the night of
     August 14th"; ch18, ch21 and ch22 place the docks and the gala in January;
@@ -393,6 +393,6 @@ Sable's murdered wife — excised, ruled never to exist · parents are collector
 not engineers · disappearance "over fifteen years ago" · judo, not jiu-jitsu ·
 CH07 rally cry standardized · "Kaine" → Kain · Kain is a presidential candidate,
 never a mayor · Bourn is a woman · the team owns no vehicle, in ops as well as
-patrol · no year appears in the prose · CH18 fan-gratitude drift excised —
-the only public gratitude scene that stands is the ch22 alley photograph, and
+patrol · no year appears in the prose · CH18 fan-gratitude drift excised — the
+only public gratitude scene that stands is the ch22 alley photograph, and
 nothing public touches the Academy.
