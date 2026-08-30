@@ -103,6 +103,31 @@ unruled; agents must not resolve them.
   between that truth and the Go Squad is the series engine and is never
   weakened. (Her ruled conditions, ch15.)
 
+## 7. The team's powers — the distributed engine (ch16)
+
+- The team's abilities are DILATION bubbles, not freezes: Ahdia slows time
+  around a member; FAERIS amplifies within the bubble. "You create the time
+  bubble. FAERIS amplifies within it. Symbiotic." To outside eyes: powers.
+- **Multiple simultaneous fields** are possible — she layers bubbles across
+  the team in live operations. This is the expensive mode.
+- **The trigger table** (chosen by Ahdia and Ryu from the bunker, then locked):
+  | member | trigger | delivered effect |
+  |---|---|---|
+  | Ben / Night Knight | crouch + jump | trajectory amplification (3 ft → 30) |
+  | Leah / Battlea | battle cry + forward momentum | velocity multiplication |
+  | Victor / Crimson Sable | the grasp gesture + grip | force amplification |
+  | Tess / Gloom Girl | middle finger raised + eye-target | translocation (FAERIS eye-tracking reads the destination) |
+  | Ruth / Nightingale | leadership callouts + team proximity | AMBIGUOUS — maybe FAERIS treats her commands as targeting data, maybe she is just that good. "The line was blurring." NEVER resolve. |
+- Triggers are performative, not causal — the cause is always Ahdia watching.
+  A trigger she doesn't answer does nothing (Tess's early failures).
+- Sustained multi-field load has its own cost tier: nosebleeds (microbleeds —
+  capillaries can't handle the stress), hemoglobin drop, tremor, temperature
+  fluctuation. "Your body is aging microseconds faster than it should.
+  Compounds over time." Quality of life degrades faster than lifespan.
+- **Power Extempore** — the Intermediary's term for the Hyper Seed
+  (5_story_bibles/artifacts/Hyper_Seed.md); appears in ch16 narration as an
+  apposition. Licensed, unexplained in Book 1.
+
 ## OPEN QUESTIONS — unruled; agents must not resolve
 
 1. **The exchange rate.** 14b's day two: "an hour inside came out to roughly

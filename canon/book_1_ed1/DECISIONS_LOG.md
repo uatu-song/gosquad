@@ -4,6 +4,39 @@
 
 ---
 
+## 2026-08-29 — CH15 read: two agent beats ratified; CH16 in pipeline
+
+**Ratified as intentional (Director flagged both as "good if intentional";
+crew ratified on the evidence, veto open):**
+1. **Bourn's pre-drafted terms.** "The terms came out in a list she had
+   evidently already drafted" — the chess-master reading is now CANON:
+   CADENS profiled Ahdia well enough to predict her condition before she
+   asked; the negotiation was a script she performed her half of. Supported
+   by the same organism that extrapolated her suit measurements and watched
+   her "handle it before." Deepens "colder than a refusal." Available for
+   later payoff; never to be over-explained on the page.
+2. **"Her ears rang anyway."** The realism-budget rule, now doctrine: small
+   physical costs get paid on the page (the gunshot's ears, 14b's sweat, the
+   stairwell's legs). Carried into future packets alongside the plain-stretch
+   device.
+
+**CH16 mechanics into the bible before generation** (§7): dilation bubbles,
+the trigger table (Ben crouch-jump / Leah battle cry / Victor grasp / Tess
+middle-finger + eye-tracking / Ruth AMBIGUOUS-never-resolve), multi-field
+layering as the expensive mode, the microbleed cost tier, Power Extempore
+licensed (the Intermediary's term, per 5_story_bibles/artifacts/Hyper_Seed.md).
+Third Shiba→Matsuda drift fixed (the ch16 badge).
+
+**Pipeline notes:** ch16 v1 passed dialogue 38/38 after normalizing one
+plain-space ellipsis the agent wrote by mimicking the typeset drafts it read
+(typesetter hardened against the form); three narration-texture bands failed
+honestly (long-and-thin plus stripped adverbs) — revision pass running, same
+protocol that landed ch15.
+
+**Ruled by:** Director (ratifications pending veto)
+
+---
+
 ## 2026-08-29 — CH15: Auerbach reaffirmed, Matsuda fixed, two mechanics catches, THE BIBLE
 
 **Auerbach (Director, verbatim):** "She's Ahdia Bacchus. Auerbach is a
