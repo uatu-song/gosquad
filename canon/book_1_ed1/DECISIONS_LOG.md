@@ -4,6 +4,42 @@
 
 ---
 
+## 2026-08-30 — CH17/CH18 continuity review: seven fixes, three rulings
+
+**Director rulings:**
+1. **Whitford's daughter: NOBODY KNOWS.** Tess is the Chief's kid (ch12,
+   ch16) and neither Kain nor Whitford has priced it — dramatic irony held
+   entirely by the reader. Deliberate; do NOT "fix" Kain's thoroughness by
+   having him notice. The reveal stays banked.
+2. **"Erase Marcus" — the name is BANNED repo-wide.** Verbatim: "That's
+   gotta be a hallucination. I will never use the name Marcus because it's
+   your go to." Confirmed inherited, not agent-invented: it is in the first
+   edition (ch17), i.e. it entered through the infected draft. Whitford's
+   span now reads "My people were right." **UNRESOLVED FINDING:** Book 2
+   names the cop who kills Isaiah Bennett — and later Leta — **Officer
+   Marcus Webb** (chapters_split 15/19). Webb is locked canon; his FIRST
+   name is the banned one. Book 2 is quarry and untouched; flagged so the
+   rebuild renames him rather than importing it.
+3. **Whitford's "six weeks" → "two weeks"** — the drone era postdates the
+   bonding; the frozen span is corrected in source, draft, and packet.
+
+**Crew fixes (narration-only, no frozen text touched):**
+- ch17 clock: "two hours old" → "an hour old" (the late line wins the tie).
+- ch17 "Problematic" callback anchored backward to the first call months ago
+  (Option B — preserves all 133 spans, and gives the earlier calls weight).
+- ch17 Ruth's-ER gap marked DELIBERATE: the dossier knows the political cause
+  she narrates as scientific rejection ("She had been told the reason was her
+  work. The file knew it was a man she had crossed.").
+- ch18 Ben's precinct contact seeded as established practice.
+- ch18 "Everyone knows your name now" clocked by Ruth as deflection — the
+  leak was codenames only; the real answer is the dossier.
+
+Both chapters re-gated clean after every change.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-30 — CH17 (Kain POV): two prep rulings, three read flags, gates green
 
 **Prep rulings (Director, before generation):**

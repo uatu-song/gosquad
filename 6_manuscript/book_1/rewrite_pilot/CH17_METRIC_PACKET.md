@@ -44,8 +44,8 @@ displayed heading line under the chapter open.
   3. "You look troubled, John."
   4. "Read it."
   5. "Summarize."
-  6. "Tech signatures. Military-grade surveillance drones detected during seventeen separate Go Squad operations over the past six weeks."
-  7. "Marcus was right. Someone's watching them. Federal-level equipment."
+  6. "Tech signatures. Military-grade surveillance drones detected during seventeen separate Go Squad operations over the past two weeks."
+  7. "My people were right. Someone's watching them. Federal-level equipment."  [Director-ruled 2026-08-30: "Erase Marcus" — an AI-default name inherited from the infected first edition, never authorial]
   8. "FBI? CIA?"
   9. "Neither."
  10. "Then who the hell are they?"
