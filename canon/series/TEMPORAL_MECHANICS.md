@@ -95,6 +95,42 @@ unruled; agents must not resolve them.
   energy. Converted tissue is still her, still functions, just different.
   Endpoint at baseline: more Seed than human. (ch15 med bay.)
 
+## 5b. THE UNIFIED COST MODEL (punch #6 — one process, three faces)
+
+Ruled question: are the life-force percentage (14b), the conversion threads
+(ch15), and the microbleeds/accelerated aging (ch16) three taxes or one?
+**One process: CONVERSION.** The three axes are the same event measured three
+ways:
+
+1. **The threads are the anatomy.** The Seed converts biological tissue into
+   temporal-conductive Seed-substrate, spreading from the seat outward along
+   cardiovascular, nervous, and skeletal lines (ch15 med bay). Converted
+   tissue still functions — it is still her, just different.
+2. **The percentage is the ledger.** FAERIS's "reserves" = her remaining
+   unconverted, still-convertible substrate. Every use converts more; the
+   number only goes down (permanent depletion, 14b). The 23% ambush night
+   was 23% of what remained, converted in one spend.
+3. **The bleeding is the frontier.** Microbleeds, tremor, temperature swings,
+   microsecond-aging (ch16) are SHEAR DAMAGE at the conversion boundary —
+   ordinary tissue bordering active channels bears temporal stress it is not
+   rated for. This is the SAME physics as the fabric rule: "normal fibers
+   can't handle temporal shear" (ch15), and her capillaries are fibers too.
+   The hoodie frays; so does she. Hence "you'll feel it before you die from
+   it" — frontier damage runs ahead of depletion.
+
+Corollaries the prose already obeys:
+- The cold is the conversion signature — every use, every face of the cost,
+  reads as cold first (hard lock, unchanged).
+- Heavy multi-field nights push the frontier hardest (ch16's nosebleed
+  ladder); efficiency gains slow the LEDGER but the frontier still pays on
+  every use.
+- **This model deliberately does NOT resolve the endpoint** — "more Seed than
+  human" vs "make the eighteen months count" (death or metamorphosis) is
+  punch #8, its own decision, and the unified model supports either door.
+
+*Crew-unified 2026-08-30 from on-page evidence under Director assignment
+("do number 6"); contradicts no frozen line; veto open.*
+
 ## 6. Adjacent tech (not her power)
 
 - **Translocation** is CADENS/FAERIS machinery (the paint, the pull, space

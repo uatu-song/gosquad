@@ -4,6 +4,25 @@
 
 ---
 
+## 2026-08-30 — Punch #6: cost physiology unified (one process, three faces)
+
+Director assignment ("do number 6"). Crew unified the three cost axes into
+ONE process — CONVERSION — documented as bible §5b: the ch15 threads are the
+anatomy, the 14b percentage is the ledger (reserves = unconverted substrate),
+and the ch16 microbleeds/aging are SHEAR DAMAGE at the conversion frontier —
+the same physics as the ruled fabric rule, generalized: her capillaries are
+fibers too; the hoodie frays and so does she. Explains "you'll feel it before
+you die from it" structurally (frontier damage outruns depletion).
+
+Deliberately NOT resolved: the endpoint (death vs metamorphosis) — that is
+punch #8, its own decision; the model supports either door.
+
+Contradicts no frozen line. Veto open.
+
+**Ruled by:** Director (assignment); crew (model); veto open
+
+---
+
 ## 2026-08-29 — CH15 read: two agent beats ratified; CH16 in pipeline
 
 **Ratified as intentional (Director flagged both as "good if intentional";
