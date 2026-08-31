@@ -2,6 +2,19 @@
 
 **The don't-relitigate list.** Newest first.
 
+**ATTRIBUTION CONVENTION (instituted 2026-08-31, after an audit of this file
+found crew judgment stamped as Director rulings).** Every entry must say who
+actually decided:
+
+- **Director** — the Director stated it. Quote or paraphrase the instruction.
+- **Director (assignment); crew (model)** — the Director set the problem, the
+  crew built the answer. **Veto open** until the Director reads it.
+- **crew; veto open** — the crew decided. Reversible on sight. NOT canon in
+  the same sense as a Director ruling.
+
+A crew decision that goes unchallenged does NOT become a Director ruling by
+age. If an entry does not say the Director ruled it, assume they did not.
+
 ---
 
 ## 2026-08-31 — CH25 craft pass; the confession breaks; an audit evaluated
@@ -28,6 +41,10 @@ sister's resurrection.
 
 **Reverted my own gate-driven edit:** "She smiled at them with red teeth" back
 to its bare form; the adverb it carried was found elsewhere.
+
+**Ruled by:** Director — the craft notes are the Director's own and the
+confession split was ordered directly ("do it"). Crew chose the wording of the
+two added narration beats and which thirteen words to cut to pay for them.
 
 ---
 
@@ -74,7 +91,12 @@ POV-matching before ch17–19 get a dryness pass.
 **ACCEPTED — A3** (six verified-sound items) and **B4** (ch16 as proof that the
 bands are reachable, not a ceiling).
 
-**Ruled by:** Director
+**Ruled by:** Director (assignment only — "Evaluate before accepting").
+**The accept/reject verdicts on A1, A2, B3, A3 and B4 are CREW JUDGMENT and the
+Director has not ruled on them. VETO OPEN.** The measurements behind them are
+reproducible and are the part worth trusting; the conclusions are mine. B2's
+sweep was separately Director-ruled ("thin clusters only") and B5's POV control
+and the register ruling were separately Director-ruled; those two are theirs.
 
 ---
 
@@ -140,7 +162,11 @@ that sentence, and Ruth felt the floor tilt" off Ben's line and onto Ruth's
 
 All 13 rebuilt chapters re-gate clean after the purge.
 
-**Ruled by:** Director
+**Ruled by:** Director for the instruction — "Focus on the counting. We need to
+get rid of that." **Crew for the shape of the fix:** the "reserved to Ahdia
+rather than banned outright" formulation, the decision to extend the purge to
+the accounting-metaphor family, and every per-site call about what to delete
+versus keep. **VETO OPEN on all three.**
 
 ---
 
@@ -179,7 +205,9 @@ all still gate clean, so nothing shipped damaged.
 then restored five long sentences when it overcorrected past the 20+/30+
 floors. Final: 1,212 words, 46/46 spans, all bands.
 
-**Ruled by:** Director (both dialogue calls delegated — "finish ch 25")
+**Ruled by:** Director delegated ("finish ch 25") — so **both calls are crew
+judgment**: keeping "two weeks" frozen and reading it as characterised error,
+and keeping "Marky Mark". Either is reversible on sight. **VETO OPEN.**
 
 ---
 
@@ -257,7 +285,10 @@ as two different unexplained things — Book 3 freight, no gloss permitted.
 ≤3 budget; "grieved that name for somebody else's sake"; the fifteen seconds
 re-scoped to cover the whole dose sequence; "procedure" turned twice.
 
-**Ruled by:** Director (hours fix pending confirmation)
+**Ruled by:** crew. **The "three hours" → "eighteen hours" dialogue edit was
+flagged to the Director and has NEVER been explicitly confirmed.** It is derived
+from §7d and nothing since contradicts it, but silence is not a ruling.
+**STILL PENDING.**
 
 ---
 
