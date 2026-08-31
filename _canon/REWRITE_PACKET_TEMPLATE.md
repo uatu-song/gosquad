@@ -217,3 +217,13 @@ follows it already *is* the reading. Where something must stand in its place,
 use what the author uses — physical business in the dialogue tag, trained
 professional habit rendered as action, or plain statement. Show the hands.
 
+## THE WORLD-STATE DIGEST — always name the CURRENT one
+
+Packets send cold agents to a topography file instead of a stack of prior
+drafts. **The current digest is
+`canon/book_1_ed1/CH01-25_TOPOGRAPHY.md`.** It supersedes the ch1–11 and
+ch1–22 files, which are kept only for history and are stale on the dose
+interval, the Tank count, Jericho's captivity and the calendar. When a new
+chapter lands, extend the digest and repoint this line; never let a packet cite
+a superseded one.
+

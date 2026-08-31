@@ -1,15 +1,18 @@
-> **SUPERSEDED 2026-08-31 by `CH01-25_TOPOGRAPHY.md`.** Do not load this
-> file. It stops at ch22 and its dose interval, Tank count, Jericho
-> captivity span and calendar section are all stale. Kept for history.
+# Book 1, ch1–25 — Topography for cold agents
 
-# Book 1, ch1–22 — Topography for cold agents
+**This file SUPERSEDES `CH01-11_TOPOGRAPHY.md` AND `CH01-22_TOPOGRAPHY.md`.**
+It carries forward everything in those files that still holds and extends it
+through ch25 (metric drafts ch12–25). Read this one alone and you have the
+whole world; do not also load the older files, and where they disagree, THIS
+FILE WINS.
 
-**This file SUPERSEDES `CH01-11_TOPOGRAPHY.md`.** It carries forward everything
-in that file that still holds and extends it through ch22 (metric drafts
-ch12–22, ch18 at v3). Read this one alone and you have the whole world; do not
-also load the ch1–11 file, and where the two disagree, THIS FILE WINS.
+**Canonical draft filenames are resolved through
+`6_manuscript/book_1/build_compilation_epub.py`, never by convention.** Every
+rebuilt chapter is `chapter_NN_metric_v1.txt` EXCEPT **ch18, which is
+`chapter_18_metric_v3.txt`** — a holdover from the five-generation pilot.
+`chapter_18_metric_v1.txt` is a dead draft. Editing it silently does nothing.
 
-**What this is:** the vetted map of everything established in chapters 1–22, so
+**What this is:** the vetted map of everything established in chapters 1–25, so
 an agent writing a later chapter inherits the world without spending a context
 window on the prose. For voice and register this file is useless: that is
 `STYLE_PROFILE.md` plus your packet's exemplars. For how Ahdia's power works —
@@ -29,6 +32,22 @@ articulate one with the forgettable face who hunts Ruth in ch18 and goes
 through a container in ch19 — **survives, off the board, and never returns in
 Book 1.** Never add him to a Main Street scene; never name him among the four.
 Ahdia's push is not a kill and she has no body count.
+
+## RESERVED TRAITS — counting belongs to Ahdia alone (ruled 2026-08-31)
+
+**Compulsive quantification is Ahdia's defining cognitive habit and nobody
+else's.** She counts *toward* the thing she cannot feel. If your POV character
+is not Ahdia, they do not count under stress, do not tally, and do not do
+arithmetic about their own life — and the narration does not do it for them.
+Also reserved to her: the **accounting-metaphor family** (arithmetic, the
+ledger, came due, an accounting, the bill, exchange rate) used figuratively.
+
+The banned shape is *count + a subordinate clause explaining the psychology*
+("she counted the doors, the way she counted them in any building she had not
+chosen to enter"). It manufactures instant interiority without dramatising
+anything. **The author's own rate for both is zero.** What he does in that slot
+is physical business, trained professional habit rendered as action, or plain
+statement. He shows the hands. Series rules R105/R106.
 
 ## WHAT PEOPLE CALL EACH OTHER (ruled 2026-08-30 — bible §7g)
 
@@ -97,8 +116,9 @@ exception (a couple).
   Tonight."
 - **CR-7:** Ruth's cellular-regeneration therapy; three years of dismissed
   research; first human use on Firas. In ch20 she builds **CR-7 Temporal
-  Variant** in a CADENS lab in four hours — pale blue, doses every three days,
-  then weekly.
+  Variant** in a CADENS lab in four hours — pale blue. **Nine doses, THREE
+  WEEKS apart, then monthly once she stabilises** (bible §7e). Dose one goes in
+  at ch20; the remaining eight are the whole crisis of ch24.
 
 ---
 
@@ -163,7 +183,7 @@ exception (a couple).
   third whiskey. His fear is obsolescence, not ego. He believes CADENS is using
   Caledonia as a test case and the Go Squad as its subjects.
 - **Dr. Jericho** — anthropologist, curated the Natural History Museum
-  sub-basement; the man Firas saw abducted in CH05. Held three weeks in Kain's
+  sub-basement; the man Firas saw abducted in CH05. Held six weeks in Kain's
   vault (four levels under the tower, door labeled CLIMATE ARCHIVE, 23 lit
   cases), given 48 hours to make the Heart work, later moved upstairs to Kain's
   office running "resonance calibration." Rescued ch22 — unconscious but
@@ -173,10 +193,18 @@ exception (a couple).
   4.7 billion years, older than the solar system; worshipped by the Amazigh as
   divine. Measurable temporal distortion nearby. Kain's ambition is not to own
   it but to **replicate, scale and distribute** it.
-- **The Tank (ch18)** — seven feet of armor, genuinely enhanced, unaffected by
-  the EMP. Around thirty, clean-shaven, a face nobody would remember. Knew
-  Ruth's name and Kain's interest in her research. Destroyed at the docks by
-  Ahdia in ch19; his status after going through a container wall is not stated.
+- **THE TANKS — FIVE, and only FOUR ever fight** (bible §7h). Seven feet of
+  torn CCPD uniform each, genuinely enhanced, unaffected by the EMP. The four
+  on Main Street from ch24 on are **Edgar, Ogden, Philips and Orlansky** — use
+  exactly these names and invent no others. **The fifth is the one from
+  ch18–19:** around thirty, clean-shaven, a face nobody would remember, who
+  takes his helmet off, calls Ruth "Dr. Carter" as though they had met at a
+  conference, and states Kain's interest in her research. Ahdia puts him
+  through a container wall in ch19 and he does not come out of it. **He
+  SURVIVES — off the board, hospitalised or in custody, unstated — and never
+  returns in Book 1.** Ahdia's push is not a kill; **she has no body count**,
+  and nobody ever tells her she took an enemy off the board permanently
+  eighteen hours before the climax.
 - **The Intermediary (ch17)** — a woman's voice on a phone with no wire behind
   the wall, which rings when it chooses. Third call in six months; the first two
   each carried one perfect piece of information. Precise, clinical, statements
@@ -298,120 +326,158 @@ the rally cry, says "Get somewhere safe, I'm sending help"** — and a
 bus-sized aircraft decloaks forty feet up, drops a ramp, and **Ruth is standing
 on it in full tactical gear nobody has seen before.** "Need a ride?"
 
+**CH23 — the transport, the extraction point, the briefing room.** Ruth tells
+the team the truth with **one thing withheld**: the powers were never theirs,
+someone with real abilities was amplifying them, that person is dying, and
+**she will not give the name.** CADENS, FAERIS and the transformation are all
+explained. Firas stays at the extraction point on foot with Jericho and the
+drives. **Ruth works Jericho** — the threat that breaks him is not violence but
+Kain waking up — and gets the prognosis: the Heart is organic, a seed from
+something vast, integration is irreversible, Kain is being consumed rather than
+empowered; hours to live, twelve at most; sixty percent he completes before he
+dies. **Only another Temporalist can stop him.** Victor's three questions land
+and **Ruth says nothing**, which is the worst answer available and the only
+honest one. Ben: "We can't ask someone to die for us." Ruth: **"It's not your
+choice. It's theirs."** Bourn relays a report that Ahdia is awake and asking to
+deploy — **the report is hours stale** (bible §7f). The briefing room, the
+offer to join CADENS, four cases of gear. Then the alarm: **Kain at twenty feet
+on Main Street with four Tanks behind him.** The team goes without clearance;
+Ruth goes with them; **Bourn is left alone in the briefing room** and stays
+there.
+
+**CH24 — the dream, the eight doses, the return.** Ahdia dreams the world
+running backward and is told **she only ever pulls** — the hallway of blue
+doors she has always opened and red doors she never has. **Something vast,
+patient, old and curious passes through the hallway** and only observes. She
+reaches for a red door; a **second, colder voice that is not the Seed** says
+"Wake up." She surfaces in the CADENS medical bay after **eighteen hours**,
+with a torn IV she does not remember. Kain is on the monitor; the team left
+thirty minutes ago with no powers. Bourn gives her the arithmetic — eight
+doses, three weeks apart, six months — and then says **"We're out of time."**
+Ahdia takes all eight autoinjectors and **accelerates her own cells through the
+intervals in about fifteen seconds.** The Seed burns **RED for the first time:
+blue is pull, red is push.** Ryu's tablet, the metronome, SLOW DOWN unread.
+Net **~30% regeneration**. She translocates out on a FAERIS drone and appears
+in the intersection barefoot in a hospital gown, and **Kain freezes mid-strike
+at twenty-three feet with two teenagers alive inside his fist.** Ruth whispers
+her name in front of four people who buried her.
+
+**CH25 — the introduction, the fracture, the plan.** Ahdia sends the drone
+away and **it does not leave** — it settles over Tess's shoulder and stays.
+She introduces herself as **"Firas's big sister"** and deflects with jokes
+while bleeding freely. **The correction: she is not freezing Kain, she is
+accelerating everyone else**, and she only worked it out fifteen minutes ago.
+Tess turns on Ruth — *you knew, you've been lying* — and Victor demands how
+long. **Ahdia defends Ruth and gets the span wrong** ("two weeks? Maybe
+three?"); the truth is **one day**, Ruth knows it, and **lets the wrong number
+stand**, because the honest answer is worse: one day was enough. Then the
+speech: she kept it secret because **she did not think she deserved powers when
+they had none** — *"even without me, you guys are, well . . . super."* Ben:
+"We trusted you." Nobody forgives Ruth. **They turn to her anyway, because she
+is the one who builds the plans.** Ruth works it out in public — if everyone is
+accelerated and Kain is not, the stillness is not a wall but a window — and
+ends the chapter: **"Then let's run."**
+
 ---
 
-## KNOWLEDGE GATES AT END OF CH22 (violating these kills a draft)
+## KNOWLEDGE GATES AT END OF CH25 (violating these kills a draft)
 
-**Ahdia (Auerbach)** — knows CADENS watched her from before the warehouse; the
-eighteen-month ledger and that CR-7-TV may extend it; that her parents worked
-adjacent to CADENS in Montana tracking a Hyper Seed manifestation and died
-protecting it; that Ruth now knows; that the drones are learning. **Does not
-know** what happened at the gala, that Kain has bonded the Heart, or that the
-Intermediary exists. Her standing instruction to Ruth is **do not tell Firas.**
-Author-level, never on the page and never voiced by anyone: the conversion's
-endpoint (TEMPORAL_MECHANICS §5b).
+**The single biggest change since ch22: the secret is out, and it did not fix
+anything.** The team knows everything except Ahdia's remaining time. Nobody has
+forgiven Ruth. Firas is now the only person in the book who still believes his
+sister is dead.
 
-**Ruth** — **knows the whole truth and is concealing it.** Since ch19: Ahdia is
-alive; the team's powers were Ahdia all along; Ahdia is dying; CADENS exists,
-its facility, Bourn, Ryu, FAERIS. She has taken CADENS' deal, built the
-treatment, agreed to manage the eventual reveal, and lied to her team by text.
-She knows FAERIS is approaching independence and that the plan is to hold until
-it gets there. She does **not** know what the Intermediary is, what the Heart
-is, or what happened at the gala until ch22's final beat — at which point she
-has seen it on a CADENS feed. **She has never resolved her own case:** she felt
-nothing change when the EMP hit, and whether her callouts ever carried anything
-is open to her and stays open (TEMPORAL_MECHANICS §7).
+**Ahdia (Auerbach)** — has met the team **face to face for the first time in
+her life** and told them: she is Firas's sister, the powers were hers, she
+asked Ruth to keep it secret, and she did it because she did not believe she
+deserved abilities when they had none. Knows Kain bonded the Heart and is
+transformed. Knows she **pushes as well as pulls** (red Seed, ch24) and that
+she has only ever pulled. Has spent all eight remaining doses and netted ~30%.
+**Does not know:** that the Intermediary exists; that a fifth Tank survived
+ch19; what either presence in the dream was. Her standing instruction —
+**do not tell Firas** — has never been countermanded on the page.
 
-**Ben, Leah, Victor, Tess** — know their powers are gone as of the docks EMP,
-except Tess's translocation, which still works and works worse. Their working
-theory, which Ben voiced and Tess repeated, is **"mine was always tech-based"**
-— correct, for reasons nobody in the room can know. The dread underneath is
-that they may never have been super at all. They know **Ruth sent one text and
-went dark** and they do not know where she is, whether she is hurt or hiding.
-They know Kain has artifacts, that Jericho was researching them, that the
-Heart is real and Kain wanted it replicated, and that the chief is on his
-payroll. As of the last line of ch22 they have seen Kain walk through stone and
-have seen Ruth on a CADENS ramp in gear she has never owned; **nothing has been
-explained to them.** **They do not know Ahdia is alive.** None of them has ever
-heard the words CADENS, FAERIS, Hyper Seed, Auerbach, Temporalist, or Overseer.
+**Ruth** — **the concealment is over and cost exactly what she expected.** The
+team knows she knew, since ch23 by admission-through-silence and since ch25 by
+Ahdia's own account. She gave them CADENS, FAERIS, the transformation and the
+prognosis; the only thing she ever withheld was the name, and Ahdia gave that
+herself. **Nobody has absolved her.** They turn to her at the end of ch25
+because she is the one who builds the plans, not because they trust her. She
+knows Ahdia has **days, maybe a week** if she fights (Ryu's estimate, ch23) and
+has not said that number to the team. She has **never resolved her own case**
+(TEMPORAL_MECHANICS §7). **She has not told Firas.**
 
-**Firas** — believes his sister is dead and said so in front of the team in
-ch12. Bedridden, then barely mobile; present for the planning of ch21 and the
-alley of ch22, absent from everything at the docks and inside the mansion.
-Knows exactly what the others know and less of it firsthand. **Nobody has told
-him anything about Ahdia** and Ahdia has explicitly asked Ruth not to.
+**Ben, Leah, Victor, Tess** — as of ch25 they know: the powers were borrowed
+and belonged to a person; **that person is Ahdia Bacchus, who is alive**; she
+is dying; **Ruth knew and concealed it**; CADENS exists by full name, with
+drones called FAERIS, a Director named Bourn and a facility they have stood
+in; Kain used the Tamois Heart, is transforming, and is dying either way; and
+**they are not frozen — they are being accelerated.** They were offered
+membership in CADENS, asked to think about it, and **never answered.** They do
+**not** know: the Intermediary; the word Temporalist, Auerbach, Hyper Seed or
+Overseer; how long Ahdia has; that a fifth Tank exists. Their powers **have not
+come back** — everything they do from ch24 on is inside Ahdia's field.
 
-**Kain** — knows CADENS exists, its acronym, its black-budget autonomy, and
-that a Director codenamed Overseer answers to nobody he can reach. Knows a
-blur is on his footage and that something beyond CADENS surveillance is helping
-the Go Squad. **He does not know who or what it is** and has been told by the
-Intermediary not to ask. He knows Ruth Carter by name, career and research
-value; he knows the codenames the public knows. **He does not know any of their
-real names, that Ahdia Bacchus is alive, or that a Temporalist exists.** He does
-not know which four people robbed him — Leah went in as Sophie Clement and Ben
-and Victor as catering staff. As of ch22 he is bonded to the Tamois Heart and
-can walk through solid matter; what else he can do is unestablished.
+**Firas** — **unchanged, and now alone in it.** Believes his sister died in the
+warehouse and said so in front of the team in ch12. He was at the extraction
+point in ch23 with Jericho and the drives, on foot and bleeding, and Ruth did
+not tell him. He is absent from ch24 and ch25. **Nobody has told him anything,
+and Ahdia asked that nobody does.**
 
-**Whitford** — knows CADENS, Overseer, the black budget, and a page of
-vulnerabilities. Believes CADENS may have enhanced the Go Squad, or that
-someone else did. Runs the ambushes and the docks trap. **He has never named
-his daughter in connection with the Go Squad on the page**, and nothing in any
-CCPD operation reflects the link. Note the on-page position precisely: **the
-squad itself knows** — in CH12 Ruth says aloud that Tess's father is the
-Caledonia Police Chief and nobody in the room is surprised — and Ahdia has seen
-WHITFORD, TESS on a pharmacy bottle (ch14b) without ever connecting it aloud.
-Kain does not know. The Intermediary has never mentioned it. Whitford's own
-knowledge of what his daughter does is unestablished; Tess believes he could
-track her if he wanted to, and in ch21 she records a message asking that he be
-told she tried.
+**Kain** — bonded to the Heart, translucent, twenty-three feet and still
+growing, razing Main Street. He is **frozen mid-strike from the end of ch24
+onward**, with two teenagers alive inside his fist. Whether he registered
+Ahdia's arrival before the freeze is unestablished. He still does not know any
+of their real names, that a Temporalist exists, or who robbed him.
 
-**The Intermediary** — knows the Go Squad must be removed, knows CADENS
-observes rather than enhances, and knows something about the true source of
-their abilities that she declines to state.
+**Bourn and Ryu** — four hundred feet underground watching the feeds. Bourn
+told Ahdia to take the doses by saying "We're out of time," having walked in to
+say no. Neither is present at Main Street.
 
-**CADENS** — knows everything about Ahdia and that Kain and Whitford are
-escalating. Nothing in ch12–22 shows CADENS aware of the Intermediary, the
-Heart, or the Tank's manufacture before the fact.
+**Whitford / the Intermediary / CADENS** — unchanged from ch22. Nothing in
+ch23–25 shows CADENS aware of the Intermediary, and she has not called again.
 
-**Reader knows (dramatic irony to preserve):** the powers are Ahdia; Ahdia is
-alive; Ruth is lying to her team; the drones are quietly learning to do her job
-without her.
+**Reader knows (dramatic irony to preserve):** that Ahdia's real remaining time
+is days; that Ruth's lie was one day old and that this is worse, not better;
+that the fifth Tank is alive somewhere; that something vast and curious looked
+at Ahdia in the dream and that a second, colder voice woke her; and that the
+FAERIS drone which settled on Tess's shoulder has not been explained.
 
 ---
 
 ## WHAT IS UNRESOLVED (open threads a later chapter must honour)
 
-1. **Ruth's concealment.** She is standing on a ramp in CADENS gear in front of
-   four people she lied to. The reveal has not happened.
-2. **Firas has not been told** his sister is alive, and Ahdia asked that he not
-   be.
-3. **Kain walks through walls.** He is bonded to the Heart, his eyes flicker,
-   and he saw the team see him. Nothing about his new state is explained.
-4. **The Intermediary** — identity, species, employer, and what she gets out of
-   the Go Squad's deaths. She promised to call again.
-5. **The Tank's fate** and whether more enhanced were made; Kain wanted the
-   Heart replicated, scaled and distributed "to whoever I choose."
-6. **Jericho** is unconscious at a loading dock with all his research; the team
-   has his drives, including proof the chief is on Kain's payroll.
-7. **FAERIS independence** — 10% and climbing, on a projected timeline CADENS
-   is betting Ahdia's remaining life on. The drone that turned to face the
-   observation window is unexplained.
-8. **Ruth's own case** — never resolved, per the mechanics bible.
-9. **Whether the treatment holds.** CR-7-TV buys time at best, on a three-day
-   dosing schedule, and only if Ahdia stops spending herself.
-10. **The team's powers do not come back on their own.** Any restoration is
-    Ahdia deciding to pay for it.
-11. **Tess wants a new codename** and has not chosen one; the photograph folded
-    behind her school photo in her father's desk frame has never been mentioned
-    by him.
-12. **The scratched-out wedding photograph** in the nonprofit's back office
-    (ch14b) is on the page, unexplained, touched by no one. The no-dead-wife
-    ruling stands regardless.
-13. **The dates do not reconcile.** CH13 puts the warehouse on "the night of
-    August 14th"; ch18, ch21 and ch22 place the docks and the gala in January;
-    ch19 puts six weeks of monitoring between them. Per the calendar ruling
-    (TEMPORAL_MECHANICS §8) do not date events, count months, or let a
-    character do calendar arithmetic on the page.
+1. **The fight itself.** Kain is frozen at twenty-three feet with hostages in
+   his hand and four Tanks mid-charge; the team has just decided to run at
+   them inside Ahdia's acceleration. Nothing is won yet.
+2. **Firas has not been told**, and is now the only one who has not.
+3. **Nobody forgave Ruth.** The trust is unrepaired and was not repaired by
+   the plan working.
+4. **Ahdia's remaining time.** ~30% regeneration against days-to-a-week if she
+   fights — and she is fighting.
+5. **The two presences in ch24's dream** — the vast, patient, curious thing
+   that passed through the hallway and only observed, and the cold, final
+   voice that said "Wake up" and was **not** the Seed. **Two different things.
+   Neither is named, explained or attributed. Do not resolve them.**
+6. **The drone that settled on Tess's shoulder** in ch25 and stayed, close
+   enough to touch. FAERIS is three days into independence at ~10%. Unexplained.
+7. **The CADENS offer** — four cases of gear, an open invitation, and no answer.
+8. **The Intermediary** — identity, species, employer; she promised to call
+   again and has not.
+9. **The fifth Tank** — alive, off the board, never seen again in Book 1
+   (bible §7h). He carries the forgettable-face signature that rhymes with the
+   Kain clone; filed as promise `fifth-tank-survivor`, payoff unassigned.
+10. **Jericho** — going into protective custody with all his research; the
+    team holds the drives, including proof the chief is on Kain's payroll.
+    Nobody has done anything with them.
+11. **Ruth's own case** — never resolved, per the mechanics bible.
+12. **Tess wants a new codename** and has not chosen one; the photograph in
+    her father's desk frame has never been mentioned by him.
+13. **The scratched-out wedding photograph** in the nonprofit's back office
+    (ch14b), touched by no one. The no-dead-wife ruling stands regardless.
+14. **What Ahdia's push actually costs.** She learned she can accelerate
+    fifteen minutes before ch25 and has used it once. The bible prices it
+    (§5b); the prose has not tested the ceiling.
 
 ---
 
@@ -424,3 +490,18 @@ never a mayor · Bourn is a woman · the team owns no vehicle, in ops as well as
 patrol · no year appears in the prose · CH18 fan-gratitude drift excised — the
 only public gratitude scene that stands is the ch22 alley photograph, and
 nothing public touches the Academy.
+
+**Ruled since ch22 — these were open questions and are now closed:**
+**The calendar reconciles.** The warehouse is **August 14**, the present is
+**late September**, and the elapsed span is **six weeks** (bible §7c/§7d).
+Jericho has been held six weeks, not three and not six months; Ruth has been at
+CADENS **one day**; FAERIS independence is three days old at ch20. The January
+dressing in ch18/21/22 was drift and is gone. The book remains **undated** —
+August 14 is the only date ever named on the page (§8).
+**The dose interval is three weeks**, not three days (§7e) · **the Tanks are
+five and only four ever fight** (§7h) · **naming follows whose head the
+narration is in** (§7g) · **Bourn's ch23 report about Ahdia is stale** (§7f) ·
+**Ahdia was eight at Montana**, Firas six (ch02 corrected) · **counting and the
+accounting-metaphor family are reserved to Ahdia** (R105/R106) · **CADENS has
+exactly one expansion** — Cataclysm Activity Detection and Engagement Network
+Sentry · **the name "Marcus" never appears** anywhere in the series.
