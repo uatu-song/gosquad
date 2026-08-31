@@ -80,6 +80,10 @@ PATTERN_TICS = {
         r"\barithmetic\b|\bcame due\b|\ban accounting\b|\bexchange rate\b"
         r"|\bthe bill line by line\b|\bclosing its accounts\b|\bthe ledger\b", re.I),
     "kind-of": re.compile(r"\bthe kind of\b", re.I),
+    # the-way simile frame (Director-flagged 2026-08-31; kit 04_REPETITION watched word).
+    # Directional idiom ("all the way", "on the way", "out of the way") excluded.
+    "the-way-frame": re.compile(
+        r"(?<!all )(?<!on )(?<!of )\bthe way\b(?! down\b)(?! up\b)(?! out\b)", re.I),
     "voice-was": re.compile(r"\b\w+'s voice was\b|\b[Hh](?:er|is) voice was\b|\bvoice came out\b"),
     "looked-at": re.compile(r"\b(?:looked|stared|glanced) at\b", re.I),
     # the epigram template ("Alone, then." / "Triage, then.") — one shape of

@@ -17,6 +17,41 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-08-31 — "the way" simile frame: 44 sites swept (kit method, Director's hand)
+
+**Director-flagged tic:** the simile frame "X, the way Y verbs" — flagged as a
+watched word by the imported kit (04_REPETITION: "the way" 36 uses in the other
+book) and never wired into this repo's tooling until now. Census per the kit:
+**59 raw hits ch12–27; 7 directional idioms (not the tic); author's own rate
+for the frame 1 in 17,849 narration words (0.06/1K); rebuild ran 1.71/1K.**
+
+**The fix method is the Director's, taken from their own ch26 line edits:**
+- "the way it was always cold" → "as always"
+- "the way she was fixing a kid's hold on a bat" → "like she was fixing …"
+- "the way your tongue finds a chipped tooth" → "like a tongue finds a chipped tooth"
+Smallest in-place conversion — like / as / compact adverbial / drop the frame —
+never a sentence rewrite, never a synonym-swap, "like" held inside its band.
+
+**Result: the way (frame): 51 → 7, and the 7 are all in ch26**, which the
+Director is line-editing personally and the crew does not touch. 44 sites fixed
+by agents across ch13–24 + ch27; ch12's hits were idiom only; ch25 had none.
+All chapters re-gate clean (14a/14b verified as a combined pair, 139/139).
+Idiomatic/directional uses ruled out of the population by the Director's own
+pattern statement ("blah blah, the way blah blahS" — a verbed clause), stated
+here so the boundary is visible and reversible.
+
+**Also this session, same file:** the Director's live ch26 line edits were
+partially scooped into a crew commit by `git add -A`, and one of them — a
+dialogue edit, "I'm getting" → "I've been getting" — was then wrongly
+"repaired" back to the frozen source by crew. **Reversed; the Director's edit
+stands and the source/packet follow it.** Standing rules: crew commits stage
+files BY NAME, never `add -A`; and a frozen-span divergence is ATTRIBUTED
+(who wrote it?) before it is ever "fixed."
+
+**Ruled by:** Director (the tic, the method, the sweep order); crew executed.
+
+---
+
 ## 2026-08-31 — COUNTING: the crew carve-out REVERSED. No exemptions.
 
 The Director's instruction was **"get rid of that"**, unqualified. The crew
