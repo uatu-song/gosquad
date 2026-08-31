@@ -303,6 +303,17 @@ The rule is a characterization device, not a formatting convention: the gap
 between what Ruth calls them and what Ahdia calls them is the measure of how
 alone Ahdia has been.
 
+**REGISTER FOLLOWS POV TOO (ruled 2026-08-31).** The same principle governs the
+book's comic voice. Wit lives freely in DIALOGUE — Victor's deadpan, Ryu's
+Spider-Man and Dragon Ball references, Firas's one-liners he cannot land,
+Ahdia's whole operating system — but the NARRATION takes its temperature from
+whose head it is in. **Kain's chapters are cold and Ruth-under-threat is dry,
+and that is correct, not decay.** An audit measuring pop-culture density across
+POVs and calling ch17–19 "the driest stretch" is measuring POV, not
+convergence; ch24 scores zero because it is a dream and a medical emergency,
+and jokes there would be wrong. Do NOT run a voice pass to raise comic density
+in a chapter whose POV character is not funny.
+
 ## 7h. THE FIFTH TANK — ALIVE, OFF THE BOARD (Director-ruled 2026-08-30)
 
 **There are FIVE Tank cops, not four.** Four are named and accounted for from

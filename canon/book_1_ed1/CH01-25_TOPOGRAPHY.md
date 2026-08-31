@@ -62,6 +62,11 @@ Naming follows **whose head the narration is in**, not whether it is a fight.
 The gap between what Ruth calls them and what Ahdia calls them measures how
 alone Ahdia has been. Do not flatten it.
 
+**Register follows POV as well** (bible §7g). Wit lives in dialogue; the
+narration takes its temperature from whose head it is in. Kain's chapters are
+cold and Ruth-under-threat is dry, and that is correct. Never raise comic
+density in a chapter whose POV character is not funny.
+
 **Ahdia was EIGHT at the Montana trip** (Firas six). Ch02 said seven and five
 and was corrected; ch03's "over fifteen years ago" against her present age is
 the anchor that wins.
@@ -452,7 +457,12 @@ FAERIS drone which settled on Tess's shoulder has not been explained.
    them inside Ahdia's acceleration. Nothing is won yet.
 2. **Firas has not been told**, and is now the only one who has not.
 3. **Nobody forgave Ruth.** The trust is unrepaired and was not repaired by
-   the plan working.
+   the plan working. **ASSIGNED TO CH26 (ruled 2026-08-31):** the anger is
+   raised in ch25 and tabled by circumstance rather than answered, and ch26
+   must keep it alive or it reads as a hole. Ch26 is Ahdia's POV, so she
+   registers it from OUTSIDE — she can see the team not looking at Ruth even
+   while they take her orders. A beat, not a scene; the resolution is not
+   ch26's job.
 4. **Ahdia's remaining time.** ~30% regeneration against days-to-a-week if she
    fights — and she is fighting.
 5. **The two presences in ch24's dream** — the vast, patient, curious thing
