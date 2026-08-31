@@ -93,7 +93,7 @@ fifteen-foot mark. Reproduce it as a quoted word in narration.
  33. "Hey, Ahdia."
  34. "Hey, little bro."
  35. "You look—"
- 36. "Gonna' stop you right there."
+ 36. "Gonna stop you right there."
  37. "I just have a pet peeve when family you haven't seen in a while immediately start with how fat or skinny you've gotten?"
  38. "That's not what I—"
  39. "I'm sorry. This . . . this is all because of me. I shouldn't have come to your place, I should have just gone to the hospital."
