@@ -4,6 +4,45 @@
 
 ---
 
+## 2026-08-31 — CH25: the introduction, the fracture, the plan
+
+**"Two weeks ago? Maybe three?" — KEPT FROZEN, and made load-bearing.** Ruth
+learned at the docks last night; the truth is ONE DAY (§7d). Ahdia is not
+lying — she has lost eighteen hours and just ran her own cells through three
+weeks in fifteen seconds, so "Time's been weird" is literal, not a lampshade.
+**Ruth knows the real number and says nothing**, because correcting it helps
+nobody and the honest answer is worse: one day was enough. The source's
+narration "a choice she'd made months ago" is drift and was not carried.
+
+**"Marky Mark and the Funky Bunch" — KEPT.** The book is undated (§8) and a
+retro joke from a 23-year-old who lives on television does not date it the
+way a year would. Godzilla appears two spans later in the same register.
+
+**Source typography:** "Firas' big sister" → "Firas's" (Chicago, ruled; span
+34 nine lines later already read "Firas's").
+
+**§7g's first full test, and it holds.** Narration is Ruth's, so the team are
+Ben, Victor, Leah, Tess throughout — while Ahdia's frozen span 17 says "look
+at you, Gloom Girl," because she has never met them. Both correct in the same
+paragraph.
+
+**TOOL FIX — the typesetter had a real bug.** A straight quote after an em
+dash (interrupted speech, `"I—"`) was being read as an OPENER, so `“I—“`
+closed nothing and the span regex swallowed across paragraphs: 42/46. Cause
+was mine, not the draft's. Corrected to close whenever already inside a quote,
+and verified by round-tripping ch23 and ch24 byte-identically before reuse.
+**Any chapter typeset with the broken build should be re-verified** — ch12–24
+all still gate clean, so nothing shipped damaged.
+
+**Revision:** one pass by hand. The draft came in too smooth (mean 17.6, <10w
+23.1%, -ly 11.3, 24 words long); split long narration into short declaratives,
+then restored five long sentences when it overcorrected past the 20+/30+
+floors. Final: 1,212 words, 46/46 spans, all bands.
+
+**Ruled by:** Director (both dialogue calls delegated — "finish ch 25")
+
+---
+
 ## 2026-08-30 — CH24 triangulation: six catches, five ruled
 
 **1. THE WAKING WINDOW (bible §7f).** Ch23's Bourn — "Ryu says she's awake . . .
