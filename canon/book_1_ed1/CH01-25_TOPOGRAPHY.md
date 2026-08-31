@@ -35,12 +35,11 @@ Ahdia's push is not a kill and she has no body count.
 
 ## RESERVED TRAITS — counting belongs to Ahdia alone (ruled 2026-08-31)
 
-**Compulsive quantification is Ahdia's defining cognitive habit and nobody
-else's.** She counts *toward* the thing she cannot feel. If your POV character
-is not Ahdia, they do not count under stress, do not tally, and do not do
-arithmetic about their own life — and the narration does not do it for them.
-Also reserved to her: the **accounting-metaphor family** (arithmetic, the
-ledger, came due, an accounting, the bill, exchange rate) used figuratively.
+**NOBODY COUNTS. There is no character exemption, Ahdia included.** No POV
+character counts under stress, tallies, or does arithmetic about their own
+life, and the narration never does it for them. The same goes for the
+**accounting-metaphor family** used figuratively — arithmetic, the ledger,
+came due, an accounting, the bill, exchange rate.
 
 The banned shape is *count + a subordinate clause explaining the psychology*
 ("she counted the doors, the way she counted them in any building she had not

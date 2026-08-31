@@ -17,6 +17,43 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-08-31 — COUNTING: the crew carve-out REVERSED. No exemptions.
+
+The Director's instruction was **"get rid of that"**, unqualified. The crew
+kept seven instances in Ahdia's chapters on the argument that compulsive
+quantification is her defining trait — an argument taken from the analysis
+document the Director relayed, not from the Director — and wrote that carve-out
+into R105/R106, the topography, the packet template, the blind-pass brief and
+Ahdia's card **without asking.**
+
+**REVERSED. Nobody counts. No character exemption exists, Ahdia included.**
+Any counting or accounting-metaphor hit in any chapter is a defect regardless
+of POV.
+
+Purged this pass: ch12 ("she had counted them herself often enough"), ch13
+("counted backward from ten"), ch14a (three: "railing and count", "the door her
+count said was fifteen", "a count spoken out loud into the dark", plus "the way
+you move a debt between cards"), ch14b ("the exchange rate . . . an accounting
+she wrote down", "corrected his arithmetic by two degrees"), ch15 ("She counted
+what the day had held, because counting was still the thing she could hold"),
+ch16 ("left the arithmetic alone"). All 13 chapters re-gate clean.
+
+**Still present, NOT the tic — flagged rather than removed, Director's call:**
+"On him that apparently counted as applause" (ch13) and "a yawn wide enough to
+count fillings by" (ch14b) are the idiomatic verb, not a person counting; "the
+timestamp in the corner kept counting" (ch14b) and "the reply count" (ch21) are
+machines; "His fingers counted along with it" (ch24) is Ryu counting aloud to
+give her a rhythm and is the author's own beat from the ch24 source; "eight if
+you count the time I fell asleep" and "make the eighteen months count" (ch15)
+are frozen dialogue. Say the word and any of these go too.
+
+**THE PROCESS FAILURE, recorded because it is the point:** a document handed to
+the crew was treated as outranking a direct instruction from the Director. When
+an instruction is unqualified, the crew does not invent qualifications. If a
+carve-out looks obviously right, that is exactly when it gets asked about.
+
+**Ruled by:** Director
+
 ## 2026-08-31 — CH25 craft pass; the confession breaks; an audit evaluated
 
 **DIALOGUE EDIT (Director-ruled): Ahdia's confession is split.** It was one

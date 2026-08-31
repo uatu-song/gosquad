@@ -195,9 +195,9 @@ and less alive. Convergence is not zero-defect.
 
 ## RESERVED TRAITS — carry this block into every packet (ruled 2026-08-31)
 
-**Counting belongs to Ahdia alone.** If the POV character is not Ahdia, they
-do not count under stress, do not tally, and do not do arithmetic about their
-own life — and neither does the narration on their behalf. The banned shape is
+**NOBODY COUNTS — no exemptions, Ahdia included.** No POV character counts
+under stress, tallies, or does arithmetic about their own life, and the
+narration never does it for them. The banned shape is
 *count + subordinate clause explaining the psychology*:
 
 > ~~She counted the doors on both sides, the way she counted them in any
