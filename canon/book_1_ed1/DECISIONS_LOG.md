@@ -4,6 +4,72 @@
 
 ---
 
+## 2026-08-31 — COUNTING: reserved to Ahdia, purged from everyone else
+
+**Director ruling: the counting tic goes.** Measured rates — author's own
+verified chapters 0.07/1K (and his single instance is "too many to count", an
+idiom, so his rate for the BEHAVIOUR is zero); rewrite layer ch12–21 0.72/1K;
+ch25 1.59/1K. Same shape as the em-dash and "in her chest" findings.
+
+**Three things made it worse than a frequency problem:**
+1. **It attached to whoever was on the page** — Ruth (ch19 x2, ch20, ch23,
+   ch25), Tess (ch21), Ahdia (ch12–16). A trait spread across four characters
+   is house style, not characterisation.
+2. **It cannibalised the protagonist.** Compulsive quantification is Ahdia's
+   defining cognitive habit — she counts *toward* the thing she cannot feel.
+   Every time Ruth counted under stress, Ahdia's one exclusive piece of
+   interiority was eaten.
+3. **One template, reused:** count + a subordinate clause explaining the
+   psychology. A machine for manufacturing instant interiority without
+   dramatising anything.
+
+**RULED: counting and the accounting-metaphor family are RESERVED TO AHDIA.**
+Nobody else counts, tallies, or does arithmetic about their own life. Hits in
+Ahdia-POV chapters are expected and correct.
+
+**The accounting family measured worse than the counting.** "arithmetic,
+ledger, came due, an accounting, the bill, exchange rate" — **ZERO instances
+across all 23,536 words of the author's own chapters**, against eleven uses of
+"arithmetic" alone across eight rewritten chapters. Infinite escalation.
+
+**Purged (10 sites, 8 chapters):** ch17 x2, ch18 x2, ch19 x4, ch20 x2, ch21
+x2, ch22, ch23, ch25 x2. Fix was deletion wherever the frame was bolted onto
+an observation that already worked — ch19's clinical inventory (blood tracked
+to the jaw and dried once already, tremor fine and fast) already IS the
+reading; the frame only explained what the inventory demonstrated. Survivors
+are Ahdia's seven, plus three legitimate uses: an idiom ("counted as
+applause"), a clock timestamp, and Ryu physically counting on his fingers,
+which is the author's own beat.
+
+**Caught during the purge: I had been editing a STALE ch18.** The canonical
+file is `chapter_18_metric_v3.txt`; `chapter_18_metric_v1.txt` is a dead
+earlier draft that the gate exposed at 77/71 spans. The stale file was
+reverted and the real ch18 fixed. **Always resolve the chapter file through
+`build_compilation_epub.py`, never by filename convention** — ch18 is the one
+chapter whose canonical draft is not `_metric_v1`.
+
+**Tooling, so this is caught mechanically instead of by luck:**
+- `tic_census.py` — new tracked markers `counting` and `accounting`.
+- `canon/series/RULES.yaml` — R105 (counting-as-interiority) and R106
+  (accounting metaphor), series-wide warnings, so a fix lands in every book.
+- `_canon/REWRITE_PACKET_TEMPLATE.md` — a RESERVED TRAITS block every future
+  chapter packet inherits, with the banned shape shown as struck examples.
+- Blind-pass `00_BRIEF.md` — a RESERVED TRAITS section, since Ahdia's card
+  instructs generators to make her count (correct) and nothing stopped the
+  other nine cards' outputs from picking it up (how it spread).
+- `cards/Ahdia.md` — the trait now marked exclusive at the point of
+  instruction.
+
+**Also kept: Director's ch25 edit** moving "Four years of tactics rested on
+that sentence, and Ruth felt the floor tilt" off Ben's line and onto Ruth's
+"You still can—". The tilt is hers; it belongs in her paragraph.
+
+All 13 rebuilt chapters re-gate clean after the purge.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-31 — CH25: the introduction, the fracture, the plan
 
 **"Two weeks ago? Maybe three?" — KEPT FROZEN, and made load-bearing.** Ruth

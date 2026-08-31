@@ -192,3 +192,28 @@ not another round. Record the round count for every chapter.
 Stop when the remaining irregularities are the places where it sounds like a
 person wrote it. The gates will happily accept a v6, v7, v8 — each smoother
 and less alive. Convergence is not zero-defect.
+
+## RESERVED TRAITS — carry this block into every packet (ruled 2026-08-31)
+
+**Counting belongs to Ahdia alone.** If the POV character is not Ahdia, they
+do not count under stress, do not tally, and do not do arithmetic about their
+own life — and neither does the narration on their behalf. The banned shape is
+*count + subordinate clause explaining the psychology*:
+
+> ~~She counted the doors on both sides, the way she counted them in any
+> building she had not chosen to enter.~~
+> ~~Ruth counted the bill line by line because counting was the only medicine
+> available.~~
+> ~~Ruth crossed to her in eleven counted steps.~~
+
+Also banned outside Ahdia's POV: the **accounting-metaphor family** —
+arithmetic, the ledger, came due, an accounting, the bill, exchange rate — used
+figuratively. **The author's rate for both is zero** across all 23,536 words of
+his own chapters; the rewrite layer had reached 1.59/1K before this was caught.
+
+The fix is nearly always **deletion**, not replacement: the counting frame is
+usually bolted onto an observation that already worked, and the inventory that
+follows it already *is* the reading. Where something must stand in its place,
+use what the author uses — physical business in the dialogue tag, trained
+professional habit rendered as action, or plain statement. Show the hands.
+

@@ -67,6 +67,18 @@ PATTERN_TICS = {
         r"|\bso much as\b"),
     "hedge": re.compile(r"\b[Aa] kind of\b|\b[Aa] sort of\b|\b[Ss]omething like\b|\b[Aa]lmost as if\b"),
     "in-chest": re.compile(r"\bin (?:her|his|their) chest\b", re.I),
+    # counting-as-interiority (Director-ruled 2026-08-31). Author rate 0.07/1K and his
+    # single hit is the idiom "too many to count"; his rate for the BEHAVIOR is zero.
+    # Expected hits in Ahdia chapters ONLY — compulsive quantification is her trait.
+    "counting": re.compile(
+        r"\b(?:counted|counting|counts)\b(?![^.!?]{0,20}\b(?:as|for)\b)"
+        r"|\bcount(?:ed)? (?:the|them|it|backward|off)\b"
+        r"|\bin \w+ counted \w+\b", re.I),
+    # accounting-metaphor family: the same tic wearing a different coat. Author rate ZERO
+    # across all 23,536 words of his own chapters.
+    "accounting": re.compile(
+        r"\barithmetic\b|\bcame due\b|\ban accounting\b|\bexchange rate\b"
+        r"|\bthe bill line by line\b|\bclosing its accounts\b|\bthe ledger\b", re.I),
     "kind-of": re.compile(r"\bthe kind of\b", re.I),
     "voice-was": re.compile(r"\b\w+'s voice was\b|\b[Hh](?:er|is) voice was\b|\bvoice came out\b"),
     "looked-at": re.compile(r"\b(?:looked|stared|glanced) at\b", re.I),

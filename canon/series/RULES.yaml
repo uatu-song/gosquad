@@ -122,3 +122,57 @@ rules:
         note: "hedge (Ahdia_Voice 4B)"
       - pattern: '\b[Aa]lmost as if\b'
         note: "hedge (Ahdia_Voice 4B)"
+
+  R105_counting_as_interiority:
+    statement: >
+      A character counting under stress, followed by a subordinate clause
+      explaining the psychology ("counted the doors, the way she counted them
+      in any building she had not chosen to enter"). One template, reused: a
+      machine for manufacturing instant interiority without dramatising
+      anything. Measured 2026-08-31 — the author's own chapters run 0.07/1K
+      and his single instance is the idiom "too many to count", so his rate
+      for the BEHAVIOUR is zero; the rewrite layer had reached 1.59/1K.
+      RESERVED TO AHDIA. Compulsive quantification is her defining cognitive
+      habit — she counts toward the thing she cannot feel. When Ruth, Tess or
+      anyone else counts, the trait stops being characterisation and becomes
+      house style, and the protagonist's one piece of exclusive interiority is
+      cannibalised. Hits inside Ahdia-POV chapters are EXPECTED and correct.
+      The fix is almost always deletion: the counting frame is usually bolted
+      onto an observation that already worked. What the author does in that
+      slot is physical business in the dialogue tag, trained professional
+      habit rendered as action, or plain statement. He shows the hands.
+    severity: warning
+    owner: Director
+    source_doc: DECISIONS_LOG 2026-08-31
+    dialogue_exempt: true
+    forbidden_in_prose:
+      - pattern: '\bcount(?:ed|ing)? (?:the|them|it|backward|off)\b'
+        note: "counting-as-interiority — reserved to Ahdia"
+      - pattern: '\bbecause counting\b'
+        note: "the explain-the-count clause — the tell"
+      - pattern: '\b\w+ counted \w+ steps\b'
+        note: "counted-steps"
+
+  R106_accounting_metaphor:
+    statement: >
+      The debt-and-accounting metaphor family — arithmetic, the ledger, came
+      due, an accounting, the bill, exchange rate — used figuratively for
+      thought or consequence. The same tic as R105 wearing a different coat.
+      Measured 2026-08-31: ZERO instances across all 23,536 words of the
+      author's own chapters; the rewrite layer had eleven uses of "arithmetic"
+      alone across eight chapters. Infinite escalation, same shape as the
+      "in her chest" and "X's voice was" findings. Reserved to Ahdia on the
+      same grounds as R105 — financial metaphor is a natural extension of her
+      quantifying habit, and it is nobody else's.
+    severity: warning
+    owner: Director
+    source_doc: DECISIONS_LOG 2026-08-31
+    dialogue_exempt: true
+    forbidden_in_prose:
+      - pattern: '\barithmetic\b'
+        note: "accounting metaphor — reserved to Ahdia"
+      - pattern: '\bcame due\b'
+        note: "accounting metaphor"
+      - pattern: '\ban accounting\b'
+        note: "accounting metaphor"
+

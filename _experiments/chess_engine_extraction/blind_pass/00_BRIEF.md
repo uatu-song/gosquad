@@ -78,6 +78,32 @@ Some further constraints:
   guess at it.
 - **Do not resolve the character.** Endings are allowed to be unfinished.
 
+
+## RESERVED TRAITS — do not give these to your character (ruled 2026-08-31)
+
+Some habits belong to exactly one person in this series. If your character is
+not that person, the habit is not available to you, however well it fits the
+moment.
+
+- **Compulsive counting and quantification belongs to AHDIA ALONE.** Counting
+  under stress, tallies, running the numbers on a situation, and the
+  debt/accounting metaphor family (arithmetic, the ledger, came due, an
+  accounting, the exchange rate) are her defining cognitive habit: she counts
+  *toward* the thing she cannot feel. **If your character is not Ahdia, they
+  do not count and they do not do arithmetic about their own life.** When
+  everyone counts, it stops being characterisation and becomes house style,
+  and Ahdia's one piece of exclusive interiority is gone.
+- The tell to watch for is the shape: *count + a subordinate clause explaining
+  the psychology.* "She counted the doors, the way she counted them in any
+  building she had not chosen to enter." That template manufactures instant
+  interiority without dramatising anything, which is exactly why it is easy to
+  reach for. It is measurable: the author's own rate for the behaviour is zero.
+- What to do instead, from the author's own prose: **physical business** (a
+  finger against the palm with each point, an imaginary bug squashed
+  underfoot), **trained professional habit rendered as action**, or **plain
+  statement** — *the pain was tremendous*. He does not frame. He shows the
+  hands.
+
 ## Output
 
 Return JSON only, as your final message:
