@@ -17,6 +17,50 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-08-31 — ADVERBS: the floor removed, the unlicensed vocabulary swept
+
+**Director:** "And even those, I feel like there are too many." Measured before
+acting, and the finding was not rate — the rebuild ran BELOW the author (13.9
+vs 16.4 raw /1K). It was VOCABULARY. The author's adverbs are plain time-and-
+speed words (quickly, suddenly, eventually, immediately, slowly). The rebuild's
+were narrator-appraisal words the author uses zero times in eleven chapters:
+patiently ×10, entirely ×10, visibly ×9, briefly ×8, thoroughly ×7, personally
+×6, deliberately ×5, currently ×4 — plus six licensed-once words running 3×+
+hot (carefully, plainly, directly, perfectly, roughly, evidently). Same rate,
+wrong flavour; the flavour is what the Director was feeling.
+
+**THE FLOOR WAS THE CAUSE.** The gate's -ly band had a 12/1K floor ("keep the
+rate"), and when drafts ran lean, adverbs were ADDED to satisfy it — and the
+added ones were precisely the appraisal family. A floor that manufactures
+padding is backwards. **Band is now ceiling-only, 0–17/1K.** No draft is ever
+padded to a number again.
+
+**THE SWEEP: 122 sites, 17 chapters, deletion-first** (the Director's
+calibration from the the-way pass). 118 deletions, 2 substitutions (both to
+licensed "slowly" where deletion emptied the clause), 2 structural repairs.
+**Kill-list now at zero in narration**; corpus reads 9.9 raw / 8.2 true per 1K.
+That is BELOW the author's rate — ruled acceptable: the author said too many,
+and matching his number with the wrong words was the original sin. Dialogue
+untouched throughout (people say "exactly" and "finally").
+
+**COUNTER-PRINCIPLE, the Director's own words (ch27 review):** "When the
+metaphor system belongs to the character's actual worldview it stops being a
+tell and becomes voice." Kain's chapters run 11 economic terms per 1,000 words
+— suicide priced out, the Heart taking its fee, grief as a luxury good — and
+that is VOICE, not the R106 tic, because Kain is a businessman who bought a
+god. **R106's accounting-family ban does not apply inside Kain's POV.** This
+exception is the Director's, verbatim, not a crew carve-out.
+
+**Also ruled (ch27 review): "We killed them." stays unattributed in ch27 ONLY
+because ch28 must give it an owner.** The team's absolute rule broke; if ch28
+stays outside their interior too, the Go Squad became killers offstage.
+CARRIED AS A HARD CH28 PACKET REQUIREMENT.
+
+**Ruled by:** Director (the complaint, the calibration, the Kain exception,
+the ch28 debt); crew measured and executed; veto open on any single deletion.
+
+---
+
 ## 2026-08-31 — "the way" simile frame: 44 sites swept (kit method, Director's hand)
 
 **Director-flagged tic:** the simile frame "X, the way Y verbs" — flagged as a

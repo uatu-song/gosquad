@@ -48,7 +48,7 @@ BANDS = {
     'narr_em':      (0.0, 3.0),    # 1.1  /1K narration
     'narr_comma':   (40.0, 72.0),  # 55.1 /1K narration
     'narr_like':    (1.5, 5.5),    # 3.7  /1K narration
-    'narr_ly':      (12.0, 27.0),  # 19.5 /1K narration
+    'narr_ly':      (0.0, 17.0),   # ceiling only (Director 2026-08-31: floor removed; it caused padding). Author raw 16.4/1K.
     'para_mean':    (26.0, 60.0),  # 42.6 words, NARRATION paragraphs only.
     # Was (22,45) over ALL paragraphs — but dialogue paragraphs are frozen text
     # the agent cannot change, and a dialogue-dense chapter is arithmetically

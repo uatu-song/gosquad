@@ -1,6 +1,6 @@
 “What conditions?” Bourn asked.
 
-Ahdia set the empty water bottle down and squared it to the table’s edge. That bought her two seconds, and two seconds was evidently all the rehearsal she was going to get.
+Ahdia set the empty water bottle down and squared it to the table’s edge. That bought her two seconds, and two seconds was all the rehearsal she was going to get.
 
 “You’ve been watching Caledonia. You know what it’s like down there. Police state. Whitford’s thugs beating people for existing while Black. Kain in bed with all of it. People are terrified.”
 
@@ -26,7 +26,7 @@ The pause ran long enough that Ahdia braced for the no.
 
 Ahdia waited for the rest of it. There was no rest of it. She had asked this woman to protect her brother’s hope, and the woman had agreed because hope was a stabilizing asset, and the agreement was somehow colder than a refusal would have been. “So . . . yes?”
 
-“We’ll provide support,” Bourn said, and the terms came out in a list she had evidently already drafted. “FAERIS surveillance of Go Squad operations. Real-time threat assessment. Translocation to intervention points. Extraction afterward. You provide tactical assistance during frozen time. They maintain belief in their capabilities. Caledonia maintains hope. We gather operational data on your power usage and limitations.”
+“We’ll provide support,” Bourn said, and the terms came out in a list she had already drafted. “FAERIS surveillance of Go Squad operations. Real-time threat assessment. Translocation to intervention points. Extraction afterward. You provide tactical assistance during frozen time. They maintain belief in their capabilities. Caledonia maintains hope. We gather operational data on your power usage and limitations.”
 
 “Everyone wins,” Mack added.
 
@@ -52,13 +52,13 @@ The walkway ended at a heavy door stenciled in yellow:
 
 RESEARCH DIVISION - AUTHORIZED PERSONNEL ONLY
 
-Beyond it the facility changed dialect entirely: whiteboards instead of status boards, cables duct-taped across the floor in bundles, equipment she couldn’t name crowded against equipment she couldn’t guess at. In the middle of it all, a man in a wrinkled button-down was wheeling his chair between two monitors, loudly arguing both sides. “—can’t be right, the temporal variance should be inverse not proportional unless the field radius affects decay rate which would mean—”
+Beyond it the facility changed dialect: whiteboards instead of status boards, cables duct-taped across the floor in bundles, equipment she couldn’t name crowded against equipment she couldn’t guess at. In the middle of it all, a man in a wrinkled button-down was wheeling his chair between two monitors, loudly arguing both sides. “—can’t be right, the temporal variance should be inverse not proportional unless the field radius affects decay rate which would mean—”
 
-He looked up, saw Bourn, and rode the chair directly into a filing cabinet. “Director! I didn’t—sorry, I was just—the readings from the warehouse event were—”
+He looked up, saw Bourn, and rode the chair into a filing cabinet. “Director! I didn’t—sorry, I was just—the readings from the warehouse event were—”
 
 “Dr. Ryu,” Bourn said. “This is Ahdia Bacchus. Our Temporalist.”
 
-He came upright fast enough to knock his glasses crooked. Japanese and somewhere in his late twenties, roughly her height, wearing the look of a man thirty hours past his last sleep and running on enthusiasm instead.
+He came upright fast enough to knock his glasses crooked. Japanese and somewhere in his late twenties, her height, wearing the look of a man thirty hours past his last sleep and running on enthusiasm instead.
 
 “Yes! I know! I mean, I’ve been studying your—not YOU, obviously, that would be—I mean the data from your power usage, which is fascinating, not that you’re just data, you’re a person, obviously a person, a very—” He ran out of runway and pushed the glasses back up his nose. “Sorry. I talk too much when I’m excited. Also when I’m nervous. Also in general.”
 
@@ -76,7 +76,7 @@ He came upright fast enough to knock his glasses crooked. Japanese and somewhere
 
 “Dr. Ryu has been monitoring your power usage since the warehouse incident. He’ll brief you on what we know, what we don’t know, and begin baseline testing to understand your capabilities and limitations.”
 
-“I’ve prepared a presentation,” Ryu said, visibly rallying. “It’s only forty-seven slides. I cut it down from ninety.”
+“I’ve prepared a presentation,” Ryu said, rallying. “It’s only forty-seven slides. I cut it down from ninety.”
 
 “We’ll skip the presentation,” Bourn said, already turning to go. “Run the physical assessments first. I want baseline biometrics before she uses powers again.”
 
@@ -98,7 +98,7 @@ The medical bay was white and quiet, and the machine in the middle of it looked 
 
 “It’s non-invasive! Completely! The scanners are passive. You just sit there. Well, lie there. It works better if you lie flat.”
 
-A changing room hid behind a curtain in the corner, gray scrubs folded on its shelf in a stack of guessed sizes that included exactly hers. She changed and came back and lay down on the not-quite-dentist-chair, which reclined beneath her with a hum.
+A changing room hid behind a curtain in the corner, gray scrubs folded on its shelf in a stack of guessed sizes that included hers. She changed and came back and lay down on the not-quite-dentist-chair, which reclined beneath her with a hum.
 
 “There we go. Comfortable?”
 
@@ -162,13 +162,13 @@ Ahdia thought about the fire stair and the trick with her own burning legs, and 
 
 The armory ran deep, racks down both sides and a firing range opening off the far end. Front and center, on a mannequin, stood a suit: matte black from collar to boot, armor plates laid over flexible fabric in overlapping segments. It had very clearly been waiting for her. “CADENS is really going all-in on the superhero aesthetic, huh?” Ahdia said.
 
-“It’s designed specifically for you. Well, for Temporalists. The fabric is—” He stopped, visibly upgraded his plan, and crossed to a rack drawer. “Here, let me show you something. Cover your ears.”
+“It’s designed specifically for you. Well, for Temporalists. The fabric is—” He stopped, upgraded his plan, and crossed to a rack drawer. “Here, let me show you something. Cover your ears.”
 
 “What?”
 
 He came back holding a handgun. “Trust me. Cover your ears.”
 
-She got her hands up just before he shot the mannequin in the sternum. The report slammed around the racks, a spark jumped off the plate, and the round went whining away into the range. The mannequin rocked briefly on its stand and settled, and the suit carried no mark that mattered. Her ears rang anyway.
+She got her hands up just before he shot the mannequin in the sternum. The report slammed around the racks, a spark jumped off the plate, and the round went whining away into the range. The mannequin rocked on its stand and settled, and the suit carried no mark that mattered. Her ears rang anyway.
 
 “Bulletproof,” Ryu said, setting the gun down gingerly with both hands, a man returning a borrowed thing. “The armor plates, anyway. The fabric itself is impact-resistant but not bullet-stopping. It will, however, handle the temporal shear when you freeze time. Normal clothes deteriorate—fibers can’t handle the stress. This can.” He peeled the suit off the mannequin and held it out. “Temperature regulation, sensor-transparent for our monitoring equipment, and surprisingly light. Try it on.”
 
@@ -228,7 +228,7 @@ She glanced at the real Ryu fixed mid-adjustment, then back at the glowing one. 
 
 “Dragon Ball Z. Over 9,000 joke. See? I have all of real-Ryu’s memories up to the moment you froze time.”
 
-She looked at it a moment longer. It stood there glowing, patiently pleased with itself. “Okay, you can unfreeze now. Watch what happens.”
+She looked at it a moment longer. It stood there glowing, pleased with itself. “Okay, you can unfreeze now. Watch what happens.”
 
 She let the stillness go. The hum returned, and the real Ryu finished adjusting his glasses and then caught up with himself all at once. “Did the AR work? Did it—oh, you asked about Dragon Ball Z. Yeah, I remember that now. It’s like I was there, but also I wasn’t? This tech is so cool.”
 
@@ -282,7 +282,7 @@ She did it again. The edge drew in closer, snug against the room, and now she co
 
 “You just cut your energy usage in half. If you can maintain that level of control during field operations, you’ve bought yourself another year. Maybe more.”
 
-Her legs were shaking, and she sat down on the padded floor before they could decide the matter for her. Another year. She turned the number over carefully, looking for the catch. “Really?”
+Her legs were shaking, and she sat down on the padded floor before they could decide the matter for her. Another year. She turned the number over, looking for the catch. “Really?”
 
 “Really.” He crouched to her level, tablet against his knees. “You’re a remarkably fast learner. Most Temporalists took years to achieve this level of control. You did it in an hour.”
 
