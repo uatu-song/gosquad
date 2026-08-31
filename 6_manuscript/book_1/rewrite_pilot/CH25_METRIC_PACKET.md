@@ -92,23 +92,26 @@ SPANS. No new quoted speech.
  33. "CADENS approached her. She didn't ask for this. I'm the one who's been—"
  34. "Look, I know what you're thinking. Why didn't she tell you? Why all the secrets? And the answer is . . . me. I asked her not to. Because I'm Firas's sister, the one who couldn't even leave her apartment for dinner, and you guys—you're out here actually doing things. Saving people. Being, like, actual heroes."
  35. "And I didn't want you to know that someone like me had powers when you didn't. That felt . . . wrong. Like the universe screwed up the distribution or something. Like I didn't deserve it."
- 36. "But you guys? You've been doing this with no powers at all. Just . . . guts and gear and giving a damn. So yeah, I kept it secret. And yeah, Ruth helped me do that. At first it was about being painfully, audaciously, anti-social and my anger towards Firas but then it became about something else. I started wanting you guys to look all enhanced and amazing because . . . because even without me, you guys are, well . . . super."
- 37. "We trusted you."
- 38. "You still can—"
- 39. "Can we?"
- 40. "Because it seems like you've been keeping a lot of secrets."
- 41. "We don't have time for this!"
- 42. "I can hold this,"
- 43. "But not forever. So if someone wants to, I don't know, make a plan? That would be great."
- 44. "Wait."
- 45. "So you're saying we're all moving at unimaginable speed while they stand still in normal time?"
- 46. "Then let's run."
+ 36. "But you guys? You've been doing this with no powers at all. Just . . . guts and gear and giving a damn. So yeah, I kept it secret. And yeah, Ruth helped me do that. At first it was about being painfully, audaciously, anti-social and my anger towards Firas but then it became—"
+ 38. "I started wanting you guys to look all enhanced and amazing because . . . because even without me, you guys are, well . . . super."
+ 38. "We trusted you."
+ 39. "You still can—"
+ 40. "Can we?"
+ 41. "Because it seems like you've been keeping a lot of secrets."
+ 42. "We don't have time for this!"
+ 43. "I can hold this,"
+ 44. "But not forever. So if someone wants to, I don't know, make a plan? That would be great."
+ 45. "Wait."
+ 46. "So you're saying we're all moving at unimaginable speed while they stand still in normal time?"
+ 47. "Then let's run."
 
 **Speaker key:** 1–3 Ahdia · 4 Leah · 5 Victor · 6 Leah · 7–8 Victor ·
 9–10 Ruth · 11 Ahdia · 12–13 Ruth · 14–15 Ahdia · 16 Tess · 17 Ahdia ·
 18 Ruth · 19–20 Ahdia · 21–24 Tess · 25 Ruth · 26–27 Victor · 28–30 Ahdia ·
 31 Ruth · 32–36 Ahdia · 37 Ben · 38 Ruth · 39–40 Leah · 41 Victor ·
-42–43 Ahdia · 44–46 Ruth.
+43–44 Ahdia · 45–47 Ruth. (Span 36 was split from one 84-word
+speech by Director ruling 2026-08-31: she loses the thread and picks it up
+somewhere else. 36 and 37 are BOTH Ahdia, with narration between.)
 
 ## BEATS (order fixed; texture yours; no scene breaks in this chapter)
 

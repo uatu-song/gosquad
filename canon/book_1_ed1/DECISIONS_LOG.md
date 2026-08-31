@@ -4,6 +4,80 @@
 
 ---
 
+## 2026-08-31 — CH25 craft pass; the confession breaks; an audit evaluated
+
+**DIALOGUE EDIT (Director-ruled): Ahdia's confession is split.** It was one
+84-word span against a 28-word paragraph mean, and it was *composed* — a clean
+three-beat argument delivered fluently by a woman bleeding onto her own gown.
+Her card says she rambles under stress and self-corrects mid-sentence. Now she
+loses the thread where the abstraction starts (". . . but then it became—"),
+the narration lets it drop, and she picks it up somewhere else and more
+concrete. **Spans 46 → 47.** Source, draft and CH25 packet all updated and
+renumbered; both halves are Ahdia.
+
+**Ruth's jeopardy.** She is the POV and on trial, and had one clause for it
+("Ruth felt the floor tilt"). Four of her six interior moments were
+observational. Added the beat between Leah's accusation and Victor's
+interruption: nobody is asking Ahdia anything, and Ruth had been the voice
+these people went through doors on. The "liar with a plan" line now reads as
+earned rather than as the chapter compensating for what it skipped.
+
+**Firas** gets his clause — east of here, bandaged, no idea, and Ruth chose
+that. He is the reason these people know each other and he is absent from his
+sister's resurrection.
+
+**Reverted my own gate-driven edit:** "She smiled at them with red teeth" back
+to its bare form; the adverb it carried was found elsewhere.
+
+---
+
+## 2026-08-31 — External audit evaluated: 4 accepted, 3 rejected, 2 need controls
+
+Audit ran against a **stale 21-chapter / 56,458-word epub** (current: 25 /
+64,290), so its counting-sweep section was already executed.
+
+**REJECTED — A1, the "ch16 contradicts ch25" finding.** The distinction exists
+but is pull-vs-push, not mediated-vs-unmediated. §7 rules the team's powers as
+DILATION (she *slows* time around a member); ch24's dream is explicit that she
+has only ever pulled. Ch25 is push. **The proposed repair — single-target,
+drone-dependent — would contradict §7 directly**, which rules multiple
+simultaneous fields as established and expensive. Both ch25 lines are frozen
+author dialogue.
+
+**REJECTED — A2, the "77% → 18% arithmetic gap."** Conflates two axes. §5b
+rules reserves as the LEDGER and states "the 23% ambush night was 23% of what
+remained" — not of 100%; telomere integrity is the FRONTIER. They do not
+subtract. Adding a reserve figure to ch16 would introduce a third number
+inviting the same false arithmetic.
+
+**REJECTED — B3, the "ch15 em-dash outlier."** Ch15 has 51 em-dashes and **49
+are inside frozen dialogue** — the author's own text, unchangeable. Narration
+is 0.93/1K against a 3.0 ceiling; the chapter passes. The audit measured
+whole-text (11.86/1K, matching its 11.89). Its own dialogue caveat was applied
+to burst rate but not here. **Standing lesson: any register metric quoted
+against this corpus must be narration-only.** This is the third time that
+distinction has changed a verdict (paragraph-mean gate, counting census, now
+em-dash).
+
+**ACCEPTED — B2, trailing "which is/was".** Re-measured narration-only: author
+**0.09/1K**, revised **1.23/1K**, a real 14x. Worst: ch14b (6), ch19 (5),
+ch17 (4), ch18 (4), ch15 (3), ch21 (3), ch22 (3) — the audit missed 18 and 22.
+Not a ban; the author uses it once and several instances here earn it. Thin
+the clusters. **OPEN — not yet swept.**
+
+**NEEDS A CONTROL — B5, comic-register density.** ch17 is Kain POV; ch18/19/20
+/23 are Ruth; the comparison chapters are Ahdia's, and Ahdia is the book's
+comic engine by design (her card: "pop culture is cognition"). ch24 scores zero
+and should — it is a dream and a medical emergency. The measure needs
+POV-matching before ch17–19 get a dryness pass.
+
+**ACCEPTED — A3** (six verified-sound items) and **B4** (ch16 as proof that the
+bands are reachable, not a ceiling).
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-31 — COUNTING: reserved to Ahdia, purged from everyone else
 
 **Director ruling: the counting tic goes.** Measured rates — author's own
