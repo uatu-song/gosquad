@@ -33,6 +33,7 @@ CHAPTERS = [
     ('Chapter 23', HERE/'rewrite_pilot'/'chapter_23_metric_v1.txt', 'metric rewrite'),
     ('Chapter 24', HERE/'rewrite_pilot'/'chapter_24_metric_v1.txt', 'metric rewrite'),
     ('Chapter 25', HERE/'rewrite_pilot'/'chapter_25_metric_v1.txt', 'metric rewrite'),
+    ('Chapter 26', HERE/'rewrite_pilot'/'chapter_26_metric_v1.txt', 'metric rewrite'),
 ]
 
 CSS = '''body { font-family: Georgia, serif; margin: 1em; line-height: 1.6; }
@@ -79,8 +80,8 @@ book.add_item(style)
 tp = epub.EpubHtml(title='Title Page', file_name='title.xhtml', lang=LANG)
 tp.content = f'''<html><head><link rel="stylesheet" href="style/default.css"/></head><body>
 <div class="title-page"><h1>{TITLE}</h1><h2>by {AUTHOR}</h2>
-<p style="margin-top:3em;font-style:italic;">Chapters 1–25</p>
-<p style="font-style:italic;">Vetted first edition (1–11) + metric rewrites (12–25)</p>
+<p style="margin-top:3em;font-style:italic;">Chapters 1–26</p>
+<p style="font-style:italic;">Vetted first edition (1–11) + metric rewrites (12–26)</p>
 <p style="font-style:italic;">Not for distribution</p></div></body></html>'''.encode()
 tp.add_item(style); book.add_item(tp)
 
