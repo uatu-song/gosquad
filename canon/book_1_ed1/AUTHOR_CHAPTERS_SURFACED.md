@@ -56,7 +56,52 @@ chapters and fragmentation tracks action, so it cannot separate authorship.
 
 ---
 
-## CH08 — every passage, with the measured reason. 473 narration words.
+## DIRECTOR RULING 2026-08-31 — most of the CH08 list is OVERTURNED
+
+**"They literally transported. That's the moment everything changes for
+everyone."** The reading that corrects the analysis below:
+
+- **The length is not a defect.** 554 words, the shortest chapter in the book,
+  because **the event has no duration.** They were inside, then they were
+  outside. There is nothing in between to narrate, so the chapter is exactly as
+  long as the gap is.
+- **The fragmentation is doing a job.** *Concrete under her palms. Rough. Wet
+  from rain. She was outside.* is someone **rebuilding reality from primitives
+  because her model of it just failed.** Checking her hands for burns, counting
+  heads, noticing restraints on men who were not restrained a second ago — a
+  mind verifying the floor still exists, and short declaratives are what that
+  sounds like.
+- **Therefore ALSO overturned:** the "should/would anaphoric triple" flagged
+  below (*Ruth's ears should be ringing. Her body should be shredded. She should
+  be dead.*) is the same verification behaviour, not a tic. And **"Counted
+  heads" is not the R105 counting tic** — it belongs to the same sequence. The
+  crew flagged both as defects; both are earned.
+
+**WHAT SURVIVES THE RULING — the em-dashes, and only some of them.** Six total.
+**Three are in DIALOGUE and are legitimate** — interrupted speech, the one use
+that survives the author's pattern (*"When the rocket—"*, *"…if they were still
+inside—"*, *"She saved us somehow! We have to—"*).
+
+**The residual is the THREE in NARRATION, which are two constructions:**
+1. `And Harding Kain—Kain and his security detail were all tied up.`
+2. `Aside from shock—understandable shock from somehow teleporting away from
+   certain death—they were all uninjured.` (two dashes, one construction)
+
+The Director on the second: *"a narrator being wry and parenthetical about the
+shock, which is the opposite of being in it. Those are punctuation habits, not
+disorientation, and they're the only part of the chapter the translocation
+doesn't account for."*
+
+**Note the second construction also contains the "teleporting" problem already
+flagged below** — it states outright the thing the chapter's effect depends on
+withholding. One fix addresses both.
+
+**Still no edit made. Awaiting the Director's word on the two constructions.**
+
+---
+
+## CH08 — the original crew list. READ IT AGAINST THE RULING ABOVE.
+### 473 narration words.
 
 **Voice-as-emotion readout — 3 instances, 6.34/1K against a baseline of 0.10.**
 The author uses this formula once in 10,357 words.
