@@ -197,6 +197,16 @@ name and abandoned with the disguise — e.g. the catering van Ben and Victor
 arrive in as fake staff. It is a costume, not transport, and nobody on the
 team drives it anywhere as themselves.
 
+**SECOND EXCEPTION — THE ENDGAME MCC (Director-ruled 2026-08-31, ch30).** From
+the end of Book 1 Ahdia runs operations out of a **stolen CADENS mobile command
+center parked on the roof of her penthouse.** This does not break the rule
+because **it is a base, not transport** — it is cloaked, it stays where it is,
+and **nobody drives it anywhere, ever.** The team still crosses the city on
+foot and by hand; what changed is what they are answering, not how they travel.
+**Wingsuits are permitted from ch30 onward** as descent gear off the tower, for
+the same reason: the scale of the threat changed at the singularity. Neither
+licenses a car, a van, or a team vehicle of any kind in any book.
+
 ## 7c. THE SEASON — LATE SEPTEMBER (Director-ruled 2026-08-30)
 
 **It cannot be winter.** The chain: ch13's FAERIS playback timestamps the

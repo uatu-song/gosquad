@@ -17,6 +17,53 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-08-31 — CH30: THE BOOK IS DRAFTED. ch12–30 complete.
+
+**Largest span list in the book: 177 frozen spans, six sections, five POVs**
+(Ahdia · Ruth · Ryu · Ruth · Ruth+Ahdia · Kain). 177/177 byte-identical, all
+20 bands, nouns clean, 4,219 words. **Crew wrote no prose.**
+
+**DIRECTOR RULING — §7b GAINS ITS SECOND EXCEPTION.** The endgame MCC and the
+wingsuits both stand: *"Both stay — that's the point of the ending."* Written
+into §7b so it is never re-litigated as drift: **the MCC is a BASE, not
+transport** — cloaked, on her own roof, and nobody drives it anywhere. The team
+still crosses the city on foot and by hand and owns no car or van in any book.
+Wingsuits are descent gear, licensed from ch30, because the scale of the threat
+changed at the singularity.
+
+**"SHIBA" WAS DRIFT.** The source gave Ryu an invented given name, 14 times,
+all narration, none in dialogue — against the standing ruling that **Ryu
+Matsuda is the correct name.** Corrected in source and draft. **The
+first-name-basis beat survives without it:** she has dropped the *Dr.* somewhere
+in twelve hours of debriefing, and nothing else is said about it.
+
+**THE ENDPOINT RULE HELD TO THE LAST PAGE.** Zero transcendence language in
+narration anywhere in the chapter. The words "transcended" and "hallway" appear
+only inside the woman's frozen dialogue in the epilogue — a character outside
+the story's knowledge — and **even she does not know Firas survives.** In
+sections 1–5 Ahdia tells nobody about the corridor, not Ryu, not Bourn, not the
+team. She declines the badge and keeps both secrets.
+
+**THE FAKED DOSE PAID OFF.** Section 3 is where CADENS finds out: the scan says
+she left at a third of cellular recovery and walked into a Terminus-level event
+anyway. Bourn's verdict is **"reckless and effective."** Nobody ever confronts
+her about it. The Director's ch29 ruling now spans three chapters — palmed in
+ch24, reached for in ch29 to give to Firas, discovered by CADENS in ch30 — and
+she never explains it to a single person.
+
+**Kain's accounting exemption used as intended:** the only counting in the
+chapter is his forty-seven-second elevator, which is his cognition and the
+author's own beat. The three banned adverbs remaining are all inside frozen
+dialogue and are the author's.
+
+**BOOK 1 IS DRAFTED. ch12–30 rebuilt, ch1–11 the author's own, 30 chapters,
+~76,000 words.** Every rebuilt chapter gates clean.
+
+**Ruled by:** Director (the MCC/wingsuits); the Shiba correction is derived
+from a standing ruling and was flagged, not asked.
+
+---
+
 ## 2026-08-31 — CH29: the climax. The palmed dose, the unnamed thing, the chain.
 
 **DIRECTOR RULING — THE LAST DOSE: "Ahdia faked taking the last dose and
