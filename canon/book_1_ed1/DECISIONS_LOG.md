@@ -17,6 +17,58 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-08-31 — "You're super" CUT from ch30. It belongs to ch25.
+
+**Director ruling: the ch30 restatement is an EDITING ERROR, not a callback.**
+The line appeared twice in near-identical construction — the hesitation, then
+*even without me*, then the word:
+
+- **ch25:** "because even without me, you guys are, well . . . super."
+- **ch30:** "You guys are . . ." / "You're super."
+
+**CH25 IS WHERE IT LANDS AND IT ISN'T CLOSE.** The Director's reasoning, kept
+because it is a general principle worth reusing:
+
+1. **There it costs her something and then fails.** She is bleeding from both
+   nostrils holding a field she cannot hold, and she spends the breath telling
+   the people about to turn on her that they were never the ones who needed
+   her — and four words later Ben says "We trusted you" and the room turns
+   anyway. **She says the truest thing she has and it buys her nothing. That
+   is the version where the word is an act.**
+2. **It is better written around.** "guts and gear and giving a damn" is
+   concrete. The ch30 restatement sits in **the only abstract stretch in the
+   final chapter** — real genuine heroes, this world this universe this
+   dimension and all others, my family is unbeatable — and the prose goes soft
+   there **because it is re-running a beat that already happened under
+   pressure.**
+3. **The second one retroactively cheapens the first.** A reader who felt it
+   land inside the accusation hits it again in a calm room and registers that
+   she already said this, **which turns a character's hardest admission into a
+   verbal tic.**
+4. **Cutting it leaves no hole**, because ch30 already carries the stronger
+   version of the same statement: **the duffel bag on the floor by the door.**
+   She came back with a bag packed. That says she is staying and that she is
+   one of them, without her having to characterise anyone.
+
+**Executed as a dialogue edit** across source, packet and draft: the trailing
+hesitation "You guys are . . ." trimmed from the preceding span, and "You're
+super." deleted with its staging sentence. **Spans 177 → 176.** Draft re-gates
+clean on all 20 bands.
+
+**Crew error worth recording:** the first attempt at the source cut used a
+regex that over-matched and removed three spans instead of one. Caught by the
+gate (176/174), source reverted from git, redone against an exact anchor.
+**Never regex a span boundary; match the literal string and assert the count.**
+
+**STILL PRESENT, surfaced not cut:** the following span still opens *"Even
+without me helping you in the background, you guys are real, genuine
+heroes"* — the other half of the ch25 construction. One more cut away if the
+Director wants the echo gone completely.
+
+**Ruled by:** Director
+
+---
+
 ## 2026-08-31 — CH30: THE BOOK IS DRAFTED. ch12–30 complete.
 
 **Largest span list in the book: 177 frozen spans, six sections, five POVs**
