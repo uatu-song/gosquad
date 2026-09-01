@@ -17,6 +17,59 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-08-31 — CH29: the climax. The palmed dose, the unnamed thing, the chain.
+
+**DIRECTOR RULING — THE LAST DOSE: "Ahdia faked taking the last dose and
+instead pocketed it."** Stud 7 is canon-critical (Firas injects HER, then "Oh
+hey. I knew you were in there somewhere"), but ch24 ended with all eight spent
+and §7e allows no ninth. The Director's answer beat all four crew options: **in
+ch24 she takes seven and fakes the eighth.**
+
+Why it is the right answer and not just an arithmetic patch:
+- It is her ruled cognition — **yes for other people, never for herself.** She
+  keeps a dose she has no intention of using on herself.
+- Ryu's frozen ch24 line ("First few integrated. Last ones barely worked.
+  Maybe thirty percent") already covers it. **No dialogue moved.**
+- It means **she has been carrying the thing that saves her since the medical
+  bay, intending it for somebody else** — and in ch29 she reaches for it FOR
+  FIRAS, fails because her hand is dissolving, and he uses it on her while she
+  is gone. The inversion is now mechanical, not coincidence.
+
+CH24 changed (11 words, agent, gates clean): *"The eighth went to her thigh,
+same press, same sound, and nothing went in. Her fist took it under the gown."*
+Reads identically to the seven before it until it doesn't. **No reason given,
+nobody notices.**
+
+**THE ENTITY IS NOT NAMED.** Ahdia has never heard the name and the steward run
+is explicit that she does not know who saw her in there. Written as recognition
+in both directions with no noun attached, and the narration offers no
+speculation. Same precedent as §5b's endpoint rule: author-level knowledge
+stays off the page.
+
+**THE ENDPOINT RULE HELD.** Nothing in the chapter says transcendence.
+**Firas dissolves believing he is dead and believing it worked.** Ahdia comes
+back believing she was rescued from dying. Verified mechanically: zero hits on
+transcend/ascend/metamorph/still-alive.
+
+**BOURN CORRECTION EXTENDED.** The ch29 source had Bourn on the street with a
+female pronoun — a half-corrected version of ch28's error. Mack commands the
+ground in both; Bourn is Overseer and is never on the pavement.
+
+**THE NAMING DRIFT COMPLETED.** Ruth and Firas always names; Leah and Victor
+became names in ch28 by contact; **Ben and Tess become names inside the human
+chain paragraph and nowhere earlier** — the last gap closes at the moment every
+one of them has hands on her and refuses to let go. Narration never remarks on
+it. Three chapters, no commentary, and the vocabulary carried it.
+
+25/25 spans, all 20 bands, nouns clean, 2,287 words, **first pass**. Zero
+counting, zero accounting metaphors, zero banned adverbs, zero which-clauses,
+0.9 -ly/1K. **Crew wrote no prose.**
+
+**Ruled by:** Director (the dose); the entity, the endpoint and the Bourn fix
+are derived from locked canon and were flagged, not asked.
+
+---
+
 ## 2026-08-31 — CH28: the missile, and two Director rulings on naming and the debt
 
 **CANON COLLISION FIXED (derived from locked canon, flagged not asked).** The
