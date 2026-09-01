@@ -17,6 +17,64 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-01 — ARC punch list resolved (9 items)
+
+**1. CH30 — THE STOLEN-ARMOR PAYOFF WAS LOST. RESTORED.** The book sets it up
+three times (Victor's "I wish they let us keep the suits", the packed duffel
+"sitting there like something that intended to stay", the stolen hangar
+machine) and the rooftop paragraph said the opposite: *"None of them were in
+black armor."* The fossil that proved it: **"The wings caught and hardened"** —
+no wing or glide rig exists anywhere else in the book. Inverted: they are in
+the matte black, **"cut to their measurements, the same suits that had come off
+them after downtown."** No one explains it; no one comments. That one change
+pays the duffel, pays Victor's line, explains the wings, and lets Ruth's heels
+leaving the gravel read as the FAERIS enhancement from ch20.
+**Consequential knock-on the agent caught and repaired:** the float beat listed
+"no armor" among the absent explanations, which after the inversion would have
+made the suit a candidate and killed the beat. Now **"no cable, no wing out"** —
+the glide is spent and stowed, so the suit still cannot account for the inch.
+
+**2 / 9. TESS'S TIMELINE — NO FIX. Director: "Does it make sense that she's
+everywhere? She can teleport."** Resolved by reading, not by edit. Ch28's
+"before any of this" and the operative's "before engagement" both refer to the
+CADENS engagement, not the Tank fight. She fought, said the line, and was gone
+before the missile. **The ring stays five.** Crew's punch-list item was wrong.
+
+**3. AGE — TWENTY-SEVEN (Director-ruled).** Now a SINGLE site: ch19's
+"twenty-three years old" (the ch14 "heart attack at twenty-three" did not
+survive the rebuild). Twenty-three made Firas 21 and founding the team at 17,
+after starting a business and dating a Hopkins MD for years. Twenty-seven puts
+Firas at 25, founding at 21. **One word changed.**
+
+**4. CH30 SPEECH — LEAVE IT (Director-ruled).** "The cut already did the work."
+Removing "You're super" broke the ch25 echo, and a character being earnest and
+slightly overblown in the last chapter is in register for her. **No further
+trim.**
+
+**5. DIALOGUE ATTRIBUTION — ch19 and ch30 only.** 34 tagless comma-quotes
+book-wide, 20 in ch30 and 11 in ch19 against a norm of two. Six fixes total, at
+the places where the speaker was genuinely lost: ch19's "The powers," exchange
+and the four-quote stack before it; ch30's Ruth/Leah "Okay," the Victor
+"Wrong," and the Bourn/Ryu scan sequence where **"She didn't take it." is Ryu,
+not Bourn** — fixed with "He finished it for her," which retroactively assigns
+the two lines above it without tagging them. **Deliberately left alone:** every
+tagless line recoverable from a preceding beat or from content.
+
+**6. CH9 OPENING — NO ACTION. Director: "I don't see the problem."** The
+training-history paragraph stands.
+
+**7. CH30 — Victor's PAC line. OPEN.** Nothing establishes Ahdia or the team
+paying money to the Kain PAC; ch21 says only "wealthy donor" and "Sophie
+Clement, wealthy French donor," never that the invitation was bought. Not yet
+fixed.
+
+**8. CH10 — typo.** "to wrap under around his arm" → "under and around."
+
+**Ruled by:** Director (items 2/9, 3, 4, 6); items 1, 5, 8 were prescribed
+fixes executed by agents; item 7 remains open.
+
+---
+
 ## 2026-09-01 — THE ARC, and a build bug that had been shipping the whole time
 
 **Director: "package the book as the latest standing version, the ARC when
