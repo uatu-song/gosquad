@@ -70,8 +70,27 @@ fixed.
 
 **8. CH10 — typo.** "to wrap under around his arm" → "under and around."
 
-**Ruled by:** Director (items 2/9, 3, 4, 6); items 1, 5, 8 were prescribed
-fixes executed by agents; item 7 remains open.
+**7. CH30 — Victor's PAC line. CLOSED (Director-ruled: "add one clause to
+ch21").** Nothing established that anyone had given Kain money, so Victor's
+lawsuit and "Ahdia may not get her money back" both floated. Added to ch21's
+planning recap, narration only:
+**"Sophie Clement's name on that list had cost a donation to Kain's PAC, and
+Firas had signed it out of his sister's estate."**
+Nobody comments, nobody reacts, no amount is named — the irony that they funded
+the man they are robbing belongs to the reader, nine chapters later. And it
+routes through **Firas**, the only person who could sign for a dead woman's
+money, which makes the brother who called her "already dead inside" the one who
+spends her estate on the op.
+
+**CREW ERROR CAUGHT BEFORE SHIPPING:** the agent's first attempt wired the
+donation "from Gale's accounts." **Gale is RUTH** — Nightingale, shortened —
+and in that very chapter Ruth has gone dark and unreachable after the docks.
+The clause would have had the team spending their missing leader's money while
+wondering where she was. Rejected and redone. **A codename that is not the
+POV character's is worth checking against the cast table every time.**
+
+**Ruled by:** Director (items 2/9, 3, 4, 6, 7); items 1, 5, 8 were prescribed
+fixes executed by agents. **ARC punch list fully closed.**
 
 ---
 
