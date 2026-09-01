@@ -17,6 +17,48 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-08-31 — CH28: the missile, and two Director rulings on naming and the debt
+
+**CANON COLLISION FIXED (derived from locked canon, flagged not asked).** The
+source put a MAN named Bourn on the street with a name tag, reporting to a
+woman called Overseer. **Bourn is locked female and IS Overseer** ("Director
+Overseer Bourn," ch19). The ground commander is now **Colonel Bentley Mack**,
+established in ch13 and known to Ahdia, reporting to Bourn by comm — which
+makes "Some things are more important than careers, ma'am" a colonel telling
+his director he fired a cruise missile into downtown without waiting for the
+Pentagon. Source corrected; no span text moved.
+
+**RULING — AHDIA'S NAMING NOW TRACKS CONTACT.** §7g gave her codenames on the
+stated grounds that "she has never met them." **That expired in ch25.**
+Director's ruling: the vocabulary DRIFTS across the chapter, and the drift is
+the point. Everyone starts on codenames; **Battlea becomes LEAH the moment she
+shoves Ahdia clear of the fist; Crimson Sable becomes VICTOR the moment he
+takes the backhand into the building.** Night Knight and Gloom Girl never
+change — he never touches her, she is already gone. Ruth and Firas are always
+names. **The narration never remarks on it.**
+
+**RULING — "We killed them." BELONGS TO TESS**, and the debt from the ch27
+review is paid. Kain could not tell who spoke and did not care; **Ahdia was
+standing in the centre of that ring and knows exactly.** Same sentence, two
+POVs, and only one of them can't unhear it. Delivered once, in her first
+paragraph, beside the four husks — and Gloom Girl had already translocated out
+with Firas, so "the sentence was still lying in the street without her." The
+youngest said it and is not there to carry it.
+
+**First chapter drafted under the ceiling-only adverb band.** It runs on ONE
+adverb (0.7/1K) with no floor to satisfy, and zero hits on every sweep from
+this session: no counting, no accounting metaphors, no which-clauses, none of
+the fourteen banned adverbs, no the-way frame. Two marginal band failures
+(short-burst 12.2, length +32) went back to the agent, who fixed both by
+absorbing four incidental fragments and keeping every hard one.
+
+37/37 spans, all 20 bands, nouns clean, 1,665 words. **Crew wrote no prose.**
+
+**Ruled by:** Director (both rulings); the Bourn/Mack correction is derived
+from locked canon and was flagged, not asked. **Veto open on Mack.**
+
+---
+
 ## 2026-08-31 — CH08: the author-chapter question, CLOSED
 
 **Director: "They literally transported. That's the moment everything changes
