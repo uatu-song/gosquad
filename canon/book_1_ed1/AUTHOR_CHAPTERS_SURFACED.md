@@ -96,7 +96,28 @@ doesn't account for."*
 flagged below** — it states outright the thing the chapter's effect depends on
 withholding. One fix addresses both.
 
-**Still no edit made. Awaiting the Director's word on the two constructions.**
+**FIXED 2026-08-31 on the Director's word ("fix it"). Both constructions, and
+nothing else in the chapter:**
+
+1. `And Harding Kain—Kain and his security detail were all tied up.`
+   → `And Harding Kain. Kain and his security detail were all tied up.`
+   The beat is unchanged; the stutter becomes a full stop, which is the same
+   verification rhythm as the rest of the chapter rather than a dash habit.
+2. `Aside from shock—understandable shock from somehow teleporting away from
+   certain death—they were all uninjured.`
+   → `Aside from shock, they were all uninjured.`
+   Cuts the wry parenthetical AND the word "teleporting" in one stroke. The
+   chapter no longer names what happened; the restraints on unrestrained men
+   do the telling, and Ruth reaches it before the reader is handed it.
+
+**CH08 em-dashes: 6 → 3, and all three survivors are dialogue interruption**
+(`"When the rocket—"`, `"…if they were still inside—"`, `"She saved us
+somehow! We have to—"`), which is the one use that survives the author's
+pattern. **Narration em-dashes: zero.** Nothing else in ch08 was touched —
+the fragmentation, the should-triple, "Counted heads" and every other item on
+the crew list below stand as the author wrote them, per the ruling above.
+
+**ch01, ch03, ch04, ch05: measured clean, untouched, closed.**
 
 ---
 

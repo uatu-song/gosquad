@@ -17,6 +17,43 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-08-31 — CH08: the author-chapter question, CLOSED
+
+**Director: "They literally transported. That's the moment everything changes
+for everyone."** The reading that closed a punch-list item open for weeks.
+
+**Most of the crew's CH08 case was WRONG and is overturned.** The 554-word
+length is not a defect — **the event has no duration**, so the chapter is
+exactly as long as the gap is. The fragmentation is not a tell — it is a mind
+**rebuilding reality from primitives after its model failed**, and short
+declaratives are what that sounds like. Therefore the "should/would" triple
+and **"Counted heads"** are also earned: same verification behaviour, not the
+R105 tic.
+
+**The crew error, named:** three separate detectors fired on one behaviour and
+the crew read them as three defects. **A measurable pattern doing real work
+looks identical to a tic from the outside.** Same class as flagging Ahdia's
+ch03 TV reference. Instruments find patterns; only the author knows intent.
+
+**FIXED — the two narration constructions the ruling isolated:**
+- `And Harding Kain—Kain and his security detail…` → `And Harding Kain. Kain
+  and his security detail…`
+- `Aside from shock—understandable shock from somehow teleporting away from
+  certain death—they were all uninjured.` → `Aside from shock, they were all
+  uninjured.` **This one cut carried two problems**: the arch parenthetical
+  (a narrator wry about disorientation instead of inside it) and the word
+  **"teleporting"**, which stated outright the thing the chapter's whole
+  effect depends on withholding.
+
+CH08 em-dashes 6 → 3; all survivors are dialogue interruption; **narration em
+dashes zero.** ch01/03/04/05 measured clean and untouched. **The author-chapter
+punch-list item is CLOSED.** The style baseline moved by nine words in a
+10,830-word corpus.
+
+**Ruled by:** Director ("fix it"); the reading is theirs verbatim.
+
+---
+
 ## 2026-08-31 — ADVERBS: the floor removed, the unlicensed vocabulary swept
 
 **Director:** "And even those, I feel like there are too many." Measured before
