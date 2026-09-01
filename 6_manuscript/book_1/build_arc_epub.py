@@ -61,14 +61,22 @@ EPI    = re.compile(r'^\s*EPILOGUE\s*$', re.I)
 
 
 def blocks(path):
+    """One non-blank line = one paragraph. True of BOTH source formats.
+
+    The old heuristic ("if the file contains a blank line, split on blank
+    lines") collapsed every first_edition_clean chapter into a single
+    paragraph, because those files put one paragraph per line with no blank
+    lines between them and the stripped header/comment left blanks behind.
+    Verified 2026-09-01: no line in any source file begins mid-sentence, so
+    no paragraph is ever wrapped across lines.
+    """
     t = re.sub(r'<!--.*?-->', '', path.read_text(encoding='utf-8'), flags=re.DOTALL)
     out = []
-    chunks = re.split(r'\n\s*\n', t) if '\n\n' in t.strip() else t.split('\n')
-    for chunk in chunks:
-        c = chunk.strip()
-        if not c or HEADER.match(c) or EPI.match(c):
+    for line in t.split('\n'):
+        s = line.strip()
+        if not s or HEADER.match(s) or EPI.match(s):
             continue
-        out.append(('break', None) if BREAK.match(c) else ('p', ' '.join(c.split())))
+        out.append(('break', None) if BREAK.match(s) else ('p', ' '.join(s.split())))
     while out and out[0][0] == 'break': out.pop(0)
     while out and out[-1][0] == 'break': out.pop()
     return out

@@ -17,6 +17,54 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-01 — THE ARC, and a build bug that had been shipping the whole time
+
+**Director: "package the book as the latest standing version, the ARC when
+it's time to ship it out for reviews."** New `build_arc_epub.py` →
+`GoSquad_Book1_ARC.epub`. `build_compilation_epub.py` remains the WORKING
+artifact; the ARC is the reviewer-facing one. **The ARC script formats and
+never edits.**
+
+What makes it an ARC and not the working build: **no provenance stamps
+anywhere** (the working build labels every chapter "metric rewrite" or "first
+edition · vetted" — a reviewer must never see production metadata); ARC front
+matter with an uncorrected-proof notice; series metadata; **a version stamp
+(date + git short SHA) on the notice page so a returned ARC traces to the exact
+commit it was cut from**; and ch30's final section promoted to a labelled
+**Epilogue** with its own TOC entry, because the first edition marked it
+EPILOGUE and the rebuilt draft carries it only as a scene break. Presentation
+only — no text changed.
+
+**THE BUG — chapters 1–11 were a single paragraph each, in every epub ever
+built.** `blocks()` chose its parsing mode with `if '\n\n' in t.strip()`:
+"contains a blank line ⇒ paragraphs are blank-line separated." But
+`first_edition_clean/` files put **one paragraph per line with no blank lines
+between them**, and the stripped header and provenance comment left blank lines
+behind — so every author-written chapter matched the wrong branch and collapsed
+into ONE chunk, then got joined into one paragraph. **Chapter 1 rendered as
+2,173 words in an unbroken block.** The entire first third of the book, the
+author's own prose, in every compilation epub read this session and before.
+
+**Cause of the miss:** the gate measures TEXT, not RENDERING. Word counts,
+spans and bands were all correct, so nothing ever fired. **No check existed on
+the shipped artifact's structure.**
+
+**Fix:** one non-blank line = one paragraph, which is true of BOTH formats —
+verified by proving that **no line in any source file begins mid-sentence**, so
+no paragraph is ever wrapped. Applied to both builders.
+
+**Now verified on the artifact, not the source:** 30/30 chapters byte-identical
+to the gated drafts, 0 provenance leaks, paragraph structure sane in every
+chapter (14–41 words per paragraph), and the only `#` characters in the body
+are the hashtags in the prose.
+
+**Standing rule added: verify the ARTIFACT, not just the inputs.** A build that
+reports the right word count can still be unreadable.
+
+**Ruled by:** Director (package the ARC); the bug and its fix are crew.
+
+---
+
 ## 2026-08-31 — "You're super" CUT from ch30. It belongs to ch25.
 
 **Director ruling: the ch30 restatement is an EDITING ERROR, not a callback.**
