@@ -59,8 +59,14 @@ dialogue and are the author's.
 **BOOK 1 IS DRAFTED. ch12–30 rebuilt, ch1–11 the author's own, 30 chapters,
 ~76,000 words.** Every rebuilt chapter gates clean.
 
-**Ruled by:** Director (the MCC/wingsuits); the Shiba correction is derived
-from a standing ruling and was flagged, not asked.
+**EPILOGUE RATIFIED as drafted** (Director, 2026-08-31: "I believe the
+epilogue is fine as is"). This closes the one open flag on it: the span
+assignment in the tank room, where 156 is the woman and 157–158 are Kain, so
+"Are you?" and the Forty-seven needle land on him. **Do not re-cut the
+epilogue or reassign its speakers.**
+
+**Ruled by:** Director (the MCC/wingsuits; the epilogue as drafted); the
+Shiba correction is derived from a standing ruling and was flagged, not asked.
 
 ---
 
