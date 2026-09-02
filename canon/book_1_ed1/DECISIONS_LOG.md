@@ -17,6 +17,94 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-02 — The dropped-tag pass: 41 sites, and what caused them
+
+**Director:** "Fix the tagless comma quotes. Either add a tag or edit it to a
+period." Unqualified, so no exemption for the author's chapters.
+
+**ROOT CAUSE, worth recording for every future rebuild.** These were not
+tagless lines the author wrote. They were split utterances — `"First half,"
+Name said. "Second half."` — whose tag the rebuild agents **dropped whole**
+wherever the source tag carried an adverb or a non-"said" verb (quietly,
+slowly, clarified, admitted, replied, tagged on, started). The agents removed
+the banned word by removing the tag, which left a comma-quote hanging at a
+paragraph end and, in two places, moved a line into the wrong mouth.
+**Rule for rebuild packets: reduce the tag to "said"; never drop it.**
+
+**COUNT.** 41 comma-quote sites + 1 attribution beat. ch19 14 + the "Worth
+it." beat · ch21 1 · ch22 2 · ch30 23 · ch09 1 (author typo, comma→period).
+**All 41 took a tag; zero comma→period conversions in rebuilt chapters**, so
+every span stayed byte-identical and no source sync was needed. Verified:
+ch19 81/81, ch21 162/162, ch22 44/44, ch30 176/176. Adverb-on-tag 0 in every
+chapter. **Exact census across all 30 chapters: 0 remaining.**
+
+**TWO REAL ATTRIBUTION ERRORS the pass surfaced, both now fixed:**
+- **ch22 "That was fun,"** — the rebuild put it in the same paragraph as
+  Leah's laugh, so it read as Leah's. It is **Tess** correcting Victor's
+  "insane." Agent reordered Victor → Tess → Leah's laugh so the retort lands
+  adjacent. Judgment call; a two-paragraph swap restores the other order.
+- **ch19 "Worth it."** — my fact table told the agent it was Ruth's (same
+  speaker, rejoin). **It is Ahdia's**; the source beat between the two lines
+  was "Ahdia's eyes closed," and my 60-character column truncated it off. The
+  agent caught it against the source and refused the rejoin. Third truncation
+  error this session; the rule is already logged and evidently not yet learned.
+
+**CREW DETECTOR ERROR.** My first census (26) used a lookahead that excluded a
+comma-quote followed by an action beat in the next paragraph, and so missed 14
+in rebuilt chapters. The Director's count (30) was closer than mine. The right
+detector is trivial: **a comma-quote at end of line.** Logged so nobody
+reinvents the clever one.
+
+**PROCESS NOTE, disclosed not buried.** The line-edit agents consulted the
+source files for attribution facts, and in one ch30 site for paragraph shape
+(greeting / room beat / continuation merged to one paragraph as the source has
+it). These were not cold drafting agents and no prose was generated from
+source — but it was not in their brief, and the cold-agent rule's spirit is
+that crew decides what source an agent sees. Veto open on the ch30 merge.
+
+**Ruled by:** Director (the instruction). Per-site choices crew. Veto open on
+the ch22 reorder and the ch30 paragraph merge.
+
+---
+
+## 2026-09-02 — Four rulings: Whitford, tags, staging, the twenty-six hours
+
+**WHITFORD — CLOSED, NO ACTION.** Director: "Whitford is a minor character in
+book 1 and an ongoing threat that will appear in book 2. He only figures in so
+much that he's depicted as corrupt." So his vanishing after ch17 is scope, not
+a dropped thread, and **Tess never facing her father is Book 2's business, not
+this book's.** The crew's structural finding stands as a description and is
+withdrawn as a defect.
+
+**STAGING A RULED.** Director: "Staging A is fine." Tess on the twelve-camera
+grid for movements 1–2, then in. No longer a crew default.
+
+**THE TWENTY-SIX HOURS (Director delegated: "I don't know the logic behind
+these two numbers. Just make it make sense").** The source said "three hours"
+and "eighteen hours" ninety seconds apart; crew had picked eighteen. **Neither
+was coherent with the page's own clock**, which is explicit:
+- ch18: the docks op is at **2100 hours** (night N)
+- ch19: the isotopes are offered to Ruth "at **two in the morning**" (N+1)
+- ch22: the mansion fight is "**tonight**," and Leah's line "four years of
+  asking does not switch off in a day" dates it a day past the docks (N+1)
+- §7f (ruled): Ahdia surfaces DURING the mansion feeds, goes back under, and
+  ch24 is her real waking — so ch24 is after the mansion fight
+- ch23: the Main Street rampage is one hour old; Ruth "awake past thirty hours"
+- ch25, Ruth's POV: "One day. The docks last night, the labs this morning."
+
+Docks 9pm → mansion fight the next evening → rampage → waking ~11pm N+1 is
+**about twenty-six hours.** Eighteen from a 9pm docks puts the waking at 3pm,
+BEFORE the mansion fight she is ruled to have watched from under; it could
+never have been right. Both ch24 sites now read **"twenty-six hours"**, source
+and draft, spans in sync, gate green 50/50. §7f in the topography updated to
+match. No other chapter states the interval.
+
+**Ruled by:** Director (Whitford, staging A, and the instruction to make the
+number coherent); the figure twenty-six is crew derivation from the on-page
+clock, shown above so it can be checked. Veto open on the number.
+
+---
+
 ## 2026-09-01 — CH9 paid and cut; the age contradiction closed
 
 **CH9's TRAINING PARAGRAPH CUT TO TWO SENTENCES (Director-ruled once ch22

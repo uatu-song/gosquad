@@ -208,7 +208,7 @@ exception (a couple).
   SURVIVES — off the board, hospitalised or in custody, unstated — and never
   returns in Book 1.** Ahdia's push is not a kill; **she has no body count**,
   and nobody ever tells her she took an enemy off the board permanently
-  eighteen hours before the climax.
+  twenty-six hours before the climax.
 - **The Intermediary (ch17)** — a woman's voice on a phone with no wire behind
   the wall, which rings when it chooses. Third call in six months; the first two
   each carried one perfect piece of information. Precise, clinical, statements
@@ -354,7 +354,7 @@ running backward and is told **she only ever pulls** — the hallway of blue
 doors she has always opened and red doors she never has. **Something vast,
 patient, old and curious passes through the hallway** and only observes. She
 reaches for a red door; a **second, colder voice that is not the Seed** says
-"Wake up." She surfaces in the CADENS medical bay after **eighteen hours**,
+"Wake up." She surfaces in the CADENS medical bay after **twenty-six hours**,
 with a torn IV she does not remember. Kain is on the monitor; the team left
 thirty minutes ago with no powers. Bourn gives her the arithmetic — eight
 doses, three weeks apart, six months — and then says **"We're out of time."**
