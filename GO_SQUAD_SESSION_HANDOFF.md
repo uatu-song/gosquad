@@ -105,9 +105,10 @@ in the audit) and its "voice was" rate is 1.75/1K.
    the ch22 agent added to open Kain's route). Both reversible.
 3. **ch30** three paragraphs merged to one at the Carl Tucker greeting.
 4. **The Intermediary** — the woman on the phone with no line into the
-   building (ch17 only, promises to call again) never returns on the page; the
-   epilogue's "a woman's voice" is presumably her, unconnected. Not ruled.
-   Presumed Book 2 setup (Bellatrix/Geneva, hidden orchestrator) like Whitford.
+   building (ch17 only, promises to call again) never returns on the page.
+   The epilogue's "a woman's voice" speaks of Bellatrix in the THIRD person,
+   so she is not Bellatrix; whether she is the Intermediary is unruled. Nothing
+   in canon joins the two. Presumed Book 2 setup like Whitford.
 5. Veto open on: audit rejections A1/A2/B3; any single deletion from the
    the-way / adverb / counting sweeps.
 
@@ -118,7 +119,8 @@ in the audit) and its "voice was" rate is 1.75/1K.
 | Purpose | File |
 |---|---|
 | **The shippable ARC** | `6_manuscript/book_1/GoSquad_Book1_ARC.epub` (builder: `build_arc_epub.py`) |
-| World state for agents | `canon/book_1_ed1/CH01-25_TOPOGRAPHY.md` |
+| World state for agents | `canon/book_1_ed1/CH01-30_TOPOGRAPHY.md` (supersedes CH01-25) |
+| Structural reference | `5_story_bibles/book_1/BOOK1_TOPOLOGY.yaml` (reconciled to the ARC) |
 | Mechanics + rulings | `canon/series/TEMPORAL_MECHANICS.md` (§5b, §7–§7h) |
 | Rulings log | `canon/book_1_ed1/DECISIONS_LOG.md` |
 | Punch list | `canon/book_1_ed1/PUNCH_LIST.md` |

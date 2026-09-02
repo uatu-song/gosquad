@@ -17,6 +17,63 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-02 — Whole-book topography + topology reconciled; canon brought to the rulings
+
+**Director:** "Do we have an updated and effective topology for all of book 1?"
+— No. Both maps stopped short. **Director: "Do it."**
+
+**BUILT: `canon/book_1_ed1/CH01-30_TOPOGRAPHY.md`** (1,484 lines, ~16,900
+words) — supersedes CH01-11/22/25. ch22 entry replaced with the rebuild;
+ch26–30 + epilogue mapped; knowledge gates at end of book; WHAT BOOK 2
+INHERITS (26 page-level threads, 7 author-level, each sourced); a COLLISIONS
+section. **RECONCILED: `5_story_bibles/book_1/BOOK1_TOPOLOGY.yaml`** (1,036 →
+1,402 lines, valid YAML) — meta/status to the ARC, rebuild_status closed,
+ch22 and ch26–30 rewritten to the shipped text, every thread carries a status
+(closed_on_page / inherited_by_book_2 / author_level), a stale Oz voice sample
+replaced with its shipped descendant. Crew documents; agents read the shipped
+drafts and the log to build them.
+
+**CANON LINES FIXED IN THE SAME PASS (all ruled elsewhere; the files lagged):**
+bible §7f/§7h "eighteen hours" → twenty-six / the night before the climax;
+bible §8 "Ahdia twenty-three" → twenty-seven; §7g gained the ch28–29 contact
+drift and Mack-on-the-street; `CANON_FACTS.jsonl` B1V-015 and
+`CHRONOLOGY.jsonl` B1C-001 → eight/six, nineteen years. Handoff corrected:
+the epilogue's woman is NOT Bellatrix.
+
+**THE TOPOGRAPHY IS TOO BIG TO BE A COLD AGENT'S SOLE CONTEXT** (~17k words),
+and the Director said so before it was finished. It is now the SOURCE for
+per-character topologies, which is the next build (proposal in the session).
+
+**SURFACED FOR THE DIRECTOR — UNRULED, NOT TOUCHED (from both agents' lists):**
+1. **ch26's sedan vs §7b.** Firas drives "a gray sedan, civilian, with a
+   front-quarter dent nobody had ever gotten around to fixing" into Kain,
+   and Ahdia recognises the dent. Not in the source ch26, not in the
+   scaffolds, not in the log — the ch26 agent's invention. §7b: "The team
+   owns no vehicle and never has," two exceptions (cover; the MCC base).
+2. **The epilogue's woman.** Speaks of Bellatrix in the third person
+   ("Bellatrix doesn't interfere. She observes."). Not Bellatrix. Whether she
+   is the ch17 Intermediary is unruled; nothing in canon joins them.
+3. **The team knows Ahdia is dying.** Ch23 has Ruth tell them "Weeks. Maybe
+   less." The old topology's Book 2 bridge assumed they DON'T know at the
+   end of Book 1. The page wins unless ruled otherwise; Book 2 must inherit
+   the page.
+4. **Where the MCC sits.** §7b (crew wording of the ruling) says the roof of
+   her penthouse; ch30 puts it on "a residential roof" thirty blocks south of
+   the launch roof. The ruling was "a base, not transport," not an address.
+5. **End-of-book baseline.** The ~30% / 18–24-month figure is a ch16/ch20
+   projection; ch30 gives no post-climax number ("The Seed's dormant. Maybe
+   permanently"). Book 2 opens on a number nobody has ruled.
+6. Minor: the epilogue's day is not pinned (morning presser / "all for
+   tonight"); "Bourn's missile" is CADENS's missile on Mack's call; the
+   "photograph behind her school photo" carried since CH01-22 is not on any
+   page and has been dropped; ch22's last line is Ruth's "Need a ride?" with
+   the light line closing movement 3.
+
+**Ruled by:** Director (build it). Contents crew, sourced. Veto open on every
+line of both files; the six items above await rulings.
+
+---
+
 ## 2026-09-02 — The dropped-tag pass: 41 sites, and what caused them
 
 **Director:** "Fix the tagless comma quotes. Either add a tag or edit it to a

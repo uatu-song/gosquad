@@ -277,7 +277,7 @@ stabilizes," and its second reference with it.
 ## 7f. AHDIA'S WAKING WINDOW AT CH23-24 (Director-ruled 2026-08-30)
 
 Ch23's Bourn reports "Ryu says she's awake . . . and she's already asking
-when she can deploy." Ch24 opens on Ahdia surfacing from eighteen hours under
+when she can deploy." Ch24 opens on Ahdia surfacing from twenty-six hours under
 and not knowing what happened. **Both stand: Bourn's report is stale.**
 
 - The status line Bourn reads came in **hours earlier**. Ahdia surfaced
@@ -324,6 +324,18 @@ convergence; ch24 scores zero because it is a dream and a medical emergency,
 and jokes there would be wrong. Do NOT run a voice pass to raise comic density
 in a chapter whose POV character is not funny.
 
+**CONTACT DRIFT — Ahdia's naming tracks contact from ch25 on (Director-ruled
+2026-08-31, ch28; completed ch29).** The "she has never met them" grounds for
+her codenames expired in ch25. In her POV everyone starts on codenames and the
+vocabulary DRIFTS across the climax, and the drift is the point: **Battlea
+becomes LEAH the moment she shoves Ahdia clear of the fist; Crimson Sable
+becomes VICTOR the moment he takes the backhand into the building** (ch28);
+Night Knight and Gloom Girl are unchanged in ch28; **Ben and Tess become names
+inside the human-chain paragraph in ch29 and nowhere earlier.** Ruth and Firas
+are always names. **The narration never remarks on it.** The ground commander
+on the street is **Colonel Bentley Mack** (ch13), reporting to Bourn by comm;
+Bourn is never on the street.
+
 ## 7h. THE FIFTH TANK — ALIVE, OFF THE BOARD (Director-ruled 2026-08-30)
 
 **There are FIVE Tank cops, not four.** Four are named and accounted for from
@@ -336,7 +348,7 @@ container wall in ch19 as her last act before collapsing.
 - **This is why exactly four turn out for Main Street.** Do not add a fifth
   to any Main Street scene, and do not name him among the four.
 - **Ahdia does not know she did it, and nobody ever tells her.** She took an
-  enemy permanently off the board eighteen hours before the climax and gets
+  enemy permanently off the board the night before the climax and gets
   no credit for it in this book. That is the thesis in miniature; leave it
   uncollected.
 - **He is NOT a spear-carrier.** He takes his helmet off, calls Ruth "Dr.
@@ -356,7 +368,7 @@ fit" ruling was superseded the same day: ch20's "published in 2023" became
 
 Everything is RELATIVE and stays that way: Ruth's papers three years back
 (ch5, ch17, ch20), the parents gone "over fifteen years" (ch3), a four-year-old
-Go Squad (ch4), Ahdia twenty-three. Those cohere with each other and pin no
+Go Squad (ch4), Ahdia twenty-seven (ruled 2026-09-01; ch14 and ch19 agree). Those cohere with each other and pin no
 calendar, which is what lets Kain's November presidential campaign work
 without an election-cycle audit.
 
