@@ -17,6 +17,41 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-01 — CH9 paid and cut; the age contradiction closed
+
+**CH9's TRAINING PARAGRAPH CUT TO TWO SENTENCES (Director-ruled once ch22
+existed).** ~300 words to ~65. The Director had previously ruled "I don't see
+the problem" and was right at the time — **the paragraph was a promissory note
+and ch22 had not yet paid it.** Now every concrete detail in it is on the page
+in the mansion fight: the dark routine, the silence, lifting and throwing one
+another to reach grips, the goggles, the smoke, the drilled shapes. So the
+inventory is gone and the one thing ch22 CANNOT do for itself is what survives —
+**Ruth reaching back to the training to explain the warehouse and finding "the
+training had no answer in it."** That failure was always the paragraph's real
+job.
+
+**THE AGE CONTRADICTION — MY ERROR, AND HOW IT HAPPENED.** I reported the age
+as "now a single site" after the ch19 fix. It was two. `a heart attack at
+twenty-three` sits mid-paragraph in ch14a, **past the 200-character truncation
+in the grep I checked it with** — I read a line number, saw truncated text about
+a stairwell door, and concluded the term was not there. The Director caught it
+by reading. Both sites now read twenty-seven.
+**Rule: a truncated match is not a checked match.** Same failure class as the
+span regex that took three spans instead of one.
+
+**FALSE ALARM WORTH RECORDING:** a batch gate sweep reported 0/17 chapters
+green immediately after these edits. **The gate was fine** — the batch script
+ran from inside `6_manuscript/book_1/` while using paths relative to the repo
+root, so every invocation errored to empty stdout and the "all bands pass"
+test failed on nothing. Re-run with an explicit cwd: **17/17 green, ch22 green
+on its ruled band, ch14a+b green as a pair.** *Check the harness before
+believing a mass failure.*
+
+**Ruled by:** Director (the ch9 cut, the age); the ch14a site and the batch
+error are crew mistakes, corrected.
+
+---
+
 ## 2026-09-01 — CH22 REBUILT: the mansion fight, and Kain's motive put on the page
 
 **Director-ordered rebuild, drafted by the TESS STEWARD** reading both the Book 1
