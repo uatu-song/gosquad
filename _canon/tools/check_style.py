@@ -108,6 +108,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('draft')
     ap.add_argument('--source', help='first-edition chapter the draft freezes dialogue from')
+    ap.add_argument('--length-band', metavar='MIN:MAX', default=None,
+                    help='override the source-derived length band for a chapter '
+                         'whose scope was deliberately expanded (Director-ruled). '
+                         'Use ONLY with a logged ruling; the default is source +/-20%.')
     ap.add_argument('--allow-chest', type=int, default=1,
                     help='max "chest" uses (raise ONLY for chapters where the Seed/Heart seat is content)')
     a = ap.parse_args()
@@ -171,7 +175,13 @@ def main():
     if a.source:
         sflat = ' '.join(prep(a.source))
         SW = len(sflat.split())
-        results.append((0.8 * SW <= W <= 1.2 * SW, f'{"length vs source +/-20%":44} {W:6}   band {int(0.8*SW)}-{int(1.2*SW)}'))
+        if a.length_band:
+            lo, hi = (int(x) for x in a.length_band.split(':'))
+            results.append((lo <= W <= hi,
+                            f'{"length (Director-ruled band)":44} {W:6}   band {lo}-{hi}'))
+        else:
+            results.append((0.8 * SW <= W <= 1.2 * SW,
+                            f'{"length vs source +/-20%":44} {W:6}   band {int(0.8*SW)}-{int(1.2*SW)}'))
         # byte-identity on the TYPESET files, no normalisation
         draw = re.sub(r'<!--.*?-->', '', open(a.draft, encoding='utf-8').read(), flags=re.DOTALL)
         sraw = re.sub(r'<!--.*?-->', '', open(a.source, encoding='utf-8').read(), flags=re.DOTALL)

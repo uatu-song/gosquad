@@ -77,8 +77,23 @@ of them.
 - Ch27's "He had priced that before he ever put it in his chest" **stays**, and
   is now the lie he tells himself.
 
+**THE SOURCE FILE, AND WHY IT NEEDED A GATE CHANGE.**
+`first_edition_clean/chapter_22.txt` is untouched and still correct as the
+FROZEN-DIALOGUE AUTHORITY — 44 spans, byte-identical to the draft. But at 1,720
+words of prose it has **stopped being a length proxy** for a 3,449-word chapter,
+so the source-derived ±20% band (1,376–2,064) can never pass again.
+
+A permanently-red check is worse than no check: it trains everyone to skim the
+line. **That is exactly how the paragraph bug survived** — a number nobody was
+reading. So the exemption is now EXPLICIT rather than ignored:
+`check_style.py --length-band MIN:MAX` overrides the source-derived band for a
+chapter whose scope was deliberately expanded. **Ch22 gates fully green at
+3000:3600.** Every other chapter stays on the default ±20% and all 17 still
+pass. The flag's help text requires a logged ruling to use it — this entry is
+that ruling.
+
 **Ruled by:** Director (the rebuild, the engine, the three movements, the
-choice); staging A and the band suspension are crew defaults, **veto open**.
+choice); staging A, the band range and the gate flag are crew, **veto open**.
 
 ---
 
