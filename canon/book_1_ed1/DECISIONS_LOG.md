@@ -17,6 +17,71 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-01 — CH22 REBUILT: the mansion fight, and Kain's motive put on the page
+
+**Director-ordered rebuild, drafted by the TESS STEWARD** reading both the Book 1
+and SERIES topologies. 2,050 → 3,449 words. **44/44 frozen spans, all bands
+except length, nouns clean.**
+
+**THE PROBLEM IT FIXES.** Kain's integration happened off-page in one sentence —
+the reader got an empty chair. And **one sentence held the entire fight.**
+
+**THE ENGINE (Director's).** Ch17 has him price *the blur* and buy an EMP and
+four Tanks to neutralise it. **In this room the EMP worked** — powers are off —
+and four unarmed people take twelve armed professionals apart anyway. **He did
+not misprice the asset. He mispriced the category.** Training cannot be jammed
+or bought, and the only unbuyable thing in his house is on the plinth. **The
+fight's virtuosity IS the motive.**
+
+**THE STAGING GIFT, exploited at last.** Leah wheels him into the middle as a
+bulletproof obstruction — which puts the man whose whole self is *acting on a
+decision* zip-tied at the centre of a 360° room, turning under his own
+chandelier. He is the audience. The fight is now staged for him.
+
+**Decision and opportunity deliberately separated**, which is what makes it
+desperation and not a plan: in M2 he **stops moving his head and looks at the
+plinth**; in M3, minutes later, a guard saws the ties *with his eyes on the
+fight* and "went back to the line without once having looked at the man's
+face." **Kain does not get up. He puts his freed hands flat on his knees and
+goes on looking.**
+
+**SEEDS PAID.** Ch9's training paragraph is now the literal spec of the room —
+silent footfalls, lifting and tossing one another to reach grips, the dark
+routine — and it stops being recap. **Ch12's derby jammer + ch7's "fleshy brick
+wall" become the whip:** Ben puts his forearm out "like a rail he expected
+somebody to use," and *"She had never once seen it done in a gown."* Ch21's
+tactical slit is paid by the heels coming off **as ordnance.** Ch16's film
+vocabulary licenses staging (A). And ch27's "each of them opening the next one's
+line" is now shown HERE first, without powers.
+
+**Tess's cost, unknown to her.** She has one second and two things in it, and
+**"She picked Ben."** She always would. *"the light had changed colour while she
+was not watching it"* is now the thing she chose not to watch — **and not one
+word of that sentence changed to become it.** This is her third unpaid debt
+after the fifth Tank and "We killed them," and nobody ever tells her about any
+of them.
+
+**RULINGS AND FLAGS:**
+- **Staging (A) used and NOT RULED** — Tess on the twelve-camera grid for M1–2,
+  in the room for M3. It is the status quo, needs no re-motivation, and
+  preserves the jump numbering. **Reversible; the Director has not chosen.**
+- **The ±20% length band is CONSCIOUSLY SUSPENDED for ch22 only.** The gate
+  will report a length failure and it is expected. Every other band passes.
+- **New reversible physical fact:** a guard is shoved into the plinth in M2 and
+  the case "came down starred across one corner," so Kain's route needs nobody
+  to unlock anything.
+- **Crew packet error caught by the agent:** the beat sheet and packet quoted
+  the closing sentence with British *"colour"*; the manuscript is *color*. The
+  agent flagged the one-letter discrepancy rather than silently choosing.
+  Corrected to US spelling.
+- Ch27's "He had priced that before he ever put it in his chest" **stays**, and
+  is now the lie he tells himself.
+
+**Ruled by:** Director (the rebuild, the engine, the three movements, the
+choice); staging A and the band suspension are crew defaults, **veto open**.
+
+---
+
 ## 2026-09-01 — ARC punch list resolved (9 items)
 
 **1. CH30 — THE STOLEN-ARMOR PAYOFF WAS LOST. RESTORED.** The book sets it up
