@@ -69,16 +69,28 @@ PATTERN_TICS = {
     "in-chest": re.compile(r"\bin (?:her|his|their) chest\b", re.I),
     # counting-as-interiority (Director-ruled 2026-08-31). Author rate 0.07/1K and his
     # single hit is the idiom "too many to count"; his rate for the BEHAVIOR is zero.
-    # Expected hits in Ahdia chapters ONLY — compulsive quantification is her trait.
+    # Banned for EVERYONE, Ahdia included (Director, 2026-08-31: the carve-out was
+    # reversed). Expected hits: zero in every chapter.
     "counting": re.compile(
         r"\b(?:counted|counting|counts)\b(?![^.!?]{0,20}\b(?:as|for)\b)"
         r"|\bcount(?:ed)? (?:the|them|it|backward|off)\b"
         r"|\bin \w+ counted \w+\b", re.I),
     # accounting-metaphor family: the same tic wearing a different coat. Author rate ZERO
     # across all 23,536 words of his own chapters.
+    # Widened 2026-09-02: the seven-phrase list above reported ZERO while ch18 v3
+    # carried "billed the landing", "lungs pricing every block", "the only
+    # currency left". A census that only knows the phrases it has already seen
+    # cannot find the next coat. This is the FAMILY; literal uses (a real ledger
+    # on a screen) are triaged by hand, never by the regex. Kain-POV is exempt
+    # by ruling and must be excluded at triage, not here.
     "accounting": re.compile(
         r"\barithmetic\b|\bcame due\b|\ban accounting\b|\bexchange rate\b"
-        r"|\bthe bill line by line\b|\bclosing its accounts\b|\bthe ledger\b", re.I),
+        r"|\bthe bill\b|\bclosing its accounts\b|\bthe ledger\b|\bledgers?\b"
+        r"|\bbilled\b|\bbilling\b|\bpriced?\b|\bpricing\b|\bcurrenc(?:y|ies)\b"
+        r"|\breceipts?\b|\baudit(?:ed|ing)?\b|\bpaid out\b|\bpaid for it\b"
+        r"|\bthe tab\b|\bthe toll\b|\bdividend\b|\bthe accounting\b"
+        r"|\baccounts?\b(?! for\b)(?! of\b)|\bbalance sheet\b|\bcost[- ]benefit\b"
+        r"|\boverdrawn\b|\bsolvent\b|\bbankrupt\b|\bdebit\b|\bcredited\b", re.I),
     "kind-of": re.compile(r"\bthe kind of\b", re.I),
     # the-way simile frame (Director-flagged 2026-08-31; kit 04_REPETITION watched word).
     # Directional idiom ("all the way", "on the way", "out of the way") excluded.

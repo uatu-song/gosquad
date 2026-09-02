@@ -17,6 +17,47 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-02 — R106 survivors: the accounting sweep never reached the canonical ch18
+
+**FOUND BY THE PER-CHARACTER BUILD.** Ruth's character topology listed six
+accounting-family phrases alive in ch18 narration ("Her eye billed the
+landing," "lungs pricing every block," "buying seconds with the only currency
+left"…) against a sweep logged at zero. **Cause:** the sweep was measured with
+`tic_census.py`, whose "accounting" detector matched only the seven exact
+phrases the original census had found — it could not see "billed," "priced,"
+"currency," "audit," "receipt" — and the tool's `book_1` entry in
+`_canon/books.yaml` scans a pre-prose directory and has never read a rebuilt
+draft at all. **A census that only knows the phrases it has already seen
+cannot find the next coat.** The ch18 `_v1`/`_v3` confusion earlier in the
+log is the same file being missed twice.
+
+**FIXED (R106 is Director-ruled corpus-wide; this is execution, not a new
+ruling):** a family-wide census over the canonical rebuilt files found 19
+narration sites. 14 fixed by deletion or plain restatement (ch14b ×2, ch15 ×2,
+ch18 ×7, ch19, ch20, ch22, ch29) — never a sibling metaphor. 4 KEPT on triage:
+ch13 "a conference room that billed by the hour" (literal costume shorthand),
+ch16 "He pulled the ledger up" (a real document on Ryu's screen), ch30 "He had
+priced this corridor" / "The accounting on it was clean" (Kain's POV, the one
+exemption). Every quoted span byte-identical in all ten files; all seven
+edited chapters green; ARC rebuilt and probed. Book 1 now 77,481 words.
+
+**TOOL:** the `tic_census.py` accounting regex widened to the family; its
+stale "counting expected in Ahdia chapters only" comment corrected. It still
+cannot see the rebuilt drafts (config), so the family census must be run over
+the canonical file list until `books.yaml` gets a shipped-Book-1 entry.
+
+**SECOND TIER, SURFACED NOT SWEPT (Director's call):** the buy/spend/cost
+idioms the family regex does not name — "Smoke buys a minute," "That bought
+her two seconds," "the crossing cost," "the pain the Seed always charged,"
+"did the math, because math was a thing you could hold," "buy time by
+spending time," "cheap sedation." Sixteen sites across ch14b/15/18/19/20/22.
+Tactical-register idiom or the same tic in a thinner coat — unruled.
+
+**Ruled by:** Director (R106); triage and replacements crew, veto open on
+every one of the fourteen.
+
+---
+
 ## 2026-09-02 — Whole-book topography + topology reconciled; canon brought to the rulings
 
 **Director:** "Do we have an updated and effective topology for all of book 1?"
