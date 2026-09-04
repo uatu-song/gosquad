@@ -17,6 +17,95 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-04 — Per-character topologies built (16 files); what building them found
+
+**Director:** "even topology will be too much context or too general to use
+for continuity. I think we should also create topologies for each individual
+character across books." → "build away."
+
+**BUILT: `canon/characters/`** — template, README with precedence rule (page >
+log > bible > topography > YAML > profile > embodiment; embodiment governs
+VOICE only), and 16 files, every one under its cap (2,000 words; 1,300 for the
+five minor figures), all nine template sections, every fact chapter-stamped,
+every file ending in COLLISIONS / UNRULED. Five agents, sources: the shipped
+drafts, the log, the bible, the topography, the YAML, the promises file, the
+profiles and stewards (for contrast and voice). Two agents were cut off by a
+rate limit mid-compression and resumed; nothing was lost.
+
+**WHAT THE BUILD FOUND — the ones that are ON THE PAGE and need the Director:**
+1. **Ahdia's POV naming is inconsistent across her own chapters.** First
+   names in ch16 (Ben ×7, Tess ×10), ch24, ch25; codenames ONLY in ch26; then
+   the ruled contact-drift in ch28–29. The ch28 ruling ("Ben and Tess become
+   names inside the human chain and nowhere earlier") was made without a
+   census of ch16/24/25. Either three chapters go back to agents for
+   codenames, or the ruling is narrowed to the climax (bunker and ward =
+   people; the fight = operators; contact = people again — defensible, and
+   it is what the page does). **UNRULED.**
+2. **"Fifteen years" vs nineteen.** ch14a: "Fifteen years of no rangers…"
+   (flat); ch3: "over fifteen years ago" (still true). Twenty-seven minus
+   eight is nineteen; fifteen fit the old twenty-three. ch14a needs a number
+   or the ages do. **UNRULED.**
+3. **Firas's wound wanders:** "midsection… holding his guts in" (ch3),
+   "stomach" / "sternum" (ch5), "chest wound" (ch21), "shotgunned torso"
+   (ch23), bandage "at his collar" (ch26). And ch5 orders weeks in bed; ch12
+   has him on a plyo box two days later (CANON_FACTS B1V-046 already wobbles).
+4. **Victor's arm:** ch18 elbow driven past its stop and shoulder out of
+   station; ch19 "would want setting"; two-handed in ch22 and ch28 with no
+   setting shown; ch30 sling, no side named (topography says right). And the
+   ch14b back-office wedding photograph with the woman's face scratched out
+   sits against "no dead wife, ever" — an ex is not a dead wife, but the
+   photo is unowned on the page.
+5. **Leah's injury side:** ch11 round "under the right clavicle"; ch12
+   "rotating her left shoulder, testing where last night had left its mark."
+6. **The dinner night:** ch1 "our dinner plans tonight" vs ch5 patrol "the
+   night before" the shooting — CHRONOLOGY B1C-004 reads it as the next night.
+7. **Tess's port load:** ch22 estimate "four trips minimum, one body each"
+   vs execution (Ben and Leah by the collars at once, then Victor, then four
+   through the fall).
+8. **"Rogue leader"** (ch1 radio) vs "Firas never took a codename" (ch4) —
+   both author's chapters; a call sign is not a codename, but say so somewhere
+   or let it stand.
+9. **Firas's return:** bible/log/YAML say Book 7 (author-level);
+   `Firas_Bacchus_Book1_Final.md` says "returns in Books 3–5." Author-level
+   inconsistency between canon and profile.
+10. **Mack** is named in Ruth's ch23 POV with no on-page introduction to her;
+    absent from ch30 though the topography grouped him with those who know.
+11. Already open and re-confirmed by every file that touches them: the ch26
+    sedan (§7b); the team knows Ahdia is dying (ch23); the MCC's roof; the
+    end-of-book baseline; the epilogue's woman; the presser clock.
+
+**CORRECTIONS MADE TO CREW DOCUMENTS DURING THE BUILD (facts, ruled or
+page-proven):** the topography had dropped Tess's father's desk-frame
+photograph as "not on any page" — **it is on the page, ch21, in Tess's own
+dialogue**; restored. One agent asserted "Power Extempore" is absent from the
+book — **it is in ch16 narration** ("the Hyper Seed, Power Extempore,
+whichever name the files were using that day"), a CADENS file term, never in
+the ch17 caller's mouth; the Intermediary file and the topography's ch17
+vocabulary list corrected. **Both errors came from a grep that was believed
+without being read** — the same failure class as the age and the speaker.
+
+**MY OWN BRIEF ERRORS, caught by the agents against the page:** Bellatrix's
+near-transcendence is ch29, not ch25; the fifth Tank's container push is ch19,
+not ch18; "Eighteen months, best case" is RUTH's line in ch19, Bourn supplies
+the conditions; "Bourn's missile" is CADENS's missile on Mack's call; ch22's
+last line is Ruth's "Need a ride?", the light line closes movement 3. The
+files follow the page.
+
+**THE PROFILES AND STEWARDS ARE STALE FOR BOOK 1.** Every agent found the
+profiles contradicting the page (Kain Industries, Ahdia twelve at Montana,
+Ruth–Victor and Ruth–Ahdia romances, Ryu/Bourn intimacy, Mack's prosthetic,
+Tess a CS student, Firas's death "permanent"), and the steward embodiments
+carrying Book 2 voices the Book 1 page does not show (Victor's both/and
+warmth, Leah's hesitancy, Ryu's trained calm). **For Book 1 facts the
+character topologies now supersede the profiles**; whether the embodiments'
+voices are DELIBERATE drift toward Book 2 is a question a Book 2 steward
+needs answered before writing.
+
+**Ruled by:** Director (build them). Contents crew, sourced; veto open on
+every line. Items 1–10 await rulings.
+
+---
+
 ## 2026-09-02 — R106 survivors: the accounting sweep never reached the canonical ch18
 
 **FOUND BY THE PER-CHARACTER BUILD.** Ruth's character topology listed six

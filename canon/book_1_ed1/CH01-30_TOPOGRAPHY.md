@@ -1290,8 +1290,8 @@ contradicted by ch20 and ch30 and nobody on the page knows it.
    [ch29; epilogue]
 4. **The plan to eliminate Ahdia** "once the Seed went dormant" — stated,
    then suspended, not cancelled. [epilogue]
-5. **The Intermediary** (ch17) — a woman's voice, "his civilization," Power
-   Extempore, "CADENS observes. They do not enhance," "subjects," wanted the
+5. **The Intermediary** (ch17) — a woman's voice, "his civilization," "CADENS
+   observes. They do not enhance," "subjects," wanted the
    team dead for the activation protocols; promised to call again; never
    did. Identity, employer, species unestablished. Presumed Book 2. [ch17;
    base file item 8; not ruled]
@@ -1469,11 +1469,11 @@ Whitford closed, no action.
    lines and ends "That's all for tonight." Kain's file has "a line through
    it as of yesterday afternoon." The epilogue's day is not pinned by the
    page; this file does not pin it.
-7. **The older topographies' "photograph folded behind her school photo in
-   her father's desk frame"** (carried from CH01-22 into CH01-25, item 12)
-   could not be located in any shipped draft (ch09, ch16, ch17 checked).
-   Dropped from this file's inherited list; treat as NOT ON THE PAGE unless
-   someone finds the line.
+7. **The desk-frame photograph — FOUND, the earlier search was wrong.** It is
+   on the page in **ch21**, in Tess's own dialogue: "tell him there's a photo
+   folded inside that picture frame on his desk. Maybe he should actually look
+   at it sometime." Inherited by Book 2 (page-level): Tess has left her father
+   a message he has not read. Restored to the inherited list.
 8. **Who owns the "three unpaid debts."** The ch22 rebuild entry calls "She
    picked Ben" Tess's "third unpaid debt after the fifth Tank and 'We killed
    them'"; §7h assigns the fifth Tank's uncollected credit to Ahdia. A

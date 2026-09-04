@@ -111,6 +111,17 @@ in the audit) and its "voice was" rate is 1.75/1K.
    in canon joins the two. Presumed Book 2 setup like Whitford.
 5. Veto open on: audit rejections A1/A2/B3; any single deletion from the
    the-way / adverb / counting sweeps.
+6. **Ahdia's POV naming** — first names in ch16/24/25, codenames only in
+   ch26, ruled drift ch28–29. Narrow the ruling to the climax, or send three
+   chapters back. (Log 2026-09-04, item 1.)
+7. **"Fifteen years"** (ch14a flat; ch3 "over") vs twenty-seven minus eight.
+8. **The team knows Ahdia is dying** (ch23 "Weeks. Maybe less.") — the Book 2
+   bridge assumed they don't. Page wins unless ruled.
+9. **Second-tier buy/spend/cost idioms** — sixteen sites surfaced in the R106
+   entry, not swept. Tactical idiom or the same tic thinner.
+10. **Profiles and stewards are stale for Book 1** — the character topologies
+    supersede them for facts; whether the stewards' Book-2 voices are
+    deliberate drift needs a ruling before Book 2 stewards write.
 
 ---
 
@@ -119,6 +130,7 @@ in the audit) and its "voice was" rate is 1.75/1K.
 | Purpose | File |
 |---|---|
 | **The shippable ARC** | `6_manuscript/book_1/GoSquad_Book1_ARC.epub` (builder: `build_arc_epub.py`) |
+| **Per-character continuity (load THIS, not the topography)** | `canon/characters/<Name>.md` — 16 files, one per Book 1 figure; `README.md` there says how to use them |
 | World state for agents | `canon/book_1_ed1/CH01-30_TOPOGRAPHY.md` (supersedes CH01-25) |
 | Structural reference | `5_story_bibles/book_1/BOOK1_TOPOLOGY.yaml` (reconciled to the ARC) |
 | Mechanics + rulings | `canon/series/TEMPORAL_MECHANICS.md` (§5b, §7–§7h) |
