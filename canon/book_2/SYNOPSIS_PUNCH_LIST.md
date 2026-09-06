@@ -23,7 +23,7 @@ Each item: what the synopsis says → what canon or the shipped Book 1 page says
 
 ## C. The bridge from Book 1 as shipped — Director decisions
 
-11. **Kain is officially dead when Book 1 ends.** ch29: he compresses into the singularity and "nothing came out the other side"; ch30 epilogue: his own file "had a line through it as of yesterday afternoon." The synopsis has him announcing a fusion reactor in Month 2 and campaigning all year. → Either 2A opens with his public return (a clone-body resurrection the world has to absorb — which also pre-empts the Month 6 "immortality revealed" beat), or the Month 6 reveal IS his return and Months 1–5 run without a visible Kain. **Director.**
+11. **~~Kain is officially dead when Book 1 ends.~~ CLOSED — crew error, corrected 2026-09-06.** The page says the opposite: Ruth, ch30, frozen dialogue — "Kain is no worse off than before… He's already rebuilding his mansion. His campaign is just rolling right along." The broadcast calls the night "prank calls from some yahoos"; the public never connected the giant to Kain. The struck file in the epilogue is CADENS's INTERNAL file on the creature, not a public death. → Kain is publicly alive and campaigning from Book 1's last page; the synopsis's Month 2 reactor announcement stands. *No ruling needed.* (What the public DID see of the rampage, and what CADENS told them, is a 2A world-building question, not a synopsis defect.)
 12. **Ahdia's Seed is dormant, "maybe permanently," at one-third cellular recovery.** The synopsis opens at 100% and a 47-minute freeze. → Rule the Book 1 → 2A baseline and how the Seed is back. (Already on the Book 1 open list as "end-of-book baseline"; this is where it bites.) **Director.**
 13. **Firas is not in the synopsis.** The team loses him in ch29 (page-level dead; author-level displaced, Book 7). 2A opens ~three months later with no grief, no gap in the team, no Academy without its founder. → Decide what 2A carries: a beat, a thread, or a deliberate silence. **Director.**
 14. **The team already knows Ahdia is dying** (Book 1 ch23, Ruth: "Weeks. Maybe less."). The synopsis's Month 7 "terminal decline visible… lies exposed" assumes they don't. → Reframe: the lie 2A keeps is the OPERATIONS, not the prognosis. Confirms the open Book 1 ruling either way. **Director.**
@@ -43,7 +43,6 @@ Each item: what the synopsis says → what canon or the shipped Book 1 page says
 ## E. Order of work
 
 Mechanical items (1–5, 23) can be applied in one pass now. Items 6–10 are
-rewrites to existing canon and can follow the same day. Items 11–22 are the
-actual Book 2 pre-production agenda; 11, 12, and 16 gate everything else,
-because Month 1 cannot be written until Kain is publicly alive, the Seed is
-back, and translocation exists.
+rewrites to existing canon and can follow the same day. Items 12–22 are the
+actual Book 2 pre-production agenda; 12 and 16 gate everything else, because
+Month 1 cannot be written until the Seed is back and translocation exists.
