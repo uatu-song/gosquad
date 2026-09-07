@@ -8,6 +8,43 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — Synopsis punch #20 RULED: the decay model is proportional
+
+**Director chose:** "Proportional, as Book 1 has it." Each use converts a
+fraction of what REMAINS (bible §5b: "23% of what remained"), permanently;
+the number decays geometrically toward the synopsis's 0.7 and never reaches
+zero. **Treatment adds back a fixed amount per dose** (§7e: nine doses,
+three weeks, monthly) — the only way the number rises, and the explanation
+for 52 → 53.1. Thresholds absolute: <50 concerning, <30 dangerous, <10
+critical, <1 transcendence risk. Closes the 2B evaluation's editorial issue
+#6 (compound vs linear).
+
+**Assignment (crew, veto open on the numbers):** rebuild the 2A/2B
+month-by-month table from Book 1's one-third cellular recovery plus ~three
+months of treatment, under this model, and put it in the synopsis and the
+2A topology. The synopsis's current figures are struck as a set.
+
+**Ruled by:** Director (the model). Numbers: crew, to be checked.
+
+---
+
+## 2026-09-07 — Synopsis punch #18 RULED: which Book 1 debts 2A collects
+
+**Director chose:** 2A collects **the MCC as her base** and **the
+Intermediary's promised call**. Unchecked, therefore filed **2B-or-later,
+payoff unassigned**: **the fifth Tank** (promise `fifth-tank-survivor` stays
+open; not 2A) and **the wingsuits**.
+
+**Consequences (crew, veto open):** the MCC on its residential roof is where
+Ahdia runs Exile Island from in 2A, and a natural site for Ruth and Ryu's
+end-of-book discovery. The Intermediary's call reaches Kain in 2A — beside
+the recurring, unnamed handler (#17), which the synopsis must keep distinct
+until somebody rules whether they are one woman.
+
+**Ruled by:** Director.
+
+---
+
 ## 2026-09-07 — Synopsis punch #17 RULED: Kain's handler recurs in 2A, unnamed
 
 **Director chose:** "Kain's handler recurs, unnamed." The woman from Book
