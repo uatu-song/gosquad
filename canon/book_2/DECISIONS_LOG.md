@@ -8,6 +8,18 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — Synopsis punch #22 RULED: undated, months allowed (series rule)
+
+**Director chose:** "Undated, months allowed." Book 2 names months and
+seasons freely — January, the election in November — but **never a year,
+never a real-world event that pins one, never a named election opponent or
+real party.** Consistent with Book 1's §8 (August 14 without a year). The
+synopsis keeps its calendar. §8 is now a SERIES rule, recorded in the bible.
+
+**Ruled by:** Director.
+
+---
+
 ## 2026-09-07 — Synopsis punch #21 RULED: 28 dictators
 
 **Director chose:** 28. The number already on the page (ch19: 28 subjects,

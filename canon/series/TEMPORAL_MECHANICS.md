@@ -362,6 +362,11 @@ container wall in ch19 as her last act before collapsing.
 
 ## 8. THE CALENDAR — THE BOOK IS UNDATED (Director-ruled 2026-08-30)
 
+**EXTENDED TO THE SERIES (Director-ruled 2026-09-07, Book 2 punch #22):**
+every book is undated. Months and seasons may be named (Book 2 runs January
+to an election in November); **a year never is, nor any real-world event that
+pins one, nor a named election opponent or a real party.**
+
 **No year appears in the prose. None.** The morning's "keep a year, move it to
 fit" ruling was superseded the same day: ch20's "published in 2023" became
 2025, then was cut entirely. The line now reads "published three years ago."
