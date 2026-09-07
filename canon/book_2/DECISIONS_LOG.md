@@ -8,6 +8,34 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — Synopsis punch #16 RULED: translocation is FAERIS, not Ahdia
+
+**Director, verbatim:** "Ahdia doesn't translocate herself--it's a FAERIS
+function, standard since book 1."
+
+**So:** translocation is TECH. FAERIS moves people — Tess in Book 1 (ch21
+"FAERIS drones doing the actual teleporting"; ch23 "Drones." "FAERIS."
+"Yes."), Ahdia in 2A (the Eidolon-mob extraction, Jakarta, every global op),
+the team in the endgame. **It costs no baseline.** Ahdia's power stays
+temporal: freeze, dilation, the acceleration field. The 2B evaluation's
+"translocation mechanics" issue (#3) is closed by this.
+
+**Consequences for the synopsis (crew, derived — veto open):**
+1. Month 1's "professional sniper, translocation signature" on Geneva
+   Windrow now reads as a TECH signature: either FAERIS itself was used (who
+   has access?) or someone fields FAERIS-class displacement. Unruled which;
+   it is the hidden-orchestrator layer either way (Geneva is Bellatrix's
+   avatar in series canon).
+2. Month 12's "Translocation: Ahdia moves team 800 miles (3min lifespan
+   cost, baseline 10% → 7%)" is wrong on its face — the jump is FAERIS's and
+   free; the freeze is the burn. 2B's synopsis rewrites the cost line.
+3. "Ahdia translocates to safety" (Month 1) → FAERIS extracts her. Her
+   global reach in 2A is FAERIS's reach.
+
+**Ruled by:** Director. Consequences crew, veto open.
+
+---
+
 ## 2026-09-07 — Synopsis punch #12 RULED: the Seed was never dormant
 
 **Director, verbatim:** "Never dormant but I think this could be more clearly

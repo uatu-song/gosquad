@@ -74,6 +74,7 @@
 | the corridor, told to no one; the MCC; "no reason to monitor you" | 29–30 | owed | open | ch30 |
 
 ## 7. RULINGS
+- **2026-09-07 — Book 2 punch #16 — RULED: she does not translocate.** "It's a FAERIS function, standard since book 1." Her power is temporal only; every displacement, hers or the team's, is FAERIS and costs no baseline.
 - **2026-09-07 — Book 2 punch #12 — RULED: her ch30 line "The Seed's dormant. Maybe permanently." is a LIE to Bourn.** The Seed was never dormant; the team knows; CADENS and the opposition do not. The reader must not learn it until 2A's first use (a surprise for both reader types). Nobody starts 2A at 100%.
 - `2026-07-26 / 08-29 — Auerbach is a codename, not a surname; no Go Squad codename; parents collectors.`
 - `2026-08-29 — CH14a/14b/15 — "please" releases; the dark stairwell; 23% stays, eighteen months is the BASELINE; Auerbach reaffirmed.`
