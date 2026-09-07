@@ -1,5 +1,11 @@
 # BOOK 2 — Synopsis Punch List (crew, 2026-09-06; veto open on every line)
 
+> **STATUS 2026-09-07:** walked through with the Director, one question at a
+> time. **11 closed on the page · 12, 13, 15, 16, 17, 18, 20, 21, 22 RULED · 14
+> derived · 19 no change · 1–10 and 23 are the Director's to apply — the
+> Director is rewriting the synopsis personally; crew touches nothing in it.**
+> Rulings verbatim in `canon/book_2/DECISIONS_LOG.md`.
+
 **Scope:** the Book 2 section of `5_story_bibles/book_4/Series_synopsis.md`
 (last touched 2026-07-26) — and only that. Not a Book 2 production audit.
 Each item: what the synopsis says → what canon or the shipped Book 1 page says

@@ -8,6 +8,23 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — The synopsis itself: Director will rewrite it; crew applies nothing
+
+**Director chose:** "Hold; you'll rewrite it." Crew does not touch
+`5_story_bibles/book_4/Series_synopsis.md`. The punch list's mechanical
+items (1–5, 23) and canon rewrites (6–10) are the Director's to apply, with
+today's nine rulings (#12, 13, 15, 16, 17, 18, 20, 21, 22) and one derivation
+(#14) folded in as they see fit. The proportional baseline table (#20's crew
+assignment) is built on the Director's word, not before.
+
+**State of the list:** 11 closed on the page · 12, 13, 15, 16, 17, 18, 20,
+21, 22 ruled · 14 derived (veto open) · 19 no change · 1–10, 23 with the
+Director.
+
+**Ruled by:** Director.
+
+---
+
 ## 2026-09-07 — Synopsis punch #22 RULED: undated, months allowed (series rule)
 
 **Director chose:** "Undated, months allowed." Book 2 names months and

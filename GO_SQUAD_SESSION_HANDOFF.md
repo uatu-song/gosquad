@@ -17,7 +17,17 @@ Every frozen span byte-identical to `first_edition_clean/`.
 **The Director wants to move on to the subsequent books.** Nothing on Book 1
 blocks that. What remains on Book 1 is veto-only (see OPEN below).
 
-**Book 2 resume point:** 23 chapters, 47,848 words, `6_manuscript/book_2/`.
+**Book 2 resume point (updated 2026-09-07):** the Director walked the synopsis
+punch list (`canon/book_2/SYNOPSIS_PUNCH_LIST.md`) and ruled nine items —
+never dormant / the lie to CADENS; translocation is FAERIS; grief as the
+cover; Kain's immortality a team-only reveal; the handler recurs unnamed; 2A
+collects the MCC and the Intermediary's call; proportional decay; 28
+dictators; undated with months. All verbatim in
+`canon/book_2/DECISIONS_LOG.md`. **The Director is rewriting the synopsis
+personally — crew does not touch `Series_synopsis.md`.** Two crew assignments
+wait on the Director's word: the proportional baseline table, and the 2A/2B
+synopsis split if they want it drafted. First-version 2A prose: 19 chapters,
+63,874 words (topology); `chapters_split/` holds 23 files.
 **The first thing Book 2 needs is a ruling**, not prose:
 `ahdia-pov-withheld-scope` in `canon/book_2/PROMISES.jsonl` — does "Ahdia's POV
 is withheld in Book 2" ban Ahdia-POV chapters outright, or only scenes that
