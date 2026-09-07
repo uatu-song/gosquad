@@ -8,6 +8,49 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — Crew assignments delivered: the baseline table and the 2A/2B draft
+
+**Director:** "put the crew to work then."
+
+**1. `canon/book_2/SYNOPSIS_2A_2B_DRAFT.md` (+ change ledger of 40 lines, each
+citing its ruling).** Two synopses, 2,214 words, the original untouched. No
+banned name, no story year, 28 throughout, ten UNRULED items marked inline.
+**It is a draft for the Director's rewrite, nothing more.**
+
+**2. `canon/book_2/BASELINE_TABLE.md` + `baseline_table.csv`** — the year run
+under the proportional model (#20) from Book 1's one-third recovery. Fit to
+Book 1's page: the 23%-of-what-remained night, the 4% docks night, ch24's
+dose arithmetic (add-back ≈ +8 per spaced dose), ch15's halving. **The 53.1%
+anchor at ch19 is reachable** (52.2 on the model; one knob away).
+
+**THE STRUCTURAL FINDING — a fork the Director must rule.** Under a FIXED
+add-back per dose and monthly doses, **the number cannot fall below about
+33 while treatment continues** (add-back ÷ monthly spend fraction). So "<10
+by Month 9–10" and Book 3 opening at 0.7 with Ruth still treating are
+unreachable as the synopsis has them. Three paths, all priced in the file:
+- **A** — monthly doses continue; Month 11 ends ≈ 40; the reactor freeze
+  alone carries her to 0.7 (a 39-point fall in one freeze).
+- **B** — Ruth withholds treatment after ch19's ultimatum; Month 11 ≈ 16.
+- **C** — dose yield FAILS below critical (ch24's "cells burn") plus heavier
+  ops; Month 11 ≈ 22. **Crew recommends C**: it is the only path that also
+  explains ch22's "treatment daily, still <10," the endgame's "emergency
+  treatment stabilises at 0.7," and Book 3's opening — but it modifies
+  "fixed add-back," so it is the Director's call, not crew's.
+
+**SECOND UNRULED, consequential:** Month 0. The ruling's text says one-third
+recovery → 33. But ch30 measures the one-third BEFORE Main Street ("she LEFT
+at approximately one-third"); page-strict, Month 0 ≈ 10 and the whole year
+runs ~20 points lower. Table follows the ruling's text; Director to confirm.
+
+Ten further UNRULED parameters are listed in the file (Months 3–5 cadence;
+Exile Island many-small vs few-large; Jakarta/Eastern Europe sizes; dose
+count in the interregnum; whether Months 7–10 have named ops at all).
+
+**Ruled by:** Director (the assignment). Every number crew, veto open. The
+fork (A/B/C) and Month 0 await rulings.
+
+---
+
 ## 2026-09-07 — The synopsis itself: Director will rewrite it; crew applies nothing
 
 **Director chose:** "Hold; you'll rewrite it." Crew does not touch

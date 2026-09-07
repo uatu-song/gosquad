@@ -41,7 +41,7 @@ Each item: what the synopsis says → what canon or the shipped Book 1 page says
 
 ## D. Internal to the synopsis — one model, please
 
-20. **RULED 2026-09-07 — proportional decay, as Book 1 has it.** Treatment adds back per dose. Crew rebuilds the month-by-month table from one-third recovery; current figures struck as a set. Closes 2B editorial issue #6.
+20. **RULED 2026-09-07 — proportional decay, as Book 1 has it.** Table BUILT (`BASELINE_TABLE.md`); it finds a fork — the number cannot fall below ~33 under fixed monthly add-back, so the second half needs path A/B/C (crew recommends C) and Month 0 (33 vs page-strict ~10) needs confirming. **Two rulings open.** Closes 2B editorial issue #6.
 21. **RULED 2026-09-07 — 28.** Planning docs update; 2B editorial issue #1 closed.
 22. **RULED 2026-09-07 — undated, months allowed.** Never a year, a pinning real-world event, a named opponent or real party. §8 extended to the series.
 23. **Character-arc lines that are Book 2+ voices the Book 1 page does not show** — Victor "both/and teaching," Leah "white moderate, silent complicity," Ryu "professional doctor → enabler." Not wrong; but the Book 1 character topologies record that the page's Victor is terse and Leah is blunt. → Mark these as ARCS (where they go), not baselines (where they start). *Mechanical once the character files are the baseline.*

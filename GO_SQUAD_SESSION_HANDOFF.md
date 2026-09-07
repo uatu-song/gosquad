@@ -24,9 +24,11 @@ cover; Kain's immortality a team-only reveal; the handler recurs unnamed; 2A
 collects the MCC and the Intermediary's call; proportional decay; 28
 dictators; undated with months. All verbatim in
 `canon/book_2/DECISIONS_LOG.md`. **The Director is rewriting the synopsis
-personally — crew does not touch `Series_synopsis.md`.** Two crew assignments
-wait on the Director's word: the proportional baseline table, and the 2A/2B
-synopsis split if they want it drafted. First-version 2A prose: 19 chapters,
+personally — crew does not touch `Series_synopsis.md`.** Both crew assignments
+are DELIVERED: `canon/book_2/SYNOPSIS_2A_2B_DRAFT.md` (a draft for the
+Director's rewrite) and `canon/book_2/BASELINE_TABLE.md` (+csv). **The table
+found a fork the Director must rule — path A/B/C for the second half, and
+Month 0 (33 vs page-strict ~10); see the 2026-09-07 log entry.** First-version 2A prose: 19 chapters,
 63,874 words (topology); `chapters_split/` holds 23 files.
 **The first thing Book 2 needs is a ruling**, not prose:
 `ahdia-pov-withheld-scope` in `canon/book_2/PROMISES.jsonl` — does "Ahdia's POV

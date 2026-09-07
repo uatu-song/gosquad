@@ -1,0 +1,68 @@
+month,event,spend_type,duration,fraction_converted,doses,start_pct,end_pct,threshold_notes
+0,"END OF BOOK 1 — 'approximately one-third cellular recovery' (ch30), read as a LEVEL on FAERIS's scale",anchor,,,,33.3,33.3,<50 CONCERNING
+0,Interregnum Oct-Dec: 3 scheduled monthly doses (Director: 'plus ~three months of treatment'); no priced spend,dose,3 doses,,3,33.3,57.3,recrosses >=50
+1,"Isaiah riot freeze — 47 min, plaza-scale (~30 m), work (saves 23), panic-triggered (no shrink)",freeze,47 min @30 m,0.1569,,57.3,48.3,crosses <50 CONCERNING
+1,Stampede freeze at the debate hall — 3 min (~20 m),freeze,3 min @20 m,0.0072,,48.3,48.0,<50 CONCERNING
+1,Exile Island extraction #1 — NK general at a parade (ch4 seed),extraction,13 min @20 m,0.0310,,48.0,46.5,<50 CONCERNING
+1,Scheduled monthly dose (ch4 treatment scene),dose,1 dose,,1,46.5,54.5,recrosses >=50
+1,"Jakarta operation (11,000 saved) — 60 min plaza-scale (~30 m) working field",op,60 min @30 m,0.1957,,54.5,43.8,crosses <50 CONCERNING
+1,Eidolon mob — FAERIS extracts her; costs nothing (#16),faeris,,,,43.8,43.8,<50 CONCERNING
+2,Emergency dose after Jakarta (ch5),dose,1 dose,,1,43.8,51.8,recrosses >=50
+2,Exile Island extraction #2 — Belarus (ch6); 'third straight week of vacuums' (ch8),extraction,13 min @20 m,0.0310,,51.8,50.2,
+2,Exile Island extraction #3 — Belarus (ch6); 'third straight week of vacuums' (ch8),extraction,13 min @20 m,0.0310,,50.2,48.7,crosses <50 CONCERNING
+2,Exile Island extraction #4 — Belarus (ch6); 'third straight week of vacuums' (ch8),extraction,13 min @20 m,0.0310,,48.7,47.1,<50 CONCERNING
+2,Ruth's top-off (ch7) = the scheduled monthly dose,dose,1 dose,,1,47.1,55.1,recrosses >=50
+2,"Eastern Europe arms-shipment op (~8,000 saved) — 45 min plaza-scale field",op,45 min @30 m,0.1507,,55.1,46.8,crosses <50 CONCERNING
+2,Emergency dose after Eastern Europe (ch8; first falsified record),dose,1 dose,,1,46.8,54.8,recrosses >=50
+3,Month 3 grinding: one Jakarta-class intervention (Ryu intel pipeline) — 50 min @30 m,op,50 min @30 m,0.1660,,54.8,45.7,crosses <50 CONCERNING
+3,Emergency dose after the intervention (the ch8 pattern),dose,1 dose,,1,45.7,53.7,recrosses >=50
+3,Exile Island extraction #5,extraction,13 min @20 m,0.0310,,53.7,52.1,
+3,Exile Island extraction #6,extraction,13 min @20 m,0.0310,,52.1,50.5,
+3,Scheduled monthly dose,dose,1 dose,,1,50.5,58.5,
+4,Month 4 grinding: one Jakarta-class intervention (Ryu intel pipeline) — 50 min @30 m,op,50 min @30 m,0.1660,,58.5,48.8,crosses <50 CONCERNING
+4,Emergency dose after the intervention (the ch8 pattern),dose,1 dose,,1,48.8,56.8,recrosses >=50
+4,Exile Island extraction #7 (ch10/ch12 seeds),extraction,13 min @20 m,0.0310,,56.8,55.0,
+4,Exile Island extraction #8 (ch10/ch12 seeds),extraction,13 min @20 m,0.0310,,55.0,53.3,
+4,Exile Island extraction #9 (ch10/ch12 seeds),extraction,13 min @20 m,0.0310,,53.3,51.6,
+4,"Kain extraction (ch20: exiled Month 4; avatar melts, respawns) — priced as a standard extraction; MAY be Tier 2",extraction,13 min @20 m,0.0310,,51.6,50.0,
+4,Scheduled monthly dose,dose,1 dose,,1,50.0,58.0,
+5,Month 5 grinding: one Jakarta-class intervention (Ryu intel pipeline) — 50 min @30 m,op,50 min @30 m,0.1660,,58.0,48.4,crosses <50 CONCERNING
+5,Emergency dose after the intervention (the ch8 pattern),dose,1 dose,,1,48.4,56.4,recrosses >=50
+5,Exile Island extraction #10,extraction,13 min @20 m,0.0310,,56.4,54.7,
+5,Exile Island extraction #11,extraction,13 min @20 m,0.0310,,54.7,53.0,
+5,Scheduled monthly dose,dose,1 dose,,1,53.0,61.0,
+6,Scheduled monthly dose (early June),dose,1 dose,,1,61.0,69.0,
+6,Exile Island extraction #12 — SE Asia regime (ch14 seed),extraction,13 min @20 m,0.0310,,69.0,66.8,
+6,CHECK — topology ch17: 'was 68% last week',anchor,,,,66.8,66.8,
+6,Junta op — 8 generals in ONE freeze (ch15b seed) — 30 min @40 m (extractions #13-20),extraction,30 min @40 m,0.1352,,66.8,57.8,
+6,Exile Island extraction #21 — '7 translocations in 5 days' (ch17),extraction,13 min @20 m,0.0310,,57.8,56.0,
+6,Exile Island extraction #22 — '7 translocations in 5 days' (ch17),extraction,13 min @20 m,0.0310,,56.0,54.3,
+6,Exile Island extraction #23 — '7 translocations in 5 days' (ch17),extraction,13 min @20 m,0.0310,,54.3,52.6,
+6,Exile Island extraction #24 — '7 translocations in 5 days' (ch17),extraction,13 min @20 m,0.0310,,52.6,51.0,
+6,Exile Island extraction #25 — '7 translocations in 5 days' (ch17),extraction,13 min @20 m,0.0310,,51.0,49.4,crosses <50 CONCERNING
+6,CHECK — topology ch17 eavesdrop: '54%',anchor,,,,49.4,49.4,<50 CONCERNING
+6,Treatment given at the ch17 scene (emergency),dose,1 dose,,1,49.4,57.4,recrosses >=50
+7,"Exile Island extraction #26 — '3 translocations today' (ch19, the Friday)",extraction,13 min @20 m,0.0310,,57.4,55.6,
+7,"Exile Island extraction #27 — '3 translocations today' (ch19, the Friday)",extraction,13 min @20 m,0.0310,,55.6,53.9,
+7,"Exile Island extraction #28 — '3 translocations today' (ch19, the Friday)",extraction,13 min @20 m,0.0310,,53.9,52.2,
+7,ANCHOR — ch19 discovery (Ruth + Ryu): topology says 53.1%,anchor,,,,52.2,52.2,
+7,Scheduled monthly maintenance dose (Jul) — no emergency top-offs after ch18's limit [ASSUMED],dose,1 dose,,1,52.2,60.2,
+7,"Continued global intervention (Jul), Jakarta-class — 50 min @30 m [ASSUMED cadence; topology: 'continued ops between Ch19-22']",op,50 min @30 m,0.1660,,60.2,50.2,
+7,"Continued global intervention (Jul), mid-size — 40 min @20 m [ASSUMED]",op,40 min @20 m,0.0923,,50.2,45.6,crosses <50 CONCERNING
+8,Scheduled monthly maintenance dose (Aug) — no emergency top-offs after ch18's limit [ASSUMED],dose,1 dose,,1,45.6,53.6,recrosses >=50
+8,"Continued global intervention (Aug), Jakarta-class — 50 min @30 m [ASSUMED cadence; topology: 'continued ops between Ch19-22']",op,50 min @30 m,0.1660,,53.6,44.7,crosses <50 CONCERNING
+8,"Continued global intervention (Aug), mid-size — 40 min @20 m [ASSUMED]",op,40 min @20 m,0.0923,,44.7,40.6,<50 CONCERNING
+9,Scheduled monthly maintenance dose (Sep) — no emergency top-offs after ch18's limit [ASSUMED],dose,1 dose,,1,40.6,48.6,<50 CONCERNING
+9,"Continued global intervention (Sep), Jakarta-class — 50 min @30 m [ASSUMED cadence; topology: 'continued ops between Ch19-22']",op,50 min @30 m,0.1660,,48.6,40.5,<50 CONCERNING
+9,"Continued global intervention (Sep), mid-size — 40 min @20 m [ASSUMED]",op,40 min @20 m,0.0923,,40.5,36.8,<50 CONCERNING
+9,CHECK — topology ch22 (late Month 9): 'Ahdia returns <10%',anchor,,,,36.8,36.8,<50 CONCERNING
+10,Scheduled monthly maintenance dose (Oct) — no emergency top-offs after ch18's limit [ASSUMED],dose,1 dose,,1,36.8,44.8,<50 CONCERNING
+10,"Continued global intervention (Oct), Jakarta-class — 50 min @30 m [ASSUMED cadence; topology: 'continued ops between Ch19-22']",op,50 min @30 m,0.1660,,44.8,37.3,<50 CONCERNING
+10,"Continued global intervention (Oct), mid-size — 40 min @20 m [ASSUMED]",op,40 min @20 m,0.0923,,37.3,33.9,<50 CONCERNING
+11,"Scheduled monthly dose (Nov, before the manhunt)",dose,1 dose,,1,33.9,41.9,<50 CONCERNING
+11,"Manhunt — penthouse-escape freeze (ch23), ~10 min @15 m",freeze,10 min @15 m,0.0180,,41.9,41.1,<50 CONCERNING
+11,"Manhunt — chase-week freezes, cumulative (ch23 'Ahdia freezes'), ~20 min @15 m",freeze,20 min @15 m,0.0356,,41.1,39.7,<50 CONCERNING
+11,END OF MONTH 11 — pre-endgame level,anchor,,,,39.7,39.7,<50 CONCERNING
+12,"Translocation, 800 miles, 8 people — FAERIS; costs NO baseline (#16)",faeris,,,,39.7,39.7,<50 CONCERNING
+12,"Reactor freeze 10 m 47 s — TIER 2 (opposing quantum field): 31.2% of remaining per minute (M=516x), FIT to land 0.7",freeze_T2,10m47s,0.9824,,39.7,0.7,crosses <1 TRANSCENDENCE RISK
+12,Emergency stabilisation after the freeze — CLINICAL only; no ledger add (else 0.7 cannot hold; see UNRULED),anchor,,,,0.7,0.7,<1 TRANSCENDENCE RISK
