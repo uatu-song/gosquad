@@ -73,6 +73,7 @@
 | Liaison role; team offer | 20; 23 | never ended; never answered | open | topography |
 
 ## 7. RULINGS
+- **2026-09-07 — Book 2 punch #12 — RULED: the team knows the Seed is not dormant; CADENS does not.** Ruth carries the secret from Book 1's last page; 2A must not show it in her POV before the riot freeze.
 - 2026-08-29 — ch1–11 vetting — NIGHTINGALE=Ruth; judo not jiu-jitsu (ch7).
 - 2026-08-30 — CH17/18 — her ER gap deliberate; "Everyone knows your name" is deflection.
 - 2026-08-30 — CH19/20 — off-books patients CUT; Firas the first human; "Overseer Bourn" reader-only irony.

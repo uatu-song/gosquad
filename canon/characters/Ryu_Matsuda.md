@@ -58,6 +58,7 @@
 | "She didn't take it." — never said to her; the "Dr." worn off; "Track the Seed-bearers." | 30 | owed | open | ch30 |
 
 ## 7. RULINGS
+- **2026-09-07 — Book 2 punch #12 — RULED: the Seed was never dormant.** Whatever Ryu's ch30 read of "dormant" was, it is wrong on the page from here; whether he learns before CADENS does is a 2A question (his Month 2 line-crossing in the synopsis implies yes).
 - 2026-08-29 — CH15/16 — "Ryu Matsuda is the correct name"; HUD DR. SHIBA RYU → DR. RYU MATSUDA; "Dr. Ryu" as given-name address stands; the field-hardened HUD span added; AR-Ryu both-directions-hard locked.
 - 2026-08-30 — CH20 — Shiba→Matsuda in the source; §7e three-week interval. Punch #5 — his inserted span "You bought yourself a year in the training room. This week you spent it on them." Punch #8 — "Ryu's terminal framing is sincere."
 - 2026-08-30 — CH24 — "three hours" → eighteen (flagged, never explicitly confirmed) → 2026-09-02 **twenty-six hours, both sites** (crew-derived from the page's clock; veto open); the tablet caps as unquoted-but-frozen narration.

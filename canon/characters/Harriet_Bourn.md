@@ -63,6 +63,7 @@
 | "reckless and effective" — never said to her; "we wait"; "Track the Seed-bearers."; the late authorization | 30 | owed | open | ch30 |
 
 ## 7. RULINGS
+- **2026-09-07 — Book 2 punch #12 — RULED: Bourn believes the Seed dormant because Ahdia told her so (ch30), and it was a lie.** "Track the Seed-bearers… a depressed girl with time powers" is CADENS acting on false information from Book 1's last page onward.
 - 2026-07-26 — Auerbach is a codename, same class as Overseer.
 - 2026-08-29 — CH14b/15 — eighteen months is the BASELINE, the ambush capital; Bourn trimmed to facts and terms; prognosis restaged facing Ahdia; pre-drafted terms ratified; AUERBACH a codename, not a surname.
 - 2026-08-30 — CH19–24 — "Director Overseer Bourn" is reader-only irony; ch23 misgenderings corrected; §7f: her ch23 report is stale; her ch24 clothes are the ch23 suit.

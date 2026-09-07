@@ -1275,6 +1275,8 @@ contradicted by ch20 and ch30 and nobody on the page knows it.
 
 ## WHAT BOOK 2 INHERITS
 
+**RULED 2026-09-07 (Book 2 log):** the Seed was NEVER dormant. Ahdia's ch30 "The Seed's dormant. Maybe permanently." is a lie to Bourn; the team knows, CADENS and the opposition do not; the reader learns at 2A's first use. The end-of-book baseline is one-third recovery, not 100%.
+
 **PAGE-LEVEL — on the page and unresolved (source in brackets):**
 
 1. **Kain is alive, running for President, and is a row of bodies.**
