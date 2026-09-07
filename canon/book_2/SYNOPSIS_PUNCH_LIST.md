@@ -36,7 +36,7 @@ Each item: what the synopsis says → what canon or the shipped Book 1 page says
 ## D. Internal to the synopsis — one model, please
 
 20. **RULED 2026-09-07 — proportional decay, as Book 1 has it.** Treatment adds back per dose. Crew rebuilds the month-by-month table from one-third recovery; current figures struck as a set. Closes 2B editorial issue #6.
-21. **Dictators: 37 (planning) vs 28 (ch19 prose).** Already flagged in the topology as UNRESOLVED. → Rule it once. **Director.**
+21. **RULED 2026-09-07 — 28.** Planning docs update; 2B editorial issue #1 closed.
 22. **"Month 1 = January."** Book 1 is undated by ruling (§8, "the book remains undated"). Month names are not years, but the synopsis's calendar is the first thing that would date the series. → Decide whether §8 extends to the series. **Director.**
 23. **Character-arc lines that are Book 2+ voices the Book 1 page does not show** — Victor "both/and teaching," Leah "white moderate, silent complicity," Ryu "professional doctor → enabler." Not wrong; but the Book 1 character topologies record that the page's Victor is terse and Leah is blunt. → Mark these as ARCS (where they go), not baselines (where they start). *Mechanical once the character files are the baseline.*
 

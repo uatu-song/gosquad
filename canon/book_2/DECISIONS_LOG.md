@@ -8,6 +8,17 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — Synopsis punch #21 RULED: 28 dictators
+
+**Director chose:** 28. The number already on the page (ch19: 28 subjects,
+47 episodes). Planning documents update to match; the 2B evaluation's
+editorial issue #1 (28 vs 37) is closed. The seven news seeds stay as they
+are — none states a total.
+
+**Ruled by:** Director.
+
+---
+
 ## 2026-09-07 — Synopsis punch #20 RULED: the decay model is proportional
 
 **Director chose:** "Proportional, as Book 1 has it." Each use converts a
