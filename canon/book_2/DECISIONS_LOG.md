@@ -8,6 +8,31 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — Synopsis punch #13 RULED: Firas's absence is the cover; #14 derived
+
+**#13 — Director chose "Grief as the cover."** The team reads Ahdia's
+withdrawal as grief for her brother, and that misreading IS the
+misdirection 2A runs on. His loss is on the page through the TEAM's POV —
+the call now Ruth's (already so in Book 1 ch22), the Academy without its
+founder, the empty chair — never through hers, because her POV is withheld.
+The reader is fooled alongside the team: she looks like a woman mourning,
+she is, and she is also running Exile Island. **Book 7's return is
+untouched by this.** The synopsis gains a Firas line in Month 1 and loses
+nothing.
+
+**#14 — derived from #12 and the page, not asked (crew; veto open).** The
+team knows the prognosis (Book 1 ch23, Ruth, frozen: "Weeks. Maybe less.")
+and knows the power is live (#12). **So the ONLY secret 2A keeps from the
+team is the operations.** What Ruth and Ryu discover at the end of 2A is the
+operations and the RATE — she has been spending globally what Ruth has been
+treating locally. The synopsis's Month 7 "terminal decline visible… lies
+exposed" is rewritten as: the decline was always visible; the lie was where
+it was going.
+
+**Ruled by:** Director (#13). #14 crew derivation, veto open.
+
+---
+
 ## 2026-09-07 — Synopsis punch #16 RULED: translocation is FAERIS, not Ahdia
 
 **Director, verbatim:** "Ahdia doesn't translocate herself--it's a FAERIS

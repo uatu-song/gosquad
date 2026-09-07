@@ -70,6 +70,7 @@
 | the return | 29 | Book 7 | author-level | bible §5b; log ch29/30 |
 
 ## 7. RULINGS
+- **2026-09-07 — Book 2 punch #13 — RULED: in 2A his loss is the team's explanation for Ahdia's withdrawal, i.e. the cover for her operations.** On the page through the team only; never through her. Book 7 unchanged.
 - `2026-08-29 — ch1–11 vetting — judo not jiu-jitsu; rally cry standardized; team exactly six; no codename stands.`
 - `2026-08-29 — CH14a — keycard (ch3) and bed rest (ch5) reconciled; B1V-046 filed unruled.`
 - `2026-08-29/30 — No team vehicle, extended to ops — the first edition's van (Firas drove it) flagged off-canon; Firas arrives ON FOOT at the alley (ch22); the ch23 van removed.`
