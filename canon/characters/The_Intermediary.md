@@ -42,6 +42,7 @@ Frozen dialogue. "Statements where questions should be." No contractions in any 
 | "Power Extempore" — one of the files' names for the Seed | ch16 (narration: "the Hyper Seed, Power Extempore, whichever name the files were using that day") | on the page as a CADENS file term; the ch17 caller never says it | closed | ch16; §7 |
 
 ## 7. RULINGS
+- **2026-09-07 — Book 2 punch #17 — RULED: the epilogue woman (entry B) recurs in 2A as Kain's handler, unnamed, unseen by the team.** Whether B = A (the ch17 caller) or B = Bellatrix's instrument stays UNRULED.
 - 2026-08-30 — CH17 — the "subjects." echo carried in narration; "held to her frozen diction."
 - 2026-08-30 — CH17/CH18 review — "Problematic" anchored to the first call, "months ago."
 - 2026-08-29 — CH15 read — "Power Extempore licensed (the Intermediary's term)."

@@ -8,6 +8,21 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — Synopsis punch #17 RULED: Kain's handler recurs in 2A, unnamed
+
+**Director chose:** "Kain's handler recurs, unnamed." The woman from Book
+1's epilogue ("You look tired"; speaks of Bellatrix in the third person) is
+on 2A's page as Kain's handler — two or three scenes across the year, never
+named, never explained. **The team never sees her.** The reader accrues her
+while Bellatrix stays a name spoken in the third person; the Geneva-is-
+Bellatrix secret stays intact for 2B. Her identity (the ch17 Intermediary?
+Bellatrix's instrument?) remains UNRULED — recurring does not require
+deciding it, and the crew must not.
+
+**Ruled by:** Director. Her identity: still unruled.
+
+---
+
 ## 2026-09-07 — Synopsis punch #15 RULED: Kain's immortality — the team learns, the world doesn't
 
 **Director chose:** "The team learns; the world doesn't." Month 6's beat is
