@@ -8,6 +8,20 @@ entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-07 — Synopsis punch #15 RULED: Kain's immortality — the team learns, the world doesn't
+
+**Director chose:** "The team learns; the world doesn't." Month 6's beat is
+dramatic irony collapsing — the investigations touch what the reader saw in
+Book 1's epilogue (the tanks, the struck file). An avatar dies where the team
+can see it and Kain is on TV the next day; **only the team and CADENS
+understand what that means.** Publicly it is a miraculous survival or a
+body-double story. Kain's campaign stays clean; Eidolon has nothing to
+reframe yet. The synopsis's line gains "to the team" and loses nothing.
+
+**Ruled by:** Director.
+
+---
+
 ## 2026-09-07 — Synopsis punch #13 RULED: Firas's absence is the cover; #14 derived
 
 **#13 — Director chose "Grief as the cover."** The team reads Ahdia's

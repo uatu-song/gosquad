@@ -72,6 +72,7 @@
 | three Hearts "within a week"; "Plans change" | epilogue | owed | open | epilogue |
 
 ## 7. RULINGS
+- **2026-09-07 — Book 2 punch #11/#15 — he is publicly alive and campaigning from Book 1's last page (Ruth, ch30: "His campaign is just rolling right along"); in 2A Month 6 the TEAM learns of the clone transfer, the world does not.**
 - 2026-08-29 — diamond magnate; "Mayor" is drift — President, not Mayor.
 - 2026-08-30 — CH17 prep — election never resolves on-page; dynasty DIAMONDS, security the arm; "Marcus" is banned repo-wide and never appears on any page; Whitford's daughter unknown to him; "Problematic" anchored to the first call.
 - 2026-08-30 — CH21/22/calendar — Jericho and the Heart moved to the mansion unremarked; provenance the Maghreb; Jericho six weeks; five Tanks, the fifth alive off-board.
