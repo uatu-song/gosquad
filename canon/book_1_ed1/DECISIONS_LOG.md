@@ -30,7 +30,7 @@ paragraph (ch3 line 8); line-edit agent under author-chapter constraints.
 - "the way they had her whole life" **deleted** (the-way frame; no sibling
   construction). The two sentences said the push twice and were folded so it
   is said once; the insurance-company turn follows word for word.
-Typography clean; the-way count on the line 0; ARC rebuilt and probed.
+Typography gate run on the whole clean source AFTER the edit (30 files, 8 checks, house typography intact); the-way count on the line 0; ARC rebuilt and probed. (First log wording said "clean" before the gate had actually run — corrected.)
 "over fifteen years ago" untouched (ruled).
 
 **Ruled by:** Director (the instruction and the reframe target). Wording:
