@@ -149,6 +149,8 @@ is not funny.
 
 ## AGES (ruled 2026-09-01)
 
+**The gap is NINETEEN years (Director-ruled 2026-09-18).** ch14a now reads "Nineteen years of no rangers"; ch3's "over fifteen years ago" stands as true. Firas twenty-five.
+
 **Ahdia is TWENTY-SEVEN.** Both sites (ch14a's heart-attack line, ch19's
 "twenty-seven years old") now read twenty-seven; twenty-three is gone. That
 puts **Firas at twenty-five**, founding the team at twenty-one. **Ahdia was

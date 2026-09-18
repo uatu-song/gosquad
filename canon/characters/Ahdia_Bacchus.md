@@ -74,6 +74,7 @@
 | the corridor, told to no one; the MCC; "no reason to monitor you" | 29–30 | owed | open | ch30 |
 
 ## 7. RULINGS
+- **2026-09-18 — Montana gap RULED: nineteen years.** ch14a "Fifteen years of no rangers" → "Nineteen." Eight at Montana, twenty-seven now; Firas six then, twenty-five now. Ch3 "over fifteen years ago" stands (true).
 - **2026-09-07 — Book 2 punch #16 — RULED: she does not translocate.** "It's a FAERIS function, standard since book 1." Her power is temporal only; every displacement, hers or the team's, is FAERIS and costs no baseline.
 - **2026-09-07 — Book 2 punch #12 — RULED: her ch30 line "The Seed's dormant. Maybe permanently." is a LIE to Bourn.** The Seed was never dormant; the team knows; CADENS and the opposition do not. The reader must not learn it until 2A's first use (a surprise for both reader types). Nobody starts 2A at 100%.
 - `2026-07-26 / 08-29 — Auerbach is a codename, not a surname; no Go Squad codename; parents collectors.`

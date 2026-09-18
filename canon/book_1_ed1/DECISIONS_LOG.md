@@ -17,6 +17,27 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-18 — The Montana gap: NINETEEN years (Director-ruled)
+
+**Director chose "Nineteen"** over "twenty" after an outside review (working
+on the old seven/five reading) proposed twenty. Nothing ruled moves: **Ahdia
+eight and Firas six at Montana (ch02), Ahdia twenty-seven now (ch14a, ch19),
+Firas twenty-five.** Firas's ledger holds — school at about twenty-one, four
+years of patrols, Ruth an attending around thirty.
+
+**One edit:** ch14a "Fifteen years of no rangers" → "Nineteen years of no
+rangers." Gated (14a+b, 139/139), ARC rebuilt and probed. **Ch3's "over
+fifteen years ago" stands** — true at nineteen, the author's prose, the
+Director offered no change.
+
+**PENDING, the Director's own edit:** ch3 "Ahdia would have continued pursuing
+a career in engineering" — she was eight. Director chose to reframe the clause
+to the parents themselves. Crew touches nothing until they do.
+
+**Ruled by:** Director.
+
+---
+
 ## 2026-09-04 — Per-character topologies built (16 files); what building them found
 
 **Director:** "even topology will be too much context or too general to use
