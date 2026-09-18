@@ -17,6 +17,27 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-18 — CH3: the engineering clause reframed to the parents (Director-instructed, agent-executed)
+
+**Director:** "just make the edits to my prose then." Author's chapter; one
+paragraph (ch3 line 8); line-edit agent under author-chapter constraints.
+- "If they were around, it was possible that Ahdia would have continued
+  pursuing a career in engineering." → "…it was possible that they would have
+  pushed her and encouraged her toward a career in engineering, before they
+  were proclaimed dead by the insurance company…" — subject now the parents
+  (she was eight); "engineering" and the author's hedge kept; the original
+  "pushed her and encouraged her" pairing reused as the verb.
+- "the way they had her whole life" **deleted** (the-way frame; no sibling
+  construction). The two sentences said the push twice and were folded so it
+  is said once; the insurance-company turn follows word for word.
+Typography clean; the-way count on the line 0; ARC rebuilt and probed.
+"over fifteen years ago" untouched (ruled).
+
+**Ruled by:** Director (the instruction and the reframe target). Wording:
+agent, veto open.
+
+---
+
 ## 2026-09-18 — The Montana gap: NINETEEN years (Director-ruled)
 
 **Director chose "Nineteen"** over "twenty" after an outside review (working

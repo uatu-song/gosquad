@@ -126,7 +126,7 @@ in the audit) and its "voice was" rate is 1.75/1K.
 6. **Ahdia's POV naming** — first names in ch16/24/25, codenames only in
    ch26, ruled drift ch28–29. Narrow the ruling to the climax, or send three
    chapters back. (Log 2026-09-04, item 1.)
-7. ~~"Fifteen years"~~ **RULED 2026-09-18: nineteen.** ch14a fixed; ch3 stands. Director owes a one-clause reframe of ch3's "continued pursuing a career in engineering."
+7. ~~"Fifteen years"~~ **RULED 2026-09-18: nineteen.** ch14a fixed; ch3 stands. The ch3 engineering clause was reframed to the parents on the Director's instruction (agent, veto open) — nothing pending.
 8. **The team knows Ahdia is dying** (ch23 "Weeks. Maybe less.") — the Book 2
    bridge assumed they don't. Page wins unless ruled.
 9. **Second-tier buy/spend/cost idioms** — sixteen sites surfaced in the R106
