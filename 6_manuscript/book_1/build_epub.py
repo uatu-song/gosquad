@@ -6,7 +6,8 @@ the measurement ground truth) — NOT book1_manuscript.txt, which is the damaged
 PDF extraction this script used to read (318 running headers, 418 broken words,
 paragraph structure collapsed).
 
-The old GoSquad_Book1.epub is left in place: it is the stated ancestor of
+The old GoSquad_Book1.epub now lives in _ancestor/ (moved 2026-09-18 after a
+reviewer measured it by mistake): it is the stated ancestor of
 6_manuscript/book_1/first_edition/ (registered as `book_1_ed1`), and quarry
 lineage is translated on ingest, never overwritten.
 """
