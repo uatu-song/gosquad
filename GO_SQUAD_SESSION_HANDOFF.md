@@ -6,7 +6,14 @@
 
 ## RESUME POINT
 
-**BOOK 1 IS SHIPPED.** ARC at commit `8d6417f`:
+**BOOK 1 IS SHIPPED — REVIEW COPY v1.0 (2026-09-18):**
+`6_manuscript/book_1/GoSquad_Book1_REVIEW.epub` (builder `build_review_epub.py`,
+version in `REVIEW_VERSION`) — the copyedited near-final; see the 2026-09-18
+log entry for what the copyedit found (ch20 re-attribution; ch17 red by 0.5 on
+one band by measurement, awaiting a floor ruling; scare-quote placement
+awaiting a ruling). The ARC below is the earlier uncorrected proof.
+
+**ARC** at commit `8d6417f`:
 `6_manuscript/book_1/GoSquad_Book1_ARC.epub` — 30 chapters + epilogue,
 **77,500 words**, uncorrected-proof notice stamped with date + git SHA, no
 internal notes, no provenance lines. 17/17 default-band chapters green, ch22

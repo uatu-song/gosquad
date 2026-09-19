@@ -17,6 +17,79 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-18 — REVIEW COPY v1.0: the copyedit pass, and what it found
+
+**Director:** "We need to make a review copy of this book, something that is
+almost nearly in the final state of the manuscript." The outside review had
+called it "structurally sound, voice found, copyedit not done."
+
+**BUILT:** `6_manuscript/book_1/GoSquad_Book1_REVIEW.epub` via a new
+`build_review_epub.py` (derived from the ARC builder; review-copy notice
+instead of uncorrected-proof; version line from `REVIEW_VERSION` = 1.0). 30
+chapters + epilogue, ~77,440 words. Verified in the artifact.
+
+**THE COPYEDIT (three agents, whole book, correctness only, zero style
+changes; every change a literal replacement, all listed in their reports):**
+- ch1–11 (author's chapters): 22 fixes — lay/lie ×5, doubled word ("open door
+  front door"), agreement ×3, dropped word ("think about it"), compounds
+  (battlefield, alleyway, bottleneck), "every day," "dumbfounded," a stray
+  subject comma, a missing possessive apostrophe, a missing closing single
+  quote, "Coke," "cop's," one mid-sentence "The Go Squad."
+- ch12–21: **0 fixes** needed.
+- ch22–30: 1 fix (a stray trailing space).
+- **Tier two, crew, under rulings already made:** Chicago possessives
+  Firas'→Firas's ×7, Faraz'→Faraz's; American spellings (theatre→theater,
+  centre→center ×2, grey→gray ×2, travelled/travelling→traveled/traveling,
+  cancelled→canceled — the colour→color precedent); brand/compound
+  consistency (7-Eleven, workbench ×3, gangbangers, sidekick, straitjacket,
+  bo staff, Marine, presidential ×2); **closed em dashes** — nine spaced em
+  dashes in rebuilt narration closed to house style, and ch3's spaced
+  hyphens ("They - well, Ruth more accurately - got") set as closed em
+  dashes; ch30 ‘uniforms’. → ‘uniforms.’ mirrored in draft and source.
+
+**ONE REAL DEFECT FOUND AND FIXED — ch20:** the rebuilt beat "Ryu looked at
+the vial and not at her." attributed RUTH's line ("I'll need to be present
+for every dose. Real-time adjustments. Clinical judgment.") to Ryu, who has
+just said he is not a doctor; the exchange after it read reversed. Beat is
+now "Ruth looked at the vial and not at him." Same failure class as the
+dropped tags. Spans untouched; source confirms it is Ruth's.
+
+**GATE: 16/17 default-band green, ch22 and ch14a+b green, typography intact.
+ch17 is RED on one band — narration % sentences 30+ at 5.5 against a 6.0
+floor — and the cause is measurement, not prose:** `bookconfig.norm()` turns
+"—" into "--", so a CLOSED em dash glues two words into one token while a
+SPACED one counted as an extra word. Closing ch17's four dashes removed ~8
+tokens and one sentence fell under 30 words. The author's chapters (closed
+dashes) were measured the same glued way, so ch17 is now measured
+CONSISTENTLY with the standard for the first time, and is genuinely 0.5
+under a floor. **Not padded.** Director's call: remove the floor (as with
+-ly, 2026-08-31) or leave ch17 red by 0.5.
+
+**QUERIES FOR THE DIRECTOR (not changed — voice, canon, or frozen spans):**
+- Punctuation outside scare quotes in rebuilt narration (ch16 ×3, ch20 ×1:
+  `“teleported”.`, `“enhancements”,`) — Chicago wants it inside, but the
+  frozen span carries no punctuation, so moving it changes the span. Ruling
+  needed: exempt scare-quoted terms from the freeze, or leave British
+  placement.
+- "Glacial National Park" (ch2) — the real park is Glacier; canon carries
+  Glacial. Intentional?
+- ch7 "the bagita that she baked" — unknown word. ch10 l.56 "She laced her
+  hands on her head but to expand her lungs for air" — garbled. ch2 "Most of
+  it are your father's own interpretations" (dialogue). ch6 "if she knew
+  any better." ch26 "crushed into him" (Director-edited chapter; "crashed"?).
+  ch22 "structure roof" (parking structure — reads fine on reflection).
+- ch30 Bourn calls her "Auerbach" ×5 and "Ms. Bacchus" ×1, both frozen.
+- ch2 "Mom and dad." ch4 "Parkour Academy" vs ch1 "Parkour Instructional
+  School" (naming, both the author's). ch15 "AUERBACH" display-word with no
+  period; ch21 standalone lowercase "are you kidding me" — both read as
+  deliberate.
+
+**Ruled by:** Director (the review copy). Every fix crew, veto open; the
+tier-two normalizations rest on Chicago and the colour→color ruling. ch17's
+floor and the scare-quote placement await rulings.
+
+---
+
 ## 2026-09-18 — CH3: the engineering clause reframed to the parents (Director-instructed, agent-executed)
 
 **Director:** "just make the edits to my prose then." Author's chapter; one
