@@ -25,7 +25,7 @@ Keep these files updated as the series develops. The `/gosquad` command will alw
 
 ---
 
-**Series**: Go Squad / Auerbach Series (8 books planned)
+**Series**: Go Squad / Go Squad series (8 books planned)
 **Current Status**:
 - Book 1: Complete prose (line edit phase)
 - Book 2: Planning complete (TTRPG data, 24 chapters)

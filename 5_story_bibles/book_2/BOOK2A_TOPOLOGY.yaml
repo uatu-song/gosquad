@@ -1,6 +1,6 @@
 # ============================================================================
 # BOOK 2A TOPOLOGY — Complete Structural Reference
-# Go Squad (Auerbach Series) by J. S. Vaughn
+# Go Squad (Go Squad series) by J. S. Vaughn
 # ============================================================================
 # This file contains everything an LLM needs to understand Book 2A's
 # architecture, characters, threads, and canon WITHOUT reading the prose.
@@ -9,7 +9,7 @@
 # ============================================================================
 
 meta:
-  series: "Auerbach Series"
+  series: "Go Squad"
   book: "2A"
   title: "Go Squad: Book 2"
   author: "J. S. Vaughn"

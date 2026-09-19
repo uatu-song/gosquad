@@ -17,6 +17,53 @@ age. If an entry does not say the Director ruled it, assume they did not.
 
 ---
 
+## 2026-09-18 — The reviewer measured the wrong file: the March ancestor, not the review copy
+
+An outside measurement reported "this EPUB is the Aug 29 text, unchanged":
+74,043 words, 4,396 straight double quotes, identifier `gosquad-book1-arc`,
+dcterms:modified 2026-03-24, SHA 985bd887…, ch12–30 mean sentence ≈6–7 words.
+**Fingerprinted every epub on disk: that is `6_manuscript/book_1/GoSquad_Book1.epub`**
+— the first-edition ARC committed 2026-03-24 (f0ad8a4), which `build_epub.py`'s
+own docstring says is "left in place" as the quarry ancestor of
+`first_edition/`. It is the one file in the folder with no suffix, so it is
+the one a reviewer reaches for. **It is not the book.**
+
+**The review copy's fingerprint, for the reviewer:** `GoSquad_Book1_REVIEW.epub`
+— SHA256 26e774cafd…, ~77,715 words by the same method, **0 straight
+quotes**, identifier `gosquad-book1-review-v1.0-2026-09-18`, series metadata
+"Go Squad". Sentence means by the same split: ch1–11 13.1, ch12–30 11.7 — the
+"seam" the reviewer measured (12.8 vs 6.4) is the old text's.
+
+**Their two corrections to the Aug 29 baseline are accepted:** "very 269" and
+"just 291" were substring counts (every/justice); whole-word 33 and 261. "hum
+59" was *human*; real figure 5. Recorded so the next census does not repeat it.
+
+**Also found while sweeping the series name:** `5_story_bibles/SERIES_TOPOLOGY.yaml`
+(line 198, `middlegame:{` missing a space) and `5_story_bibles/book_4/BOOK4_TOPOLOGY.yaml`
+(line 650) **do not parse as YAML, and did not at HEAD before the sweep.**
+Pre-existing; not touched; the other three topologies parse.
+
+**Ruled by:** crew finding. The ancestor file's relocation out of the
+shipping folder is proposed below the line, veto open.
+
+---
+
+## 2026-09-18 — THE SERIES IS "GO SQUAD" (Director-ruled)
+
+**Director, verbatim:** "Don't call it the Auerbach Series. It's Go Squad."
+The builders had `SERIES = 'The Auerbach Series'` on the title page, in the
+notice, and in the calibre series metadata of every epub shipped to date,
+including the ARC and REVIEW v1.0. **Fixed in both builders; ARC and REVIEW
+rebuilt; verified in the artifacts** (title page "Go Squad / J. S. Vaughn /
+Book One"; series metadata "Go Squad"; no "Auerbach" in front matter). The
+name "Auerbach" stays in-story (Ahdia's CADENS codename) — that is not what
+the ruling touches. Crew documents that say "Auerbach Series" are being
+swept the same day; the old name may survive in archived material.
+
+**Ruled by:** Director.
+
+---
+
 ## 2026-09-18 — REVIEW COPY v1.0: the copyedit pass, and what it found
 
 **Director:** "We need to make a review copy of this book, something that is

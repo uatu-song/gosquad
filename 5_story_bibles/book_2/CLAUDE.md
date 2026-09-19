@@ -1,6 +1,6 @@
 # CLAUDE.md - Book 2
 
-This file provides guidance to Claude Code (claude.ai/code) when working on Book 2 of the Auerbach Series.
+This file provides guidance to Claude Code (claude.ai/code) when working on Book 2 of the Go Squad series.
 
 ## Book 2 Overview
 

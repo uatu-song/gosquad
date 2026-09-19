@@ -1,6 +1,6 @@
 # ============================================================================
 # BOOK 1 TOPOLOGY — Complete Structural Reference
-# Go Squad (Auerbach Series) by J. S. Vaughn
+# Go Squad (Go Squad series) by J. S. Vaughn
 # ============================================================================
 # This file contains everything an LLM needs to understand Book 1's
 # architecture, characters, threads, and canon WITHOUT reading the prose.
@@ -16,7 +16,7 @@
 # ============================================================================
 
 meta:
-  series: "Auerbach Series"
+  series: "Go Squad"
   book: 1
   title: "Go Squad"
   author: "J. S. Vaughn"

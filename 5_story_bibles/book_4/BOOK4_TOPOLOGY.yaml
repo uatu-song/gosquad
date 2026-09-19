@@ -1,6 +1,6 @@
 # ============================================================================
 # BOOK 4 TOPOLOGY — Planning Reference (Progressive Disclosure)
-# Go Squad (Auerbach Series) by J. S. Vaughn
+# Go Squad (Go Squad series) by J. S. Vaughn
 # ============================================================================
 # DIRECTORY NAME NOTE: This file lives in `5_story_bibles/book_3/` because the
 # directory was named under the legacy 7-book numbering (old Book 3). In the
@@ -35,7 +35,7 @@
 # ============================================================================
 
 meta:
-  series: "Auerbach Series"
+  series: "Go Squad"
   book: 4
   alt_name: "old Book 3"
   directory: "5_story_bibles/book_3/"  # legacy 7-book naming

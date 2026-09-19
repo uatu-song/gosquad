@@ -25,7 +25,7 @@ OUT = HERE / 'GoSquad_Book1_REVIEW.epub'
 VERSION = Path(__file__).with_name('REVIEW_VERSION').read_text().strip() if Path(__file__).with_name('REVIEW_VERSION').exists() else '1.0'
 TITLE  = 'Go Squad'
 AUTHOR = 'J. S. Vaughn'
-SERIES = 'The Auerbach Series'
+SERIES = 'Go Squad'  # the series IS Go Squad (Director, 2026-09-18); never 'the Auerbach Series'
 BOOKNO = 1
 LANG   = 'en'
 STAMP  = datetime.date.today().isoformat()
@@ -106,7 +106,7 @@ book = epub.EpubBook()
 book.set_identifier(f'gosquad-book1-review-v{VERSION}-{STAMP}')
 book.set_title(TITLE); book.set_language(LANG); book.add_author(AUTHOR)
 book.add_metadata('DC', 'description',
-    f'REVIEW COPY v{VERSION} — near-final manuscript. {SERIES}, Book {BOOKNO}. '
+    f'REVIEW COPY v{VERSION} — near-final manuscript. Go Squad, Book {BOOKNO}. '
     'Not for sale or redistribution. Quotations should be checked against the published edition.')
 book.add_metadata('DC', 'date', STAMP)
 book.add_metadata(None, 'meta', '', {'name': 'calibre:series', 'content': SERIES})
@@ -124,17 +124,17 @@ def page(uid, fname, title, inner):
 
 tp = page('tp', 'title.xhtml', 'Title Page',
     f'<div class="tp"><h1>{TITLE}</h1><p class="byline">{AUTHOR}</p>'
-    f'<p class="series">{SERIES} &#183; Book One</p></div>')
+    f'<p class="series">Book One</p></div>')
 
 notice = page('notice', 'notice.xhtml', 'Review Copy',
     '<div class="notice"><h2>Review Copy</h2>'
-    f'<p>This is a review copy of <i>{TITLE}</i>, the first book of {SERIES}. '
+    f'<p>This is a review copy of <i>{TITLE}</i>, Book One of the Go Squad series. '
     'The manuscript is in its near-final state: the text has been through its '
     'structural, continuity, and copyedit passes, and what remains before '
     'publication is final proofreading and design.</p>'
     '<p>Quotations for review or publicity should be checked against the '
     'published edition. Not for sale, resale, or redistribution.</p>'
-    f'<p class="stamp">{SERIES} &#183; Book {BOOKNO}<br/>'
+    f'<p class="stamp">Go Squad &#183; Book {BOOKNO}<br/>'
     f'Review copy v{VERSION} &#183; {STAMP}</p></div>')
 
 spine, toc, total = [tp, notice], [], 0

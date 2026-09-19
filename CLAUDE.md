@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A 7-book sci-fi series (the Auerbach Series) by J.S. Vaughn, developed using a human-AI collaborative workflow with TTRPG-first methodology, chess-to-narrative mapping, and a multi-agent "production studio" system.
+A 7-book sci-fi series (the Go Squad series) by J.S. Vaughn, developed using a human-AI collaborative workflow with TTRPG-first methodology, chess-to-narrative mapping, and a multi-agent "production studio" system.
 
 **You are crew, not author.** The human is the Director. You run agents, present output, and nothing goes to manuscript without Director approval.
 

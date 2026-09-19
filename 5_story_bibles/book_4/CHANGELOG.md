@@ -1,6 +1,6 @@
 # Book 3 - CHANGELOG
 
-This file tracks all planning, writing, and revision decisions for Book 3 of the Auerbach Series.
+This file tracks all planning, writing, and revision decisions for Book 3 of the Go Squad series.
 
 ---
 

@@ -17,7 +17,7 @@ HERE = Path(__file__).resolve().parent
 OUT = HERE / 'GoSquad_Book1_ARC.epub'
 TITLE  = 'Go Squad'
 AUTHOR = 'J. S. Vaughn'
-SERIES = 'The Auerbach Series'
+SERIES = 'Go Squad'  # the series IS Go Squad (Director, 2026-09-18); never 'the Auerbach Series'
 BOOKNO = 1
 LANG   = 'en'
 STAMP  = datetime.date.today().isoformat()
@@ -98,7 +98,7 @@ book = epub.EpubBook()
 book.set_identifier(f'gosquad-book1-arc-{STAMP}')
 book.set_title(TITLE); book.set_language(LANG); book.add_author(AUTHOR)
 book.add_metadata('DC', 'description',
-    f'ADVANCE READER COPY — uncorrected proof. {SERIES}, Book {BOOKNO}. '
+    f'ADVANCE READER COPY — uncorrected proof. Go Squad, Book {BOOKNO}. '
     'Not for sale. Quotations must be checked against the finished book.')
 book.add_metadata('DC', 'date', STAMP)
 book.add_metadata(None, 'meta', '', {'name': 'calibre:series', 'content': SERIES})
@@ -116,7 +116,7 @@ def page(uid, fname, title, inner):
 
 tp = page('tp', 'title.xhtml', 'Title Page',
     f'<div class="tp"><h1>{TITLE}</h1><p class="byline">{AUTHOR}</p>'
-    f'<p class="series">{SERIES} &#183; Book One</p></div>')
+    f'<p class="series">Book One</p></div>')
 
 notice = page('notice', 'notice.xhtml', 'Advance Reader Copy',
     '<div class="notice"><h2>Advance Reader Copy</h2>'
@@ -125,7 +125,7 @@ notice = page('notice', 'notice.xhtml', 'Advance Reader Copy',
     'Any quotation intended for review or publicity must be checked against the '
     'final published edition.</p>'
     '<p>Not for sale, resale, or redistribution.</p>'
-    f'<p class="stamp">{SERIES} &#183; Book {BOOKNO}<br/>'
+    f'<p class="stamp">Go Squad &#183; Book {BOOKNO}<br/>'
     f'Proof generated {STAMP} &#183; build {REV}</p></div>')
 
 spine, toc, total = [tp, notice], [], 0

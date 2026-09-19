@@ -1,6 +1,6 @@
 # Cyclic Universe Cosmology
 
-**The Core Truth of Time Travel in the Auerbach Series**
+**The Core Truth of Time Travel in the Go Squad series**
 
 ---
 

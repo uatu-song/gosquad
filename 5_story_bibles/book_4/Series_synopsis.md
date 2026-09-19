@@ -1,4 +1,4 @@
-# Auerbach Series - Complete Synopsis
+# Go Squad series - Complete Synopsis
 
 **Seven-Book Arc:** CBT approach failing (Books 1-3) → Turning point (Book 4) → DBT approach succeeding (Books 5-7)
 

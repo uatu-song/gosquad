@@ -1,5 +1,5 @@
 # ============================================================================
-# SERIES TOPOLOGY — Auerbach Series (Go Squad), 8 books
+# SERIES TOPOLOGY — Go Squad, 8 books
 # J. S. Vaughn
 # ============================================================================
 # This file is the ceiling. It does NOT duplicate per-book topology content —
@@ -23,7 +23,7 @@
 # ============================================================================
 
 meta:
-  series: "Auerbach Series"
+  series: "Go Squad"
   also_known_as: "Go Squad"
   author: "J. S. Vaughn"
   book_count: 8

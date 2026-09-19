@@ -1,8 +1,8 @@
-# Auerbach Series - Master Repository
+# Go Squad series - Master Repository
 
 ## What This Is
 
-This is the complete development repository for the **Auerbach Series**, a 7-book YA urban fantasy/superhero series about a depressed hermit who becomes the Temporalist, gains time manipulation powers, and learns she doesn't have to be fixed to be worthy.
+This is the complete development repository for the **Go Squad series**, a 7-book YA urban fantasy/superhero series about a depressed hermit who becomes the Temporalist, gains time manipulation powers, and learns she doesn't have to be fixed to be worthy.
 
 **Series uses chess games as narrative scaffolding** and is written through **human-AI collaboration** as a Promethean demonstration that AI can amplify creativity rather than replace it.
 

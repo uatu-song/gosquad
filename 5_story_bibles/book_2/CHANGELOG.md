@@ -1,6 +1,6 @@
 # Book 2 - CHANGELOG
 
-This file tracks all planning, writing, and revision decisions for Book 2 of the Auerbach Series.
+This file tracks all planning, writing, and revision decisions for Book 2 of the Go Squad series.
 
 **Documentation Philosophy:** This changelog serves dual purposes—tracking technical progress AND documenting the human-AI collaborative process that produced this work. We are creating a historical record of a novel creative methodology.
 
