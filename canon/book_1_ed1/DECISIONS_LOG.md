@@ -2273,3 +2273,34 @@ to the Director; expect them in later books or the rebuild.
 
 **Touches:** FCT ahdia-surname-first-edition (now canonical),
 canon/book_1_ed1/CANON_FACTS.jsonl, chapter_02/chapter_30 evidence.
+
+---
+
+## 2026-09-23 — Cadence rulings on the v1.0 outliers (from the Sept 22 report receipt)
+
+**Question:** Five chapters sit outside the Aug 29 harmonization band in v1.0.
+Harmonize or exempt? Ruled one at a time.
+
+| Chapter | Measured (v1.0) | Ruling |
+|---|---|---|
+| ch15 | 119 em dashes /10k | **Exempt as Ryu's voice.** The dashes are his interrupted, self-correcting speech. Cadence pass skips ch15. |
+| ch8 | 552 words, 48% fragments, 55 dashes | **Light touch.** Fragment run stays in the first half (the disorientation). Sentences lengthen as the team regains orientation. |
+| ch23 | 45% fragments, 43 dashes | **Exempt dialogue, harmonize narration.** Clipped briefing lines stay. Narration toward the ch12–30 band. |
+| ch3, ch5 | 42% fragments each; ch3 52 dashes | **Light pass on both.** Trim narration dashes in ch3, merge weakest fragments in both. Target mid-20s fragments. |
+| "just" ×182 | book-wide | **Target 120, narration first.** Dialogue untouched. |
+
+**Ruled by:** Director
+
+**Also ruled:** `book1_manuscript.txt` (PDF extraction, already registered NOT
+canon) moved to `_archive/book1_pdf_extraction/`. Per-chapter v1.0 text
+extracted from the review epub into `6_manuscript/book_1/v1_0/` for grep and
+the continuity board.
+
+**Correction recorded by crew:** the ruling was asked as "archive
+book1_manuscript.txt and first_edition_clean/". `first_edition_clean/` is NOT
+stale — it is the live source for ch1–11 in every epub builder. Only the PDF
+extraction was archived. first_edition_clean/ untouched.
+
+**Touches:** canon/book_1_ed1/PUNCH_LIST.md (A-items),
+5_story_bibles/book_1/reviews/PUNCH_LIST_2026-09-23.md,
+_tools/agents/review_board/REVIEW_BOARD.md (source text rule).
