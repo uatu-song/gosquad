@@ -37,8 +37,8 @@ Source: `2026-09-22_editorial_review_report_receipt.md`. Each item: what, eviden
 
 | # | Item |
 |---|---|
-| D1 | Director approves `REVIEW_BOARD.md` Section 4 thread directory |
-| D2 | Add Book 1 rows to Section 4: Firas status, autoinjector count, Kain clone tanks, 18-month clock, Tamois Heart, CR-7 synthesis, 47x impact amplification |
+| D1 | ~~Director approves Section 4~~ DONE 09-23 |
+| D2 | DONE 09-23 (Section 4.7). Was: add Book 1 rows to Section 4: Firas status, autoinjector count, Kain clone tanks, 18-month clock, Tamois Heart, CR-7 synthesis, 47x impact amplification |
 | D3 | Build `board.py` (Batch API + caching), source = C2 extraction |
 | D4 | Dry run on Book 1 ch1 and Book 2A ch1; Director judges signal |
 

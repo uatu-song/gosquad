@@ -1,6 +1,6 @@
 # Continuity Review Board — Lean Design
 
-**Status:** DRAFT for Director approval. Nothing runs until the thread directory (Section 4) is approved.
+**Status:** Section 4 thread directory APPROVED by Director 2026-09-23 (ruling D1). Run 1 unblocked pending `board.py`.
 **Scope:** Book 1 (30 ch + Epilogue, 77,491 words, v1.0 = `GoSquad_Book1_REVIEW.epub`) and Book 2A (19 ch). Extensible to 2B.
 **Source text rule:** Book 1 reads from `6_manuscript/book_1/v1_0/` (extracted from the v1.0 review epub). The epub is built from `first_edition_clean/` (ch1–11) + `rewrite_pilot/*_metric_v*.txt` (ch12–30); those are author sources, not board input. The old PDF extraction is in `_archive/book1_pdf_extraction/` and is not evidence. See `5_story_bibles/book_1/reviews/2026-09-22_editorial_review_report_receipt.md` for why.
 **Principle:** Few agents, wide lenses, expensive model. Six agents total. One batch per chapter.
@@ -111,6 +111,26 @@ Secondary (Body/Ground and Bonds only): Firas, Webb, Prime (background), Isaiah 
 - Leah's coma window (2B M11–M24)
 - Leta absent after Ch23
 - Eidolon amplifies fear only; never creates (behavioral lock, flag any "created" phrasing)
+
+### 4.7 Book 1 rows (added 2026-09-23 per Director ruling D1; cites are `b1:v1_0/<file>:<line>`)
+
+**Numbers Clerk**
+- 18-month life-expectancy clock: set ch14 (`chapter_14.txt:333,335,357,367`), restated ch16 as "eighteen months baseline, maybe two years if conservative" (`chapter_16.txt:107`), ch15 Ahdia's own tally "another year and maybe more" (`chapter_15.txt:341`). Open wobble per canon PUNCH_LIST #5: ch16 frozen baseline vs ch15 "maybe more" is unbridged. Clerk tracks every restatement.
+- CR-7: named ch3 as "cellular regeneration therapy" (`chapter_03.txt:113`); Ruth's protocol ch20 (`chapter_20.txt:43`); "CR-7 Temporal Variant… buy you time" ch20 (`chapter_20.txt:255`). Book 2A continues the dose/efficacy ledger from here.
+- Autoinjectors: eight in the case ch24 (`chapter_24.txt:109`); eighth misfires, "nothing went in" (`chapter_24.txt:143`); Firas administers one ch29, "his thumb still on the plunger" (`chapter_29.txt:143`); ch30 Bourn: "The eighth treatment. The one she told you she'd completed" and she had lied (`chapter_30.txt:221,231`). Ledger: 7 self-administered + 1 failed + 1 by Firas. Flag any later text that says she took eight.
+- Temporal impact amplification: 47x (`chapter_13.txt:201,221`). Distinct from vessel Forty-seven below. Never merge.
+- Kain's size on Main Street: 15 ft "maybe more" ch23 (`chapter_23.txt:93`), 20 ft ch23/24 (`chapter_23.txt:207`, `chapter_24.txt:67`). Clerk tracks growth sequence.
+
+**Knowledge Registrar**
+- Firas status at end of Book 1: absorbed, "space smaller than a fist" ch29 (`chapter_29.txt:177`); team believes him dead, "We just lost Firas. Yesterday." ch30 (`chapter_30.txt:187`). No translocation language after ch28. Any Book 2+ "Firas translocated" framing is a later reveal, not a Book 1 fact. Reader-belief entry: reader has the same information as the team.
+- Bellatrix in Book 1: two mentions, epilogue only (`epilogue.txt:55,71`): "Agent Auerbach saw Bellatrix." / "doesn't interfere. She observes. But she acknowledged Auerbach." Reader-belief lock: observer only. Team knows nothing. Book 2 canon (hidden orchestrator, Geneva) must not leak into Book 1 rereads.
+- The eighth-dose lie: Ahdia told Bourn/the facility the eighth was in; it was not (`chapter_30.txt:231`). Bourn knows by ch30. Who else knows is a tracked question into 2A.
+- Tamois Heart: first named ch21 by Ahdia (`chapter_21.txt:17`), Kain names it ch21 (`chapter_21.txt:247`), Ryu diagnoses integration ch24 (`chapter_24.txt:71`). Team knowledge of the Heart starts ch21, not earlier.
+
+**Bonds / Body**
+- Vessel "Forty-seven": epilogue, "Forty-seven thought he was special too. Thought the Heart made him more than a vessel." (`epilogue.txt:45`). Kain clone tank. No "Tank 51" and no "Vessel #47" label in v1.0. Codex: unrelated to retired 43/47 Ahdia iteration count.
+- "Auerbach" = CADENS codename, assigned ch15 (`chapter_15.txt:315,319`); "Agent Auerbach" in epilogue. Reject "Operative Auerbach" (DECISIONS_LOG 2026-07-26).
+- Main Street: 8 mentions ch23–25 (`chapter_23.txt:159,207`, `chapter_24.txt:67,163`, `chapter_25.txt:7`). Ahdia arrives by spatial fold ch24 (`chapter_24.txt:163`) in a hospital gown. Body/Ground seeds her from there.
 
 ---
 
