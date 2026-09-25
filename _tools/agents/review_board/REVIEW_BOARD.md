@@ -1,8 +1,8 @@
 # Continuity Review Board — Lean Design
 
 **Status:** Section 4 thread directory APPROVED by Director 2026-09-23 (ruling D1). Run 1 unblocked pending `board.py`.
-**Scope:** Book 1 (30 ch + Epilogue, 77,491 words, v1.0 = `GoSquad_Book1_REVIEW.epub`) and Book 2A (19 ch). Extensible to 2B.
-**Source text rule:** Book 1 reads from `6_manuscript/book_1/v1_0/` (extracted from the v1.0 review epub). The epub is built from `first_edition_clean/` (ch1–11) + `rewrite_pilot/*_metric_v*.txt` (ch12–30); those are author sources, not board input. The old PDF extraction is in `_archive/book1_pdf_extraction/` and is not evidence. See `5_story_bibles/book_1/reviews/2026-09-22_editorial_review_report_receipt.md` for why.
+**Scope:** Book 1 (30 ch + Epilogue, 77,491 words, v1.1 = `GoSquad_Book1_REVIEW.epub`) and Book 2A (19 ch). Extensible to 2B.
+**Source text rule:** Book 1 reads from `6_manuscript/book_1/v1_1/` (extracted from the v1.0 review epub). The epub is built from `first_edition_clean/` (ch1–11) + `rewrite_pilot/*_metric_v*.txt` (ch12–30); those are author sources, not board input. The old PDF extraction is in `_archive/book1_pdf_extraction/` and is not evidence. See `5_story_bibles/book_1/reviews/2026-09-22_editorial_review_report_receipt.md` for why.
 **Principle:** Few agents, wide lenses, expensive model. Six agents total. One batch per chapter.
 
 ---
@@ -112,7 +112,7 @@ Secondary (Body/Ground and Bonds only): Firas, Webb, Prime (background), Isaiah 
 - Leta absent after Ch23
 - Eidolon amplifies fear only; never creates (behavioral lock, flag any "created" phrasing)
 
-### 4.7 Book 1 rows (added 2026-09-23 per Director ruling D1; cites are `b1:v1_0/<file>:<line>`)
+### 4.7 Book 1 rows (added 2026-09-23 per Director ruling D1; cites are `b1:v1_1/<file>:<line>` (line numbers unchanged from v1_0 except ch3/ch5/ch8))
 
 **Numbers Clerk**
 - 18-month life-expectancy clock: set ch14 (`chapter_14.txt:333,335,357,367`), restated ch16 as "eighteen months baseline, maybe two years if conservative" (`chapter_16.txt:107`), ch15 Ahdia's own tally "another year and maybe more" (`chapter_15.txt:341`). Open wobble per canon PUNCH_LIST #5: ch16 frozen baseline vs ch15 "maybe more" is unbridged. Clerk tracks every restatement.

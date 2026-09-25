@@ -2304,3 +2304,19 @@ extraction was archived. first_edition_clean/ untouched.
 **Touches:** canon/book_1_ed1/PUNCH_LIST.md (A-items),
 5_story_bibles/book_1/reviews/PUNCH_LIST_2026-09-23.md,
 _tools/agents/review_board/REVIEW_BOARD.md (source text rule).
+
+---
+
+## 2026-09-25 — Cadence rulings executed; review copy v1.1
+
+| Chapter | Applied | Result |
+|---|---|---|
+| ch8 | 5 narration merges, back half only | Director approved each |
+| ch3 | 7 narration em dashes recast | narration dashes 61 → 13 /10k |
+| ch5 | 1 merge (para 74) | **Ruled: remaining fragments are Ahdia's interior voice, exempt** |
+| ch23 | none | Narration had 0 dashes and no fragment runs; all 43/10k were in exempt dialogue. No edit needed. |
+| "just" | 25 narration cuts | 182 → 157. **Target amended 120 → 157**: reaching 120 required ~37 dialogue cuts, which the ruling excluded. |
+
+Dialogue untouched throughout. `REVIEW_VERSION` 1.0 → 1.1; epub rebuilt; per-chapter text re-extracted to `6_manuscript/book_1/v1_1/` (v1_0 folder renamed). Board cites move to v1_1.
+
+**Ruled by:** Director (edits approved passage by passage)
