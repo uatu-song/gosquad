@@ -2320,3 +2320,18 @@ _tools/agents/review_board/REVIEW_BOARD.md (source text rule).
 Dialogue untouched throughout. `REVIEW_VERSION` 1.0 → 1.1; epub rebuilt; per-chapter text re-extracted to `6_manuscript/book_1/v1_1/` (v1_0 folder renamed). Board cites move to v1_1.
 
 **Ruled by:** Director (edits approved passage by passage)
+
+---
+
+## 2026-10-11 — Dialogue typo, one attribution, Chicago quote punctuation; review copy v1.2
+
+**Director:** "make the corrections" after the crew report below.
+
+- **ch21 "are you kidding me"** → "Are you kidding me?" (Tess, by the following beat). Lowercase/unpunctuated; the only line in the book styled so. Was never in any pass's scope: dialogue frozen, typography gate checked glyphs only, kit Pass 5 Part B ran on ch19/ch30 only.
+- **ch25 street confrontation, "I—"** → "I—" Ruth started. The four bare accusations before it stay as Tess ("came off her knees, and did not stop"). **crew (reading); veto open** — the chorus reading is also available; if the Director wants the squad speaking, the four lines need beats instead.
+- **Five period/comma-outside-quote sites** (ch9 "protection", ch16 ×3, ch20 "enhancements") moved inside per Chicago.
+- **ch26 "you . . . had . . . enough?"** left as is: continuation of "You . . ." she said across Kain's beat. **crew; veto open.**
+
+Whole-book census (crew, 10-11): 9 bare-quote runs of 5+ lines; 8 resolve by two-speaker alternation; ch25 was the one that didn't. Lowercase/unterminated bare quotes: ch21 (fixed), ch26 (left), two ch19 readout displays (correct as is).
+
+`REVIEW_VERSION` 1.1 → 1.2; epub rebuilt; text re-extracted to `6_manuscript/book_1/v1_2/`.

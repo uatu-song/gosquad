@@ -16,10 +16,10 @@ LEDGERS = HERE / 'ledgers'; MINUTES = HERE / 'minutes'
 MODEL = 'claude-opus-5'
 
 SOURCES = {
-    1: lambda n: ROOT / '6_manuscript/book_1/v1_1' / ('epilogue.txt' if n == 31 else f'chapter_{n:02d}.txt'),
+    1: lambda n: ROOT / '6_manuscript/book_1/v1_2' / ('epilogue.txt' if n == 31 else f'chapter_{n:02d}.txt'),
     2: lambda n: ROOT / '6_manuscript/book_2' / f'chapter_{n:02d}.md',
 }
-BUILD = {1: 'book1 REVIEW v1.1', 2: 'book2 chapter_XX.md @HEAD'}
+BUILD = {1: 'book1 REVIEW v1.2', 2: 'book2 chapter_XX.md @HEAD'}
 
 CANON = (ROOT / 'CLAUDE.md').read_text().split('## Canon Warnings')[1].split('## Key Reference Files')[0]
 SPEC = (HERE / 'REVIEW_BOARD.md').read_text()
