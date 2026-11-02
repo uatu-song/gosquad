@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Render GoSquad_Book1_REVIEW.epub to a PDF (same text, same version stamp).
+"""Render GoSquad_Book1_v<VERSION>.epub to a PDF (same text, same version stamp).
 
 Reads the epub directly so the PDF can never drift from the shipped artifact.
-Output: GoSquad_Book1_REVIEW.pdf next to the epub.
+Output: GoSquad_Book1_v<VERSION>.pdf next to the epub.
 
     python3 build_review_pdf.py
 """
@@ -18,9 +18,9 @@ from reportlab.lib.units import inch
 from reportlab.platypus import (PageBreak, Paragraph, SimpleDocTemplate, Spacer)
 
 HERE = Path(__file__).resolve().parent
-EPUB = HERE / "GoSquad_Book1_REVIEW.epub"
-OUT = HERE / "GoSquad_Book1_REVIEW.pdf"
 VERSION = (HERE / "REVIEW_VERSION").read_text().strip()
+EPUB = HERE / f"GoSquad_Book1_v{VERSION}.epub"
+OUT = HERE / f"GoSquad_Book1_v{VERSION}.pdf"
 
 FONT = "Times-Roman"
 BODY = ParagraphStyle("body", fontName=FONT, fontSize=11.5, leading=16,
@@ -111,6 +111,11 @@ def main():
             else:
                 st = {"first": FIRST, "scene-break": BREAK}.get(cls, BODY)
             story.append(Paragraph(text, st))
+    for old in HERE.glob("GoSquad_Book1_v*.pdf"):
+        if old != OUT:
+            (HERE / "_archive" / "epubs").mkdir(parents=True, exist_ok=True)
+            old.rename(HERE / "_archive" / "epubs" / old.name)
+            print(f"archived {old.name} -> _archive/epubs/")
     doc = SimpleDocTemplate(str(OUT), pagesize=letter, leftMargin=inch,
                             rightMargin=inch, topMargin=inch, bottomMargin=inch,
                             title="Go Squad — Book One (Review copy v%s)" % VERSION,

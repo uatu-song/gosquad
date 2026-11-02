@@ -7,7 +7,7 @@
 ## RESUME POINT
 
 **BOOK 1 IS SHIPPED — REVIEW COPY v1.0 (2026-09-18):**
-`6_manuscript/book_1/GoSquad_Book1_REVIEW.epub` (builder `build_review_epub.py`,
+`6_manuscript/book_1/GoSquad_Book1_v1.2.epub` (renamed from `GoSquad_Book1_REVIEW.epub` 2026-11-02; everything superseded is in `6_manuscript/book_1/_archive/`, see `6_manuscript/book_1/README.md`) (builder `build_review_epub.py`,
 version in `REVIEW_VERSION`) — the copyedited near-final; see the 2026-09-18
 log entry for what the copyedit found (ch20 re-attribution; ch17 red by 0.5 on
 one band by measurement, awaiting a floor ruling; scare-quote placement
@@ -60,7 +60,7 @@ in the audit) and its "voice was" rate is 1.75/1K.
    but crew decides what an agent sees. Say so in the brief either way.)
 4. **Revisions go back to the agent.** Crew does not write prose. Mechanical
    one-word fixes with a literal anchor and a count assert are fine.
-5. **Canonical filenames resolve through `build_compilation_epub.py`.**
+5. **Canonical filenames resolve through the CHAPTERS list in `build_review_epub.py`** (`build_compilation_epub.py` archived 2026-11-02).
    ch18 is `chapter_18_metric_v3.txt`; ch14 is `14a` + `14b`.
 6. **Typeset** with the scratchpad `chicago.py` (recreate per session). Round-trip
    two shipped chapters before trusting it.

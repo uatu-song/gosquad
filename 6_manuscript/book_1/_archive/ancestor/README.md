@@ -6,5 +6,5 @@
 It is the OLD text — straight quotes, pre-rebuild chapters 12–30, 74k words.
 On 2026-09-18 an outside reviewer measured it by mistake because it sat in the
 shipping folder under the bare name `GoSquad_Book1.epub`. Moved here for that
-reason. **The book is `../GoSquad_Book1_REVIEW.epub`** (near-final review copy)
-and `../GoSquad_Book1_ARC.epub` (uncorrected proof).
+reason. **The book is `../../GoSquad_Book1_v1.2.epub`.** (Moved again 2026-11-02, from
+`_ancestor/` into `_archive/ancestor/`; `../first_edition/` is now `_archive/first_edition/`.)

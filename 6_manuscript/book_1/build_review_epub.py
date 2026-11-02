@@ -21,8 +21,11 @@ from pathlib import Path
 from ebooklib import epub
 
 HERE = Path(__file__).resolve().parent
-OUT = HERE / 'GoSquad_Book1_REVIEW.epub'
 VERSION = Path(__file__).with_name('REVIEW_VERSION').read_text().strip() if Path(__file__).with_name('REVIEW_VERSION').exists() else '1.0'
+# The current book is ALWAYS GoSquad_Book1_v<VERSION>.epub at this folder's top
+# level. Bump REVIEW_VERSION for a new version; any other version found here is
+# moved to _archive/epubs/ before writing, so only one current copy ever exists.
+OUT = HERE / f'GoSquad_Book1_v{VERSION}.epub'
 TITLE  = 'Go Squad'
 AUTHOR = 'J. S. Vaughn'
 SERIES = 'Go Squad'  # the series IS Go Squad (Director, 2026-09-18); never 'the Auerbach Series'
@@ -167,6 +170,11 @@ for i, (name, path) in enumerate(CHAPTERS, 1):
 book.toc = toc
 book.add_item(epub.EpubNcx()); book.add_item(epub.EpubNav())
 book.spine = ['nav'] + spine
+for old in HERE.glob('GoSquad_Book1_v*.epub'):
+    if old != OUT:
+        (HERE/'_archive'/'epubs').mkdir(parents=True, exist_ok=True)
+        old.rename(HERE/'_archive'/'epubs'/old.name)
+        print(f'archived {old.name} -> _archive/epubs/')
 epub.write_epub(str(OUT), book, {})
 print(f'\nREVIEW COPY v{VERSION}: {len(CHAPTERS)} chapters + epilogue, ~{total:,} words')
 print(f'{OUT}  ({OUT.stat().st_size//1024} KB)  v{VERSION}  {STAMP}  (git {REV})')

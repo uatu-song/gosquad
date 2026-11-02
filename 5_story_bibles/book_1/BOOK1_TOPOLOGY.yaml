@@ -95,7 +95,7 @@ rebuild_status:
     chapters; adverb-on-tag 0. Every frozen span byte-identical to first_edition_clean/.
     Build verified on the ARTIFACT (30/30 chapters byte-identical to the gated drafts,
     0 provenance leaks) — the paragraph-collapse bug in ch1–11 is fixed in both builders.
-  canonical_files: "Resolve chapter files through build_compilation_epub.py, never by filename convention: ch18 = chapter_18_metric_v3.txt; ch14 = chapter_14a + chapter_14b."
+  canonical_files: "Resolve chapter files through the CHAPTERS list in 6_manuscript/book_1/build_review_epub.py (build_compilation_epub.py archived 2026-11-02), never by filename convention: ch18 = chapter_18_metric_v3.txt; ch14 = chapter_14a + chapter_14b."
   next: "Book 2"
   next_blocking_ruling: >
     `ahdia-pov-withheld-scope` in canon/book_2/PROMISES.jsonl — does "Ahdia's POV is

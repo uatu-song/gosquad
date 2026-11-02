@@ -1,7 +1,7 @@
 # Continuity Review Board — Lean Design
 
 **Status:** Section 4 thread directory APPROVED by Director 2026-09-23 (ruling D1). Run 1 unblocked pending `board.py`.
-**Scope:** Book 1 (30 ch + Epilogue, 77,491 words, v1.2 = `GoSquad_Book1_REVIEW.epub`) and Book 2A (19 ch). Extensible to 2B.
+**Scope:** Book 1 (30 ch + Epilogue, 77,491 words, v1.2 = `6_manuscript/book_1/GoSquad_Book1_v1.2.epub`) and Book 2A (19 ch). Extensible to 2B.
 **Source text rule:** Book 1 reads from `6_manuscript/book_1/v1_2/` (extracted from the v1.0 review epub). The epub is built from `first_edition_clean/` (ch1–11) + `rewrite_pilot/*_metric_v*.txt` (ch12–30); those are author sources, not board input. The old PDF extraction is in `_archive/book1_pdf_extraction/` and is not evidence. See `5_story_bibles/book_1/reviews/2026-09-22_editorial_review_report_receipt.md` for why.
 **Principle:** Few agents, wide lenses, expensive model. Six agents total. One batch per chapter.
 

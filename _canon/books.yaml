@@ -56,7 +56,7 @@ books:
     # are first-edition reality, and polish work must see them.
     # Registered so the style-constraint layer can MEASURE the disease per
     # chapter. NOT edit-of-record; the rebuild (book_1) replaces it.
-    manuscript_dir: 6_manuscript/book_1/first_edition
+    manuscript_dir: 6_manuscript/book_1/_archive/first_edition
     chapter_glob: "chapter_*.txt"
     chapter_num_re: 'chapter_(\d+)'
     data_dir: canon/book_1_ed1
