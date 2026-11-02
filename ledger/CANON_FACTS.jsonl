@@ -1,0 +1,1 @@
+{"_schema": {"id": "unique key", "fact": "what is asserted", "value": "the number/date/detail", "sources": ["where asserted"], "status": "canonical | wobbling | contradicted | needs-prose-check", "notes": "context"}}

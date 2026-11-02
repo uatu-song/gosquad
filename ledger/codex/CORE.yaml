@@ -1,0 +1,9 @@
+# CORE.yaml — the book's constraints (CON- codes in codex.py). Constraints are
+# story-level rules the author has ruled ("no character explains the theme").
+# Grouped by severity; each needs an id, a name and the rule in the author's words.
+
+constraints: {}
+#  blocking:
+#  - id: CON_001
+#    name: short name
+#    rule: The author's words, verbatim, with the date ruled.

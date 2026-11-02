@@ -1,0 +1,51 @@
+{
+  "_readme": "The editing suite's settings. install.py merges these keys into ledger/config.json without overwriting keys that already exist. Paths are relative to the repo root. Run python3 ledger/tools/suite_check.py after any change.",
+  "suite": {
+    "book": "Go Squad (Book 1, v1.2 sources)",
+    "author": "Joe",
+    "prose_globs": [
+      "6_manuscript/book_1/first_edition_clean/chapter_0[1-9].txt",
+      "6_manuscript/book_1/first_edition_clean/chapter_1[01].txt",
+      "6_manuscript/book_1/rewrite_pilot/chapter_*_metric_v1.txt",
+      "6_manuscript/book_1/rewrite_pilot/chapter_18_metric_v3.txt"
+    ],
+    "prose_exclude": [],
+    "chapter_id_regex": "chapter_(\\d+[a-z]?)",
+    "data_dir": "ledger/codex",
+    "codex_globs": [
+      "ledger/codex/*.yaml",
+      "ledger/codex/*.md"
+    ],
+    "seal_globs": [
+      "6_manuscript/book_1/first_edition_clean/chapter_0[1-9].txt",
+      "6_manuscript/book_1/first_edition_clean/chapter_1[01].txt",
+      "6_manuscript/book_1/rewrite_pilot/chapter_*_metric_v1.txt",
+      "6_manuscript/book_1/rewrite_pilot/chapter_18_metric_v3.txt"
+    ],
+    "chapter_header_lines": 0,
+    "extra_speech_regex": "",
+    "narration_skip_chapters": [],
+    "flow_skip_chapters": [],
+    "flow_labels": [],
+    "name_skip_tokens": [],
+    "speaker_extra_names": [],
+    "pronoun_overrides": {},
+    "time_anchor_events": [],
+    "typography_house_style": {},
+    "typography_extra_files": []
+  },
+  "motifs": [],
+  "motif_candidates_awaiting_author": [
+    "in frozen time",
+    "the hyper seed",
+    "the Tamois Heart",
+    "the Go Squad"
+  ],
+  "ngram_sizes": [
+    2,
+    3,
+    4
+  ],
+  "flag_threshold_per_file": 3,
+  "flag_threshold_per_10k_words": 4
+}

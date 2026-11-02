@@ -1,0 +1,87 @@
+##############################################################################
+# CANDIDATE RULES — ruled by the author for RESONANCE, NOT YET RULED FOR THIS BOOK.
+#
+# These are Joe's author-wide prose rulings from the Resonance revision, carried
+# with his words verbatim. They do not run in the default audit and they never
+# block. To see where this book stands against them:
+#
+#     python3 ledger/tools/audit.py --candidates      # report-only
+#     python3 ledger/tools/check_negation.py --census # every negation site, full sentence
+#     python3 ledger/tools/check_thing.py --census
+#
+# Show the author the census. If he rules a rule in for this book, MOVE it into
+# RULES.yaml (with his words for THIS book and the date), bump codex_version,
+# log it in DECISIONS_LOG.md. Never move one on your own judgment.
+#
+# Resonance-only rules (its mechanics, POV devices, characters) are NOT carried.
+# Typography is not here: it is owned by check_typography.py and
+# suite.typography_house_style in ledger/config.json.
+##############################################################################
+
+codex_meta:
+  source: "RESONANCE/ledger/codex/RULES.yaml (codex_version 22) + CLAUDE.md banned-tics list"
+
+rules:
+
+  R008_banned_collaborator_tics:
+    statement: 'Author-flagged crutches (Joe, Resonance CLAUDE.md): "load-bearing," the "that''s not X,
+      that''s Y" reversal template, "worth noticing," adverbial "quietly." Banned in prose AND in notes.'
+    owner: ledger/STYLE_RULES.md
+    severity: warning
+    forbidden_in_prose:
+    - pattern: \bload-bearing\b
+      note: Banned collaborator tic.
+    - pattern: \bworth noticing\b
+      note: Banned collaborator tic.
+    - pattern: \bquietly\b
+      note: Adverbial "quietly" — banned collaborator tic.
+    - pattern: \b(?:that|it|this)'s not [^.!?]{1,40}[,;.]\s*(?:that|it|this)'s\b
+      note: The "that's not X, that's Y" reversal template.
+
+  R008b_negation_restatement:
+    statement: 'Resonance ruling: the negation-restatement construction is BANNED in narration, all five
+      shapes: "Not X. Y." · "It isn''t X. It''s Y." · "X and not Y / not X but Y" · "not X—Y" · "It does
+      not X. It does not Y." Author-ruled four times (2026-07-20; 2026-08-03; 2026-09-05 "JUST FUCKING DO
+      IT"). "When Joe bans a shape, the answer is a count of zero, not a list of survivors." Dialogue is
+      exempt (character speech). Mirror tool: ledger/tools/check_negation.py.'
+    owner: Resonance DECISIONS_LOG 2026-09-05
+    severity: blocking
+    dialogue_exempt: true
+    forbidden_in_prose:
+    - pattern: (?:^|[.!?]\s+|--\s*)Not\s+[a-z][^.!?]{0,40}\.\s+[A-Z][^.!?]{0,40}\.
+      note: shape 1 — 'Not X. Y.' verbless corrective.
+    - pattern: \bIt (?:isn't|wasn't|is not|was not)\s+[^.!?]{1,40}\.\s+(?:Just\s+)?[A-Z][^.!?]{0,40}\.
+      note: shape 2 — 'It isn't X. It's Y.'
+    - pattern: \b\w+ and not (?:a |an |the )?\w+\b|\bnot (?:a |an |the )?\w+ but (?:a |an |the )?\w+\b
+      note: shape 3 — 'X and not Y' / 'not X but Y'.
+    - pattern: \b[Nn]ot [^.]{1,30}--(?:just )?[a-z]
+      note: shape 4 — 'not X—Y' em-dash corrective.
+    - pattern: \b(?:It|She|He|The \w+) (?:does|did) not \w+[^.!?]{0,20}\.\s+(?:It|She|He|The \w+) (?:does|did) not \w+
+      note: shape 5 — paired negative declaratives.
+
+  R008c_placeholder_thing:
+    statement: 'Resonance ruling, Joe verbatim (2026-09-05): "''Thing''? What thing? Don''t be so abstract.
+      Either use a noun or leave out that sentence." A placeholder "thing" standing in for a noun the
+      narrator can name is banned in narration. Left standing by class: ordinary usage with a concrete
+      referent in the sentence; the POV''s genuine not-knowing; a deliberate insult. Mirror census:
+      ledger/tools/check_thing.py.'
+    owner: Resonance DECISIONS_LOG 2026-09-05
+    severity: blocking
+    dialogue_exempt: true
+    forbidden_in_prose:
+    - pattern: \bof (?:a|the) thing (?:that|gone|which|already|being)\b
+      note: "'of a thing that…' abstraction template."
+    - pattern: \ba (?:\w+ )?thing (?:she|he|they|you|it) (?:knows?|knew|carried|carries|decided|meant|means|could|can|had)\b
+      note: "'a thing she carried/knew/…' placeholder."
+    - pattern: \bthe wrongest thing\b|\ba stronger thing\b
+      note: comparative placeholder.
+
+  R014_seam:
+    statement: 'Resonance ruling, Joe verbatim (2026-09-14): "one last pass for the word seam. Avoid it at
+      almost all costs." Dialogue exempt.'
+    owner: Resonance DECISIONS_LOG 2026-09-14
+    severity: blocking
+    dialogue_exempt: true
+    forbidden_in_prose:
+    - pattern: (?i)\bseam
+      note: '"seam" — avoid at almost all costs (Resonance ruling).'

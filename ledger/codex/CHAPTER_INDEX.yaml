@@ -1,0 +1,11 @@
+# CHAPTER_INDEX.yaml — the POV authority (rule R010). One entry per chapter,
+# keyed by chapter id (CH01, as suite.chapter_id_regex extracts it) or file stem.
+# POV-scoped rules and the pronoun tools read this. Verify each POV by READING the
+# chapter's opening — never infer it from the most-named character.
+# An "intercut" POV (two POVs in one chapter) downgrades POV-scoped blocks to warnings.
+
+chapters: {}
+#  CH01:
+#    pov: Name
+#    tense: past
+#    title: ""

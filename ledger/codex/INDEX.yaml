@@ -1,0 +1,51 @@
+##############################################################################
+# INDEX.yaml — the hand-filed codes. Resolve any of them with:
+#     python3 ledger/tools/codex.py <CODE>
+#
+# A code is an address. One query returns the definition, the rules that govern
+# it, the facts and promises filed under it, the decisions already made about it,
+# and EVERY LIVE SITE in the manuscript (chapter, line, POV), grepped at query time.
+#
+# HAND-FILED here:   CHR- characters · THM- themes · MEC- mechanics/concepts · WRD- watched words
+# DERIVED (never copy them here — they are read live from their owner file):
+#   PRM- ledger/PROMISES.jsonl · FCT- ledger/CANON_FACTS.jsonl · CON- ledger/codex/CORE.yaml · R### ledger/codex/RULES.yaml
+#
+# Fields per code (all optional except name):
+#   name, note                 what it is
+#   aliases                    literal strings to find it in the prose (curly/straight folded);
+#                              prefix "re:" for a regex on norm()'d text: "re:fil(e|ed|es) it away"
+#   governed_by                rule ids (R016) or other codes; a dangling ref is a HARD defect
+#   see                        related codes
+#   status / polarity          e.g. watched | protected | banned
+#   expect_in_prose: absent    for a ban or a protected reveal: ZERO hits is the PASS,
+#                              any hit blocks the commit (codex.py --enforce)
+#   allow                      exact quotes exempt from an absent-expectation
+#   status: CODEX-ONLY         names nothing in the prose on purpose
+#
+# Unfiled can be deliberate: the author may leave things uncoded. Report a gap once;
+# never file pre-emptively.
+##############################################################################
+
+characters: {}
+#  CHR-EXAMPLE:
+#    name: Full Name
+#    aliases: ["Firstname", "Nickname"]
+#    note: One line on who they are. Pronouns live in CHARACTERS.yaml.
+#    see: [MEC-EXAMPLE]
+
+themes: {}
+
+mechanics: {}
+#  MEC-EXAMPLE:
+#    name: The mechanic
+#    aliases: ["the phrase the book uses", "re:the (?:other|second) phrasing"]
+#    note: How it works, in one or two sentences. The prose is the authority.
+#    governed_by: []
+
+words: {}
+#  WRD-EXAMPLE:
+#    name: a banned or watched word
+#    aliases: ["the word"]
+#    status: banned
+#    expect_in_prose: absent
+#    note: Author ruling YYYY-MM-DD, verbatim.

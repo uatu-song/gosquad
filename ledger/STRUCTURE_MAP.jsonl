@@ -1,0 +1,1 @@
+{"_schema": {"id": "unique key (ch-01)", "chapter": "number/label", "title": "chapter title", "pov": "anchor (verify by reading the opening)", "tense": "present|past|other", "location": "where", "elapsed": "in-world day/time", "words": "count from wordcount.py", "notes": "structural role, anomalies"}}

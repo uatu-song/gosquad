@@ -1,0 +1,1 @@
+{"_schema": {"id": "unique key", "event": "what happens", "when": "in-world date or offset", "precision": "canonical | inferred | loop (out of causal order)", "source": "where established", "notes": "context"}}

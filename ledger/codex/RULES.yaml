@@ -1,0 +1,65 @@
+##############################################################################
+# MACHINE-CHECKABLE CANON RULES — run by: python3 ledger/tools/audit.py
+#
+# A codex that is not wired to a COMMAND is just a document, and documents get
+# ignored. This file makes the book's rules executable. A rule that isn't in
+# here isn't enforced, so put it here — but only once the author has ruled it.
+# Rules carried over from Resonance and not yet ruled for this book wait in
+# RULES_CANDIDATES.yaml (audit.py --candidates runs them as warnings only).
+#
+# Each rule may declare:
+#   statement           - the rule, in the author's words where possible
+#   owner               - the ONE file authoritative for this rule
+#   severity            - blocking | warning
+#   forbidden_in_codex  - regexes that CONTRADICT the rule; a codex line matching one
+#                         is a fossil growing back (lines that deny/annotate are skipped)
+#   forbidden_in_prose  - [{pattern, note, allow:[exact quotes], chapters_after: N}]
+#                         patterns run on norm()'d text: curly quotes folded to straight,
+#                         em dash folded to "--" (write -- for an em dash, never a literal one)
+#   forbidden_in_prose_raw - same, on raw bytes (typography only)
+#   pov_scope           - only chapters whose CHAPTER_INDEX pov contains this string
+#   dialogue_exempt     - true: quoted speech is stripped before matching
+#   cleared             - [{text, note}] exact quotes RULED non-defects. audit.py section 4
+#                         warns if one vanishes from the prose (ruled material was edited).
+#   protected_sites     - exact quotes of protected devices (same vanish-guard)
+#
+# codex_meta.codex_version bumps whenever a RULE changes; log it in CODEX_CHANGELOG.md.
+##############################################################################
+
+codex_meta:
+  codex_version: 1
+  last_updated: "YYYY-MM-DD"
+
+rules:
+
+  R009_codex_must_parse:
+    statement: Every canon file must parse. An unparseable codex cannot be queried, which is the
+      same as not having one.
+    owner: ledger/tools/audit.py
+    severity: blocking
+    history: 'Resonance 2026-07-13: two codex files had NEVER parsed. Nothing loaded them, so nobody noticed.'
+
+  R010_pov_from_chapter_index:
+    statement: ledger/codex/CHAPTER_INDEX.yaml is authoritative for POV, keyed by chapter id (CH01) or file
+      stem. Never key POV by chapter title or by a planning doc's numbering.
+    owner: ledger/codex/CHAPTER_INDEX.yaml
+    severity: blocking
+    history: 'Resonance 2026-07-13: number-keying and title-keying BOTH returned wrong POVs and nearly
+      caused a bad edit.'
+
+  R016_pronoun_consistency:
+    statement: A character's declared pronouns in CHARACTERS.yaml and the pronouns used about them in
+      the prose must agree. The MANUSCRIPT is canon. When they disagree, the codex is the fossil and
+      gets corrected, never the prose.
+    owner: ledger/codex/CHARACTERS.yaml > characters.*.demographics.pronouns
+    severity: blocking
+    check: pronoun_consistency
+    ignore_tokens: []         # name tokens two characters share, or titles ("Doctor")
+    known_exceptions: []      # exact quotes ruled fine
+    scope_note: 'CATCHES: a codex or prose line that gender-marks a named character against the
+      declaration through a bound construction (NAME + himself/herself, "NAME, he ...", "NAME is a
+      woman", a YAML key naming the character). DOES NOT CATCH: pronouns whose antecedent is in another
+      sentence, or gender nouns that name nobody. A clean run means the DECLARATIONS agree, not that
+      every pronoun is right. For reference, run antecedents.py.'
+    history: 'Resonance 2026-08-09: CHARACTERS.yaml declared a woman "man"; the fossil had grown back
+      into the prose three times. Nothing compared the two.'

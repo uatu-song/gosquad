@@ -1,0 +1,13 @@
+# CHARACTERS.yaml — per-character canon. The pronoun tools (audit R016,
+# antecedents.py, speaker_volley.py, flow.py) read canonical_name and
+# demographics.pronouns. The MANUSCRIPT wins: if the prose and this file
+# disagree, this file is the fossil. Quote the evidence line when you declare.
+
+characters: {}
+#  NAME:
+#    canonical_name: Firstname Lastname
+#    demographics:
+#      pronouns: [she, her]
+#      evidence: 'CHxx:line — "…" (the line that establishes it)'
+#    knows: []          # who-knows-what-when, for secret-driven plots
+#    doesnt_know: []

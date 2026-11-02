@@ -1,0 +1,1 @@
+{"_schema": {"id": "unique key", "character": "speaker", "line": "the dialogue as written", "chapter": "location", "addressee": "spoken to", "context": "one-line scene context", "flags": ["contradiction-risk", "voice-drift", "callback", "catchphrase"], "notes": ""}}
