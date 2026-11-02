@@ -128,6 +128,14 @@ The cell regeneration treatment (CR-7) is established in Book 1 as major plot de
 
 ## Vessel / Migration
 
+### Why Earth Is Dying
+
+**Director ruling, 2026-11-02, verbatim:** "It's Kain's presidency and his policies. That's what dooms the world."
+
+- Kain wins the presidency at the end of Book 3 (old 2B). His time in office is what makes Earth unsalvageable by Book 7.
+- This closes the loop with Book 8: he is left behind as king of the ash heap he made.
+- How the policies do it on the page (which policies, which books show the damage) is not yet planned.
+
 ### Who Gets on the Vessel?
 
 **Self-selection by ideology:**
