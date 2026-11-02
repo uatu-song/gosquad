@@ -294,3 +294,6 @@ The original 7-book series became 8 books when Book 2 split into 2A and 2B due t
 ```bash
 git add -A && git commit -m "description" && git push origin main
 ```
+
+# Editing suite protocol
+@ledger/SUITE_PROTOCOL.md

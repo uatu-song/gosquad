@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\": {\"hookEventName\": \"UserPromptSubmit\", \"additionalContext\": \"[ACTIVE QUERY PROTOCOL] Before making ANY claim about canon, timeline, character, mechanic, promise, or worldbuilding this turn: run python3 ledger/tools/codex.py <CODE> (or --find) FIRST. Do NOT assert canon from memory, raw grep, or reasoning. If you cannot cite it (chapter:line), do not state it. Session start: suite_check.py then audit.py.\"}}'",
+            "statusMessage": "Active Query Protocol reminder"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$CLAUDE_PROJECT_DIR/ledger/tools/seal.py\" hook",
+            "statusMessage": "Seal check (sealed manuscript)"
+          }
+        ]
+      }
+    ]
+  }
+}
