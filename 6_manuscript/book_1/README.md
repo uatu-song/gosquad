@@ -6,6 +6,7 @@
 |---|---|
 | **`GoSquad_Book1_v1.2.epub`** | **The book.** Review copy v1.2, copyedited near-final, built 2026-10-11. |
 | `GoSquad_Book1_v1.2.pdf` | The same text as a PDF. |
+| `GoSquad_Book1_v1.2.md` | The same text as one Markdown file. |
 | `v1_2/` | The same text as plain chapter files. Read-only; never edit here. |
 
 There is exactly one epub at this level. If you find a second one, something is wrong.
@@ -35,7 +36,7 @@ The authoritative list is the `CHAPTERS` list in `build_review_epub.py`.
 
 1. Edit the source files above.
 2. Change `REVIEW_VERSION` (e.g. `1.2` → `1.3`).
-3. `python3 build_review_epub.py` then `python3 build_review_pdf.py`.
+3. `python3 build_review_epub.py`, then `python3 build_review_pdf.py` and `python3 build_review_md.py`.
    Each builder writes `GoSquad_Book1_v<VERSION>.*` and moves any older version into
    `_archive/epubs/` automatically.
 4. Re-extract the plain text into a new `v1_3/` folder and move `v1_2/` into `_archive/`.
